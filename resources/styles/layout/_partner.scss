@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+.partners{
+    .title{
+        font: 700 36px/normal $font;
+        color: #000000;
+        text-align: center;
+        margin-block: 80px 70px;
+    }
+    ul{
+        display: grid;
+        grid-template: 94px / repeat(5, 1fr);
+        gap: 20px 40px;
+        li{
+            position: relative;
+            flex: 0 0 20%;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+            }
+        }
+    }
+    & + &{
+        margin-top: 100px;
+    }
+}
