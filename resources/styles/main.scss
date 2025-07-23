@@ -1,0 +1,15 @@
+// 유틸 폴더에서 필요한 것들 import
+@use './abstracts' as *;
+
+// 레이아웃 import
+@use './layout/header';
+@use './layout/footer';
+@use './layout/banner';
+
+
+.wrap{
+    max-width: 1100px;
+    padding-inline: 20px;
+    margin: auto;
+}
+
