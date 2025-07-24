@@ -190,20 +190,23 @@
             height: 310px;
             object-fit: cover;
         }
-        p{
-            font: 400 14px/normal $font;
-            color: #9b9b9b;
+        .content{
             margin-top: 30px;
-        }
-        dt{
-            font: 700 24px/normal $font;
-            color: #000000;
-            margin-top: 16px;
-        }
-        dd{
-            font: 300 16px/27px $font;
-            color: #383838;
-            margin-top: 7px;
+            padding-inline: 6px;
+            p{
+                font: 400 14px/normal $font;
+                color: #9b9b9b;
+            }
+            dt{
+                font: 700 24px/normal $font;
+                color: #000000;
+                margin-top: 16px;
+            }
+            dd{
+                font: 300 16px/27px $font;
+                color: #383838;
+                margin-top: 7px;
+            }
         }
     }
 }
