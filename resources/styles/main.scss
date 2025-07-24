@@ -2,11 +2,8 @@
 @use './abstracts' as *;
 
 // 레이아웃 import
-@use './layout/header';
-@use './layout/footer';
-@use './layout/banner';
-@use './layout/partner';
-@use './layout/gnb';
+@use './layout';
+@use './component';
 
 
 .wrap{
