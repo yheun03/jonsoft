@@ -14,23 +14,6 @@ header{
         align-items: center;
     }
 
-    .gnb{
-        display: flex;
-        height: fit-content;
-        margin-inline: auto 100px;
-        li{
-            display: inline;
-            font: 700 17px/normal $font;
-            color: #666666;
-            & + li{
-                margin-left: 30px;
-            }
-        }
-        a{
-            color: inherit;
-        }
-    }
-
     .i18n{
         display: flex;
         height: fit-content;
@@ -62,4 +45,3 @@ header{
         }
     }
 }
-

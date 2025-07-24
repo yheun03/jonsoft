@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+.gnb{
+    display: flex;
+    height: fit-content;
+    margin-inline: auto 100px;
+    li{
+        position: relative;
+        display: inline;
+        font: 700 17px/normal $font;
+        color: #666666;
+        & + li{
+            margin-left: 30px;
+        }
+    }
+    a{
+        color: inherit;
+    }
+
+    footer &{
+        li{
+            font: 400 14px/normal $font;
+            color: #909090;
+            & + li{
+                margin-left: 33px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: -17px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 11px;
+                    background-color: #dadada;
+                }
+            }
+        }
+    }
+}
