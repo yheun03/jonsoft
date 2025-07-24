@@ -10,12 +10,29 @@
         display: inline;
         font: 700 17px/normal $font;
         color: #666666;
+        &:hover{
+            color: #000000;
+            opacity: unset;
+        }
+        &.active{
+            color: #000000;
+        }
         & + li{
             margin-left: 30px;
         }
     }
     a{
         color: inherit;
+        position: relative;
+        &::after{
+            // 사용성 개선을 위한 가상요소
+            content: "";
+            position: absolute;
+            top: -27px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: calc(100% + 54px);
+        }
     }
 
     footer &{
