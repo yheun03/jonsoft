@@ -1,4 +1,5 @@
 @use 'sass:map';
 
-$url: '/resources/';
+// $url: '/resources/';
+$url: '../'; // 배포할 땐 해당 소스 주석 해제하고 배포
 $font: 'Pretendard'

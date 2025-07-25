@@ -13,6 +13,9 @@
     &.not-padding{
         padding-inline: unset;
     }
+    &.full{
+        max-width: 1920px;
+    }
 }
 
 // contact us 페이지
@@ -152,7 +155,7 @@
         .info{
             dl{
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 font: 400 19px/27px $font;
                 color: #000000;
                 margin-bottom: 40px;
@@ -173,9 +176,6 @@
 
 .philosophy{
     margin-block: 210px 48px;
-    .wrap{
-        max-width: 1920px;
-    }
     h3{
         font: 700 25px/normal $font;
         color: #000000;
