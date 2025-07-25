@@ -29,6 +29,8 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/script.js"></script>
 <body>
+    <input type="radio" name="lang" id="ko" value="ko" checked>
+    <input type="radio" name="lang" id="en" value="en">
     <header>
         <div class="wrap">
             <h1><a href="./"><img src="./resources/logos/word.svg" alt="조앤소프트(주)의 로고입니다."></a></h1>
@@ -39,36 +41,30 @@
                 <li><a href="./contact.html">CONTACT US</a></li>
             </ul>
             <ul class="i18n">
-                <li><a href="">KOR</a></li>
-                <li><a href="">ENG</a></li>
+                <li><label for="ko">KOR</label></li>
+                <li><label for="en">ENG</label></li>
             </ul>
         </div>
     </header>
     <section>
         <div class="banner">
             <div class="wrap">
-                <h2>
-                    YOUR<br/>
-                    BEST<br/>
-                    BUSINESS<br/>
-                    PARTNER
+                <h2 data-i18n="heading_main">YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER
                 </h2>
-                <h3>
-                    우리가 만든 소프트웨어와 서비스가<br/>
-                    고객 비즈니스 성장에 기여합니다.
+                <h3 data-i18n="subheading_main">우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.
                 </h3>
             </div>
             <img src="./resources/images/banner/page-index.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
         </div>
         <div class="banner type-title">
             <div class="wrap">
-                <strong class="title">시스템 컨설팅부터<br/>소프트웨어 구축까지</strong>
-                <p>Technology 컨설팅, 소프트웨어 개발, 온라인 마케팅 컨설팅 및 플랫폼 운영, 스마트 팩토리 및 제조 AI 시스템 구축, 프로세스 자동화 등 다양한 분야에서 기업의 비즈니스 시스템을 진단하고, 지속 가능한 성장을 위한 최적의 디지털 전환 솔루션을 제공합니다.</p>
+                <strong class="title" data-i18n="title_consulting">시스템 컨설팅부터<br/>소프트웨어 구축까지</strong>
+                <p data-i18n="desc_consulting">Technology 컨설팅, 소프트웨어 개발, 온라인 마케팅 컨설팅 및 플랫폼 운영, 스마트 팩토리 및 제조 AI 시스템 구축, 프로세스 자동화 등 다양한 분야에서 기업의 비즈니스 시스템을 진단하고, 지속 가능한 성장을 위한 최적의 디지털 전환 솔루션을 제공합니다.</p>
             </div>
         </div>
         <div class="banner type-goto">
             <div class="wrap">
-                <strong class="title">고객 비즈니스 성장을 위한<br/>최적의 파트너</strong>
+                <strong class="title" data-i18n="title_partner">고객 비즈니스 성장을 위한<br/>최적의 파트너</strong>
                 <button class="btn type-opacity">
                     <span>사업영역 자세히 보기</span>
                 </button>
@@ -127,8 +123,8 @@
         </div>
         <div class="banner type-ask">
             <div class="wrap">
-                <p class="title">프로젝트 문의하기</p>
-                <p>조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.</p>
+                <p class="title" data-i18n="ask_title">프로젝트 문의하기</p>
+                <p data-i18n="ask_desc">조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.</p>
                 <button class="btn type-ask">
                     <span>프로젝트 문의하기</span>
                 </button>
