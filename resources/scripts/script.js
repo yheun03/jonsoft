@@ -1,49 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 언어 json 경로 설정
     const langFiles = {
         ko: './resources/i18n/ko.json',
         en: './resources/i18n/en.json',
         vi: './resources/i18n/vi.json',
     };
 
-    // 기본 언어
-    let currentLang = 'ko';
+    // 저장된 언어 가져오기 (없으면 기본값 ko)
+    let currentLang = localStorage.getItem('selectedLang') || 'ko';
 
-    // 중첩된 키에서 값 꺼내기: 예) "index.banner-ask.title"
+    // 유틸: 중첩 키 값 추출 (예: "index.banner.title")
     function getNestedValue(obj, path) {
         return path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
     }
 
-    // 텍스트 변경 함수
+    // 텍스트 및 속성 변경
     function updateText(langData) {
         document.querySelectorAll('[data-i18n], [data-i18n-alt], [data-i18n-src], [data-i18n-title], [data-i18n-placeholder]').forEach(el => {
-            // innerHTML용
             if (el.hasAttribute('data-i18n')) {
                 const key = el.getAttribute('data-i18n');
                 const value = getNestedValue(langData, key);
                 if (value !== null) el.innerHTML = value;
-                else console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
+                else console.warn(`⚠ Missing i18n key: "${key}"`);
             }
 
-            // 속성용
             ['alt', 'src', 'title', 'placeholder'].forEach(attr => {
                 const dataAttr = `data-i18n-${attr}`;
                 if (el.hasAttribute(dataAttr)) {
                     const key = el.getAttribute(dataAttr);
                     const value = getNestedValue(langData, key);
                     if (value !== null) el.setAttribute(attr, value);
-                    else console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
+                    else console.warn(`⚠ Missing i18n key: "${key}"`);
                 }
             });
         });
     }
 
-    // 중첩된 키 (예: "index.banner.imageAlt") 안전하게 접근하는 유틸
-    function getNestedValue(obj, path) {
-        return path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
-    }
-
-    // 언어 변경 함수
+    // 언어 변경
     function setLanguage(lang) {
         if (!langFiles[lang]) {
             console.error(`❌ Language file for "${lang}" not found.`);
@@ -59,24 +51,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentLang = lang;
                 document.documentElement.setAttribute('lang', lang);
                 updateText(data);
+                localStorage.setItem('selectedLang', lang); // ✅ 저장
+
+                // 버튼 active 처리
+                document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
+                const activeLi = document.querySelector(`.i18n button[data-lang="${lang}"]`)?.parentElement;
+                if (activeLi) {
+                    activeLi.classList.add('active');
+                    localStorage.setItem('activeLangLiIndex', [...activeLi.parentElement.children].indexOf(activeLi)); // ✅ 인덱스 저장
+                }
             })
             .catch(err => {
                 console.error(`❌ Error loading language file:`, err);
             });
     }
 
-    // 버튼 이벤트 바인딩 + active 클래스 처리
+    // 언어 변경 버튼 클릭 처리
     document.querySelectorAll('.i18n button').forEach(btn => {
         btn.addEventListener('click', () => {
             const selectedLang = btn.getAttribute('data-lang');
             setLanguage(selectedLang);
-
-            // .active 처리
-            document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
-            btn.parentElement.classList.add('active');
         });
     });
 
-    // 초기 언어 세팅
+    // 페이지 로드 시 저장된 active li 복원
+    function restoreActiveLi() {
+        const savedIndex = localStorage.getItem('activeLangLiIndex');
+        if (savedIndex !== null) {
+            document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
+            const liList = document.querySelectorAll('.i18n li');
+            if (liList[savedIndex]) liList[savedIndex].classList.add('active');
+        }
+    }
+
+    // 초기화
+    restoreActiveLi();
     setLanguage(currentLang);
 });
