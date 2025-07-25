@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langFiles = {
         ko: './resources/i18n/ko.json',
         en: './resources/i18n/en.json',
+        ja: './resources/i18n/ja.json',
         vi: './resources/i18n/vi.json',
     };
 
