@@ -1,90 +1,65 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const langFiles = {
         ko: './resources/i18n/ko.json',
         en: './resources/i18n/en.json',
         vi: './resources/i18n/vi.json',
     };
 
-    // 저장된 언어 가져오기 (없으면 기본값 ko)
-    let currentLang = localStorage.getItem('selectedLang') || 'ko';
+    const attrMap = {
+        innerHTML: 'data-i18n',
+        alt: 'data-i18n-alt',
+        src: 'data-i18n-src',
+        title: 'data-i18n-title',
+        placeholder: 'data-i18n-placeholder',
+    };
 
-    // 유틸: 중첩 키 값 추출 (예: "index.banner.title")
-    function getNestedValue(obj, path) {
-        return path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
-    }
+    const getNestedValue = (obj, path) =>
+        path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
 
-    // 텍스트 및 속성 변경
-    function updateText(langData) {
-        document.querySelectorAll('[data-i18n], [data-i18n-alt], [data-i18n-src], [data-i18n-title], [data-i18n-placeholder]').forEach(el => {
-            if (el.hasAttribute('data-i18n')) {
-                const key = el.getAttribute('data-i18n');
-                const value = getNestedValue(langData, key);
-                if (value !== null) el.innerHTML = value;
-                else console.warn(`⚠ Missing i18n key: "${key}"`);
-            }
-
-            ['alt', 'src', 'title', 'placeholder'].forEach(attr => {
-                const dataAttr = `data-i18n-${attr}`;
-                if (el.hasAttribute(dataAttr)) {
-                    const key = el.getAttribute(dataAttr);
-                    const value = getNestedValue(langData, key);
-                    if (value !== null) el.setAttribute(attr, value);
-                    else console.warn(`⚠ Missing i18n key: "${key}"`);
+    const updateText = (langData) => {
+        Object.entries(attrMap).forEach(([attr, dataAttr]) => {
+            document.querySelectorAll(`[${dataAttr}]`).forEach(el => {
+                const key = el.getAttribute(dataAttr);
+                const val = getNestedValue(langData, key);
+                if (val !== null) {
+                    if (attr === 'innerHTML') el.innerHTML = val;
+                    else el.setAttribute(attr, val);
                 }
             });
         });
-    }
+    };
 
-    // 언어 변경
-    function setLanguage(lang) {
-        if (!langFiles[lang]) {
-            console.error(`❌ Language file for "${lang}" not found.`);
-            return;
-        }
+    const updateActiveButton = (lang) => {
+        document.querySelectorAll('.i18n li').forEach(li => {
+            const btn = li.querySelector('button');
+            li.classList.toggle('active', btn?.getAttribute('data-lang') === lang);
+        });
+    };
 
-        fetch(langFiles[lang])
-            .then(res => {
-                if (!res.ok) throw new Error(`Failed to load ${lang}.json`);
-                return res.json();
-            })
+    const setLanguage = (lang) => {
+        const url = langFiles[lang];
+        if (!url) return console.error(`❌ No language file for "${lang}"`);
+
+        fetch(url)
+            .then(res => res.json())
             .then(data => {
-                currentLang = lang;
                 document.documentElement.setAttribute('lang', lang);
+                localStorage.setItem('lang', lang);
                 updateText(data);
-                localStorage.setItem('selectedLang', lang); // ✅ 저장
-
-                // 버튼 active 처리
-                document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
-                const activeLi = document.querySelector(`.i18n button[data-lang="${lang}"]`)?.parentElement;
-                if (activeLi) {
-                    activeLi.classList.add('active');
-                    localStorage.setItem('activeLangLiIndex', [...activeLi.parentElement.children].indexOf(activeLi)); // ✅ 인덱스 저장
-                }
+                updateActiveButton(lang);
             })
-            .catch(err => {
-                console.error(`❌ Error loading language file:`, err);
-            });
-    }
+            .catch(err => console.error(`❌ Failed to load ${lang}.json`, err));
+    };
 
-    // 언어 변경 버튼 클릭 처리
+    // 버튼 클릭 이벤트
     document.querySelectorAll('.i18n button').forEach(btn => {
         btn.addEventListener('click', () => {
-            const selectedLang = btn.getAttribute('data-lang');
-            setLanguage(selectedLang);
+            const lang = btn.getAttribute('data-lang');
+            setLanguage(lang);
         });
     });
 
-    // 페이지 로드 시 저장된 active li 복원
-    function restoreActiveLi() {
-        const savedIndex = localStorage.getItem('activeLangLiIndex');
-        if (savedIndex !== null) {
-            document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
-            const liList = document.querySelectorAll('.i18n li');
-            if (liList[savedIndex]) liList[savedIndex].classList.add('active');
-        }
-    }
-
-    // 초기화
-    restoreActiveLi();
-    setLanguage(currentLang);
+    // 초기 언어 적용
+    const savedLang = localStorage.getItem('lang') || document.documentElement.getAttribute('lang') || 'ko';
+    setLanguage(savedLang);
 });
