@@ -58,8 +58,9 @@
         }
         &-title{
             height: auto;
+            margin-block: 60px 80px;
             .wrap{
-                padding-block: 60px 80px;
+                padding: unset;
                 gap: 50px;
                 max-width: 864px;
             }
@@ -75,9 +76,10 @@
             }
 
             &-sub{
+                height: unset;
+                margin-block: 80px 60px;
                 .wrap{
-                    padding-block: 80px 60px;
-                    height: unset;
+                    padding: unset;
                 }
                 .title{
                     font: 600 30px/150% $font;
