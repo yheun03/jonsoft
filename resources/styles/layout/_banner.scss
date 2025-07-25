@@ -56,7 +56,7 @@
                 margin-top: 40px;
             }
         }
-        &-text{
+        &-title{
             height: auto;
             .wrap{
                 padding-block: 60px 80px;
@@ -72,6 +72,33 @@
                 color: #292e32;
                 text-align: center;
                 word-break: keep-all;
+            }
+
+            &-sub{
+                .wrap{
+                    padding-block: 80px 60px;
+                    height: unset;
+                }
+                .title{
+                    font: 600 30px/150% $font;
+                    color: #000000;
+                    margin-top: 20px;
+                    &-sub{
+                        font: 700 18px/normal $font;
+                        span {
+                            background: linear-gradient(198deg, #FF9056, #FF5C42);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            color: transparent;
+                        }
+                    }
+                }
+                .dscpt{
+                    font: 400 24px/150% $font;
+                    color: #000000;
+                    margin-top: 30px;
+                }
             }
         }
         &-goto{

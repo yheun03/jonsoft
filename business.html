@@ -20,11 +20,13 @@
     <meta name="twitter:image" content="http://www.jonsoft.co.kr/">
     <meta name="twitter:domain" content="조앤소프트">
     <meta name="Robots" content="INDEX, FOLLOW">
+    <link rel="stylesheet" href="./resources/library/slick/slick.min.css">
     <link rel="stylesheet" href="./resources/styles/main.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon/favicon-16x16.png">
     <script src="./resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/script.js"></script>
 <body>
     <header>
@@ -46,9 +48,16 @@
         <div class="banner">
             <img src="./resources/images/banner/page-business.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
         </div>
+        <div class="banner type-title-sub">
+            <div class="wrap">
+                <p class="title-sub"><span class="gradient-text">솔루션</span></p>
+                <p class="title">조앤소프트는 주문관리시스템(OMS), 생산관리시스템(MES), 공장에너지관리시스템(FEMS), 고객관계관리(CRM), 공급망관리(SCM), 생산계획시스템(APS), 창고제어시스템(WCS), 자동배차관리시스템(TMS) 및 AI솔루션(work@AI)</p>
+                <p class="dscpt">그 밖에 PLM, WMS, ESG 생태계공장, DPP, 빅데이터 분석 / 모니터링 시스템 등 다양한 고객 맞춤형 솔루션을 보유하고 있습니다.</p>
+            </div>
+        </div>
         <div class="solution">
             <div class="wrap">
-                <p class="title">솔루션</p>
+                <p class="title"><span class="gradient-text">솔루션</span></p>
                 <p></p>
             </div>
         </div>
@@ -74,5 +83,127 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        $(function () {
+            const classList = ['aps', 'oms', 'fems', 'scm', 'crm', 'mes', 'wcs', 'tms', 'ai'];
+            const totalItems = classList.length;
+            
+            let dragStartX = null;
+            let isDragging = false;
+            
+            let clickStartX = 0;
+            let clickStartY = 0;
+            let isClickValid = true;
+            
+            // slick 초기화
+            $('.items-wrap').slick({
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '0px',
+                infinite: true,
+                initialSlide: 4,
+                arrows: false,
+                dots: false,
+                variableWidth: true,
+                swipe: true,
+                draggable: true,
+                speed: 300,
+                touchThreshold: 20,
+                swipeThreshold: 20,
+            });
+        
+            // drag 시작
+            $('.items-wrap').on('pointerdown touchstart mousedown', function (e) {
+                dragStartX = e.originalEvent.touches ? e.originalEvent.touches[0].clientX : e.clientX;
+                isDragging = true;
+            });
+        
+            // drag 끝
+            $(document).on('pointerup touchend mouseup pointercancel touchcancel', function (e) {
+                if (!isDragging) return;
+                    isDragging = false;
+            
+                    const dragEndX = e.originalEvent.changedTouches ? e.originalEvent.changedTouches[0].clientX : e.clientX;
+                if (dragStartX === null) return;
+            
+                    const diffX = dragStartX - dragEndX;
+                    const threshold = 120;
+                if (Math.abs(diffX) > threshold) {
+                    const slideCount = Math.min(Math.floor(Math.abs(diffX) / threshold), totalItems);
+                    const direction = diffX > 0 ? 'Next' : 'Prev';
+                    const currentSlide = $('.items-wrap').slick('slickCurrentSlide');
+                    const targetSlide = direction === 'Next' ? currentSlide + slideCount : currentSlide - slideCount;
+                    $('.items-wrap').slick('slickGoTo', targetSlide);
+                }
+            
+                dragStartX = null;
+            });
+        
+            // 버튼 활성화
+            $('.items-wrap').on('afterChange', function (event, slick, currentSlide) {
+                const $currentSlide = $(slick.$slides.get(currentSlide));
+                const matchedClass = $currentSlide.attr('class').split(/\s+/).find(cls => classList.includes(cls));
+            
+                if (matchedClass) {
+                    $('#slider-buttons button').removeClass('active');
+                    $(`#slider-buttons button[data-class="${matchedClass}"]`).addClass('active');
+                }
+            });
+        
+            // 초기 버튼 활성화
+            const initialClass = classList[4];
+            $(`#slider-buttons button[data-class="${initialClass}"]`).addClass('active');
+        
+            // 버튼 클릭으로 슬라이드 이동 (기존 코드 수정)
+            $('#slider-buttons button').on('click', function () {
+                const targetClass = $(this).data('class');
+                let targetIndex = -1;
+
+                // 모든 원본 슬라이드 중에서 정확한 index를 가져옴
+                $('.items-wrap .slick-slide').each(function () {
+                    if ($(this).hasClass(targetClass) && !$(this).hasClass('slick-cloned')) {
+                        targetIndex = $(this).data('slick-index');
+                        return false; // break
+                    }
+                });
+
+                if (targetIndex !== -1) {
+                    $('.items-wrap').slick('slickGoTo', targetIndex);
+                }
+            });
+
+        
+            // --- 클릭 vs 드래그 구분 ---
+            $(document).on('mousedown touchstart', '.item', function (e) {
+                const evt = e.originalEvent.touches ? e.originalEvent.touches[0] : e;
+                clickStartX = evt.clientX;
+                clickStartY = evt.clientY;
+                isClickValid = true;
+            });
+        
+            $(document).on('mousemove touchmove', function (e) {
+                if (!isClickValid) return;
+                    const evt = e.originalEvent.touches ? e.originalEvent.touches[0] : e;
+                    const moveX = Math.abs(evt.clientX - clickStartX);
+                    const moveY = Math.abs(evt.clientY - clickStartY);
+                    const moveThreshold = 10;
+                if (moveX > moveThreshold || moveY > moveThreshold) {
+                    isClickValid = false;
+                }
+            });
+        
+            $(document).on('mouseup touchend', '.item', function (e) {
+                if (isClickValid) {
+                const sol = $(this).data('sol');
+                if (sol) opensol(sol);
+                }
+            });
+        });
+    
+        
+    </script>
 </body>
 </html>
