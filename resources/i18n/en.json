@@ -24,5 +24,11 @@
 			"dscpt": "JO&SOFT proposes building a better software environment. Experience innovative business growth.",
 			"button": "Inquire about a project"
 		}
-	}
+	},
+    "customer": {
+        "samsung" : {
+            "logo": "./resources/logos/word.svg",
+            "alt": "It's Samsung Electronics logo."
+        }
+    }
 }

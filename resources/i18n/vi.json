@@ -24,5 +24,11 @@
 			"dscpt": "JO&SOFT đề xuất xây dựng một môi trường phần mềm tốt hơn. Hãy thử trải nghiệm sự phát triển kinh doanh mang tính cách mạng.",
 			"button": "Hỏi đáp về dự án"
 		}
-	}
+	},
+    "customer": {
+        "samsung" : {
+            "logo": "./resources/logos/word.svg",
+            "alt": "Đây là logo của Samsung Electro-Mechanics"
+        }
+    }
 }

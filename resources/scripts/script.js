@@ -16,17 +16,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 텍스트 변경 함수
     function updateText(langData) {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            const value = getNestedValue(langData, key);
-
-            if (value !== null) {
-                el.innerHTML = value;
-            } else {
-                console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
-                // el.innerHTML = key; // fallback 표시 옵션
+        document.querySelectorAll('[data-i18n], [data-i18n-alt], [data-i18n-src], [data-i18n-title], [data-i18n-placeholder]').forEach(el => {
+            // innerHTML용
+            if (el.hasAttribute('data-i18n')) {
+                const key = el.getAttribute('data-i18n');
+                const value = getNestedValue(langData, key);
+                if (value !== null) el.innerHTML = value;
+                else console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
             }
+
+            // 속성용
+            ['alt', 'src', 'title', 'placeholder'].forEach(attr => {
+                const dataAttr = `data-i18n-${attr}`;
+                if (el.hasAttribute(dataAttr)) {
+                    const key = el.getAttribute(dataAttr);
+                    const value = getNestedValue(langData, key);
+                    if (value !== null) el.setAttribute(attr, value);
+                    else console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
+                }
+            });
         });
+    }
+
+    // 중첩된 키 (예: "index.banner.imageAlt") 안전하게 접근하는 유틸
+    function getNestedValue(obj, path) {
+        return path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
     }
 
     // 언어 변경 함수

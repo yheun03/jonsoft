@@ -24,5 +24,11 @@
 			"dscpt": "조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.",
 			"button": "프로젝트 문의하기"
 		}
-	}
+	},
+    "customer": {
+        "samsung" : {
+            "logo": "./resources/logos/partners/samsung-electro-mechanics.png",
+            "alt": "삼성전기 로고 입니다."
+        }
+    }
 }
