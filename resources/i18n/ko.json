@@ -4,6 +4,10 @@
 			"address": "(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554",
 			"info": "회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272",
 			"copy": "© 2025 JO&SOFT. All Rights Reserved."
+		},
+		"inobiz": {
+			"src": "./resources/logos/inobiz.png",
+			"alt": "혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다."
 		}
 	},
 	"index": {
@@ -26,9 +30,9 @@
 		}
 	},
     "customer": {
-        "samsung" : {
-            "logo": "./resources/logos/partners/samsung-electro-mechanics.png",
-            "alt": "삼성전기 로고 입니다."
+        "hanjinkal" : {
+            "logo": "./resources/logos/partners/hanjinkal.png",
+            "alt": "한진칼 국문 CI 입니다."
         }
     }
 }

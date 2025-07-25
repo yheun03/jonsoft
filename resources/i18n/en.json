@@ -4,6 +4,10 @@
 			"address": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea",
 			"info": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272",
 			"copy": "© 2025 JO&SOFT. All Rights Reserved."
+		},
+		"inobiz": {
+			"src": "./resources/logos/inobiz-en.png",
+			"alt": "This is the Innoviz logo that has obtained and specified the Innoviz rating, an innovative small and medium-sized company."
 		}
 	},
 	"index": {
@@ -26,9 +30,9 @@
 		}
 	},
     "customer": {
-        "samsung" : {
-            "logo": "./resources/logos/word.svg",
-            "alt": "It's Samsung Electronics logo."
+        "hanjinkal" : {
+            "logo": "./resources/logos/partners/en/hanjinkal.png",
+            "alt": "The English CI of Hanjin KAL."
         }
     }
 }
