@@ -9,16 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // 기본 언어
     let currentLang = 'ko';
 
+    // 중첩된 키에서 값 꺼내기: 예) "index.banner-ask.title"
+    function getNestedValue(obj, path) {
+        return path.split('.').reduce((o, key) => (o && o[key] !== undefined ? o[key] : null), obj);
+    }
+
     // 텍스트 변경 함수
     function updateText(langData) {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (langData[key]) {
-                el.innerHTML = langData[key];
+            const value = getNestedValue(langData, key);
+
+            if (value !== null) {
+                el.innerHTML = value;
             } else {
-                console.warn(`Missing i18n key: "${key}" in ${currentLang}.json`);
-                // fallback: 기존 텍스트 유지 or key로 표시 (선택사항)
-                // el.innerHTML = key;
+                console.warn(`⚠ Missing i18n key: "${key}" in ${currentLang}.json`);
+                // el.innerHTML = key; // fallback 표시 옵션
             }
         });
     }
@@ -26,22 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // 언어 변경 함수
     function setLanguage(lang) {
         if (!langFiles[lang]) {
-            console.error(`Language file for "${lang}" not found.`);
+            console.error(`❌ Language file for "${lang}" not found.`);
             return;
         }
 
         fetch(langFiles[lang])
             .then(res => {
-                if (!res.ok) throw new Error(`Failed to load ${lang} JSON`);
+                if (!res.ok) throw new Error(`Failed to load ${lang}.json`);
                 return res.json();
             })
             .then(data => {
                 currentLang = lang;
-                document.documentElement.setAttribute('lang', lang); // <html lang="xx"> 설정
+                document.documentElement.setAttribute('lang', lang);
                 updateText(data);
             })
             .catch(err => {
-                console.error(`Error loading language file:`, err);
+                console.error(`❌ Error loading language file:`, err);
             });
     }
 
@@ -51,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedLang = btn.getAttribute('data-lang');
             setLanguage(selectedLang);
 
-            // .active 관리
+            // .active 처리
             document.querySelectorAll('.i18n li').forEach(li => li.classList.remove('active'));
             btn.parentElement.classList.add('active');
         });

@@ -1,9 +1,28 @@
 {
-  "heading_main": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
-  "subheading_main": "Our software and services contribute<br/>to your business growth.",
-  "title_consulting": "From System Consulting<br/>to Software Development",
-  "desc_consulting": "We provide digital transformation solutions through technology consulting...",
-  "title_partner": "The Best Partner<br/>for Business Growth",
-  "ask_title": "Contact Us About Your Project",
-  "ask_desc": "Jo&Soft proposes better software environments. Experience innovative business growth."
+	"common": {
+		"company": {
+			"address": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea",
+			"info": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272",
+			"copy": "© 2025 JO&SOFT. All Rights Reserved."
+		}
+	},
+	"index": {
+		"banner-main": {
+			"title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
+			"title-sub": "The software and services we created contribute to the growth of our customers' business"
+		},
+		"banner-text": {
+			"title": "From system consulting to software deployment",
+			"dscpt": "It diagnoses a company's business systems in a variety of areas, including technology consulting, software development, online marketing consulting and platform operations, building smart factory and manufacturing AI systems, and process automation, and providing optimal digital transformation solutions for sustainable growth."
+		},
+		"banner-goto": {
+			"title": "Best Partner for Customer Business Growth",
+			"button": "Get a closer look at the business area"
+		},
+		"banner-ask": {
+			"title": "Inquire about a project",
+			"dscpt": "JO&SOFT proposes building a better software environment. Experience innovative business growth.",
+			"button": "Inquire about a project"
+		}
+	}
 }
