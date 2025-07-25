@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+.module-text{
+    height: unset;
+    margin-block: 80px 60px;
+    .wrap{
+        padding: unset;
+    }
+    .title{
+        font: 600 30px/150% $font;
+        color: #000000;
+        margin-top: 20px;
+        &-sub{
+            font: 700 18px/normal $font;
+            span {
+                background: linear-gradient(198deg, #FF9056, #FF5C42);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+            }
+        }
+    }
+    .dscpt{
+        font: 400 24px/150% $font;
+        color: #000000;
+        margin-top: 30px;
+    }
+
+    .banner &{
+        margin: unset;
+        padding-top: 100px;
+        .title{
+            margin-top: 8px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .dscpt{
+            margin-top: 50px;
+            font: 700 18px/normal $font;
+            li{
+                position: relative;
+                padding-left: 16px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    background-color: #ffffff;
+                }
+                & + li{
+                    margin-top: 15px;
+                }
+            }
+        }
+        .title,
+        .dscpt{
+            color: #ffffff;
+        }
+    }
+}

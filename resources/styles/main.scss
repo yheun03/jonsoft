@@ -27,6 +27,41 @@
     padding-inline: 10px;
 }
 
+// about 페이지
+.summary{
+    margin-block: 60px 80px;
+    &::after{
+        content: "WORK@AI";
+    }
+    ul{ 
+        display: flex;
+        justify-content: flex-end;
+        gap: 60px;
+        .content{
+            margin-top: 25px;
+            text-align: center;
+        }
+        .title{
+            font: 700 18px/normal $font;
+            color: #979797;
+            margin-block: 8px 12px;
+        }
+        .dscpt{
+            font: 700 36px/normal $font;
+            color: #000000;
+        }
+        .eyebrow{
+            font: 400 14px/normal $font;
+            color: #979797;
+        }
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+
 // business 패아자
 .solution{
     margin-block: 60px 80px;
