@@ -133,6 +133,59 @@
     }
 }
 
+.success{
+    background-color: #333333;
+    padding-block: 120px;
+
+    h3{
+        font: 700 32px/40px $font;
+        color: #ffffff;
+    }
+    .list-case{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .item{
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        .title{
+            font: 700 24px/normal $font;
+            color: #ffffff;
+        }
+        .dscpt{
+            font: 700 18px/26px $font;
+            color: rgba(255, 255, 255, .8);
+            margin-top: 24px;
+            li::before{
+                content: "#";
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        padding: 30px 20px 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &::after{
+            content: "";
+            display: block;
+            margin-top: auto;
+            width: 26px;
+            height: 26px;
+            background: url($url + "icons/26/ic-circle-arrow.svg") center/26px no-repeat;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
 // contact us 페이지
 .navigator{
     margin-block: 80px;
