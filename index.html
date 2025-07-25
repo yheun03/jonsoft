@@ -29,8 +29,6 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/script.js"></script>
 <body>
-    <input type="radio" name="lang" id="ko" value="ko" checked>
-    <input type="radio" name="lang" id="en" value="en">
     <header>
         <div class="wrap">
             <h1><a href="./"><img src="./resources/logos/word.svg" alt="조앤소프트(주)의 로고입니다."></a></h1>
@@ -41,8 +39,9 @@
                 <li><a href="./contact.html">CONTACT US</a></li>
             </ul>
             <ul class="i18n">
-                <li><label for="ko">KOR</label></li>
-                <li><label for="en">ENG</label></li>
+                <li class="active"><button class="btn" data-lang="ko">KOR</button></li>
+                <li><button class="btn" data-lang="en">ENG</button></li>
+                <li><button class="btn" data-lang="vi">VIE</button></li>
             </ul>
         </div>
     </header>

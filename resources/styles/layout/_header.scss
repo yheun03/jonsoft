@@ -21,10 +21,13 @@ header{
         li{
             display: inline;
             font: 700 14px/normal $font;
+            color: #cccccc;
+            &.active{
+                color: #333333;
+            }
             & + li{
                 position: relative;
                 margin-left: 24px;
-                color: #cccccc;
                 &:before{
                     content: "";
                     position: absolute;
@@ -36,13 +39,11 @@ header{
                     border-radius: 50%;
                     background-color: #cccccc;
                 }
-                &.active{
-                    color: #333333;
-                }
             }
         }
-        a{
+        button{
             color: inherit;
+            font: 700 14px/normal $font;
         }
     }
 }
