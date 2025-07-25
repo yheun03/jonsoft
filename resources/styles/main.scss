@@ -29,10 +29,10 @@
 
 // about 페이지
 .summary{
-    margin-block: 60px 80px;
-    &::after{
-        content: "WORK@AI";
-    }
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    background: url($url + 'images/summary/background.png') right bottom / 800px no-repeat;
     ul{ 
         display: flex;
         justify-content: flex-end;

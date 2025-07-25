@@ -96,4 +96,11 @@
             }
         }
     }
+    &.set{
+        &-bg-bottom{
+            img{
+                object-position: bottom;
+            }
+        }
+    }
 }
