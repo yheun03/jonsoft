@@ -20,7 +20,7 @@ header{
         height: fit-content;
         li{
             display: inline;
-            font: 700 14px/normal $font;
+            font: 600 14px/normal $font;
             color: #cccccc;
             &.active{
                 color: #333333;
@@ -43,7 +43,7 @@ header{
         }
         button{
             color: inherit;
-            font: 700 14px/normal $font;
+            font: 600 14px/normal $font;
         }
     }
 }

@@ -80,12 +80,12 @@
             text-align: center;
         }
         .title{
-            font: 700 18px/normal $font;
+            font: 600 18px/normal $font;
             color: #979797;
             margin-block: 8px 12px;
         }
         .dscpt{
-            font: 700 36px/normal $font;
+            font: 600 36px/normal $font;
             color: #000000;
         }
         .eyebrow{
@@ -116,7 +116,7 @@
             font-weight: 700;
         }
     }
-    .item-wrap{
+    .list-awards{
         $item-width: 1100px;
         $item-height: 460px;
         $item-radius: 20px;
@@ -153,7 +153,7 @@
                 width: 220px;
             }
             p {
-                font: 700 24px/140% $font;
+                font: 600 24px/140% $font;
                 text-align: left;
             }
             .thumbnail {
@@ -171,6 +171,94 @@
                 }
             }
         }
+    }
+}
+
+.feature{
+    $shadow: 0px 10px 80px 90px;
+    .list-feature{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 367/470;
+            background: url($url + "images/feature/feature-01.png") center/cover no-repeat;
+            cursor: pointer;
+
+            &-02{
+                background-image: url($url + "images/feature/feature-02.png");
+                .front{
+                    background-color: #C8C5B9;
+                    box-shadow: $shadow #C8C5B9;
+                }
+            }
+
+            &-03{
+                background-image: url($url + "images/feature/feature-03.png");
+                .front{
+                    background-color: #46628A;
+                    box-shadow: $shadow #46628A;
+                }
+            }
+            &:hover{
+                .back{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .front{
+        position: relative;
+        padding: 40px 32px 0;
+        width: 100%;
+        background-color: #A2CCFF;
+        box-shadow: $shadow #A2CCFF;
+        .title{
+            font: 600 24px/normal $font;
+            color: #ffffff;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 32px;
+            bottom: -42px;
+            width: 26px;
+            height: 26px;
+            background: url($url + 'icons/26/ic-circle-arrow.svg') left bottom / 26px no-repeat;
+        }
+    }
+
+    .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(27px);
+        padding: 30px 20px 20px;
+        li{
+            position: relative;
+            font: 600 16px/21px $font;
+            color: #ffffff;
+            margin-bottom: 14px;
+            padding-left: 24px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 8.5px;
+                left: 10px;
+                width: 4px;
+                height: 4px;
+                background-color: #ffffff;
+                border-radius: 50%;
+            }
+        }
+
     }
 }
 
@@ -233,7 +321,7 @@
             overflow: hidden;
         }
         a{
-            font: 700 16px/normal $font;
+            font: 600 16px/normal $font;
             color: #555555;
             margin-top: 20px;
             display: flex;
@@ -253,7 +341,7 @@
     padding-block: 120px;
 
     h3{
-        font: 700 32px/40px $font;
+        font: 600 32px/40px $font;
         color: #ffffff;
     }
     .list-case{
@@ -268,11 +356,11 @@
         overflow: hidden;
         cursor: pointer;
         .title{
-            font: 700 24px/normal $font;
+            font: 600 24px/normal $font;
             color: #ffffff;
         }
         .dscpt{
-            font: 700 18px/26px $font;
+            font: 600 18px/26px $font;
             color: rgba(255, 255, 255, .8);
             margin-top: 24px;
             li::before{
@@ -306,7 +394,7 @@
     margin-block: 80px;
 
     h2{
-        font: 700 42px/52px $font;
+        font: 600 42px/52px $font;
         color: #000000;
         margin-bottom: 60px;
         text-transform: uppercase;
@@ -319,7 +407,7 @@
             margin: 80px auto 0;
             justify-content: center;
             li{
-                font: 700 20px/normal $font;
+                font: 600 20px/normal $font;
                 color: #000000;
                 padding-inline: 4px;
                 padding-bottom: 14px;
@@ -347,7 +435,7 @@
             repeat(3, 1fr);
             gap: 90px;
             dt{
-                font: 700 19px/27px $font;
+                font: 600 19px/27px $font;
                 color: #b3b3b3;
                 margin-bottom: 25px;
             }
@@ -460,7 +548,7 @@
 .philosophy{
     margin-block: 210px 48px;
     h3{
-        font: 700 25px/normal $font;
+        font: 600 25px/normal $font;
         color: #000000;
     }
     .list-philosophy{
@@ -481,7 +569,7 @@
                 color: #9b9b9b;
             }
             dt{
-                font: 700 24px/normal $font;
+                font: 600 24px/normal $font;
                 color: #000000;
                 margin-top: 16px;
             }
