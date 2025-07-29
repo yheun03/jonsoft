@@ -303,6 +303,43 @@
     }
 }
 
+.history{
+    background-color: #1D1D1D;
+    color: #ffffff;
+    padding-top: 80px;
+    .title{
+        font: 700 32px/46px $font;
+        color: #ffffff;
+        text-align: center;
+    }
+    &-timeline{
+        margin-top: 60px;
+        & > li{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            strong{
+                font: 600 28px/normal $font;
+                color: #797979;
+            }
+        }
+    }
+    .month{
+        width: 550px;
+        font: 500 16px/normal $font;
+        color: #ffffff;
+        margin-bottom: 20px;
+
+        &-label{
+            color: #797979;
+        }
+
+        ul{
+            margin-top: 5px;
+        }
+    }
+}
+
 // business 패아자
 .solution{
     margin-block: 60px 80px;

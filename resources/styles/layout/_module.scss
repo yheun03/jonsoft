@@ -4,6 +4,9 @@
 .module-text{
     height: unset;
     margin-block: 80px 60px;
+    .wrap{
+        padding-block: unset;
+    }
     .title{
         font: 600 30px/150% $font;
         color: #000000;

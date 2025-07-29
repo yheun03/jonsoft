@@ -1,0 +1,48 @@
+{
+    "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
+
+    
+    "company": {
+        "logo": {
+            "src": "./resources/logos/logo.svg",
+            "alt": {
+                "ko": "조앤소프트의 로고입니다.",
+                "en": "The English CI of JO&SOFT"
+            }
+        },
+        "address": {
+            "ko": "(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554",
+            "en": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea"
+        },
+        "info": {
+            "ko": "회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272",
+            "en": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272"
+        }
+    },
+    "inobiz": {
+        "src": {
+            "ko": "./resources/logos/inobiz.png",
+            "en": "./resources/logos/inobiz-en.png"
+        },
+        "alt": {
+            "ko": "혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다",
+            "en": "This is the Innoviz logo that has obtained and specified the Innoviz rating, an innovative small and medium-sized company."
+        }
+    },
+    "banner": {
+        "ask": {
+            "title":{
+                "ko": "프로젝트 문의하기",
+                "en": "Inquire about a project"
+            },
+            "dscpt":{
+                "ko": "조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.",
+                "en": "JO&SOFT proposes building a better software environment.<br/>Experience innovative business growth."
+            },
+            "button":{
+                "ko": "프로젝트 문의하기",
+                "en": "Inquire about a project"
+            }
+        }
+    }
+}

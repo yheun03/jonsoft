@@ -1,0 +1,31 @@
+{
+    "banner": {
+        "main": {
+            "title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
+            "dscpt": {
+                "ko": "우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.",
+                "en": "The software and services we created contribute<br/>to the growth of customer business."
+            }
+        },
+        "text": {
+            "title": {
+                "ko": "시스템 컨설팅부터<br/>소프트웨어 구축까지",
+                "en": "From system consulting to building <br/> software"
+            },
+            "dscpt": {
+                "ko": "우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.",
+                "en": "It diagnoses a company's business systems in a variety of areas, including technology consulting, software development, online marketing consulting and platform operations, building smart factory and manufacturing AI systems, and process automation, and providing optimal digital transformation solutions for sustainable growth."
+            }
+        },
+        "goto": {
+            "title": {
+                "ko": "고객 비즈니스 성장을 위한<br/>최적의 파트너",
+                "en": "-"
+            },
+            "button": {
+                "ko": "사업영역 자세히 보기",
+                "en": "-"
+            }
+        }
+    }
+}
