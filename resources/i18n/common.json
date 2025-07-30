@@ -1,6 +1,18 @@
 {
     "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
 
+    "customer":{
+        "hanjinkal": {
+            "src":{ 
+                "ko" :"./resources/logos/partners/hanjinkal.png",
+                "en" :"./resources/logos/partners/en/hanjinkal.png"
+            },
+            "alt":{ 
+                "ko" :"",
+                "en" :""
+            }
+        }
+    },
     
     "company": {
         "logo": {

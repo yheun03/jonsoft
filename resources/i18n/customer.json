@@ -1,0 +1,14 @@
+{
+    "customer":{
+        "hanjinkal": {
+            "src":{ 
+                "ko" :"./resources/logos/partners/hanjinkal.png",
+                "en" :"./resources/logos/partners/en/hanjinkal.png"
+            },
+            "alt":{ 
+                "ko" :"",
+                "en" :""
+            }
+        }
+    }
+}
