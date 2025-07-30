@@ -1,0 +1,38 @@
+{
+	"common": {
+		"company": {
+			"address": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea",
+			"info": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272",
+			"copy": "© 2025 JO&SOFT. All Rights Reserved."
+		},
+		"inobiz": {
+			"src": "./resources/logos/inobiz-en.png",
+			"alt": "革新型中小企業であるイノビーズの等級を取得して明示したイノビーズロゴです。"
+		}
+	},
+	"index": {
+		"banner-main": {
+			"title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
+			"title-sub": "私たちが作ったソフトウェアとサービスが顧客ビジネスの成長に寄与します。"
+		},
+		"banner-text": {
+			"title": "システムコンサルティングから<br/>ソフトウェア構築まで",
+			"dscpt": "Technologyコンサルティング、ソフトウェア開発、オンラインマーケティングコンサルティングおよびプラットフォーム運営、スマートファクトリーおよび製造AIシステム構築、プロセス自動化など様々な分野で企業のビジネスシステムを診断し、持続可能な成長のための最適なデジタル転換ソリューションを提供します。"
+		},
+		"banner-goto": {
+			"title": "顧客ビジネスを成長させるための最適なパートナー",
+			"button": "事業領域を詳しく見る"
+		},
+		"banner-ask": {
+			"title": "プロジェクトに関するお問い合わせ",
+			"dscpt": "JO&SOFTは、より良いソフトウェア環境の構築を提案します。<br/> 革新的なビジネス成長をご体験ください。",
+			"button": "プロジェクトに関するお問い合わせ"
+		}
+	},
+    "customer": {
+        "hanjinkal" : {
+            "logo": "./resources/logos/partners/en/hanjinkal.png",
+            "alt": "Hanjin KALの英文CIです。"
+        }
+    }
+}

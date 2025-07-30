@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+.gnb{
+    display: flex;
+    height: fit-content;
+    margin-inline: auto 100px;
+    li{
+        position: relative;
+        display: inline;
+        font: 600 17px/normal $font;
+        color: #666666;
+        &:hover{
+            color: #000000;
+            opacity: unset;
+        }
+        &.active{
+            color: #000000;
+        }
+        & + li{
+            margin-left: 30px;
+        }
+    }
+    a{
+        color: inherit;
+        position: relative;
+        &::after{
+            // 사용성 개선을 위한 가상요소
+            content: "";
+            position: absolute;
+            top: -27px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: calc(100% + 54px);
+        }
+    }
+
+    footer &{
+        li{
+            font: 400 14px/normal $font;
+            color: #909090;
+            & + li{
+                margin-left: 33px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: -17px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 11px;
+                    background-color: #dadada;
+                }
+            }
+        }
+    }
+}

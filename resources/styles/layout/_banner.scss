@@ -1,0 +1,106 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 620px;
+    .wrap{
+        padding-block: 130px 80px;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    h2{
+        font: 600 50px/normal $font;
+        color: #ffffff;
+    }
+    h3{
+        font: 600 36px/49px $font;
+        color: #ffffff;
+        align-self: flex-end;
+        text-align: right;
+    }
+    strong{
+        text-align: center;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+    &.type{
+        &-ask{
+            height: auto;
+            background: url($url + 'images/banner/ask.png') right/cover no-repeat;
+            .wrap{
+                padding-block: 160px;
+            }
+            .title{
+                font: 600 32px/40px $font;
+                color: #000000;
+                margin-bottom: 10px;
+                letter-spacing: unset;
+            }
+            p{
+                font: 400 18px/25px $font;
+                letter-spacing: -0.05em;
+                color: #848484;
+            }
+            .btn{
+                margin-top: 40px;
+            }
+        }
+        &-title{
+            height: auto;
+            margin-block: 60px 80px;
+            .wrap{
+                padding: unset;
+                gap: 50px;
+                max-width: 864px;
+            }
+            .title{
+                font: 600 46px/60px $font;
+                color: #343434;
+            }
+            p{
+                font: 400 24px/36px $font;
+                color: #292e32;
+                text-align: center;
+                word-break: keep-all;
+            }
+        }
+        &-goto{
+            height: 420px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                z-index: -1;
+            }
+            .wrap{
+                padding-block: 90px;
+                align-items: center;
+            }
+            .title{
+                font: 600 46px/normal $font;
+                color: #ffffff;
+                margin-bottom: 70px;
+            }
+        }
+    }
+    &.set{
+        &-bg-bottom{
+            img{
+                object-position: bottom;
+            }
+        }
+    }
+}
