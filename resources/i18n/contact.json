@@ -1,0 +1,165 @@
+{
+    "banner": {
+        "title": {
+            "ko": "Contact",
+            "en": "Contact",
+            "vi": "Liên hệ"
+        }
+    },
+    "navigation": {
+        "location": {
+            "ko": "오시는 길",
+            "en": "Location",
+            "vi": "Đường đi"
+        },
+        "recruitment": {
+            "ko": "채용",
+            "en": "Recruitment",
+            "vi": "Tuyển dụng"
+        }
+    },
+    "contact": {
+        "title": {
+            "ko": "Contact",
+            "en": "Contact",
+            "vi": "Liên hệ"
+        },
+        "headquarters": {
+            "ko": "본사 연락처",
+            "en": "Headquarters Contact",
+            "vi": "Liên hệ Trụ sở chính"
+        },
+        "email": {
+            "ko": "이메일",
+            "en": "Email",
+            "vi": "Email"
+        },
+        "ceo": {
+            "ko": "대표이사",
+            "en": "CEO",
+            "vi": "CEO"
+        },
+        "management": {
+            "ko": "경영지원",
+            "en": "Management Support",
+            "vi": "Hỗ trợ Quản lý"
+        },
+        "phone": {
+            "ko": "T",
+            "en": "T",
+            "vi": "T"
+        },
+        "fax": {
+            "ko": "F",
+            "en": "F",
+            "vi": "F"
+        },
+        "phone_number": {
+            "ko": "031-717-8816",
+            "en": "031-717-8816",
+            "vi": "031-717-8816"
+        },
+        "fax_number": {
+            "ko": "031-718-8817",
+            "en": "031-718-8817",
+            "vi": "031-718-8817"
+        },
+        "ceo_email": {
+            "ko": "cho@jonsoft.co.kr",
+            "en": "cho@jonsoft.co.kr",
+            "vi": "cho@jonsoft.co.kr"
+        },
+        "management_email": {
+            "ko": "hk.kim@jonsoft.co.kr",
+            "en": "hk.kim@jonsoft.co.kr",
+            "vi": "hk.kim@jonsoft.co.kr"
+        }
+    },
+    "location": {
+        "title": {
+            "ko": "판교 본사",
+            "en": "Pangyo Headquarters",
+            "vi": "Trụ sở chính Pangyo"
+        },
+        "address": {
+            "ko": "경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호",
+            "en": "602, Parkview Tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do",
+            "vi": "602, Tòa nhà Parkview, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do"
+        }
+    },
+    "recruitment": {
+        "title": {
+            "ko": "채용",
+            "en": "Recruitment",
+            "vi": "Tuyển dụng"
+        },
+        "description": {
+            "ko": "조앤소프트와 함께 성장할 인재를 찾고 있습니다.",
+            "en": "We are looking for talent to grow with JO&SOFT.",
+            "vi": "Chúng tôi đang tìm kiếm nhân tài để phát triển cùng JO&SOFT."
+        },
+        "positions": {
+            "ko": "채용 포지션",
+            "en": "Open Positions",
+            "vi": "Vị trí tuyển dụng"
+        },
+        "requirements": {
+            "ko": "지원 자격",
+            "en": "Requirements",
+            "vi": "Yêu cầu"
+        },
+        "benefits": {
+            "ko": "복리후생",
+            "en": "Benefits",
+            "vi": "Phúc lợi"
+        },
+        "apply": {
+            "ko": "지원하기",
+            "en": "Apply Now",
+            "vi": "Ứng tuyển ngay"
+        }
+    },
+    "philosophy": {
+        "title": {
+            "ko": "조앤소프트의 철학",
+            "en": "JO&SOFT Philosophy",
+            "vi": "Triết lý JO&SOFT"
+        },
+        "innovation": {
+            "title": {
+                "ko": "혁신",
+                "en": "Innovation",
+                "vi": "Đổi mới"
+            },
+            "description": {
+                "ko": "최신 기술을 활용하여 고객의 비즈니스에 혁신을 가져옵니다.",
+                "en": "We bring innovation to our customers' businesses using the latest technology.",
+                "vi": "Chúng tôi mang lại sự đổi mới cho doanh nghiệp của khách hàng bằng công nghệ mới nhất."
+            }
+        },
+        "quality": {
+            "title": {
+                "ko": "품질",
+                "en": "Quality",
+                "vi": "Chất lượng"
+            },
+            "description": {
+                "ko": "최고의 품질로 고객에게 가치를 제공합니다.",
+                "en": "We provide value to our customers with the highest quality.",
+                "vi": "Chúng tôi cung cấp giá trị cho khách hàng với chất lượng cao nhất."
+            }
+        },
+        "partnership": {
+            "title": {
+                "ko": "파트너십",
+                "en": "Partnership",
+                "vi": "Đối tác"
+            },
+            "description": {
+                "ko": "고객과의 장기적인 파트너십을 통해 함께 성장합니다.",
+                "en": "We grow together through long-term partnerships with our customers.",
+                "vi": "Chúng tôi cùng phát triển thông qua quan hệ đối tác lâu dài với khách hàng."
+            }
+        }
+    }
+} 

@@ -1,0 +1,12 @@
+{
+  "name": "jonsoft",
+  "version": "1.0.0",
+  "description": "JO&SOFT Website",
+  "scripts": {
+    "sass": "sass resources/styles/main.scss resources/styles/main.min.css --style=compressed --source-map --watch",
+    "sass:build": "sass resources/styles/main.scss resources/styles/main.min.css --style=compressed --source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+} 

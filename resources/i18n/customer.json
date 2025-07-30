@@ -1,14 +1,241 @@
 {
-    "customer":{
-        "hanjinkal": {
-            "src":{ 
-                "ko" :"./resources/logos/partners/hanjinkal.png",
-                "en" :"./resources/logos/partners/en/hanjinkal.png"
+    "banner": {
+        "title": {
+            "ko": "고객 & 파트너",
+            "en": "Customers & Partners",
+            "vi": "Khách hàng & Đối tác"
+        }
+    },
+    "customers": {
+        "title": {
+            "ko": "OUR CUSTOMER",
+            "en": "OUR CUSTOMER",
+            "vi": "KHÁCH HÀNG CỦA CHÚNG TÔI"
+        },
+        "description": {
+            "ko": "조앤소프트와 함께 성장한 고객사들을 소개합니다.",
+            "en": "We introduce customers who have grown with JO&SOFT.",
+            "vi": "Chúng tôi giới thiệu các khách hàng đã phát triển cùng JO&SOFT."
+        },
+        "companies": {
+            "samsung": {
+                "ko": "삼성전기",
+                "en": "Samsung Electro-Mechanics",
+                "vi": "Samsung Electro-Mechanics"
             },
-            "alt":{ 
-                "ko" :"",
-                "en" :""
+            "kt": {
+                "ko": "KT",
+                "en": "KT",
+                "vi": "KT"
+            },
+            "kt_telecop": {
+                "ko": "KT텔레캅",
+                "en": "KT Telecop",
+                "vi": "KT Telecop"
+            },
+            "gs_retail": {
+                "ko": "GS리테일",
+                "en": "GS Retail",
+                "vi": "GS Retail"
+            },
+            "hanwha": {
+                "ko": "한화호텔앤리조트",
+                "en": "Hanwha Hotel & Resort",
+                "vi": "Hanwha Hotel & Resort"
+            },
+            "cj_logistics": {
+                "ko": "CJ대한통운",
+                "en": "CJ Logistics",
+                "vi": "CJ Logistics"
+            },
+            "osstem": {
+                "ko": "오스템임플란트",
+                "en": "Osstem Implant",
+                "vi": "Osstem Implant"
+            },
+            "incheon_university": {
+                "ko": "인천대학교",
+                "en": "Incheon National University",
+                "vi": "Đại học Quốc gia Incheon"
+            },
+            "lg_uplus": {
+                "ko": "LG U+",
+                "en": "LG U+",
+                "vi": "LG U+"
+            },
+            "paris_croissant": {
+                "ko": "파리크라상",
+                "en": "Paris Croissant",
+                "vi": "Paris Croissant"
+            },
+            "tairim": {
+                "ko": "태림패키징",
+                "en": "Tairim Packaging",
+                "vi": "Tairim Packaging"
+            },
+            "samhwa": {
+                "ko": "삼화페인트",
+                "en": "Samhwa Paint",
+                "vi": "Samhwa Paint"
+            },
+            "sk_hynix": {
+                "ko": "SK하이닉스",
+                "en": "SK Hynix",
+                "vi": "SK Hynix"
+            },
+            "daeyang": {
+                "ko": "대양그룹",
+                "en": "Daeyang Group",
+                "vi": "Daeyang Group"
+            },
+            "kyungdong": {
+                "ko": "경동나비엔트",
+                "en": "Kyungdong Naviant",
+                "vi": "Kyungdong Naviant"
+            },
+            "kleannara": {
+                "ko": "클린나라",
+                "en": "Kleannara",
+                "vi": "Kleannara"
+            },
+            "skbox": {
+                "ko": "3SK박스",
+                "en": "3SK Box",
+                "vi": "3SK Box"
+            },
+            "dubo": {
+                "ko": "두보산업",
+                "en": "Dubo Industry",
+                "vi": "Dubo Industry"
+            },
+            "jongrui": {
+                "ko": "종류코리아",
+                "en": "Jongrui Korea",
+                "vi": "Jongrui Korea"
+            },
+            "k_package": {
+                "ko": "K패키지",
+                "en": "K Package",
+                "vi": "K Package"
             }
+        }
+    },
+    "partners": {
+        "title": {
+            "ko": "OUR PARTNER",
+            "en": "OUR PARTNER",
+            "vi": "ĐỐI TÁC CỦA CHÚNG TÔI"
+        },
+        "description": {
+            "ko": "조앤소프트와 함께하는 파트너사들을 소개합니다.",
+            "en": "We introduce partners who work with JO&SOFT.",
+            "vi": "Chúng tôi giới thiệu các đối tác làm việc với JO&SOFT."
+        },
+        "companies": {
+            "ey_hanyoung": {
+                "ko": "EY한영",
+                "en": "EY HanYoung",
+                "vi": "EY HanYoung"
+            },
+            "obzen": {
+                "ko": "오브젠",
+                "en": "Obzen",
+                "vi": "Obzen"
+            },
+            "edentans": {
+                "ko": "에덴탄스",
+                "en": "EdenTans",
+                "vi": "EdenTans"
+            },
+            "i_on": {
+                "ko": "아이온커뮤니케이션",
+                "en": "I-on Communications",
+                "vi": "I-on Communications"
+            },
+            "gs_itm": {
+                "ko": "GS ITM",
+                "en": "GS ITM",
+                "vi": "GS ITM"
+            },
+            "kohken": {
+                "ko": "코켄",
+                "en": "Kohken",
+                "vi": "Kohken"
+            },
+            "accenture": {
+                "ko": "액센츄어",
+                "en": "Accenture",
+                "vi": "Accenture"
+            },
+            "concentrix": {
+                "ko": "컨센트릭스",
+                "en": "Concentrix",
+                "vi": "Concentrix"
+            },
+            "naver_cloud": {
+                "ko": "네이버클라우드",
+                "en": "Naver Cloud",
+                "vi": "Naver Cloud"
+            },
+            "batim": {
+                "ko": "바팀",
+                "en": "Batim",
+                "vi": "Batim"
+            },
+            "humuson": {
+                "ko": "휴머스온",
+                "en": "HumusOn",
+                "vi": "HumusOn"
+            },
+            "ssangyong": {
+                "ko": "쌍용정보통신",
+                "en": "Ssangyong Infocom",
+                "vi": "Ssangyong Infocom"
+            },
+            "sk_cnc": {
+                "ko": "SK CNC",
+                "en": "SK CNC",
+                "vi": "SK CNC"
+            },
+            "lts_group": {
+                "ko": "LTS그룹",
+                "en": "LTS Group",
+                "vi": "LTS Group"
+            },
+            "altair": {
+                "ko": "알테어",
+                "en": "Altair",
+                "vi": "Altair"
+            },
+            "lg_cns": {
+                "ko": "LG CNS",
+                "en": "LG CNS",
+                "vi": "LG CNS"
+            }
+        }
+    },
+    "testimonials": {
+        "title": {
+            "ko": "고객 후기",
+            "en": "Customer Testimonials",
+            "vi": "Đánh giá của khách hàng"
+        },
+        "description": {
+            "ko": "조앤소프트와 함께한 고객들의 생생한 후기를 확인해보세요.",
+            "en": "Check out the vivid testimonials from customers who worked with JO&SOFT.",
+            "vi": "Xem các đánh giá sinh động từ khách hàng đã làm việc với JO&SOFT."
+        }
+    },
+    "case_studies": {
+        "title": {
+            "ko": "성공 사례",
+            "en": "Success Cases",
+            "vi": "Trường hợp thành công"
+        },
+        "description": {
+            "ko": "조앤소프트 솔루션으로 성공한 고객들의 사례를 소개합니다.",
+            "en": "We introduce cases of customers who succeeded with JO&SOFT solutions.",
+            "vi": "Chúng tôi giới thiệu các trường hợp của khách hàng thành công với giải pháp JO&SOFT."
         }
     }
 }

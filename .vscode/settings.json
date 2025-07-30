@@ -1,0 +1,24 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/resources/styles"
+        }
+    ],
+    "liveSassCompile.settings.autoprefix": true,
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.includeItems": [
+        "/resources/styles/main.scss"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.workspaceRoot": "./resources/styles",
+    "liveSassCompile.settings.autosave": true,
+    "liveSassCompile.settings.autosaveDelay": 1000,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.showOutputWindow": true,
+    "liveSassCompile.settings.showOutputWindowWhen": "Information"
+} 

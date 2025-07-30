@@ -1,0 +1,283 @@
+{
+    "banner": {
+        "title": {
+            "ko": "솔루션",
+            "en": "Solutions",
+            "vi": "Giải pháp"
+        },
+        "subtitle": {
+            "ko": "솔루션",
+            "en": "Solutions",
+            "vi": "Giải pháp"
+        }
+    },
+    "overview": {
+        "title": {
+            "ko": "조앤소프트는 주문관리시스템(OMS), 생산관리시스템(MES), 공장에너지관리시스템(FEMS), 고객관계관리(CRM), 공급망관리(SCM), 생산계획시스템(APS), 창고제어시스템(WCS), 자동배차관리시스템(TMS) 및 AI솔루션(work@AI)",
+            "en": "JO&SOFT provides Order Management System (OMS), Manufacturing Execution System (MES), Factory Energy Management System (FEMS), Customer Relationship Management (CRM), Supply Chain Management (SCM), Advanced Planning and Scheduling (APS), Warehouse Control System (WCS), Transportation Management System (TMS) and AI Solutions (work@AI)",
+            "vi": "JO&SOFT cung cấp Hệ thống Quản lý Đơn hàng (OMS), Hệ thống Thực thi Sản xuất (MES), Hệ thống Quản lý Năng lượng Nhà máy (FEMS), Quản lý Quan hệ Khách hàng (CRM), Quản lý Chuỗi cung ứng (SCM), Lập kế hoạch và Lập lịch trình Nâng cao (APS), Hệ thống Điều khiển Kho (WCS), Hệ thống Quản lý Vận tải (TMS) và Giải pháp AI (work@AI)"
+        },
+        "description": {
+            "ko": "그 밖에 PLM, WMS, ESG 생태계공장, DPP, 빅데이터 분석 / 모니터링 시스템 등 다양한 고객 맞춤형 솔루션을 보유하고 있습니다.",
+            "en": "In addition, we have various customer-tailored solutions including PLM, WMS, ESG ecosystem factory, DPP, big data analysis/monitoring systems, and more.",
+            "vi": "Ngoài ra, chúng tôi có các giải pháp tùy chỉnh cho khách hàng bao gồm PLM, WMS, nhà máy hệ sinh thái ESG, DPP, hệ thống phân tích/giám sát dữ liệu lớn và nhiều hơn nữa."
+        }
+    },
+    "solutions": {
+        "aps": {
+            "title": {
+                "ko": "APS 솔루션",
+                "en": "APS Solution",
+                "vi": "Giải pháp APS"
+            },
+            "subtitle": {
+                "ko": "Advanced Planning and Scheduling",
+                "en": "Advanced Planning and Scheduling",
+                "vi": "Lập kế hoạch và Lập lịch trình Nâng cao"
+            },
+            "badge": {
+                "ko": "생산계획시스템",
+                "en": "Production Planning System",
+                "vi": "Hệ thống Lập kế hoạch Sản xuất"
+            },
+            "description": {
+                "ko": "다품종 소량생산 제조기업의 까다로운 생산계획수립 업무를 거래처 납품일, 설비의 생산Capa, 생산공정의 흐름에 따라 자동 생산계획을 수립하고 현장 POP시스템을 통해 Paperless 환경의 생산지시를 수행합니다.",
+                "en": "We establish automatic production plans based on customer delivery dates, equipment production capacity, and production process flow for the demanding production planning tasks of multi-variety small-batch manufacturing companies, and execute production instructions in a paperless environment through on-site POP systems.",
+                "vi": "Chúng tôi thiết lập kế hoạch sản xuất tự động dựa trên ngày giao hàng của khách hàng, công suất sản xuất thiết bị và luồng quy trình sản xuất cho các nhiệm vụ lập kế hoạch sản xuất đòi hỏi của các công ty sản xuất đa chủng loại sản lượng nhỏ, và thực hiện hướng dẫn sản xuất trong môi trường không giấy thông qua hệ thống POP tại chỗ."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "oms": {
+            "title": {
+                "ko": "OMS 솔루션",
+                "en": "OMS Solution",
+                "vi": "Giải pháp OMS"
+            },
+            "subtitle": {
+                "ko": "Order Management System",
+                "en": "Order Management System",
+                "vi": "Hệ thống Quản lý Đơn hàng"
+            },
+            "badge": {
+                "ko": "주문관리시스템",
+                "en": "Order Management System",
+                "vi": "Hệ thống Quản lý Đơn hàng"
+            },
+            "description": {
+                "ko": "OMS는 Fax, 이메일 등 기존 아날로그 주문서를 수신하여 매일 반복하여 입력하는 업무를 OCR과 AI 기술을 활용하여 신속하게 처리하고 휴먼 리소스의 업무를 혁신적으로 줄입니다.",
+                "en": "OMS receives existing analog orders such as fax and email, and quickly processes the daily repetitive input work using OCR and AI technology, innovatively reducing human resource work.",
+                "vi": "OMS nhận các đơn hàng tương tự hiện có như fax và email, và xử lý nhanh chóng công việc nhập liệu lặp lại hàng ngày bằng công nghệ OCR và AI, giảm thiểu một cách sáng tạo công việc của nguồn nhân lực."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "fems": {
+            "title": {
+                "ko": "FEMS 솔루션",
+                "en": "FEMS Solution",
+                "vi": "Giải pháp FEMS"
+            },
+            "subtitle": {
+                "ko": "Factory Energy Management System",
+                "en": "Factory Energy Management System",
+                "vi": "Hệ thống Quản lý Năng lượng Nhà máy"
+            },
+            "badge": {
+                "ko": "공장에너지관리시스템",
+                "en": "Factory Energy Management System",
+                "vi": "Hệ thống Quản lý Năng lượng Nhà máy"
+            },
+            "description": {
+                "ko": "공장의 에너지 사용량을 실시간으로 모니터링하고 분석하여 에너지 효율을 최적화하는 시스템입니다.",
+                "en": "A system that monitors and analyzes factory energy usage in real-time to optimize energy efficiency.",
+                "vi": "Hệ thống giám sát và phân tích việc sử dụng năng lượng nhà máy theo thời gian thực để tối ưu hóa hiệu quả năng lượng."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "mes": {
+            "title": {
+                "ko": "MES 솔루션",
+                "en": "MES Solution",
+                "vi": "Giải pháp MES"
+            },
+            "subtitle": {
+                "ko": "Manufacturing Execution System",
+                "en": "Manufacturing Execution System",
+                "vi": "Hệ thống Thực thi Sản xuất"
+            },
+            "badge": {
+                "ko": "생산관리시스템",
+                "en": "Manufacturing Execution System",
+                "vi": "Hệ thống Thực thi Sản xuất"
+            },
+            "description": {
+                "ko": "생산 현장의 실시간 데이터를 수집하고 분석하여 생산 효율성을 향상시키는 시스템입니다.",
+                "en": "A system that collects and analyzes real-time data from production sites to improve production efficiency.",
+                "vi": "Hệ thống thu thập và phân tích dữ liệu thời gian thực từ các địa điểm sản xuất để cải thiện hiệu quả sản xuất."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "crm": {
+            "title": {
+                "ko": "CRM 솔루션",
+                "en": "CRM Solution",
+                "vi": "Giải pháp CRM"
+            },
+            "subtitle": {
+                "ko": "Customer Relationship Management",
+                "en": "Customer Relationship Management",
+                "vi": "Quản lý Quan hệ Khách hàng"
+            },
+            "badge": {
+                "ko": "고객관계관리",
+                "en": "Customer Relationship Management",
+                "vi": "Quản lý Quan hệ Khách hàng"
+            },
+            "description": {
+                "ko": "고객과의 관계를 체계적으로 관리하고 고객 만족도를 향상시키는 시스템입니다.",
+                "en": "A system that systematically manages customer relationships and improves customer satisfaction.",
+                "vi": "Hệ thống quản lý có hệ thống mối quan hệ với khách hàng và cải thiện sự hài lòng của khách hàng."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "scm": {
+            "title": {
+                "ko": "SCM 솔루션",
+                "en": "SCM Solution",
+                "vi": "Giải pháp SCM"
+            },
+            "subtitle": {
+                "ko": "Supply Chain Management",
+                "en": "Supply Chain Management",
+                "vi": "Quản lý Chuỗi cung ứng"
+            },
+            "badge": {
+                "ko": "공급망관리",
+                "en": "Supply Chain Management",
+                "vi": "Quản lý Chuỗi cung ứng"
+            },
+            "description": {
+                "ko": "공급망 전체를 효율적으로 관리하여 비용을 절감하고 서비스 품질을 향상시키는 시스템입니다.",
+                "en": "A system that efficiently manages the entire supply chain to reduce costs and improve service quality.",
+                "vi": "Hệ thống quản lý hiệu quả toàn bộ chuỗi cung ứng để giảm chi phí và cải thiện chất lượng dịch vụ."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "wcs": {
+            "title": {
+                "ko": "WCS 솔루션",
+                "en": "WCS Solution",
+                "vi": "Giải pháp WCS"
+            },
+            "subtitle": {
+                "ko": "Warehouse Control System",
+                "en": "Warehouse Control System",
+                "vi": "Hệ thống Điều khiển Kho"
+            },
+            "badge": {
+                "ko": "창고제어시스템",
+                "en": "Warehouse Control System",
+                "vi": "Hệ thống Điều khiển Kho"
+            },
+            "description": {
+                "ko": "창고의 자동화된 물류 시스템을 제어하고 최적화하는 시스템입니다.",
+                "en": "A system that controls and optimizes automated logistics systems in warehouses.",
+                "vi": "Hệ thống điều khiển và tối ưu hóa các hệ thống hậu cần tự động trong kho."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "tms": {
+            "title": {
+                "ko": "TMS 솔루션",
+                "en": "TMS Solution",
+                "vi": "Giải pháp TMS"
+            },
+            "subtitle": {
+                "ko": "Transportation Management System",
+                "en": "Transportation Management System",
+                "vi": "Hệ thống Quản lý Vận tải"
+            },
+            "badge": {
+                "ko": "자동배차관리시스템",
+                "en": "Transportation Management System",
+                "vi": "Hệ thống Quản lý Vận tải"
+            },
+            "description": {
+                "ko": "운송 및 배송 프로세스를 효율적으로 관리하고 최적화하는 시스템입니다.",
+                "en": "A system that efficiently manages and optimizes transportation and delivery processes.",
+                "vi": "Hệ thống quản lý và tối ưu hóa hiệu quả các quy trình vận chuyển và giao hàng."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        },
+        "ai": {
+            "title": {
+                "ko": "AI 솔루션",
+                "en": "AI Solution",
+                "vi": "Giải pháp AI"
+            },
+            "subtitle": {
+                "ko": "Artificial Intelligence",
+                "en": "Artificial Intelligence",
+                "vi": "Trí tuệ Nhân tạo"
+            },
+            "badge": {
+                "ko": "AI솔루션",
+                "en": "AI Solution",
+                "vi": "Giải pháp AI"
+            },
+            "description": {
+                "ko": "인공지능 기술을 활용하여 비즈니스 프로세스를 자동화하고 최적화하는 솔루션입니다.",
+                "en": "A solution that automates and optimizes business processes using artificial intelligence technology.",
+                "vi": "Giải pháp tự động hóa và tối ưu hóa các quy trình kinh doanh bằng công nghệ trí tuệ nhân tạo."
+            },
+            "link": {
+                "ko": "자세히 보기",
+                "en": "View Details",
+                "vi": "Xem chi tiết"
+            }
+        }
+    },
+    "success": {
+        "title": {
+            "ko": "성공 사례",
+            "en": "Success Cases",
+            "vi": "Trường hợp thành công"
+        },
+        "description": {
+            "ko": "조앤소프트와 함께한 고객들의 성공 사례를 확인해보세요.",
+            "en": "Check out the success cases of customers who worked with JO&SOFT.",
+            "vi": "Xem các trường hợp thành công của khách hàng đã làm việc với JO&SOFT."
+        }
+    }
+}

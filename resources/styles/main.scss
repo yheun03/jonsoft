@@ -1,9 +1,12 @@
 // 유틸 폴더에서 필요한 것들 import
 @use './abstracts' as *;
+@use 'sass:list';
 
 // 레이아웃 import
 @use './layout';
 @use './component';
+
+// Live Sass Compiler 테스트용 주석
 
 
 .wrap{
@@ -167,7 +170,7 @@
             // 각 item별 배경/그라디언트 반복
             @each $name, $val in $thumb-bg {
                 &.#{$name} {
-                    @include thumb-bg(nth($val, 1), nth($val, 2), nth($val, 3));
+                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
                 }
             }
         }

@@ -1,0 +1,150 @@
+// Utility classes generated from design tokens
+@use 'variables' as *;
+
+// Spacing utilities
+@each $key, $value in $spacing {
+    .p-#{$key} { padding: $value; }
+    .pt-#{$key} { padding-top: $value; }
+    .pr-#{$key} { padding-right: $value; }
+    .pb-#{$key} { padding-bottom: $value; }
+    .pl-#{$key} { padding-left: $value; }
+    .px-#{$key} { padding-left: $value; padding-right: $value; }
+    .py-#{$key} { padding-top: $value; padding-bottom: $value; }
+    
+    .m-#{$key} { margin: $value; }
+    .mt-#{$key} { margin-top: $value; }
+    .mr-#{$key} { margin-right: $value; }
+    .mb-#{$key} { margin-bottom: $value; }
+    .ml-#{$key} { margin-left: $value; }
+    .mx-#{$key} { margin-left: $value; margin-right: $value; }
+    .my-#{$key} { margin-top: $value; margin-bottom: $value; }
+}
+
+// Color utilities
+@each $color, $variants in $colors {
+    @if type-of($variants) == 'map' {
+        @each $variant, $value in $variants {
+            .text-#{$color}-#{$variant} { color: $value; }
+            .bg-#{$color}-#{$variant} { background-color: $value; }
+            .border-#{$color}-#{$variant} { border-color: $value; }
+        }
+    } @else {
+        .text-#{$color} { color: $variants; }
+        .bg-#{$color} { background-color: $variants; }
+        .border-#{$color} { border-color: $variants; }
+    }
+}
+
+// Font size utilities
+@each $key, $value in $font-sizes {
+    .text-#{$key} { font-size: $value; }
+}
+
+// Font weight utilities
+@each $key, $value in $font-weights {
+    .font-#{$key} { font-weight: $value; }
+}
+
+// Border radius utilities
+@each $key, $value in $border-radius {
+    .rounded-#{$key} { border-radius: $value; }
+}
+
+// Shadow utilities
+@each $key, $value in $shadows {
+    .shadow-#{$key} { box-shadow: $value; }
+}
+
+// Display utilities
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.d-none { display: none; }
+
+// Flex utilities
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }
+.align-center { align-items: center; }
+.align-stretch { align-items: stretch; }
+
+// Position utilities
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed { position: fixed; }
+.position-sticky { position: sticky; }
+
+// Text alignment utilities
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// Text decoration utilities
+.text-decoration-none { text-decoration: none; }
+.text-decoration-underline { text-decoration: underline; }
+.text-decoration-line-through { text-decoration: line-through; }
+
+// Overflow utilities
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+.overflow-x-auto { overflow-x: auto; }
+.overflow-y-auto { overflow-y: auto; }
+
+// Cursor utilities
+.cursor-pointer { cursor: pointer; }
+.cursor-default { cursor: default; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+// Z-index utilities
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+
+// Width and height utilities
+.w-full { width: 100%; }
+.w-auto { width: auto; }
+.h-full { height: 100%; }
+.h-auto { height: auto; }
+.min-h-screen { min-height: 100vh; }
+
+// Border utilities
+.border { border: 1px solid; }
+.border-0 { border: 0; }
+.border-t { border-top: 1px solid; }
+.border-r { border-right: 1px solid; }
+.border-b { border-bottom: 1px solid; }
+.border-l { border-left: 1px solid; }
+
+// Responsive utilities
+@include mobile {
+    .d-mobile-none { display: none; }
+    .d-mobile-block { display: block; }
+    .d-mobile-flex { display: flex; }
+}
+
+@include tablet {
+    .d-tablet-none { display: none; }
+    .d-tablet-block { display: block; }
+    .d-tablet-flex { display: flex; }
+}
+
+@include desktop {
+    .d-desktop-none { display: none; }
+    .d-desktop-block { display: block; }
+    .d-desktop-flex { display: flex; }
+} 
