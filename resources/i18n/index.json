@@ -4,27 +4,37 @@
             "title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
             "dscpt": {
                 "ko": "우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.",
-                "en": "The software and services we created contribute<br/>to the growth of customer business."
+                "en": "The software and services we created contribute<br/>to the growth of customer business.",
+                "ja": "私たちが作ったソフトウェアとサービスが<br/>お客様のビジネス成長に貢献します。",
+                "vi": "Phần mềm và dịch vụ chúng tôi tạo ra đóng góp<br/>cho sự phát triển kinh doanh của khách hàng."
             }
         },
         "text": {
             "title": {
                 "ko": "시스템 컨설팅부터<br/>소프트웨어 구축까지",
-                "en": "From system consulting to building <br/> software"
+                "en": "From system consulting to building <br/> software",
+                "ja": "システムコンサルティングから<br/>ソフトウェア構築まで",
+                "vi": "Từ tư vấn hệ thống đến<br/>xây dựng phần mềm"
             },
             "dscpt": {
-                "ko": "우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.",
-                "en": "It diagnoses a company's business systems in a variety of areas, including technology consulting, software development, online marketing consulting and platform operations, building smart factory and manufacturing AI systems, and process automation, and providing optimal digital transformation solutions for sustainable growth."
+                "ko": "Technology 컨설팅, 소프트웨어 개발, 온라인 마케팅 컨설팅 및 플랫폼 운영, 스마트 팩토리 및 제조 AI 시스템 구축, 프로세스 자동화 등 다양한 분야에서 기업의 비즈니스 시스템을 진단하고, 지속 가능한 성장을 위한 최적의 디지털 전환 솔루션을 제공합니다.",
+                "en": "It diagnoses a company's business systems in a variety of areas, including technology consulting, software development, online marketing consulting and platform operations, building smart factory and manufacturing AI systems, and process automation, and providing optimal digital transformation solutions for sustainable growth.",
+                "ja": "テクノロジーコンサルティング、ソフトウェア開発、オンラインマーケティングコンサルティングおよびプラットフォーム運営、スマートファクトリーおよび製造AIシステム構築、プロセス自動化など様々な分野で企業のビジネスシステムを診断し、持続可能な成長のための最適なデジタル変革ソリューションを提供します。",
+                "vi": "Chúng tôi chẩn đoán hệ thống kinh doanh của doanh nghiệp trong nhiều lĩnh vực khác nhau, bao gồm tư vấn công nghệ, phát triển phần mềm, tư vấn tiếp thị trực tuyến và vận hành nền tảng, xây dựng nhà máy thông minh và hệ thống AI sản xuất, tự động hóa quy trình, và cung cấp các giải pháp chuyển đổi số tối ưu cho sự phát triển bền vững."
             }
         },
         "goto": {
             "title": {
                 "ko": "고객 비즈니스 성장을 위한<br/>최적의 파트너",
-                "en": "-"
+                "en": "Optimal partner for<br/>customer business growth",
+                "ja": "お客様のビジネス成長のための<br/>最適なパートナー",
+                "vi": "Đối tác tối ưu cho<br/>sự phát triển kinh doanh của khách hàng"
             },
             "button": {
                 "ko": "사업영역 자세히 보기",
-                "en": "-"
+                "en": "View business areas in detail",
+                "ja": "事業分野を詳しく見る",
+                "vi": "Xem chi tiết các lĩnh vực kinh doanh"
             }
         }
     }

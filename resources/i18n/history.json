@@ -1,116 +1,180 @@
 {
+    "banner": {
+        "title": {
+            "ko": "연혁",
+            "en": "History",
+            "ja": "沿革",
+            "vi": "Lịch sử"
+        },
+        "description": {
+            "ko": "조앤소프트의 성장 과정과 주요 프로젝트 연혁을 확인하세요.",
+            "en": "Check out JO&SOFT's growth process and major project history.",
+            "ja": "JO&SOFTの成長過程と主要プロジェクトの沿革をご確認ください。",
+            "vi": "Xem quá trình phát triển và lịch sử dự án chính của JO&SOFT."
+        }
+    },
     "history": {
         "2025": {
             "07": {
                 "ko": "동경판지 제조 설비정보 자동수집을 통한 스마트공장 MES시스템 중간1단계 구축",
-                "en": "-"
+                "en": "Smart Factory MES System Phase 1 Construction through Automatic Collection of Manufacturing Equipment Information at Dongkyung Paper",
+                "ja": "東京製紙製造設備情報自動収集によるスマートファクトリーMESシステム中間1段階構築",
+                "vi": "Xây dựng Hệ thống MES Nhà máy thông minh Giai đoạn 1 thông qua Thu thập thông tin thiết bị sản xuất tự động tại Dongkyung Paper"
             },
             "06": {
                 "ko": "대중소상생형(삼성) 스마트공장 구축(고도화) 사업 수주",
-                "en": "-"
+                "en": "Awarded Large-Small Business Cooperation (Samsung) Smart Factory Construction (Enhancement) Project",
+                "ja": "大中小共生型（サムスン）スマートファクトリー構築（高度化）事業受注",
+                "vi": "Được trao Dự án Xây dựng Nhà máy thông minh Hợp tác Doanh nghiệp lớn-nhỏ (Samsung) (Nâng cao)"
             },
             "04": {
                 "ko": "종루이코리아 이차전지 제조 MES 시스템 구축",
-                "en": "-"
+                "en": "Construction of Secondary Battery Manufacturing MES System for Jongrui Korea",
+                "ja": "鐘類コリア二次電池製造MESシステム構築",
+                "vi": "Xây dựng Hệ thống MES Sản xuất Pin thứ cấp cho Jongrui Korea"
             },
             "01": {
                 "ko": "경동나비엔 Partner Portal 시스템 구축사업 수주",
-                "en": "-"
+                "en": "Awarded Kyungdong Naviant Partner Portal System Construction Project",
+                "ja": "京東ナビアントパートナーポータルシステム構築事業受注",
+                "vi": "Được trao Dự án Xây dựng Hệ thống Portal Đối tác Kyungdong Naviant"
             }
         },
         "2024": {
             "10": {
                 "02": {
                     "ko": "태림포장 구미공장 원지 스마트물류관리 구축사업 수주",
-                    "en": "-"
+                    "en": "Awarded Tairim Packaging Gumi Factory Raw Material Smart Logistics Management Construction Project",
+                    "ja": "テイリム包装亀尾工場原紙スマート物流管理構築事業受注",
+                    "vi": "Được trao Dự án Xây dựng Quản lý Logistics thông minh Nguyên liệu Nhà máy Gumi Tairim Packaging"
                 },
                 "01": {
                     "ko": "남서울대학교 일학습병행 첨단산업 아카데미 협약체결",
-                    "en": "-"
+                    "en": "Signed Agreement with Namseoul University for Work-Learning Parallel Advanced Industry Academy",
+                    "ja": "南ソウル大学校日学習並行先端産業アカデミー協約締結",
+                    "vi": "Ký kết Thỏa thuận với Đại học Namseoul về Học viện Công nghiệp Tiên tiến Song song Học tập-Làm việc"
                 }
             },
             "09": {
                 "ko": "삼화페인트 탄소중립형공장 FEMS 구축사업 수주",
-                "en": "-"
+                "en": "Awarded Samhwa Paint Carbon Neutral Factory FEMS Construction Project",
+                "ja": "三和ペイントカーボンニュートラル工場FEMS構築事業受注",
+                "vi": "Được trao Dự án Xây dựng FEMS Nhà máy Trung hòa Carbon Samhwa Paint"
             },
             "08": {
                 "ko": "삼화페인트 생태계공장 ICT구축 사업 수주",
-                "en": "-"
+                "en": "Awarded Samhwa Paint Ecosystem Factory ICT Construction Project",
+                "ja": "三和ペイントエコシステム工場ICT構築事業受注",
+                "vi": "Được trao Dự án Xây dựng ICT Nhà máy Hệ sinh thái Samhwa Paint"
             },
             "07": {
                 "ko": "경동나비엔 글로벌 CRM 시스템 구축 사업자 선정",
-                "en": "-"
+                "en": "Selected as Contractor for Kyungdong Naviant Global CRM System Construction",
+                "ja": "京東ナビアントグローバルCRMシステム構築事業者選定",
+                "vi": "Được chọn làm Nhà thầu Xây dựng Hệ thống CRM Toàn cầu Kyungdong Naviant"
             },
             "05": {
                 "ko": "태림포장 태리미 포인트 관리시스템 구축사업 수주",
-                "en": "-"
+                "en": "Awarded Tairim Packaging Tairimi Point Management System Construction Project",
+                "ja": "テイリム包装テイリミポイント管理システム構築事業受注",
+                "vi": "Được trao Dự án Xây dựng Hệ thống Quản lý Điểm Tairimi Tairim Packaging"
             },
             "04": {
                 "ko": "2024년도 SK Hynix 전사통합권한관리 변화관리컨설팅 사업 수주",
-                "en": "-"
+                "en": "Awarded 2024 SK Hynix Enterprise-wide Integrated Authority Management Change Management Consulting Project",
+                "ja": "2024年度SKハイニックス全社統合権限管理変化管理コンサルティング事業受注",
+                "vi": "Được trao Dự án Tư vấn Quản lý Thay đổi Quản lý Quyền hạn Tích hợp Toàn công ty SK Hynix năm 2024"
             },
             "03": {
                 "ko": "깨끗한나라 스마트팩토리 SCM 구축 사업자 선정",
-                "en": "-"
+                "en": "Selected as Contractor for Kleannara Smart Factory SCM Construction",
+                "ja": "クリーンナラスマートファクトリーSCM構築事業者選定",
+                "vi": "Được chọn làm Nhà thầu Xây dựng SCM Nhà máy thông minh Kleannara"
             },
             "02": {
                 "02": {
                     "ko": "2024년 인천대학교 홈페이지 유지보수 사업 수주",
-                    "en": "-"
+                    "en": "Awarded 2024 Incheon National University Website Maintenance Project",
+                    "ja": "2024年仁川大学校ホームページ維持保守事業受注",
+                    "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2024"
                 },
                 "01": {
                     "ko": "ISO 27001(정보보호경영시스템)인증 획득",
-                    "en": "-"
+                    "en": "Obtained ISO 27001 (Information Security Management System) Certification",
+                    "ja": "ISO 27001（情報保護経営システム）認証取得",
+                    "vi": "Đạt được Chứng nhận ISO 27001 (Hệ thống Quản lý Bảo mật Thông tin)"
                 }
             },
             "01": {
                 "02": {
                     "ko": "대림대학교 일학습병행 P-TECH 협약",
-                    "en": "-"
+                    "en": "Signed P-TECH Agreement with Daelim University for Work-Learning Parallel",
+                    "ja": "大林大学校日学習並行P-TECH協約",
+                    "vi": "Ký kết Thỏa thuận P-TECH với Đại học Daelim về Song song Học tập-Làm việc"
                 },
                 "01": {
                     "ko": "LG U+ 차세대 UCube 관련 데이터 플랫폼 현행화 2차 개발",
-                    "en": "-"
+                    "en": "Second Phase Development of LG U+ Next Generation UCube Data Platform Modernization",
+                    "ja": "LG U+次世代UCube関連データプラットフォーム現行化2次開発",
+                    "vi": "Phát triển Giai đoạn 2 Hiện đại hóa Nền tảng Dữ liệu UCube Thế hệ tiếp theo LG U+"
                 }
             }
         },
         "2023": {
             "12": {
                 "ko": "ALTAIR 빅데이터 분석 및 AI 글로벌 솔루션 파트너 체결",
-                "en": "-"
+                "en": "Signed Partnership Agreement with ALTAIR for Big Data Analysis and AI Global Solutions",
+                "ja": "ALTAIRビッグデータ分析およびAIグローバルソリューションパートナー締結",
+                "vi": "Ký kết Thỏa thuận Đối tác với ALTAIR về Phân tích Dữ liệu lớn và Giải pháp AI Toàn cầu"
             },
             "10": {
                 "ko": "태림포장 자동생산계획 APS시스템 AI고도화 사업 수주",
-                "en": "-"
+                "en": "Awarded Tairim Packaging Automated Production Planning APS System AI Enhancement Project",
+                "ja": "テイリム包装自動生産計画APSシステムAI高度化事業受注",
+                "vi": "Được trao Dự án Nâng cao AI Hệ thống APS Lập kế hoạch Sản xuất Tự động Tairim Packaging"
             },
             "09": {
                 "ko": "태림포장 대중소 상생형 스마트팩토리 사업 공급기업 선정",
-                "en": "-"
+                "en": "Selected as Supply Company for Tairim Packaging Large-Small Business Cooperation Smart Factory Project",
+                "ja": "テイリム包装大中小共生型スマートファクトリー事業供給企業選定",
+                "vi": "Được chọn làm Công ty Cung ứng cho Dự án Nhà máy thông minh Hợp tác Doanh nghiệp lớn-nhỏ Tairim Packaging"
             },
             "07": {
                 "ko": "대양그룹 공급망연계형 스마트팩토리 사업 수주",
-                "en": "-"
+                "en": "Awarded Daeyang Group Supply Chain Connected Smart Factory Project",
+                "ja": "大陽グループサプライチェーン連携型スマートファクトリー事業受注",
+                "vi": "Được trao Dự án Nhà máy thông minh Kết nối Chuỗi cung ứng Tập đoàn Daeyang"
             },
             "04": {
                 "ko": "SK Hynix MyAccess 변화관리 프로젝트 수행(2023년)",
-                "en": "-"
+                "en": "Executed SK Hynix MyAccess Change Management Project (2023)",
+                "ja": "SKハイニックスMyAccess変化管理プロジェクト実行（2023年）",
+                "vi": "Thực hiện Dự án Quản lý Thay đổi MyAccess SK Hynix (2023)"
             },
             "03": {
                 "ko": "KT 비즈메이트 앱 유지보수 사업 수행",
-                "en": "-"
+                "en": "Executed KT Bizmate App Maintenance Project",
+                "ja": "KTビズメートアプリ維持保守事業実行",
+                "vi": "Thực hiện Dự án Bảo trì Ứng dụng Bizmate KT"
             },
             "02": {
                 "ko": "2023년 인천대학교 홈페이지 유지보수 사업 수주",
-                "en": "-"
+                "en": "Awarded 2023 Incheon National University Website Maintenance Project",
+                "ja": "2023年仁川大学校ホームページ維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2023"
             },
             "01": {
                 "02": {
                     "ko": "태림포장 자동 생산계획 APS 시스템 구축사업 수주",
-                    "en": "-"
+                    "en": "Awarded Tairim Packaging Automated Production Planning APS System Construction Project",
+                    "ja": "テイリム包装自動生産計画APSシステム構築事業受注",
+                    "vi": "Được trao Dự án Xây dựng Hệ thống APS Lập kế hoạch Sản xuất Tự động Tairim Packaging"
                 },
                 "01": {
                     "ko": "LG U+ 차세대 UCube 관련 데이터 플랫폼 현행화 2차 개발 수주",
-                    "en": "-"
+                    "en": "Awarded Second Phase Development of LG U+ Next Generation UCube Data Platform Modernization",
+                    "ja": "LG U+次世代UCube関連データプラットフォーム現行化2次開発受注",
+                    "vi": "Được trao Phát triển Giai đoạn 2 Hiện đại hóa Nền tảng Dữ liệu UCube Thế hệ tiếp theo LG U+"
                 }
             }
         },
@@ -118,307 +182,441 @@
             "12": {
                 "02": {
                     "ko": "한국공학대학교 일학습병행 기업 협약",
-                    "en": "-"
+                    "en": "Signed Work-Learning Parallel Enterprise Agreement with Korea University of Technology and Education",
+                    "ja": "韓国工科大日学習並行企業協約",
+                    "vi": "Ký kết Thỏa thuận Doanh nghiệp Song song Học tập-Làm việc với Đại học Công nghệ và Giáo dục Hàn Quốc"
                 },
                 "01": {
                     "ko": "2022 Smart Web Award 대상 수상",
-                    "en": "-"
+                    "en": "Won 2022 Smart Web Award Grand Prize",
+                    "ja": "2022スマートウェブアワード大賞受賞",
+                    "vi": "Đạt Giải thưởng Lớn Smart Web Award 2022"
                 }
             },
             "11": {
                 "02": {
                     "ko": "인천대학교 전자공학과 홈페이지 리뉴얼 구축",
-                    "en": "-"
+                    "en": "Constructed Incheon National University Department of Electronic Engineering Website Renewal",
+                    "ja": "仁川大学校電子工学科ホームページリニューアル構築",
+                    "vi": "Xây dựng Cải tạo Website Khoa Kỹ thuật Điện tử Đại học Quốc gia Incheon"
                 },
                 "01": {
                     "ko": "SK Hynix MyAccess 변화관리 프로젝트 수행(2차)",
-                    "en": "-"
+                    "en": "Executed SK Hynix MyAccess Change Management Project (2nd Phase)",
+                    "ja": "SKハイニックスMyAccess変化管理プロジェクト実行（2次）",
+                    "vi": "Thực hiện Dự án Quản lý Thay đổi MyAccess SK Hynix (Giai đoạn 2)"
                 }
             },
             "10": {
                 "ko": "SK하이닉스 차세대 APC ( 공정관리 시스템 ) UX 컨설팅 수주",
-                "en": "-"
+                "en": "Awarded SK Hynix Next Generation APC (Process Management System) UX Consulting",
+                "ja": "SKハイニックス次世代APC（工程管理システム）UXコンサルティング受注",
+                "vi": "Được trao Tư vấn UX APC Thế hệ tiếp theo (Hệ thống Quản lý Quy trình) SK Hynix"
             },
             "08": {
                 "ko": "태림포장 상생 디지털 클러스터 사업 수주 ( 스마트팩토리 공급기업 )",
-                "en": "-"
+                "en": "Awarded Tairim Packaging Cooperation Digital Cluster Project (Smart Factory Supply Company)",
+                "ja": "テイリム包装共生デジタルクラスター事業受注（スマートファクトリー供給企業）",
+                "vi": "Được trao Dự án Cụm số Hợp tác Tairim Packaging (Công ty Cung ứng Nhà máy thông minh)"
             },
             "07": {
                 "ko": "태림포장 상생 협력 디지털 클러스터 사업 수주 ( 공급기업 )",
-                "en": "-"
+                "en": "Awarded Tairim Packaging Cooperation Digital Cluster Project (Supply Company)",
+                "ja": "テイリム包装共生協力デジタルクラスター事業受注（供給企業）",
+                "vi": "Được trao Dự án Cụm số Hợp tác Tairim Packaging (Công ty Cung ứng)"
             },
             "05": {
                 "ko": "SK Hynix MyAccess 변화관리 프로젝트 수행",
-                "en": "-"
+                "en": "Executed SK Hynix MyAccess Change Management Project",
+                "ja": "SKハイニックスMyAccess変化管理プロジェクト実行",
+                "vi": "Thực hiện Dự án Quản lý Thay đổi MyAccess SK Hynix"
             },
             "04": {
                 "02": {
                     "ko": "SK하이닉스 MyAccess 변화관리 수주",
-                    "en": "-"
+                    "en": "Awarded SK Hynix MyAccess Change Management",
+                    "ja": "SKハイニックスMyAccess変化管理受注",
+                    "vi": "Được trao Quản lý Thay đổi MyAccess SK Hynix"
                 },
                 "01": {
                     "ko": "LG U+ 정보계 현행화 3차 프로젝트 수행",
-                    "en": "-"
+                    "en": "Executed Third Phase LG U+ Information System Modernization Project",
+                    "ja": "LG U+情報系現行化3次プロジェクト実行",
+                    "vi": "Thực hiện Dự án Hiện đại hóa Hệ thống Thông tin LG U+ Giai đoạn 3"
                 }
             },
             "03": {
                 "02": {
                     "ko": "LG유플러스 Data Lake 통합 포털 분석 / 설계 수주",
-                    "en": "-"
+                    "en": "Awarded LG U+ Data Lake Integrated Portal Analysis/Design",
+                    "ja": "LGユープラスData Lake統合ポータル分析/設計受注",
+                    "vi": "Được trao Phân tích/Thiết kế Portal Tích hợp Data Lake LG U+"
                 },
                 "01": {
                     "ko": "KT Bizmate APP ( Android / iOS ) 유지보수 수주",
-                    "en": "-"
+                    "en": "Awarded KT Bizmate APP (Android/iOS) Maintenance",
+                    "ja": "KTビズメートAPP（Android/iOS）維持保守受注",
+                    "vi": "Được trao Bảo trì Ứng dụng Bizmate KT (Android/iOS)"
                 }
             },
             "02": {
                 "03": {
                     "ko": "대양그룹 물류 관리시스템 운영계약 수주",
-                    "en": "-"
+                    "en": "Awarded Daeyang Group Logistics Management System Operation Contract",
+                    "ja": "大陽グループ物流管理システム運営契約受注",
+                    "vi": "Được trao Hợp đồng Vận hành Hệ thống Quản lý Logistics Tập đoàn Daeyang"
                 },
                 "02": {
                     "ko": "대양그룹 TMS(운송관리 / 자동 배차) 시스템 유지보수 사업 수주",
-                    "en": "-"
+                    "en": "Awarded Daeyang Group TMS (Transportation Management/Automatic Dispatch) System Maintenance Project",
+                    "ja": "大陽グループTMS（輸送管理/自動配車）システム維持保守事業受注",
+                    "vi": "Được trao Dự án Bảo trì Hệ thống TMS (Quản lý Vận tải/Phân bổ Tự động) Tập đoàn Daeyang"
                 },
                 "01": {
                     "ko": "2022년 인천대학교 홈페이지 유지보수 사업 수행",
-                    "en": "-"
+                    "en": "Executed 2022 Incheon National University Website Maintenance Project",
+                    "ja": "2022年仁川大学校ホームページ維持保守事業実行",
+                    "vi": "Thực hiện Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2022"
                 }
             },
             "01": {
                 "03": {
                     "ko": "LG유플러스 정보계 현행화 2차 프로젝트 수주",
-                    "en": "-"
+                    "en": "Awarded Second Phase LG U+ Information System Modernization Project",
+                    "ja": "LGユープラス情報系現行化2次プロジェクト受注",
+                    "vi": "Được trao Dự án Hiện đại hóa Hệ thống Thông tin LG U+ Giai đoạn 2"
                 },
                 "02": {
                     "ko": "KT B2B 비즈메이트 시스템 유지보수 사업 수주",
-                    "en": "-"
+                    "en": "Awarded KT B2B Bizmate System Maintenance Project",
+                    "ja": "KT B2Bビズメートシステム維持保守事業受注",
+                    "vi": "Được trao Dự án Bảo trì Hệ thống Bizmate B2B KT"
                 },
                 "01": {
                     "ko": "태림포장 생산계획 자동화 구축을 위한 PI 수주",
-                    "en": "-"
+                    "en": "Awarded PI for Tairim Packaging Production Planning Automation Construction",
+                    "ja": "テイリム包装生産計画自動化構築のためのPI受注",
+                    "vi": "Được trao PI cho Xây dựng Tự động hóa Lập kế hoạch Sản xuất Tairim Packaging"
                 }
             }
         },
         "2021": {
             "10": {
                 "ko": "KT Next CRM 전략 컨설팅 참여",
-                "en": "-"
+                "en": "Participated in KT Next CRM Strategy Consulting",
+                "ja": "KT Next CRM戦略コンサルティング参加",
+                "vi": "Tham gia Tư vấn Chiến lược CRM Next KT"
             },
             "09": {
                 "ko": "대양그룹 수주 자동화 시스템 구축 수주",
-                "en": "-"
+                "en": "Awarded Daeyang Group Order Automation System Construction",
+                "ja": "大陽グループ受注自動化システム構築受注",
+                "vi": "Được trao Xây dựng Hệ thống Tự động hóa Đơn hàng Tập đoàn Daeyang"
             },
             "08": {
                 "02": {
                     "ko": "LG U+ 전사 Data Portal 리뉴얼 구축 컨설팅",
-                    "en": "-"
+                    "en": "LG U+ Enterprise Data Portal Renewal Construction Consulting",
+                    "ja": "LG U+全社Data Portalリニューアル構築コンサルティング",
+                    "vi": "Tư vấn Xây dựng Cải tạo Portal Dữ liệu Toàn công ty LG U+"
                 },
                 "01": {
                     "ko": "태림포장 모바일 주문 시스템 구축 수주",
-                    "en": "-"
+                    "en": "Awarded Tairim Packaging Mobile Order System Construction",
+                    "ja": "テイリム包装モバイル注文システム構築受注",
+                    "vi": "Được trao Xây dựng Hệ thống Đặt hàng Di động Tairim Packaging"
                 }
             },
             "07": {
                 "ko": "KT 그룹캠페인 시스템 기능 고도화 사업 수주",
-                "en": "-"
+                "en": "Awarded KT Group Campaign System Function Enhancement Project",
+                "ja": "KTグループキャンペーンシステム機能高度化事業受注",
+                "vi": "Được trao Dự án Nâng cao Chức năng Hệ thống Chiến dịch Nhóm KT"
             },
             "06": {
                 "ko": "다우기업 접착제 제조사 MES 도입 및 스마트팩토리 구축",
-                "en": "-"
+                "en": "MES Introduction and Smart Factory Construction for Dow Enterprise Adhesive Manufacturer",
+                "ja": "ダウ企業接着剤製造業者MES導入およびスマートファクトリー構築",
+                "vi": "Giới thiệu MES và Xây dựng Nhà máy thông minh cho Nhà sản xuất Keo dính Dow Enterprise"
             },
             "05": {
                 "ko": "썬겔 실리카겔 제조사 MES 도입 및 스마트팩토리 구축",
-                "en": "-"
+                "en": "MES Introduction and Smart Factory Construction for Sungel Silica Gel Manufacturer",
+                "ja": "サンゲルシリカゲル製造業者MES導入およびスマートファクトリー構築",
+                "vi": "Giới thiệu MES và Xây dựng Nhà máy thông minh cho Nhà sản xuất Gel Silica Sungel"
             },
             "04": {
                 "ko": "테라에코 제조사 MES 도입 및 스마트팩토리 구축",
-                "en": "-"
+                "en": "MES Introduction and Smart Factory Construction for Terra Eco Manufacturer",
+                "ja": "テラエコ製造業者MES導入およびスマートファクトリー構築",
+                "vi": "Giới thiệu MES và Xây dựng Nhà máy thông minh cho Nhà sản xuất Terra Eco"
             },
             "02": {
                 "ko": "중소기업 기술혁신 기업 이노비즈 인증 획득",
-                "en": "-"
+                "en": "Obtained Innoviz Certification for Technology Innovation Small and Medium Enterprise",
+                "ja": "中小企業技術革新企業イノビズ認証取得",
+                "vi": "Đạt được Chứng nhận Innoviz cho Doanh nghiệp vừa và nhỏ Đổi mới Công nghệ"
             },
             "01": {
                 "02": {
                     "ko": "2021년 인천대학교 홈페이지 유지보수 사업 수행 ( ~ 2022년 2월 )",
-                    "en": "-"
+                    "en": "Executed 2021 Incheon National University Website Maintenance Project (until February 2022)",
+                    "ja": "2021年仁川大学校ホームページ維持保守事業実行（〜2022年2月）",
+                    "vi": "Thực hiện Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2021 (đến tháng 2/2022)"
                 },
                 "01": {
                     "ko": "파리바게뜨 DT 고도화 및 CRM 컨설팅",
-                    "en": "-"
+                    "en": "Paris Baguette DT Enhancement and CRM Consulting",
+                    "ja": "パリバゲットDT高度化およびCRMコンサルティング",
+                    "vi": "Nâng cao DT và Tư vấn CRM Paris Baguette"
                 }
             }
         },
         "2020": {
             "12": {
                 "ko": "경인병무청 병역지정업체(산업체) 선정",
-                "en": "-"
+                "en": "Selected as Military Service Designated Company (Industrial Company) by Gyeongin Military Manpower Administration",
+                "ja": "京仁兵務庁兵役指定企業（産業体）選定",
+                "vi": "Được chọn làm Công ty Chỉ định Nghĩa vụ Quân sự (Công ty Công nghiệp) bởi Cục Quản lý Nhân lực Quân sự Gyeongin"
             },
             "11": {
                 "ko": "중소기업 제조사 향 MES솔루션 개발 착수",
-                "en": "-"
+                "en": "Started Development of MES Solution for Small and Medium Manufacturing Companies",
+                "ja": "中小企業製造業向けMESソリューション開発着手",
+                "vi": "Bắt đầu Phát triển Giải pháp MES cho Công ty Sản xuất vừa và nhỏ"
             },
             "10": {
                 "ko": "태림포장 OCR활용한  주문자동화 시스템 구축",
-                "en": "-"
+                "en": "Constructed Tairim Packaging Order Automation System using OCR",
+                "ja": "テイリム包装OCR活用注文自動化システム構築",
+                "vi": "Xây dựng Hệ thống Tự động hóa Đơn hàng Tairim Packaging sử dụng OCR"
             },
             "08": {
                 "ko": "소형건축플랫폼 하우스마스터 구축 사업 수주",
-                "en": "-"
+                "en": "Awarded Small Construction Platform Housemaster Construction Project",
+                "ja": "小型建築プラットフォームハウスマスター構築事業受注",
+                "vi": "Được trao Dự án Xây dựng Nền tảng Xây dựng Nhỏ Housemaster"
             },
             "07": {
                 "02": {
                     "ko": "LG 하우시스 토탈 인테리어 컨설팅 참여",
-                    "en": "-"
+                    "en": "Participated in LG Hausys Total Interior Consulting",
+                    "ja": "LGハウシストータルインテリアコンサルティング参加",
+                    "vi": "Tham gia Tư vấn Nội thất Tổng thể LG Hausys"
                 },
                 "01": {
                     "ko": "삼성전기 글로벌 통합 출장관리 시스템 구축 수주",
-                    "en": "-"
+                    "en": "Awarded Samsung Electro-Mechanics Global Integrated Business Trip Management System Construction",
+                    "ja": "三星電機グローバル統合出張管理システム構築受注",
+                    "vi": "Được trao Xây dựng Hệ thống Quản lý Công tác Tích hợp Toàn cầu Samsung Electro-Mechanics"
                 }
             },
             "06": {
                 "ko": "LG U+ 통합 DW 구축을 위한 분석/설계 컨설팅 참여",
-                "en": "-"
+                "en": "Participated in Analysis/Design Consulting for LG U+ Integrated DW Construction",
+                "ja": "LG U+統合DW構築のための分析/設計コンサルティング参加",
+                "vi": "Tham gia Tư vấn Phân tích/Thiết kế cho Xây dựng DW Tích hợp LG U+"
             },
             "05": {
                 "ko": "Naver Cloud Platform  MSP 파트너 계약 체결",
-                "en": "-"
+                "en": "Signed MSP Partner Agreement with Naver Cloud Platform",
+                "ja": "Naver Cloud Platform MSPパートナー契約締結",
+                "vi": "Ký kết Thỏa thuận Đối tác MSP với Nền tảng Đám mây Naver"
             },
             "04": {
                 "ko": "LG  CNS  구매업체 계약체결 및 U+ UCRM 2.0 PI컨설팅 참여",
-                "en": "-"
+                "en": "Signed LG CNS Purchasing Company Contract and Participated in U+ UCRM 2.0 PI Consulting",
+                "ja": "LG CNS購買企業契約締結およびU+ UCRM 2.0 PIコンサルティング参加",
+                "vi": "Ký kết Hợp đồng Công ty Mua sắm LG CNS và Tham gia Tư vấn PI U+ UCRM 2.0"
             },
             "03": {
                 "ko": "2020 대중소 동반진출 글로벌 진출사업자선정 (중소기업벤처부)",
-                "en": "-"
+                "en": "Selected as 2020 Large-Small Business Joint Global Entry Project Operator (Ministry of SMEs and Startups)",
+                "ja": "2020大中小同伴進出グローバル進出事業者選定（中小企業ベンチャー部）",
+                "vi": "Được chọn làm Nhà điều hành Dự án Tiến vào Toàn cầu Hợp tác Doanh nghiệp lớn-nhỏ 2020 (Bộ Doanh nghiệp vừa và nhỏ và Khởi nghiệp)"
             },
             "01": {
                 "02": {
                     "ko": "인천대학교 홈페이지 유지보수 사업 수행 (~2020년5월)",
-                    "en": "-"
+                    "en": "Executed Incheon National University Website Maintenance Project (until May 2020)",
+                    "ja": "仁川大学校ホームページ維持保守事業実行（〜2020年5月）",
+                    "vi": "Thực hiện Dự án Bảo trì Website Đại học Quốc gia Incheon (đến tháng 5/2020)"
                 },
                 "01": {
                     "ko": "삼성전기 DTS 디자인 개선과제 수주",
-                    "en": "-"
+                    "en": "Awarded Samsung Electro-Mechanics DTS Design Improvement Task",
+                    "ja": "三星電機DTSデザイン改善課題受注",
+                    "vi": "Được trao Nhiệm vụ Cải thiện Thiết kế DTS Samsung Electro-Mechanics"
                 }
             }
         },
         "2019": {
             "11": {
                 "ko": "한국인력관리공단 일학습병행 학습기업 지정",
-                "en": "-"
+                "en": "Designated as Work-Learning Parallel Learning Company by Korea Human Resources Development Institute",
+                "ja": "韓国人材管理公団日学習並行学習企業指定",
+                "vi": "Được chỉ định làm Công ty Học tập Song song Học tập-Làm việc bởi Viện Phát triển Nhân lực Hàn Quốc"
             },
             "10": {
                 "04": {
                     "ko": "인천대학교 융합과학 기술원 홈페이지 구축(유전체)",
-                    "en": "-"
+                    "en": "Constructed Incheon National University Institute of Convergence Science and Technology Website (Genome)",
+                    "ja": "仁川大学校融合科学技術院ホームページ構築（ゲノム）",
+                    "vi": "Xây dựng Website Viện Khoa học và Công nghệ Hội tụ Đại học Quốc gia Incheon (Bộ gen)"
                 },
                 "03": {
                     "ko": "한국소프트웨어협회 2020 Japan IT Spring 참여사 선정",
-                    "en": "-"
+                    "en": "Selected as Participant for Korea Software Industry Association 2020 Japan IT Spring",
+                    "ja": "韓国ソフトウェア協会2020 Japan IT Spring参加社選定",
+                    "vi": "Được chọn làm Công ty Tham gia Japan IT Spring 2020 của Hiệp hội Công nghiệp Phần mềm Hàn Quốc"
                 },
                 "02": {
                     "ko": "삼성전기 DTS 대시보드 고도화 과제 수주",
-                    "en": "-"
+                    "en": "Awarded Samsung Electro-Mechanics DTS Dashboard Enhancement Task",
+                    "ja": "三星電機DTSダッシュボード高度化課題受注",
+                    "vi": "Được trao Nhiệm vụ Nâng cao Bảng điều khiển DTS Samsung Electro-Mechanics"
                 },
                 "01": {
                     "ko": "인천대학교 융합과학 기술원 홈페이지 구축(나노펩)",
-                    "en": "-"
+                    "en": "Constructed Incheon National University Institute of Convergence Science and Technology Website (Nanopeptide)",
+                    "ja": "仁川大学校融合科学技術院ホームページ構築（ナノペプチド）",
+                    "vi": "Xây dựng Website Viện Khoa học và Công nghệ Hội tụ Đại học Quốc gia Incheon (Nanopeptide)"
                 }
             },
             "09": {
                 "ko": "한국능률협회 스포츠선도기업 해외마케팅 사업수주",
-                "en": "-"
+                "en": "Awarded Korea Management Association Sports Leading Company Overseas Marketing Project",
+                "ja": "韓国能率協会スポーツ先導企業海外マーケティング事業受注",
+                "vi": "Được trao Dự án Tiếp thị Nước ngoài Công ty Tiên phong Thể thao Hiệp hội Quản lý Hàn Quốc"
             },
             "06": {
                 "ko": "CJ ENM RPA 구축",
-                "en": "-"
+                "en": "CJ ENM RPA Construction",
+                "ja": "CJ ENM RPA構築",
+                "vi": "Xây dựng RPA CJ ENM"
             },
             "05": {
                 "ko": "하나생명 RPA scale up 프로젝트 수행",
-                "en": "-"
+                "en": "Executed Hana Life RPA Scale Up Project",
+                "ja": "ハナ生命RPA scale upプロジェクト実行",
+                "vi": "Thực hiện Dự án Mở rộng RPA Hana Life"
             },
             "04": {
                 "ko": "KEB 하나은행 캠페인 솔루션 구축",
-                "en": "-"
+                "en": "KEB Hana Bank Campaign Solution Construction",
+                "ja": "KEBハナ銀行キャンペーンソリューション構築",
+                "vi": "Xây dựng Giải pháp Chiến dịch Ngân hàng KEB Hana"
             },
             "03": {
                 "ko": "BC카드 차세대 캠페인 시스템 구축",
-                "en": "-"
+                "en": "BC Card Next Generation Campaign System Construction",
+                "ja": "BCカード次世代キャンペーンシステム構築",
+                "vi": "Xây dựng Hệ thống Chiến dịch Thế hệ tiếp theo BC Card"
             },
             "02": {
                 "02": {
                     "ko": "LG CNS 차세대 커머스플랫폼 구축 컨설팅 공동수주",
-                    "en": "-"
+                    "en": "Joint Award of LG CNS Next Generation Commerce Platform Construction Consulting",
+                    "ja": "LG CNS次世代コマースプラットフォーム構築コンサルティング共同受注",
+                    "vi": "Được trao chung Tư vấn Xây dựng Nền tảng Thương mại Thế hệ tiếp theo LG CNS"
                 },
                 "01": {
                     "ko": "인천대학교 기계공학과 홈페이지 리뉴얼 구축",
-                    "en": "-"
+                    "en": "Constructed Incheon National University Department of Mechanical Engineering Website Renewal",
+                    "ja": "仁川大学校機械工学科ホームページリニューアル構築",
+                    "vi": "Xây dựng Cải tạo Website Khoa Kỹ thuật Cơ khí Đại học Quốc gia Incheon"
                 }
             },
             "01": {
                 "03": {
                     "ko": "인천대학교 홈페이지 유지보수 사업 수행 (장기)",
-                    "en": "-"
+                    "en": "Executed Incheon National University Website Maintenance Project (Long-term)",
+                    "ja": "仁川大学校ホームページ維持保守事業実行（長期）",
+                    "vi": "Thực hiện Dự án Bảo trì Website Đại học Quốc gia Incheon (Dài hạn)"
                 },
                 "02": {
                     "ko": "인천대학교 발전기금 사이트 유지보수 사업 수행",
-                    "en": "-"
+                    "en": "Executed Incheon National University Development Fund Site Maintenance Project",
+                    "ja": "仁川大学校発展基金サイト維持保守事業実行",
+                    "vi": "Thực hiện Dự án Bảo trì Website Quỹ Phát triển Đại học Quốc gia Incheon"
                 },
                 "01": {
                     "ko": "서울특별시 학교안전공제회 전산시스템 구축 PMO수주",
-                    "en": "-"
+                    "en": "Awarded Seoul Metropolitan School Safety Mutual Aid Association Computer System Construction PMO",
+                    "ja": "ソウル特別市学校安全共済会電算システム構築PMO受注",
+                    "vi": "Được trao PMO Xây dựng Hệ thống Máy tính Hiệp hội Bảo hiểm An toàn Trường học Seoul"
                 }
             }
         },
         "2018": {
             "12": {
                 "ko": "2018 iAward 디자인 최우수상 수상(고객사:삼성전기)",
-                "en": "-"
+                "en": "Won 2018 iAward Design Excellence Award (Client: Samsung Electro-Mechanics)",
+                "ja": "2018 iAwardデザイン最優秀賞受賞（顧客企業：三星電機）",
+                "vi": "Đạt Giải thưởng Xuất sắc Thiết kế iAward 2018 (Khách hàng: Samsung Electro-Mechanics)"
             },
             "10": {
                 "02": {
                     "ko": "한국생산성본부 CRM전략컨설팅 참가",
-                    "en": "-"
+                    "en": "Participated in Korea Productivity Center CRM Strategy Consulting",
+                    "ja": "韓国生産性本部CRM戦略コンサルティング参加",
+                    "vi": "Tham gia Tư vấn Chiến lược CRM Trung tâm Năng suất Hàn Quốc"
                 },
                 "01": {
                     "ko": "인천대학교 입학관리 홈페이지 리뉴얼 구축",
-                    "en": "-"
+                    "en": "Constructed Incheon National University Admission Management Website Renewal",
+                    "ja": "仁川大学校入学管理ホームページリニューアル構築",
+                    "vi": "Xây dựng Cải tạo Website Quản lý Tuyển sinh Đại học Quốc gia Incheon"
                 }
             },
             "09": {
                 "ko": "경기문화재단 성과관리 시스템 구축 ISP컨설팅 수주",
-                "en": "-"
+                "en": "Awarded Gyeonggi Cultural Foundation Performance Management System Construction ISP Consulting",
+                "ja": "京畿文化財団成果管理システム構築ISPコンサルティング受注",
+                "vi": "Được trao Tư vấn ISP Xây dựng Hệ thống Quản lý Hiệu suất Quỹ Văn hóa Gyeonggi"
             },
             "06": {
                 "ko": "인천대학교 홈페이지 유지보수 사업 수주",
-                "en": "-"
+                "en": "Awarded Incheon National University Website Maintenance Project",
+                "ja": "仁川大学校ホームページ維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon"
             },
             "05": {
                 "ko": "KT B2B 캠페인시스템 그룹사 확대사업 수주",
-                "en": "-"
+                "en": "Awarded KT B2B Campaign System Group Company Expansion Project",
+                "ja": "KT B2Bキャンペーンシステムグループ社拡大事業受注",
+                "vi": "Được trao Dự án Mở rộng Công ty Nhóm Hệ thống Chiến dịch B2B KT"
             },
             "04": {
                 "ko": "KT텔레캅 온라인청약시스템 구축사업 수주",
-                "en": "-"
+                "en": "Awarded KT Telecop Online Subscription System Construction Project",
+                "ja": "KTテレコップオンライン申込システム構築事業受注",
+                "vi": "Được trao Dự án Xây dựng Hệ thống Đăng ký Trực tuyến KT Telecop"
             },
             "03": {
                 "ko": "인천대학교 발전기금 사이트 유지보수 사업 수주",
-                "en": "-"
+                "en": "Awarded Incheon National University Development Fund Site Maintenance Project",
+                "ja": "仁川大学校発展基金サイト維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Quỹ Phát triển Đại học Quốc gia Incheon"
             },
             "02": {
                 "ko": "인천대학교 발전기금 사이트 리뉴얼구축 프로젝트 수주",
-                "en": "-"
+                "en": "Awarded Incheon National University Development Fund Site Renewal Construction Project",
+                "ja": "仁川大学校発展基金サイトリニューアル構築プロジェクト受注",
+                "vi": "Được trao Dự án Xây dựng Cải tạo Website Quỹ Phát triển Đại học Quốc gia Incheon"
             },
             "01": {
                 "02": {
                     "ko": "삼성전기 2018년도 온라인마케팅 컨설팅 및 홈페이지 운영 유지 보수 사업 수주",
-                    "en": "-"
+                    "en": "Awarded Samsung Electro-Mechanics 2018 Online Marketing Consulting and Website Operation Maintenance Project",
+                    "ja": "三星電機2018年度オンラインマーケティングコンサルティングおよびホームページ運営維持保守事業受注",
+                    "vi": "Được trao Dự án Tư vấn Tiếp thị Trực tuyến và Bảo trì Vận hành Website Samsung Electro-Mechanics năm 2018"
                 },
                 "01": {
                     "ko": "서울특별시 학교안전공제회 손상감시체계/Big Data 정보화 마스터플랜 컨설팅수주",
-                    "en": "-"
+                    "en": "Awarded Seoul Metropolitan School Safety Mutual Aid Association Damage Monitoring System/Big Data Informatization Master Plan Consulting",
+                    "ja": "ソウル特別市学校安全共済会損傷監視システム/ビッグデータ情報化マスタープランコンサルティング受注",
+                    "vi": "Được trao Tư vấn Kế hoạch Tổng thể Hệ thống Giám sát Thiệt hại/Thông tin hóa Dữ liệu lớn Hiệp hội Bảo hiểm An toàn Trường học Seoul"
                 }
             }
         },
@@ -426,58 +624,84 @@
             "12": {
                 "02": {
                     "ko": "인천대학교 홈페이지 UI/UX 디자인 개선 프로젝트 수주",
-                    "en": "-"
+                    "en": "Awarded Incheon National University Website UI/UX Design Improvement Project",
+                    "ja": "仁川大学校ホームページUI/UXデザイン改善プロジェクト受注",
+                    "vi": "Được trao Dự án Cải thiện Thiết kế UI/UX Website Đại học Quốc gia Incheon"
                 },
                 "01": {
                     "ko": "2017 iAward 디자인 최우수상 수상",
-                    "en": "-"
+                    "en": "Won 2017 iAward Design Excellence Award",
+                    "ja": "2017 iAwardデザイン最優秀賞受賞",
+                    "vi": "Đạt Giải thưởng Xuất sắc Thiết kế iAward 2017"
                 }
             },
             "10": {
                 "ko": "CJ대한통운 / 일본 선진 제약물류센터 벤치마킹 수행",
-                "en": "-"
+                "en": "Executed CJ Korea Express / Japan Advanced Pharmaceutical Logistics Center Benchmarking",
+                "ja": "CJ韓国通運/日本先進医薬品物流センター benchmarking実行",
+                "vi": "Thực hiện Benchmarking Trung tâm Logistics Dược phẩm Tiên tiến Nhật Bản CJ Korea Express"
             },
             "08": {
                 "ko": "한화호텔&리조트 / 일본 선진 식품물류센터 벤치마킹",
-                "en": "-"
+                "en": "Hanwha Hotel & Resort / Japan Advanced Food Logistics Center Benchmarking",
+                "ja": "ハンファホテル&リゾート/日本先進食品物流センター benchmarking",
+                "vi": "Benchmarking Trung tâm Logistics Thực phẩm Tiên tiến Nhật Bản Hanwha Hotel & Resort"
             },
             "05": {
                 "ko": "KT 한국가이던스 시스템 클라우드 이관 프로젝트 수주",
-                "en": "-"
+                "en": "Awarded KT Korea Guidance System Cloud Migration Project",
+                "ja": "KT韓国ガイダンスシステムクラウド移行プロジェクト受注",
+                "vi": "Được trao Dự án Di chuyển Đám mây Hệ thống Hướng dẫn Hàn Quốc KT"
             },
             "04": {
                 "ko": "삼성전기 매직3(GTC설비 MRO업무) 시스템 구축 수주",
-                "en": "-"
+                "en": "Awarded Samsung Electro-Mechanics Magic3 (GTC Equipment MRO Work) System Construction",
+                "ja": "三星電機マジック3（GTC設備MRO業務）システム構築受注",
+                "vi": "Được trao Xây dựng Hệ thống Magic3 (Công việc MRO Thiết bị GTC) Samsung Electro-Mechanics"
             },
             "03": {
                 "ko": "삼성전기 수동소자 검색강화 기능 개발 프로젝트 수주",
-                "en": "-"
+                "en": "Awarded Samsung Electro-Mechanics Passive Component Search Enhancement Function Development Project",
+                "ja": "三星電機受動素子検索強化機能開発プロジェクト受注",
+                "vi": "Được trao Dự án Phát triển Chức năng Tăng cường Tìm kiếm Linh kiện Thụ động Samsung Electro-Mechanics"
             },
             "02": {
                 "ko": "삼성전기 2017년도 온라인마케팅 컨설팅 및 홈페이지 운영 유지 보수 사업 수주",
-                "en": "-"
+                "en": "Awarded Samsung Electro-Mechanics 2017 Online Marketing Consulting and Website Operation Maintenance Project",
+                "ja": "三星電機2017年度オンラインマーケティングコンサルティングおよびホームページ運営維持保守事業受注",
+                "vi": "Được trao Dự án Tư vấn Tiếp thị Trực tuyến và Bảo trì Vận hành Website Samsung Electro-Mechanics năm 2017"
             },
             "01": {
                 "ko": "글로벌 코스메틱 컴퍼니 디지털 플랫폼 한국 롤아웃 수주",
-                "en": "-"
+                "en": "Awarded Global Cosmetic Company Digital Platform Korea Rollout",
+                "ja": "グローバルコスメティックカンパニーデジタルプラットフォーム韓国ロールアウト受注",
+                "vi": "Được trao Triển khai Nền tảng Số Công ty Mỹ phẩm Toàn cầu tại Hàn Quốc"
             }
         },
         "2016": {
             "05": {
                 "ko": "KT 기업고객 영업정보 제공 시스템 유지보수사업 수주",
-                "en": "-"
+                "en": "Awarded KT Corporate Customer Sales Information Provision System Maintenance Project",
+                "ja": "KT企業顧客営業情報提供システム維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Hệ thống Cung cấp Thông tin Kinh doanh Khách hàng Doanh nghiệp KT"
             },
             "04": {
                 "ko": "KT 기업고객 마케팅 프로세스정의 및 시스템 구축사업",
-                "en": "-"
+                "en": "KT Corporate Customer Marketing Process Definition and System Construction Project",
+                "ja": "KT企業顧客マーケティングプロセス定義およびシステム構築事業",
+                "vi": "Dự án Định nghĩa Quy trình Tiếp thị và Xây dựng Hệ thống Khách hàng Doanh nghiệp KT"
             },
             "02": {
                 "ko": "삼성전기 온라인 마케팅 컨설팅 및 웹사이트 운영 수주",
-                "en": "-"
+                "en": "Awarded Samsung Electro-Mechanics Online Marketing Consulting and Website Operation",
+                "ja": "三星電機オンラインマーケティングコンサルティングおよびウェブサイト運営受注",
+                "vi": "Được trao Tư vấn Tiếp thị Trực tuyến và Vận hành Website Samsung Electro-Mechanics"
             },
             "01": {
                 "ko": "조앤소프트㈜ 법인 설립",
-                "en": "-"
+                "en": "JO&SOFT Co., Ltd. Corporation Establishment",
+                "ja": "JO&SOFT株式会社法人設立",
+                "vi": "Thành lập Công ty JO&SOFT Co., Ltd."
             }
         }
     }

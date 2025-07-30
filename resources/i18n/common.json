@@ -1,59 +1,217 @@
 {
     "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
+    "history": {
+        "title": {
+            "ko": "연혁",
+            "en": "History",
+            "ja": "沿革",
+            "vi": "Lịch sử"
+        },
+        "description": {
+            "ko": "조앤소프트의 성장 과정과 주요 프로젝트 연혁을 확인하세요.",
+            "en": "Check out JO&SOFT's growth process and major project history.",
+            "ja": "JO&SOFTの成長過程と主要プロジェクトの沿革をご確認ください。",
+            "vi": "Xem quá trình phát triển và lịch sử dự án chính của JO&SOFT."
+        }
+    },
 
     "customer":{
         "hanjinkal": {
             "src":{ 
                 "ko" :"./resources/logos/partners/hanjinkal.png",
-                "en" :"./resources/logos/partners/en/hanjinkal.png"
+                "en" :"./resources/logos/partners/en/hanjinkal.png",
+                "ja" :"./resources/logos/partners/en/hanjinkal.png",
+                "vi" :"./resources/logos/partners/en/hanjinkal.png"
             },
             "alt":{ 
                 "ko" :"",
-                "en" :""
+                "en" :"",
+                "ja" :"",
+                "vi" :""
             }
         }
     },
     
     "company": {
+        "title-sub": {
+            "ko": "회사개요",
+            "en": "Company Overview",
+            "ja": "会社概要",
+            "vi": "Tổng quan công ty"
+        },
+        "title": {
+            "ko": "조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다.",
+            "en": "JO&SOFT is a specialized manufacturing AI solution company established based on global consulting capabilities accumulated from IBM and Accenture.",
+            "ja": "JO&SOFTはIBMとアクセンチュアで蓄積した<br/>グローバルコンサルティング能力を基に設立された製造AIソリューション専門企業です。",
+            "vi": "JO&SOFT là công ty chuyên về giải pháp AI sản xuất được thành lập dựa trên năng lực tư vấn toàn cầu tích lũy từ IBM và Accenture."
+        },
+        "dscpt": {
+            "ko": "국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.",
+            "en": "Together with domestic and overseas partners, we are leading innovation in manufacturing sites, from smart factories and AI-based manufacturing optimization to digital transformation consulting.",
+            "ja": "国内および海外パートナー企業と共にスマートファクトリー、AIベース製造最適化、<br/>デジタル変革コンサルティングまで、製造現場の革新をリードしています。",
+            "vi": "Cùng với các đối tác trong nước và nước ngoài, chúng tôi đang dẫn đầu sự đổi mới tại các địa điểm sản xuất, từ nhà máy thông minh và tối ưu hóa sản xuất dựa trên AI đến tư vấn chuyển đổi số."
+        },
         "logo": {
             "src": "./resources/logos/logo.svg",
             "alt": {
                 "ko": "조앤소프트의 로고입니다.",
-                "en": "The English CI of JO&SOFT"
+                "en": "The English CI of JO&SOFT",
+                "ja": "JO&SOFTのロゴです。",
+                "vi": "Logo của JO&SOFT"
             }
         },
         "address": {
             "ko": "(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554",
-            "en": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea"
+            "en": "13554, 602, parkview tower, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea",
+            "ja": "13554、602、パークビュータワー、248、貞子一路、盆唐区、城南市、京畿道、大韓民国",
+            "vi": "13554, 602, tòa nhà parkview, 248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Cộng hòa Hàn Quốc"
         },
         "info": {
             "ko": "회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272",
-            "en": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272"
+            "en": "Company name: JO&Soft Co., Ltd. | Representative: Cho Hyun-chul | Business Number: 265-87-00272",
+            "ja": "会社名：JO&Soft株式会社 | 代表者：チョ・ヒョンチョル | 事業者番号：265-87-00272",
+            "vi": "Tên công ty: JO&Soft Co., Ltd. | Đại diện: Cho Hyun-chul | Số doanh nghiệp: 265-87-00272"
         }
     },
     "inobiz": {
         "src": {
             "ko": "./resources/logos/inobiz.png",
-            "en": "./resources/logos/inobiz-en.png"
+            "en": "./resources/logos/inobiz-en.png",
+            "ja": "./resources/logos/inobiz-en.png",
+            "vi": "./resources/logos/inobiz-en.png"
         },
         "alt": {
             "ko": "혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다",
-            "en": "This is the Innoviz logo that has obtained and specified the Innoviz rating, an innovative small and medium-sized company."
+            "en": "This is the Innoviz logo that has obtained and specified the Innoviz rating, an innovative small and medium-sized company.",
+            "ja": "革新型中小企業のイノビズ等級を取得して明記したイノビズロゴです",
+            "vi": "Đây là logo Innoviz đã đạt được và chỉ định xếp hạng Innoviz, một công ty vừa và nhỏ đổi mới."
         }
     },
     "banner": {
         "ask": {
             "title":{
                 "ko": "프로젝트 문의하기",
-                "en": "Inquire about a project"
+                "en": "Inquire about a project",
+                "ja": "プロジェクトお問い合わせ",
+                "vi": "Thắc mắc về dự án"
             },
             "dscpt":{
                 "ko": "조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.",
-                "en": "JO&SOFT proposes building a better software environment.<br/>Experience innovative business growth."
+                "en": "JO&SOFT proposes building a better software environment.<br/>Experience innovative business growth.",
+                "ja": "JO&SOFTはより良いソフトウェア環境構築を提案します。<br/>革新的なビジネス成長を体験してください。",
+                "vi": "JO&SOFT đề xuất xây dựng môi trường phần mềm tốt hơn.<br/>Trải nghiệm sự phát triển kinh doanh đổi mới."
             },
             "button":{
                 "ko": "프로젝트 문의하기",
-                "en": "Inquire about a project"
+                "en": "Inquire about a project",
+                "ja": "プロジェクトお問い合わせ",
+                "vi": "Thắc mắc về dự án"
+            }
+        }
+    },
+    "partners": {
+        "customer": {
+            "title": {
+                "ko": "OUR CUSTOMER",
+                "en": "OUR CUSTOMER",
+                "ja": "OUR CUSTOMER",
+                "vi": "OUR CUSTOMER"
+            }
+        },
+        "partner": {
+            "title": {
+                "ko": "OUR PARTNER",
+                "en": "OUR PARTNER",
+                "ja": "OUR PARTNER",
+                "vi": "OUR PARTNER"
+            }
+        }
+    },
+    "buttons": {
+        "view_details": {
+            "ko": "자세히 보기",
+            "en": "View Details",
+            "ja": "詳しく見る",
+            "vi": "Xem chi tiết"
+        },
+        "view_success_cases": {
+            "ko": "성공사례 자세히 보기",
+            "en": "View success cases in detail",
+            "ja": "成功事例を詳しく見る",
+            "vi": "Xem chi tiết các trường hợp thành công"
+        },
+        "close": {
+            "ko": "닫기",
+            "en": "Close",
+            "ja": "閉じる",
+            "vi": "Đóng"
+        }
+    },
+    "philosophy": {
+        "title": {
+            "ko": "Business Philosophy",
+            "en": "Business Philosophy",
+            "ja": "ビジネスフィロソフィー",
+            "vi": "Triết lý Kinh doanh"
+        },
+        "talent": {
+            "title": {
+                "ko": "Talent Management",
+                "en": "Talent Management",
+                "ja": "タレントマネジメント",
+                "vi": "Quản lý nhân tài"
+            },
+            "subtitle": {
+                "ko": "인재상",
+                "en": "Talent Model",
+                "ja": "人材像",
+                "vi": "Mô hình nhân tài"
+            },
+            "content": {
+                "ko": ["Customer Business Understanding", "Challenging & Passion", "Team working & well communication"],
+                "en": ["Customer Business Understanding", "Challenging & Passion", "Team working & well communication"],
+                "ja": ["顧客ビジネス理解", "挑戦と情熱", "チームワークと良好なコミュニケーション"],
+                "vi": ["Hiểu biết kinh doanh khách hàng", "Thách thức và đam mê", "Làm việc nhóm và giao tiếp tốt"]
+            }
+        },
+        "value": {
+            "title": {
+                "ko": "Our Value Proposition",
+                "en": "Our Value Proposition",
+                "ja": "私たちの価値提案",
+                "vi": "Đề xuất giá trị của chúng tôi"
+            },
+            "subtitle": {
+                "ko": "가치제안",
+                "en": "Value Proposition",
+                "ja": "価値提案",
+                "vi": "Đề xuất giá trị"
+            },
+            "content": {
+                "ko": ["Reasonable Price", "Rapid Delivery", "Right Way"],
+                "en": ["Reasonable Price", "Rapid Delivery", "Right Way"],
+                "ja": ["適正価格", "迅速な納品", "正しい方法"],
+                "vi": ["Giá cả hợp lý", "Giao hàng nhanh chóng", "Phương pháp đúng đắn"]
+            }
+        },
+        "culture": {
+            "title": {
+                "ko": "Company Culture",
+                "en": "Company Culture",
+                "ja": "企業文化",
+                "vi": "Văn hóa công ty"
+            },
+            "subtitle": {
+                "ko": "기업문화",
+                "en": "Company Culture",
+                "ja": "企業文化",
+                "vi": "Văn hóa công ty"
+            },
+            "content": {
+                "ko": ["Respect each other (다양성 존중)", "Fellowship (동료애)", "Brainstorming (자유로운 소통과 아이디어 창출)"],
+                "en": ["Respect each other (Respect for diversity)", "Fellowship (Comradeship)", "Brainstorming (Free communication and idea creation)"],
+                "ja": ["お互いを尊重する（多様性尊重）", "仲間愛", "ブレインストーミング（自由なコミュニケーションとアイデア創出）"],
+                "vi": ["Tôn trọng lẫn nhau (Tôn trọng sự đa dạng)", "Tình đồng nghiệp", "Động não (Giao tiếp tự do và tạo ra ý tưởng)"]
             }
         }
     }

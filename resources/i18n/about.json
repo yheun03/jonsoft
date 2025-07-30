@@ -1,35 +1,187 @@
 {
+    "banner": {
+        "title-sub": {
+            "ko": "Who we are",
+            "en": "Who we are",
+            "ja": "私たちについて",
+            "vi": "Chúng tôi là ai"
+        },
+        "title": {
+            "ko": "우리는 Technology 컨설팅과 함께<br/>소프트웨어 개발을 제공합니다.",
+            "en": "We provide software development<br/>along with Technology consulting.",
+            "ja": "私たちはテクノロジーコンサルティングと共に<br/>ソフトウェア開発を提供します。",
+            "vi": "Chúng tôi cung cấp phát triển phần mềm<br/>cùng với tư vấn công nghệ."
+        },
+        "dscpt": {
+            "ko": ["Technology 컨설팅", "생산현장 제조AI 솔루션 구축 및 운영", "소프트웨어 개발 및 유통", "온라인 마케팅 컨설팅 및 플랫폼 운영", "스마트팩토리", "프로세스 자동화"],
+            "en": ["Technology consulting", "Building and operating manufacturing AI solutions for production sites", "Software development and distribution", "Online marketing consulting and platform operation", "Smart factory", "Process automation"],
+            "ja": ["テクノロジーコンサルティング", "生産現場製造AIソリューション構築および運営", "ソフトウェア開発および流通", "オンラインマーケティングコンサルティングおよびプラットフォーム運営", "スマートファクトリー", "プロセス自動化"],
+            "vi": ["Tư vấn công nghệ", "Xây dựng và vận hành giải pháp AI sản xuất cho các địa điểm sản xuất", "Phát triển và phân phối phần mềm", "Tư vấn tiếp thị trực tuyến và vận hành nền tảng", "Nhà máy thông minh", "Tự động hóa quy trình"]
+        }
+    },
+    "company": {
+        "title": {
+            "ko": "조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다.",
+            "en": "JO&SOFT is a specialized manufacturing AI solution company established based on global consulting capabilities accumulated from IBM and Accenture.",
+            "ja": "JO&SOFTはIBMとアクセンチュアで蓄積した<br/>グローバルコンサルティング能力を基に設立された製造AIソリューション専門企業です。",
+            "vi": "JO&SOFT là công ty chuyên về giải pháp AI sản xuất được thành lập dựa trên năng lực tư vấn toàn cầu tích lũy từ IBM và Accenture."
+        },
+        "dscpt": {
+            "ko": "국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.",
+            "en": "Together with domestic and overseas partners, we are leading innovation in manufacturing sites, from smart factories and AI-based manufacturing optimization to digital transformation consulting.",
+            "ja": "国内および海外パートナー企業と共にスマートファクトリー、AIベース製造最適化、<br/>デジタル変革コンサルティングまで、製造現場の革新をリードしています。",
+            "vi": "Cùng với các đối tác trong nước và nước ngoài, chúng tôi đang dẫn đầu sự đổi mới tại các địa điểm sản xuất, từ nhà máy thông minh và tối ưu hóa sản xuất dựa trên AI đến tư vấn chuyển đổi số."
+        }
+    },
+    "summary": {
+        "item-01": {
+            "title": {
+                "ko": "업력",
+                "en": "Years of experience",
+                "ja": "営業年数",
+                "vi": "Năm kinh nghiệm"
+            }
+        },
+        "item-02": {
+            "title": {
+                "ko": "누적 과제수",
+                "en": "Cumulative projects",
+                "ja": "累積課題数",
+                "vi": "Dự án tích lũy"
+            }
+        },
+        "item-03": {
+            "title": {
+                "ko": "주요 고객사",
+                "en": "Major customers",
+                "ja": "主要顧客企業",
+                "vi": "Khách hàng chính"
+            }
+        },
+        "item-04": {
+            "title": {
+                "ko": "주요 파트너",
+                "en": "Major partners",
+                "ja": "主要パートナー",
+                "vi": "Đối tác chính"
+            }
+        },
+        "standard": {
+            "ko": "25.1 기준",
+            "en": "As of 25.1",
+            "ja": "25.1基準",
+            "vi": "Tính đến 25.1"
+        }
+    },
+    "strength": {
+        "title": {
+            "ko": "강점 및 특징",
+            "en": "Strengths and characteristics",
+            "ja": "強みおよび特徴",
+            "vi": "Điểm mạnh và đặc điểm"
+        },
+        "dscpt": {
+            "ko": "중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.",
+            "en": "We have experience in conducting ISP and benchmarking of advanced companies that are difficult for small and medium-sized enterprises to perform, and we perform everything from consulting to system construction and operation.",
+            "ja": "中小企業では実施困難な<br/>ISPおよび先進企業ベンチマーキング実施経験を保有しており、コンサルティングから<br/>システム構築/運営まで実施します。",
+            "vi": "Chúng tôi có kinh nghiệm thực hiện ISP và benchmarking của các công ty tiên tiến mà các doanh nghiệp vừa và nhỏ khó thực hiện, và chúng tôi thực hiện mọi thứ từ tư vấn đến xây dựng và vận hành hệ thống."
+        }
+    },
+    "feature": {
+        "item-01": {
+            "title": {
+                "ko": "다양한 ISP 및 선진사례<br>벤치마킹 컨설팅 경험 보유",
+                "en": "Possess experience in various ISP and<br>advanced case benchmarking consulting",
+                "ja": "様々なISPおよび先進事例<br>ベンチマーキングコンサルティング経験保有",
+                "vi": "Có kinh nghiệm tư vấn benchmarking<br>các trường hợp tiên tiến và ISP đa dạng"
+            },
+            "content": {
+                "ko": ["LG U+ UCRM 2.0 PI 컨설팅", "LG U+ 차세대 통합 DW 분석/설계", "파리바게트 DT 고도화를 위한 컨설팅", "서울특별시 학교안전공제회 ISP 컨설팅", "경기문화재단 성과관리 시스템 구축을 위한 ISP 컨설팅", "LG CNS 커머스 플랫폼 구축을 위한 PI 컨설팅", "CJ대한통운 선진사례 벤치마킹", "한화 Food Service / 통합물류 선진사례 벤치마킹", "GS 리테일 통합상품 선진사례벤치마킹"],
+                "en": ["LG U+ UCRM 2.0 PI Consulting", "LG U+ Next Generation Integrated DW Analysis/Design", "Consulting for Paris Baguette DT Enhancement", "Seoul Metropolitan School Safety Mutual Aid Association ISP Consulting", "Gyeonggi Cultural Foundation Performance Management System Construction ISP Consulting", "LG CNS Commerce Platform Construction PI Consulting", "CJ Korea Express Advanced Case Benchmarking", "Hanwha Food Service / Integrated Logistics Advanced Case Benchmarking", "GS Retail Integrated Product Advanced Case Benchmarking"],
+                "ja": ["LG U+ UCRM 2.0 PIコンサルティング", "LG U+次世代統合DW分析/設計", "パリバゲットDT高度化のためのコンサルティング", "ソウル特別市学校安全共済会ISPコンサルティング", "京畿文化財団成果管理システム構築のためのISPコンサルティング", "LG CNSコマースプラットフォーム構築のためのPIコンサルティング", "CJ韓国通運先進事例ベンチマーキング", "ハンファフードサービス/統合物流先進事例ベンチマーキング", "GSリテール統合商品先進事例ベンチマーキング"],
+                "vi": ["Tư vấn LG U+ UCRM 2.0 PI", "Phân tích/Thiết kế DW tích hợp thế hệ tiếp theo LG U+", "Tư vấn nâng cao DT cho Paris Baguette", "Tư vấn ISP Hiệp hội Bảo hiểm An toàn Trường học Seoul", "Tư vấn ISP xây dựng hệ thống quản lý hiệu suất Quỹ Văn hóa Gyeonggi", "Tư vấn PI xây dựng nền tảng thương mại LG CNS", "Benchmarking trường hợp tiên tiến CJ Korea Express", "Benchmarking trường hợp tiên tiến Hanwha Food Service / Logistics tích hợp", "Benchmarking trường hợp tiên tiến sản phẩm tích hợp GS Retail"]
+            }
+        },
+        "item-02": {
+            "title": {
+                "ko": "검증된 방법론/Tool의 활용",
+                "en": "Utilization of verified methodology/Tools",
+                "ja": "検証された方法論/Toolの活用",
+                "vi": "Sử dụng phương pháp luận/Công cụ đã được xác minh"
+            },
+            "content": {
+                "ko": ["IBM 및 액센추어에서 취득한 노하우와 경험활용", "시스템 구축 규모에 맞는 커스터마이즈 된 개발방법론 활용", "인터뷰 수행, As-Is분석, Pain Point도출, To-Be 프로세스 및 시스템 기능정의 등 주요컨설팅사에 버금가는 템플릿 및 사례 보유"],
+                "en": ["Utilization of know-how and experience acquired from IBM and Accenture", "Utilization of customized development methodology suitable for system construction scale", "Possess templates and cases comparable to major consulting companies such as interview execution, As-Is analysis, Pain Point derivation, To-Be process and system function definition"],
+                "ja": ["IBMおよびアクセンチュアで取得したノウハウと経験活用", "システム構築規模に適したカスタマイズされた開発方法論活用", "インタビュー実施、As-Is分析、Pain Point導出、To-Beプロセスおよびシステム機能定義など主要コンサルティング企業に匹敵するテンプレートおよび事例保有"],
+                "vi": ["Sử dụng know-how và kinh nghiệm thu được từ IBM và Accenture", "Sử dụng phương pháp luận phát triển tùy chỉnh phù hợp với quy mô xây dựng hệ thống", "Sở hữu các mẫu và trường hợp tương đương với các công ty tư vấn lớn như thực hiện phỏng vấn, phân tích As-Is, dẫn xuất Pain Point, định nghĩa quy trình To-Be và chức năng hệ thống"]
+            }
+        },
+        "item-03": {
+            "title": {
+                "ko": "컨설팅 부터 IT 시스템<br/>구축/운영까지<br/>End-to-End Coverage",
+                "en": "End-to-End Coverage from<br/>consulting to IT system<br/>construction/operation",
+                "ja": "コンサルティングからITシステム<br/>構築/運営まで<br/>End-to-End Coverage",
+                "vi": "Bảo hiểm End-to-End từ<br/>tư vấn đến xây dựng/vận hành<br/>hệ thống IT"
+            },
+            "content": {
+                "ko": ["As-Is개선포인트 도출, To-Be 프로세스정의, 시스템 구축 및 운영까지 가능한 강소기업", "하나투어, KT텔레캅 온라인시스템구축", "인천대학교, 삼성전기 온라인 마케팅 컨설팅 및 홈페이지 구축 및 운영", "KEB 하나은행, BC카드 CRM 및 캠페인 솔루션 구축", "테라에코 스마트팩토리 솔루션 구축", "그외 다수의 기업 어플리케이션구축 및 운영 실적보유"],
+                "en": ["A strong small company capable of everything from As-Is improvement point derivation, To-Be process definition, to system construction and operation", "Hana Tour, KT Telecop online system construction", "Incheon National University, Samsung Electro-Mechanics online marketing consulting and homepage construction and operation", "KEB Hana Bank, BC Card CRM and campaign solution construction", "Terra Eco smart factory solution construction", "Possess performance in construction and operation of numerous other corporate applications"],
+                "ja": ["As-Is改善ポイント導出、To-Beプロセス定義、システム構築および運営まで可能な強小企業", "ハナツアー、KTテレコップオンラインシステム構築", "仁川大学校、三星電機オンラインマーケティングコンサルティングおよびホームページ構築および運営", "KEBハナ銀行、BCカードCRMおよびキャンペーンソリューション構築", "テラエコスマートファクトリーソリューション構築", "その他多数の企業アプリケーション構築および運営実績保有"],
+                "vi": ["Một công ty nhỏ mạnh có khả năng làm mọi thứ từ dẫn xuất điểm cải thiện As-Is, định nghĩa quy trình To-Be, đến xây dựng và vận hành hệ thống", "Xây dựng hệ thống trực tuyến Hana Tour, KT Telecop", "Tư vấn tiếp thị trực tuyến và xây dựng/vận hành trang chủ Đại học Quốc gia Incheon, Samsung Electro-Mechanics", "Xây dựng giải pháp CRM và chiến dịch KEB Hana Bank, BC Card", "Xây dựng giải pháp nhà máy thông minh Terra Eco", "Sở hữu hiệu suất trong xây dựng và vận hành nhiều ứng dụng doanh nghiệp khác"]
+            }
+        }
+    },
+    "history": {
+        "title": {
+            "ko": "비즈니스 연혁",
+            "en": "Business history",
+            "ja": "ビジネス沿革",
+            "vi": "Lịch sử kinh doanh"
+        }
+    },
     "awards": {
         "title": {
             "ko": "지속적인 성장과 탄탄한 재무건전성",
-            "en": "-"
+            "en": "Sustainable growth and solid financial soundness",
+            "ja": "持続的な成長と堅実な財務健全性",
+            "vi": "Tăng trưởng bền vững và tình hình tài chính vững chắc"
         },
         "dscpt": {
             "ko": "우수기술기업 이노비즈 인증 및<br>각종 특허 및 수상",
-            "en": "-"
+            "en": "Excellent technology company Innoviz certification and<br>various patents and awards",
+            "ja": "優秀技術企業イノビズ認証および<br>各種特許および受賞",
+            "vi": "Chứng nhận công ty công nghệ xuất sắc Innoviz và<br>các bằng sáng chế và giải thưởng khác nhau"
         },
         "item-01": {
             "title": {
                 "ko": "기술역량 강화를 위해 끊임없이<br>노력하고 있으며 기술혁신형<br>중소기업 이노비즈 인증을<br>획득하였습니다.",
-                "en": "-"
+                "en": "We are constantly striving to strengthen our technological capabilities and have obtained Innoviz certification for technology-innovative small and medium-sized enterprises.",
+                "ja": "技術能力強化のために絶えず<br>努力しており、技術革新型<br>中小企業イノビズ認証を<br>取得しました。",
+                "vi": "Chúng tôi không ngừng nỗ lực để tăng cường năng lực công nghệ và đã đạt được chứng nhận Innoviz cho các doanh nghiệp vừa và nhỏ đổi mới công nghệ."
             }
         },
         "item-02": {
             "title": {
                 "ko": "중견 기업 및 중소기업형<br>MES 시스템 소프트웨어를<br>개발하여 전개하고 있습니다.",
-                "en": "-"
+                "en": "We are developing and deploying MES system software for mid-sized companies and small and medium-sized enterprises.",
+                "ja": "中堅企業および中小企業向け<br>MESシステムソフトウェアを<br>開発して展開しています。",
+                "vi": "Chúng tôi đang phát triển và triển khai phần mềm hệ thống MES cho các công ty vừa và các doanh nghiệp vừa và nhỏ."
             }
         },
         "item-03": {
             "title": {
                 "ko": "2년연속 (2017/2018) 웹 어워드<br>코리아 최우수상 연속수상",
-                "en": "-"
+                "en": "Consecutive awards for 2 years (2017/2018) Web Award Korea Best Award",
+                "ja": "2年連続（2017/2018）ウェブアワード<br>韓国最優秀賞連続受賞",
+                "vi": "Giải thưởng liên tiếp 2 năm (2017/2018) Web Award Korea Giải thưởng xuất sắc nhất"
             }
         },
         "item-04": {
             "title": {
                 "ko": "학교 안전 사고 관리 시스템 특허 및<br>확신성장유형 벤처기업",
-                "en": "-"
+                "en": "School safety accident management system patent and<br>venture company of confident growth type",
+                "ja": "学校安全事故管理システム特許および<br>確信成長型ベンチャー企業",
+                "vi": "Bằng sáng chế hệ thống quản lý tai nạn an toàn trường học và<br>công ty khởi nghiệp kiểu tăng trưởng tự tin"
             }
         }
     }

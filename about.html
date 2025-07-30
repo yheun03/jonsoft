@@ -29,6 +29,27 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
+    <script>
+        // 페이지별 JSON 데이터 로드
+        window.pageData = {};
+        window.commonData = {};
+        
+        // 공통 데이터 로드
+        fetch('./resources/i18n/common.json')
+            .then(response => response.json())
+            .then(data => {
+                window.commonData = data;
+            })
+            .catch(error => console.error('Error loading common data:', error));
+            
+        // 페이지별 데이터 로드
+        fetch('./resources/i18n/about.json')
+            .then(response => response.json())
+            .then(data => {
+                window.pageData = data;
+            })
+            .catch(error => console.error('Error loading page data:', error));
+    </script>
 <body>
     <header>
         <div class="wrap">
@@ -42,6 +63,8 @@
             <ul class="i18n">
                 <li class="active"><button class="btn" data-lang="ko">KOR</button></li>
                 <li><button class="btn" data-lang="en">ENG</button></li>
+                <li><button class="btn" data-lang="ja">JPN</button></li>
+                <li><button class="btn" data-lang="vi">VIE</button></li>
             </ul>
         </div>
     </header>
@@ -49,9 +72,9 @@
         <div class="banner set-bg-bottom">
             <div class="module-text">
                 <div class="wrap">
-                    <p class="title-sub"><span class="gradient-text">Who we are</span></p>
-                    <p class="title">우리는 Technology 컨설팅과 함께<br/>소프트웨어 개발을 제공합니다. </p>
-                    <ul class="dscpt">
+                    <p class="title-sub"><span class="gradient-text" data-i18n="banner.title-sub">Who we are</span></p>
+                    <p class="title" data-i18n="banner.title">우리는 Technology 컨설팅과 함께<br/>소프트웨어 개발을 제공합니다. </p>
+                    <ul class="dscpt" data-i18n="banner.dscpt">
                         <li>Technology 컨설팅</li>
                         <li>생산현장 제조AI 솔루션 구축 및 운영</li>
                         <li>소프트웨어 개발 및 유통</li>
@@ -65,9 +88,9 @@
         </div>
         <div class="module-text">
             <div class="wrap">
-                <p class="title-sub"><span class="gradient-text">회사개요</span></p>
-                <p class="title">조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다. </p>
-                <p class="dscpt">국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.</p>
+                <p class="title-sub"><span class="gradient-text" data-common="company.title-sub">회사개요</span></p>
+                <p class="title" data-common="company.title">조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다. </p>
+                <p class="dscpt" data-common="company.dscpt">국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.</p>
             </div>
         </div>
         <div class="summary">
@@ -77,7 +100,7 @@
                         <img src="./resources/icons/120/ic-building.svg" alt="">
                         <div class="content">
                             <p class="dscpt"><span>9+</span></p>
-                            <p class="title">업력</p>
+                            <p class="title" data-i18n="summary.item-01.title">업력</p>
                             <span class="eyebrow"></span>
                         </div>
                     </li>
@@ -85,7 +108,7 @@
                         <img src="./resources/icons/120/ic-factory.svg" alt="">
                         <div class="content">
                             <p class="dscpt"><span>50+</span></p>
-                            <p class="title">누적 과제수</p>
+                            <p class="title" data-i18n="summary.item-02.title">누적 과제수</p>
                             <span class="eyebrow">25.1 기준</span>
                         </div>
                     </li>
@@ -93,7 +116,7 @@
                         <img src="./resources/icons/120/ic-partner.svg" alt="">
                         <div class="content">
                             <p class="dscpt"><span>20</span></p>
-                            <p class="title">주요 고객사</p>
+                            <p class="title" data-i18n="summary.item-03.title">주요 고객사</p>
                             <span class="eyebrow">25.1 기준</span>
                         </div>
                     </li>
@@ -101,7 +124,7 @@
                         <img src="./resources/icons/120/ic-hand.svg" alt="">
                         <div class="content">
                             <p class="dscpt"><span>12</span></p>
-                            <p class="title">주요 파트너</p>
+                            <p class="title" data-i18n="summary.item-04.title">주요 파트너</p>
                             <span class="eyebrow">25.1 기준</span>
                         </div>
                     </li>
@@ -152,8 +175,8 @@
         </div>
         <div class="module-text">
             <div class="wrap">
-                <p class="title-sub"><span class="gradient-text">강점 및 특징</span></p>
-                <p class="title">중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.</p>
+                <p class="title-sub"><span class="gradient-text" data-i18n="strength.title">강점 및 특징</span></p>
+                <p class="title" data-i18n="strength.dscpt">중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.</p>
             </div>
         </div>
         <div class="feature">
@@ -161,10 +184,10 @@
                 <div class="list-feature">
                     <div class="item item-01">
                         <div class="front">
-                            <p class="title">다양한 ISP 및 선진사례<br>벤치마킹 컨설팅 경험 보유</p>
+                            <p class="title" data-i18n="feature.item-01.title">다양한 ISP 및 선진사례<br>벤치마킹 컨설팅 경험 보유</p>
                         </div>
                         <div class="back">
-                            <ul>
+                            <ul data-i18n="feature.item-01.content">
                                 <li>LG U+ UCRM 2.0 PI 컨설팅</li>
                                 <li>LG U+ 차세대 통합 DW 분석/설계</li>
                                 <li>파리바게트 DT 고도화를 위한 컨설팅</li>
@@ -175,36 +198,36 @@
                                 <li>한화 Food Service / 통합물류 선진사례 벤치마킹</li>
                                 <li>GS 리테일 통합상품 선진사례벤치마킹</li>
                             </ul>
-                            <a href="">성공사례 자세히 보기</a>
+                            <a href="" data-common="buttons.view_success_cases">성공사례 자세히 보기</a>
                         </div>
                     </div>
                     <div class="item item-02">
                         <div class="front">
-                            <p class="title">검증된 방법론/Tool의 활용</p>
+                            <p class="title" data-i18n="feature.item-02.title">검증된 방법론/Tool의 활용</p>
                         </div>
                         <div class="back">
-                            <ul>
+                            <ul data-i18n="feature.item-02.content">
                                 <li>IBM 및 액센추어에서 취득한 노하우와 경험활용</li>
-                                <li>시스템 구축  규모에 맞는 커스터마이즈 된 개발방법론 활용</li>
-                                <li>인터뷰 수행, As-Is분석, Pain Point도출, To-Be 프로세스 및 시스템 기능정의 등 주요컨설팅사에 버금가는 템플릿 및 사례 보유 </li>
+                                <li>시스템 구축 규모에 맞는 커스터마이즈 된 개발방법론 활용</li>
+                                <li>인터뷰 수행, As-Is분석, Pain Point도출, To-Be 프로세스 및 시스템 기능정의 등 주요컨설팅사에 버금가는 템플릿 및 사례 보유</li>
                             </ul>
-                            <a href="">성공사례 자세히 보기</a>
+                            <a href="" data-common="buttons.view_success_cases">성공사례 자세히 보기</a>
                         </div>
                     </div>
                     <div class="item item-03">
                         <div class="front">
-                            <p class="title">컨설팅 부터 IT 시스템<br/>구축/운영까지<br/>End-to-End Coverage</p>
+                            <p class="title" data-i18n="feature.item-03.title">컨설팅 부터 IT 시스템<br/>구축/운영까지<br/>End-to-End Coverage</p>
                         </div>
                         <div class="back">
-                            <ul>
+                            <ul data-i18n="feature.item-03.content">
                                 <li>As-Is개선포인트 도출, To-Be 프로세스정의, 시스템 구축 및 운영까지 가능한 강소기업</li>
                                 <li>하나투어, KT텔레캅 온라인시스템구축</li>
                                 <li>인천대학교, 삼성전기 온라인 마케팅 컨설팅 및 홈페이지 구축 및 운영</li>
-                                <li>KEB 하나은행, BC카드 CRM 및 캠페인 솔루션 구축 </li>
+                                <li>KEB 하나은행, BC카드 CRM 및 캠페인 솔루션 구축</li>
                                 <li>테라에코 스마트팩토리 솔루션 구축</li>
                                 <li>그외 다수의 기업 어플리케이션구축 및 운영 실적보유</li>
                             </ul>
-                            <a href="">성공사례 자세히 보기</a>
+                            <a href="" data-common="buttons.view_success_cases">성공사례 자세히 보기</a>
                         </div>
                     </div>
                 </div>
@@ -216,43 +239,52 @@
                 <ul class="history-timeline"></ul>
             </div>
         </div>
+        <div class="history">
+            <div class="wrap">
+                <h2 data-common="history.title">연혁</h2>
+                <p data-common="history.description">조앤소프트의 성장 과정과 주요 프로젝트 연혁을 확인하세요.</p>
+                <div class="history-timeline">
+                    <!-- Timeline will be rendered by i18n.js -->
+                </div>
+            </div>
+        </div>
         <div class="philosophy">
             <div class="wrap full">
-                <h3>Business<br/>Philosophy</h3>
+                <h3 data-common="philosophy.title">Business<br/>Philosophy</h3>
                 <div class="list-philosophy">
                     <div class="item">
                         <img src="./resources/images/philosophy-1.png" alt="">
                         <div class="content">
-                            <p>Talent Management</p>
-                            <dl>
-                                <dt>인재상</dt>
-                                <dd>Customer Business Understanding</dd>
-                                <dd>Challenging & Passion</dd>
-                                <dd>Team working & well communication</dd>
+                            <p data-common="philosophy.talent.title">Talent Management</p>
+                            <dl data-common="philosophy.talent.content">
+                                <dt data-common="philosophy.talent.subtitle">인재상</dt>
+                                <dd data-common="philosophy.talent.content.0">Customer Business Understanding</dd>
+                                <dd data-common="philosophy.talent.content.1">Challenging & Passion</dd>
+                                <dd data-common="philosophy.talent.content.2">Team working & well communication</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="item">
                         <img src="./resources/images/philosophy-2.png" alt="">
                         <div class="content">
-                            <p>Our Value Proposition</p>
-                            <dl>
-                                <dt>가치제안</dt>
-                                <dd>Reasonable Price</dd>
-                                <dd>Rapid Delivery</dd>
-                                <dd>Right Way</dd>
+                            <p data-common="philosophy.value.title">Our Value Proposition</p>
+                            <dl data-common="philosophy.value.content">
+                                <dt data-common="philosophy.value.subtitle">가치제안</dt>
+                                <dd data-common="philosophy.value.content.0">Reasonable Price</dd>
+                                <dd data-common="philosophy.value.content.1">Rapid Delivery</dd>
+                                <dd data-common="philosophy.value.content.2">Right Way</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="item">
                         <img src="./resources/images/philosophy-3.png" alt="">
                         <div class="content">
-                            <p>Company Culture</p>
-                            <dl>
-                                <dt>기업문화</dt>
-                                <dd>Respect each other (다양성 존중)</dd>
-                                <dd>Fellowship (동료애)</dd>
-                                <dd>Brainstorming (자유로운 소통과 아이디어 창출)</dd>
+                            <p data-common="philosophy.culture.title">Company Culture</p>
+                            <dl data-common="philosophy.culture.content">
+                                <dt data-common="philosophy.culture.subtitle">기업문화</dt>
+                                <dd data-common="philosophy.culture.content.0">Respect each other (다양성 존중)</dd>
+                                <dd data-common="philosophy.culture.content.1">Fellowship (동료애)</dd>
+                                <dd data-common="philosophy.culture.content.2">Brainstorming (자유로운 소통과 아이디어 창출)</dd>
                             </dl>
                         </div>
                     </div>
@@ -261,10 +293,10 @@
         </div>
         <div class="banner type-ask">
             <div class="wrap">
-                <p class="title" data-i18n="banner.ask.title">프로젝트 문의하기</p>
-                <p data-i18n="banner.ask.dscpt">조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.</p>
+                <p class="title" data-common="banner.ask.title">프로젝트 문의하기</p>
+                <p data-common="banner.ask.dscpt">조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.</p>
                 <button class="btn type-ask">
-                    <span data-i18n="banner.ask.button">프로젝트 문의하기</span>
+                    <span data-common="banner.ask.button">프로젝트 문의하기</span>
                 </button>
             </div>
         </div>
@@ -273,7 +305,7 @@
         <div class="wrap not-padding">
             <div>
                 <a href="./" class="logo-jon">
-                    <img data-i18n-src="company.logo.src" data-i18n-alt="company.logo.alt" src="./resources/logos/logo.svg" alt="조앤소프트(주)의 로고입니다.">
+                    <img data-common-src="company.logo.src" data-common-alt="company.logo.alt" src="./resources/logos/logo.svg" alt="조앤소프트(주)의 로고입니다.">
                 </a>
             </div>
             <div class="wrap-text">
@@ -283,12 +315,12 @@
                     <li><a href="./customer.html">CUSTOMER & PATNERS</a></li>
                     <li><a href="./contact.html">CONTACT US</a></li>
                 </ul>
-                <address data-i18n="company.address">(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554</address>
-                <p data-i18n="company.info">회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272</p>
-                <p class="copyright" data-i18n="copyright">© 2025 JO&SOFT. All Rights Reserved.</p>
+                <address data-common="company.address">(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554</address>
+                <p data-common="company.info">회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272</p>
+                <p class="copyright" data-common="copyright">© 2025 JO&SOFT. All Rights Reserved.</p>
             </div>
             <div>
-                <a href="https://www.innobiz.net/" class="logo-inobiz"><img data-i18n-src="inobiz.src" data-i18n-alt="common.inobiz.alt" src="./resources/logos/inobiz.png" alt="혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다."></a>
+                <a href="https://www.innobiz.net/" class="logo-inobiz"><img data-common-src="inobiz.src" data-common-alt="inobiz.alt" src="./resources/logos/inobiz.png" alt="혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다."></a>
             </div>
         </div>
     </footer>
