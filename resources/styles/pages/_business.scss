@@ -105,7 +105,7 @@
     }
 
     .list-case {
-        @include grid(2, $grid-20);
+        @include grid(2, $grid-20, 1fr);
         margin-top: $gap-30;
     }
 

@@ -69,10 +69,10 @@
  * 
  * 사용법: @include grid(3, 20px);
  */
-@mixin grid($columns, $gap: 0) {
+@mixin grid($columns, $gap: 0, $col-size: 1fr) {
     display: grid;
-    grid-template-columns: repeat($columns, 1fr);
-    @if $gap > 0 {
+    grid-template-columns: repeat($columns, $col-size);
+    @if $gap != 0 and $gap != '' {
         gap: $gap;
     }
 }

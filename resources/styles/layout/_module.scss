@@ -62,4 +62,25 @@
             color: #ffffff;
         }
     }
+
+    @include tablet {
+        &{
+            margin-block: 60px 40px;
+            .banner &{
+                padding-top: 130px;
+                .title{
+                    font-size: 24px;
+                }
+                .dscpt{
+                    font-size: 16px;
+                }
+            }
+        }
+        .title{
+            font-size: 24px;
+        }
+        .dscpt{
+            font-size: 16px;
+        }
+    }
 }

@@ -57,7 +57,7 @@
 
     .contact {
         .info {
-            @include grid(3, $grid-90);
+            @include grid(3, $grid-90, 1fr);
 
             dt {
                 @include font-style($fw-6, 19px, 27px);
@@ -163,7 +163,7 @@
     .recruit {
         .info {
             dl {
-                @include grid(3, 1fr);
+                @include grid(3, 0, 1fr);
                 @include font-style($fw-4, 19px, 27px);
                 color: $c-text;
                 margin-bottom: $gap-40;
@@ -202,7 +202,7 @@
     }
 
     .list-philosophy {
-        @include grid(3, $grid-36);
+        @include grid(3, $grid-36, 1fr);
         margin-top: $gap-8;
 
         img {
