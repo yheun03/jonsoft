@@ -47,6 +47,12 @@
     background-color: $c-secondary;
     color: $c-primary;
     padding-inline: $gap-8;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 28px;
+        padding-inline: 10px;
+    }
 }
 
 // =============================================================================

@@ -33,6 +33,7 @@
             backdrop-filter: blur(5px);
         }
         &-round{
+            // 모달 닫기버튼
             background-color: #000000;
             border-radius: 60px;
             padding: 10px 26px;
@@ -45,6 +46,30 @@
             &-opacity{
                 @include font-style($size: 16px, $line-height: 150%);
                 padding: 16px 28px;
+            }
+            &-round{
+                padding: unset;
+                width: 40px;
+                height: 40px;
+                .modal &{
+                    order: -1;
+                    text-indent: -9999px;
+                    background-color: unset;
+                    @include flex(row, center, center);
+                    margin-left: -10px;
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        border: {
+                            width: 0 0 4px 4px;
+                            style: solid;
+                            color: #555555;
+                        }
+                        transform: rotate(45deg);
+                    }
+                }
             }
         }
     }
