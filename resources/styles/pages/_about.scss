@@ -357,6 +357,10 @@
  * 회사 연혁 섹션
  * 회사의 발전 과정을 타임라인으로 표시
  */
+
+ .history, .history2{
+    display: none;
+ }
 .history {
     background-color: $c-bg-dark;
     color: $c-text-light;

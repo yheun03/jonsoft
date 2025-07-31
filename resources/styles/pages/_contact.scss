@@ -233,4 +233,20 @@
             }
         }
     }
+
+    @include tablet {
+        margin-block: 100px;
+        .list-philosophy{
+            @include grid(1, 20px, 1fr);
+            .content{
+                margin-top: 20px;
+                dd{
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-top: unset;
+                }
+            }
+        }
+    }
+
 } 
