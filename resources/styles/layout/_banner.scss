@@ -120,4 +120,49 @@
             }
         }
     }
+
+    @include tablet {
+        height: 580px;
+        .wrap{
+            padding-block: 60px 50px;
+        }
+        img{
+            object-position: calc(100% + 270px);
+        }
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            @include font-style($size: 20px, $line-height: normal);
+        }
+
+        &.type{
+            &-title{
+                margin-block: 60px;
+                .wrap{
+                    padding-inline: 20px;
+                    gap: 40px;
+                    .title{
+                        @include font-style($weight: $fw-6, $size: 24px, $line-height: 150%);
+                        text-align: left;
+                    }
+                    p{
+                        @include font-style($weight: $fw-4, $size: 16px, $line-height: 150%);
+                        text-align: left;
+                    }
+                }
+            }
+            &-goto{
+                .wrap{
+                    justify-content: center;
+                }
+                .title{
+                    font-size: 24px;
+                }
+                img{
+                    object-position: center;
+                }
+            }
+        }
+    }
 }

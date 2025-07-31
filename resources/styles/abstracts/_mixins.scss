@@ -20,7 +20,7 @@
  * 
  * 사용법: @include font-style(600, 24px, normal);
  */
-@mixin font-style($weight, $size, $line-height: normal, $family: $font, $color: $c-text) {
+@mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: $c-text) {
     font: $weight #{$size}/#{$line-height} $family;
     @if $color != $c-text {
         color: $color;

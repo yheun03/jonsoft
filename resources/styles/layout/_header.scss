@@ -46,4 +46,8 @@ header{
             font: 600 14px/normal $font;
         }
     }
+
+    @include tablet {
+        display: none;
+    }
 }

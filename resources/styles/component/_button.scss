@@ -39,4 +39,13 @@
             color: #ffffff;
         }
     }
+
+    @include tablet {
+        &.type{
+            &-opacity{
+                @include font-style($size: 16px, $line-height: 150%);
+                padding: 16px 28px;
+            }
+        }
+    }
 }

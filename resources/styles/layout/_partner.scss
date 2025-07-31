@@ -35,6 +35,9 @@
     }
 
     @include tablet {
+        .title{
+            margin-block: 60px 40px;
+        }
         ul{
             @include flex($gap: 15px);
             flex-wrap: wrap;
