@@ -1,0 +1,23 @@
+/* Error: Undefined variable.
+ *     ,
+ * 170 |                 padding: 35px 25px 0;
+ *     |                          ^^^^^^^
+ *     '
+ *   responsive/_about.scss 170:26  @content
+ *   responsive/_mixins.scss 97:9   @content
+ *   responsive/_mixins.scss 67:13  between()
+ *   responsive/_mixins.scss 96:5   tablet()
+ *   responsive/_about.scss 161:5   @use
+ *   responsive/_index.scss 9:1     @use
+ *   main.scss 19:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 170 \2502                  padding: 35px 25px 0;\a     \2502                           ^^^^^^^\a     \2575 \a   responsive/_about.scss 170:26  @content\a   responsive/_mixins.scss 97:9   @content\a   responsive/_mixins.scss 67:13  between()\a   responsive/_mixins.scss 96:5   tablet()\a   responsive/_about.scss 161:5   @use\a   responsive/_index.scss 9:1     @use\a   main.scss 19:1                 root stylesheet";
+}

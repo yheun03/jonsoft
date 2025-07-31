@@ -15,12 +15,12 @@
  */
 .summary {
     position: relative;
-    margin-top: $gap-60;
+    margin-top: 6px;
     padding-bottom: $gap-80;
     @include bg-image($url + 'images/summary/background.png', right bottom, 800px);
 
     ul {
-        @include flex(row, flex-end, stretch, $gap-60);
+        @include flex(row, flex-end, stretch, 6px);
 
         .content {
             margin-top: 25px;
@@ -82,7 +82,7 @@
         $item-width: 1100px;
         $item-height: 460px;
         $item-radius: $radius-20;
-        $item-padding: $gap-40 $gap-60;
+        $item-padding: $gap-40 6px;
         
         $thumb-bg: (
             'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
@@ -154,7 +154,7 @@
  * 회사의 주요 기능을 카드 형태로 표시
  */
 .feature {
-    margin-block: $gap-60 $gap-80;
+    margin-block: 6px $gap-80;
 
     .list-feature {
         @include grid(3, $grid-20);
@@ -305,10 +305,10 @@
     }
 
     &-timeline {
-        margin-top: $gap-60;
+        margin-top: 6px;
 
         & > li {
-            @include flex(row, center, center, $gap-60);
+            @include flex(row, center, center, 6px);
 
             strong {
                 @include font-style($fw-6, $fs-30, normal);

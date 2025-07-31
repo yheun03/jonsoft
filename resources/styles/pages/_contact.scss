@@ -18,7 +18,7 @@
     h2 {
         @include font-style($fw-6, $fs-42, 52px);
         color: $c-text;
-        margin-bottom: $gap-60;
+        margin-bottom: 6px;
         text-transform: uppercase;
     }
 
