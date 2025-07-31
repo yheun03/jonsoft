@@ -358,9 +358,6 @@
  * 회사의 발전 과정을 타임라인으로 표시
  */
 
- .history, .history2{
-    display: none;
- }
 .history {
     background-color: $c-bg-dark;
     color: $c-text-light;
@@ -376,7 +373,7 @@
         margin-top: $gap-60;
         @include flex(row, center, center, 60px);
         width: 754px;
-        margin: 0 auto;
+        margin-inline: auto;
     }
 
     &-year {
@@ -545,3 +542,78 @@
         }
     }
 } 
+
+@include tablet {
+    .history, .history2{
+        padding-block: 120px 60px;
+        .month{
+            width: unset;
+        }
+    }
+
+    .history{
+        &-timeline{
+            display: unset;
+        }
+        &-year{
+            top: 0;
+            padding-top: 20px;
+            background-color: $c-bg-dark;
+            height: unset;
+            margin: 0 -20px 20px;
+            ul{
+                flex-direction: row;
+                justify-content: flex-start;
+                overflow-x: auto;
+                &::after{
+                    content: unset;
+                }
+                li{
+                    font-size: 20px;
+                    &::before, &::after{
+                        content: unset;
+                    }
+                    &:last-child{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        &-content{
+            & > li{
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+
+    .history2{
+        &-timeline{
+            width: unset;
+            margin: 0 -20px 20px;
+            &::after{
+                content: unset;
+            }
+            strong{
+                padding: 0;
+                font-size: 16px;
+                &::before, &::after{
+                    content: unset;
+                }
+            }
+            & > li{
+                padding-inline: 20px;
+            }
+            li{
+                gap: 10px;
+                justify-content: space-between;
+                ul{
+                    flex: 1;
+                }
+            }
+        }
+        .month{
+            font-size: 14px;
+        }
+    }
+}
