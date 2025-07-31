@@ -1,0 +1,236 @@
+@use '../abstracts' as *;
+
+// =============================================================================
+// Contact 페이지 스타일
+// =============================================================================
+
+// =============================================================================
+// Navigator 섹션
+// =============================================================================
+
+/**
+ * 네비게이터 섹션
+ * 연락처 및 채용 정보를 탭 형태로 표시
+ */
+.navigator {
+    margin-block: $gap-80;
+
+    h2 {
+        @include font-style($fw-6, $fs-42, 52px);
+        color: $c-text;
+        margin-bottom: $gap-60;
+        text-transform: uppercase;
+    }
+
+    .tab {
+        margin-bottom: 50px;
+
+        ul {
+            @include flex(row, center, center, $gap-80);
+            margin: $gap-80 auto 0;
+
+            li {
+                @include font-style($fw-6, $fs-20, normal);
+                color: $c-text;
+                padding-inline: $gap-4;
+                padding-bottom: 14px;
+                opacity: 0.3;
+
+                &.active {
+                    opacity: unset;
+                    box-shadow: inset 0px -2px 0 0px $c-text;
+                }
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+
+        &-content {
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .contact {
+        .info {
+            @include grid(3, $grid-90);
+
+            dt {
+                @include font-style($fw-6, 19px, 27px);
+                color: #b3b3b3;
+                margin-bottom: 25px;
+            }
+
+            dd {
+                @include font-style($fw-4, $fs-16, 22px);
+                color: $c-text;
+                margin-top: 14px;
+
+                strong {
+                    font-weight: $fw-7;
+                }
+
+                a {
+                    margin-left: 36px;
+                }
+            }
+        }
+
+        .list-map {
+            @include flex(row, flex-start, stretch);
+            margin-top: 58px;
+
+            .item {
+                flex: 1;
+            }
+
+            ul {
+                margin: 22px 0 0 95px;
+                @include font-style($fw-4, $fs-16, 22px);
+                color: $c-text;
+
+                strong {
+                    font-weight: $fw-7;
+                }
+
+                li + li {
+                    margin-top: $gap-8;
+                }
+            }
+
+            // 지도 커스텀
+            .root_daum_roughmap {
+                position: relative;
+                width: 100%;
+
+                .wrap_map {
+                    height: 330px;
+                }
+
+                &::after {
+                    @include pseudo-element();
+                    @include absolute-position(top, 0, left, 0);
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    z-index: 10;
+                    @include transition();
+
+                    &:hover {
+                        background-color: unset;
+                        z-index: 0;
+                    }
+                }
+
+                div:has(> div > img[src*=marker]) {
+                    position: relative;
+
+                    .roughmap_maker_label:after {
+                        @include pseudo-element();
+                        width: 45px;
+                        height: 50px;
+                        @include bg-image($url + 'icons/marker.svg', center, cover);
+                        transform: translate(-15px, 50px);
+                        z-index: -1;
+                    }
+
+                    a {
+                        width: 100px;
+                        height: 100px;
+                        @include absolute-position(top, 0, left, 0);
+                        transform: translate(-50%, -10%);
+                    }
+
+                    span,
+                    img {
+                        display: none !important;
+                    }
+                }
+
+                .wrap_controllers,
+                .map_border,
+                .wrap_btn_zoom {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .recruit {
+        .info {
+            dl {
+                @include grid(3, 1fr);
+                @include font-style($fw-4, 19px, 27px);
+                color: $c-text;
+                margin-bottom: $gap-40;
+            }
+
+            p {
+                @include font-style($fw-4, $fs-14, 24px);
+                color: #333333;
+
+                strong {
+                    font-weight: $fw-6;
+                }
+
+                span {
+                    margin-inline: $gap-8;
+                }
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Philosophy 섹션
+// =============================================================================
+
+/**
+ * 철학 섹션
+ * 회사의 철학과 가치관을 카드 형태로 표시
+ */
+.philosophy {
+    margin-block: 210px 48px;
+
+    h3 {
+        @include font-style($fw-6, 25px, normal);
+        color: $c-text;
+    }
+
+    .list-philosophy {
+        @include grid(3, $grid-36);
+        margin-top: $gap-8;
+
+        img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+        }
+
+        .content {
+            margin-top: $gap-30;
+            padding-inline: 6px;
+
+            p {
+                @include font-style($fw-4, $fs-14, normal);
+                color: #9b9b9b;
+            }
+
+            dt {
+                @include font-style($fw-6, $fs-24, normal);
+                color: $c-text;
+                margin-top: $gap-8;
+            }
+
+            dd {
+                @include font-style($fw-3, $fs-16, 27px);
+                color: #383838;
+                margin-top: 7px;
+            }
+        }
+    }
+} 

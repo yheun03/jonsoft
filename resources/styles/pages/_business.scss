@@ -1,0 +1,156 @@
+@use '../abstracts' as *;
+
+// =============================================================================
+// Business 페이지 스타일
+// =============================================================================
+
+// =============================================================================
+// Solution 섹션
+// =============================================================================
+
+/**
+ * 솔루션 섹션
+ * 회사의 주요 솔루션을 슬라이더로 표시
+ */
+.solution {
+    margin-block: $gap-60 $gap-80;
+
+    .slick-list {
+        padding-block: 10px 30px !important;
+        margin-top: -10px;
+    }
+
+    .item {
+        border-radius: $radius-20;
+        background-color: $c-text-light;
+        @include shadow(sm);
+        width: 380px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .thumbnail {
+        position: relative;
+        height: 320px;
+
+        img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+
+        .dim {
+            @include absolute-position(top, 0, left, 0);
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(38, 38, 38, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(102, 102, 102, 0.20);
+            padding: $gap-30;
+
+            p {
+                @include font-style($fw-6, $fs-20, normal);
+                color: #eeeeee;
+
+                &.title {
+                    font: {
+                        weight: $fw-7;
+                        size: $fs-30;
+                    }
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+
+    .content {
+        padding: $gap-20;
+
+        p {
+            @include font-style($fw-4, $fs-20, 150%);
+            color: $c-text;
+            margin-top: $gap-8;
+            @include text-ellipsis(2);
+        }
+
+        a {
+            @include font-style($fw-6, $fs-16, normal);
+            color: #555555;
+            margin-top: $gap-20;
+            @include flex(row, flex-start, center, $gap-4);
+
+            &::after {
+                @include pseudo-element();
+                width: 20px;
+                height: 20px;
+                @include bg-image($url + "icons/20/ic-arrow-right.svg", center, 20px);
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Success 섹션
+// =============================================================================
+
+/**
+ * 성공 사례 섹션
+ * 고객 성공 사례를 그리드 형태로 표시
+ */
+.success {
+    background-color: #333333;
+    padding-block: $gap-120;
+
+    h3 {
+        @include font-style($fw-6, $fs-32, 40px);
+        color: $c-text-light;
+    }
+
+    .list-case {
+        @include grid(2, $grid-20);
+        margin-top: $gap-30;
+    }
+
+    .item {
+        position: relative;
+        border-radius: $radius-10;
+        overflow: hidden;
+        cursor: pointer;
+
+        .title {
+            @include font-style($fw-6, $fs-24, normal);
+            color: $c-text-light;
+        }
+
+        .dscpt {
+            @include font-style($fw-6, $fs-18, 26px);
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: $gap-24;
+
+            li::before {
+                content: "#";
+            }
+        }
+    }
+
+    .content {
+        @include absolute-position(top, 0, left, 0);
+        padding: $gap-30 $gap-20 $gap-20;
+        width: 100%;
+        height: 100%;
+        @include flex(column, flex-start, stretch);
+
+        &::after {
+            @include pseudo-element();
+            display: block;
+            margin-top: auto;
+            width: 26px;
+            height: 26px;
+            @include bg-image($url + "icons/26/ic-circle-arrow.svg", center, 26px);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+} 

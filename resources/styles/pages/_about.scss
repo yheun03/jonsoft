@@ -1,0 +1,334 @@
+@use '../abstracts' as *;
+@use "sass:list";
+
+// =============================================================================
+// About 페이지 스타일
+// =============================================================================
+
+// =============================================================================
+// Summary 섹션
+// =============================================================================
+
+/**
+ * 회사 요약 정보 섹션
+ * 배경 이미지와 함께 회사의 주요 지표를 표시
+ */
+.summary {
+    position: relative;
+    margin-top: $gap-60;
+    padding-bottom: $gap-80;
+    @include bg-image($url + 'images/summary/background.png', right bottom, 800px);
+
+    ul {
+        @include flex(row, flex-end, stretch, $gap-60);
+
+        .content {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .title {
+            @include font-style($fw-6, $fs-18, normal);
+            color: $c-text-gray;
+            margin-block: $gap-8 $gap-12;
+        }
+
+        .dscpt {
+            @include font-style($fw-6, $fs-36, normal);
+            color: $c-text;
+        }
+
+        .eyebrow {
+            @include font-style($fw-4, $fs-14, normal);
+            color: $c-text-gray;
+        }
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+
+// =============================================================================
+// Awards 섹션
+// =============================================================================
+
+/**
+ * 수상 실적 섹션
+ * 회사의 수상 내역을 슬라이더로 표시
+ */
+.awards {
+    padding-block: $gap-80;
+    background-color: $c-bg-light;
+
+    .slick-list {
+        margin-bottom: $gap-20;
+    }
+
+    p {
+        @include font-style($fw-4, $fs-30, normal);
+        color: $c-text;
+        text-align: center;
+
+        &.title {
+            font-weight: $fw-7;
+        }
+    }
+
+    .list-awards {
+        // 로컬 변수 정의
+        $item-width: 1100px;
+        $item-height: 460px;
+        $item-radius: $radius-20;
+        $item-padding: $gap-40 $gap-60;
+        
+        $thumb-bg: (
+            'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
+            'item-02': (#B0E0FB, '../icons/380/copyright.png', #B0E0FB),
+            'item-03': (#FF8372, '../icons/380/webawards.png', #FF8372),
+            'item-04': (#8EAFF6, '../icons/380/venture.png', #8EAFF6),
+        );
+
+        margin-top: $gap-40;
+
+        /**
+         * 썸네일 배경 믹스인
+         * @param {color} $color - 배경 색상
+         * @param {string} $img - 이미지 경로
+         * @param {color} $grad - 그라디언트 색상
+         * 
+         * 사용법: @include thumb-bg(#FFED71, '../icons/380/tcb.png', #FFED71);
+         */
+        @mixin thumb-bg($color, $img, $grad) {
+            background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
+            
+            &::after {
+                @include pseudo-element();
+                @include absolute-position(bottom, 0, left, 0);
+                width: 100%;
+                height: 100%;
+                @include gradient-overlay($grad, 0, 0.5);
+            }
+        }
+
+        .item {
+            position: relative;
+            border-radius: $item-radius;
+            width: $item-width;
+            height: $item-height;
+            padding: $item-padding;
+            overflow: hidden;
+
+            img {
+                width: 220px;
+            }
+
+            p {
+                @include font-style($fw-6, $fs-24, 140%);
+                text-align: left;
+            }
+
+            .thumbnail {
+                @include absolute-position(right, 56px, bottom, -30px);
+                @include flex(row, flex-start, center, $gap-8);
+            }
+
+            // 각 item별 배경/그라디언트 반복
+            @each $name, $val in $thumb-bg {
+                &.#{$name} {
+                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
+                }
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Feature 섹션
+// =============================================================================
+
+/**
+ * 주요 기능 섹션
+ * 회사의 주요 기능을 카드 형태로 표시
+ */
+.feature {
+    margin-block: $gap-60 $gap-80;
+
+    .list-feature {
+        @include grid(3, $grid-20);
+
+        .item {
+            position: relative;
+            border-radius: $radius-20;
+            overflow: hidden;
+            height: 470px;
+            @include bg-image($url + "images/feature/feature-01.png", center, cover);
+            cursor: pointer;
+
+            &-02 {
+                @include bg-image($url + "images/feature/feature-02.png", center, cover);
+
+                .front {
+                    background-color: #C8C5B9;
+                    @include shadow(md, #C8C5B9);
+                }
+
+                .back a {
+                    color: #FFE6CD;
+
+                    &::after {
+                        border-color: #FFE6CD;
+                    }
+                }
+            }
+
+            &-03 {
+                @include bg-image($url + "images/feature/feature-03.png", center, cover);
+
+                .front {
+                    background-color: #46628A;
+                    @include shadow(md, #46628A);
+                }
+
+                .back a {
+                    color: #60FFF5;
+
+                    &::after {
+                        border-color: #60fff5;
+                    }
+                }
+            }
+
+            &:hover {
+                .back {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .front {
+        position: relative;
+        padding: $gap-40 32px 0;
+        width: 100%;
+        background-color: #A2CCFF;
+        @include shadow(md, #A2CCFF);
+
+        .title {
+            @include font-style($fw-6, $fs-24, normal);
+            color: $c-text-light;
+        }
+
+        &::after {
+            @include pseudo-element();
+            @include absolute-position(left, 32px, bottom, -42px);
+            width: 26px;
+            height: 26px;
+            @include bg-image($url + 'icons/26/ic-circle-arrow.svg', left bottom, 26px);
+        }
+    }
+
+    .back {
+        @include absolute-position(top, 0, left, 0);
+        width: 100%;
+        height: 100%;
+        @include flex(column, flex-start, stretch);
+        backdrop-filter: blur(27px);
+        padding: $gap-30 $gap-20 $gap-20;
+        opacity: 0;
+        @include transition(opacity);
+
+        ul {
+            margin-bottom: $gap-12;
+        }
+
+        li {
+            position: relative;
+            @include font-style($fw-6, $fs-16, 21px);
+            color: $c-text-light;
+            margin-bottom: 14px;
+            padding-left: $gap-24;
+
+            &::before {
+                @include pseudo-element();
+                @include absolute-position(top, 8.5px, left, 10px);
+                width: 4px;
+                height: 4px;
+                background-color: $c-text-light;
+                border-radius: 50%;
+            }
+        }
+
+        a {
+            position: relative;
+            align-self: flex-start;
+            @include font-style($fw-8, $fs-14, normal);
+            color: #5FA9FF;
+            margin-left: $gap-8;
+            @include transition();
+
+            &::after {
+                @include pseudo-element();
+                width: 6px;
+                height: 6px;
+                border: 0 solid #5fa9ff;
+                border-width: 2px 2px 0 0;
+                transform: translateY(-50%) rotate(45deg);
+                top: 50%;
+                right: -16px;
+            }
+
+            @include hover(text-decoration, underline);
+        }
+    }
+}
+
+// =============================================================================
+// History 섹션
+// =============================================================================
+
+/**
+ * 회사 연혁 섹션
+ * 회사의 발전 과정을 타임라인으로 표시
+ */
+.history {
+    background-color: $c-bg-dark;
+    color: $c-text-light;
+    padding-top: $gap-80;
+
+    .title {
+        @include font-style($fw-7, $fs-32, 46px);
+        color: $c-text-light;
+        text-align: center;
+    }
+
+    &-timeline {
+        margin-top: $gap-60;
+
+        & > li {
+            @include flex(row, center, center, $gap-60);
+
+            strong {
+                @include font-style($fw-6, $fs-30, normal);
+                color: #797979;
+            }
+        }
+    }
+
+    .month {
+        width: 550px;
+        @include font-style($fw-5, $fs-16, normal);
+        color: $c-text-light;
+        margin-bottom: $gap-20;
+
+        &-label {
+            color: #797979;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+    }
+} 

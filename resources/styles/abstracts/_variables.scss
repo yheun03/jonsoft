@@ -2,4 +2,73 @@
 
 // $url: '/resources/';
 $url: '../'; // 배포할 땐 해당 소스 주석 해제하고 배포
-$font: 'Pretendard'
+$font: 'Pretendard';
+
+// =============================================================================
+// 공통 변수 정의
+// =============================================================================
+
+// 색상 변수
+$c-primary: #1E6DFE;
+$c-secondary: #EEF5FE;
+$c-text: #000000;
+$c-text-light: #ffffff;
+$c-text-gray: #979797;
+$c-bg-light: #FBFBFB;
+$c-bg-dark: #1D1D1D;
+$c-border: #7c7c7c;
+
+// 폰트 변수
+$font-family: 'Pretendard', sans-serif;
+$fw-3: 300;  // light
+$fw-4: 400;  // regular
+$fw-5: 500;  // medium
+$fw-6: 600;  // semibold
+$fw-7: 700;  // bold
+$fw-8: 800;  // extrabold
+
+// 폰트 크기 변수
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-30: 30px;
+$fs-32: 32px;
+$fs-36: 36px;
+$fs-42: 42px;
+
+// 간격 변수
+$gap-4: 4px;
+$gap-8: 8px;
+$gap-12: 12px;
+$gap-16: 16px;
+$gap-20: 20px;
+$gap-24: 24px;
+$gap-30: 30px;
+$gap-40: 40px;
+$gap-60: 60px;
+$gap-80: 80px;
+$gap-120: 120px;
+
+// 레이아웃 변수
+$container-max: 1100px;
+$container-full: 1920px;
+$radius-4: 4px;
+$radius-10: 10px;
+$radius-20: 20px;
+
+// 그림자 변수
+$shadow-sm: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+$shadow-md: 0px 10px 80px 90px;
+
+// 전환 효과 변수
+$trans-fast: 0.2s;
+$trans-base: 0.3s;
+
+// 그리드 변수
+$grid-10: 10px;
+$grid-20: 20px;
+$grid-36: 36px;
+$grid-60: 60px;
+$grid-90: 90px;

@@ -2,3 +2,209 @@
 @use 'sass:meta';
 @use 'functions' as f;
 @use 'variables' as *;
+
+// =============================================================================
+// 공통 믹스인 정의
+// =============================================================================
+
+// =============================================================================
+// 텍스트 믹스인
+// =============================================================================
+
+/**
+ * 폰트 스타일 믹스인
+ * @param {number} $weight - 폰트 굵기 (300, 400, 500, 600, 700, 800)
+ * @param {number} $size - 폰트 크기 (px)
+ * @param {string} $line-height - 줄 높이 (normal, 140%, 150% 등)
+ * @param {string} $family - 폰트 패밀리 (기본값: $font)
+ * 
+ * 사용법: @include font-style(600, 24px, normal);
+ */
+@mixin font-style($weight, $size, $line-height: normal, $family: $font) {
+    font: $weight #{$size}/#{$line-height} $family;
+}
+
+/**
+ * 제목 스타일 믹스인
+ * @param {number} $size - 폰트 크기
+ * @param {number} $weight - 폰트 굵기 (기본값: 600)
+ * 
+ * 사용법: @include title-style(32px, 700);
+ */
+@mixin title-style($size, $weight: 600) {
+    @include font-style($weight, $size, normal);
+    color: $c-text;
+}
+
+// =============================================================================
+// 레이아웃 믹스인
+// =============================================================================
+
+/**
+ * Flexbox 믹스인
+ * @param {string} $direction - 방향 (row, column)
+ * @param {string} $justify - 정렬 (center, flex-start, flex-end, space-between)
+ * @param {string} $align - 세로 정렬 (center, flex-start, flex-end)
+ * @param {number} $gap - 간격
+ * 
+ * 사용법: @include flex(row, center, center, 20px);
+ */
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}
+
+/**
+ * Grid 믹스인
+ * @param {number} $columns - 컬럼 수
+ * @param {number} $gap - 간격
+ * 
+ * 사용법: @include grid(3, 20px);
+ */
+@mixin grid($columns, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}
+
+/**
+ * 컨테이너 믹스인
+ * @param {number} $max-width - 최대 너비
+ * @param {number} $padding - 좌우 패딩
+ * 
+ * 사용법: @include container(1100px, 20px);
+ */
+@mixin container($max-width: $container-max, $padding: $gap-20) {
+    max-width: $max-width;
+    padding-inline: $padding;
+    margin: auto;
+}
+
+// =============================================================================
+// 배경 믹스인
+// =============================================================================
+
+/**
+ * 배경 이미지 믹스인
+ * @param {string} $image - 이미지 경로
+ * @param {string} $position - 위치 (center, top, bottom 등)
+ * @param {string} $size - 크기 (cover, contain, 100% 등)
+ * @param {string} $repeat - 반복 (no-repeat, repeat 등)
+ * 
+ * 사용법: @include bg-image('../images/bg.png', center, cover);
+ */
+@mixin bg-image($image, $position: center, $size: cover, $repeat: no-repeat) {
+    background: url($image) $position/$size $repeat;
+}
+
+/**
+ * 그라디언트 오버레이 믹스인
+ * @param {color} $color - 그라디언트 색상
+ * @param {number} $opacity-start - 시작 투명도 (0-1)
+ * @param {number} $opacity-end - 끝 투명도 (0-1)
+ * 
+ * 사용법: @include gradient-overlay(#000, 0, 0.5);
+ */
+@mixin gradient-overlay($color, $opacity-start: 0, $opacity-end: 0.5) {
+    background: linear-gradient(180deg, rgba($color, $opacity-start) 86.85%, rgba($color, $opacity-end) 100%);
+}
+
+// =============================================================================
+// 효과 믹스인
+// =============================================================================
+
+/**
+ * 그림자 믹스인
+ * @param {string} $type - 그림자 타입 (sm, md, lg)
+ * @param {color} $color - 그림자 색상
+ * 
+ * 사용법: @include shadow(md, #000);
+ */
+@mixin shadow($type: sm, $color: rgba(0, 0, 0, 0.15)) {
+    @if $type == sm {
+        box-shadow: $shadow-sm;
+    } @else if $type == md {
+        box-shadow: $shadow-md $color;
+    }
+}
+
+/**
+ * 전환 효과 믹스인
+ * @param {string} $property - 전환할 속성 (all, opacity, transform 등)
+ * @param {number} $duration - 지속 시간
+ * @param {string} $timing - 타이밍 함수 (ease, linear 등)
+ * 
+ * 사용법: @include transition(opacity, 0.2s);
+ */
+@mixin transition($property: all, $duration: $trans-fast, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+/**
+ * 호버 효과 믹스인
+ * @param {string} $property - 변경할 속성
+ * @param {any} $value - 변경할 값
+ * 
+ * 사용법: @include hover(opacity, 1);
+ */
+@mixin hover($property, $value) {
+    &:hover {
+        #{$property}: $value;
+    }
+}
+
+// =============================================================================
+// 유틸리티 믹스인
+// =============================================================================
+
+/**
+ * 텍스트 말줄임 믹스인
+ * @param {number} $lines - 줄 수 (기본값: 1)
+ * 
+ * 사용법: @include text-ellipsis(2);
+ */
+@mixin text-ellipsis($lines: 1) {
+    @if $lines == 1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/**
+ * 절대 위치 믹스인
+ * @param {string} $position - 위치 (top, bottom, left, right)
+ * @param {number} $value - 값
+ * 
+ * 사용법: @include absolute-position(top, 0, left, 0);
+ */
+@mixin absolute-position($position1: top, $value1: 0, $position2: left, $value2: 0) {
+    position: absolute;
+    #{$position1}: $value1;
+    #{$position2}: $value2;
+}
+
+/**
+ * 가상 요소 믹스인
+ * @param {string} $content - 내용
+ * @param {string} $display - display 속성
+ * 
+ * 사용법: @include pseudo-element('', block);
+ */
+@mixin pseudo-element($content: '', $display: block) {
+    content: $content;
+    display: $display;
+}
