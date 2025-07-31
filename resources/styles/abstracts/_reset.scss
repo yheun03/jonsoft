@@ -1,35 +1,8 @@
-// ========================================
-// CSS RESET - 사용법 가이드
-// ========================================
-// 
-// [주요 컴포넌트]
-// - Eric Meyer's CSS Reset v2.0
-// - 모든 브라우저의 기본 스타일 초기화
-// - box-sizing: border-box 전역 설정
-//
-// [사용 중인 리셋]
-// - 모든 HTML 요소의 margin, padding, border 초기화
-// - 폰트 상속 및 기본값 설정
-// - box-sizing: border-box 전역 적용
-// - 링크 텍스트 데코레이션 제거
-//
-// [사용하지 않는 리셋]
-// - 없음 (모든 리셋이 필요함)
-//
-// [적용 위치]
-// - 전체 사이트의 기본 스타일 초기화
-// - 모든 HTML 요소에 적용
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-// ========================================
-// GLOBAL RESET - 모든 요소 초기화
-// ========================================
-// 사용법: 모든 HTML 요소의 기본 스타일 초기화
-// 적용 위치: 전체 사이트
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,40 +24,17 @@ time, mark, audio, video {
 	vertical-align: baseline;
     box-sizing: border-box;
 }
-
-// ========================================
-// HTML5 DISPLAY RESET - HTML5 요소 블록 설정
-// ========================================
-// 사용법: HTML5 시맨틱 요소들의 display: block 설정
-// 적용 위치: HTML5 요소들
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-// ========================================
-// BODY RESET - 본문 기본 설정
-// ========================================
-// 사용법: body 요소의 기본 line-height 설정
-// 적용 위치: 전체 페이지
 body {
 	line-height: 1;
 }
-
-// ========================================
-// LIST RESET - 리스트 스타일 초기화
-// ========================================
-// 사용법: ol, ul 요소의 기본 리스트 스타일 제거
-// 적용 위치: 모든 리스트 요소
 ol, ul {
 	list-style: none;
 }
-
-// ========================================
-// QUOTE RESET - 인용문 스타일 초기화
-// ========================================
-// 사용법: blockquote, q 요소의 기본 인용문 스타일 제거
-// 적용 위치: 인용문 요소들
 blockquote, q {
 	quotes: none;
 }
@@ -93,22 +43,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-
-// ========================================
-// TABLE RESET - 테이블 스타일 초기화
-// ========================================
-// 사용법: table 요소의 기본 테이블 스타일 초기화
-// 적용 위치: 모든 테이블 요소
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-// ========================================
-// LINK RESET - 링크 스타일 초기화
-// ========================================
-// 사용법: a 요소의 기본 텍스트 데코레이션 제거
-// 적용 위치: 모든 링크 요소
 a{
     text-decoration: unset;
 }

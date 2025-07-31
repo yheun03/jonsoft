@@ -1,31 +1,8 @@
-// ========================================
-// MODAL LAYOUT STYLES - 사용법 가이드
-// ========================================
-// 
-// [주요 컴포넌트]
-// - .modal: 전체 모달 오버레이
-// - .modal-content: 모달 콘텐츠 컨테이너 (2열 그리드)
-// - .modal-header: 좌측 헤더 영역 (제목, 설명, 버튼)
-// - .modal-body: 우측 본문 영역 (추상, 제목, 콘텐츠)
-//
-// [사용 중인 클래스들]
-// - .modal: 모든 모달 다이얼로그
-// - .modal-content: 모달 내부 레이아웃
-// - .modal-header: 모달 헤더 영역
-// - .modal-body: 모달 본문 영역
-//
-// [사용하지 않는 스타일들 - 주석처리됨]
-// - 중복된 display 속성 (display: flex와 display: none)
-
 @use '../abstracts' as *;
 @use 'sass:map';
 
-// ========================================
-// MODAL OVERLAY - 전체 모달 배경
-// ========================================
-// 사용법: 모달 오버레이, 배경 어둡게 처리
-// 적용 위치: 모든 모달 다이얼로그
 .modal{
+    // display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -38,14 +15,6 @@
     justify-content: center;
     align-items: center;
 
-    // 기본적으로 숨김 상태 (JavaScript로 제어)
-    display: none;
-
-    // ========================================
-    // MODAL CONTENT - 모달 내부 컨테이너
-    // ========================================
-    // 사용법: 모달 내부 2열 레이아웃 (헤더 + 본문)
-    // 적용 위치: 모든 모달 콘텐츠
     &-content{
         width: 1080px;
         height: 800px;
@@ -55,102 +24,72 @@
         grid-template-columns: 320px 1fr;
     }
 
-    // ========================================
-    // MODAL HEADER - 좌측 헤더 영역
-    // ========================================
-    // 사용법: 모달 제목, 설명, 네비게이션, 버튼
-    // 적용 위치: 모달 좌측 영역
     &-header{
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
         border-right: 1px solid #efefef;
-        
         .heading{
             min-height: 208px;
         }
-        
         .title{
             font: 600 36px/normal $font;
             color: #000000;
-            
             &-sub{
                 font: 500 20px/normal $font;
                 color: #555555;
                 margin-top: 10px;
             }
         }
-        
         ul{
             li{
                 font: 400 16px/normal $font;
                 color: #a0a0a0;
                 margin-bottom: 10px;
-                
                 &::before{
                     content: "#";
                 }
             }
         }
-        
         a{
             margin-top: auto;
             align-self: flex-start;
         }
     }
-    
-    // ========================================
-    // MODAL BODY - 우측 본문 영역
-    // ========================================
-    // 사용법: 모달 콘텐츠, 추상, 제목, 이미지 등
-    // 적용 위치: 모달 우측 영역
     &-body{
         padding: 40px 20px;
         overflow-y: auto;
 
-        // ========================================
-        // ABSTRACT - 추상 정보
-        // ========================================
-        // 사용법: 솔루션 개요, 핵심 특징 설명
         .abstract{
             padding: 20px;
             background-color: #FAFAFA;
             border-radius: 6px;
             margin-bottom: 30px;
-            
             strong{
                 display: block;
                 font: 600 20px/150% $font;
                 letter-spacing: -0.02em;
                 color: #000000;
                 margin-bottom: 10px;
-                
                 span{
                     color: #FF7931;
                 }
             }
-            
             p{
                 font: 400 16px/150% $font;
                 color: #000000;
             }
         }
 
-        // ========================================
-        // TITLE - 제목 영역
-        // ========================================
-        // 사용법: 섹션 제목과 설명
         .title{
             padding-top: 20px;
             border-top: 1px solid #07203E;
             display: flex;
             gap: 20px;
-            
             span{
                 font: 600 20px/normal $font;
                 color: #000000;
             }
-            
             p{
                 font: 400 18px/150% $font;
                 color: #7f7f7f;
@@ -158,13 +97,8 @@
             }
         }
 
-        // ========================================
-        // CONTENT - 콘텐츠 영역
-        // ========================================
-        // 사용법: 이미지, 텍스트 등 실제 콘텐츠
         .content{
             margin-top: 30px;
-            
             img{
                 width: 100%;
                 height: auto;

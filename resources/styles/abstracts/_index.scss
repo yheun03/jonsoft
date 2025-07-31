@@ -1,28 +1,3 @@
-// ========================================
-// ABSTRACTS INDEX - 사용법 가이드
-// ========================================
-// 
-// [주요 컴포넌트]
-// - abstracts 폴더의 모든 파일을 한 번에 import
-// - @forward를 사용하여 다른 파일에서 @use './abstracts' as *; 로 사용 가능
-//
-// [포함된 파일들]
-// - _reset.scss: CSS 리셋
-// - _variables.scss: 기본 변수들 ($url, $font)
-// - _bgColor.scss: 배경색 변수들 (향후 확장)
-// - _fontvar.scss: 폰트 정의 (Pretendard)
-// - _spacing.scss: 간격 변수들 (향후 확장)
-// - _functions.scss: 유틸리티 함수들 (향후 확장)
-// - _mixins.scss: 믹스인들 (반응형 미디어 쿼리)
-//
-// [사용법]
-// - 다른 SCSS 파일에서: @use './abstracts' as *;
-// - 모든 abstracts 파일을 한 번에 import
-//
-// [적용 위치]
-// - 모든 SCSS 파일의 상단에서 import
-// - 전역 변수, 믹스인, 함수 사용을 위해 필요
-
 @forward './reset';
 @forward './variables';
 @forward './bgColor';
