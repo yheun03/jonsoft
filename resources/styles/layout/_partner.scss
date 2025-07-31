@@ -11,11 +11,10 @@
     }
     ul{
         display: grid;
-        grid-template: 94px / repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 20px 40px;
         li{
             position: relative;
-            flex: 0 0 20%;
             img{
                 display: block;
                 width: 100%;
@@ -33,5 +32,23 @@
     }
     & + &{
         margin-top: 100px;
+    }
+
+    @include tablet {
+        ul{
+            @include flex($gap: 15px);
+            flex-wrap: wrap;
+            li{
+                flex: 0 0 20%;
+            }
+        }
+    }
+    
+    @include mobile {
+        ul{
+            li{
+                flex: 0 0 30%;
+            }
+        }
     }
 }
