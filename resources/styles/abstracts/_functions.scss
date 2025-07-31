@@ -1,2 +1,88 @@
+// ========================================
+// FUNCTIONS - 사용법 가이드
+// ========================================
+// 
+// [주요 컴포넌트]
+// - 자주 사용하는 색상 함수들 (color-lighten, color-darken)
+// - 자주 사용하는 크기 함수들 (rem, em)
+// - 자주 사용하는 유틸리티 함수들 (palette)
+//
+// [사용 중인 함수]
+// - color-lighten: 색상 밝기 조정
+// - color-darken: 색상 어둡게 조정
+// - rem: px를 rem으로 변환
+// - em: px를 em으로 변환
+// - palette: 색상 팔레트에서 색상 가져오기
+//
+// [적용 위치]
+// - 모든 SCSS 파일에서 @use 'functions' as *; 로 import
+// - 색상 조정, 크기 계산에 사용
+
 @use 'sass:map';
+@use 'sass:math';
+@use 'sass:color';
+
+// ========================================
+// COLOR FUNCTIONS - 자주 사용하는 색상 함수들
+// ========================================
+// 사용법: 색상 조정
+// 적용 위치: 색상 값 계산이 필요한 곳
+
+// 색상 밝기 조정 (자주 사용)
+// 사용법: color-lighten(#1E6DFE, 10%)
+// 적용 위치: 호버 효과, 활성 상태 등
+@function color-lighten($color, $amount) {
+    @return color.adjust($color, $lightness: $amount);
+}
+
+// 색상 어둡게 조정 (자주 사용)
+// 사용법: color-darken(#1E6DFE, 10%)
+// 적용 위치: 호버 효과, 비활성 상태 등
+@function color-darken($color, $amount) {
+    @return color.adjust($color, $lightness: -$amount);
+}
+
+// ========================================
+// SIZE FUNCTIONS - 자주 사용하는 크기 함수들
+// ========================================
+// 사용법: px를 rem/em으로 변환
+// 적용 위치: 폰트 크기, 여백, 크기 계산
+
+// px를 rem으로 변환 (자주 사용)
+// 사용법: rem(16px)
+// 적용 위치: 폰트 크기, 여백 등
+@function rem($pixels) {
+    @return math.div($pixels, 16px) * 1rem;
+}
+
+// px를 em으로 변환 (자주 사용)
+// 사용법: em(16px)
+// 적용 위치: 폰트 크기, 여백 등
+@function em($pixels) {
+    @return math.div($pixels, 16px) * 1em;
+}
+
+// ========================================
+// UTILITY FUNCTIONS - 자주 사용하는 유틸리티 함수들
+// ========================================
+// 사용법: 기타 유틸리티 계산
+// 적용 위치: 다양한 계산이 필요한 곳
+
+// 색상 팔레트에서 색상 가져오기 (자주 사용)
+// 사용법: palette('primary')
+// 적용 위치: 색상 시스템
+@function palette($name) {
+    $palette: (
+        'primary': #1E6DFE,
+        'secondary': #EEF5FE,
+        'accent': #FF7931,
+        'success': #28a745,
+        'warning': #ffc107,
+        'danger': #dc3545,
+        'light': #ffffff,
+        'dark': #000000,
+        'gray': #6c757d
+    );
+    @return map.get($palette, $name);
+}
 

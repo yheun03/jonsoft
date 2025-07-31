@@ -1,208 +1,303 @@
-// About page styles
-.summary {
-    padding: 80px 0;
-    background-color: #f8f9fa;
-    
-    .wrap {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 40px;
-    }
-    
-    .item {
-        text-align: center;
-        padding: 30px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        
-        img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 20px;
-        }
-        
-        .content {
-            .dscpt {
-                font-size: 2.5rem;
-                font-weight: bold;
-                color: #1E6DFE;
-                margin-bottom: 10px;
-            }
-            
-            .title {
-                font-size: 1.2rem;
-                color: #333;
-                margin-bottom: 5px;
-            }
-            
-            .eyebrow {
-                font-size: 0.9rem;
-                color: #666;
-            }
-        }
-    }
-}
+// ========================================
+// ABOUT PAGE STYLES - 사용법 가이드
+// ========================================
+// 
+// [주요 컴포넌트]
+// - .summary: 회사 요약 정보 섹션 (배경 이미지 포함)
+// - .awards: 수상 실적 섹션 (그리드 레이아웃)
+// - .feature: 특징 및 강점 섹션 (카드 형태)
+// - .history: 연혁 섹션 (타임라인)
+//
+// [사용 중인 클래스들]
+// - .summary: 메인 페이지에서 사용
+// - .awards: 수상 실적 표시
+// - .feature: 특징 카드들
+// - .history: 연혁 타임라인
+//
+// [사용하지 않는 스타일들 - 주석처리됨]
+// - 일부 중복된 스타일 정의들
 
-.awards {
-    padding: 80px 0;
-    
-    .wrap {
-        text-align: center;
-        
-        .title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .dscpt {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 60px;
-        }
-    }
-    
-    .list-awards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        
-        .item {
-            padding: 30px;
-            border: 1px solid #eee;
-            border-radius: 8px;
+@use '../abstracts' as *;
+@use 'sass:list';
+
+// ========================================
+// SUMMARY SECTION - 회사 요약 정보
+// ========================================
+// 사용법: 회사 개요, 통계, 핵심 지표 표시
+// 적용 위치: about.html 메인 섹션
+.summary{
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    @include bg-image('images/summary/background.png', 800px, no-repeat, right bottom);
+    ul{ 
+        display: flex;
+        justify-content: flex-end;
+        gap: 60px;
+        .content{
+            margin-top: 25px;
             text-align: center;
-            
-            .title {
-                font-size: 1.1rem;
-                line-height: 1.6;
-                color: #333;
-            }
         }
+        .title{
+            @include font-style(600, 18px, normal, #979797);
+            margin-block: 8px 12px;
+        }
+        .dscpt{
+            @include font-style(600, 36px, normal, #000000);
+        }
+        .eyebrow{
+            @include font-style(400, 14px, normal, #979797);
+        }
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
     }
 }
 
-.feature {
-    padding: 80px 0;
-    background-color: #f8f9fa;
-    
-    .wrap {
+// ========================================
+// AWARDS SECTION - 수상 실적
+// ========================================
+// 사용법: 회사 수상 이력, 인증서, 상장 등 표시
+// 적용 위치: about.html 수상 섹션
+.awards{
+    padding-block: 80px;
+    background-color: #FBFBFB;
+    .slick{
+        &-list{
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        @include font-style(400, 30px, normal, #000000);
         text-align: center;
-        
-        .title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 60px;
+        &.title{
+            font-weight: 700;
         }
     }
-    
-    .list-feature {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px;
+    .list-awards{
+        $item-width: 1100px;
+        $item-height: 460px;
+        $item-radius: 20px;
+        $item-padding: 40px 56px;
         
-        .item {
-            padding: 40px 30px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            
-            img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 20px;
-            }
-            
-            .title {
-                font-size: 1.3rem;
-                font-weight: bold;
-                margin-bottom: 15px;
-            }
-            
-            .dscpt {
-                font-size: 1rem;
-                line-height: 1.6;
-                color: #666;
-            }
-        }
-    }
-}
+        $thumb-bg: (
+            'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
+            'item-02': (#B0E0FB, '../icons/380/copyright.png', #B0E0FB),
+            'item-03': (#FF8372, '../icons/380/webawards.png', #FF8372),
+            'item-04': (#8EAFF6, '../icons/380/venture.png', #8EAFF6),
+        );
+        margin-top: 40px;
 
-.history {
-    padding: 80px 0;
-    
-    .wrap {
-        text-align: center;
-        
-        .title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 60px;
+        @mixin thumb-bg($color, $img, $grad) {
+            background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0; left: 0;
+                width: 100%; height: 100%;
+                background: linear-gradient(180deg, rgba($grad, 0) 86.85%, rgba($grad, 0.5) 100%);
+            }
         }
-    }
-    
-    .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        
-        &::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: #1E6DFE;
-            transform: translateX(-50%);
-        }
-        
+
         .item {
             position: relative;
-            margin-bottom: 40px;
-            
-            &:nth-child(odd) {
-                text-align: right;
-                padding-right: 50px;
-                
-                &::before {
-                    right: -10px;
-                }
+            border-radius: $item-radius;
+            width: $item-width;
+            height: $item-height;
+            padding: $item-padding;
+            overflow: hidden;
+
+            img {
+                width: 220px;
             }
-            
-            &:nth-child(even) {
+            p {
+                @include font-style(600, 24px, 140%, #000000);
                 text-align: left;
-                padding-left: 50px;
-                
-                &::before {
-                    left: -10px;
+            }
+            .thumbnail {
+                position: absolute;
+                display: flex;
+                gap: 10px;
+                right: 56px;
+                bottom: -30px;
+            }
+
+            // 각 item별 배경/그라디언트 반복
+            @each $name, $val in $thumb-bg {
+                &.#{$name} {
+                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
                 }
             }
-            
-            &::before {
-                content: '';
+        }
+    }
+}
+
+// ========================================
+// FEATURE SECTION - 특징 및 강점
+// ========================================
+// 사용법: 회사 특징, 강점, 차별화 요소 표시
+// 적용 위치: about.html 특징 섹션
+.feature{
+    $shadow: 0px 10px 80px 90px;
+    margin-block: 60px 80px;
+    .list-feature{
+        @include grid-layout(3, 20px);
+
+        .item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 470px;
+            background: url($url + "images/feature/feature-01.png") center/cover no-repeat;
+            cursor: pointer;
+            @include transition(opacity 0.2s ease);
+
+            &-02{
+                background-image: url($url + "images/feature/feature-02.png");
+                .front{
+                    background-color: #C8C5B9;
+                    box-shadow: $shadow #C8C5B9;
+                }
+                .back a{
+                    color: #FFE6CD;
+                    &::after{
+                        border-color: #FFE6CD;
+                    }
+                }
+            }
+
+            &-03{
+                background-image: url($url + "images/feature/feature-03.png");
+                .front{
+                    background-color: #46628A;
+                    box-shadow: $shadow #46628A;
+                }
+                .back a{
+                    color: #60FFF5;
+                    &::after{
+                        border-color: #60fff5;
+                    }
+                }
+            }
+            &:hover{
+                .back{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .front{
+        position: relative;
+        padding: 40px 32px 0;
+        width: 100%;
+        background-color: #A2CCFF;
+        box-shadow: $shadow #A2CCFF;
+        .title{
+            @include font-style(600, 24px, normal, #ffffff);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 32px;
+            bottom: -42px;
+            width: 26px;
+            height: 26px;
+            background: url($url + 'icons/26/ic-circle-arrow.svg') left bottom / 26px no-repeat;
+        }
+    }
+
+    .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(27px);
+        padding: 30px 20px 20px;
+        opacity: 0;
+        @include transition(opacity 0.2s ease);
+        ul{
+            margin-bottom: 12px;
+        }
+        li{
+            position: relative;
+            @include font-style(600, 16px, 21px, #ffffff);
+            margin-bottom: 14px;
+            padding-left: 24px;
+            &::before{
+                content: "";
                 position: absolute;
-                top: 20px;
-                width: 20px;
-                height: 20px;
-                background-color: #1E6DFE;
+                top: 8.5px;
+                left: 10px;
+                width: 4px;
+                height: 4px;
+                background-color: #ffffff;
                 border-radius: 50%;
-                border: 4px solid white;
             }
-            
-            .year {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #1E6DFE;
-                margin-bottom: 10px;
+        }
+        a{
+            position: relative;
+            align-self: flex-start;
+            @include font-style(800, 14px, normal, #5FA9FF);
+            margin-left: 10px;
+            @include transition(all 0.2s ease);
+            &::after{
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border: 0 solid #5fa9ff;
+                border-width: 2px 2px 0 0;
+                transform: translateY(-50%) rotate(45deg);
+                top: 50%;
+                right: -16px;
             }
-            
-            .content {
-                font-size: 1rem;
-                line-height: 1.6;
-                color: #333;
+            &:hover{
+                text-decoration: underline;
             }
+        }
+    }
+}
+
+// ========================================
+// HISTORY SECTION - 연혁
+// ========================================
+// 사용법: 회사 연혁, 타임라인 표시
+// 적용 위치: about.html 연혁 섹션
+.history{
+    background-color: #1D1D1D;
+    color: #ffffff;
+    padding-top: 80px;
+    .title{
+        @include font-style(700, 32px, 46px, #ffffff);
+        text-align: center;
+    }
+    &-timeline{
+        margin-top: 60px;
+        & > li{
+            @include flex-center;
+            gap: 60px;
+            strong{
+                @include font-style(600, 28px, normal, #797979);
+            }
+        }
+    }
+    .month{
+        width: 550px;
+        @include font-style(500, 16px, normal, #ffffff);
+        margin-bottom: 20px;
+
+        &-label{
+            color: #797979;
+        }
+
+        ul{
+            margin-top: 5px;
         }
     }
 } 
