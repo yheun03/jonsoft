@@ -5,6 +5,7 @@
     display: flex;
     height: fit-content;
     margin-inline: auto 100px;
+    gap: 30px;
     li{
         position: relative;
         display: inline;
@@ -16,9 +17,6 @@
         }
         &.active{
             color: #000000;
-        }
-        & + li{
-            margin-left: 30px;
         }
     }
     a{
@@ -40,7 +38,6 @@
             font: 400 14px/normal $font;
             color: #909090;
             & + li{
-                margin-left: 33px;
                 &::before{
                     content: "";
                     position: absolute;
@@ -50,6 +47,26 @@
                     width: 1px;
                     height: 11px;
                     background-color: #dadada;
+                }
+            }
+        }
+
+        @include tablet {
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+            li{
+                &::before{
+                    content: unset;
+                }
+                a{
+                    display: block;
+                    &::after{
+                        top: -8px;
+                        left: 0;
+                        width: 100%;
+                        height: calc(100% + 16px);
+                    }
                 }
             }
         }

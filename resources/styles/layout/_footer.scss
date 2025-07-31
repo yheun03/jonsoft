@@ -34,4 +34,18 @@ footer{
             color: #909090;
         }
     }
+
+    @include tablet {
+        .wrap{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            &-text{
+                order: 1;
+                width: 100%;
+                margin: unset;
+                font-size: 13px;
+            }
+        }
+    }
 }
