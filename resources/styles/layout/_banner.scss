@@ -55,6 +55,23 @@
             .btn{
                 margin-top: 40px;
             }
+
+            @include mobile {
+                .wrap{
+                    padding-block: 120px 170px;
+                }
+                p{
+                    @include font-style($fw-4, 18px, 150%);
+                    letter-spacing: -0.05em;
+                }
+                .title{
+                    @include font-style($fw-6, 24px);
+                    letter-spacing: 0;
+                }
+                .btn{
+                    margin-top: 20px;
+                }
+            }
         }
         &-title{
             height: auto;

@@ -1,7 +1,7 @@
 @use 'sass:map';
 
 // $url: '/resources/';
-$url: '../'; // 배포할 땐 해당 소스 주석 해제하고 배포
+$url: '../';
 $font: 'Pretendard';
 
 // =============================================================================
@@ -10,6 +10,7 @@ $font: 'Pretendard';
 
 // 색상 변수
 $c-primary: #1E6DFE;
+$c-orange: #FF824D;
 $c-secondary: #EEF5FE;
 $c-text: #000000;
 $c-text-light: #ffffff;

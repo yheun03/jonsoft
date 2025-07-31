@@ -38,9 +38,9 @@ class I18nSystem {
         await this.renderPage();
         
         // Load history data if on about page (has history-timeline)
-        if (document.querySelector('.history-timeline')) {
-            this.loadHistoryData();
-        }
+        // if (document.querySelector('.history-timeline')) {
+        //     this.loadHistoryData();
+        // }
     }
 
     /**
@@ -169,19 +169,19 @@ class I18nSystem {
     /**
      * Load history data for timeline rendering
      */
-    async loadHistoryData() {
-        try {
-            const response = await fetch('./resources/i18n/history.json');
-            if (!response.ok) {
-                throw new Error('Failed to load history.json');
-            }
+    // async loadHistoryData() {
+    //     try {
+    //         const response = await fetch('./resources/i18n/history.json');
+    //         if (!response.ok) {
+    //             throw new Error('Failed to load history.json');
+    //         }
             
-            this.historyData = await response.json();
-            this.renderHistoryTimeline();
-        } catch (error) {
-            console.error('Error loading history data:', error);
-        }
-    }
+    //         this.historyData = await response.json();
+    //         this.renderHistoryTimeline();
+    //     } catch (error) {
+    //         console.error('Error loading history data:', error);
+    //     }
+    // }
 
     /**
      * Get current page name from URL

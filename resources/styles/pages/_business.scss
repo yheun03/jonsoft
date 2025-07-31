@@ -139,8 +139,7 @@
         @include flex(column, flex-start, stretch);
 
         &::after {
-            @include pseudo-element();
-            display: block;
+            @include pseudo-element('', block);
             margin-top: auto;
             width: 26px;
             height: 26px;
