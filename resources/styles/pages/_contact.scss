@@ -13,12 +13,10 @@
  * 연락처 및 채용 정보를 탭 형태로 표시
  */
 .navigator {
-    margin-block: $gap-80;
-
     h2 {
         @include font-style($fw-6, $fs-42, 52px);
         color: $c-text;
-        margin-bottom: 6px;
+        margin-bottom: 60px;
         text-transform: uppercase;
     }
 
@@ -179,6 +177,45 @@
 
                 span {
                     margin-inline: $gap-8;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        margin-top: 60px;
+        .tab{
+            margin-bottom: 40px;
+            ul{
+                padding-inline: 20px;
+                gap: 30px;
+                justify-content: flex-start;
+            }
+        }
+        h2{
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        .contact{
+            .info{
+                @include grid(1, 40px, 1fr);
+            }
+            .list-map{
+                margin-top: 80px;
+                ul{
+                    margin: 20px 0 0 0;
+                }
+            }
+        }
+
+        .recruit{
+            .info{
+                dl{
+                    grid-template-columns: repeat(2, 1fr) auto;
+                }
+                dl{
+                    @include font-style($fw-4, 16px, 150%);
                 }
             }
         }
