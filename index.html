@@ -29,27 +29,6 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
-    <script>
-        // 페이지별 JSON 데이터 로드
-        window.pageData = {};
-        window.commonData = {};
-        
-        // 공통 데이터 로드
-        fetch('./resources/i18n/common.json')
-            .then(response => response.json())
-            .then(data => {
-                window.commonData = data;
-            })
-            .catch(error => console.error('Error loading common data:', error));
-            
-        // 페이지별 데이터 로드
-        fetch('./resources/i18n/index.json')
-            .then(response => response.json())
-            .then(data => {
-                window.pageData = data;
-            })
-            .catch(error => console.error('Error loading page data:', error));
-    </script>
 <body>
     <header>
         <div class="wrap">
