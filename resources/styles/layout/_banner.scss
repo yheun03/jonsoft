@@ -38,7 +38,7 @@
     }
     &.type{
         &-ask{
-            height: auto;
+            min-height: unset;
             background: url($url + 'images/banner/ask.png') right/cover no-repeat;
             .wrap{
                 padding-block: 160px;
@@ -76,7 +76,7 @@
             }
         }
         &-title{
-            height: auto;
+            min-height: unset;
             margin-block: 60px 80px;
             .wrap{
                 padding: unset;
@@ -96,6 +96,7 @@
         }
         &-goto{
             height: 420px;
+            min-height: unset;
             &::before{
                 content: "";
                 position: absolute;
@@ -125,8 +126,11 @@
 
     @include tablet {
         min-height: 580px;
+        display: flex;
         .wrap{
             padding-block: 60px 50px;
+            height: 100%;
+            flex: 1;
         }
         img{
             object-position: calc(100% + 270px);
