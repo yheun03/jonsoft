@@ -41,6 +41,14 @@
         }
     }
 
+    &.open{
+        &-menu{
+            @include bg-image($url + 'icons/26/ic-hamburger.svg', right 8px center, 26px);
+            @include font-style($fw-6, $fs-14, $color: #000000);
+            padding: 4px 45px 4px 0;
+        }
+    }
+
     @include tablet {
         &.type{
             &-opacity{

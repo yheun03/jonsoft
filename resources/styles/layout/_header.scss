@@ -5,10 +5,25 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    padding-block: 27px;
+    height: $header-height;
     background-color: #ffffff;
     border-bottom: 1px solid #ebebeb;
     z-index: 10;
+
+    transition: .2s;
+    &.open{
+        background-color: #000000;
+        border-color: #444444;
+        .menu{
+            .btn{
+                color: #ffffff;
+                background-image: url($url + 'icons/26/ic-xmark.svg');
+            }
+        }
+        h1 img{
+            filter: invert(100%);
+        }
+    }
 
 
     img{
@@ -16,8 +31,16 @@ header{
     }
 
     .wrap{
-        display: flex;
-        align-items: center;
+        height: 100%;
+        @include flex($justify: space-between, $align: center);
+    }
+    
+    .menu{
+        @include flex($align: center, $gap: 100px);
+        margin-left: auto;
+        &.mobile{
+            display: none;
+        }
     }
 
     .i18n{
@@ -53,8 +76,69 @@ header{
     }
 
     @include tablet {
-        .gnb, .i18n{
-            display: none;
+        .menu{
+            &.pc{
+                display: none;
+            }
+            &.mobile{
+                display: flex;
+            }
         }
+    }
+}
+
+.full-screen-menu{
+    overflow: hidden;
+    height: 0;
+    position: fixed;
+    top: 0;
+    padding-top: $header-height;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .2s;
+    .wrap{
+        background-color: #000;
+        padding-inline: 30px;
+        padding-block: 60px;
+        @include flex($direction: column, $justify: space-between);
+    }
+    ul:not(.i18n){
+        width: 100%;
+        li{
+            @include font-style($fw-4, 25px, $color: #ffffff);
+            position: relative;
+            text-align: right;
+            opacity: 0.5;
+            & + li{
+                margin-top: 30px;
+            }
+            &.active{
+                opacity: 1;
+                &::after{
+                    content: "";
+                    @include absolute-position(right, -30px, top, 50%);
+                    width: 3px;
+                    height: 20px;
+                    background-color: #ffffff;
+                    transform: translateY(-50%);
+                    transition: .2s;
+                }
+            }
+            a{
+                color: inherit;
+            }
+        }
+    }
+    .i18n{
+        li{
+            color: #444444;
+            &.active{
+                color: #cccccc;
+            }
+        }
+    }
+    .open &{
+        height: 100dvh;
     }
 }
