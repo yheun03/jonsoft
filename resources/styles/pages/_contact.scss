@@ -260,7 +260,7 @@
             dt {
                 @include font-style($fw-6, $fs-24, normal);
                 color: $c-text;
-                margin-top: $gap-8;
+                margin-block: $gap-16 $gap-8;
             }
 
             dd {
@@ -272,11 +272,15 @@
     }
 
     @include tablet {
-        margin-block: 100px;
+        margin-block: 120px 40px;
         .list-philosophy{
             @include grid(1, 20px, 1fr);
             .content{
                 margin-top: 20px;
+                padding-inline: unset;
+                dt{
+                    margin-top: 8px;
+                }
                 dd{
                     font-size: 14px;
                     line-height: 21px;

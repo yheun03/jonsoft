@@ -53,9 +53,8 @@ header{
     }
 
     @include tablet {
-        .i18n{
+        .gnb, .i18n{
             display: none;
         }
-        // display: none;
     }
 }
