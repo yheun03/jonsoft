@@ -5,15 +5,12 @@
     position: relative;
     width: 100%;
     min-height: 620px;
-    box-sizing: border-box;
-    padding-bottom: 20px;
+    @include flex($direction: column);
     .wrap{
+        flex: 1;
         padding-block: 130px 80px;
-        height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
+        width: 100%;
+        @include flex(column, space-between, stretch);
     }
     h2{
         font: 600 50px/normal $font;
@@ -125,7 +122,7 @@
     }
 
     @include tablet {
-        min-height: 580px;
+        min-height: min(580px, 40dvh);
         display: flex;
         .wrap{
             padding-block: 60px 50px;
@@ -164,6 +161,7 @@
                 }
                 .title{
                     font-size: 24px;
+                    margin-bottom: 50px;
                 }
                 img{
                     object-position: center;
