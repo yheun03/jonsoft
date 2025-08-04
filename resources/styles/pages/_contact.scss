@@ -109,6 +109,12 @@
                     height: 330px;
                 }
 
+                &:hover{
+                    &::after{
+                        background-color: unset;
+                        z-index: -1;
+                    }
+                }
                 &::after {
                     @include pseudo-element();
                     @include absolute-position(top, 0, left, 0);
@@ -118,10 +124,6 @@
                     z-index: 10;
                     @include transition();
 
-                    &:hover {
-                        background-color: unset;
-                        z-index: 0;
-                    }
                 }
 
                 div:has(> div > img[src*=marker]) {
