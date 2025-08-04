@@ -33,6 +33,10 @@
         height: 100%;
         object-fit: cover;
     }
+    &:has(img:only-child){ 
+        min-height: unset;
+        height: 200px;
+    }
     &.type{
         &-ask{
             min-height: unset;
