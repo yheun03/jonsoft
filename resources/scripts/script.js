@@ -185,9 +185,54 @@ $(document).ready(function() {
 
     // ===== Slick 슬라이더에서 모달 열림 방지 =====
     var isSlickDragging = false;
+    var dragStartX = 0;
+    var dragDistance = 0;
     
     $(document).on('init.slick', '.slick-slider', function() {
         var $slider = $(this);
+        
+        // 드래그 시작 감지
+        $slider.on('mousedown touchstart', function(e) {
+            dragStartX = e.type === 'mousedown' ? e.clientX : e.originalEvent.touches[0].clientX;
+            dragDistance = 0;
+        });
+        
+        // 드래그 중 거리 계산
+        $slider.on('mousemove touchmove', function(e) {
+            if (dragStartX > 0) {
+                var currentX = e.type === 'mousemove' ? e.clientX : e.originalEvent.touches[0].clientX;
+                dragDistance = Math.abs(currentX - dragStartX);
+            }
+        });
+        
+        // 드래그 종료 시 해당 위치의 슬라이드로 이동
+        $slider.on('mouseup touchend', function(e) {
+            if (dragDistance > 30) {
+                var endX = e.type === 'mouseup' ? e.clientX : e.originalEvent.changedTouches[0].clientX;
+                var currentSlide = $slider.slick('slickCurrentSlide');
+                var totalSlides = $slider.slick('getSlick').slideCount;
+                
+                // 슬라이드 너비를 고려한 계산
+                var slideWidth = $slider.find('.slick-slide').first().outerWidth();
+                var slidesToMove = Math.floor(dragDistance / (slideWidth * 0.8));
+                
+                // 드래그 방향에 따라 목표 슬라이드 계산
+                var targetSlide = currentSlide;
+                if (endX < dragStartX) {
+                    // 왼쪽으로 드래그 - 다음 슬라이드들로
+                    targetSlide = Math.min(currentSlide + slidesToMove, totalSlides - 1);
+                } else {
+                    // 오른쪽으로 드래그 - 이전 슬라이드들로
+                    targetSlide = Math.max(currentSlide - slidesToMove, 0);
+                }
+                
+                // 계산된 슬라이드로 직접 이동
+                $slider.slick('slickGoTo', targetSlide);
+            }
+            
+            dragStartX = 0;
+            dragDistance = 0;
+        });
         
         $slider.on('beforeChange.slick swipe', function() {
             isSlickDragging = true;
