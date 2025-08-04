@@ -50,7 +50,7 @@
                 letter-spacing: unset;
             }
             p{
-                @include font-style($weight: 400, $size: 18px, $line-height: 25px, $color: #848484);
+                @include font-style($size: 18px, $line-height: 25px, $color: #848484);
                 letter-spacing: -0.05em;
             }
             .btn{

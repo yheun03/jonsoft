@@ -21,7 +21,8 @@
  */
 @mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: $c-text) {
     font: $weight #{$size}/#{$line-height} $family;
-    @if $color != $c-text {
+    // $color가 $c-text와 다르거나, $color가 #000 또는 black일 때 color를 적용
+    @if $color != $c-text or $color == #000 or $color == black {
         color: $color;
     }
 }
