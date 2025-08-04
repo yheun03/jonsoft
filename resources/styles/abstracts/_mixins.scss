@@ -19,10 +19,9 @@
  * 
  * 사용법: @include font-style(600, 24px, normal);
  */
-@mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: $c-text) {
+@mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: null) {
     font: $weight #{$size}/#{$line-height} $family;
-    // $color가 $c-text와 다르거나, $color가 #000 또는 black일 때 color를 적용
-    @if $color != $c-text or $color == #000 or $color == black {
+    @if $color != null and $color != '' {
         color: $color;
     }
 }

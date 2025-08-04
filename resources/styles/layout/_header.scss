@@ -70,8 +70,8 @@ header{
             }
         }
         button{
-            color: inherit;
             @include font-style($weight: 600, $size: 14px);
+            color: inherit;
         }
     }
 
@@ -137,6 +137,6 @@ header{
         }
     }
     .open &{
-        height: 100dvh;
+        height: calc(100dvh - $header-height);
     }
 }
