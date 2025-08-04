@@ -172,4 +172,49 @@ $(document).ready(function() {
             checkHistory2Active();
         }, 100);
     });
+
+    // ===== 모달 기능 =====
+    // data-modal-target 속성을 가진 요소 클릭 시 모달 노출
+    $('[data-modal-target]').on('click', function() {
+        var modalTarget = $(this).data('modal-target');
+        var modalType = $(this).data('modal-type') || 'solution'; // 기본값은 solution
+        
+        // 해당 타입의 모달 중에서 target과 일치하는 모달 찾기
+        var targetModal = $('.modal .content-' + modalType + '[data-modal-id="' + modalTarget + '"]');
+        
+        if (targetModal.length) {
+            // 모든 모달 숨기기
+            $('.modal').removeClass('active');
+            // 해당 모달 노출
+            targetModal.closest('.modal').addClass('active');
+            // body 스크롤 방지
+            $('body').addClass('modal-open');
+        }
+    });
+
+    // 모달 닫기 함수
+    function closeModal() {
+        $('.modal').removeClass('active');
+        $('body').removeClass('modal-open');
+    }
+
+    // 닫기 버튼 클릭 시 모달 닫기
+    $('.modal .btn.type-round').on('click', function(e) {
+        e.preventDefault();
+        closeModal();
+    });
+
+    // 모달 바깥 영역 클릭 시 모달 닫기
+    $('.modal').on('click', function(e) {
+        if ($(e.target).hasClass('modal')) {
+            closeModal();
+        }
+    });
+
+    // ESC 키로 모달 닫기
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27 && $('.modal').hasClass('active')) { // ESC 키
+            closeModal();
+        }
+    });
 }); 

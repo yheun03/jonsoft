@@ -12,6 +12,10 @@
 
     display: none;
 
+    &.active{
+        display: block;
+    }
+
     &-content{
         position: absolute;
         top: 50%;
@@ -68,17 +72,16 @@
             margin-bottom: 30px;
             strong{
                 display: block;
-                font: 600 20px/150% $font;
+                @include font-style($weight: 600, $size: 20px, $line-height: 150%, $color: #000000);
                 letter-spacing: -0.02em;
-                color: #000000;
                 margin-bottom: 10px;
-                span{
+                mark{
                     color: #FF7931;
+                    background: unset;
                 }
             }
             p{
-                font: 400 16px/150% $font;
-                color: #000000;
+                @include font-style($size: 16px, $line-height: 150%, $color: #000000);
             }
         }
 
@@ -88,13 +91,14 @@
             display: flex;
             gap: 20px;
             span{
-                font: 600 20px/normal $font;
-                color: #000000;
+                @include font-style($weight: 600, $size: 20px, $color: #000000);
             }
             p{
-                font: 400 18px/150% $font;
-                color: #7f7f7f;
+                @include font-style($size: 18px, $line-height: 150%, $color: #7f7f7f);
                 flex: 1;
+            }
+            strong{
+                font-weight: 600;
             }
         }
 
