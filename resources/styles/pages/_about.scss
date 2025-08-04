@@ -394,11 +394,13 @@
             }
         }
         li {
-            @include font-style($fw-6, 28px, $color: #797979);
-            @include flex( $gap: 30px);
             position: relative;
-            padding: 6px 0 6px 22px;
-            @include transition();
+            @include flex( $gap: 30px);
+            button{
+                @include font-style($fw-6, 28px, $color: #797979);
+                padding: 6px 0 6px 22px;
+                @include transition();
+            }
             &::after {
                 @include pseudo-element($display: block);
                 width: 14px;
@@ -418,9 +420,11 @@
                 @include transition();
             }
             &.active {
-                color: $c-orange;
-                -webkit-text-stroke-width: 0.1px;
-                -webkit-text-stroke-color: #000;
+                button{
+                    color: $c-orange;
+                    -webkit-text-stroke-width: 0.1px;
+                    -webkit-text-stroke-color: #000;
+                }
                 &::before {
                     transform: scale(22) translateY(-4%);
                 }
@@ -470,7 +474,7 @@
 
         &::after{
             @include pseudo-element();
-            @include absolute-position(top, 21px, left, 132px);
+            @include absolute-position(top, 21px, left, 136.5px);
             width: 2px;
             height: calc(100% - 21px);
             z-index: 0;
@@ -479,12 +483,12 @@
 
         & > li{
             position: relative;
-            @include flex($align: flex-start, $gap: 60px);
+            @include flex($justify: flex-end, $align: flex-start, $gap: 60px);
             padding-bottom: 60px;
             z-index: 1;
             
             &.active {
-                strong{
+                button{
                     color: $c-orange;
                     -webkit-text-stroke-width: .5px;
                     -webkit-text-stroke-color: #000;
@@ -499,7 +503,7 @@
             }
         }
         
-        strong {
+        button {
             @include font-style($fw-6, 28px, $color: #797979);
             @include flex($justify: flex-end, $gap: 30px);
             position: sticky;
