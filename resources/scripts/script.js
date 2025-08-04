@@ -9,7 +9,61 @@ $(document).ready(function() {
         if (e.keyCode === 27) { // ESC 키
             $('header').removeClass('open');
         }
+        
+            
     });
+    
+    // 연혁 버튼 키보드 네비게이션
+    $('.history .history-year ul li .btn').on('keydown', function(e) {
+        var currentBtn = $(this);
+        var currentLi = currentBtn.closest('li');
+        var allButtons = $('.history .history-year ul li .btn');
+        var currentIndex = allButtons.index(currentBtn);
+        
+        switch(e.keyCode) {
+            case 37: // 왼쪽 화살표
+                e.preventDefault();
+                if (currentIndex > 0) {
+                    allButtons.eq(currentIndex - 1).focus();
+                }
+                break;
+            case 39: // 오른쪽 화살표
+                e.preventDefault();
+                if (currentIndex < allButtons.length - 1) {
+                    allButtons.eq(currentIndex + 1).focus();
+                }
+                break;
+            case 38: // 위쪽 화살표
+                e.preventDefault();
+                if (currentIndex > 0) {
+                    allButtons.eq(currentIndex - 1).focus();
+                }
+                break;
+            case 40: // 아래쪽 화살표
+                e.preventDefault();
+                if (currentIndex < allButtons.length - 1) {
+                    allButtons.eq(currentIndex + 1).focus();
+                }
+                break;
+            case 13: // Enter 키
+                e.preventDefault();
+                currentBtn.click();
+                break;
+            case 32: // Space 키
+                e.preventDefault();
+                currentBtn.click();
+                break;
+        }
+    });
+    
+
+    
+    // 연혁 연도 버튼 클릭 시 focus 유지
+    $('.history .history-year ul li .btn').on('click', function() {
+        $(this).focus();
+    });
+    
+
 
     // ===== HISTORY 클래스 기능 =====
     // history-year 버튼 클릭 시 active 클래스 관리 및 스크롤
@@ -18,6 +72,9 @@ $(document).ready(function() {
         $('.history .history-year ul li').removeClass('active');
         // 클릭한 버튼의 부모 li에 active 클래스 추가
         $(this).closest('li').addClass('active');
+        
+        // 실제 키보드 focus 주기
+        $(this).focus();
         
         // 해당 연혁의 content로 스크롤
         var targetIndex = $(this).closest('li').index(); // 클릭한 버튼의 부모 li 인덱스
@@ -41,51 +98,52 @@ $(document).ready(function() {
         // 이전 타이머 클리어
         clearTimeout(historyScrollTimer);
         
-        // 스크롤이 끝난 후 100ms 후에 체크
+        // 스크롤 중에도 실시간 체크 (트랙패드/터치패드 대응)
+        checkHistoryActive();
+        
+        // 스크롤이 끝난 후 200ms 후에 다시 체크 (자동 스크롤 실행)
         historyScrollTimer = setTimeout(function() {
             isHistoryScrolling = false;
             checkHistoryActive();
-        }, 100);
+        }, 200);
     });
     
     // history 스크롤 감지 함수
     function checkHistoryActive() {
-        if (isHistoryScrolling) return;
+        // 트랙패드/터치패드 대응을 위해 실시간 체크
         
         var scrollTop = $(window).scrollTop();
         var windowHeight = $(window).height();
-        var viewportBottom = scrollTop + windowHeight;
+        var viewportCenter = scrollTop + (windowHeight / 2); // 뷰포트 중앙점
         
-        var mostVisibleContent = null;
-        var maxVisibleArea = 0;
+        var closestElement = null;
+        var minDistance = Infinity;
         
-        // 각 history-content > li의 노출 영역 계산
+        // 각 history-content > li와의 거리 계산
         $('.history .history-content > li').each(function(index) {
             var elementTop = $(this).offset().top;
             var elementHeight = $(this).outerHeight();
-            var elementBottom = elementTop + elementHeight;
+            var elementCenter = elementTop + (elementHeight / 2);
             
-            // 뷰포트와 요소의 교차 영역 계산
-            var visibleTop = Math.max(scrollTop, elementTop);
-            var visibleBottom = Math.min(viewportBottom, elementBottom);
-            var visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            // 뷰포트 중앙과 요소 중앙 사이의 거리
+            var distance = Math.abs(viewportCenter - elementCenter);
             
-            // 가장 많이 노출되는 content 찾기
-            if (visibleHeight > maxVisibleArea) {
-                maxVisibleArea = visibleHeight;
-                mostVisibleContent = {
+            // 가장 가까운 요소 찾기 (트랙패드/터치패드 대응)
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestElement = {
                     element: $(this),
                     index: index
                 };
             }
         });
         
-        // 가장 많이 노출되는 content에 해당하는 year에 active 클래스 적용
-        if (mostVisibleContent) {
+        // 가장 가까운 요소에 active 클래스 적용
+        if (closestElement) {
             // 모든 history-year li에서 active 클래스 제거
             $('.history .history-year ul li').removeClass('active');
             // 해당 인덱스의 history-year li에 active 클래스 추가
-            $('.history .history-year ul li').eq(mostVisibleContent.index).addClass('active');
+            $('.history .history-year ul li').eq(closestElement.index).addClass('active');
         }
     }
     

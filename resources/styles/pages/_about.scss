@@ -452,6 +452,7 @@
 
         ul {
             margin-top: 5px;
+            word-break: keep-all;
         }
     }
 } 
@@ -467,7 +468,7 @@
             display: unset;
         }
         &-year{
-            top: 0;
+            top: $header-height;
             padding-top: 20px;
             background-color: $c-bg-dark;
             height: unset;
@@ -475,17 +476,18 @@
             ul{
                 flex-direction: row;
                 justify-content: flex-start;
+                padding-inline: 10px;
                 overflow-x: auto;
                 &::after{
                     content: unset;
                 }
                 li{
                     font-size: 20px;
+                    button{
+                        padding: 6px 10px;
+                    }
                     &::before, &::after{
                         content: unset;
-                    }
-                    &:last-child{
-                        padding-right: 20px;
                     }
                 }
             }
