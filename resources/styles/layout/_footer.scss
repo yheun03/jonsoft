@@ -26,11 +26,9 @@ footer{
     .wrap{
         display: flex;
         &-text{
-            display: flex;
-            flex-direction: column;
-            gap: 4.5px;
+            @include flex(column, flex-start, stretch, 4.5px);
             margin-inline: 40px auto;
-            font: 400 14px/normal $font;
+            @include font-style($size: 14px, $color: #909090);
             color: #909090;
         }
     }

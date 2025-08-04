@@ -44,10 +44,8 @@
                 position: relative;
                 padding-left: 16px;
                 &::before{
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
+                    @include pseudo-element("");
+                    @include absolute-position(top, 50%, left, 0);
                     transform: translateY(-50%);
                     width: 5px;
                     height: 5px;

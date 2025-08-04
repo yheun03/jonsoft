@@ -10,7 +10,7 @@ header{
     border-bottom: 1px solid #ebebeb;
     z-index: 10;
 
-    transition: .2s;
+    @include transition(all, .2s);
     &.open{
         background-color: #000000;
         border-color: #444444;
@@ -50,7 +50,7 @@ header{
         height: fit-content;
         li{
             display: inline;
-            font: 600 14px/normal $font;
+            @include font-style($weight: 600, $size: 14px);
             color: #cccccc;
             &.active{
                 color: #333333;
@@ -59,21 +59,19 @@ header{
                 position: relative;
                 margin-left: 24px;
                 &:before{
-                    content: "";
-                    position: absolute;
-                    left: -14px;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    @include pseudo-element("");
+                    @include absolute-position(left, -14px, top, 50%);
                     width: 4px;
                     height: 4px;
                     border-radius: 50%;
                     background-color: #cccccc;
+                    transform: translateY(-50%);
                 }
             }
         }
         button{
             color: inherit;
-            font: 600 14px/normal $font;
+            @include font-style($weight: 600, $size: 14px);
         }
     }
 
@@ -96,7 +94,7 @@ header{
     top: $header-height;
     left: 0;
     width: 100%;
-    transition: .2s;
+    @include transition(all, .2s);
     .wrap{
         background-color: #000;
         padding-inline: 30px;
@@ -116,13 +114,13 @@ header{
             &.active{
                 opacity: 1;
                 &::after{
-                    content: "";
+                    @include pseudo-element("");
                     @include absolute-position(right, -30px, top, 50%);
                     width: 3px;
                     height: 20px;
                     background-color: #ffffff;
                     transform: translateY(-50%);
-                    transition: .2s;
+                    @include transition(all, .2s);
                 }
             }
             a{

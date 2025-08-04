@@ -38,17 +38,17 @@
             min-height: 208px;
         }
         .title{
-            font: 600 36px/normal $font;
+            @include font-style($weight: 600, $size: 36px);
             color: #000000;
             &-sub{
-                font: 500 20px/normal $font;
+                @include font-style($weight: 500, $size: 20px);
                 color: #555555;
                 margin-top: 10px;
             }
         }
         ul{
             li{
-                font: 400 16px/normal $font;
+                @include font-style($size: 16px, $color: #a0a0a0);
                 color: #a0a0a0;
                 margin-bottom: 10px;
                 &::before{

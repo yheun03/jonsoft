@@ -51,10 +51,7 @@
                 color: #eeeeee;
 
                 &.title {
-                    font: {
-                        weight: $fw-7;
-                        size: $fs-30;
-                    }
+                    @include font-style($weight: 700, $size: 30px);
                     margin-bottom: 7px;
                 }
             }
@@ -160,7 +157,7 @@
             margin-top: $gap-24;
 
             li::before {
-                content: "#";
+                @include pseudo-element("#");
             }
         }
     }
@@ -173,7 +170,7 @@
         @include flex(column, flex-start, stretch);
 
         &::after {
-            @include pseudo-element('', block);
+            @include pseudo-element("", 'block');
             margin-top: auto;
             width: 26px;
             height: 26px;

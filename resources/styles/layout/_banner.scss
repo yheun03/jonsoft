@@ -13,11 +13,11 @@
         @include flex(column, space-between, stretch);
     }
     h2{
-        font: 600 50px/normal $font;
+        @include font-style($weight: 600, $size: 50px);
         color: #ffffff;
     }
     h3{
-        font: 600 36px/49px $font;
+        @include font-style($weight: 600, $size: 36px, $line-height: 49px);
         color: #ffffff;
         align-self: flex-end;
         text-align: right;
@@ -41,15 +41,13 @@
                 padding-block: 160px;
             }
             .title{
-                font: 600 32px/40px $font;
-                color: #000000;
+                @include font-style($weight: 600, $size: 32px, $line-height: 40px, $color: #000000);
                 margin-bottom: 10px;
                 letter-spacing: unset;
             }
             p{
-                font: 400 18px/25px $font;
+                @include font-style($weight: 400, $size: 18px, $line-height: 25px, $color: #848484);
                 letter-spacing: -0.05em;
-                color: #848484;
             }
             .btn{
                 margin-top: 40px;
@@ -81,12 +79,10 @@
                 max-width: 864px;
             }
             .title{
-                font: 600 46px/60px $font;
-                color: #343434;
+                @include font-style($weight: 600, $size: 46px, $line-height: 60px, $color: #343434);
             }
             p{
-                font: 400 24px/36px $font;
-                color: #292e32;
+                @include font-style($weight: 400, $size: 24px, $line-height: 36px, $color: #292e32);
                 text-align: center;
                 word-break: keep-all;
             }
@@ -95,7 +91,7 @@
             height: 420px;
             min-height: unset;
             &::before{
-                content: "";
+                @include pseudo-element("");
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -107,8 +103,7 @@
                 align-items: center;
             }
             .title{
-                font: 600 46px/normal $font;
-                color: #ffffff;
+                @include font-style($weight: 600, $size: 46px, $color: #ffffff);
                 margin-bottom: 70px;
             }
         }
@@ -146,11 +141,11 @@
                     padding-inline: 20px;
                     gap: 40px;
                     .title{
-                        @include font-style($weight: $fw-6, $size: 24px, $line-height: 150%);
+                        @include font-style($weight: 600, $size: 24px, $line-height: 150%);
                         text-align: left;
                     }
                     p{
-                        @include font-style($weight: $fw-4, $size: 16px, $line-height: 150%);
+                        @include font-style($weight: 400, $size: 16px, $line-height: 150%);
                         text-align: left;
                     }
                 }

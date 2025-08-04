@@ -8,7 +8,7 @@
     li{
         position: relative;
         display: inline;
-        font: 600 14px/normal $font;
+        @include font-style($weight: 600, $size: 14px, $color: #666666);
         color: #666666;
         white-space: nowrap;
         &:hover{
@@ -24,10 +24,8 @@
         position: relative;
         &::after{
             // 사용성 개선을 위한 가상요소
-            content: "";
-            position: absolute;
-            top: -27px;
-            left: -15px;
+            @include pseudo-element("");
+            @include absolute-position(top, -27px, left, -15px);
             width: calc(100% + 30px);
             height: calc(100% + 54px);
         }
@@ -35,14 +33,11 @@
 
     footer &{
         li{
-            font: 400 14px/normal $font;
-            color: #909090;
+            @include font-style($size: 14px, $color: #909090);
             & + li{
                 &::before{
-                    content: "";
-                    position: absolute;
-                    left: -17px;
-                    top: 50%;
+                    @include pseudo-element("");
+                    @include absolute-position(left, -17px, top, 50%);
                     transform: translateY(-50%);
                     width: 1px;
                     height: 11px;
