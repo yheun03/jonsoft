@@ -456,108 +456,13 @@
     }
 } 
 
-.history2{
-    background-color: $c-bg-dark;
-    color: $c-text-light;
-    padding-top: $gap-80;
-
-    .title {
-        @include font-style($fw-7, $fs-32, 46px);
-        color: $c-text-light;
-        text-align: center;
-    }
-
-    &-timeline {
-        position: relative;
-        width: 754px;
-        margin: $gap-60 auto 0;
-
-        &::after{
-            @include pseudo-element();
-            @include absolute-position(top, 21px, left, 136.5px);
-            width: 2px;
-            height: calc(100% - 21px);
-            z-index: 0;
-            background-color: #797979;
-        }
-
-        & > li{
-            position: relative;
-            @include flex($justify: flex-end, $align: flex-start, $gap: 60px);
-            padding-bottom: 60px;
-            z-index: 1;
-            
-            &.active {
-                button{
-                    color: $c-orange;
-                    -webkit-text-stroke-width: .5px;
-                    -webkit-text-stroke-color: #000;
-                    
-                    &::after {
-                        background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;
-                    }
-                    &::before {
-                        transform: scale(22) translateY(-4%);
-                    }
-                }
-            }
-        }
-        
-        button {
-            @include font-style($fw-6, 28px, $color: #797979);
-            @include flex($justify: flex-end, $gap: 30px);
-            position: sticky;
-            top: 115px;
-            left: 0;
-            padding: 6px 0 6px 22px;
-            @include transition();
-            
-            &::after {
-                @include pseudo-element($display: block);
-                width: 14px;
-                height: 14px;
-                background-color: #797979;
-                border-radius: 50%;
-                z-index: 1;
-                @include transition();
-            }
-            &::before {
-                @include pseudo-element();
-                @include absolute-position(top, 50%, right, 7px);
-                width: 1px;
-                height: 1px;
-                background-color: #797979;
-                border-radius: 50%;
-                @include transition();
-            }
-        }
-
-    }
-
-    .month {
-        width: 550px;
-        @include font-style($fw-5, $fs-16);
-        margin-bottom: $gap-20;
-
-        &-label {
-            color: #797979;
-        }
-
-        ul {
-            margin-top: 5px;
-        }
-    }
-} 
-
 @include tablet {
-    .history, .history2{
+
+    .history{
         padding-block: 120px 60px;
         .month{
             width: unset;
         }
-    }
-
-    .history{
         &-timeline{
             display: unset;
         }
@@ -589,37 +494,6 @@
             & > li{
                 margin-bottom: 60px;
             }
-        }
-    }
-
-
-    .history2{
-        &-timeline{
-            width: unset;
-            margin: 20px -20px;
-            &::after{
-                content: unset;
-            }
-            strong{
-                padding: 0;
-                font-size: 16px;
-                &::before, &::after{
-                    content: unset;
-                }
-            }
-            & > li{
-                padding-inline: 20px;
-            }
-            li{
-                gap: 10px;
-                justify-content: space-between;
-                ul{
-                    flex: 1;
-                }
-            }
-        }
-        .month{
-            font-size: 14px;
         }
     }
 }
