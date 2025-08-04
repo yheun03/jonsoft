@@ -155,23 +155,7 @@ $(document).ready(function() {
     });
 
     // ===== 모달 기능 =====
-    // data-modal-target 속성을 가진 요소 클릭 시 모달 노출
-    $('[data-modal-target]').on('click', function() {
-        var modalTarget = $(this).data('modal-target');
-        var modalType = $(this).data('modal-type') || 'solution'; // 기본값은 solution
-        
-        // 해당 타입의 모달 중에서 target과 일치하는 모달 찾기
-        var targetModal = $('.modal .content-' + modalType + '[data-modal-id="' + modalTarget + '"]');
-        
-        if (targetModal.length) {
-            // 모든 모달 숨기기
-            $('.modal').removeClass('active');
-            // 해당 모달 노출
-            targetModal.closest('.modal').addClass('active');
-            // body 스크롤 방지
-            $('body').addClass('modal-open');
-        }
-    });
+    // 모달 이벤트 핸들러는 아래 slick 슬라이더 방지 코드에서 처리됨
 
     // 모달 닫기 함수
     function closeModal() {
@@ -198,4 +182,45 @@ $(document).ready(function() {
             closeModal();
         }
     });
+
+    // ===== Slick 슬라이더에서 모달 열림 방지 =====
+    var isSlickDragging = false;
+    
+    $(document).on('init.slick', '.slick-slider', function() {
+        var $slider = $(this);
+        
+        $slider.on('beforeChange.slick swipe', function() {
+            isSlickDragging = true;
+            $slider.find('[data-modal-target]').addClass('slick-dragging');
+        });
+        
+        $slider.on('afterChange.slick', function() {
+            setTimeout(function() {
+                isSlickDragging = false;
+                $slider.find('[data-modal-target]').removeClass('slick-dragging');
+            }, 300);
+        });
+    });
+    
+    $(document).off('click', '[data-modal-target]').on('click', '[data-modal-target]', function(e) {
+        var $this = $(this);
+        var $slider = $this.closest('.slick-slider');
+        
+        if ($slider.length && (isSlickDragging || $slider.hasClass('dragging') || $this.hasClass('slick-dragging'))) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+        
+        var modalTarget = $this.data('modal-target');
+        var modalType = $this.data('modal-type') || 'solution';
+        var targetModal = $('.modal .content-' + modalType + '[data-modal-id="' + modalTarget + '"]');
+        
+        if (targetModal.length) {
+            $('.modal').removeClass('active');
+            targetModal.closest('.modal').addClass('active');
+            $('body').addClass('modal-open');
+        }
+    });
+    
 }); 

@@ -1,6 +1,16 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
+.modal-open{
+    overflow: hidden;
+}
+
+// slick 슬라이더에서 드래그 중일 때 모달 트리거 비활성화
+.slick-dragging {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
 .modal{
     position: fixed;
     width: 100%;
