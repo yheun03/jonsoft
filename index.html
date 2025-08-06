@@ -34,6 +34,17 @@
           location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
         }
     </script> -->
+    <script>
+        // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
+        (function() {
+            var port = location.port ? parseInt(location.port, 10) : 80;
+            var isLocal = port >= 5500 && port <= 5510;
+
+            if (!isLocal && location.protocol === 'http:') {
+                location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
+            }
+        })();
+    </script>
 <body>
     <header>
         <div class="wrap">

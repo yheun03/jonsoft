@@ -29,11 +29,17 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
-    <!-- <script>
-        if (location.protocol === 'http:') {
-          location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
-        }
-    </script> -->
+    <script>
+        // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
+        (function() {
+            var port = location.port ? parseInt(location.port, 10) : 80;
+            var isLocal = port >= 5500 && port <= 5510;
+
+            if (!isLocal && location.protocol === 'http:') {
+                location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
+            }
+        })();
+    </script>
 <body>
     <header>
         <div class="wrap">
@@ -80,8 +86,8 @@
         <div class="navigator">
             <div class="tab">
                 <ul>
-                    <li class="active"><a href="javascript:void(0)" data-i18n="navigation.location">오시는 길</a></li>
-                    <li><a href="javascript:void(0)" data-i18n="navigation.recruitment">채용</a></li>
+                    <li class="active"><a href="javascript:void(0)" data-i18n="contact.tab.location">오시는 길</a></li>
+                    <li><a href="javascript:void(0)" data-i18n="contact.tab.recruitment">채용</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -114,7 +120,7 @@
                             <div class="wrap full">
                                 <ul>
                                     <li><strong data-i18n="contact.headquarters">판교 본사</strong></li>
-                                    <li data-i18n="location.pangyo">경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호</li>
+                                    <li data-i18n="common.company.address">경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호</li>
                                 </ul>
                             </div>
                         </div>
@@ -123,8 +129,8 @@
             </div>
             <div class="tab">
                 <ul>
-                    <li><a href="javascript:void(0)" data-i18n="navigation.location">오시는 길</a></li>
-                    <li class="active"><a href="javascript:void(0)" data-i18n="navigation.recruitment">채용</a></li>
+                    <li><a href="javascript:void(0)" data-i18n="contact.tab.location">오시는 길</a></li>
+                    <li class="active"><a href="javascript:void(0)" data-i18n="contact.tab.recruitment">채용</a></li>
                 </ul>
             </div>
             <div class="tab-content">

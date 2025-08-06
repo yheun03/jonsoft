@@ -1,5 +1,5 @@
 {
-    "navigation": {
+    "tab": {
         "location": {
             "ko": "오시는 길",
             "en": "Location",
@@ -37,14 +37,6 @@
             "en": "Email",
             "ja": "メール",
             "vi": "Email"
-        }
-    },
-    "location": {
-        "pangyo": {
-            "ko": "경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554",
-            "en": "248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Parkview Tower 602, 13554",
-            "ja": "京畿道城南市盆唐区亭子日路248、パークビュタワー602号、13554",
-            "vi": "248, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Parkview Tower 602, 13554"
         }
     },
     "recruitment": {
