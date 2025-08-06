@@ -47,7 +47,13 @@
             ]
         }
     },
-    "company": {
+    "overview": {
+        "title-sub": {
+            "ko": "회사개요",
+            "en": "Company Overview",
+            "ja": "会社概要",
+            "vi": "Tổng quan công ty"
+        },
         "title": {
             "ko": "조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다.",
             "en": "JO&SOFT is a specialized manufacturing AI solution company established based on global consulting capabilities accumulated from IBM and Accenture.",
@@ -68,7 +74,8 @@
                 "en": "Years of experience",
                 "ja": "営業年数",
                 "vi": "Năm kinh nghiệm"
-            }
+            },
+            "standard": ""
         },
         "item-02": {
             "title": {
@@ -76,6 +83,12 @@
                 "en": "Cumulative projects",
                 "ja": "累積課題数",
                 "vi": "Dự án tích lũy"
+            },
+            "standard": {
+                "ko": "25.1 기준",
+                "en": "As of 25.1",
+                "ja": "25.1基準",
+                "vi": "Tính đến 25.1"
             }
         },
         "item-03": {
@@ -84,6 +97,12 @@
                 "en": "Major clients",
                 "ja": "主要顧客",
                 "vi": "Khách hàng chính"
+            },
+            "standard": {
+                "ko": "25.1 기준",
+                "en": "As of 25.1",
+                "ja": "25.1基準",
+                "vi": "Tính đến 25.1"
             }
         },
         "item-04": {
@@ -92,13 +111,59 @@
                 "en": "Major partners",
                 "ja": "主要パートナー",
                 "vi": "Đối tác chính"
+            },
+            "standard": {
+                "ko": "25.1 기준",
+                "en": "As of 25.1",
+                "ja": "25.1基準",
+                "vi": "Tính đến 25.1"
+            }
+        }
+    },
+    "awards": {
+        "title": {
+            "ko": "지속적인 성장과 탄탄한 재무건전성",
+            "en": "Sustainable growth and solid financial health",
+            "ja": "持続的な成長と堅実な財務健全性",
+            "vi": "Tăng trưởng bền vững và sức khỏe tài chính vững chắc"
+        },
+        "dscpt": {
+            "ko": "우수기술기업 이노비즈 인증 및<br/>각종 특허 및 수상",
+            "en": "Innobiz certification for excellent technology companies and<br/>various patents and awards",
+            "ja": "優秀技術企業イノビズ認証及び<br/>各種特許及び受賞",
+            "vi": "Chứng nhận Innobiz cho các công ty công nghệ xuất sắc và<br/>các bằng sáng chế và giải thưởng khác nhau"
+        },
+        "item-01": {
+            "title": {
+                "ko": "기술역량 강화를 위해 끊임없이<br>노력하고 있으며 기술혁신형<br>중소기업 이노비즈 인증을<br>획득하였습니다.",
+                "en": "We are constantly striving to strengthen our technological capabilities<br>and have obtained Innobiz certification for innovative<br>technology-based SMEs.",
+                "ja": "技術力強化のため絶え間なく<br>努力しており、技術革新型<br>中小企業イノビズ認証を<br>獲得しました。",
+                "vi": "Chúng tôi không ngừng nỗ lực để tăng cường năng lực công nghệ<br>và đã đạt được chứng nhận Innobiz cho các doanh nghiệp vừa và nhỏ<br>công nghệ sáng tạo."
             }
         },
-        "standard": {
-            "ko": "25.1 기준",
-            "en": "As of 25.1",
-            "ja": "25.1基準",
-            "vi": "Tính đến 25.1"
+        "item-02": {
+            "title": {
+                "ko": "중견 기업 및 중소기업형<br>MES 시스템 소프트웨어를<br>개발하여 전개하고 있습니다.",
+                "en": "We are developing and deploying MES system software<br>for medium-sized and small and medium-sized enterprises.",
+                "ja": "中堅企業及び中小企業向け<br>MESシステムソフトウェアを<br>開発して展開しています。",
+                "vi": "Chúng tôi đang phát triển và triển khai phần mềm hệ thống MES<br>cho các doanh nghiệp vừa và nhỏ."
+            }
+        },
+        "item-03": {
+            "title": {
+                "ko": "2년연속 (2017/2018) 웹 어워드<br>코리아 최우수상 연속수상",
+                "en": "Consecutive Web Award Korea Best Award<br>for 2 years (2017/2018)",
+                "ja": "2年連続（2017/2018）ウェブアワード<br>コリア最優秀賞連続受賞",
+                "vi": "Giải thưởng Web Award Korea Xuất sắc nhất<br>liên tiếp 2 năm (2017/2018)"
+            }
+        },
+        "item-04": {
+            "title": {
+                "ko": "학교 안전 사고 관리 시스템 특허 및<br>확신성장유형 벤처기업",
+                "en": "Patent for school safety accident management system and<br>venture company of confident growth type",
+                "ja": "学校安全事故管理システム特許及び<br>確信成長型ベンチャー企業",
+                "vi": "Bằng sáng chế hệ thống quản lý tai nạn an toàn trường học và<br>công ty khởi nghiệp loại hình tăng trưởng tự tin"
+            }
         }
     },
     "strength": {
@@ -240,60 +305,6 @@
                     "Xây dựng giải pháp nhà máy thông minh Terra Eco",
                     "Sở hữu thành tích xây dựng và vận hành nhiều ứng dụng doanh nghiệp khác"
                 ]
-            }
-        }
-    },
-    "history": {
-        "title": {
-            "ko": "비즈니스 연혁",
-            "en": "Business history",
-            "ja": "ビジネス沿革",
-            "vi": "Lịch sử kinh doanh"
-        }
-    },
-    "awards": {
-        "title": {
-            "ko": "지속적인 성장과 탄탄한 재무건전성",
-            "en": "Sustainable growth and solid financial health",
-            "ja": "持続的な成長と堅実な財務健全性",
-            "vi": "Tăng trưởng bền vững và sức khỏe tài chính vững chắc"
-        },
-        "dscpt": {
-            "ko": "우수기술기업 이노비즈 인증 및<br/>각종 특허 및 수상",
-            "en": "Innobiz certification for excellent technology companies and<br/>various patents and awards",
-            "ja": "優秀技術企業イノビズ認証及び<br/>各種特許及び受賞",
-            "vi": "Chứng nhận Innobiz cho các công ty công nghệ xuất sắc và<br/>các bằng sáng chế và giải thưởng khác nhau"
-        },
-        "item-01": {
-            "title": {
-                "ko": "기술역량 강화를 위해 끊임없이<br>노력하고 있으며 기술혁신형<br>중소기업 이노비즈 인증을<br>획득하였습니다.",
-                "en": "We are constantly striving to strengthen our technological capabilities<br>and have obtained Innobiz certification for innovative<br>technology-based SMEs.",
-                "ja": "技術力強化のため絶え間なく<br>努力しており、技術革新型<br>中小企業イノビズ認証を<br>獲得しました。",
-                "vi": "Chúng tôi không ngừng nỗ lực để tăng cường năng lực công nghệ<br>và đã đạt được chứng nhận Innobiz cho các doanh nghiệp vừa và nhỏ<br>công nghệ sáng tạo."
-            }
-        },
-        "item-02": {
-            "title": {
-                "ko": "중견 기업 및 중소기업형<br>MES 시스템 소프트웨어를<br>개발하여 전개하고 있습니다.",
-                "en": "We are developing and deploying MES system software<br>for medium-sized and small and medium-sized enterprises.",
-                "ja": "中堅企業及び中小企業向け<br>MESシステムソフトウェアを<br>開発して展開しています。",
-                "vi": "Chúng tôi đang phát triển và triển khai phần mềm hệ thống MES<br>cho các doanh nghiệp vừa và nhỏ."
-            }
-        },
-        "item-03": {
-            "title": {
-                "ko": "2년연속 (2017/2018) 웹 어워드<br>코리아 최우수상 연속수상",
-                "en": "Consecutive Web Award Korea Best Award<br>for 2 years (2017/2018)",
-                "ja": "2年連続（2017/2018）ウェブアワード<br>コリア最優秀賞連続受賞",
-                "vi": "Giải thưởng Web Award Korea Xuất sắc nhất<br>liên tiếp 2 năm (2017/2018)"
-            }
-        },
-        "item-04": {
-            "title": {
-                "ko": "학교 안전 사고 관리 시스템 특허 및<br>확신성장유형 벤처기업",
-                "en": "Patent for school safety accident management system and<br>venture company of confident growth type",
-                "ja": "学校安全事故管理システム特許及び<br>確信成長型ベンチャー企業",
-                "vi": "Bằng sáng chế hệ thống quản lý tai nạn an toàn trường học và<br>công ty khởi nghiệp loại hình tăng trưởng tự tin"
             }
         }
     }
