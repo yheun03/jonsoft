@@ -306,6 +306,12 @@
                     "Sở hữu thành tích xây dựng và vận hành nhiều ứng dụng doanh nghiệp khác"
                 ]
             }
+        },
+        "button": {
+            "ko": "성공사례 자세히 보기",
+            "en": "View success cases in detail",
+            "ja": "成功事例を詳しく見る",
+            "vi": "Xem chi tiết các trường hợp thành công"
         }
     }
 }

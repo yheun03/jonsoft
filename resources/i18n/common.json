@@ -131,12 +131,6 @@
             "ja": "詳しく見る",
             "vi": "Xem chi tiết"
         },
-        "view_success_cases": {
-            "ko": "성공사례 자세히 보기",
-            "en": "View success cases in detail",
-            "ja": "成功事例を詳しく見る",
-            "vi": "Xem chi tiết các trường hợp thành công"
-        },
         "close": {
             "ko": "닫기",
             "en": "Close",
