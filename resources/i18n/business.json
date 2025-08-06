@@ -1,68 +1,59 @@
 {
-    "banner": {
-        "title": {
-            "ko": "솔루션",
-            "en": "Solutions",
-            "ja": "ソリューション",
-            "vi": "Giải pháp"
-        }
-    },
-    "overview": {
-        "title": {
-            "ko": "조앤소프트는 주문관리시스템(OMS), 생산관리시스템(MES), 공장에너지관리시스템(FEMS), 고객관계관리(CRM), 공급망관리(SCM), 생산계획시스템(APS), 창고제어시스템(WCS), 자동배차관리시스템(TMS) 및 AI솔루션(work@AI)",
-            "en": "JO&SOFT provides Order Management System (OMS), Manufacturing Execution System (MES), Factory Energy Management System (FEMS), Customer Relationship Management (CRM), Supply Chain Management (SCM), Advanced Planning and Scheduling (APS), Warehouse Control System (WCS), Transportation Management System (TMS) and AI Solutions (work@AI)",
-            "ja": "JO&SOFTは注文管理システム（OMS）、製造実行システム（MES）、工場エネルギー管理システム（FEMS）、顧客関係管理（CRM）、サプライチェーン管理（SCM）、高度計画・スケジューリング（APS）、倉庫制御システム（WCS）、輸送管理システム（TMS）およびAIソリューション（work@AI）を提供します。",
-            "vi": "JO&SOFT cung cấp Hệ thống Quản lý Đơn hàng (OMS), Hệ thống Thực thi Sản xuất (MES), Hệ thống Quản lý Năng lượng Nhà máy (FEMS), Quản lý Quan hệ Khách hàng (CRM), Quản lý Chuỗi cung ứng (SCM), Lập kế hoạch và Lập lịch trình Nâng cao (APS), Hệ thống Điều khiển Kho (WCS), Hệ thống Quản lý Vận tải (TMS) và Giải pháp AI (work@AI)"
-        },
-        "description": {
-            "ko": "그 밖에 PLM, WMS, ESG 생태계공장, DPP, 빅데이터 분석 / 모니터링 시스템 등 다양한 고객 맞춤형 솔루션을 보유하고 있습니다.",
-            "en": "In addition, we have various customer-tailored solutions including PLM, WMS, ESG ecosystem factory, DPP, big data analysis/monitoring systems, and more.",
-            "ja": "その他、PLM、WMS、ESGエコシステム工場、DPP、ビッグデータ分析/モニタリングシステムなど様々な顧客特化型ソリューションを保有しています。",
-            "vi": "Ngoài ra, chúng tôi có các giải pháp tùy chỉnh cho khách hàng bao gồm PLM, WMS, nhà máy hệ sinh thái ESG, DPP, hệ thống phân tích/giám sát dữ liệu lớn và nhiều hơn nữa."
-        }
-    },
-    "success": {
-        "title": {
-            "ko": "Success Case",
-            "en": "Success Case",
-            "ja": "成功事例",
-            "vi": "Trường hợp thành công"
-        },
-        "case1": {
-            "title": {
-                "ko": "스마트앱을 통해<br/>업무를 간편하게",
-                "en": "Simplify work through<br/>smart apps",
-                "ja": "スマートアプリを通じて<br/>業務を簡便に",
-                "vi": "Đơn giản hóa công việc<br/>thông qua ứng dụng thông minh"
+    "module-text": {
+        "overview": {
+            "title-sub": {
+                "ko": "솔루션",
+                "en": "Solutions",
+                "ja": "ソリューション",
+                "vi": "Giải pháp"
             },
-            "description": {
-                "ko": ["모바일 발주 시스템", "안드로이드/IOS 앱"],
-                "en": ["Mobile Order System", "Android/iOS App"],
-                "ja": ["モバイル発注システム", "Android/iOSアプリ"],
-                "vi": ["Hệ thống Đặt hàng Di động", "Ứng dụng Android/iOS"]
-            }
-        },
-        "case2": {
             "title": {
-                "ko": "재고조회도,<br/>주문도 더 빠르게",
-                "en": "Faster inventory<br/>and order management",
-                "ja": "在庫照会も<br/>注文もより速く",
-                "vi": "Quản lý kho và<br/>đặt hàng nhanh hơn"
+                "ko": "조앤소프트는 주문관리시스템(OMS), 생산관리시스템(MES), 공장에너지관리시스템(FEMS), 고객관계관리(CRM), 공급망관리(SCM), 생산계획시스템(APS), 창고제어시스템(WCS), 자동배차관리시스템(TMS) 및 AI솔루션(work@AI)",
+                "en": "JO&SOFT provides Order Management System (OMS), Manufacturing Execution System (MES), Factory Energy Management System (FEMS), Customer Relationship Management (CRM), Supply Chain Management (SCM), Advanced Planning and Scheduling (APS), Warehouse Control System (WCS), Transportation Management System (TMS) and AI Solutions (work@AI)",
+                "ja": "JO&SOFTは注文管理システム（OMS）、製造実行システム（MES）、工場エネルギー管理システム（FEMS）、顧客関係管理（CRM）、サプライチェーン管理（SCM）、高度計画・スケジューリング（APS）、倉庫制御システム（WCS）、輸送管理システム（TMS）およびAIソリューション（work@AI）を提供します。",
+                "vi": "JO&SOFT cung cấp Hệ thống Quản lý Đơn hàng (OMS), Hệ thống Thực thi Sản xuất (MES), Hệ thống Quản lý Năng lượng Nhà máy (FEMS), Quản lý Quan hệ Khách hàng (CRM), Quản lý Chuỗi cung ứng (SCM), Lập kế hoạch và Lập lịch trình Nâng cao (APS), Hệ thống Điều khiển Kho (WCS), Hệ thống Quản lý Vận tải (TMS) và Giải pháp AI (work@AI)"
             },
-            "description": {
-                "ko": ["KN-OMS", "웹 모바일 주문 관리 시스템", "안드로이드/IOS 앱"],
-                "en": ["KN-OMS", "Web Mobile Order Management System", "Android/iOS App"],
-                "ja": ["KN-OMS", "ウェブモバイル注文管理システム", "Android/iOSアプリ"],
-                "vi": ["KN-OMS", "Hệ thống Quản lý Đặt hàng Di động Web", "Ứng dụng Android/iOS"]
+            "dscpt": {
+                "ko": "그 밖에 PLM, WMS, ESG 생태계공장, DPP, 빅데이터 분석 / 모니터링 시스템 등 다양한 고객 맞춤형 솔루션을 보유하고 있습니다.",
+                "en": "In addition, we have various customer-tailored solutions including PLM, WMS, ESG ecosystem factory, DPP, big data analysis/monitoring systems, and more.",
+                "ja": "その他、PLM、WMS、ESGエコシステム工場、DPP、ビッグデータ分析/モニタリングシステムなど様々な顧客特化型ソリューションを保有しています。",
+                "vi": "Ngoài ra, chúng tôi có các giải pháp tùy chỉnh cho khách hàng bao gồm PLM, WMS, nhà máy hệ sinh thái ESG, DPP, hệ thống phân tích/giám sát dữ liệu lớn và nhiều hơn nữa."
             }
         }
     },
     "solutions": {
         "aps": {
-            "title": {"ko": "APS 솔루션", "en": "APS Solution", "ja": "APSソリューション", "vi": "Giải pháp APS"},
-            "subtitle": {"ko": "Advanced Planning and Scheduling", "en": "Advanced Planning and Scheduling", "ja": "高度計画・スケジューリング", "vi": "Lập kế hoạch và Lập lịch trình Nâng cao"},
-            "badge": {"ko": "생산계획시스템", "en": "Production Planning System", "ja": "生産計画システム", "vi": "Hệ thống Lập kế hoạch Sản xuất"},
-            "description": {"ko": "다품종 소량생산 제조기업의 까다로운 생산계획수립 업무를 거래처 납품일, 설비의 생산Capa, 생산공정의 흐름에 따라 자동 생산계획을 수립하고 현장 POP시스템을 통해 Paperless 환경의 생산지시를 수행합니다.", "en": "We establish automatic production plans based on customer delivery dates, equipment production capacity, and production process flow for the demanding production planning tasks of multi-variety small-batch manufacturing companies, and execute production instructions in a paperless environment through on-site POP systems.", "ja": "多品種少量生産製造企業の厳しい生産計画立案業務を取引先納品日、設備の生産能力、生産工程の流れに従って自動生産計画を立て、現場POPシステムを通じてペーパーレス環境の生産指示を実行します。", "vi": "Chúng tôi thiết lập kế hoạch sản xuất tự động dựa trên ngày giao hàng của khách hàng, công suất sản xuất thiết bị và luồng quy trình sản xuất cho các nhiệm vụ lập kế hoạch sản xuất đòi hỏi của các công ty sản xuất đa chủng loại sản lượng nhỏ, và thực hiện hướng dẫn sản xuất trong môi trường không giấy thông qua hệ thống POP tại chỗ."}
+            "title": {
+                "ko": "APS 솔루션",
+                "en": "APS Solution",
+                "ja": "APSソリューション",
+                "vi": "Giải pháp APS"
+            },
+            "subtitle": {
+                "ko": "Advanced Planning and Scheduling",
+                "en": "Advanced Planning and Scheduling",
+                "ja": "高度計画・スケジューリング",
+                "vi": "Lập kế hoạch và Lập lịch trình Nâng cao"
+            },
+            "badge": {
+                "ko": "생산계획시스템",
+                "en": "Production Planning System",
+                "ja": "生産計画システム",
+                "vi": "Hệ thống Lập kế hoạch Sản xuất"
+            },
+            "dscpt": {
+                "ko": "다품종 소량생산 제조기업의 까다로운 생산계획수립 업무를 거래처 납품일, 설비의 생산Capa, 생산공정의 흐름에 따라 자동 생산계획을 수립하고 현장 POP시스템을 통해 Paperless 환경의 생산지시를 수행합니다.",
+                "en": "We establish automatic production plans based on customer delivery dates, equipment production capacity, and production process flow for the demanding production planning tasks of multi-variety small-batch manufacturing companies, and execute production instructions in a paperless environment through on-site POP systems.",
+                "ja": "多品種少量生産製造企業の厳しい生産計画立案業務を取引先納品日、設備の生産能力、生産工程の流れに従って自動生産計画を立て、現場POPシステムを通じてペーパーレス環境の生産指示を実行します。",
+                "vi": "Chúng tôi thiết lập kế hoạch sản xuất tự động dựa trên ngày giao hàng của khách hàng, công suất sản xuất thiết bị và luồng quy trình sản xuất cho các nhiệm vụ lập kế hoạch sản xuất đòi hỏi của các công ty sản xuất đa chủng loại sản lượng nhỏ, và thực hiện hướng dẫn sản xuất trong môi trường không giấy thông qua hệ thống POP tại chỗ."
+            },
+            "thumbnail": "./resources/images/solution/aps.png",
+            "alt": {
+                "ko": "APS 솔루션의 썸네일 이미지입니다.",
+                "en": "APS Solution thumbnail image.",
+                "ja": "APSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp APS."
+            }
         },
         "oms": {
             "title": {
@@ -83,17 +74,18 @@
                 "ja": "注文管理システム",
                 "vi": "Hệ thống Quản lý Đơn hàng"
             },
-            "description": {
+            "dscpt": {
                 "ko": "OMS는 Fax, 이메일 등 기존 아날로그 주문서를 수신하여 매일 반복하여 입력하는 업무를 OCR과 AI 기술을 활용하여 신속하게 처리하고 휴먼 리소스의 업무를 혁신적으로 줄입니다.",
                 "en": "OMS receives existing analog orders such as fax and email, and quickly processes the daily repetitive input work using OCR and AI technology, innovatively reducing human resource work.",
                 "ja": "OMSはファックス、メールなどの既存アナログ注文書を受信し、毎日繰り返し入力する業務をOCRとAI技術を活用して迅速に処理し、人的リソースの業務を革新的に削減します。",
                 "vi": "OMS nhận các đơn hàng tương tự hiện có như fax và email, và xử lý nhanh chóng công việc nhập liệu lặp lại hàng ngày bằng công nghệ OCR và AI, giảm thiểu một cách sáng tạo công việc của nguồn nhân lực."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/oms.png",
+            "alt": {
+                "ko": "OMS 솔루션의 썸네일 이미지입니다.",
+                "en": "OMS Solution thumbnail image.",
+                "ja": "OMSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp OMS."
             }
         },
         "fems": {
@@ -115,17 +107,18 @@
                 "ja": "工場エネルギー管理システム",
                 "vi": "Hệ thống Quản lý Năng lượng Nhà máy"
             },
-            "description": {
+            "dscpt": {
                 "ko": "공장의 에너지 측정, 모니터링, 분석, 제어 등을 통해 에너지 소비를 최적화하고, AI 수요 예측 모델을 통해 효율적으로 에너지를 관리하는 시스템입니다. 특히, 정격용량 대비 에너지 소모량이 많은 설비를 추적하여 설비의 예지보전 업무를 신속하게 처리하도록 지원합니다.",
                 "en": "A system that optimizes energy consumption through energy measurement, monitoring, analysis, and control of factories, and efficiently manages energy through AI demand forecasting models. In particular, it supports rapid processing of predictive maintenance tasks by tracking equipment with high energy consumption relative to rated capacity.",
                 "ja": "工場のエネルギー測定、モニタリング、分析、制御などを通じてエネルギー消費を最適化し、AI需要予測モデルを通じて効率的にエネルギーを管理するシステムです。特に、定格容量対比エネルギー消費量が多い設備を追跡して設備の予知保全業務を迅速に処理するよう支援します。",
                 "vi": "Hệ thống tối ưu hóa tiêu thụ năng lượng thông qua đo lường, giám sát, phân tích và kiểm soát năng lượng của nhà máy, và quản lý năng lượng hiệu quả thông qua các mô hình dự báo nhu cầu AI. Đặc biệt, nó hỗ trợ xử lý nhanh chóng các nhiệm vụ bảo trì dự đoán bằng cách theo dõi thiết bị có mức tiêu thụ năng lượng cao so với công suất định mức."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/fems.png",
+            "alt": {
+                "ko": "FEMS 솔루션의 썸네일 이미지입니다.",
+                "en": "FEMS Solution thumbnail image.",
+                "ja": "FEMSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp FEMS."
             }
         },
         "scm": {
@@ -136,10 +129,10 @@
                 "vi": "Giải pháp SCM"
             },
             "subtitle": {
-                "ko": "Advanced Planning and Scheduling",
-                "en": "Advanced Planning and Scheduling",
-                "ja": "高度計画・スケジューリング",
-                "vi": "Lập kế hoạch và Lập lịch trình Nâng cao"
+                "ko": "Supply Chain Management",
+                "en": "Supply Chain Management",
+                "ja": "サプライチェーン管理",
+                "vi": "Quản lý Chuỗi cung ứng"
             },
             "badge": {
                 "ko": "공급망관리",
@@ -147,17 +140,18 @@
                 "ja": "サプライチェーン管理",
                 "vi": "Quản lý Chuỗi cung ứng"
             },
-            "description": {
+            "dscpt": {
                 "ko": "제조협력 기업간 상생형 공급망을 구축하여 수주, 발주, 생산진행현황, 출고, 납품정보를 리얼타임으로 제공합니다. 기업간 데이터의 표준화와 정보의 적시 전달을 통해 불필요한 커뮤니케이션을 줄이고 Total Lead Time을 줄입니다.",
                 "en": "We build a win-win supply chain between manufacturing cooperation companies and provide real-time information on orders, purchases, production progress, shipping, and delivery. We reduce unnecessary communication and Total Lead Time through standardization of inter-company data and timely delivery of information.",
                 "ja": "製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
                 "vi": "Chúng tôi xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/scm.png",
+            "alt": {
+                "ko": "SCM 솔루션의 썸네일 이미지입니다.",
+                "en": "SCM Solution thumbnail image.",
+                "ja": "SCMソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp SCM."
             }
         },
         "crm": {
@@ -179,20 +173,53 @@
                 "ja": "顧客関係管理",
                 "vi": "Quản lý Quan hệ Khách hàng"
             },
-            "description": {
+            "dscpt": {
                 "ko": "영업조직의 목표와 실적관리, 신규영업기회 관리, 영업활동관리, 견적/제안 관리, 계약관리, 매출관리를 손쉽게 처리하고 모바일 APP과 연동하여 영업활동을 간편하게 지원합니다. 특히 영업보고서를 시스템에서 자동 생성합니다.",
                 "en": "We easily handle sales organization goal and performance management, new sales opportunity management, sales activity management, quotation/proposal management, contract management, and revenue management, and support sales activities easily by linking with mobile apps. In particular, sales reports are automatically generated in the system.",
                 "ja": "営業組織の目標と実績管理、新規営業機会管理、営業活動管理、見積/提案管理、契約管理、売上管理を簡単に処理し、モバイルAPPと連携して営業活動を簡単に支援します。特に営業報告書をシステムで自動生成します。",
                 "vi": "Chúng tôi dễ dàng xử lý quản lý mục tiêu và hiệu suất tổ chức bán hàng, quản lý cơ hội bán hàng mới, quản lý hoạt động bán hàng, quản lý báo giá/đề xuất, quản lý hợp đồng và quản lý doanh thu, và hỗ trợ hoạt động bán hàng dễ dàng bằng cách liên kết với ứng dụng di động. Đặc biệt, báo cáo bán hàng được tự động tạo trong hệ thống."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/crm.png",
+            "alt": {
+                "ko": "CRM 솔루션의 썸네일 이미지입니다.",
+                "en": "CRM Solution thumbnail image.",
+                "ja": "CRMソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp CRM."
             }
         },
-        "mes": {"title": {"ko": "MES 솔루션", "en": "MES Solution", "ja": "MESソリューション", "vi": "Giải pháp MES"}, "subtitle": {"ko": "Manufacturing Execution System", "en": "Manufacturing Execution System", "ja": "製造実行システム", "vi": "Hệ thống Thực thi Sản xuất"}, "badge": {"ko": "생산관리시스템", "en": "Manufacturing Execution System", "ja": "製造実行システム", "vi": "Hệ thống Thực thi Sản xuất"}, "description": {"ko": "수주에서 자재발주, 입고, 출고, 생산지시, 생산 공정관리, 품질 관리업무를 수행하고, 수작업 기반의 생산현장 업무를 키오스크, 바코드 /QR코드, 태블릿 기기를 활용하여 Paperless 환경으로 스마트한 현장 관리가 가능합니다.", "en": "We perform order management, material ordering, receiving, shipping, production instructions, production process management, and quality management tasks, and enable smart field management in a paperless environment by utilizing kiosks, barcodes/QR codes, and tablet devices for manual-based production site work.", "ja": "受注から資材発注、入庫、出庫、生産指示、生産工程管理、品質管理業務を実行し、手作業ベースの生産現場業務をキオスク、バーコード/QRコード、タブレット機器を活用してペーパーレス環境でスマートな現場管理が可能です。", "vi": "Chúng tôi thực hiện quản lý đơn hàng, đặt hàng vật liệu, nhận hàng, vận chuyển, hướng dẫn sản xuất, quản lý quy trình sản xuất và nhiệm vụ quản lý chất lượng, và cho phép quản lý hiện trường thông minh trong môi trường không giấy bằng cách sử dụng kiosk, mã vạch/mã QR và thiết bị máy tính bảng cho công việc tại địa điểm sản xuất dựa trên thủ công."}},
+        "mes": {
+            "title": {
+                "ko": "MES 솔루션",
+                "en": "MES Solution",
+                "ja": "MESソリューション",
+                "vi": "Giải pháp MES"
+            },
+            "subtitle": {
+                "ko": "Manufacturing Execution System",
+                "en": "Manufacturing Execution System",
+                "ja": "製造実行システム",
+                "vi": "Hệ thống Thực thi Sản xuất"
+            },
+            "badge": {
+                "ko": "생산관리시스템",
+                "en": "Manufacturing Execution System",
+                "ja": "製造実行システム",
+                "vi": "Hệ thống Thực thi Sản xuất"
+            },
+            "dscpt": {
+                "ko": "수주에서 자재발주, 입고, 출고, 생산지시, 생산 공정관리, 품질 관리업무를 수행하고, 수작업 기반의 생산현장 업무를 키오스크, 바코드 /QR코드, 태블릿 기기를 활용하여 Paperless 환경으로 스마트한 현장 관리가 가능합니다.",
+                "en": "We perform order management, material ordering, receiving, shipping, production instructions, production process management, and quality management tasks, and enable smart field management in a paperless environment by utilizing kiosks, barcodes/QR codes, and tablet devices for manual-based production site work.",
+                "ja": "受注から資材発注、入庫、出庫、生産指示、生産工程管理、品質管理業務を実行し、手作業ベースの生産現場業務をキオスク、バーコード/QRコード、タブレット機器を活用してペーパーレス環境でスマートな現場管理が可能です。",
+                "vi": "Chúng tôi thực hiện quản lý đơn hàng, đặt hàng vật liệu, nhận hàng, vận chuyển, hướng dẫn sản xuất, quản lý quy trình sản xuất và nhiệm vụ quản lý chất lượng, và cho phép quản lý hiện trường thông minh trong môi trường không giấy bằng cách sử dụng kiosk, mã vạch/mã QR và thiết bị máy tính bảng cho công việc tại địa điểm sản xuất dựa trên thủ công."
+            },
+            "thumbnail": "./resources/images/solution/mes.png",
+            "alt": {
+                "ko": "MES 솔루션의 썸네일 이미지입니다.",
+                "en": "MES Solution thumbnail image.",
+                "ja": "MESソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp MES."
+            }
+        },
         "wcs": {
             "title": {
                 "ko": "WCS 솔루션",
@@ -212,17 +239,18 @@
                 "ja": "倉庫制御システム",
                 "vi": "Hệ thống Điều khiển Kho"
             },
-            "description": {
+            "dscpt": {
                 "ko": "무인 운반 로봇을 활용하여 생산공정과 물류창고간 제품 이동, 생산공정간 반제품 이동 업무를 MES/WMS 시스템과 연동하여 로봇의 작업계획을 수립하고 RCS를 통해 Bot을 컨트롤 합니다.",
                 "en": "Using unmanned transport robots, we establish robot work plans by linking with MES/WMS systems for product movement between production processes and logistics warehouses, and semi-finished product movement between production processes, and control Bots through RCS.",
                 "ja": "無人運搬ロボットを活用して生産工程と物流倉庫間の製品移動、生産工程間の半製品移動業務をMES/WMSシステムと連携してロボットの作業計画を立て、RCSを通じてBotを制御します。",
                 "vi": "Sử dụng robot vận chuyển không người lái, chúng tôi thiết lập kế hoạch làm việc của robot bằng cách liên kết với hệ thống MES/WMS cho việc di chuyển sản phẩm giữa các quy trình sản xuất và kho logistics, và di chuyển bán thành phẩm giữa các quy trình sản xuất, và điều khiển Bot thông qua RCS."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/wcs.png",
+            "alt": {
+                "ko": "WCS 솔루션의 썸네일 이미지입니다.",
+                "en": "WCS Solution thumbnail image.",
+                "ja": "WCSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp WCS."
             }
         },
         "tms": {
@@ -239,22 +267,23 @@
                 "vi": "Hệ thống Quản lý Vận tải"
             },
             "badge": {
-                "ko": "생산계획시스템",
-                "en": "Production Planning System",
-                "ja": "生産計画システム",
-                "vi": "Hệ thống Lập kế hoạch Sản xuất"
+                "ko": "자동배차관리시스템",
+                "en": "Transport Management System",
+                "ja": "輸送管理システム",
+                "vi": "Hệ thống Quản lý Vận tải"
             },
-            "description": {
+            "dscpt": {
                 "ko": "ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재 Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
                 "en": "We automatically dispatch by matching the volume of products to be loaded and the loading capacity of vehicles based on delivery requests in connection with ERP/WMS systems. After loading, we eliminate unnecessary document management work and reduce transportation costs by using kiosks for self-transaction statement printing.",
                 "ja": "ERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
                 "vi": "Chúng tôi tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/tms.png",
+            "alt": {
+                "ko": "TMS 솔루션의 썸네일 이미지입니다.",
+                "en": "TMS Solution thumbnail image.",
+                "ja": "TMSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp TMS."
             }
         },
         "ai": {
@@ -276,20 +305,94 @@
                 "ja": "work@AI",
                 "vi": "work@AI"
             },
-            "description": {
+            "dscpt": {
                 "ko": "현장의 다양한 데이터를 기반으로 예측과 자동화를 실현하여 운영 효율을 높이고, 핵심 시스템과 유연하게 연동되며, 지속적인 개선을 통해 확장 가능한 AI 환경을 제공합니다.",
                 "en": "Based on various field data, we realize prediction and automation to improve operational efficiency, flexibly link with core systems, and provide a scalable AI environment through continuous improvement.",
                 "ja": "現場の様々なデータに基づいて予測と自動化を実現して運営効率を高め、コアシステムと柔軟に連携し、継続的な改善を通じて拡張可能なAI環境を提供します。",
                 "vi": "Dựa trên dữ liệu hiện trường đa dạng, chúng tôi thực hiện dự đoán và tự động hóa để cải thiện hiệu quả vận hành, liên kết linh hoạt với các hệ thống cốt lõi, và cung cấp môi trường AI có thể mở rộng thông qua cải tiến liên tục."
             },
-            "link": {
-                "ko": "자세히 보기",
-                "en": "View Details",
-                "ja": "詳しく見る",
-                "vi": "Xem chi tiết"
+            "thumbnail": "./resources/images/solution/ai.png",
+            "alt": {
+                "ko": "AI 솔루션의 썸네일 이미지입니다.",
+                "en": "AI Solution thumbnail image.",
+                "ja": "AIソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp AI."
             }
         },
-        "wms": {"title": {"ko": "WMS 솔루션", "en": "WMS Solution", "ja": "WMSソリューション", "vi": "Giải pháp WMS"}, "subtitle": {"ko": "Warehouse Management System", "en": "Warehouse Management System", "ja": "倉庫管理システム", "vi": "Hệ thống Quản lý Kho"}, "badge": {"ko": "창고관리시스템", "en": "Warehouse Management System", "ja": "倉庫管理システム", "vi": "Hệ thống Quản lý Kho"}, "description": {"ko": "RFID,QR, Barcode 를 활용하여 원자재 및 제품의 Life Cycle을 스마트하게 관리합니다. 선입선출(FIFO) 방식으로 자재 입고와 생산 불출 처리를 지원하고 로케이션 기반의 상품 입고, 출고를 통해 창고관리 업무 효율을 높입니다.", "en": "We smartly manage the life cycle of raw materials and products using RFID, QR, and Barcode. We support material receiving and production withdrawal processing in FIFO (First In First Out) method and improve warehouse management work efficiency through location-based product receiving and shipping.", "ja": "RFID、QR、バーコードを活用して原材料および製品のライフサイクルをスマートに管理します。先入れ先出し（FIFO）方式で資材入庫と生産払出処理を支援し、ロケーションベースの商品入庫、出庫を通じて倉庫管理業務効率を向上させます。", "vi": "Chúng tôi quản lý thông minh vòng đời của nguyên liệu và sản phẩm bằng RFID, QR và Barcode. Chúng tôi hỗ trợ xử lý nhận vật liệu và rút sản xuất theo phương pháp FIFO (First In First Out) và cải thiện hiệu quả công việc quản lý kho thông qua nhận và vận chuyển sản phẩm dựa trên vị trí."}
+        "wms": {
+            "title": {
+                "ko": "WMS 솔루션",
+                "en": "WMS Solution",
+                "ja": "WMSソリューション",
+                "vi": "Giải pháp WMS"
+            },
+            "subtitle": {
+                "ko": "Warehouse Management System",
+                "en": "Warehouse Management System",
+                "ja": "倉庫管理システム",
+                "vi": "Hệ thống Quản lý Kho"
+            },
+            "badge": {
+                "ko": "창고관리시스템",
+                "en": "Warehouse Management System",
+                "ja": "倉庫管理システム",
+                "vi": "Hệ thống Quản lý Kho"
+            },
+            "dscpt": {
+                "ko": "RFID,QR, Barcode 를 활용하여 원자재 및 제품의 Life Cycle을 스마트하게 관리합니다. 선입선출(FIFO) 방식으로 자재 입고와 생산 불출 처리를 지원하고 로케이션 기반의 상품 입고, 출고를 통해 창고관리 업무 효율을 높입니다.",
+                "en": "We smartly manage the life cycle of raw materials and products using RFID, QR, and Barcode. We support material receiving and production withdrawal processing in FIFO (First In First Out) method and improve warehouse management work efficiency through location-based product receiving and shipping.",
+                "ja": "RFID、QR、バーコードを活用して原材料および製品のライフサイクルをスマートに管理します。先入れ先出し（FIFO）方式で資材入庫と生産払出処理を支援し、ロケーションベースの商品入庫、出庫を通じて倉庫管理業務効率を向上させます。",
+                "vi": "Chúng tôi quản lý thông minh vòng đời của nguyên liệu và sản phẩm bằng RFID, QR và Barcode. Chúng tôi hỗ trợ xử lý nhận vật liệu và rút sản xuất theo phương pháp FIFO (First In First Out) và cải thiện hiệu quả công việc quản lý kho thông qua nhận và vận chuyển sản phẩm dựa trên vị trí."
+            },
+            "thumbnail": "./resources/images/solution/wms.png",
+            "alt": {
+                "ko": "WMS 솔루션의 썸네일 이미지입니다.",
+                "en": "WMS Solution thumbnail image.",
+                "ja": "WMSソリューションのサムネイル画像です。",
+                "vi": "Hình ảnh thu nhỏ của Giải pháp WMS."
+            }
+        },
+        "button": {
+            "ko": "자세히 보기",
+            "en": "View Details",
+            "ja": "詳しく見る",
+            "vi": "Xem chi tiết"
+        }
+    },
+    "success": {
+        "title": {
+            "ko": "Success Case",
+            "en": "Success Case",
+            "ja": "成功事例",
+            "vi": "Trường hợp thành công"
+        },
+        "case1": {
+            "title": {
+                "ko": "스마트앱을 통해<br/>업무를 간편하게",
+                "en": "Simplify work through<br/>smart apps",
+                "ja": "スマートアプリを通じて<br/>業務を簡便に",
+                "vi": "Đơn giản hóa công việc<br/>thông qua ứng dụng thông minh"
+            },
+            "dscpt": {
+                "ko": ["모바일 발주 시스템", "안드로이드/IOS 앱"],
+                "en": ["Mobile Order System", "Android/iOS App"],
+                "ja": ["モバイル発注システム", "Android/iOSアプリ"],
+                "vi": ["Hệ thống Đặt hàng Di động", "Ứng dụng Android/iOS"]
+            }
+        },
+        "case2": {
+            "title": {
+                "ko": "재고조회도,<br/>주문도 더 빠르게",
+                "en": "Faster inventory<br/>and order management",
+                "ja": "在庫照会も<br/>注文もより速く",
+                "vi": "Quản lý kho và<br/>đặt hàng nhanh hơn"
+            },
+            "dscpt": {
+                "ko": ["KN-OMS", "웹 모바일 주문 관리 시스템", "안드로이드/IOS 앱"],
+                "en": ["KN-OMS", "Web Mobile Order Management System", "Android/iOS App"],
+                "ja": ["KN-OMS", "ウェブモバイル注文管理システム", "Android/iOSアプリ"],
+                "vi": ["KN-OMS", "Hệ thống Quản lý Đặt hàng Di động Web", "Ứng dụng Android/iOS"]
+            }
         }
     }
 }

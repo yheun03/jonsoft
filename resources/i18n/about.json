@@ -47,26 +47,6 @@
             ]
         }
     },
-    "overview": {
-        "title-sub": {
-            "ko": "회사개요",
-            "en": "Company Overview",
-            "ja": "会社概要",
-            "vi": "Tổng quan công ty"
-        },
-        "title": {
-            "ko": "조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다.",
-            "en": "JO&SOFT is a specialized manufacturing AI solution company established based on global consulting capabilities accumulated from IBM and Accenture.",
-            "ja": "JO&SOFTはIBMとアクセンチュアで蓄積した<br/>グローバルコンサルティング能力を基に設立された製造AIソリューション専門企業です。",
-            "vi": "JO&SOFT là công ty chuyên về giải pháp AI sản xuất được thành lập dựa trên năng lực tư vấn toàn cầu tích lũy từ IBM và Accenture."
-        },
-        "dscpt": {
-            "ko": "국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.",
-            "en": "Together with domestic and overseas partners, we are leading innovation in manufacturing sites, from smart factories and AI-based manufacturing optimization to digital transformation consulting.",
-            "ja": "国内および海外パートナー企業と共にスマートファクトリー、AIベース製造最適化、<br/>デジタル変革コンサルティングまで、製造現場の革新をリードしています。",
-            "vi": "Cùng với các đối tác trong nước và nước ngoài, chúng tôi đang dẫn đầu sự đổi mới tại các địa điểm sản xuất, từ nhà máy thông minh và tối ưu hóa sản xuất dựa trên AI đến tư vấn chuyển đổi số."
-        }
-    },
     "summary": {
         "item-01": {
             "title": {
@@ -166,18 +146,40 @@
             }
         }
     },
-    "strength": {
-        "title": {
-            "ko": "강점 및 특징",
-            "en": "Strengths and characteristics",
-            "ja": "強み及び特徴",
-            "vi": "Điểm mạnh và đặc điểm"
+    "module-text": {
+        "overview": {
+            "title-sub": {
+                "ko": "회사개요",
+                "en": "Company Overview",
+                "ja": "会社概要",
+                "vi": "Tổng quan công ty"
+            },
+            "title": {
+                "ko": "조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다.",
+                "en": "JO&SOFT is a specialized manufacturing AI solution company established based on global consulting capabilities accumulated from IBM and Accenture.",
+                "ja": "JO&SOFTはIBMとアクセンチュアで蓄積した<br/>グローバルコンサルティング能力を基に設立された製造AIソリューション専門企業です。",
+                "vi": "JO&SOFT là công ty chuyên về giải pháp AI sản xuất được thành lập dựa trên năng lực tư vấn toàn cầu tích lũy từ IBM và Accenture."
+            },
+            "dscpt": {
+                "ko": "국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.",
+                "en": "Together with domestic and overseas partners, we are leading innovation in manufacturing sites, from smart factories and AI-based manufacturing optimization to digital transformation consulting.",
+                "ja": "国内および海外パートナー企業と共にスマートファクトリー、AIベース製造最適化、<br/>デジタル変革コンサルティングまで、製造現場の革新をリードしています。",
+                "vi": "Cùng với các đối tác trong nước và nước ngoài, chúng tôi đang dẫn đầu sự đổi mới tại các địa điểm sản xuất, từ nhà máy thông minh và tối ưu hóa sản xuất dựa trên AI đến tư vấn chuyển đổi số."
+            }
         },
-        "dscpt": {
-            "ko": "중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.",
-            "en": "We have experience in performing ISP and advanced company benchmarking,<br/>which is difficult for SMEs to perform, and we perform from consulting<br/>to system construction/operation.",
-            "ja": "中小企業では実施困難な<br/>ISP及び先進企業ベンチマーキング実施経験を保有しており、コンサルティングから<br/>システム構築/運営まで実施します。",
-            "vi": "Chúng tôi có kinh nghiệm thực hiện ISP và benchmarking các công ty tiên tiến,<br/>điều mà các doanh nghiệp vừa và nhỏ khó thực hiện, và chúng tôi thực hiện từ tư vấn<br/>đến xây dựng/vận hành hệ thống."
+        "feature": {
+            "title": {
+                "ko": "강점 및 특징",
+                "en": "Strengths and characteristics",
+                "ja": "強み及び特徴",
+                "vi": "Điểm mạnh và đặc điểm"
+            },
+            "dscpt": {
+                "ko": "중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.",
+                "en": "We have experience in performing ISP and advanced company benchmarking,<br/>which is difficult for SMEs to perform, and we perform from consulting<br/>to system construction/operation.",
+                "ja": "中小企業では実施困難な<br/>ISP及び先進企業ベンチマーキング実施経験を保有しており、コンサルティングから<br/>システム構築/運営まで実施します。",
+                "vi": "Chúng tôi có kinh nghiệm thực hiện ISP và benchmarking các công ty tiên tiến,<br/>điều mà các doanh nghiệp vừa và nhỏ khó thực hiện, và chúng tôi thực hiện từ tư vấn<br/>đến xây dựng/vận hành hệ thống."
+            }
         }
     },
     "feature": {
