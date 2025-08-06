@@ -1,174 +1,285 @@
 {
-    "banner": {
-        "title": {
-            "ko": "고객 & 파트너",
-            "en": "Customers & Partners",
-            "ja": "顧客 & パートナー",
-            "vi": "Khách hàng & Đối tác"
-        }
-    },
-    "customers": {
-        "title": {
-            "ko": "OUR CUSTOMER",
-            "en": "OUR CUSTOMER",
-            "ja": "OUR CUSTOMER",
-            "vi": "KHÁCH HÀNG CỦA CHÚNG TÔI"
-        },
-        "description": {
-            "ko": "조앤소프트와 함께 성장한 고객사들을 소개합니다.",
-            "en": "We introduce customers who have grown with JO&SOFT.",
-            "ja": "JO&SOFTと共に成長した顧客企業を紹介します。",
-            "vi": "Chúng tôi giới thiệu các khách hàng đã phát triển cùng JO&SOFT."
-        },
-        "companies": {
-            "samsung": {
-                "ko": "삼성전기",
-                "en": "Samsung Electro-Mechanics",
-                "ja": "三星電機",
-                "vi": "Samsung Electro-Mechanics"
+    "title": "OUR CUSTOMER",
+    "companies": {
+        "samsung-electro-mechanics": {
+            "src": {
+                "ko": "./resources/logos/partners/samsung-electro-mechanics.png",
+                "en": "./resources/logos/partners/en/samsung-electro-mechanics.png",
+                "ja": "./resources/logos/partners/en/samsung-electro-mechanics.png",
+                "vi": "./resources/logos/partners/en/samsung-electro-mechanics.png"
             },
-            "kt": {
-                "ko": "KT",
-                "en": "KT",
-                "ja": "KT",
-                "vi": "KT"
-            },
-            "kt_telecop": {
-                "ko": "KT텔레캅",
-                "en": "KT Telecop",
-                "ja": "KTテレコップ",
-                "vi": "KT Telecop"
-            },
-            "gs_retail": {
-                "ko": "GS리테일",
-                "en": "GS Retail",
-                "ja": "GSリテール",
-                "vi": "GS Retail"
-            },
-            "hanwha": {
-                "ko": "한화호텔앤리조트",
-                "en": "Hanwha Hotel & Resort",
-                "ja": "ハンファホテル&リゾート",
-                "vi": "Hanwha Hotel & Resort"
-            },
-            "cj_logistics": {
-                "ko": "CJ대한통운",
-                "en": "CJ Logistics",
-                "ja": "CJ韓国通運",
-                "vi": "CJ Logistics"
-            },
-            "osstem": {
-                "ko": "오스템임플란트",
-                "en": "Osstem Implant",
-                "ja": "オステムインプラント",
-                "vi": "Osstem Implant"
-            },
-            "incheon_university": {
-                "ko": "인천대학교",
-                "en": "Incheon National University",
-                "ja": "仁川大学校",
-                "vi": "Đại học Quốc gia Incheon"
-            },
-            "lg_uplus": {
-                "ko": "LG U+",
-                "en": "LG U+",
-                "ja": "LG U+",
-                "vi": "LG U+"
-            },
-            "paris_croissant": {
-                "ko": "파리크라상",
-                "en": "Paris Croissant",
-                "ja": "パリクロワッサン",
-                "vi": "Paris Croissant"
-            },
-            "tairim": {
-                "ko": "태림패키징",
-                "en": "Tairim Packaging",
-                "ja": "テイリムパッケージング",
-                "vi": "Tairim Packaging"
-            },
-            "samhwa": {
-                "ko": "삼화페인트",
-                "en": "Samhwa Paint",
-                "ja": "三和ペイント",
-                "vi": "Samhwa Paint"
-            },
-            "sk_hynix": {
-                "ko": "SK하이닉스",
-                "en": "SK Hynix",
-                "ja": "SKハイニックス",
-                "vi": "SK Hynix"
-            },
-            "daeyang": {
-                "ko": "대양그룹",
-                "en": "Daeyang Group",
-                "ja": "大陽グループ",
-                "vi": "Daeyang Group"
-            },
-            "kyungdong": {
-                "ko": "경동나비엔트",
-                "en": "Kyungdong Naviant",
-                "ja": "京東ナビアント",
-                "vi": "Kyungdong Naviant"
-            },
-            "kleannara": {
-                "ko": "클린나라",
-                "en": "Kleannara",
-                "ja": "クリーンナラ",
-                "vi": "Kleannara"
-            },
-            "skbox": {
-                "ko": "3SK박스",
-                "en": "3SK Box",
-                "ja": "3SKボックス",
-                "vi": "3SK Box"
-            },
-            "dubo": {
-                "ko": "두보산업",
-                "en": "Dubo Industry",
-                "ja": "斗宝産業",
-                "vi": "Dubo Industry"
-            },
-            "jongrui": {
-                "ko": "종류코리아",
-                "en": "Jongrui Korea",
-                "ja": "鐘類コリア",
-                "vi": "Jongrui Korea"
-            },
-            "k_package": {
-                "ko": "K패키지",
-                "en": "K Package",
-                "ja": "Kパッケージ",
-                "vi": "K Package"
+            "alt": {
+                "ko": "삼성전기 로고",
+                "en": "Samsung Electro-Mechanics logo",
+                "ja": "三星電機ロゴ",
+                "vi": "Logo Samsung Electro-Mechanics"
             }
-        }
-    },
-    "testimonials": {
-        "title": {
-            "ko": "고객 후기",
-            "en": "Customer Testimonials",
-            "ja": "顧客レビュー",
-            "vi": "Đánh giá của khách hàng"
         },
-        "description": {
-            "ko": "조앤소프트와 함께한 고객들의 생생한 후기를 확인해보세요.",
-            "en": "Check out the vivid testimonials from customers who worked with JO&SOFT.",
-            "ja": "JO&SOFTと共にした顧客の生々しいレビューを確認してください。",
-            "vi": "Xem các đánh giá sinh động từ khách hàng đã làm việc với JO&SOFT."
-        }
-    },
-    "case_studies": {
-        "title": {
-            "ko": "성공 사례",
-            "en": "Success Cases",
-            "ja": "成功事例",
-            "vi": "Trường hợp thành công"
+        "kt": {
+            "src": {
+                "ko": "./resources/logos/partners/kt.png",
+                "en": "./resources/logos/partners/en/kt.png",
+                "ja": "./resources/logos/partners/en/kt.png",
+                "vi": "./resources/logos/partners/en/kt.png"
+            },
+            "alt": {
+                "ko": "KT 로고",
+                "en": "KT logo",
+                "ja": "KTロゴ",
+                "vi": "Logo KT"
+            }
         },
-        "description": {
-            "ko": "조앤소프트 솔루션으로 성공한 고객들의 사례를 소개합니다.",
-            "en": "We introduce cases of customers who succeeded with JO&SOFT solutions.",
-            "ja": "JO&SOFTソリューションで成功した顧客の事例を紹介します。",
-            "vi": "Chúng tôi giới thiệu các trường hợp của khách hàng thành công với giải pháp JO&SOFT."
+        "kt-telecop": {
+            "src": {
+                "ko": "./resources/logos/partners/kt-telecop.png",
+                "en": "./resources/logos/partners/en/kt-telecop.png",
+                "ja": "./resources/logos/partners/en/kt-telecop.png",
+                "vi": "./resources/logos/partners/en/kt-telecop.png"
+            },
+            "alt": {
+                "ko": "KT텔레캅 로고",
+                "en": "KT Telecop logo",
+                "ja": "KTテレコップロゴ",
+                "vi": "Logo KT Telecop"
+            }
+        },
+        "gs-retail": {
+            "src": {
+                "ko": "./resources/logos/partners/gs-retail.png",
+                "en": "./resources/logos/partners/en/gs-retail.png",
+                "ja": "./resources/logos/partners/en/gs-retail.png",
+                "vi": "./resources/logos/partners/en/gs-retail.png"
+            },
+            "alt": {
+                "ko": "GS리테일 로고",
+                "en": "GS Retail logo",
+                "ja": "GSリテールロゴ",
+                "vi": "Logo GS Retail"
+            }
+        },
+        "hanwha-hotel-resort": {
+            "src": {
+                "ko": "./resources/logos/partners/hanwha-hotel-resort.png",
+                "en": "./resources/logos/partners/en/hanwha-hotel-resort.png",
+                "ja": "./resources/logos/partners/en/hanwha-hotel-resort.png",
+                "vi": "./resources/logos/partners/en/hanwha-hotel-resort.png"
+            },
+            "alt": {
+                "ko": "한화호텔앤리조트 로고",
+                "en": "Hanwha Hotel & Resort logo",
+                "ja": "ハンファホテル&リゾートロゴ",
+                "vi": "Logo Hanwha Hotel & Resort"
+            }
+        },
+        "cj-logistics": {
+            "src": {
+                "ko": "./resources/logos/partners/cj-logistics.png",
+                "en": "./resources/logos/partners/en/cj-logistics.png",
+                "ja": "./resources/logos/partners/en/cj-logistics.png",
+                "vi": "./resources/logos/partners/en/cj-logistics.png"
+            },
+            "alt": {
+                "ko": "CJ대한통운 로고",
+                "en": "CJ Logistics logo",
+                "ja": "CJ大韓通運ロゴ",
+                "vi": "Logo CJ Logistics"
+            }
+        },
+        "osstem-implant": {
+            "src": {
+                "ko": "./resources/logos/partners/osstem-implant.png",
+                "en": "./resources/logos/partners/en/osstem-implant.png",
+                "ja": "./resources/logos/partners/en/osstem-implant.png",
+                "vi": "./resources/logos/partners/en/osstem-implant.png"
+            },
+            "alt": {
+                "ko": "오스템임플란트 로고",
+                "en": "Osstem Implant logo",
+                "ja": "オステムインプラントロゴ",
+                "vi": "Logo Osstem Implant"
+            }
+        },
+        "incheon-national-university": {
+            "src": {
+                "ko": "./resources/logos/partners/incheon-national-university.png",
+                "en": "./resources/logos/partners/en/incheon-national-university.png",
+                "ja": "./resources/logos/partners/en/incheon-national-university.png",
+                "vi": "./resources/logos/partners/en/incheon-national-university.png"
+            },
+            "alt": {
+                "ko": "인천대학교 로고",
+                "en": "Incheon National University logo",
+                "ja": "仁川大学校ロゴ",
+                "vi": "Logo Đại học Quốc gia Incheon"
+            }
+        },
+        "lg-u-plus": {
+            "src": {
+                "ko": "./resources/logos/partners/lg-u-plus.png",
+                "en": "./resources/logos/partners/en/lg-u-plus.png",
+                "ja": "./resources/logos/partners/en/lg-u-plus.png",
+                "vi": "./resources/logos/partners/en/lg-u-plus.png"
+            },
+            "alt": {
+                "ko": "LG유플러스 로고",
+                "en": "LG U+ logo",
+                "ja": "LG U+ロゴ",
+                "vi": "Logo LG U+"
+            }
+        },
+        "paris-croissant": {
+            "src": {
+                "ko": "./resources/logos/partners/paris-croissant.png",
+                "en": "./resources/logos/partners/en/paris-croissant.png",
+                "ja": "./resources/logos/partners/en/paris-croissant.png",
+                "vi": "./resources/logos/partners/en/paris-croissant.png"
+            },
+            "alt": {
+                "ko": "파리바게뜨 로고",
+                "en": "Paris Croissant logo",
+                "ja": "パリバゲットロゴ",
+                "vi": "Logo Paris Croissant"
+            }
+        },
+        "tairim-packaging": {
+            "src": {
+                "ko": "./resources/logos/partners/tairim-packaging.png",
+                "en": "./resources/logos/partners/en/tairim-packaging.png",
+                "ja": "./resources/logos/partners/en/tairim-packaging.png",
+                "vi": "./resources/logos/partners/en/tairim-packaging.png"
+            },
+            "alt": {
+                "ko": "태림포장 로고",
+                "en": "Tairim Packaging logo",
+                "ja": "テイリム包装ロゴ",
+                "vi": "Logo Tairim Packaging"
+            }
+        },
+        "samhwa-paint": {
+            "src": {
+                "ko": "./resources/logos/partners/samhwa-paint.png",
+                "en": "./resources/logos/partners/en/samhwa-paint.png",
+                "ja": "./resources/logos/partners/en/samhwa-paint.png",
+                "vi": "./resources/logos/partners/en/samhwa-paint.png"
+            },
+            "alt": {
+                "ko": "삼화페인트 로고",
+                "en": "Samhwa Paint logo",
+                "ja": "三和ペイントロゴ",
+                "vi": "Logo Samhwa Paint"
+            }
+        },
+        "sk-hynix": {
+            "src": {
+                "ko": "./resources/logos/partners/sk-hynix.png",
+                "en": "./resources/logos/partners/en/sk-hynix.png",
+                "ja": "./resources/logos/partners/en/sk-hynix.png",
+                "vi": "./resources/logos/partners/en/sk-hynix.png"
+            },
+            "alt": {
+                "ko": "SK하이닉스 로고",
+                "en": "SK Hynix logo",
+                "ja": "SKハイニックスロゴ",
+                "vi": "Logo SK Hynix"
+            }
+        },
+        "daeyang-group": {
+            "src": {
+                "ko": "./resources/logos/partners/daeyang-group.png",
+                "en": "./resources/logos/partners/en/daeyang-group.png",
+                "ja": "./resources/logos/partners/en/daeyang-group.png",
+                "vi": "./resources/logos/partners/en/daeyang-group.png"
+            },
+            "alt": {
+                "ko": "대양그룹 로고",
+                "en": "Daeyang Group logo",
+                "ja": "大洋グループロゴ",
+                "vi": "Logo Tập đoàn Daeyang"
+            }
+        },
+        "kyungdong-naviant": {
+            "src": {
+                "ko": "./resources/logos/partners/kyungdong-naviant.png",
+                "en": "./resources/logos/partners/en/kyungdong-naviant.png",
+                "ja": "./resources/logos/partners/en/kyungdong-naviant.png",
+                "vi": "./resources/logos/partners/en/kyungdong-naviant.png"
+            },
+            "alt": {
+                "ko": "경동나비엔 로고",
+                "en": "Kyungdong Naviant logo",
+                "ja": "京東ナビアントロゴ",
+                "vi": "Logo Kyungdong Naviant"
+            }
+        },
+        "kklenanara": {
+            "src": {
+                "ko": "./resources/logos/partners/kklenanara.png",
+                "en": "./resources/logos/partners/en/kklenanara.png",
+                "ja": "./resources/logos/partners/en/kklenanara.png",
+                "vi": "./resources/logos/partners/en/kklenanara.png"
+            },
+            "alt": {
+                "ko": "깨끗한나라 로고",
+                "en": "Kleenara logo",
+                "ja": "クレナラロゴ",
+                "vi": "Logo Kleenara"
+            }
+        },
+        "3skbox": {
+            "src": {
+                "ko": "./resources/logos/partners/3skbox.png",
+                "en": "./resources/logos/partners/en/3skbox.png",
+                "ja": "./resources/logos/partners/en/3skbox.png",
+                "vi": "./resources/logos/partners/en/3skbox.png"
+            },
+            "alt": {
+                "ko": "3SKBOX 로고",
+                "en": "3SKBOX logo",
+                "ja": "3SKBOXロゴ",
+                "vi": "Logo 3SKBOX"
+            }
+        },
+        "dubo-industry": {
+            "src": {
+                "ko": "./resources/logos/partners/dubo-industry.png",
+                "en": "./resources/logos/partners/en/dubo-industry.png",
+                "ja": "./resources/logos/partners/en/dubo-industry.png",
+                "vi": "./resources/logos/partners/en/dubo-industry.png"
+            },
+            "alt": {
+                "ko": "두보산업 로고",
+                "en": "Dubo Industry logo",
+                "ja": "ドゥボ産業ロゴ",
+                "vi": "Logo Dubo Industry"
+            }
+        },
+        "jongrui-korea": {
+            "src": {
+                "ko": "./resources/logos/partners/jongrui-korea.png",
+                "en": "./resources/logos/partners/en/jongrui-korea.png",
+                "ja": "./resources/logos/partners/en/jongrui-korea.png",
+                "vi": "./resources/logos/partners/en/jongrui-korea.png"
+            },
+            "alt": {
+                "ko": "종루이코리아 로고",
+                "en": "Jongrui Korea logo",
+                "ja": "鐘楼イコリアロゴ",
+                "vi": "Logo Jongrui Korea"
+            }
+        },
+        "k-package": {
+            "src": {
+                "ko": "./resources/logos/partners/k-package.png",
+                "en": "./resources/logos/partners/en/k-package.png",
+                "ja": "./resources/logos/partners/en/k-package.png",
+                "vi": "./resources/logos/partners/en/k-package.png"
+            },
+            "alt": {
+                "ko": "K-PACKAGE 로고",
+                "en": "K-PACKAGE logo",
+                "ja": "K-PACKAGEロゴ",
+                "vi": "Logo K-PACKAGE"
+            }
         }
     }
 }

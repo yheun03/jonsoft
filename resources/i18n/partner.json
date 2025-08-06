@@ -1,0 +1,229 @@
+{
+    "title": "OUR PARTNER",
+    "companies": {
+        "ey-hanyoung": {
+            "src": {
+                "ko": "./resources/logos/partners/ey-hanyoung.png",
+                "en": "./resources/logos/partners/en/ey-hanyoung.png",
+                "ja": "./resources/logos/partners/en/ey-hanyoung.png",
+                "vi": "./resources/logos/partners/en/ey-hanyoung.png"
+            },
+            "alt": {
+                "ko": "EY한영 로고",
+                "en": "EY Hanyoung logo",
+                "ja": "EY韓英ロゴ",
+                "vi": "Logo EY Hanyoung"
+            }
+        },
+        "obzen": {
+            "src": {
+                "ko": "./resources/logos/partners/obzen.png",
+                "en": "./resources/logos/partners/en/obzen.png",
+                "ja": "./resources/logos/partners/en/obzen.png",
+                "vi": "./resources/logos/partners/en/obzen.png"
+            },
+            "alt": {
+                "ko": "오브젠 로고",
+                "en": "Obzen logo",
+                "ja": "オブゼンロゴ",
+                "vi": "Logo Obzen"
+            }
+        },
+        "edentans": {
+            "src": {
+                "ko": "./resources/logos/partners/edentans.png",
+                "en": "./resources/logos/partners/en/edentans.png",
+                "ja": "./resources/logos/partners/en/edentans.png",
+                "vi": "./resources/logos/partners/en/edentans.png"
+            },
+            "alt": {
+                "ko": "에덴탄스 로고",
+                "en": "Edentans logo",
+                "ja": "エデンタンスロゴ",
+                "vi": "Logo Edentans"
+            }
+        },
+        "i-on-communications": {
+            "src": {
+                "ko": "./resources/logos/partners/i-on-communications.png",
+                "en": "./resources/logos/partners/en/i-on-communications.png",
+                "ja": "./resources/logos/partners/en/i-on-communications.png",
+                "vi": "./resources/logos/partners/en/i-on-communications.png"
+            },
+            "alt": {
+                "ko": "아이온커뮤니케이션즈 로고",
+                "en": "I-on Communications logo",
+                "ja": "アイオンコミュニケーションズロゴ",
+                "vi": "Logo I-on Communications"
+            }
+        },
+        "gs-itm": {
+            "src": {
+                "ko": "./resources/logos/partners/gs-itm.png",
+                "en": "./resources/logos/partners/en/gs-itm.png",
+                "ja": "./resources/logos/partners/en/gs-itm.png",
+                "vi": "./resources/logos/partners/en/gs-itm.png"
+            },
+            "alt": {
+                "ko": "GS ITM 로고",
+                "en": "GS ITM logo",
+                "ja": "GS ITMロゴ",
+                "vi": "Logo GS ITM"
+            }
+        },
+        "kohken": {
+            "src": {
+                "ko": "./resources/logos/partners/kohken.png",
+                "en": "./resources/logos/partners/en/kohken.png",
+                "ja": "./resources/logos/partners/en/kohken.png",
+                "vi": "./resources/logos/partners/en/kohken.png"
+            },
+            "alt": {
+                "ko": "코켄 로고",
+                "en": "Kohken logo",
+                "ja": "コウケンロゴ",
+                "vi": "Logo Kohken"
+            }
+        },
+        "accenture": {
+            "src": {
+                "ko": "./resources/logos/partners/accenture.png",
+                "en": "./resources/logos/partners/en/accenture.png",
+                "ja": "./resources/logos/partners/en/accenture.png",
+                "vi": "./resources/logos/partners/en/accenture.png"
+            },
+            "alt": {
+                "ko": "액센추어 로고",
+                "en": "Accenture logo",
+                "ja": "アクセンチュアロゴ",
+                "vi": "Logo Accenture"
+            }
+        },
+        "concentrix": {
+            "src": {
+                "ko": "./resources/logos/partners/concentrix.png",
+                "en": "./resources/logos/partners/en/concentrix.png",
+                "ja": "./resources/logos/partners/en/concentrix.png",
+                "vi": "./resources/logos/partners/en/concentrix.png"
+            },
+            "alt": {
+                "ko": "콘센트릭스 로고",
+                "en": "Concentrix logo",
+                "ja": "コンセントリクスロゴ",
+                "vi": "Logo Concentrix"
+            }
+        },
+        "naver-cloud": {
+            "src": {
+                "ko": "./resources/logos/partners/naver-cloud.png",
+                "en": "./resources/logos/partners/en/naver-cloud.png",
+                "ja": "./resources/logos/partners/en/naver-cloud.png",
+                "vi": "./resources/logos/partners/en/naver-cloud.png"
+            },
+            "alt": {
+                "ko": "네이버클라우드 로고",
+                "en": "Naver Cloud logo",
+                "ja": "ネイバークラウドロゴ",
+                "vi": "Logo Naver Cloud"
+            }
+        },
+        "batim": {
+            "src": {
+                "ko": "./resources/logos/partners/batim.png",
+                "en": "./resources/logos/partners/en/batim.png",
+                "ja": "./resources/logos/partners/en/batim.png",
+                "vi": "./resources/logos/partners/en/batim.png"
+            },
+            "alt": {
+                "ko": "바팀 로고",
+                "en": "Batim logo",
+                "ja": "バティムロゴ",
+                "vi": "Logo Batim"
+            }
+        },
+        "humusOn": {
+            "src": {
+                "ko": "./resources/logos/partners/humusOn.png",
+                "en": "./resources/logos/partners/en/humusOn.png",
+                "ja": "./resources/logos/partners/en/humusOn.png",
+                "vi": "./resources/logos/partners/en/humusOn.png"
+            },
+            "alt": {
+                "ko": "휴머스온 로고",
+                "en": "HumusOn logo",
+                "ja": "ヒューマスオンロゴ",
+                "vi": "Logo HumusOn"
+            }
+        },
+        "ssangyong-infocom": {
+            "src": {
+                "ko": "./resources/logos/partners/ssangyong-infocom.png",
+                "en": "./resources/logos/partners/en/ssangyong-infocom.png",
+                "ja": "./resources/logos/partners/en/ssangyong-infocom.png",
+                "vi": "./resources/logos/partners/en/ssangyong-infocom.png"
+            },
+            "alt": {
+                "ko": "쌍용정보통신 로고",
+                "en": "Ssangyong Infocom logo",
+                "ja": "双竜情報通信ロゴ",
+                "vi": "Logo Ssangyong Infocom"
+            }
+        },
+        "sk-cnc": {
+            "src": {
+                "ko": "./resources/logos/partners/sk-cnc.png",
+                "en": "./resources/logos/partners/en/sk-cnc.png",
+                "ja": "./resources/logos/partners/en/sk-cnc.png",
+                "vi": "./resources/logos/partners/en/sk-cnc.png"
+            },
+            "alt": {
+                "ko": "SK CNC 로고",
+                "en": "SK CNC logo",
+                "ja": "SK CNCロゴ",
+                "vi": "Logo SK CNC"
+            }
+        },
+        "lts-group": {
+            "src": {
+                "ko": "./resources/logos/partners/lts-group.png",
+                "en": "./resources/logos/partners/en/lts-group.png",
+                "ja": "./resources/logos/partners/en/lts-group.png",
+                "vi": "./resources/logos/partners/en/lts-group.png"
+            },
+            "alt": {
+                "ko": "LTS그룹 로고",
+                "en": "LTS Group logo",
+                "ja": "LTSグループロゴ",
+                "vi": "Logo LTS Group"
+            }
+        },
+        "altair": {
+            "src": {
+                "ko": "./resources/logos/partners/altair.png",
+                "en": "./resources/logos/partners/en/altair.png",
+                "ja": "./resources/logos/partners/en/altair.png",
+                "vi": "./resources/logos/partners/en/altair.png"
+            },
+            "alt": {
+                "ko": "알테어 로고",
+                "en": "Altair logo",
+                "ja": "アルテアロゴ",
+                "vi": "Logo Altair"
+            }
+        },
+        "lg-cns": {
+            "src": {
+                "ko": "./resources/logos/partners/lg-cns.png",
+                "en": "./resources/logos/partners/en/lg-cns.png",
+                "ja": "./resources/logos/partners/en/lg-cns.png",
+                "vi": "./resources/logos/partners/en/lg-cns.png"
+            },
+            "alt": {
+                "ko": "LG CNS 로고",
+                "en": "LG CNS logo",
+                "ja": "LG CNSロゴ",
+                "vi": "Logo LG CNS"
+            }
+        }
+    }
+} 

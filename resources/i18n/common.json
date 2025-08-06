@@ -14,23 +14,6 @@
             "vi": "Xem quá trình phát triển và lịch sử dự án chính của JO&SOFT."
         }
     },
-
-    "customer":{
-        "hanjinkal": {
-            "src":{ 
-                "ko" :"./resources/logos/partners/hanjinkal.png",
-                "en" :"./resources/logos/partners/en/hanjinkal.png",
-                "ja" :"./resources/logos/partners/en/hanjinkal.png",
-                "vi" :"./resources/logos/partners/en/hanjinkal.png"
-            },
-            "alt":{ 
-                "ko" :"",
-                "en" :"",
-                "ja" :"",
-                "vi" :""
-            }
-        }
-    },
     
     "company": {
         "title-sub": {
@@ -106,24 +89,6 @@
                 "en": "Inquire about a project",
                 "ja": "プロジェクトお問い合わせ",
                 "vi": "Thắc mắc về dự án"
-            }
-        }
-    },
-    "partners": {
-        "customer": {
-            "title": {
-                "ko": "OUR CUSTOMER",
-                "en": "OUR CUSTOMER",
-                "ja": "OUR CUSTOMER",
-                "vi": "OUR CUSTOMER"
-            }
-        },
-        "partner": {
-            "title": {
-                "ko": "OUR PARTNER",
-                "en": "OUR PARTNER",
-                "ja": "OUR PARTNER",
-                "vi": "OUR PARTNER"
             }
         }
     },
