@@ -1,19 +1,28 @@
 {
-    "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
-    "history": {
-        "title": {
-            "ko": "연혁",
-            "en": "History",
-            "ja": "沿革",
-            "vi": "Lịch sử"
-        },
-        "description": {
-            "ko": "조앤소프트의 성장 과정과 주요 프로젝트 연혁을 확인하세요.",
-            "en": "Check out JO&SOFT's growth process and major project history.",
-            "ja": "JO&SOFTの成長過程と主要プロジェクトの沿革をご確認ください。",
-            "vi": "Xem quá trình phát triển và lịch sử dự án chính của JO&SOFT."
+    "banner": {
+        "ask": {
+            "title":{
+                "ko": "프로젝트 문의하기",
+                "en": "Inquire about a project",
+                "ja": "プロジェクトお問い合わせ",
+                "vi": "Thắc mắc về dự án"
+            },
+            "dscpt":{
+                "ko": "조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.",
+                "en": "JO&SOFT proposes building a better software environment.<br/>Experience innovative business growth.",
+                "ja": "JO&SOFTはより良いソフトウェア環境構築を提案します。<br/>革新的なビジネス成長を体験してください。",
+                "vi": "JO&SOFT đề xuất xây dựng môi trường phần mềm tốt hơn.<br/>Trải nghiệm sự phát triển kinh doanh đổi mới."
+            },
+            "button":{
+                "ko": "프로젝트 문의하기",
+                "en": "Inquire about a project",
+                "ja": "プロジェクトお問い合わせ",
+                "vi": "Thắc mắc về dự án"
+            }
         }
     },
+        
+    "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
     
     "company": {
         "title-sub": {
@@ -68,28 +77,6 @@
             "en": "This is the Innoviz logo that has obtained and specified the Innoviz rating, an innovative small and medium-sized company.",
             "ja": "革新型中小企業のイノビズ等級を取得して明記したイノビズロゴです",
             "vi": "Đây là logo Innoviz đã đạt được và chỉ định xếp hạng Innoviz, một công ty vừa và nhỏ đổi mới."
-        }
-    },
-    "banner": {
-        "ask": {
-            "title":{
-                "ko": "프로젝트 문의하기",
-                "en": "Inquire about a project",
-                "ja": "プロジェクトお問い合わせ",
-                "vi": "Thắc mắc về dự án"
-            },
-            "dscpt":{
-                "ko": "조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.",
-                "en": "JO&SOFT proposes building a better software environment.<br/>Experience innovative business growth.",
-                "ja": "JO&SOFTはより良いソフトウェア環境構築を提案します。<br/>革新的なビジネス成長を体験してください。",
-                "vi": "JO&SOFT đề xuất xây dựng môi trường phần mềm tốt hơn.<br/>Trải nghiệm sự phát triển kinh doanh đổi mới."
-            },
-            "button":{
-                "ko": "프로젝트 문의하기",
-                "en": "Inquire about a project",
-                "ja": "プロジェクトお問い合わせ",
-                "vi": "Thắc mắc về dự án"
-            }
         }
     },
     "buttons": {
