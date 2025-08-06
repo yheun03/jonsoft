@@ -29,6 +29,11 @@
     <script src="./resources/library/slick/slick.min.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
+    <script>
+        if (location.protocol === 'http:') {
+          location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
+        }
+      </script>
 <body>
     <header>
         <div class="wrap">
