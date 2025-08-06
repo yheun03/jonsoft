@@ -123,19 +123,5 @@
                 "vi": ["Tôn trọng lẫn nhau (Tôn trọng sự đa dạng)", "Tình đồng nghiệp", "Động não (Giao tiếp tự do và tạo ra ý tưởng)"]
             }
         }
-    },
-    "buttons": {
-        "view_details": {
-            "ko": "자세히 보기",
-            "en": "View Details",
-            "ja": "詳しく見る",
-            "vi": "Xem chi tiết"
-        },
-        "close": {
-            "ko": "닫기",
-            "en": "Close",
-            "ja": "閉じる",
-            "vi": "Đóng"
-        }
     }
 }
