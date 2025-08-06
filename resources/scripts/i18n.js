@@ -49,34 +49,74 @@ $(function() {
          $('[data-i18n]').each(function() {
              // data-i18n 속성에서 파일명과 키 추출
              const [f, ...k] = $(this).attr('data-i18n').split('.');
-             // 다국어 데이터에서 해당 값 추출
-             const v = getVal(i18nData[f], k.join('.'));
-             if (!v) return; // 값이 없으면 패스
+             const key = k.join('.');
+             
+             // 배열 인덱스 처리 (예: "philosophy.talent.content.0")
+             const keyParts = key.split('.');
+             const lastPart = keyParts[keyParts.length - 1];
+             const isArrayIndex = !isNaN(parseInt(lastPart));
+             
+             if (isArrayIndex) {
+                 // 배열 인덱스가 있는 경우
+                 const arrayKey = keyParts.slice(0, -1).join('.');
+                 const index = parseInt(lastPart);
+                 const v = getVal(i18nData[f], arrayKey);
+                 
+                 if (v && typeof v === 'object' && v[currentLang] && Array.isArray(v[currentLang])) {
+                     if (v[currentLang][index] !== undefined) {
+                         $(this).html(v[currentLang][index]);
+                     }
+                 }
+             } else {
+                 // 일반적인 경우
+                 const v = getVal(i18nData[f], key);
+                 if (!v) return; // 값이 없으면 패스
  
-             // 다국어 객체일 경우(언어별 값이 있는 경우)
-             if (typeof v === 'object' && v[currentLang]) {
-                 // 배열이면 <li>로 변환, 아니면 그대로 출력
-                 Array.isArray(v[currentLang])
-                     ? $(this).html(v[currentLang].map(i => `<li>${i}</li>`).join(''))
-                     : $(this).html(v[currentLang]);
-             } else if (typeof v === 'string') {
-                 // 단일 문자열이면 그대로 출력
-                 $(this).html(v);
+                 // 다국어 객체일 경우(언어별 값이 있는 경우)
+                 if (typeof v === 'object' && v[currentLang]) {
+                     // 배열이면 <li>로 변환, 아니면 그대로 출력
+                     Array.isArray(v[currentLang])
+                         ? $(this).html(v[currentLang].map(i => `<li>${i}</li>`).join(''))
+                         : $(this).html(v[currentLang]);
+                 } else if (typeof v === 'string') {
+                     // 단일 문자열이면 그대로 출력
+                     $(this).html(v);
+                 }
              }
          });
          
          // data-common 텍스트 업데이트 (common.json 파일 사용)
          $('[data-common]').each(function() {
              const key = $(this).attr('data-common');
-             const v = getVal(i18nData['common'], key);
-             if (!v) return;
+             
+             // 배열 인덱스 처리 (예: "philosophy.talent.content.0")
+             const keyParts = key.split('.');
+             const lastPart = keyParts[keyParts.length - 1];
+             const isArrayIndex = !isNaN(parseInt(lastPart));
+             
+             if (isArrayIndex) {
+                 // 배열 인덱스가 있는 경우
+                 const arrayKey = keyParts.slice(0, -1).join('.');
+                 const index = parseInt(lastPart);
+                 const v = getVal(i18nData['common'], arrayKey);
+                 
+                 if (v && typeof v === 'object' && v[currentLang] && Array.isArray(v[currentLang])) {
+                     if (v[currentLang][index] !== undefined) {
+                         $(this).html(v[currentLang][index]);
+                     }
+                 }
+             } else {
+                 // 일반적인 경우
+                 const v = getVal(i18nData['common'], key);
+                 if (!v) return;
  
-             if (typeof v === 'object' && v[currentLang]) {
-                 Array.isArray(v[currentLang])
-                     ? $(this).html(v[currentLang].map(i => `<li>${i}</li>`).join(''))
-                     : $(this).html(v[currentLang]);
-             } else if (typeof v === 'string') {
-                 $(this).html(v);
+                 if (typeof v === 'object' && v[currentLang]) {
+                     Array.isArray(v[currentLang])
+                         ? $(this).html(v[currentLang].map(i => `<li>${i}</li>`).join(''))
+                         : $(this).html(v[currentLang]);
+                 } else if (typeof v === 'string') {
+                     $(this).html(v);
+                 }
              }
          });
          

@@ -61,33 +61,8 @@
             "vi": "Đây là logo Innoviz đã đạt được và chỉ định xếp hạng Innoviz, một công ty vừa và nhỏ đổi mới."
         }
     },
-    "buttons": {
-        "view_details": {
-            "ko": "자세히 보기",
-            "en": "View Details",
-            "ja": "詳しく見る",
-            "vi": "Xem chi tiết"
-        },
-        "view_success_cases": {
-            "ko": "성공사례 자세히 보기",
-            "en": "View success cases in detail",
-            "ja": "成功事例を詳しく見る",
-            "vi": "Xem chi tiết các trường hợp thành công"
-        },
-        "close": {
-            "ko": "닫기",
-            "en": "Close",
-            "ja": "閉じる",
-            "vi": "Đóng"
-        }
-    },
     "philosophy": {
-        "title": {
-            "ko": "Business Philosophy",
-            "en": "Business Philosophy",
-            "ja": "ビジネスフィロソフィー",
-            "vi": "Triết lý Kinh doanh"
-        },
+        "title": "Business Philosophy",
         "talent": {
             "title": {
                 "ko": "Talent Management",
@@ -147,6 +122,26 @@
                 "ja": ["お互いを尊重する（多様性尊重）", "仲間愛", "ブレインストーミング（自由なコミュニケーションとアイデア創出）"],
                 "vi": ["Tôn trọng lẫn nhau (Tôn trọng sự đa dạng)", "Tình đồng nghiệp", "Động não (Giao tiếp tự do và tạo ra ý tưởng)"]
             }
+        }
+    },
+    "buttons": {
+        "view_details": {
+            "ko": "자세히 보기",
+            "en": "View Details",
+            "ja": "詳しく見る",
+            "vi": "Xem chi tiết"
+        },
+        "view_success_cases": {
+            "ko": "성공사례 자세히 보기",
+            "en": "View success cases in detail",
+            "ja": "成功事例を詳しく見る",
+            "vi": "Xem chi tiết các trường hợp thành công"
+        },
+        "close": {
+            "ko": "닫기",
+            "en": "Close",
+            "ja": "閉じる",
+            "vi": "Đóng"
         }
     }
 }
