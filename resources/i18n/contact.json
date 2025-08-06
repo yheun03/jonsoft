@@ -1,106 +1,140 @@
 {
-    "tab": {
-        "location": {
-            "ko": "오시는 길",
-            "en": "Location",
-            "ja": "アクセス",
-            "vi": "Đường đi"
+    "page": {
+        "tab": {
+            "location": {
+                "ko": "오시는 길",
+                "en": "Location",
+                "ja": "アクセス",
+                "vi": "Đường đi"
+            },
+            "recruitment": {
+                "ko": "채용",
+                "en": "Recruitment",
+                "ja": "採用",
+                "vi": "Tuyển dụng"
+            }
         },
-        "recruitment": {
-            "ko": "채용",
-            "en": "Recruitment",
-            "ja": "採用",
-            "vi": "Tuyển dụng"
-        }
-    },
-    "contact": {
-        "title": {
-            "ko": "오시는 길",
-            "en": "Directions",
-            "ja": "アクセス",
-            "vi": "Đường đến"
-        },
-        "headquarters": {
-            "ko": "판교 본사",
-            "en": "Pangyo Headquarters",
-            "ja": "板橋本社",
-            "vi": "Trụ sở Pangyo"
-        },
-        "call": {
-            "ko": "본사 연락처",
-            "en": "Headquarters Contact",
-            "ja": "本社連絡先",
-            "vi": "Liên hệ trụ sở"
-        },
-        "email": {
-            "ko": "이메일",
-            "en": "Email",
-            "ja": "メール",
-            "vi": "Email"
-        }
-    },
-    "recruitment": {
-        "title": {
-            "ko": "리크루트",
-            "en": "Recruit",
-            "ja": "リクルート",
-            "vi": "Tuyển dụng"
-        },
-        "developer": {
+        "contact": {
             "title": {
-                "ko": "개발자",
+                "ko": "Contact",
+                "en": "Contact",
+                "ja": "お問い合わせ",
+                "vi": "Liên hệ"
+            },
+            "headquarters": {
+                "ko": "본사 연락처",
+                "en": "Headquarters Contact",
+                "ja": "本社連絡先",
+                "vi": "Liên hệ trụ sở"
+            },
+            "email": {
+                "ko": "이메일",
+                "en": "Email",
+                "ja": "メール",
+                "vi": "Email"
+            },
+            "ceo": {
+                "ko": "대표이사",
+                "en": "CEO",
+                "ja": "代表取締役",
+                "vi": "Giám đốc điều hành"
+            },
+            "ceo.name": {
+                "ko": "조현철",
+                "en": "Hyuncheol Cho",
+                "ja": "Cho Hyuncheol",
+                "vi": "Cho Hyuncheol"
+            },
+            "admin": {
+                "ko": "경영지원",
+                "en": "Management Support",
+                "ja": "経営支援",
+                "vi": "Hỗ trợ quản lý"
+            },
+            "admin.name": {
+                "ko": "김하경",
+                "en": "Hakyoung Kim",
+                "ja": "Kim Hakyoung",
+                "vi": "Kim Hakyoung"
+            },
+            "location": {
+                "ko": "판교 본사",
+                "en": "Pangyo Headquarters",
+                "ja": "板橋本社",
+                "vi": "Trụ sở Pangyo"
+            }
+        },
+        "recruit": {
+            "title": {
+                "ko": "recruit",
+                "en": "Recruit",
+                "ja": "リクルート",
+                "vi": "Tuyển dụng"
+            },
+            "developer": {
+                "ko": "Developer",
                 "en": "Developer",
                 "ja": "開発者",
                 "vi": "Lập trình viên"
+            },
+            "developer.desc": {
+                "ko": "자바개발 . 웹 개발",
+                "en": "Java/Web Development",
+                "ja": "Java/Web開発",
+                "vi": "Phát triển Java/Web"
+            },
+            "uxui.designer": {
+                "ko": "UXUI Designer",
+                "en": "UXUI Designer",
+                "ja": "UXUIデザイナー",
+                "vi": "Nhà thiết kế UXUI"
+            },
+            "uxui.desc": {
+                "ko": "웹 기획 . 웹 디자인",
+                "en": "Web Planning / Web Design",
+                "ja": "Web企画・Webデザイン",
+                "vi": "Lập kế hoạch Web / Thiết kế Web"
+            },
+            "project.pm": {
+                "ko": "Project PM",
+                "en": "Project PM",
+                "ja": "プロジェクトPM",
+                "vi": "PM Dự án"
+            },
+            "pm.desc": {
+                "ko": "프로젝트 관리",
+                "en": "Project Management",
+                "ja": "プロジェクト管理",
+                "vi": "Quản lý dự án"
+            },
+            "open": {
+                "ko": "상시채용",
+                "en": "Always Hiring",
+                "ja": "随時採用",
+                "vi": "Tuyển liên tục"
+            },
+            "inquiry": {
+                "ko": "채용문의",
+                "en": "Recruitment Inquiry",
+                "ja": "採用に関するお問い合わせ",
+                "vi": "Liên hệ tuyển dụng"
+            },
+            "admin.name": {
+                "ko": "김하경 사원",
+                "en": "Staff Hakyoung Kim",
+                "ja": "社員 Kim Hakyoung",
+                "vi": "Nhân viên Kim Hakyoung"
             }
-        },
-        "uxui": {
-            "title": {
-                "ko": "UX/UI 디자이너",
-                "en": "UX/UI Designer",
-                "ja": "UX/UIデザイナー",
-                "vi": "Nhà thiết kế UX/UI"
-            }
-        },
-        "pm": {
-            "title": {
-                "ko": "PM/경영지원",
-                "en": "PM/Management Support",
-                "ja": "PM/経営支援",
-                "vi": "PM/Hỗ trợ quản lý"
-            }
-        },
-        "inquiry": {
-            "ko": "채용 문의",
-            "en": "Recruitment Inquiry",
-            "ja": "採用に関するお問い合わせ",
-            "vi": "Liên hệ tuyển dụng"
         }
     },
-    "ceo": {
-        "ko": "대표이사",
-        "en": "CEO",
-        "ja": "代表取締役",
-        "vi": "Giám đốc điều hành"
-    },
-    "admin": {
-        "ko": "경영지원",
-        "en": "Management Support",
-        "ja": "経営支援",
-        "vi": "Hỗ trợ quản lý"
-    },
-    "names": {
-        "ceo": {
-            "ko": "조현철",
-            "en": "Hyuncheol Cho",
-            "ja": "Cho Hyuncheol",
-            "vi": "Cho Hyuncheol"
-        },
-        "admin": {
-            "ko": "김하경",
-            "en": "Hakyoung Kim",
-            "ja": "Kim Hakyoung",
-            "vi": "Kim Hakyoung"
+    "common": {
+        "company": {
+            "address": {
+                "ko": "경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호",
+                "en": "248, Jeongja 1-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Parkview Tower 602",
+                "ja": "京畿道城南市盆唐区亭子1路248、パークビュタワー602号",
+                "vi": "248 Jeongja 1-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Parkview Tower 602"
+            }
         }
     }
 }
