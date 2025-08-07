@@ -176,8 +176,7 @@
                 strong {
                     font-weight: $fw-6;
                 }
-
-                span {
+                & > span{
                     margin-inline: $gap-8;
                 }
             }
