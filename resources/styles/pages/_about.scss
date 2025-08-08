@@ -378,6 +378,7 @@
     &-year {
         align-self: flex-start;
         position: sticky;
+        width: 200px;
         top: 115px;
         left: 0;
         height: calc(100dvh - 115px);
@@ -402,20 +403,10 @@
             &::after {
                 @include pseudo-element($display: block);
                 width: 14px;
-                height: 14px;
-                background-color: #797979;
-                border-radius: 50%;
-                z-index: 1;
-                @include transition();
-            }
-            &::before {
-                @include pseudo-element();
-                @include absolute-position(top, 50%, right, 7px);
-                transform: translateY(-50%);
-                width: 1px;
                 aspect-ratio: 1;
                 background-color: #797979;
                 border-radius: 50%;
+                z-index: 1;
                 @include transition();
             }
             &.active {
@@ -424,12 +415,12 @@
                     -webkit-text-stroke-width: 0.1px;
                     -webkit-text-stroke-color: #000;
                 }
-                &::before {
-                    width: 22px;
-                    right: -3.7px;
-                }
                 &::after {
                     background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;
+                    width: 22px;
+                    border: 4px solid #797979;
+                    box-sizing: border-box;
+                    margin-right: -4px;
                 }
             }
         }
@@ -467,6 +458,7 @@
             display: unset;
         }
         &-year{
+            width: unset;
             top: $header-height;
             padding-top: 20px;
             background-color: $c-bg-dark;
@@ -493,6 +485,7 @@
         }
         &-content{
             & > li{
+                padding-top: 60px;
                 margin-bottom: 60px;
             }
         }
