@@ -159,6 +159,9 @@ $(function() {
         const lang = $(this).data('lang');
         setLang(lang);
         localStorage.setItem('selectedLang', lang);
+        
+        // 다국어 버튼 클릭 시 header에서 open 클래스 제거
+        $('header').removeClass('open');
     });
 
     // 페이지 로드 시: localStorage, <html> lang, 기본값 순으로 언어 설정 후 다국어 데이터 로드
