@@ -215,9 +215,8 @@
             position: relative;
             border-radius: $radius-20;
             overflow: hidden;
-            height: 470px;
+            min-height: 470px;
             @include bg-image($url + "images/feature/feature-01.png", center, cover);
-            cursor: pointer;
 
             &-02 {
                 @include bg-image($url + "images/feature/feature-02.png", center, cover);
@@ -262,11 +261,12 @@
     }
 
     .front {
-        position: relative;
+        @include absolute-position(top, 0, left, 0);
         padding: $gap-40 32px 0;
         width: 100%;
         background-color: #A2CCFF;
         @include shadow(md, #A2CCFF);
+        transition: all 0.3s ease;
 
         .title {
             @include font-style($fw-6, $fs-24, normal);
@@ -283,14 +283,12 @@
     }
 
     .back {
-        @include absolute-position(top, 0, left, 0);
-        width: 100%;
-        height: 100%;
         @include flex(column, flex-start, stretch);
         backdrop-filter: blur(27px);
+        height: 100%;
         padding: $gap-30 $gap-20 $gap-20;
         opacity: 0;
-        @include transition(opacity);
+        transition: all 0.3s ease;
 
         ul {
             margin-bottom: $gap-12;
