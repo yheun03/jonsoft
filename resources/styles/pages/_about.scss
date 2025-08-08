@@ -411,8 +411,9 @@
             &::before {
                 @include pseudo-element();
                 @include absolute-position(top, 50%, right, 7px);
+                transform: translateY(-50%);
                 width: 1px;
-                height: 1px;
+                aspect-ratio: 1;
                 background-color: #797979;
                 border-radius: 50%;
                 @include transition();
@@ -424,7 +425,8 @@
                     -webkit-text-stroke-color: #000;
                 }
                 &::before {
-                    transform: scale(22) translateY(-4%);
+                    width: 22px;
+                    right: -3.7px;
                 }
                 &::after {
                     background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;

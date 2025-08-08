@@ -68,11 +68,6 @@ $(document).ready(function() {
     // ===== HISTORY 클래스 기능 =====
     // history-year 버튼 클릭 시 active 클래스 관리 및 스크롤
     $('.history .history-year ul li .btn').on('click', function() {
-        // 모든 history-year li에서 active 클래스 제거
-        $('.history .history-year ul li').removeClass('active');
-        // 클릭한 버튼의 부모 li에 active 클래스 추가
-        $(this).closest('li').addClass('active');
-        
         // 실제 키보드 focus 주기
         $(this).focus();
         
@@ -84,7 +79,11 @@ $(document).ready(function() {
             // 뷰포트 기준 top 100 위치로 스크롤
             $('html, body').animate({
                 scrollTop: targetContent.offset().top - 100
-            }, 200);
+            }, 200, function() {
+                // 스크롤 애니메이션 완료 후 active 클래스 적용
+                $('.history .history-year ul li').removeClass('active');
+                $('.history .history-year ul li').eq(targetIndex).addClass('active');
+            });
         }
     });
 
