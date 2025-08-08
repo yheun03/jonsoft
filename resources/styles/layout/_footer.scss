@@ -45,5 +45,11 @@ footer{
                 font-size: 13px;
             }
         }
+        a[class*=logo]{
+            img{
+                max-width: 30dvw;
+            }
+        }
+
     }
 }

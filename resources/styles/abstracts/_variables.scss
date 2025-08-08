@@ -2,7 +2,7 @@
 
 // $url: '/resources/';
 $url: '../';
-$font: 'Pretendard';
+$font: 'Pretendard JP', 'Pretendard', sans-serif;
 
 // =============================================================================
 // 공통 변수 정의
@@ -20,7 +20,7 @@ $c-bg-dark: #1D1D1D;
 $c-border: #7c7c7c;
 
 // 폰트 변수
-$font-family: 'Pretendard', sans-serif;
+$font-family: $font;
 $fw-3: 300;  // light
 $fw-4: 400;  // regular
 $fw-5: 500;  // medium

@@ -75,3 +75,68 @@ http://scripts.sil.org/OFL
 	font-display: swap;
 	src: local('Pretendard Black'), url($url+"fonts/Pretendard-Black.woff") format('woff');
 }
+
+
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard JP Black'), url($url+"fonts/PretendardJP-Black.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard JP ExtraBold'), url($url+"fonts/PretendardJP-ExtraBold.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard JP Bold'), url($url+"fonts/PretendardJP-Bold.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard JP SemiBold'), url($url+"fonts/PretendardJP-SemiBold.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard JP Medium'), url($url+"fonts/PretendardJP-Medium.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard JP Regular'), url($url+"fonts/PretendardJP-Regular.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard JP Light'), url($url+"fonts/PretendardJP-Light.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard JP ExtraLight'), url($url+"fonts/PretendardJP-ExtraLight.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard JP Thin'), url($url+"fonts/PretendardJP-Thin.woff2") format('woff2');
+}
