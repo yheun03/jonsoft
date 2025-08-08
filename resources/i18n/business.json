@@ -53,6 +53,40 @@
                 "en": "APS Solution thumbnail image.",
                 "ja": "APSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp APS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 APS는 AI및 최적화 기술을 적용한 경험을 바탕으로 구현한 최적화 생산계획 및 스케줄링 솔루션으로 공정간 재공 밸런스를 고려하여 적량 적시 생산을 달성하므로 제조 비용을 크게 절감시키는 솔루션입니다.",
+                    "en": "JO&SOFT APS is a solution for optimized production planning and scheduling that implements AI and optimization technologies based on experience, considering process-to-process balance to achieve timely and appropriate production, thereby significantly reducing manufacturing costs.",
+                    "ja": "JO&SOFT APSは、AIと最適化技術を適用した経験を基に実現した最適化された生産計画およびスケジューリングソリューションで、プロセス間のバランスを考慮して適切な量の適時生産を達成することで、製造コストを大幅に削減するソリューションです。",
+                    "vi": "JO&SOFT APS là giải pháp lập kế hoạch và lập lịch trình sản xuất được triển khai dựa trên kinh nghiệm áp dụng công nghệ AI và tối ưu hóa, xem xét sự cân bằng giữa các quy trình để đạt được sản xuất đúng lúc và đúng lượng, do đó giảm thiểu đáng kể chi phí sản xuất."
+                },
+                "screen": {
+                    "title": {
+                        "ko": "주요화면",
+                        "en": "Main Screen",
+                        "ja": "メイン画面",
+                        "vi": "Màn hình chính"
+                    },
+                    "dscpt": {
+                        "ko": "생산계획 수립을 위한 수요 예측, 자원 배분, 작업 일정 관리 기능을 직관적으로 제공,실시간 데이터 기반으로 생산 가능성을 분석하고 최적화된 계획안을 제시하는 것이 특징입니다.",
+                        "en": "We provide intuitive functions for production planning, such as demand forecasting, resource allocation, and job schedule management, and analyze production feasibility based on real-time data and present optimized plans.",
+                        "ja": "生産計画立案に必要な数需要予測、資源配分、作業スケジュール管理機能を直感的に提供し、実時間データベースに基づいて生産可能性を分析し、最適化された計画を提示することが特徴です。",
+                        "vi": "Chúng tôi cung cấp các chức năng trực quan cho việc lập kế hoạch sản xuất, chẳng hạn như dự báo nhu cầu, phân bổ tài nguyên và quản lý lịch trình công việc, và phân tích khả năng sản xuất dựa trên dữ liệu thời gian thực và đưa ra kế hoạch được tối ưu hóa."
+                    }
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/aps.png",
+                    "en": "./resources/images/modal/solution/en/aps.png",
+                    "ja": "./resources/images/modal/solution/en/aps.png",
+                    "vi": "./resources/images/modal/solution/en/aps.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 APS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT APS solution modal image.",
+                    "ja": "JO&SOFT APSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp APS của JO&SOFT."
+                }
             }
         },
         "oms": {
@@ -86,6 +120,26 @@
                 "en": "OMS Solution thumbnail image.",
                 "ja": "OMSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp OMS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 OMS는 Fax, 이메일 등 아날로그 방식으로 전달되는 주문서를 자동으로 수신하고, OCR(광학 문자 인식)과 AI 기술을 활용해 정형/비정형 데이터를 신속하게 디지털화 합니다. 매일 반복되는 수작업 입력 업무를 자동화하여 업무 효율을 극대화하고, 휴먼 리소스는 보다 고부가 가치 업무에 집중할 수 있게 도와줍니다.",
+                    "en": "JO&SOFT OMS automatically receives orders delivered in analog format such as fax and email, and quickly digitizes structured/unstructured data using OCR (Optical Character Recognition) and AI technology. We maximize work efficiency by automating daily repetitive manual input work, and help human resources focus on higher value-added work.",
+                    "ja": "JO&SOFT OMSは、ファックスやメールなどのアナログ方式で伝達される注文書を自動的に受信し、OCR（光学文字認識）とAI技術を活用して構造化/非構造化データを迅速にデジタル化します。毎日繰り返される手作業入力業務を自動化して業務効率を最大化し、人的リソースがより高付加価値業務に集中できるよう支援します。",
+                    "vi": "JO&SOFT OMS tự động nhận các đơn hàng được giao theo định dạng tương tự như fax và email, và nhanh chóng số hóa dữ liệu có cấu trúc/không có cấu trúc bằng công nghệ OCR (Nhận dạng ký tự quang học) và AI. Chúng tôi tối đa hóa hiệu quả công việc bằng cách tự động hóa công việc nhập liệu thủ công lặp lại hàng ngày, và giúp nguồn nhân lực tập trung vào công việc có giá trị gia tăng cao hơn."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/oms.png",
+                    "en": "./resources/images/modal/solution/en/oms.png",
+                    "ja": "./resources/images/modal/solution/en/oms.png",
+                    "vi": "./resources/images/modal/solution/en/oms.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 OMS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT OMS solution modal image.",
+                    "ja": "JO&SOFT OMSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp OMS của JO&SOFT."
+                }
             }
         },
         "fems": {
@@ -119,6 +173,26 @@
                 "en": "FEMS Solution thumbnail image.",
                 "ja": "FEMSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp FEMS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "<strong><mark>AI Factory Energy Management System</mark></strong>조앤소프트의 공장에너지관리(FEMS) 시스템은 공장 내 에너지 사용을 실시간으로 모니터링하고, 분석 자동제어함으로써 에너지 비용을 절감하고 설비 효율을 높이며, ESG 및 탄소중립 대응 역량까지 갖춘 스마트한 에너지 경영을 실현합니다.",
+                    "en": "<strong><mark>AI Factory Energy Management System</mark></strong>JO&SOFT's Factory Energy Management (FEMS) system realizes smart energy management by monitoring factory energy usage in real-time, analyzing and automatically controlling it to reduce energy costs and increase equipment efficiency, and even has ESG and carbon neutrality response capabilities.",
+                    "ja": "<strong><mark>AI Factory Energy Management System</mark></strong>JO&SOFTの工場エネルギー管理（FEMS）システムは、工場内のエネルギー使用をリアルタイムでモニタリングし、分析自動制御することでエネルギーコストを削減し設備効率を向上させ、ESGおよびカーボンニュートラル対応能力まで備えたスマートなエネルギー経営を実現します。",
+                    "vi": "<strong><mark>AI Factory Energy Management System</mark></strong>Hệ thống Quản lý Năng lượng Nhà máy (FEMS) của JO&SOFT thực hiện quản lý năng lượng thông minh bằng cách giám sát việc sử dụng năng lượng nhà máy theo thời gian thực, phân tích và tự động kiểm soát để giảm chi phí năng lượng và tăng hiệu quả thiết bị, và thậm chí có khả năng ứng phó với ESG và trung hòa carbon."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/fems.png",
+                    "en": "./resources/images/modal/solution/en/fems.png",
+                    "ja": "./resources/images/modal/solution/en/fems.png",
+                    "vi": "./resources/images/modal/solution/en/fems.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 FEMS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT FEMS solution modal image.",
+                    "ja": "JO&SOFT FEMSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp FEMS của JO&SOFT."
+                }
             }
         },
         "scm": {
@@ -152,6 +226,26 @@
                 "en": "SCM Solution thumbnail image.",
                 "ja": "SCMソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp SCM."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 SCM은 제조협력 기업간 상생형 공급망을 구축하여 수주, 발주, 생산진행현황, 출고, 납품정보를 리얼타임으로 제공합니다. 기업간 데이터의 표준화와 정보의 적시 전달을 통해 불필요한 커뮤니케이션을 줄이고 Total Lead Time을 줄입니다.",
+                    "en": "JO&SOFT SCM builds a win-win supply chain between manufacturing cooperation companies and provides real-time information on orders, purchases, production progress, shipping, and delivery. We reduce unnecessary communication and Total Lead Time through standardization of inter-company data and timely delivery of information.",
+                    "ja": "JO&SOFT SCMは製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
+                    "vi": "JO&SOFT SCM xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/scm.png",
+                    "en": "./resources/images/modal/solution/en/scm.png",
+                    "ja": "./resources/images/modal/solution/en/scm.png",
+                    "vi": "./resources/images/modal/solution/en/scm.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 SCM 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT SCM solution modal image.",
+                    "ja": "JO&SOFT SCMソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp SCM của JO&SOFT."
+                }
             }
         },
         "crm": {
@@ -185,6 +279,40 @@
                 "en": "CRM Solution thumbnail image.",
                 "ja": "CRMソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp CRM."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 CRM은 고객 데이터를 기반으로 고객의 행동을 예측하고, 맞춤형 마케팅 및 고객 서비스 전략을 실행할 수 있도록 돕는 강력한 고객관계관리 플랫폼입니다. 중소기업부터 대기업까지 다양한 규모의 기업을 위한 CRM솔루션을 제공하며, 효율적이고 직관적인 사용자 경험을 제공합니다.",
+                    "en": "JO&SOFT CRM is a powerful customer relationship management platform that helps predict customer behavior based on customer data and execute personalized marketing and customer service strategies. We provide CRM solutions for companies of various sizes from SMEs to large enterprises, offering efficient and intuitive user experience.",
+                    "ja": "JO&SOFT CRMは顧客データに基づいて顧客の行動を予測し、パーソナライズされたマーケティングおよび顧客サービス戦略を実行できるよう支援する強力な顧客関係管理プラットフォームです。中小企業から大企業まで様々な規模の企業向けCRMソリューションを提供し、効率的で直感的なユーザーエクスペリエンスを提供します。",
+                    "vi": "JO&SOFT CRM là nền tảng quản lý quan hệ khách hàng mạnh mẽ giúp dự đoán hành vi khách hàng dựa trên dữ liệu khách hàng và thực hiện các chiến lược tiếp thị và dịch vụ khách hàng được cá nhân hóa. Chúng tôi cung cấp giải pháp CRM cho các công ty có quy mô khác nhau từ doanh nghiệp vừa và nhỏ đến doanh nghiệp lớn, mang lại trải nghiệm người dùng hiệu quả và trực quan."
+                },
+                "screen": {
+                    "title": {
+                        "ko": "주요화면",
+                        "en": "Main Screen",
+                        "ja": "メイン画面",
+                        "vi": "Màn hình chính"
+                    },
+                    "dscpt": {
+                        "ko": "사용자 편의성과 효율적 UX기능을 적용해서 메인화면, 재고조회, 주문현황, 생산현황 등으로 이동합니다.",
+                        "en": "We move to main screen, inventory inquiry, order status, production status, etc. by applying user convenience and efficient UX functions.",
+                        "ja": "ユーザー利便性と効率的なUX機能を適用してメイン画面、在庫照会、注文現況、生産現況などに移動します。",
+                        "vi": "Chúng tôi chuyển đến màn hình chính, tra cứu kho, trạng thái đơn hàng, trạng thái sản xuất, v.v. bằng cách áp dụng tính tiện lợi cho người dùng và các chức năng UX hiệu quả."
+                    }
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/crm.png",
+                    "en": "./resources/images/modal/solution/en/crm.png",
+                    "ja": "./resources/images/modal/solution/en/crm.png",
+                    "vi": "./resources/images/modal/solution/en/crm.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 CRM 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT CRM solution modal image.",
+                    "ja": "JO&SOFT CRMソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp CRM của JO&SOFT."
+                }
             }
         },
         "mes": {
@@ -218,6 +346,26 @@
                 "en": "MES Solution thumbnail image.",
                 "ja": "MESソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp MES."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "<strong>클라우드 기반의 <mark>All In One</mark> 시스템, 스마트공장의 첫걸음!</strong>조앤소프트 MES는 제조기업의 비즈니스를 위해 수·발주 관리, 생산계획수립, 자재관리, 생산공정 관리, 제품출하, 그리고 매출 관리 까지 24시간 언제 어디서나 쉽게 이용할 수 있도록 기능을 제공 합니다. 특히, IT인력이 부족한 기업을 대신하여 서버관리, 데이터관리 등 클라우드 서비스를 통하여 운영 업무를 지원하고 있습니다.",
+                    "en": "<strong>The first step to a smart factory: <mark>All-in-One</mark> system based on cloud technology!</strong>JO&SOFT MES provides functions for manufacturing companies' business to easily use order management, production planning, material management, production process management, product shipping, and revenue management 24/7 anywhere. In particular, we support operational work through cloud services such as server management and data management on behalf of companies lacking IT personnel.",
+                    "ja": "<strong>スマート工場の第一歩：<mark>All-in-One</mark>システム、クラウドベースです！</strong>JO&SOFT MESは製造企業のビジネスのために受発注管理、生産計画立案、資材管理、生産工程管理、製品出荷、そして売上管理まで24時間いつでもどこでも簡単に利用できるよう機能を提供します。特に、IT人材が不足している企業に代わってサーバー管理、データ管理などクラウドサービスを通じて運営業務を支援しています。",
+                    "vi": "<strong>Bước đầu tiên để một nhà máy thông minh: <mark>All-in-One</mark> hệ thống, dựa trên công nghệ đám mây!</strong>JO&SOFT MES cung cấp các chức năng cho doanh nghiệp sản xuất để dễ dàng sử dụng quản lý đơn hàng, lập kế hoạch sản xuất, quản lý vật liệu, quản lý quy trình sản xuất, vận chuyển sản phẩm và quản lý doanh thu 24/7 ở bất kỳ đâu. Đặc biệt, chúng tôi hỗ trợ công việc vận hành thông qua các dịch vụ đám mây như quản lý máy chủ và quản lý dữ liệu thay mặt cho các công ty thiếu nhân sự IT."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/mes.png",
+                    "en": "./resources/images/modal/solution/en/mes.png",
+                    "ja": "./resources/images/modal/solution/en/mes.png",
+                    "vi": "./resources/images/modal/solution/en/mes.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 MES 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT MES solution modal image.",
+                    "ja": "JO&SOFT MESソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp MES của JO&SOFT."
+                }
             }
         },
         "wcs": {
@@ -251,6 +399,40 @@
                 "en": "WCS Solution thumbnail image.",
                 "ja": "WCSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp WCS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 WCS는 실시간으로 장비를 제어하고 라우팅 및 물류창고 운영을 최적화하여 상품이 원활하고 효율적으로 이동하도록 하는 것으로 자동 컨베이어, 분류 시스템, 자동창고(AS/RS), 로봇 시스템과 같은 장치와 직접적으로 상호 작용하는 솔루션입니다.",
+                    "en": "JO&SOFT WCS is a solution that controls equipment in real-time and optimizes routing and logistics warehouse operations to ensure smooth and efficient movement of goods, directly interacting with devices such as automatic conveyors, sorting systems, automated warehouses (AS/RS), and robot systems.",
+                    "ja": "JO&SOFT WCSはリアルタイムで設備を制御し、ルーティングおよび物流倉庫運営を最適化して商品が円滑かつ効率的に移動するようにするもので、自動コンベヤー、分類システム、自動倉庫（AS/RS）、ロボットシステムなどの装置と直接的に相互作用するソリューションです。",
+                    "vi": "JO&SOFT WCS là giải pháp điều khiển thiết bị theo thời gian thực và tối ưu hóa hoạt động định tuyến và kho logistics để đảm bảo di chuyển hàng hóa mượt mà và hiệu quả, tương tác trực tiếp với các thiết bị như băng tải tự động, hệ thống phân loại, kho tự động (AS/RS) và hệ thống robot."
+                },
+                "screen": {
+                    "title": {
+                        "ko": "주요화면",
+                        "en": "Main Screen",
+                        "ja": "メイン画面",
+                        "vi": "Màn hình chính"
+                    },
+                    "dscpt": {
+                        "ko": "창고 내 장비 제어, 작업 지시, 재고 흐름 관리를 실시간으로 모니터링하고 제어할 수 있도록 구성, 물류 자동화 설비와 연동해 작업 효율성과 정확성을 높이는 역할을 합니다.",
+                        "en": "It is configured to monitor and control warehouse equipment control, work instructions, and inventory flow management in real-time, and plays a role in improving work efficiency and accuracy by linking with logistics automation facilities.",
+                        "ja": "倉庫内設備制御、作業指示、在庫フロー管理をリアルタイムでモニタリングし制御できるよう構成され、物流自動化設備と連携して作業効率性と正確性を向上させる役割を果たします。",
+                        "vi": "Nó được cấu hình để giám sát và kiểm soát điều khiển thiết bị kho, hướng dẫn công việc và quản lý luồng kho theo thời gian thực, và đóng vai trò cải thiện hiệu quả và độ chính xác công việc bằng cách liên kết với các cơ sở tự động hóa logistics."
+                    }
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/wcs.png",
+                    "en": "./resources/images/modal/solution/en/wcs.png",
+                    "ja": "./resources/images/modal/solution/en/wcs.png",
+                    "vi": "./resources/images/modal/solution/en/wcs.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 WCS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT WCS solution modal image.",
+                    "ja": "JO&SOFT WCSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp WCS của JO&SOFT."
+                }
             }
         },
         "tms": {
@@ -273,10 +455,10 @@
                 "vi": "Hệ thống Quản lý Vận tải"
             },
             "dscpt": {
-                "ko": "ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재 Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
+                "ko": "ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
                 "en": "We automatically dispatch by matching the volume of products to be loaded and the loading capacity of vehicles based on delivery requests in connection with ERP/WMS systems. After loading, we eliminate unnecessary document management work and reduce transportation costs by using kiosks for self-transaction statement printing.",
                 "ja": "ERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
-                "vi": "Chúng tôi tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
+                "vi": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
             },
             "thumbnail": "./resources/images/solution/tms.png",
             "alt": {
@@ -284,6 +466,26 @@
                 "en": "TMS Solution thumbnail image.",
                 "ja": "TMSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp TMS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 TMS는 ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
+                    "en": "JO&SOFT TMS automatically dispatches by matching the volume of products to be loaded and the loading capacity of vehicles based on delivery requests in connection with ERP/WMS systems. After loading, we eliminate unnecessary document management work and reduce transportation costs by using kiosks for self-transaction statement printing.",
+                    "ja": "JO&SOFT TMSはERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
+                    "vi": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/tms.png",
+                    "en": "./resources/images/modal/solution/en/tms.png",
+                    "ja": "./resources/images/modal/solution/en/tms.png",
+                    "vi": "./resources/images/modal/solution/en/tms.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 TMS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT TMS solution modal image.",
+                    "ja": "JO&SOFT TMSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp TMS của JO&SOFT."
+                }
             }
         },
         "ai": {
@@ -317,6 +519,26 @@
                 "en": "AI Solution thumbnail image.",
                 "ja": "AIソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp AI."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트의 AI 솔루션은 현장의 다양한 데이터를 기반으로 예측과 자동화를 실현하고, 핵심 시스템과 유연하게 연동되어 운영 효율을 높이는 안정적이고 확장 가능한 환경을 제공합니다.",
+                    "en": "JO&SOFT's AI solution realizes prediction and automation based on various field data, and provides a stable and scalable environment that flexibly links with core systems to improve operational efficiency.",
+                    "ja": "JO&SOFTのAIソリューションは現場の様々なデータに基づいて予測と自動化を実現し、コアシステムと柔軟に連携して運営効率を向上させる安定した拡張可能な環境を提供します。",
+                    "vi": "Giải pháp AI của JO&SOFT thực hiện dự đoán và tự động hóa dựa trên dữ liệu hiện trường đa dạng, và cung cấp môi trường ổn định và có thể mở rộng liên kết linh hoạt với các hệ thống cốt lõi để cải thiện hiệu quả vận hành."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/ai.png",
+                    "en": "./resources/images/modal/solution/en/ai.png",
+                    "ja": "./resources/images/modal/solution/en/ai.png",
+                    "vi": "./resources/images/modal/solution/en/ai.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 AI 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT AI solution modal image.",
+                    "ja": "JO&SOFT AIソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp AI của JO&SOFT."
+                }
             }
         },
         "wms": {
@@ -350,6 +572,26 @@
                 "en": "WMS Solution thumbnail image.",
                 "ja": "WMSソリューションのサムネイル画像です。",
                 "vi": "Hình ảnh thu nhỏ của Giải pháp WMS."
+            },
+            "modal": {
+                "abstract": {
+                    "ko": "조앤소프트 WMS는 RCS/ERP시스템과 연계하여 원자재 및 완제품의 전 과정을 RFID, QR, 바코드 기반으로 디지털 관리하는 시스템입니다. RFID/QR/바코드를 이용하여 선입선출(FIFO)을 포함한 자재 입출고 자동화, 로케이션 기반 창고 운영을 통해 물류 효율을 극대화할 수 있습니다.",
+                    "en": "JO&SOFT WMS is a system that digitally manages the entire process of raw materials and finished products based on RFID, QR, and barcode in connection with RCS/ERP systems. We can maximize logistics efficiency through material receiving and shipping automation including FIFO (First In First Out) using RFID/QR/barcode, and location-based warehouse operations.",
+                    "ja": "JO&SOFT WMSはRCS/ERPシステムと連携して原材料および完成品の全過程をRFID、QR、バーコードベースでデジタル管理するシステムです。RFID/QR/バーコードを利用して先入れ先出し（FIFO）を含む資材入出庫自動化、ロケーションベース倉庫運営を通じて物流効率を最大化できます。",
+                    "vi": "JO&SOFT WMS là hệ thống quản lý kỹ thuật số toàn bộ quy trình nguyên liệu và sản phẩm hoàn thành dựa trên RFID, QR và mã vạch kết nối với hệ thống RCS/ERP. Chúng tôi có thể tối đa hóa hiệu quả logistics thông qua tự động hóa nhận và vận chuyển vật liệu bao gồm FIFO (First In First Out) sử dụng RFID/QR/mã vạch, và hoạt động kho dựa trên vị trí."
+                },
+                "src": {
+                    "ko": "./resources/images/modal/solution/wms.png",
+                    "en": "./resources/images/modal/solution/en/wms.png",
+                    "ja": "./resources/images/modal/solution/en/wms.png",
+                    "vi": "./resources/images/modal/solution/en/wms.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 솔루션인 WMS 솔루션의 모달 이미지입니다.",
+                    "en": "JO&SOFT WMS solution modal image.",
+                    "ja": "JO&SOFT WMSソリューションのモーダル画像です。",
+                    "vi": "Hình ảnh modal của Giải pháp WMS của JO&SOFT."
+                }
             }
         },
         "button": {
@@ -378,6 +620,26 @@
                 "en": ["Mobile Order System", "Android/iOS App"],
                 "ja": ["モバイル発注システム", "Android/iOSアプリ"],
                 "vi": ["Hệ thống Đặt hàng Di động", "Ứng dụng Android/iOS"]
+            },
+            "modal": {
+                "title": {
+                    "ko": "이제는 업무도<br/>스마트하게",
+                    "en": "Now, work smarter<br/>too",
+                    "ja": "今、業務も<br/>スマートに",
+                    "vi": "Bây giờ, công việc cũng<br/>thông minh"
+                },
+                "src": {
+                    "ko": "./resources/images/modal/success/tailim.png",
+                    "en": "./resources/images/modal/success/en/tailim.png",
+                    "ja": "./resources/images/modal/success/en/tailim.png",
+                    "vi": "./resources/images/modal/success/en/tailim.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 성공사례 중 하나인 태림포장 태리미 모달 이미지입니다",
+                    "en": "Tailim Packaging's Tailim modal image of one of JO&SOFT's success cases.",
+                    "ja": "Tailim PackagingのTailimモーダル画像はJO&SOFTの成功事例の1つです。",
+                    "vi": "Hình ảnh modal của Tailim Packaging, một trong những trường hợp thành công của JO&SOFT."
+                }
             }
         },
         "case2": {
@@ -392,6 +654,26 @@
                 "en": ["KN-OMS", "Web Mobile Order Management System", "Android/iOS App"],
                 "ja": ["KN-OMS", "ウェブモバイル注文管理システム", "Android/iOSアプリ"],
                 "vi": ["KN-OMS", "Hệ thống Quản lý Đặt hàng Di động Web", "Ứng dụng Android/iOS"]
+            },
+            "modal": {
+                "title": {
+                    "ko": "재고조회도, <br/>주문도 더 빠르게",
+                    "en": "Faster inventory<br/>and order management",
+                    "ja": "在庫照会も<br/>注文もより速く",
+                    "vi": "Quản lý kho và<br/>đặt hàng nhanh hơn"
+                },
+                "src": {
+                    "ko": "./resources/images/modal/success/kleannara.png",
+                    "en": "./resources/images/modal/success/en/kleannara.png",
+                    "ja": "./resources/images/modal/success/en/kleannara.png",
+                    "vi": "./resources/images/modal/success/en/kleannara.png"
+                },
+                "alt": {
+                    "ko": "조앤소프트의 성공사례 중 하나인 깨끗한 나라 KN-OMS 모달 이미지입니다.",
+                    "en": "KN-OMS modal image of one of JO&SOFT's success cases, Clean Korea.",
+                    "ja": "JO&SOFTの成功事例の1つであるクリーン・コリアのKN-OMSモーダル画像です。",
+                    "vi": "Hình ảnh modal của một trong những trường hợp thành công của JO&SOFT, Clean Korea."
+                }
             }
         }
     }
