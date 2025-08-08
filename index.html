@@ -21,19 +21,16 @@
     <meta name="twitter:domain" content="조앤소프트">
     <meta name="Robots" content="INDEX, FOLLOW">
     <link rel="stylesheet" href="./resources/library/slick/slick.min.css">
+    <link rel="stylesheet" href="./resources/library/aos/aos.min.css">
     <link rel="stylesheet" href="./resources/styles/main.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon/favicon-16x16.png">
     <script src="./resources/scripts/jquery-3.7.1.min.js"></script>
     <script src="./resources/library/slick/slick.min.js"></script>
+    <script src="./resources/library/aos/aos.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
-    <!-- <script>
-        if (location.protocol === 'http:') {
-          location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
-        }
-    </script> -->
     <script>
         // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
         (function() {
@@ -97,8 +94,8 @@
         </div>
         <div class="banner type-title">
             <div class="wrap">
-                <strong class="title" data-i18n="index.banner.text.title">시스템 컨설팅부터<br/>소프트웨어 구축까지</strong>
-                <p data-i18n="index.banner.text.dscpt">Technology 컨설팅, 소프트웨어 개발, 온라인 마케팅 컨설팅 및 플랫폼 운영, 스마트 팩토리 및 제조 AI 시스템 구축, 프로세스 자동화 등 다양한 분야에서 기업의 비즈니스 시스템을 진단하고, 지속 가능한 성장을 위한 최적의 디지털 전환 솔루션을 제공합니다.</p>
+                <strong class="title" data-aos="fade-up" data-i18n="index.banner.text.title">시스템 컨설팅부터<br/>소프트웨어 구축까지</strong>
+                <p data-aos="fade-up" data-i18n="index.banner.text.dscpt">Technology 컨설팅, 소프트웨어 개발, 온라인 마케팅 컨설팅 및 플랫폼 운영, 스마트 팩토리 및 제조 AI 시스템 구축, 프로세스 자동화 등 다양한 분야에서 기업의 비즈니스 시스템을 진단하고, 지속 가능한 성장을 위한 최적의 디지털 전환 솔루션을 제공합니다.</p>
             </div>
         </div>
         <div class="banner type-goto">
@@ -193,5 +190,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
 </body>
 </html>
