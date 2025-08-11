@@ -32,9 +32,6 @@
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
     <script>
-        AOS.init();
-    </script>
-    <script>
         // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
         (function() {
             var port = location.port ? parseInt(location.port, 10) : 80;
@@ -45,6 +42,7 @@
             }
         })();
     </script>
+</head>
 <body>
     <header>
         <div class="wrap">
@@ -241,6 +239,13 @@
             "timestamp" : "1693978036661",
             "key" : "2g4fj"
         }).render();
+    </script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
     </script>
 </body>
 </html>

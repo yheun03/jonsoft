@@ -42,6 +42,7 @@
             }
         })();
     </script>
+</head>
 <body>
     <header>
         <div class="wrap">
@@ -914,7 +915,11 @@
         });
     </script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
     </script>
 </body>
 </html>
