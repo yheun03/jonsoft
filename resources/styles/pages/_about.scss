@@ -390,6 +390,7 @@
                 width: 2px;
                 bottom: 0;
                 background-color: #797979;
+                z-index: -1;
             }
         }
         li {
@@ -436,6 +437,10 @@
         width: 550px;
         @include font-style($fw-5, $fs-16);
         margin-bottom: $gap-20;
+
+        & > span{
+            display: block;
+        }
 
         &-label {
             color: #797979;
