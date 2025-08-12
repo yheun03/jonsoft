@@ -35,10 +35,10 @@
             }
         },
         "addressName": {
-            "ko": "판교 본사",
-            "en": "Pangyo Headquarters",
-            "ja": "板橋本社",
-            "vi": "Trụ sở Pangyo"
+            "ko": "본사",
+            "en": "Headquarters",
+            "ja": "本社",
+            "vi": "Trụ sở"
         },
         "address": {
             "ko": "(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554",
