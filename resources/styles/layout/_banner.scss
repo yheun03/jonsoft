@@ -124,6 +124,7 @@
                 @include flex(column, center, center);
                 padding: 3px 44px;
                 @include font-style($fw-6, $fs-16, 140%, $color: #ffffff);
+                letter-spacing: 0.01em;
                 text-align: center;
                 a{
                     font: {
@@ -136,12 +137,24 @@
             }
             .btn{
                 width: 24px;
-                height: 24px;
+                aspect-ratio: 1;
                 background: url($url+'icons/24/ic-xmark.svg') center / 24px no-repeat;
                 @include absolute-position(top, 50%, right, 20px);
                 transform: translateY(-50%);
             }
             @include tablet{
+                .wrap{
+                    font-size: 12px;
+                    line-height: 22px;
+                    padding: 10px 36px;
+                    a{
+                        font-size: 12px;
+                    }
+                }
+                .btn{
+                    width: 18px;
+                    background-size: 18px;
+                }
                 .mobile{
                     display: block;
                 }
