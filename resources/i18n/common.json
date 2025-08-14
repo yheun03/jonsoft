@@ -11,7 +11,13 @@
                 "ko": "스마트공장, 어떻게 시작할지 고민이라면 - 최적의 구축 솔루션을 제안드립니다.",
                 "en": "Smart factory, if you're thinking about how to start - I suggest the best deployment solution.",
                 "ja": "スマートファクトリーの始め方を考えている場合、最適な構築ソリューションを提案します。",
-                "vi": "Nhà máy thông minh, nếu bạn băn khoăn không biết nên bắt đầu như thế nào - tôi đề xuất giải pháp xây dựng tối ưu."
+                "vi": "Nhà máy thông minh, nếu bạn băn khoăn không biết nên bắt đầu như thế nào - tôi đề xuất giải pháp xây dựng tối ưu.",
+                "mb": {  
+                    "ko": "스마트공장, 최적의 구축 솔루션을 제안드립니다",
+                    "en": "Inquire about building and introducing a smart factory",
+                    "ja": "スマートファクトリーの始め方を考えている場合、最適な構築ソリューションを提案します。",
+                    "vi": "Đề xuất giải pháp xây dựng tối ưu, nhà máy thông minh."
+                }
             },
             "button": {
                 "ko": "설문바로가기",

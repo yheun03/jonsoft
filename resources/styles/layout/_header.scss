@@ -5,13 +5,14 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    height: $header-height;
     background-color: #ffffff;
     border-bottom: 1px solid #ebebeb;
-    z-index: 10;
+    @include flex(column, center, stretch);
+    z-index: 100;
 
     @include transition(all, .2s);
     &.open{
+        height: 100dvh;
         background-color: #000000;
         border-color: #444444;
         .menu{
@@ -31,7 +32,8 @@ header{
     }
 
     .wrap{
-        height: 100%;
+        padding-block: 26px;
+        width: 100%;
         @include flex($justify: space-between, $align: center);
     }
     
@@ -90,15 +92,13 @@ header{
 .full-screen-menu{
     overflow: hidden;
     height: 0;
-    position: fixed;
-    top: $header-height;
-    left: 0;
     width: 100%;
-    @include transition(all, .2s);
+
     .wrap{
         background-color: #000;
         padding-inline: 30px;
         padding-block: 60px;
+        height: 100%;
         @include flex($direction: column, $justify: space-between);
     }
     ul:not(.i18n){
@@ -137,6 +137,7 @@ header{
         }
     }
     .open &{
-        height: calc(100dvh - $header-height);
+        height: 100%;
+        // height: calc(100dvh - $header-height);
     }
 }

@@ -117,6 +117,9 @@
             background: linear-gradient(90deg, #FF852A 0%, #FF391B 100%);
             min-height: unset;
             z-index: 10;
+            .mobile{
+                display: none;
+            }
             .wrap{
                 @include flex(column, center, center);
                 padding: 3px 44px;
@@ -138,7 +141,13 @@
                 @include absolute-position(top, 50%, right, 20px);
                 transform: translateY(-50%);
             }
-            & + header{
+            @include tablet{
+                .mobile{
+                    display: block;
+                }
+                .pc{
+                    display: none;
+                }
             }
         }
     }

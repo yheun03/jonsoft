@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    // banner welcome 닫기 기능
+    $('.banner.type-welcome .btn.close-welcome').on('click', function() {
+        $('.banner.type-welcome').hide();
+    });
+
     // 헤더의 open-menu 버튼 이벤트
     $('.btn.open-menu').on('click', function() {
         $('header').toggleClass('open');
