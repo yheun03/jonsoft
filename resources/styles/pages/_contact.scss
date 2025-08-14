@@ -29,13 +29,13 @@
 
             li {
                 @include font-style($fw-6, $fs-20, normal);
-                color: $c-text;
+                color: #b2b2b2;
                 padding-inline: $gap-4;
                 padding-bottom: 14px;
-                opacity: 0.3;
+                display: block;
 
                 &.active {
-                    opacity: unset;
+                    color: $c-text;
                     box-shadow: inset 0px -2px 0 0px $c-text;
                 }
 
@@ -72,8 +72,15 @@
                     font-weight: $fw-7;
                 }
 
+                span, a, strong{display: inline-block;}
                 a {
                     margin-left: 36px;
+                }
+            }
+
+            dl{
+                &:nth-child(2){
+                    grid-column: span 2
                 }
             }
         }
@@ -218,6 +225,12 @@
                     @include font-style($fw-4, 16px, 150%);
                 }
             }
+        }
+    }
+
+    @include mobile{
+        .contact .info dd a{
+            margin-left: 8px;
         }
     }
 }
