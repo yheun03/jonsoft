@@ -2,8 +2,10 @@
 @use 'sass:map';
 
 footer{
+    position: relative;
     background-color: #F7F6F8;
     padding-block: 80px;
+    z-index: 10;
     a[class*=logo]{
         display: block;
         font-size: 0;

@@ -1,0 +1,66 @@
+@use '../abstracts' as *;
+@use "sass:list";
+
+// =============================================================================
+// index 페이지 스타일
+// =============================================================================
+
+// =============================================================================
+// Floating 섹션
+// =============================================================================
+
+/**
+ * 회사 소개서 다운로드 영역
+ * 회사 소개서 다운로드 버튼
+ */
+.floating {
+    position: fixed;
+    bottom: 40px;
+    right: max(calc(50dvw - 1000px), 40px);
+    z-index: 100;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    
+    .label {
+        @include font-style($fw-6, $fs-16, normal, $color: $c-text);
+        padding: 7px 20px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        box-shadow: 4px 2px 9px 0 rgba(169, 169, 169, 0.25);
+        border-radius: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        cursor: pointer;
+        &::after{
+            @include pseudo-element($display: block);
+            background: #eeeeee url($url+'icons/12/ic-xmark.svg') no-repeat center center / 12px;
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            box-shadow: 4px 2px 9px 0 rgba(169, 169, 169, 0.25);
+        }
+    }
+
+    a {
+        width: 60px;
+        height: 60px;
+        border-radius: 24px;
+        background: url($url+'icons/36/ic-download.svg') no-repeat center center / 36px, linear-gradient(134deg, #FF7830 1.83%, #FF5900 98.55%);
+        box-shadow: 4px 2px 9px 0 rgba(169, 169, 169, 0.25);
+    }
+
+    @include desktop {
+        // right: calc(10px);
+    }
+    @include tablet {
+        right: 20px;
+        bottom: 16px;
+    }
+
+}

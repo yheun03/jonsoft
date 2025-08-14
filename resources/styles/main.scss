@@ -11,6 +11,7 @@
 @use './component';
 
 // 페이지별 스타일 import
+@use './pages/index';
 @use './pages/about';
 @use './pages/business';
 @use './pages/contact';

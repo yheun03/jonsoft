@@ -266,5 +266,10 @@ $(document).ready(function() {
             $('body').addClass('modal-open');
         }
     });
+
+	// Floating 라벨 클릭 시 해당 요소 숨김
+	$(document).on('click', '.floating .label, .floating.label', function() {
+		$(this).hide();
+	});
     
 }); 
