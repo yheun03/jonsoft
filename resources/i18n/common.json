@@ -1,5 +1,25 @@
 {
+    "floating": {
+        "ko": "회사 소개서 다운받기",
+        "en": "Download company introduction",
+        "ja": "会社紹介書をダウンロード",
+        "vi": "Tải xuống tài liệu giới thiệu công ty"
+    },
     "banner": {
+        "welcome": {
+            "title": {  
+                "ko": "스마트공장, 어떻게 시작할지 고민이라면 - 최적의 구축 솔루션을 제안드립니다.",
+                "en": "Smart factory, if you're thinking about how to start - I suggest the best deployment solution.",
+                "ja": "スマートファクトリーの始め方を考えている場合、最適な構築ソリューションを提案します。",
+                "vi": "Nhà máy thông minh, nếu bạn băn khoăn không biết nên bắt đầu như thế nào - tôi đề xuất giải pháp xây dựng tối ưu."
+            },
+            "button": {
+                "ko": "설문바로가기",
+                "en": "Start the survey",
+                "ja": "調査直ぐに",
+                "vi": "Trả lời ngay câu hỏi"
+            }
+        },
         "ask": {
             "title":{
                 "ko": "프로젝트 문의하기",

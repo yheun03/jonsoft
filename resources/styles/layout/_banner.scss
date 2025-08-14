@@ -111,6 +111,36 @@
                 margin-bottom: 70px;
             }
         }
+        &-welcome{
+            position: sticky;
+            top: 0;
+            background: linear-gradient(90deg, #FF852A 0%, #FF391B 100%);
+            min-height: unset;
+            z-index: 10;
+            .wrap{
+                @include flex(column, center, center);
+                padding: 3px 44px;
+                @include font-style($fw-6, $fs-16, 140%, $color: #ffffff);
+                text-align: center;
+                a{
+                    font: {
+                        size: 14px;
+                        weight: 400;
+                    }
+                    color: inherit;
+                    text-decoration: underline;
+                }
+            }
+            .btn{
+                width: 24px;
+                height: 24px;
+                background: url($url+'icons/24/ic-xmark.svg') center / 24px no-repeat;
+                @include absolute-position(top, 50%, right, 20px);
+                transform: translateY(-50%);
+            }
+            & + header{
+            }
+        }
     }
     &.set{
         &-bg-bottom{
