@@ -19,6 +19,12 @@
                     "vi": "Đề xuất giải pháp xây dựng tối ưu, nhà máy thông minh."
                 }
             },
+            "src": {
+                "ko": "www.naver.com",
+                "en": "www.google.com",
+                "ja": "www.instagram.com",
+                "vi": "www.youtube.com"
+            },
             "button": {
                 "ko": "설문바로가기",
                 "en": "Start the survey",

@@ -137,6 +137,18 @@ $(function() {
                  $(this).attr('alt', v[currentLang]);
              }
          });
+
+         // data-i18n-href 링크 href 업데이트
+         $('[data-i18n-href]').each(function() {
+             const [f, ...k] = $(this).attr('data-i18n-href').split('.');
+             const v = getVal(i18nData[f], k.join('.'));
+             if (!v) return;
+             if (typeof v === 'object' && v[currentLang]) {
+                 $(this).attr('href', v[currentLang]);
+             } else if (typeof v === 'string') {
+                 $(this).attr('href', v);
+             }
+         });
      };
 
     /**
@@ -144,12 +156,27 @@ $(function() {
      */
     const loadPageI18nData = async () => {
         // data-i18n 속성에서 파일명만 추출하여 중복 제거
-        const files = [...new Set(
-            $('[data-i18n]').map((_, el) => $(el).attr('data-i18n').split('.')[0]).get()
-        )];
+        // 기존 방식 확장: data-i18n, data-i18n-src, data-i18n-alt, data-i18n-href 모두 수집
+        const filesFromI18n = $('[data-i18n]').map((_, el) => $(el).attr('data-i18n').split('.')[0]).get();
+        const filesFromSrc  = $('[data-i18n-src]').map((_, el) => $(el).attr('data-i18n-src').split('.')[0]).get();
+        const filesFromAlt  = $('[data-i18n-alt]').map((_, el) => $(el).attr('data-i18n-alt').split('.')[0]).get();
+        const filesFromHref = $('[data-i18n-href]').map((_, el) => $(el).attr('data-i18n-href').split('.')[0]).get();
+        
+        const files = [...new Set([
+            ...filesFromI18n,
+            ...filesFromSrc,
+            ...filesFromAlt,
+            ...filesFromHref
+        ])];
+        
+        // data-common 사용 시 common.json 포함
+        if ($('[data-common]').length > 0) {
+            files.push('common');
+        }
+        
         // 각 파일을 비동기로 불러와 i18nData에 저장
         for (const f of files) {
-            if (!i18nData[f]) i18nData[f] = await loadI18nData(f);
+            if (f && !i18nData[f]) i18nData[f] = await loadI18nData(f);
         }
         updateI18n(); // 데이터 로드 후 텍스트 갱신
     };
