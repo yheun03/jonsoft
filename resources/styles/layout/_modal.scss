@@ -46,6 +46,7 @@
         border-right: 1px solid #efefef;
         .heading{
             min-height: 208px;
+            padding-bottom: 20px;
         }
         .title{
             @include font-style($weight: 600, $size: 36px);
