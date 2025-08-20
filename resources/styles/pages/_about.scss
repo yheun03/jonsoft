@@ -1,0 +1,500 @@
+@use '../abstracts' as *;
+@use "sass:list";
+
+// =============================================================================
+// About 페이지 스타일
+// =============================================================================
+
+// =============================================================================
+// Summary 섹션
+// =============================================================================
+
+/**
+ * 회사 요약 정보 섹션
+ * 배경 이미지와 함께 회사의 주요 지표를 표시
+ */
+.summary {
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: $gap-80;
+    @include bg-image($url + 'images/summary/background.png', right bottom, 800px);
+
+    ul {
+        @include flex(row, flex-end, stretch, 6px);
+
+        .content {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .title {
+            @include font-style($fw-6, $fs-18, normal, $color: $c-text-gray);
+            margin-block: $gap-8 $gap-12;
+        }
+
+        .dscpt {
+            @include font-style($fw-6, $fs-36, normal, $color: $c-text);
+        }
+
+        .eyebrow {
+            @include font-style($fw-4, $fs-14, normal, $color: $c-text-gray);
+        }
+
+        li{
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+        background: unset;
+        ul{
+            justify-content: center;
+            @include grid(2, 60px 40px, 120px);
+        }
+    
+    }
+}
+
+// =============================================================================
+// Awards 섹션
+// =============================================================================
+
+/**
+ * 수상 실적 섹션
+ * 회사의 수상 내역을 슬라이더로 표시
+ */
+.awards {
+    padding-block: $gap-80;
+    background-color: $c-bg-light;
+
+    .slick-list {
+        margin-bottom: $gap-20;
+    }
+
+    p {
+        @include font-style($fw-4, $fs-30, normal);
+        color: $c-text;
+        text-align: center;
+
+        &.title {
+            font-weight: $fw-7;
+        }
+    }
+
+    .list-awards {
+        // 로컬 변수 정의
+        $item-width: 1100px;
+        $item-height: 460px;
+        $item-radius: $radius-20;
+        $item-padding: $gap-40 $gap-60;
+        
+        $thumb-bg: (
+            'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
+            'item-02': (#B0E0FB, '../icons/380/copyright.png', #B0E0FB),
+            'item-03': (#FF8372, '../icons/380/webawards.png', #FF8372),
+            'item-04': (#8EAFF6, '../icons/380/venture.png', #8EAFF6),
+        );
+
+        margin-top: $gap-40;
+
+        /**
+         * 썸네일 배경 믹스인
+         * @param {color} $color - 배경 색상
+         * @param {string} $img - 이미지 경로
+         * @param {color} $grad - 그라디언트 색상
+         * 
+         * 사용법: @include thumb-bg(#FFED71, '../icons/380/tcb.png', #FFED71);
+         */
+        @mixin thumb-bg($color, $img, $grad) {
+            background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
+            
+            &::after {
+                @include pseudo-element();
+                @include absolute-position(bottom, 0, left, 0);
+                width: 100%;
+                height: 100%;
+                @include gradient-overlay($grad, 0, 0.5);
+                z-index: 1;
+            }
+        }
+
+        .item {
+            position: relative;
+            border-radius: $item-radius;
+            width: $item-width;
+            height: $item-height;
+            padding: $item-padding;
+            overflow: hidden;
+
+            img {
+                width: 220px;
+            }
+
+            p {
+                @include font-style($fw-6, $fs-24, 140%);
+                text-align: left;
+            }
+
+            .thumbnail {
+                @include absolute-position(right, 56px, bottom, -30px);
+                @include flex(row, flex-start, center, $gap-8);
+            }
+
+            // 각 item별 배경/그라디언트 반복
+            @each $name, $val in $thumb-bg {
+                &.#{$name} {
+                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        padding-block: 40px;
+        .title, .title-sub{
+            font-size: 24px;
+            text-align: left;
+            padding-inline: 20px;
+        }
+        .list-awards {
+            .slick-list{
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: calc(100dvw - 40px);
+                    height: 390px;
+                    padding: 20px;
+                    background: {
+                        position: right -10px top 45px;
+                        size: 180px;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: normal;
+                    }
+                    .thumbnail{
+                        @include absolute-position(bottom, unset, right, unset);
+                        position: relative;
+                        width: calc(100% + 10px);
+                        gap: 10px;
+                        order: 1;
+                        margin: 0 -10px -30px;
+                        img{
+                            width: 50%;
+                            max-width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Feature 섹션
+// =============================================================================
+
+/**
+ * 주요 기능 섹션
+ * 회사의 주요 기능을 카드 형태로 표시
+ */
+.feature {
+    margin-block: 6px $gap-80;
+
+    .list-feature {
+        @include grid(3, $grid-20, 1fr);
+
+        .item {
+            position: relative;
+            border-radius: $radius-20;
+            overflow: hidden;
+            min-height: 470px;
+            @include bg-image($url + "images/feature/feature-01.png", center, cover);
+
+            &-02 {
+                @include bg-image($url + "images/feature/feature-02.png", center, cover);
+
+                .front {
+                    background-color: #C8C5B9;
+                    @include shadow(md, #C8C5B9);
+                }
+
+                .back a {
+                    color: #FFE6CD;
+
+                    &::after {
+                        border-color: #FFE6CD;
+                    }
+                }
+            }
+
+            &-03 {
+                @include bg-image($url + "images/feature/feature-03.png", center, cover);
+
+                .front {
+                    background-color: #46628A;
+                    @include shadow(md, #46628A);
+                }
+
+                .back a {
+                    color: #60FFF5;
+
+                    &::after {
+                        border-color: #60fff5;
+                    }
+                }
+            }
+
+            &:hover {
+                .back {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .front {
+        @include absolute-position(top, 0, left, 0);
+        padding: $gap-40 32px 0;
+        width: 100%;
+        background-color: #A2CCFF;
+        @include shadow(md, #A2CCFF);
+        transition: all 0.3s ease;
+
+        .title {
+            @include font-style($fw-6, $fs-24, normal);
+            color: $c-text-light;
+        }
+
+        &::after {
+            @include pseudo-element();
+            @include absolute-position(left, 32px, bottom, -42px);
+            width: 26px;
+            height: 26px;
+            @include bg-image($url + 'icons/26/ic-circle-arrow.svg', left bottom, 26px);
+        }
+    }
+
+    .back {
+        @include flex(column, flex-start, stretch);
+        backdrop-filter: blur(27px);
+        height: 100%;
+        padding: $gap-30 $gap-20 $gap-20;
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        ul {
+            margin-bottom: $gap-12;
+        }
+
+        li {
+            position: relative;
+            @include font-style($fw-6, $fs-16, 21px);
+            color: $c-text-light;
+            margin-bottom: 14px;
+            padding-left: $gap-24;
+
+            &::before {
+                @include pseudo-element();
+                @include absolute-position(top, 8.5px, left, 10px);
+                width: 4px;
+                height: 4px;
+                background-color: $c-text-light;
+                border-radius: 50%;
+            }
+        }
+
+        a {
+            position: relative;
+            align-self: flex-start;
+            @include font-style($fw-8, $fs-14, normal);
+            color: #5FA9FF;
+            margin-left: $gap-8;
+            text-decoration: underline;
+            @include transition();
+
+            &::after {
+                @include pseudo-element();
+                @include absolute-position(top, 50%, right, -16px);
+                width: 6px;
+                height: 6px;
+                border: 0 solid #5fa9ff;
+                border-width: 2px 2px 0 0;
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            @include hover(text-decoration, underline);
+        }
+    }
+
+    @include tablet {
+        .list-feature{
+            @include grid(1, 20px, 1fr);
+
+
+            .front{
+                .title{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+// =============================================================================
+// History 섹션
+// =============================================================================
+
+/**
+ * 회사 연혁 섹션
+ * 회사의 발전 과정을 타임라인으로 표시
+ */
+
+.history {
+    background-color: $c-bg-dark;
+    color: $c-text-light;
+    padding-top: $gap-80;
+
+    .title {
+        @include font-style($fw-7, $fs-32, 46px);
+        color: $c-text-light;
+        text-align: center;
+    }
+
+    &-timeline {
+        margin-top: $gap-60;
+        @include flex(row, center, center, 60px);
+        width: 754px;
+        margin-inline: auto;
+    }
+
+    &-year {
+        align-self: flex-start;
+        position: sticky;
+        width: 200px;
+        top: 115px;
+        left: 0;
+        height: calc(100dvh - 115px);
+        z-index: 1;
+        ul {
+            @include flex(column, $align: flex-end, $gap: 6px);
+            &::after{
+                @include pseudo-element();
+                @include absolute-position(top, 24px, right, 6px);
+                width: 2px;
+                bottom: 0;
+                background-color: #797979;
+                z-index: -1;
+            }
+        }
+        li {
+            position: relative;
+            @include flex( $gap: 30px);
+            button{
+                @include font-style($fw-6, 28px, $color: #797979);
+                padding: 6px 0 6px 22px;
+                @include transition();
+            }
+            &::after {
+                @include pseudo-element($display: block);
+                width: 14px;
+                aspect-ratio: 1;
+                background-color: #797979;
+                border-radius: 50%;
+                z-index: 1;
+                @include transition();
+            }
+            &.active {
+                button{
+                    color: $c-orange;
+                    -webkit-text-stroke-width: 0.1px;
+                    -webkit-text-stroke-color: #000;
+                }
+                &::after {
+                    background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;
+                    width: 22px;
+                    border: 4px solid #797979;
+                    box-sizing: border-box;
+                    margin-right: -4px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        & > li{
+            margin-bottom: 120px;
+        }
+    }
+
+    .month {
+        width: 550px;
+        @include font-style($fw-5, $fs-16);
+        margin-bottom: $gap-20;
+
+        & > span{
+            display: block;
+        }
+
+        &-label {
+            color: #797979;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+    }
+} 
+
+@include tablet {
+
+    .history{
+        padding-block: 120px 60px;
+        .month{
+            width: unset;
+        }
+        &-timeline{
+            display: unset;
+        }
+        &-year{
+            width: unset;
+            top: $header-height;
+            padding-top: 20px;
+            background-color: $c-bg-dark;
+            height: unset;
+            margin: 0 -20px 20px;
+            ul{
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-inline: 10px;
+                overflow-x: auto;
+                &::after{
+                    content: unset;
+                }
+                li{
+                    font-size: 20px;
+                    button{
+                        padding: 6px 10px;
+                    }
+                    &::before, &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+        &-content{
+            & > li{
+                padding-top: 60px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

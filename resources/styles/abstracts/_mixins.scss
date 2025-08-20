@@ -1,4 +1,323 @@
 @use 'sass:map';
 @use 'sass:meta';
-@use 'functions' as f;
 @use 'variables' as *;
+
+// =============================================================================
+// 공통 믹스인 정의
+// =============================================================================
+
+// =============================================================================
+// 텍스트 믹스인
+// =============================================================================
+
+/**
+ * 폰트 스타일 믹스인
+ * @param {number} $weight - 폰트 굵기 (300, 400, 500, 600, 700, 800)
+ * @param {number} $size - 폰트 크기 (px)
+ * @param {string} $line-height - 줄 높이 (normal, 140%, 150% 등)
+ * @param {string} $family - 폰트 패밀리 (기본값: $font)
+ * 
+ * 사용법: @include font-style(600, 24px, normal);
+ */
+@mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: null) {
+    font: $weight #{$size}/#{$line-height} $family;
+    @if $color != null and $color != '' {
+        color: $color;
+    }
+}
+
+/**
+ * 제목 스타일 믹스인
+ * @param {number} $size - 폰트 크기
+ * @param {number} $weight - 폰트 굵기 (기본값: 600)
+ * 
+ * 사용법: @include title-style(32px, 700);
+ */
+@mixin title-style($size, $weight: 600) {
+    @include font-style($weight, $size, normal);
+    color: $c-text;
+}
+
+// =============================================================================
+// 레이아웃 믹스인
+// =============================================================================
+
+/**
+ * Flexbox 믹스인
+ * @param {string} $direction - 방향 (row, column)
+ * @param {string} $justify - 정렬 (center, flex-start, flex-end, space-between)
+ * @param {string} $align - 세로 정렬 (center, flex-start, flex-end)
+ * @param {number} $gap - 간격
+ * 
+ * 사용법: @include flex(row, center, center, 20px);
+ */
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}
+
+/**
+ * Grid 믹스인
+ * @param {number} $columns - 컬럼 수
+ * @param {number} $gap - 간격
+ * 
+ * 사용법: @include grid(3, 20px);
+ */
+@mixin grid($columns, $gap: 0, $col-size: 1fr) {
+    display: grid;
+    grid-template-columns: repeat($columns, $col-size);
+    @if $gap != 0 and $gap != '' {
+        gap: $gap;
+    }
+}
+
+/**
+ * 컨테이너 믹스인
+ * @param {number} $max-width - 최대 너비
+ * @param {number} $padding - 좌우 패딩
+ * 
+ * 사용법: @include container(1100px, 20px);
+ */
+@mixin container($max-width: $container-max, $padding: $gap-20) {
+    max-width: $max-width;
+    padding-inline: $padding;
+    margin: auto;
+}
+
+// =============================================================================
+// 배경 믹스인
+// =============================================================================
+
+/**
+ * 배경 이미지 믹스인
+ * @param {string} $image - 이미지 경로
+ * @param {string} $position - 위치 (center, top, bottom 등)
+ * @param {string} $size - 크기 (cover, contain, 100% 등)
+ * @param {string} $repeat - 반복 (no-repeat, repeat 등)
+ * 
+ * 사용법: @include bg-image('../images/bg.png', center, cover);
+ */
+@mixin bg-image($image, $position: center, $size: cover, $repeat: no-repeat) {
+    background: url($image) $position/$size $repeat;
+}
+
+/**
+ * 그라디언트 오버레이 믹스인
+ * @param {color} $color - 그라디언트 색상
+ * @param {number} $opacity-start - 시작 투명도 (0-1)
+ * @param {number} $opacity-end - 끝 투명도 (0-1)
+ * 
+ * 사용법: @include gradient-overlay(#000, 0, 0.5);
+ */
+@mixin gradient-overlay($color, $opacity-start: 0, $opacity-end: 0.5) {
+    background: linear-gradient(180deg, rgba($color, $opacity-start) 86.85%, rgba($color, $opacity-end) 100%);
+}
+
+// =============================================================================
+// 효과 믹스인
+// =============================================================================
+
+/**
+ * 그림자 믹스인
+ * @param {string} $type - 그림자 타입 (sm, md, lg)
+ * @param {color} $color - 그림자 색상
+ * 
+ * 사용법: @include shadow(md, #000);
+ */
+@mixin shadow($type: sm, $color: rgba(0, 0, 0, 0.15)) {
+    @if $type == sm {
+        box-shadow: $shadow-sm;
+    } @else if $type == md {
+        box-shadow: $shadow-md $color;
+    }
+}
+
+/**
+ * 전환 효과 믹스인
+ * @param {string} $property - 전환할 속성 (all, opacity, transform 등)
+ * @param {number} $duration - 지속 시간
+ * @param {string} $timing - 타이밍 함수 (ease, linear 등)
+ * 
+ * 사용법: @include transition(opacity, 0.2s);
+ */
+@mixin transition($property: all, $duration: $trans-fast, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+/**
+ * 호버 효과 믹스인
+ * @param {string} $property - 변경할 속성
+ * @param {any} $value - 변경할 값
+ * 
+ * 사용법: @include hover(opacity, 1);
+ */
+@mixin hover($property, $value) {
+    &:hover {
+        #{$property}: $value;
+    }
+}
+
+// =============================================================================
+// 유틸리티 믹스인
+// =============================================================================
+
+/**
+ * 텍스트 말줄임 믹스인
+ * @param {number} $lines - 줄 수 (기본값: 1)
+ * 
+ * 사용법: @include text-ellipsis(2);
+ */
+@mixin text-ellipsis($lines: 1) {
+    @if $lines == 1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/**
+ * 절대 위치 믹스인
+ * @param {string} $position - 위치 (top, bottom, left, right)
+ * @param {number} $value - 값
+ * 
+ * 사용법: @include absolute-position(top, 0, left, 0);
+ */
+@mixin absolute-position($position1: top, $value1: 0, $position2: left, $value2: 0) {
+    position: absolute;
+    #{$position1}: $value1;
+    #{$position2}: $value2;
+}
+
+/**
+ * 가상 요소 믹스인
+ * @param {string} $content - content 속성 값 (기본값: '')
+ * @param {string} $display - display 속성 값 (기본값: '') - 빈 값이 아닐 때만 적용
+ * 
+ * 사용법: @include pseudo-element('', block);
+ */
+@mixin pseudo-element($content: '', $display: '') {
+    content: $content;
+    @if $display != '' {
+        display: $display;
+    }
+}
+
+// =============================================================================
+// 반응형 믹스인 정의
+// =============================================================================
+
+// =============================================================================
+// 브레이크포인트 변수
+// =============================================================================
+
+// 모바일 우선 접근법
+$breakpoints: (
+    'xs': 320px,    // 작은 모바일
+    'sm': 576px,    // 모바일
+    'md': 768px,    // 태블릿
+    'lg': 992px,    // 작은 데스크톱
+    'xl': 1200px,   // 데스크톱
+    'xxl': 1400px   // 큰 데스크톱
+);
+
+// =============================================================================
+// 미디어 쿼리 믹스인
+// =============================================================================
+
+/**
+ * 최소 너비 미디어 쿼리 믹스인
+ * @param {string} $breakpoint - 브레이크포인트 이름 (xs, sm, md, lg, xl, xxl)
+ * 
+ * 사용법: @include min-width(md) { ... }
+ */
+@mixin min-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (min-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
+    }
+}
+
+/**
+ * 최대 너비 미디어 쿼리 믹스인
+ * @param {string} $breakpoint - 브레이크포인트 이름
+ * 
+ * 사용법: @include max-width(md) { ... }
+ */
+@mixin max-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: (map.get($breakpoints, $breakpoint) - 1px)) {
+            @content;
+        }
+    } @else {
+        @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
+    }
+}
+
+/**
+ * 범위 미디어 쿼리 믹스인
+ * @param {string} $min - 최소 브레이크포인트
+ * @param {string} $max - 최대 브레이크포인트
+ * 
+ * 사용법: @include between(md, lg) { ... }
+ */
+@mixin between($min, $max) {
+    @if map.has-key($breakpoints, $min) and map.has-key($breakpoints, $max) {
+        @media (min-width: map.get($breakpoints, $min)) and (max-width: (map.get($breakpoints, $max) - 1px)) {
+            @content;
+        }
+    } @else {
+        @warn "브레이크포인트를 찾을 수 없습니다.";
+    }
+}
+
+// =============================================================================
+// 디바이스별 믹스인
+// =============================================================================
+
+/**
+ * 모바일 전용 스타일
+ * @param {string} $max-width - 최대 너비 (기본값: sm)
+ * 
+ * 사용법: @include mobile { ... }
+ */
+@mixin mobile {
+    @include max-width(sm) {
+        @content;
+    }
+}
+
+/**
+ * 태블릿 전용 스타일
+ * 
+ * 사용법: @include tablet { ... }
+ */
+@mixin tablet {
+    @include max-width(lg) {
+        @content;
+    }
+}
+
+/**
+ * 데스크톱 전용 스타일
+ * 
+ * 사용법: @include desktop { ... }
+ */
+@mixin desktop {
+    @include min-width(lg) {
+        @content;
+    }
+}

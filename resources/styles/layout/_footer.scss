@@ -2,8 +2,10 @@
 @use 'sass:map';
 
 footer{
+    position: relative;
     background-color: #F7F6F8;
     padding-block: 80px;
+    z-index: 10;
     a[class*=logo]{
         display: block;
         font-size: 0;
@@ -26,12 +28,30 @@ footer{
     .wrap{
         display: flex;
         &-text{
-            display: flex;
-            flex-direction: column;
-            gap: 4.5px;
+            @include flex(column, flex-start, stretch, 4.5px);
             margin-inline: 40px auto;
-            font: 400 14px/normal $font;
+            @include font-style($size: 14px, $color: #909090);
             color: #909090;
         }
+    }
+
+    @include tablet {
+        .wrap{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            &-text{
+                order: 1;
+                width: 100%;
+                margin: unset;
+                font-size: 13px;
+            }
+        }
+        a[class*=logo]{
+            img{
+                max-width: 30dvw;
+            }
+        }
+
     }
 }

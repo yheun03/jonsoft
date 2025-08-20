@@ -21,71 +21,109 @@
     <meta name="twitter:domain" content="조앤소프트">
     <meta name="Robots" content="INDEX, FOLLOW">
     <link rel="stylesheet" href="./resources/library/slick/slick.min.css">
+    <link rel="stylesheet" href="./resources/library/aos/aos.min.css">
     <link rel="stylesheet" href="./resources/styles/main.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon/favicon-16x16.png">
     <script src="./resources/scripts/jquery-3.7.1.min.js"></script>
     <script src="./resources/library/slick/slick.min.js"></script>
+    <script src="./resources/library/aos/aos.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
+    <script>
+        // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
+        (function() {
+            var port = location.port ? parseInt(location.port, 10) : 80;
+            var isLocal = port >= 5500 && port <= 5510;
+
+            if (!isLocal && location.protocol === 'http:') {
+                location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
+            }
+        })();
+    </script>
+</head>
 <body>
     <header>
         <div class="wrap">
             <h1><a href="./"><img src="./resources/logos/word.svg" alt="조앤소프트(주)의 로고입니다."></a></h1>
-            <ul class="gnb">
-                <li><a href="./about.html">ABOUT US</a></li>
-                <li><a href="./business.html">BUSINESS & SOLUTION</a></li>
-                <li><a href="./customer.html">CUSTOMER & PATNERS</a></li>
-                <li class="active"><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-            <ul class="i18n">
-                <li class="active"><button class="btn" data-lang="ko">KOR</button></li>
-                <li><button class="btn" data-lang="en">ENG</button></li>
-                <!-- <li><button class="btn" data-lang="ja">JPN</button></li> -->
-                <!-- <li><button class="btn" data-lang="vi">VIE</button></li> -->
-            </ul>
+            <div class="menu pc">
+                <ul class="gnb">
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./business.html">BUSINESS & SOLUTION</a></li>
+                    <li><a href="./customer.html">CUSTOMER & PATNERS</a></li>
+                    <li class="active"><a href="./contact.html">CONTACT US</a></li> 
+                </ul>
+                <ul class="i18n">
+                    <li class="active"><button class="btn" data-lang="ko">KOR</button></li>
+                    <li><button class="btn" data-lang="en">ENG</button></li>
+                    <li><button class="btn" data-lang="ja">JPN</button></li>
+                    <li><button class="btn" data-lang="vi">VIE</button></li>
+                </ul>
+            </div>
+            <div class="menu mobile">
+                <button class="btn open-menu">
+                    <span>MENU</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="full-screen-menu">
+            <div class="wrap">
+                <ul>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./business.html">BUSINESS & SOLUTION</a></li>
+                    <li><a href="./customer.html">CUSTOMER & PATNERS</a></li>
+                    <li class="active"><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+                <ul class="i18n">
+                    <li class="active"><button class="btn" data-lang="ko">KOR</button></li>
+                    <li><button class="btn" data-lang="en">ENG</button></li>
+                    <li><button class="btn" data-lang="ja">JPN</button></li>
+                    <li><button class="btn" data-lang="vi">VIE</button></li>
+                </ul>
+            </div>
         </div>
     </header>
     <section>
         <div class="navigator">
             <div class="tab">
                 <ul>
-                    <li class="active"><a href="">오시는 길</a></li>
-                    <li><a href="">채용</a></li>
+                    <li class="active" data-aos="fade-up" data-aos-delay="200"><a href="javascript:void(0)" data-i18n="contact.tab.location">오시는 길</a></li>
+                    <li data-aos="fade-up" data-aos-delay="400"><a href="javascript:void(0)" data-i18n="contact.tab.recruitment">채용</a></li>
                 </ul>
             </div>
             <div class="tab-content">
                 <div class="contact">
                     <div class="wrap not-padding">
-                        <h2>Contact</h2>
+                        <h2 data-i18n="contact.contact.title" data-aos="fade-up" data-aos-delay="600">Contact</h2>
                         <div class="info">
                             <dl>
-                                <dt>본사 연락처</dt>
-                                <dd>
+                                <dt data-i18n="contact.contact.headquarters" data-aos="fade-up" data-aos-delay="800">본사 연락처</dt>
+                                <dd data-aos="fade-up" data-aos-delay="1000">
                                     <strong>T</strong> 031-717-8816 / <strong>F</strong> 031-718-8817
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>이메일</dt>
+                                <dt data-i18n="contact.contact.email" data-aos="fade-up" data-aos-delay="1200">이메일</dt>
                                 <dd>
-                                    <span><strong>대표이사</strong> 조현철</span>
-                                    <a href="mailto:cho@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">cho@jonsoft.co.kr</a>
+                                    <span data-aos="fade-up" data-aos-delay="1400"><strong data-i18n="contact.contact.ceo.grade">대표이사</strong> <span data-i18n="contact.contact.ceo.name">조현철</span></span>
+                                    <a  data-aos="fade-up" data-aos-delay="1600"href="mailto:cho@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">cho@jonsoft.co.kr</a>
                                 </dd>
                                 <dd>
-                                    <span><strong>경영지원</strong> 김하경</span>
-                                    <a href="mailto:hk.kim@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">hk.kim@jonsoft.co.kr</a>
+                                    <span data-aos="fade-up" data-aos-delay="1800"><strong data-i18n="contact.contact.manager.team">경영지원</strong> <span data-i18n="contact.contact.manager.name">김하경</span></span>
+                                    <a data-aos="fade-up" data-aos-delay="2000" href="mailto:hk.kim@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">hk.kim@jonsoft.co.kr</a>
                                 </dd>
                             </dl>
                         </div>
                     </div>
                     <div class="list-map">
                         <div class="item">
-                            <div id="daumRoughmapContainer1693978036661" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            <div id="daumRoughmapContainer1693978036661" class="root_daum_roughmap root_daum_roughmap_landing" data-aos="fade-up" data-aos-delay="2200"></div>
                             <div class="wrap full">
                                 <ul>
-                                    <li><strong>판교 본사</strong></li>
-                                    <li>경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호</li>
+                                    <li data-aos="fade-up" data-aos-delay="2400"><strong data-i18n="common.company.addressName">판교 본사</strong></li>
+                                    <li data-aos="fade-up" data-aos-delay="2600" data-i18n="common.company.address">경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호</li>
                                 </ul>
                             </div>
                         </div>
@@ -94,34 +132,34 @@
             </div>
             <div class="tab">
                 <ul>
-                    <li><a href="">오시는 길</a></li>
-                    <li class="active"><a href="">채용</a></li>
+                    <li data-aos="fade-up" data-aos-delay="200"><a href="javascript:void(0)" data-i18n="contact.tab.location">오시는 길</a></li>
+                    <li class="active" data-aos="fade-up" data-aos-delay="400"><a href="javascript:void(0)" data-i18n="contact.tab.recruitment">채용</a></li>
                 </ul>
             </div>
             <div class="tab-content">
                 <div class="recruit">
                     <div class="wrap not-padding">
-                        <h2>recruit</h2>
+                        <h2 data-i18n="contact.recruit.title" data-aos="fade-up" data-aos-delay="600">recruit</h2>
                         <div class="info">
                             <dl>
-                                <dt>Developer</dt>
-                                <dd>자바개발 . 웹 개발</dd>
-                                <dd>상시채용</dd>
+                                <dt data-i18n="contact.recruit.developer.title" data-aos="fade-up" data-aos-delay="800">Developer</dt>
+                                <dd data-aos="fade-up" data-aos-delay="1000" data-i18n="contact.recruit.developer.desc">자바개발 . 웹 개발</dd>
+                                <dd data-aos="fade-up" data-aos-delay="1200" data-i18n="contact.recruit.developer.recruitment">상시채용</dd>
                             </dl>
                             <dl>
-                                <dt>UXUI Designer</dt>
-                                <dd>웹 기획 . 웹 디자인</dd>
-                                <dd>상시채용</dd>
+                                <dt data-i18n="contact.recruit.designer.title" data-aos="fade-up" data-aos-delay="1400">UXUI Designer</dt>
+                                <dd data-aos="fade-up" data-aos-delay="1600" data-i18n="contact.recruit.designer.desc">웹 기획 . 웹 디자인</dd>
+                                <dd data-aos="fade-up" data-aos-delay="1800" data-i18n="contact.recruit.designer.recruitment">상시채용</dd>
                             </dl>
                             <dl>
-                                <dt>Project PM</dt>
-                                <dd>프로젝트 관리</dd>
-                                <dd>상시채용</dd>
+                                <dt data-i18n="contact.recruit.pm.title" data-aos="fade-up" data-aos-delay="2000">Project PM</dt>
+                                <dd data-aos="fade-up" data-aos-delay="2200" data-i18n="contact.recruit.pm.desc">프로젝트 관리</dd>
+                                <dd data-aos="fade-up" data-aos-delay="2400" data-i18n="contact.recruit.pm.recruitment">상시채용</dd>
                             </dl>
                             <p>
-                                <strong>채용문의</strong>
-                                <span>김하경 사원</span>
-                                <a href="mailto:hk.kim@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">hk.kim@jonsoft.co.kr</a>
+                                <strong data-i18n="contact.recruit.inquiry" data-aos="fade-up" data-aos-delay="2600">채용문의</strong>
+                                <span data-aos="fade-up" data-aos-delay="2800"><span data-i18n="contact.contact.manager.name">김하경</span> <span data-i18n="contact.contact.manager.grade">사원</span></span>
+                                <a data-aos="fade-up" data-aos-delay="3000" href="mailto:hk.kim@jonsoft.co.kr?subject=입사를 희망합니다.&body=안녕하세요, 지원자 김조앤입니다.%0D%0A%0D%0A지원서와 함께 메일 송부드립니다.">hk.kim@jonsoft.co.kr</a>
                             </p>
                         </div>
                     </div>
@@ -130,41 +168,41 @@
         </div>
         <div class="philosophy">
             <div class="wrap full">
-                <h3>Business<br/>Philosophy</h3>
+                <h3 data-aos="fade-up" data-aos-delay="200" data-i18n="common.philosophy.title">Business<br/>Philosophy</h3>
                 <div class="list-philosophy">
-                    <div class="item">
-                        <img src="./resources/images/philosophy-1.png" alt="">
+                    <div class="item" data-aos="fade-up" data-aos-delay="400">
+                        <img data-aos="fade-up" src="./resources/images/philosophy-1.png" alt="">
                         <div class="content">
-                            <p>Talent Management</p>
+                            <p data-aos="fade-up" data-aos-delay="600" data-i18n="common.philosophy.talent.title">Talent Management</p>
                             <dl>
-                                <dt>인재상</dt>
-                                <dd>Customer Business Understanding</dd>
-                                <dd>Challenging & Passion</dd>
-                                <dd>Team working & well communication</dd>
+                                <dt data-aos="fade-up" data-aos-delay="800" data-i18n="common.philosophy.talent.subtitle">인재상</dt>
+                                <dd data-aos="fade-up" data-aos-delay="1000" data-i18n="common.philosophy.talent.content.0">Customer Business Understanding</dd>
+                                <dd data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.talent.content.1">Challenging & Passion</dd>
+                                <dd data-aos="fade-up" data-aos-delay="1400" data-i18n="common.philosophy.talent.content.2">Team working & well communication</dd>
                             </dl>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./resources/images/philosophy-2.png" alt="">
+                    <div class="item" data-aos="fade-up" data-aos-delay="1000">
+                        <img data-aos="fade-up" src="./resources/images/philosophy-2.png" alt="">
                         <div class="content">
-                            <p>Our Value Proposition</p>
+                            <p data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.value.title">Our Value Proposition</p>
                             <dl>
-                                <dt>가치제안</dt>
-                                <dd>Reasonable Price</dd>
-                                <dd>Rapid Delivery</dd>
-                                <dd>Right Way</dd>
+                                <dt data-aos="fade-up" data-aos-delay="1400" data-i18n="common.philosophy.value.subtitle">가치제안</dt>
+                                <dd data-aos="fade-up" data-aos-delay="1600" data-i18n="common.philosophy.value.content.0">Reasonable Price</dd>
+                                <dd data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.value.content.1">Rapid Delivery</dd>
+                                <dd data-aos="fade-up" data-aos-delay="2000" data-i18n="common.philosophy.value.content.2">Right Way</dd>
                             </dl>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./resources/images/philosophy-3.png" alt="">
+                    <div class="item" data-aos="fade-up" data-aos-delay="1600">
+                        <img data-aos="fade-up" src="./resources/images/philosophy-3.png" alt="">
                         <div class="content">
-                            <p>Company Culture</p>
+                            <p data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.culture.title">Company Culture</p>
                             <dl>
-                                <dt>기업문화</dt>
-                                <dd>Respect each other (다양성 존중)</dd>
-                                <dd>Fellowship (동료애)</dd>
-                                <dd>Brainstorming (자유로운 소통과 아이디어 창출)</dd>
+                                <dt data-aos="fade-up" data-aos-delay="2000" data-i18n="common.philosophy.culture.subtitle">기업문화</dt>
+                                <dd data-aos="fade-up" data-aos-delay="2200" data-i18n="common.philosophy.culture.content.0">Respect each other (다양성 존중)</dd>
+                                <dd data-aos="fade-up" data-aos-delay="2400" data-i18n="common.philosophy.culture.content.1">Fellowship (동료애)</dd>
+                                <dd data-aos="fade-up" data-aos-delay="2600" data-i18n="common.philosophy.culture.content.2">Brainstorming (자유로운 소통과 아이디어 창출)</dd>
                             </dl>
                         </div>
                     </div>
@@ -175,7 +213,9 @@
     <footer>
         <div class="wrap not-padding">
             <div>
-                <a href="./" class="logo-jon"><img src="./resources/logos/logo.svg" alt="조앤소프트(주)의 로고입니다."></a>
+                <a href="./" class="logo-jon">
+                    <img data-i18n-src="common.company.logo.src" data-i18n-alt="common.company.logo.alt" src="./resources/logos/logo.svg" alt="조앤소프트(주)의 로고입니다.">
+                </a>
             </div>
             <div class="wrap-text">
                 <ul class="gnb">
@@ -186,21 +226,26 @@
                 </ul>
                 <address data-i18n="common.company.address">(본사)경기도 성남시 분당구 정자일로 248, 파크뷰타워 602호, 13554</address>
                 <p data-i18n="common.company.info">회사명:조앤소프트(주) | 대표자 : 조현철 | 사업자번호 : 265-87-00272</p>
-                <p class="copyright" data-i18n="common.company.copy">© 2025 JO&SOFT. All Rights Reserved.</p>
+                <p class="copyright" data-i18n="common.copyright">© 2025 JO&SOFT. All Rights Reserved.</p>
             </div>
             <div>
                 <a href="https://www.innobiz.net/" class="logo-inobiz"><img data-i18n-src="common.inobiz.src" data-i18n-alt="common.inobiz.alt" src="./resources/logos/inobiz.png" alt="혁신형 중소기업인 이노비즈 등급을 취득하여 명시한 이노비즈 로고입니다."></a>
             </div>
         </div>
     </footer>
-
-
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-<script>
-    new daum.roughmap.Lander({
-        "timestamp" : "1693978036661",
-        "key" : "2g4fj"
-    }).render();
-</script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script>
+        new daum.roughmap.Lander({
+            "timestamp" : "1693978036661",
+            "key" : "2g4fj"
+        }).render();
+    </script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
 </body>
 </html>

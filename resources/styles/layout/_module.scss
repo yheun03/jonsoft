@@ -8,11 +8,11 @@
         padding-block: unset;
     }
     .title{
-        font: 600 30px/150% $font;
+        @include font-style($fw-6, 30px, 150%);
         color: #000000;
         margin-top: 20px;
         &-sub{
-            font: 600 18px/normal $font;
+            @include font-style($fw-6, 18px);
             span {
                 background: linear-gradient(198deg, #FF9056, #FF5C42);
                 background-clip: text;
@@ -23,43 +23,63 @@
         }
     }
     .dscpt{
-        font: 400 24px/150% $font;
+        @include font-style($fw-4, 24px, 150%);
         color: #000000;
         margin-top: 30px;
     }
 
     .banner &{
+        width: 100%;
         margin: unset;
-        padding-top: 100px;
+        padding-block: 100px 160px;
         .title{
             margin-top: 8px;
             font-size: 32px;
-            line-height: 40px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
         }
         .dscpt{
             margin-top: 50px;
-            font: 600 18px/normal $font;
+            @include font-style($fw-6, 18px);
             li{
                 position: relative;
                 padding-left: 16px;
                 &::before{
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
+                    @include pseudo-element("");
+                    @include absolute-position(top, 50%, left, 0);
                     transform: translateY(-50%);
                     width: 5px;
                     height: 5px;
                     background-color: #ffffff;
                 }
                 & + li{
-                    margin-top: 15px;
+                    margin-top: 16px;
                 }
             }
         }
         .title,
         .dscpt{
             color: #ffffff;
+        }
+    }
+
+    @include tablet {
+        &{
+            margin-block: 60px 40px;
+            .banner &{
+                padding-block: 20px 40px;
+                .title{
+                    font-size: 24px;
+                }
+                .dscpt{
+                    font-size: 16px;
+                }
+            }
+        }
+        .title{
+            font-size: 24px;
+        }
+        .dscpt{
+            font-size: 16px;
         }
     }
 }

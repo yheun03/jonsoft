@@ -4,8 +4,10 @@
 .btn{
     background-color: unset;
     border: unset;
+    padding: unset;
     cursor: pointer;
-    font: 600 16px/normal $font;
+    @include font-style($weight: 600, $size: 16px);
+    word-break: keep-all;
 
     &.type{
         &-ask{
@@ -15,7 +17,7 @@
             gap: 8px;
             padding: unset;
             &::after{
-                content: "";
+                @include pseudo-element("");
                 display: block;
                 width: 40px;
                 height: 40px;
@@ -27,15 +29,56 @@
             background-color: rgba(255, 255, 255, 0.1);
             border: 2px solid #ffffff;
             padding: 18px 36px;
-            font: 600 18px/22px $font;
-            color: #ffffff;
+            @include font-style($weight: 600, $size: 18px, $line-height: 22px, $color: #ffffff);
             backdrop-filter: blur(5px);
         }
         &-round{
+            // 모달 닫기버튼
             background-color: #000000;
             border-radius: 60px;
             padding: 10px 26px;
             color: #ffffff;
+        }
+    }
+
+    &.open{
+        &-menu{
+            @include bg-image($url + 'icons/26/ic-hamburger.svg', right 8px center, 26px);
+            @include font-style($fw-6, $fs-14, $color: #000000);
+            padding: 4px 45px 4px 0;
+        }
+    }
+
+    @include tablet {
+        &.type{
+            &-opacity{
+                @include font-style($size: 16px, $line-height: 150%);
+                padding: 16px 28px;
+            }
+            &-round{
+                padding: unset;
+                width: 40px;
+                height: 40px;
+                .modal &{
+                    order: -1;
+                    text-indent: -9999px;
+                    background-color: unset;
+                    @include flex(row, center, center);
+                    margin-left: -10px;
+                    &::after{
+                        @include pseudo-element("");
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        border: {
+                            width: 0 0 4px 4px;
+                            style: solid;
+                            color: #555555;
+                        }
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
     }
 }

@@ -1,8 +1,17 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
+.modal-open{
+    overflow: hidden;
+}
+
+// slick 슬라이더에서 드래그 중일 때 모달 트리거 비활성화
+.slick-dragging {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
 .modal{
-    // display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -11,11 +20,17 @@
     left: 0; 
     background-color: rgba(0, 0, 0, .4);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+
+    &.active{
+        display: block;
+    }
 
     &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 1080px;
         height: 800px;
         max-height: 90dvh;
@@ -31,19 +46,20 @@
         border-right: 1px solid #efefef;
         .heading{
             min-height: 208px;
+            padding-bottom: 20px;
         }
         .title{
-            font: 600 36px/normal $font;
+            @include font-style($weight: 600, $size: 36px);
             color: #000000;
             &-sub{
-                font: 500 20px/normal $font;
+                @include font-style($weight: 500, $size: 20px);
                 color: #555555;
                 margin-top: 10px;
             }
         }
         ul{
             li{
-                font: 400 16px/normal $font;
+                @include font-style($size: 16px, $color: #a0a0a0);
                 color: #a0a0a0;
                 margin-bottom: 10px;
                 &::before{
@@ -67,17 +83,16 @@
             margin-bottom: 30px;
             strong{
                 display: block;
-                font: 600 20px/150% $font;
+                @include font-style($weight: 600, $size: 20px, $line-height: 150%, $color: #000000);
                 letter-spacing: -0.02em;
-                color: #000000;
                 margin-bottom: 10px;
-                span{
+                mark{
                     color: #FF7931;
+                    background: unset;
                 }
             }
             p{
-                font: 400 16px/150% $font;
-                color: #000000;
+                @include font-style($size: 16px, $line-height: 150%, $color: #000000);
             }
         }
 
@@ -87,13 +102,14 @@
             display: flex;
             gap: 20px;
             span{
-                font: 600 20px/normal $font;
-                color: #000000;
+                @include font-style($weight: 600, $size: 20px, $color: #000000);
             }
             p{
-                font: 400 18px/150% $font;
-                color: #7f7f7f;
+                @include font-style($size: 18px, $line-height: 150%, $color: #7f7f7f);
                 flex: 1;
+            }
+            strong{
+                font-weight: 600;
             }
         }
 
@@ -102,6 +118,67 @@
             img{
                 width: 100%;
                 height: auto;
+            }
+        }
+    }
+
+    @include tablet {
+        &-content{
+            width: 100%;
+            height: 100dvh;
+            max-height: unset;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* 모달 컨테이너 자체는 오버플로우 숨김 */
+        }
+        &-header{
+            flex: none;
+            padding: 20px 20px 10px;
+            border-bottom: 1px solid #D6DCE5;
+            box-shadow: 0 0 0 8px #f1f2f5;
+            .heading{
+                min-height: unset;
+                margin-top: 20px;
+            }
+            .title{
+                font-size: 24px;
+                &-sub{
+                    font-size: 18px;
+                }
+            }
+            ul{
+                margin-top: 20px;
+                li{
+                    font-size: 14px;
+                }
+            }
+        }
+        &-body{
+            flex: 1 1 auto;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 20px;
+            margin-top: 8px;
+            .abstract{
+                margin-bottom: 20px;
+            }
+            .title{
+                flex-direction: column;
+                span{
+                    font-size: 18px;
+                    letter-spacing: -0.02em;
+                }
+                p{
+                    font-size: 16px;
+                    letter-spacing: -0.02em;
+                }
+            }
+            .content{
+                margin-top: 40px;
+                img{
+                    width: calc(100% + 40px);
+                    margin-inline: -20px;
+                }
             }
         }
     }
