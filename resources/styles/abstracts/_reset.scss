@@ -54,3 +54,8 @@ table {
 a{
     text-decoration: unset;
 }
+
+// 안드로이드 배경색 다크모드 대응
+:root {
+	color-scheme: light only;
+}
