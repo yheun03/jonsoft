@@ -43,23 +43,18 @@
         }
         h1 {
             display: inline-flex;
-            align-items: center;          
+            flex-direction: column;
+            align-items: center;
             gap: 12px;
-            font-size: clamp(32px, 5vw, 44px);
             letter-spacing: 0.4px;
             margin: 0;
-            line-height: 1.2;              
         }
         h1 svg {
-            margin-top: 8px;
-            height: 30px;                 
             filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
-            display: block;               
         }
         h1 span {
-            display: block;
             font-weight: 700;
-            line-height: 1.2;               
+            font-size: 60px;
             background: linear-gradient(90deg, var(--accent), var(--accent-2));
             -webkit-background-clip: text;
             background-clip: text;
@@ -151,7 +146,7 @@
         </h1>
     </header>
     <main>
-        <a href="https://devops.jonsoft.co.kr/portainer"><span>portainer [ 배포 ]</span></a>
+        <a href="https://devops.jonsoft.co.kr/portainer"><span>Portainer [ 배포 ]</span></a>
         <a href="https://devops.jonsoft.co.kr/scouter"><span>Scouter [ 모니터링 ]</span></a>
     </main>
 </body>
