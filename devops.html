@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JO&SOFT DevOps</title>
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: #121a33;
+            --accent: #5ddcff;
+            --accent-2: #6a5bff;
+            --text: #e6e9f0;
+            --muted: #aab3c5;
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(1200px 600px at 20% -10%, rgba(106, 91, 255, 0.35), transparent 60%),
+                radial-gradient(1000px 500px at 90% 0%, rgba(93, 220, 255, 0.25), transparent 55%),
+                var(--bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 72px 24px 60px;
+            gap: 36px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: clamp(32px, 5vw, 44px);
+            letter-spacing: 0.4px;
+            margin: 0;
+        }
+
+        h1 img {
+            height: 30px;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+            margin-bottom: 5px;
+        }
+
+        h1 span {
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        main {
+            margin-block: auto;
+            width: min(1100px, 100%);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(260px, 1fr));
+            gap: 28px;
+            padding: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main a {
+            position: relative;
+            min-height: 240px;
+            padding: 28px 26px;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            background: linear-gradient(135deg, rgba(93, 220, 255, 0.08), rgba(106, 91, 255, 0.08));
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        main a span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        main a::after {
+            content: attr(href);
+            color: var(--muted);
+            font-size: 16px;
+            word-break: break-all;
+        }
+
+        main a:hover,
+        main a:focus {
+            transform: translateY(-3px);
+            border-color: rgba(93, 220, 255, 0.5);
+            background: linear-gradient(135deg, rgba(93, 220, 255, 0.16), rgba(106, 91, 255, 0.16));
+            outline: none;
+        }
+
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 56px 16px 40px;
+            }
+
+            main a {
+                min-height: 210px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="./resources/logos/word-white.svg" alt="JO&SOFT 로고 입니다."><span>DevOps</span></h1>
+    </header>
+    <main>
+        <a href="https://devops.jonsoft.co.kr/portainer"><span>portainer [ 배포 ]</span></a>
+        <a href="https://devops.jonsoft.co.kr/scouter"><span>Scouter [ 모니터링 ]</span></a>
+    </main>
+</body>
+</html>
