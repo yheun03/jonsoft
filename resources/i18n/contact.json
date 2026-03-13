@@ -27,18 +27,18 @@
             "ja": "メール",
             "vi": "Email"
         },
-        "ceo": {
+        "sales": {
             "grade": {
-                "ko": "대표이사",
-                "en": "CEO",
-                "ja": "代表取締役",
-                "vi": "Giám đốc điều hành"
+                "ko": "영업대표",
+                "en": "Sales Representative",
+                "ja": "販売担当",
+                "vi": "Nhân viên bán hàng"
             },
             "name": {
-                "ko": "조현철",
-                "en": "Hyuncheol Cho",
-                "ja": "Cho Hyuncheol",
-                "vi": "Cho Hyuncheol"
+                "ko": "정지성",
+                "en": "Jisung Jung",
+                "ja": "Jisung Jung",
+                "vi": "Jisung Jung"
             }
         },
         "manager": {
