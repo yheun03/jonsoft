@@ -43,10 +43,10 @@
         },
         "manager": {
             "grade": {
-                "ko": "사원",
-                "en": "Staff",
-                "ja": "社員",
-                "vi": "Nhân viên"
+                "ko": "주임",
+                "en": "Assistant Manager",
+                "ja": "アシスタントマネージャー",
+                "vi": "Trợ lý quản lý"
             },
             "name": {
                 "ko": "김하경", 
