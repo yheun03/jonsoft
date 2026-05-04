@@ -14,6 +14,16 @@ function loadScriptOnce(src: string, loadedHint: string): Promise<void> {
   })
 }
 
+function loadStyleOnce(href: string): void {
+  if ([...document.querySelectorAll('link[rel="stylesheet"]')].some((l) => l.getAttribute('href') === href)) {
+    return
+  }
+  const link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.href = href
+  document.head.appendChild(link)
+}
+
 function destroySlick() {
   const w = window as Window & { jQuery?: (sel: Element) => { hasClass: (c: string) => boolean; slick?: (cmd: string) => void } }
   const $ = w.jQuery
@@ -88,6 +98,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
 
     try {
+      loadStyleOnce('/assets/library/slick/slick.min.css')
       await loadScriptOnce('/assets/scripts/jquery-3.7.1.min.js', 'jquery-3.7.1')
       await loadScriptOnce('/assets/library/slick/slick.min.js', 'slick.min')
     } catch (err) {

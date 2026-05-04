@@ -47,7 +47,7 @@
                 "ja": "多品種少量生産製造企業の厳しい生産計画立案業務を取引先納品日、設備の生産能力、生産工程の流れに従って自動生産計画を立て、現場POPシステムを通じてペーパーレス環境の生産指示を実行します。",
                 "vi": "Chúng tôi thiết lập kế hoạch sản xuất tự động dựa trên ngày giao hàng của khách hàng, công suất sản xuất thiết bị và luồng quy trình sản xuất cho các nhiệm vụ lập kế hoạch sản xuất đòi hỏi của các công ty sản xuất đa chủng loại sản lượng nhỏ, và thực hiện hướng dẫn sản xuất trong môi trường không giấy thông qua hệ thống POP tại chỗ."
             },
-            "thumbnail": "./assets/images/solution/aps.png",
+            "thumbnail": "./assets/images/solution/aps.webp",
             "alt": {
                 "ko": "APS 솔루션의 썸네일 이미지입니다.",
                 "en": "APS Solution thumbnail image.",
@@ -76,10 +76,10 @@
                     }
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/aps.png",
-                    "en": "./assets/images/modal/solution/en/aps.png",
-                    "ja": "./assets/images/modal/solution/en/aps.png",
-                    "vi": "./assets/images/modal/solution/en/aps.png"
+                    "ko": "./assets/images/modal/solution/aps.webp",
+                    "en": "./assets/images/modal/solution/en/aps.webp",
+                    "ja": "./assets/images/modal/solution/en/aps.webp",
+                    "vi": "./assets/images/modal/solution/en/aps.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 APS 솔루션의 모달 이미지입니다.",
@@ -114,7 +114,7 @@
                 "ja": "OMSはファックス、メールなどの既存アナログ注文書を受信し、毎日繰り返し入力する業務をOCRとAI技術を活用して迅速に処理し、人的リソースの業務を革新的に削減します。",
                 "vi": "OMS nhận các đơn hàng tương tự hiện có như fax và email, và xử lý nhanh chóng công việc nhập liệu lặp lại hàng ngày bằng công nghệ OCR và AI, giảm thiểu một cách sáng tạo công việc của nguồn nhân lực."
             },
-            "thumbnail": "./assets/images/solution/oms.png",
+            "thumbnail": "./assets/images/solution/oms.webp",
             "alt": {
                 "ko": "OMS 솔루션의 썸네일 이미지입니다.",
                 "en": "OMS Solution thumbnail image.",
@@ -129,10 +129,10 @@
                     "vi": "JO&SOFT OMS tự động nhận các đơn hàng được giao theo định dạng tương tự như fax và email, và nhanh chóng số hóa dữ liệu có cấu trúc/không có cấu trúc bằng công nghệ OCR (Nhận dạng ký tự quang học) và AI. Chúng tôi tối đa hóa hiệu quả công việc bằng cách tự động hóa công việc nhập liệu thủ công lặp lại hàng ngày, và giúp nguồn nhân lực tập trung vào công việc có giá trị gia tăng cao hơn."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/oms.png",
-                    "en": "./assets/images/modal/solution/en/oms.png",
-                    "ja": "./assets/images/modal/solution/en/oms.png",
-                    "vi": "./assets/images/modal/solution/en/oms.png"
+                    "ko": "./assets/images/modal/solution/oms.webp",
+                    "en": "./assets/images/modal/solution/en/oms.webp",
+                    "ja": "./assets/images/modal/solution/en/oms.webp",
+                    "vi": "./assets/images/modal/solution/en/oms.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 OMS 솔루션의 모달 이미지입니다.",
@@ -167,7 +167,7 @@
                 "ja": "工場のエネルギー測定、モニタリング、分析、制御などを通じてエネルギー消費を最適化し、AI需要予測モデルを通じて効率的にエネルギーを管理するシステムです。特に、定格容量対比エネルギー消費量が多い設備を追跡して設備の予知保全業務を迅速に処理するよう支援します。",
                 "vi": "Hệ thống tối ưu hóa tiêu thụ năng lượng thông qua đo lường, giám sát, phân tích và kiểm soát năng lượng của nhà máy, và quản lý năng lượng hiệu quả thông qua các mô hình dự báo nhu cầu AI. Đặc biệt, nó hỗ trợ xử lý nhanh chóng các nhiệm vụ bảo trì dự đoán bằng cách theo dõi thiết bị có mức tiêu thụ năng lượng cao so với công suất định mức."
             },
-            "thumbnail": "./assets/images/solution/fems.png",
+            "thumbnail": "./assets/images/solution/fems.webp",
             "alt": {
                 "ko": "FEMS 솔루션의 썸네일 이미지입니다.",
                 "en": "FEMS Solution thumbnail image.",
@@ -182,10 +182,10 @@
                     "vi": "<strong><mark>AI Factory Energy Management System</mark></strong>Hệ thống Quản lý Năng lượng Nhà máy (FEMS) của JO&SOFT thực hiện quản lý năng lượng thông minh bằng cách giám sát việc sử dụng năng lượng nhà máy theo thời gian thực, phân tích và tự động kiểm soát để giảm chi phí năng lượng và tăng hiệu quả thiết bị, và thậm chí có khả năng ứng phó với ESG và trung hòa carbon."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/fems.png",
-                    "en": "./assets/images/modal/solution/en/fems.png",
-                    "ja": "./assets/images/modal/solution/en/fems.png",
-                    "vi": "./assets/images/modal/solution/en/fems.png"
+                    "ko": "./assets/images/modal/solution/fems.webp",
+                    "en": "./assets/images/modal/solution/en/fems.webp",
+                    "ja": "./assets/images/modal/solution/en/fems.webp",
+                    "vi": "./assets/images/modal/solution/en/fems.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 FEMS 솔루션의 모달 이미지입니다.",
@@ -220,7 +220,7 @@
                 "ja": "製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
                 "vi": "Chúng tôi xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời."
             },
-            "thumbnail": "./assets/images/solution/scm.png",
+            "thumbnail": "./assets/images/solution/scm.webp",
             "alt": {
                 "ko": "SCM 솔루션의 썸네일 이미지입니다.",
                 "en": "SCM Solution thumbnail image.",
@@ -235,10 +235,10 @@
                     "vi": "JO&SOFT SCM xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/scm.png",
-                    "en": "./assets/images/modal/solution/en/scm.png",
-                    "ja": "./assets/images/modal/solution/en/scm.png",
-                    "vi": "./assets/images/modal/solution/en/scm.png"
+                    "ko": "./assets/images/modal/solution/scm.webp",
+                    "en": "./assets/images/modal/solution/en/scm.webp",
+                    "ja": "./assets/images/modal/solution/en/scm.webp",
+                    "vi": "./assets/images/modal/solution/en/scm.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 SCM 솔루션의 모달 이미지입니다.",
@@ -273,7 +273,7 @@
                 "ja": "営業組織の目標と実績管理、新規営業機会管理、営業活動管理、見積/提案管理、契約管理、売上管理を簡単に処理し、モバイルAPPと連携して営業活動を簡単に支援します。特に営業報告書をシステムで自動生成します。",
                 "vi": "Chúng tôi dễ dàng xử lý quản lý mục tiêu và hiệu suất tổ chức bán hàng, quản lý cơ hội bán hàng mới, quản lý hoạt động bán hàng, quản lý báo giá/đề xuất, quản lý hợp đồng và quản lý doanh thu, và hỗ trợ hoạt động bán hàng dễ dàng bằng cách liên kết với ứng dụng di động. Đặc biệt, báo cáo bán hàng được tự động tạo trong hệ thống."
             },
-            "thumbnail": "./assets/images/solution/crm.png",
+            "thumbnail": "./assets/images/solution/crm.webp",
             "alt": {
                 "ko": "CRM 솔루션의 썸네일 이미지입니다.",
                 "en": "CRM Solution thumbnail image.",
@@ -302,10 +302,10 @@
                     }
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/crm.png",
-                    "en": "./assets/images/modal/solution/en/crm.png",
-                    "ja": "./assets/images/modal/solution/en/crm.png",
-                    "vi": "./assets/images/modal/solution/en/crm.png"
+                    "ko": "./assets/images/modal/solution/crm.webp",
+                    "en": "./assets/images/modal/solution/en/crm.webp",
+                    "ja": "./assets/images/modal/solution/en/crm.webp",
+                    "vi": "./assets/images/modal/solution/en/crm.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 CRM 솔루션의 모달 이미지입니다.",
@@ -340,7 +340,7 @@
                 "ja": "受注から資材発注、入庫、出庫、生産指示、生産工程管理、品質管理業務を実行し、手作業ベースの生産現場業務をキオスク、バーコード/QRコード、タブレット機器を活用してペーパーレス環境でスマートな現場管理が可能です。",
                 "vi": "Chúng tôi thực hiện quản lý đơn hàng, đặt hàng vật liệu, nhận hàng, vận chuyển, hướng dẫn sản xuất, quản lý quy trình sản xuất và nhiệm vụ quản lý chất lượng, và cho phép quản lý hiện trường thông minh trong môi trường không giấy bằng cách sử dụng kiosk, mã vạch/mã QR và thiết bị máy tính bảng cho công việc tại địa điểm sản xuất dựa trên thủ công."
             },
-            "thumbnail": "./assets/images/solution/mes.png",
+            "thumbnail": "./assets/images/solution/mes.webp",
             "alt": {
                 "ko": "MES 솔루션의 썸네일 이미지입니다.",
                 "en": "MES Solution thumbnail image.",
@@ -355,10 +355,10 @@
                     "vi": "<strong>Bước đầu tiên để một nhà máy thông minh: <mark>All-in-One</mark> hệ thống, dựa trên công nghệ đám mây!</strong>JO&SOFT MES cung cấp các chức năng cho doanh nghiệp sản xuất để dễ dàng sử dụng quản lý đơn hàng, lập kế hoạch sản xuất, quản lý vật liệu, quản lý quy trình sản xuất, vận chuyển sản phẩm và quản lý doanh thu 24/7 ở bất kỳ đâu. Đặc biệt, chúng tôi hỗ trợ công việc vận hành thông qua các dịch vụ đám mây như quản lý máy chủ và quản lý dữ liệu thay mặt cho các công ty thiếu nhân sự IT."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/mes.png",
-                    "en": "./assets/images/modal/solution/en/mes.png",
-                    "ja": "./assets/images/modal/solution/en/mes.png",
-                    "vi": "./assets/images/modal/solution/en/mes.png"
+                    "ko": "./assets/images/modal/solution/mes.webp",
+                    "en": "./assets/images/modal/solution/en/mes.webp",
+                    "ja": "./assets/images/modal/solution/en/mes.webp",
+                    "vi": "./assets/images/modal/solution/en/mes.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 MES 솔루션의 모달 이미지입니다.",
@@ -393,7 +393,7 @@
                 "ja": "無人運搬ロボットを活用して生産工程と物流倉庫間の製品移動、生産工程間の半製品移動業務をMES/WMSシステムと連携してロボットの作業計画を立て、RCSを通じてBotを制御します。",
                 "vi": "Sử dụng robot vận chuyển không người lái, chúng tôi thiết lập kế hoạch làm việc của robot bằng cách liên kết với hệ thống MES/WMS cho việc di chuyển sản phẩm giữa các quy trình sản xuất và kho logistics, và di chuyển bán thành phẩm giữa các quy trình sản xuất, và điều khiển Bot thông qua RCS."
             },
-            "thumbnail": "./assets/images/solution/wcs.png",
+            "thumbnail": "./assets/images/solution/wcs.webp",
             "alt": {
                 "ko": "WCS 솔루션의 썸네일 이미지입니다.",
                 "en": "WCS Solution thumbnail image.",
@@ -422,10 +422,10 @@
                     }
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/wcs.png",
-                    "en": "./assets/images/modal/solution/en/wcs.png",
-                    "ja": "./assets/images/modal/solution/en/wcs.png",
-                    "vi": "./assets/images/modal/solution/en/wcs.png"
+                    "ko": "./assets/images/modal/solution/wcs.webp",
+                    "en": "./assets/images/modal/solution/en/wcs.webp",
+                    "ja": "./assets/images/modal/solution/en/wcs.webp",
+                    "vi": "./assets/images/modal/solution/en/wcs.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 WCS 솔루션의 모달 이미지입니다.",
@@ -460,7 +460,7 @@
                 "ja": "ERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
                 "vi": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
             },
-            "thumbnail": "./assets/images/solution/tms.png",
+            "thumbnail": "./assets/images/solution/tms.webp",
             "alt": {
                 "ko": "TMS 솔루션의 썸네일 이미지입니다.",
                 "en": "TMS Solution thumbnail image.",
@@ -475,10 +475,10 @@
                     "vi": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/tms.png",
-                    "en": "./assets/images/modal/solution/en/tms.png",
-                    "ja": "./assets/images/modal/solution/en/tms.png",
-                    "vi": "./assets/images/modal/solution/en/tms.png"
+                    "ko": "./assets/images/modal/solution/tms.webp",
+                    "en": "./assets/images/modal/solution/en/tms.webp",
+                    "ja": "./assets/images/modal/solution/en/tms.webp",
+                    "vi": "./assets/images/modal/solution/en/tms.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 TMS 솔루션의 모달 이미지입니다.",
@@ -513,7 +513,7 @@
                 "ja": "現場の様々なデータに基づいて予測と自動化を実現して運営効率を高め、コアシステムと柔軟に連携し、継続的な改善を通じて拡張可能なAI環境を提供します。",
                 "vi": "Dựa trên dữ liệu hiện trường đa dạng, chúng tôi thực hiện dự đoán và tự động hóa để cải thiện hiệu quả vận hành, liên kết linh hoạt với các hệ thống cốt lõi, và cung cấp môi trường AI có thể mở rộng thông qua cải tiến liên tục."
             },
-            "thumbnail": "./assets/images/solution/ai.png",
+            "thumbnail": "./assets/images/solution/ai.webp",
             "alt": {
                 "ko": "AI 솔루션의 썸네일 이미지입니다.",
                 "en": "AI Solution thumbnail image.",
@@ -528,10 +528,10 @@
                     "vi": "Giải pháp AI của JO&SOFT thực hiện dự đoán và tự động hóa dựa trên dữ liệu hiện trường đa dạng, và cung cấp môi trường ổn định và có thể mở rộng liên kết linh hoạt với các hệ thống cốt lõi để cải thiện hiệu quả vận hành."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/ai.png",
-                    "en": "./assets/images/modal/solution/en/ai.png",
-                    "ja": "./assets/images/modal/solution/en/ai.png",
-                    "vi": "./assets/images/modal/solution/en/ai.png"
+                    "ko": "./assets/images/modal/solution/ai.webp",
+                    "en": "./assets/images/modal/solution/en/ai.webp",
+                    "ja": "./assets/images/modal/solution/en/ai.webp",
+                    "vi": "./assets/images/modal/solution/en/ai.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 AI 솔루션의 모달 이미지입니다.",
@@ -566,7 +566,7 @@
                 "ja": "RFID、QR、バーコードを活用して原材料および製品のライフサイクルをスマートに管理します。先入れ先出し（FIFO）方式で資材入庫と生産払出処理を支援し、ロケーションベースの商品入庫、出庫を通じて倉庫管理業務効率を向上させます。",
                 "vi": "Chúng tôi quản lý thông minh vòng đời của nguyên liệu và sản phẩm bằng RFID, QR và Barcode. Chúng tôi hỗ trợ xử lý nhận vật liệu và rút sản xuất theo phương pháp FIFO (First In First Out) và cải thiện hiệu quả công việc quản lý kho thông qua nhận và vận chuyển sản phẩm dựa trên vị trí."
             },
-            "thumbnail": "./assets/images/solution/wms.png",
+            "thumbnail": "./assets/images/solution/wms.webp",
             "alt": {
                 "ko": "WMS 솔루션의 썸네일 이미지입니다.",
                 "en": "WMS Solution thumbnail image.",
@@ -581,10 +581,10 @@
                     "vi": "JO&SOFT WMS là hệ thống quản lý kỹ thuật số toàn bộ quy trình nguyên liệu và sản phẩm hoàn thành dựa trên RFID, QR và mã vạch kết nối với hệ thống RCS/ERP. Chúng tôi có thể tối đa hóa hiệu quả logistics thông qua tự động hóa nhận và vận chuyển vật liệu bao gồm FIFO (First In First Out) sử dụng RFID/QR/mã vạch, và hoạt động kho dựa trên vị trí."
                 },
                 "src": {
-                    "ko": "./assets/images/modal/solution/wms.png",
-                    "en": "./assets/images/modal/solution/en/wms.png",
-                    "ja": "./assets/images/modal/solution/en/wms.png",
-                    "vi": "./assets/images/modal/solution/en/wms.png"
+                    "ko": "./assets/images/modal/solution/wms.webp",
+                    "en": "./assets/images/modal/solution/en/wms.webp",
+                    "ja": "./assets/images/modal/solution/en/wms.webp",
+                    "vi": "./assets/images/modal/solution/en/wms.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 솔루션인 WMS 솔루션의 모달 이미지입니다.",
@@ -629,10 +629,10 @@
                     "vi": "Bây giờ, công việc cũng<br/>thông minh"
                 },
                 "src": {
-                    "ko": "./assets/images/modal/success/tailim.png",
-                    "en": "./assets/images/modal/success/en/tailim.png",
-                    "ja": "./assets/images/modal/success/en/tailim.png",
-                    "vi": "./assets/images/modal/success/en/tailim.png"
+                    "ko": "./assets/images/modal/success/tailim.webp",
+                    "en": "./assets/images/modal/success/en/tailim.webp",
+                    "ja": "./assets/images/modal/success/en/tailim.webp",
+                    "vi": "./assets/images/modal/success/en/tailim.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 성공사례 중 하나인 태림포장 태리미 모달 이미지입니다",
@@ -663,10 +663,10 @@
                     "vi": "Quản lý kho và<br/>đặt hàng nhanh hơn"
                 },
                 "src": {
-                    "ko": "./assets/images/modal/success/kleannara.png",
-                    "en": "./assets/images/modal/success/en/kleannara.png",
-                    "ja": "./assets/images/modal/success/en/kleannara.png",
-                    "vi": "./assets/images/modal/success/en/kleannara.png"
+                    "ko": "./assets/images/modal/success/kleannara.webp",
+                    "en": "./assets/images/modal/success/en/kleannara.webp",
+                    "ja": "./assets/images/modal/success/en/kleannara.webp",
+                    "vi": "./assets/images/modal/success/en/kleannara.webp"
                 },
                 "alt": {
                     "ko": "조앤소프트의 성공사례 중 하나인 깨끗한 나라 KN-OMS 모달 이미지입니다.",

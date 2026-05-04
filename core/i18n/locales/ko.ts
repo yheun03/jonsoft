@@ -368,7 +368,7 @@ export default {
         "subtitle": "Advanced Planning and Scheduling",
         "badge": "생산계획시스템",
         "dscpt": "다품종 소량생산 제조기업의 까다로운 생산계획수립 업무를 거래처 납품일, 설비의 생산Capa, 생산공정의 흐름에 따라 자동 생산계획을 수립하고 현장 POP시스템을 통해 Paperless 환경의 생산지시를 수행합니다.",
-        "thumbnail": "./assets/images/solution/aps.png",
+        "thumbnail": "./assets/images/solution/aps.webp",
         "alt": "APS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 APS는 AI및 최적화 기술을 적용한 경험을 바탕으로 구현한 최적화 생산계획 및 스케줄링 솔루션으로 공정간 재공 밸런스를 고려하여 적량 적시 생산을 달성하므로 제조 비용을 크게 절감시키는 솔루션입니다.",
@@ -376,7 +376,7 @@ export default {
             "title": "주요화면",
             "dscpt": "생산계획 수립을 위한 수요 예측, 자원 배분, 작업 일정 관리 기능을 직관적으로 제공,실시간 데이터 기반으로 생산 가능성을 분석하고 최적화된 계획안을 제시하는 것이 특징입니다."
           },
-          "src": "./assets/images/modal/solution/aps.png",
+          "src": "./assets/images/modal/solution/aps.webp",
           "alt": "조앤소프트의 솔루션인 APS 솔루션의 모달 이미지입니다."
         }
       },
@@ -385,11 +385,11 @@ export default {
         "subtitle": "Order Management System",
         "badge": "주문관리시스템",
         "dscpt": "OMS는 Fax, 이메일 등 기존 아날로그 주문서를 수신하여 매일 반복하여 입력하는 업무를 OCR과 AI 기술을 활용하여 신속하게 처리하고 휴먼 리소스의 업무를 혁신적으로 줄입니다.",
-        "thumbnail": "./assets/images/solution/oms.png",
+        "thumbnail": "./assets/images/solution/oms.webp",
         "alt": "OMS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 OMS는 Fax, 이메일 등 아날로그 방식으로 전달되는 주문서를 자동으로 수신하고, OCR(광학 문자 인식)과 AI 기술을 활용해 정형/비정형 데이터를 신속하게 디지털화 합니다. 매일 반복되는 수작업 입력 업무를 자동화하여 업무 효율을 극대화하고, 휴먼 리소스는 보다 고부가 가치 업무에 집중할 수 있게 도와줍니다.",
-          "src": "./assets/images/modal/solution/oms.png",
+          "src": "./assets/images/modal/solution/oms.webp",
           "alt": "조앤소프트의 솔루션인 OMS 솔루션의 모달 이미지입니다."
         }
       },
@@ -398,11 +398,11 @@ export default {
         "subtitle": "Factory Energy Management System",
         "badge": "공장에너지관리시스템",
         "dscpt": "공장의 에너지 측정, 모니터링, 분석, 제어 등을 통해 에너지 소비를 최적화하고, AI 수요 예측 모델을 통해 효율적으로 에너지를 관리하는 시스템입니다. 특히, 정격용량 대비 에너지 소모량이 많은 설비를 추적하여 설비의 예지보전 업무를 신속하게 처리하도록 지원합니다.",
-        "thumbnail": "./assets/images/solution/fems.png",
+        "thumbnail": "./assets/images/solution/fems.webp",
         "alt": "FEMS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "<strong><mark>AI Factory Energy Management System</mark></strong>조앤소프트의 공장에너지관리(FEMS) 시스템은 공장 내 에너지 사용을 실시간으로 모니터링하고, 분석 자동제어함으로써 에너지 비용을 절감하고 설비 효율을 높이며, ESG 및 탄소중립 대응 역량까지 갖춘 스마트한 에너지 경영을 실현합니다.",
-          "src": "./assets/images/modal/solution/fems.png",
+          "src": "./assets/images/modal/solution/fems.webp",
           "alt": "조앤소프트의 솔루션인 FEMS 솔루션의 모달 이미지입니다."
         }
       },
@@ -411,11 +411,11 @@ export default {
         "subtitle": "Supply Chain Management",
         "badge": "공급망관리",
         "dscpt": "제조협력 기업간 상생형 공급망을 구축하여 수주, 발주, 생산진행현황, 출고, 납품정보를 리얼타임으로 제공합니다. 기업간 데이터의 표준화와 정보의 적시 전달을 통해 불필요한 커뮤니케이션을 줄이고 Total Lead Time을 줄입니다.",
-        "thumbnail": "./assets/images/solution/scm.png",
+        "thumbnail": "./assets/images/solution/scm.webp",
         "alt": "SCM 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 SCM은 제조협력 기업간 상생형 공급망을 구축하여 수주, 발주, 생산진행현황, 출고, 납품정보를 리얼타임으로 제공합니다. 기업간 데이터의 표준화와 정보의 적시 전달을 통해 불필요한 커뮤니케이션을 줄이고 Total Lead Time을 줄입니다.",
-          "src": "./assets/images/modal/solution/scm.png",
+          "src": "./assets/images/modal/solution/scm.webp",
           "alt": "조앤소프트의 솔루션인 SCM 솔루션의 모달 이미지입니다."
         }
       },
@@ -424,7 +424,7 @@ export default {
         "subtitle": "Customer Relationship Management",
         "badge": "고객관계관리",
         "dscpt": "영업조직의 목표와 실적관리, 신규영업기회 관리, 영업활동관리, 견적/제안 관리, 계약관리, 매출관리를 손쉽게 처리하고 모바일 APP과 연동하여 영업활동을 간편하게 지원합니다. 특히 영업보고서를 시스템에서 자동 생성합니다.",
-        "thumbnail": "./assets/images/solution/crm.png",
+        "thumbnail": "./assets/images/solution/crm.webp",
         "alt": "CRM 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 CRM은 고객 데이터를 기반으로 고객의 행동을 예측하고, 맞춤형 마케팅 및 고객 서비스 전략을 실행할 수 있도록 돕는 강력한 고객관계관리 플랫폼입니다. 중소기업부터 대기업까지 다양한 규모의 기업을 위한 CRM솔루션을 제공하며, 효율적이고 직관적인 사용자 경험을 제공합니다.",
@@ -432,7 +432,7 @@ export default {
             "title": "주요화면",
             "dscpt": "사용자 편의성과 효율적 UX기능을 적용해서 메인화면, 재고조회, 주문현황, 생산현황 등으로 이동합니다."
           },
-          "src": "./assets/images/modal/solution/crm.png",
+          "src": "./assets/images/modal/solution/crm.webp",
           "alt": "조앤소프트의 솔루션인 CRM 솔루션의 모달 이미지입니다."
         }
       },
@@ -441,11 +441,11 @@ export default {
         "subtitle": "Manufacturing Execution System",
         "badge": "생산관리시스템",
         "dscpt": "수주에서 자재발주, 입고, 출고, 생산지시, 생산 공정관리, 품질 관리업무를 수행하고, 수작업 기반의 생산현장 업무를 키오스크, 바코드 /QR코드, 태블릿 기기를 활용하여 Paperless 환경으로 스마트한 현장 관리가 가능합니다.",
-        "thumbnail": "./assets/images/solution/mes.png",
+        "thumbnail": "./assets/images/solution/mes.webp",
         "alt": "MES 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "<strong>클라우드 기반의 <mark>All In One</mark> 시스템, 스마트공장의 첫걸음!</strong>조앤소프트 MES는 제조기업의 비즈니스를 위해 수·발주 관리, 생산계획수립, 자재관리, 생산공정 관리, 제품출하, 그리고 매출 관리 까지 24시간 언제 어디서나 쉽게 이용할 수 있도록 기능을 제공 합니다. 특히, IT인력이 부족한 기업을 대신하여 서버관리, 데이터관리 등 클라우드 서비스를 통하여 운영 업무를 지원하고 있습니다.",
-          "src": "./assets/images/modal/solution/mes.png",
+          "src": "./assets/images/modal/solution/mes.webp",
           "alt": "조앤소프트의 솔루션인 MES 솔루션의 모달 이미지입니다."
         }
       },
@@ -454,7 +454,7 @@ export default {
         "subtitle": "Warehouse Control System",
         "badge": "창고제어시스템",
         "dscpt": "무인 운반 로봇을 활용하여 생산공정과 물류창고간 제품 이동, 생산공정간 반제품 이동 업무를 MES/WMS 시스템과 연동하여 로봇의 작업계획을 수립하고 RCS를 통해 Bot을 컨트롤 합니다.",
-        "thumbnail": "./assets/images/solution/wcs.png",
+        "thumbnail": "./assets/images/solution/wcs.webp",
         "alt": "WCS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 WCS는 실시간으로 장비를 제어하고 라우팅 및 물류창고 운영을 최적화하여 상품이 원활하고 효율적으로 이동하도록 하는 것으로 자동 컨베이어, 분류 시스템, 자동창고(AS/RS), 로봇 시스템과 같은 장치와 직접적으로 상호 작용하는 솔루션입니다.",
@@ -462,7 +462,7 @@ export default {
             "title": "주요화면",
             "dscpt": "창고 내 장비 제어, 작업 지시, 재고 흐름 관리를 실시간으로 모니터링하고 제어할 수 있도록 구성, 물류 자동화 설비와 연동해 작업 효율성과 정확성을 높이는 역할을 합니다."
           },
-          "src": "./assets/images/modal/solution/wcs.png",
+          "src": "./assets/images/modal/solution/wcs.webp",
           "alt": "조앤소프트의 솔루션인 WCS 솔루션의 모달 이미지입니다."
         }
       },
@@ -471,11 +471,11 @@ export default {
         "subtitle": "Transport Management System",
         "badge": "자동배차관리시스템",
         "dscpt": "ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
-        "thumbnail": "./assets/images/solution/tms.png",
+        "thumbnail": "./assets/images/solution/tms.webp",
         "alt": "TMS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 TMS는 ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.",
-          "src": "./assets/images/modal/solution/tms.png",
+          "src": "./assets/images/modal/solution/tms.webp",
           "alt": "조앤소프트의 솔루션인 TMS 솔루션의 모달 이미지입니다."
         }
       },
@@ -484,11 +484,11 @@ export default {
         "subtitle": "Advanced Technology AI Platform",
         "badge": "work@AI",
         "dscpt": "현장의 다양한 데이터를 기반으로 예측과 자동화를 실현하여 운영 효율을 높이고, 핵심 시스템과 유연하게 연동되며, 지속적인 개선을 통해 확장 가능한 AI 환경을 제공합니다.",
-        "thumbnail": "./assets/images/solution/ai.png",
+        "thumbnail": "./assets/images/solution/ai.webp",
         "alt": "AI 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트의 AI 솔루션은 현장의 다양한 데이터를 기반으로 예측과 자동화를 실현하고, 핵심 시스템과 유연하게 연동되어 운영 효율을 높이는 안정적이고 확장 가능한 환경을 제공합니다.",
-          "src": "./assets/images/modal/solution/ai.png",
+          "src": "./assets/images/modal/solution/ai.webp",
           "alt": "조앤소프트의 솔루션인 AI 솔루션의 모달 이미지입니다."
         }
       },
@@ -497,11 +497,11 @@ export default {
         "subtitle": "Warehouse Management System",
         "badge": "창고관리시스템",
         "dscpt": "RFID,QR, Barcode 를 활용하여 원자재 및 제품의 Life Cycle을 스마트하게 관리합니다. 선입선출(FIFO) 방식으로 자재 입고와 생산 불출 처리를 지원하고 로케이션 기반의 상품 입고, 출고를 통해 창고관리 업무 효율을 높입니다.",
-        "thumbnail": "./assets/images/solution/wms.png",
+        "thumbnail": "./assets/images/solution/wms.webp",
         "alt": "WMS 솔루션의 썸네일 이미지입니다.",
         "modal": {
           "abstract": "조앤소프트 WMS는 RCS/ERP시스템과 연계하여 원자재 및 완제품의 전 과정을 RFID, QR, 바코드 기반으로 디지털 관리하는 시스템입니다. RFID/QR/바코드를 이용하여 선입선출(FIFO)을 포함한 자재 입출고 자동화, 로케이션 기반 창고 운영을 통해 물류 효율을 극대화할 수 있습니다.",
-          "src": "./assets/images/modal/solution/wms.png",
+          "src": "./assets/images/modal/solution/wms.webp",
           "alt": "조앤소프트의 솔루션인 WMS 솔루션의 모달 이미지입니다."
         }
       },
@@ -517,7 +517,7 @@ export default {
         ],
         "modal": {
           "title": "이제는 업무도<br/>스마트하게",
-          "src": "./assets/images/modal/success/tailim.png",
+          "src": "./assets/images/modal/success/tailim.webp",
           "alt": "조앤소프트의 성공사례 중 하나인 태림포장 태리미 모달 이미지입니다"
         }
       },
@@ -530,7 +530,7 @@ export default {
         ],
         "modal": {
           "title": "재고조회도, <br/>주문도 더 빠르게",
-          "src": "./assets/images/modal/success/kleannara.png",
+          "src": "./assets/images/modal/success/kleannara.webp",
           "alt": "조앤소프트의 성공사례 중 하나인 깨끗한 나라 KN-OMS 모달 이미지입니다."
         }
       }

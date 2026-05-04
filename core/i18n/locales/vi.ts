@@ -368,7 +368,7 @@ export default {
         "subtitle": "Lập kế hoạch và Lập lịch trình Nâng cao",
         "badge": "Hệ thống Lập kế hoạch Sản xuất",
         "dscpt": "Chúng tôi thiết lập kế hoạch sản xuất tự động dựa trên ngày giao hàng của khách hàng, công suất sản xuất thiết bị và luồng quy trình sản xuất cho các nhiệm vụ lập kế hoạch sản xuất đòi hỏi của các công ty sản xuất đa chủng loại sản lượng nhỏ, và thực hiện hướng dẫn sản xuất trong môi trường không giấy thông qua hệ thống POP tại chỗ.",
-        "thumbnail": "./assets/images/solution/aps.png",
+        "thumbnail": "./assets/images/solution/aps.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp APS.",
         "modal": {
           "abstract": "JO&SOFT APS là giải pháp lập kế hoạch và lập lịch trình sản xuất được triển khai dựa trên kinh nghiệm áp dụng công nghệ AI và tối ưu hóa, xem xét sự cân bằng giữa các quy trình để đạt được sản xuất đúng lúc và đúng lượng, do đó giảm thiểu đáng kể chi phí sản xuất.",
@@ -376,7 +376,7 @@ export default {
             "title": "Màn hình chính",
             "dscpt": "Chúng tôi cung cấp các chức năng trực quan cho việc lập kế hoạch sản xuất, chẳng hạn như dự báo nhu cầu, phân bổ tài nguyên và quản lý lịch trình công việc, và phân tích khả năng sản xuất dựa trên dữ liệu thời gian thực và đưa ra kế hoạch được tối ưu hóa."
           },
-          "src": "./assets/images/modal/solution/en/aps.png",
+          "src": "./assets/images/modal/solution/en/aps.webp",
           "alt": "Hình ảnh modal của Giải pháp APS của JO&SOFT."
         }
       },
@@ -385,11 +385,11 @@ export default {
         "subtitle": "Hệ thống Quản lý Đơn hàng",
         "badge": "Hệ thống Quản lý Đơn hàng",
         "dscpt": "OMS nhận các đơn hàng tương tự hiện có như fax và email, và xử lý nhanh chóng công việc nhập liệu lặp lại hàng ngày bằng công nghệ OCR và AI, giảm thiểu một cách sáng tạo công việc của nguồn nhân lực.",
-        "thumbnail": "./assets/images/solution/oms.png",
+        "thumbnail": "./assets/images/solution/oms.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp OMS.",
         "modal": {
           "abstract": "JO&SOFT OMS tự động nhận các đơn hàng được giao theo định dạng tương tự như fax và email, và nhanh chóng số hóa dữ liệu có cấu trúc/không có cấu trúc bằng công nghệ OCR (Nhận dạng ký tự quang học) và AI. Chúng tôi tối đa hóa hiệu quả công việc bằng cách tự động hóa công việc nhập liệu thủ công lặp lại hàng ngày, và giúp nguồn nhân lực tập trung vào công việc có giá trị gia tăng cao hơn.",
-          "src": "./assets/images/modal/solution/en/oms.png",
+          "src": "./assets/images/modal/solution/en/oms.webp",
           "alt": "Hình ảnh modal của Giải pháp OMS của JO&SOFT."
         }
       },
@@ -398,11 +398,11 @@ export default {
         "subtitle": "Hệ thống Quản lý Năng lượng Nhà máy",
         "badge": "Hệ thống Quản lý Năng lượng Nhà máy",
         "dscpt": "Hệ thống tối ưu hóa tiêu thụ năng lượng thông qua đo lường, giám sát, phân tích và kiểm soát năng lượng của nhà máy, và quản lý năng lượng hiệu quả thông qua các mô hình dự báo nhu cầu AI. Đặc biệt, nó hỗ trợ xử lý nhanh chóng các nhiệm vụ bảo trì dự đoán bằng cách theo dõi thiết bị có mức tiêu thụ năng lượng cao so với công suất định mức.",
-        "thumbnail": "./assets/images/solution/fems.png",
+        "thumbnail": "./assets/images/solution/fems.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp FEMS.",
         "modal": {
           "abstract": "<strong><mark>AI Factory Energy Management System</mark></strong>Hệ thống Quản lý Năng lượng Nhà máy (FEMS) của JO&SOFT thực hiện quản lý năng lượng thông minh bằng cách giám sát việc sử dụng năng lượng nhà máy theo thời gian thực, phân tích và tự động kiểm soát để giảm chi phí năng lượng và tăng hiệu quả thiết bị, và thậm chí có khả năng ứng phó với ESG và trung hòa carbon.",
-          "src": "./assets/images/modal/solution/en/fems.png",
+          "src": "./assets/images/modal/solution/en/fems.webp",
           "alt": "Hình ảnh modal của Giải pháp FEMS của JO&SOFT."
         }
       },
@@ -411,11 +411,11 @@ export default {
         "subtitle": "Quản lý Chuỗi cung ứng",
         "badge": "Quản lý Chuỗi cung ứng",
         "dscpt": "Chúng tôi xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời.",
-        "thumbnail": "./assets/images/solution/scm.png",
+        "thumbnail": "./assets/images/solution/scm.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp SCM.",
         "modal": {
           "abstract": "JO&SOFT SCM xây dựng chuỗi cung ứng cùng thắng giữa các công ty hợp tác sản xuất và cung cấp thông tin thời gian thực về đơn hàng, mua hàng, tiến độ sản xuất, vận chuyển và giao hàng. Chúng tôi giảm thiểu giao tiếp không cần thiết và Total Lead Time thông qua chuẩn hóa dữ liệu liên công ty và cung cấp thông tin kịp thời.",
-          "src": "./assets/images/modal/solution/en/scm.png",
+          "src": "./assets/images/modal/solution/en/scm.webp",
           "alt": "Hình ảnh modal của Giải pháp SCM của JO&SOFT."
         }
       },
@@ -424,7 +424,7 @@ export default {
         "subtitle": "Quản lý Quan hệ Khách hàng",
         "badge": "Quản lý Quan hệ Khách hàng",
         "dscpt": "Chúng tôi dễ dàng xử lý quản lý mục tiêu và hiệu suất tổ chức bán hàng, quản lý cơ hội bán hàng mới, quản lý hoạt động bán hàng, quản lý báo giá/đề xuất, quản lý hợp đồng và quản lý doanh thu, và hỗ trợ hoạt động bán hàng dễ dàng bằng cách liên kết với ứng dụng di động. Đặc biệt, báo cáo bán hàng được tự động tạo trong hệ thống.",
-        "thumbnail": "./assets/images/solution/crm.png",
+        "thumbnail": "./assets/images/solution/crm.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp CRM.",
         "modal": {
           "abstract": "JO&SOFT CRM là nền tảng quản lý quan hệ khách hàng mạnh mẽ giúp dự đoán hành vi khách hàng dựa trên dữ liệu khách hàng và thực hiện các chiến lược tiếp thị và dịch vụ khách hàng được cá nhân hóa. Chúng tôi cung cấp giải pháp CRM cho các công ty có quy mô khác nhau từ doanh nghiệp vừa và nhỏ đến doanh nghiệp lớn, mang lại trải nghiệm người dùng hiệu quả và trực quan.",
@@ -432,7 +432,7 @@ export default {
             "title": "Màn hình chính",
             "dscpt": "Chúng tôi chuyển đến màn hình chính, tra cứu kho, trạng thái đơn hàng, trạng thái sản xuất, v.v. bằng cách áp dụng tính tiện lợi cho người dùng và các chức năng UX hiệu quả."
           },
-          "src": "./assets/images/modal/solution/en/crm.png",
+          "src": "./assets/images/modal/solution/en/crm.webp",
           "alt": "Hình ảnh modal của Giải pháp CRM của JO&SOFT."
         }
       },
@@ -441,11 +441,11 @@ export default {
         "subtitle": "Hệ thống Thực thi Sản xuất",
         "badge": "Hệ thống Thực thi Sản xuất",
         "dscpt": "Chúng tôi thực hiện quản lý đơn hàng, đặt hàng vật liệu, nhận hàng, vận chuyển, hướng dẫn sản xuất, quản lý quy trình sản xuất và nhiệm vụ quản lý chất lượng, và cho phép quản lý hiện trường thông minh trong môi trường không giấy bằng cách sử dụng kiosk, mã vạch/mã QR và thiết bị máy tính bảng cho công việc tại địa điểm sản xuất dựa trên thủ công.",
-        "thumbnail": "./assets/images/solution/mes.png",
+        "thumbnail": "./assets/images/solution/mes.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp MES.",
         "modal": {
           "abstract": "<strong>Bước đầu tiên để một nhà máy thông minh: <mark>All-in-One</mark> hệ thống, dựa trên công nghệ đám mây!</strong>JO&SOFT MES cung cấp các chức năng cho doanh nghiệp sản xuất để dễ dàng sử dụng quản lý đơn hàng, lập kế hoạch sản xuất, quản lý vật liệu, quản lý quy trình sản xuất, vận chuyển sản phẩm và quản lý doanh thu 24/7 ở bất kỳ đâu. Đặc biệt, chúng tôi hỗ trợ công việc vận hành thông qua các dịch vụ đám mây như quản lý máy chủ và quản lý dữ liệu thay mặt cho các công ty thiếu nhân sự IT.",
-          "src": "./assets/images/modal/solution/en/mes.png",
+          "src": "./assets/images/modal/solution/en/mes.webp",
           "alt": "Hình ảnh modal của Giải pháp MES của JO&SOFT."
         }
       },
@@ -454,7 +454,7 @@ export default {
         "subtitle": "Hệ thống Điều khiển Kho",
         "badge": "Hệ thống Điều khiển Kho",
         "dscpt": "Sử dụng robot vận chuyển không người lái, chúng tôi thiết lập kế hoạch làm việc của robot bằng cách liên kết với hệ thống MES/WMS cho việc di chuyển sản phẩm giữa các quy trình sản xuất và kho logistics, và di chuyển bán thành phẩm giữa các quy trình sản xuất, và điều khiển Bot thông qua RCS.",
-        "thumbnail": "./assets/images/solution/wcs.png",
+        "thumbnail": "./assets/images/solution/wcs.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp WCS.",
         "modal": {
           "abstract": "JO&SOFT WCS là giải pháp điều khiển thiết bị theo thời gian thực và tối ưu hóa hoạt động định tuyến và kho logistics để đảm bảo di chuyển hàng hóa mượt mà và hiệu quả, tương tác trực tiếp với các thiết bị như băng tải tự động, hệ thống phân loại, kho tự động (AS/RS) và hệ thống robot.",
@@ -462,7 +462,7 @@ export default {
             "title": "Màn hình chính",
             "dscpt": "Nó được cấu hình để giám sát và kiểm soát điều khiển thiết bị kho, hướng dẫn công việc và quản lý luồng kho theo thời gian thực, và đóng vai trò cải thiện hiệu quả và độ chính xác công việc bằng cách liên kết với các cơ sở tự động hóa logistics."
           },
-          "src": "./assets/images/modal/solution/en/wcs.png",
+          "src": "./assets/images/modal/solution/en/wcs.webp",
           "alt": "Hình ảnh modal của Giải pháp WCS của JO&SOFT."
         }
       },
@@ -471,11 +471,11 @@ export default {
         "subtitle": "Hệ thống Quản lý Vận tải",
         "badge": "Hệ thống Quản lý Vận tải",
         "dscpt": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ.",
-        "thumbnail": "./assets/images/solution/tms.png",
+        "thumbnail": "./assets/images/solution/tms.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp TMS.",
         "modal": {
           "abstract": "JO&SOFT TMS tự động phân bổ bằng cách khớp khối lượng sản phẩm cần được chất lên và khả năng chất hàng của xe dựa trên yêu cầu giao hàng kết nối với hệ thống ERP/WMS. Sau khi chất hàng, chúng tôi loại bỏ công việc quản lý tài liệu không cần thiết và giảm chi phí vận chuyển bằng cách sử dụng kiosk để in bảng kê giao dịch tự phục vụ.",
-          "src": "./assets/images/modal/solution/en/tms.png",
+          "src": "./assets/images/modal/solution/en/tms.webp",
           "alt": "Hình ảnh modal của Giải pháp TMS của JO&SOFT."
         }
       },
@@ -484,11 +484,11 @@ export default {
         "subtitle": "Nền tảng AI Công nghệ Tiên tiến",
         "badge": "work@AI",
         "dscpt": "Dựa trên dữ liệu hiện trường đa dạng, chúng tôi thực hiện dự đoán và tự động hóa để cải thiện hiệu quả vận hành, liên kết linh hoạt với các hệ thống cốt lõi, và cung cấp môi trường AI có thể mở rộng thông qua cải tiến liên tục.",
-        "thumbnail": "./assets/images/solution/ai.png",
+        "thumbnail": "./assets/images/solution/ai.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp AI.",
         "modal": {
           "abstract": "Giải pháp AI của JO&SOFT thực hiện dự đoán và tự động hóa dựa trên dữ liệu hiện trường đa dạng, và cung cấp môi trường ổn định và có thể mở rộng liên kết linh hoạt với các hệ thống cốt lõi để cải thiện hiệu quả vận hành.",
-          "src": "./assets/images/modal/solution/en/ai.png",
+          "src": "./assets/images/modal/solution/en/ai.webp",
           "alt": "Hình ảnh modal của Giải pháp AI của JO&SOFT."
         }
       },
@@ -497,11 +497,11 @@ export default {
         "subtitle": "Hệ thống Quản lý Kho",
         "badge": "Hệ thống Quản lý Kho",
         "dscpt": "Chúng tôi quản lý thông minh vòng đời của nguyên liệu và sản phẩm bằng RFID, QR và Barcode. Chúng tôi hỗ trợ xử lý nhận vật liệu và rút sản xuất theo phương pháp FIFO (First In First Out) và cải thiện hiệu quả công việc quản lý kho thông qua nhận và vận chuyển sản phẩm dựa trên vị trí.",
-        "thumbnail": "./assets/images/solution/wms.png",
+        "thumbnail": "./assets/images/solution/wms.webp",
         "alt": "Hình ảnh thu nhỏ của Giải pháp WMS.",
         "modal": {
           "abstract": "JO&SOFT WMS là hệ thống quản lý kỹ thuật số toàn bộ quy trình nguyên liệu và sản phẩm hoàn thành dựa trên RFID, QR và mã vạch kết nối với hệ thống RCS/ERP. Chúng tôi có thể tối đa hóa hiệu quả logistics thông qua tự động hóa nhận và vận chuyển vật liệu bao gồm FIFO (First In First Out) sử dụng RFID/QR/mã vạch, và hoạt động kho dựa trên vị trí.",
-          "src": "./assets/images/modal/solution/en/wms.png",
+          "src": "./assets/images/modal/solution/en/wms.webp",
           "alt": "Hình ảnh modal của Giải pháp WMS của JO&SOFT."
         }
       },
@@ -517,7 +517,7 @@ export default {
         ],
         "modal": {
           "title": "Bây giờ, công việc cũng<br/>thông minh",
-          "src": "./assets/images/modal/success/en/tailim.png",
+          "src": "./assets/images/modal/success/en/tailim.webp",
           "alt": "Hình ảnh modal của Tailim Packaging, một trong những trường hợp thành công của JO&SOFT."
         }
       },
@@ -530,7 +530,7 @@ export default {
         ],
         "modal": {
           "title": "Quản lý kho và<br/>đặt hàng nhanh hơn",
-          "src": "./assets/images/modal/success/en/kleannara.png",
+          "src": "./assets/images/modal/success/en/kleannara.webp",
           "alt": "Hình ảnh modal của một trong những trường hợp thành công của JO&SOFT, Clean Korea."
         }
       }

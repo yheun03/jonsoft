@@ -368,7 +368,7 @@ export default {
         "subtitle": "Advanced Planning and Scheduling",
         "badge": "Production Planning System",
         "dscpt": "We establish automatic production plans based on customer delivery dates, equipment production capacity, and production process flow for the demanding production planning tasks of multi-variety small-batch manufacturing companies, and execute production instructions in a paperless environment through on-site POP systems.",
-        "thumbnail": "./assets/images/solution/aps.png",
+        "thumbnail": "./assets/images/solution/aps.webp",
         "alt": "APS Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT APS is a solution for optimized production planning and scheduling that implements AI and optimization technologies based on experience, considering process-to-process balance to achieve timely and appropriate production, thereby significantly reducing manufacturing costs.",
@@ -376,7 +376,7 @@ export default {
             "title": "Main Screen",
             "dscpt": "We provide intuitive functions for production planning, such as demand forecasting, resource allocation, and job schedule management, and analyze production feasibility based on real-time data and present optimized plans."
           },
-          "src": "./assets/images/modal/solution/en/aps.png",
+          "src": "./assets/images/modal/solution/en/aps.webp",
           "alt": "JO&SOFT APS solution modal image."
         }
       },
@@ -385,11 +385,11 @@ export default {
         "subtitle": "Order Management System",
         "badge": "Order Management System",
         "dscpt": "OMS receives existing analog orders such as fax and email, and quickly processes the daily repetitive input work using OCR and AI technology, innovatively reducing human resource work.",
-        "thumbnail": "./assets/images/solution/oms.png",
+        "thumbnail": "./assets/images/solution/oms.webp",
         "alt": "OMS Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT OMS automatically receives orders delivered in analog format such as fax and email, and quickly digitizes structured/unstructured data using OCR (Optical Character Recognition) and AI technology. We maximize work efficiency by automating daily repetitive manual input work, and help human resources focus on higher value-added work.",
-          "src": "./assets/images/modal/solution/en/oms.png",
+          "src": "./assets/images/modal/solution/en/oms.webp",
           "alt": "JO&SOFT OMS solution modal image."
         }
       },
@@ -398,11 +398,11 @@ export default {
         "subtitle": "Factory Energy Management System",
         "badge": "Factory Energy Management System",
         "dscpt": "A system that optimizes energy consumption through energy measurement, monitoring, analysis, and control of factories, and efficiently manages energy through AI demand forecasting models. In particular, it supports rapid processing of predictive maintenance tasks by tracking equipment with high energy consumption relative to rated capacity.",
-        "thumbnail": "./assets/images/solution/fems.png",
+        "thumbnail": "./assets/images/solution/fems.webp",
         "alt": "FEMS Solution thumbnail image.",
         "modal": {
           "abstract": "<strong><mark>AI Factory Energy Management System</mark></strong>JO&SOFT's Factory Energy Management (FEMS) system realizes smart energy management by monitoring factory energy usage in real-time, analyzing and automatically controlling it to reduce energy costs and increase equipment efficiency, and even has ESG and carbon neutrality response capabilities.",
-          "src": "./assets/images/modal/solution/en/fems.png",
+          "src": "./assets/images/modal/solution/en/fems.webp",
           "alt": "JO&SOFT FEMS solution modal image."
         }
       },
@@ -411,11 +411,11 @@ export default {
         "subtitle": "Supply Chain Management",
         "badge": "Supply Chain Management",
         "dscpt": "We build a win-win supply chain between manufacturing cooperation companies and provide real-time information on orders, purchases, production progress, shipping, and delivery. We reduce unnecessary communication and Total Lead Time through standardization of inter-company data and timely delivery of information.",
-        "thumbnail": "./assets/images/solution/scm.png",
+        "thumbnail": "./assets/images/solution/scm.webp",
         "alt": "SCM Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT SCM builds a win-win supply chain between manufacturing cooperation companies and provides real-time information on orders, purchases, production progress, shipping, and delivery. We reduce unnecessary communication and Total Lead Time through standardization of inter-company data and timely delivery of information.",
-          "src": "./assets/images/modal/solution/en/scm.png",
+          "src": "./assets/images/modal/solution/en/scm.webp",
           "alt": "JO&SOFT SCM solution modal image."
         }
       },
@@ -424,7 +424,7 @@ export default {
         "subtitle": "Customer Relationship Management",
         "badge": "Customer Relationship Management",
         "dscpt": "We easily handle sales organization goal and performance management, new sales opportunity management, sales activity management, quotation/proposal management, contract management, and revenue management, and support sales activities easily by linking with mobile apps. In particular, sales reports are automatically generated in the system.",
-        "thumbnail": "./assets/images/solution/crm.png",
+        "thumbnail": "./assets/images/solution/crm.webp",
         "alt": "CRM Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT CRM is a powerful customer relationship management platform that helps predict customer behavior based on customer data and execute personalized marketing and customer service strategies. We provide CRM solutions for companies of various sizes from SMEs to large enterprises, offering efficient and intuitive user experience.",
@@ -432,7 +432,7 @@ export default {
             "title": "Main Screen",
             "dscpt": "We move to main screen, inventory inquiry, order status, production status, etc. by applying user convenience and efficient UX functions."
           },
-          "src": "./assets/images/modal/solution/en/crm.png",
+          "src": "./assets/images/modal/solution/en/crm.webp",
           "alt": "JO&SOFT CRM solution modal image."
         }
       },
@@ -441,11 +441,11 @@ export default {
         "subtitle": "Manufacturing Execution System",
         "badge": "Manufacturing Execution System",
         "dscpt": "We perform order management, material ordering, receiving, shipping, production instructions, production process management, and quality management tasks, and enable smart field management in a paperless environment by utilizing kiosks, barcodes/QR codes, and tablet devices for manual-based production site work.",
-        "thumbnail": "./assets/images/solution/mes.png",
+        "thumbnail": "./assets/images/solution/mes.webp",
         "alt": "MES Solution thumbnail image.",
         "modal": {
           "abstract": "<strong>The first step to a smart factory: <mark>All-in-One</mark> system based on cloud technology!</strong>JO&SOFT MES provides functions for manufacturing companies' business to easily use order management, production planning, material management, production process management, product shipping, and revenue management 24/7 anywhere. In particular, we support operational work through cloud services such as server management and data management on behalf of companies lacking IT personnel.",
-          "src": "./assets/images/modal/solution/en/mes.png",
+          "src": "./assets/images/modal/solution/en/mes.webp",
           "alt": "JO&SOFT MES solution modal image."
         }
       },
@@ -454,7 +454,7 @@ export default {
         "subtitle": "Warehouse Control System",
         "badge": "Warehouse Control System",
         "dscpt": "Using unmanned transport robots, we establish robot work plans by linking with MES/WMS systems for product movement between production processes and logistics warehouses, and semi-finished product movement between production processes, and control Bots through RCS.",
-        "thumbnail": "./assets/images/solution/wcs.png",
+        "thumbnail": "./assets/images/solution/wcs.webp",
         "alt": "WCS Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT WCS is a solution that controls equipment in real-time and optimizes routing and logistics warehouse operations to ensure smooth and efficient movement of goods, directly interacting with devices such as automatic conveyors, sorting systems, automated warehouses (AS/RS), and robot systems.",
@@ -462,7 +462,7 @@ export default {
             "title": "Main Screen",
             "dscpt": "It is configured to monitor and control warehouse equipment control, work instructions, and inventory flow management in real-time, and plays a role in improving work efficiency and accuracy by linking with logistics automation facilities."
           },
-          "src": "./assets/images/modal/solution/en/wcs.png",
+          "src": "./assets/images/modal/solution/en/wcs.webp",
           "alt": "JO&SOFT WCS solution modal image."
         }
       },
@@ -471,11 +471,11 @@ export default {
         "subtitle": "Transport Management System",
         "badge": "Transport Management System",
         "dscpt": "We automatically dispatch by matching the volume of products to be loaded and the loading capacity of vehicles based on delivery requests in connection with ERP/WMS systems. After loading, we eliminate unnecessary document management work and reduce transportation costs by using kiosks for self-transaction statement printing.",
-        "thumbnail": "./assets/images/solution/tms.png",
+        "thumbnail": "./assets/images/solution/tms.webp",
         "alt": "TMS Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT TMS automatically dispatches by matching the volume of products to be loaded and the loading capacity of vehicles based on delivery requests in connection with ERP/WMS systems. After loading, we eliminate unnecessary document management work and reduce transportation costs by using kiosks for self-transaction statement printing.",
-          "src": "./assets/images/modal/solution/en/tms.png",
+          "src": "./assets/images/modal/solution/en/tms.webp",
           "alt": "JO&SOFT TMS solution modal image."
         }
       },
@@ -484,11 +484,11 @@ export default {
         "subtitle": "Advanced Technology AI Platform",
         "badge": "work@AI",
         "dscpt": "Based on various field data, we realize prediction and automation to improve operational efficiency, flexibly link with core systems, and provide a scalable AI environment through continuous improvement.",
-        "thumbnail": "./assets/images/solution/ai.png",
+        "thumbnail": "./assets/images/solution/ai.webp",
         "alt": "AI Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT's AI solution realizes prediction and automation based on various field data, and provides a stable and scalable environment that flexibly links with core systems to improve operational efficiency.",
-          "src": "./assets/images/modal/solution/en/ai.png",
+          "src": "./assets/images/modal/solution/en/ai.webp",
           "alt": "JO&SOFT AI solution modal image."
         }
       },
@@ -497,11 +497,11 @@ export default {
         "subtitle": "Warehouse Management System",
         "badge": "Warehouse Management System",
         "dscpt": "We smartly manage the life cycle of raw materials and products using RFID, QR, and Barcode. We support material receiving and production withdrawal processing in FIFO (First In First Out) method and improve warehouse management work efficiency through location-based product receiving and shipping.",
-        "thumbnail": "./assets/images/solution/wms.png",
+        "thumbnail": "./assets/images/solution/wms.webp",
         "alt": "WMS Solution thumbnail image.",
         "modal": {
           "abstract": "JO&SOFT WMS is a system that digitally manages the entire process of raw materials and finished products based on RFID, QR, and barcode in connection with RCS/ERP systems. We can maximize logistics efficiency through material receiving and shipping automation including FIFO (First In First Out) using RFID/QR/barcode, and location-based warehouse operations.",
-          "src": "./assets/images/modal/solution/en/wms.png",
+          "src": "./assets/images/modal/solution/en/wms.webp",
           "alt": "JO&SOFT WMS solution modal image."
         }
       },
@@ -517,7 +517,7 @@ export default {
         ],
         "modal": {
           "title": "Now, work smarter<br/>too",
-          "src": "./assets/images/modal/success/en/tailim.png",
+          "src": "./assets/images/modal/success/en/tailim.webp",
           "alt": "Tailim Packaging's Tailim modal image of one of JO&SOFT's success cases."
         }
       },
@@ -530,7 +530,7 @@ export default {
         ],
         "modal": {
           "title": "Faster inventory<br/>and order management",
-          "src": "./assets/images/modal/success/en/kleannara.png",
+          "src": "./assets/images/modal/success/en/kleannara.webp",
           "alt": "KN-OMS modal image of one of JO&SOFT's success cases, Clean Korea."
         }
       }

@@ -2,7 +2,7 @@
 <div ref="root" class="legacy-section-root">
 <section>
     <div class="banner">
-        <img src="/assets/images/banner/page-business.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
+        <img src="/assets/images/banner/page-business.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
     </div>
     <div class="module-text">
         <div class="wrap">
@@ -19,7 +19,7 @@
                         <p class="title" data-i18n="business.solutions.aps.title">APS 솔루션</p>
                         <p data-i18n="business.solutions.aps.subtitle">Advanced Planning and Scheduling</p>
                     </div>
-                    <img data-i18n-src="business.solutions.aps.thumbnail" data-i18n-alt="business.solutions.aps.thumbnail.alt" src="/assets/images/solution/aps.png" alt="APS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.aps.thumbnail" data-i18n-alt="business.solutions.aps.thumbnail.alt" src="/assets/images/solution/aps.webp" alt="APS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.aps.badge">생산계획시스템</span>
@@ -33,7 +33,7 @@
                         <p class="title" data-i18n="business.solutions.oms.title">OMS 솔루션</p>
                         <p data-i18n="business.solutions.oms.subtitle">Order Management System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.oms.thumbnail" data-i18n-alt="business.solutions.oms.thumbnail.alt" src="/assets/images/solution/oms.png" alt="OMS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.oms.thumbnail" data-i18n-alt="business.solutions.oms.thumbnail.alt" src="/assets/images/solution/oms.webp" alt="OMS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.oms.badge">주문관리시스템</span>
@@ -47,7 +47,7 @@
                         <p class="title" data-i18n="business.solutions.fems.title">FEMS 솔루션</p>
                         <p data-i18n="business.solutions.fems.subtitle">Factory Energy Management System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.fems.thumbnail" data-i18n-alt="business.solutions.fems.thumbnail.alt" src="/assets/images/solution/fems.png" alt="FEMS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.fems.thumbnail" data-i18n-alt="business.solutions.fems.thumbnail.alt" src="/assets/images/solution/fems.webp" alt="FEMS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.fems.badge">공장에너지관리시스템</span>
@@ -61,7 +61,7 @@
                         <p class="title" data-i18n="business.solutions.scm.title">SCM 솔루션</p>
                         <p data-i18n="business.solutions.scm.subtitle">Supply Chain Management</p>
                     </div>
-                    <img data-i18n-src="business.solutions.scm.thumbnail" data-i18n-alt="business.solutions.scm.thumbnail.alt" src="/assets/images/solution/scm.png" alt="SCM 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.scm.thumbnail" data-i18n-alt="business.solutions.scm.thumbnail.alt" src="/assets/images/solution/scm.webp" alt="SCM 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.scm.badge">공급망관리</span>
@@ -75,7 +75,7 @@
                         <p class="title" data-i18n="business.solutions.crm.title">CRM 솔루션</p>
                         <p data-i18n="business.solutions.crm.subtitle">Customer Relationship Management</p>
                     </div>
-                    <img data-i18n-src="business.solutions.crm.thumbnail" data-i18n-alt="business.solutions.crm.thumbnail.alt" src="/assets/images/solution/crm.png" alt="CRM 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.crm.thumbnail" data-i18n-alt="business.solutions.crm.thumbnail.alt" src="/assets/images/solution/crm.webp" alt="CRM 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.crm.badge">고객관계관리</span>
@@ -89,7 +89,7 @@
                         <p class="title" data-i18n="business.solutions.mes.title">MES 솔루션</p>
                         <p data-i18n="business.solutions.mes.subtitle">Manufacturing Execution System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.mes.thumbnail" data-i18n-alt="business.solutions.mes.thumbnail.alt" src="/assets/images/solution/mes.png" alt="MES 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.mes.thumbnail" data-i18n-alt="business.solutions.mes.thumbnail.alt" src="/assets/images/solution/mes.webp" alt="MES 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.mes.badge">생산관리시스템</span>
@@ -103,7 +103,7 @@
                         <p class="title" data-i18n="business.solutions.wcs.title">WCS 솔루션</p>
                         <p data-i18n="business.solutions.wcs.subtitle">Warehouse Control System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.wcs.thumbnail" data-i18n-alt="business.solutions.wcs.thumbnail.alt" src="/assets/images/solution/wcs.png" alt="WCS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.wcs.thumbnail" data-i18n-alt="business.solutions.wcs.thumbnail.alt" src="/assets/images/solution/wcs.webp" alt="WCS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.wcs.badge">창고제어시스템</span>
@@ -117,7 +117,7 @@
                         <p class="title" data-i18n="business.solutions.tms.title">TMS 솔루션</p>
                         <p data-i18n="business.solutions.tms.subtitle">Transport Management System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.tms.thumbnail" data-i18n-alt="business.solutions.tms.thumbnail.alt" src="/assets/images/solution/tms.png" alt="TMS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.tms.thumbnail" data-i18n-alt="business.solutions.tms.thumbnail.alt" src="/assets/images/solution/tms.webp" alt="TMS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.tms.badge">자동배차관리시스템</span>
@@ -131,7 +131,7 @@
                         <p class="title" data-i18n="business.solutions.ai.title">AI 솔루션</p>
                         <p data-i18n="business.solutions.ai.subtitle">Advanced Technology AI Platform</p>
                     </div>
-                    <img data-i18n-src="business.solutions.ai.thumbnail" data-i18n-alt="business.solutions.ai.thumbnail.alt" src="/assets/images/solution/ai.png" alt="AI 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.ai.thumbnail" data-i18n-alt="business.solutions.ai.thumbnail.alt" src="/assets/images/solution/ai.webp" alt="AI 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.ai.badge">work@AI</span>
@@ -145,7 +145,7 @@
                         <p class="title" data-i18n="business.solutions.wms.title">WMS 솔루션</p>
                         <p data-i18n="business.solutions.wms.subtitle">Warehouse Management System</p>
                     </div>
-                    <img data-i18n-src="business.solutions.wms.thumbnail" data-i18n-alt="business.solutions.wms.thumbnail.alt" src="/assets/images/solution/wms.png" alt="WMS 솔루션의 썸네일 이미지입니다.">
+                    <img data-i18n-src="business.solutions.wms.thumbnail" data-i18n-alt="business.solutions.wms.thumbnail.alt" src="/assets/images/solution/wms.webp" alt="WMS 솔루션의 썸네일 이미지입니다.">
                 </div>
                 <div class="content">
                     <span class="badge" data-i18n="business.solutions.wms.badge">창고관리시스템</span>
@@ -167,7 +167,7 @@
                             <li>안드로이드/IOS 앱</li>
                         </ul>
                     </div>
-                    <img src="/assets/images/success/tailm.png" alt="">
+                    <img src="/assets/images/success/tailm.webp" alt="">
                 </li>
                 <li class="item" data-aos="fade-up" data-aos-delay="600" data-modal-target="kkleannara" data-modal-type="success">
                     <div class="content">
@@ -178,7 +178,7 @@
                             <li>안드로이드/IOS 앱</li>
                         </ul>
                     </div>
-                    <img src="/assets/images/success/kkleannara.png" alt="">
+                    <img src="/assets/images/success/kkleannara.webp" alt="">
                 </li>
             </ul>
         </div>
@@ -214,7 +214,7 @@
                 <p data-i18n="business.solutions.aps.modal.screen.dscpt">생산계획 수립을 위한 수요 예측, 자원 배분, 작업 일정 관리 기능을 직관적으로 제공,실시간 데이터 기반으로 생산 가능성을 분석하고 최적화된 계획안을 제시하는 것이 특징입니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.aps.modal.src" data-i18n-alt="business.solutions.aps.modal.alt" src="/assets/images/modal/solution/aps.png" alt="">
+                <img data-i18n-src="business.solutions.aps.modal.src" data-i18n-alt="business.solutions.aps.modal.alt" src="/assets/images/modal/solution/aps.webp" alt="">
             </div>
         </div>
     </div>
@@ -236,7 +236,7 @@
                 <p data-i18n="business.solutions.oms.modal.abstract">조앤소프트 OMS는 Fax, 이메일 등 아날로그 방식으로 전달되는 주문서를 자동으로 수신하고, OCR(광학 문자 인식)과 AI 기술을 활용해 정형/비정형 데이터를 신속하게 디지털화 합니다.<br/>매일 반복되는 수작업 입력 업무를 자동화하여 업무 효율을 극대화하고, 휴먼 리소스는 보다 고부가 가치 업무에 집중할 수 있게 도와줍니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.oms.modal.src" data-i18n-alt="business.solutions.oms.modal.alt" src="/assets/images/modal/solution/oms.png" alt="">
+                <img data-i18n-src="business.solutions.oms.modal.src" data-i18n-alt="business.solutions.oms.modal.alt" src="/assets/images/modal/solution/oms.webp" alt="">
             </div>
         </div>
     </div>
@@ -258,7 +258,7 @@
                 <p data-i18n="business.solutions.fems.modal.abstract"><strong><mark>AI Factory Energy Management System</mark></strong>조앤소프트의 공장에너지관리(FEMS) 시스템은 공장 내 에너지 사용을 실시간으로 모니터링하고, 분석 자동제어함으로써 에너지 비용을 절감하고 설비 효율을 높이며, ESG 및 탄소중립 대응 역량까지 갖춘 스마트한 에너지 경영을 실현합니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.fems.modal.src" data-i18n-alt="business.solutions.fems.modal.alt" src="/assets/images/modal/solution/fems.png" alt="">
+                <img data-i18n-src="business.solutions.fems.modal.src" data-i18n-alt="business.solutions.fems.modal.alt" src="/assets/images/modal/solution/fems.webp" alt="">
             </div>
         </div>
     </div>
@@ -280,7 +280,7 @@
                 <p data-i18n="business.solutions.scm.modal.abstract">조앤소프트 SCM은 제조협력 기업간 상생형 공급망을 구축하여 수주, 발주, 생산진행현황, 출고, 납품정보를 리얼타임으로 제공합니다. 기업간 데이터의 표준화와 정보의 적시 전달을 통해 불필요한 커뮤니케이션을 줄이고 Total Lead Time을 줄입니다. </p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.scm.modal.src" data-i18n-alt="business.solutions.scm.modal.alt" src="/assets/images/modal/solution/scm.png" alt="">
+                <img data-i18n-src="business.solutions.scm.modal.src" data-i18n-alt="business.solutions.scm.modal.alt" src="/assets/images/modal/solution/scm.webp" alt="">
             </div>
         </div>
     </div>
@@ -306,7 +306,7 @@
                 <p data-i18n="business.solutions.crm.modal.screen.dscpt">사용자 편의성과 효율적 UX기능을 적용해서 <strong>메인화면, 재고조회, 주문현황, 생산현황</strong> 등으로 이동합니다. </p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.crm.modal.src" data-i18n-alt="business.solutions.crm.modal.alt" src="/assets/images/modal/solution/crm.png" alt="">
+                <img data-i18n-src="business.solutions.crm.modal.src" data-i18n-alt="business.solutions.crm.modal.alt" src="/assets/images/modal/solution/crm.webp" alt="">
             </div>
         </div>
     </div>
@@ -328,7 +328,7 @@
                 <p data-i18n="business.solutions.mes.modal.abstract"><strong>클라우드 기반의 <mark>All In One</mark> 시스템, 스마트공장의 첫걸음!</strong>조앤소프트 MES는 제조기업의 비즈니스를 위해 수·발주 관리, 생산계획수립, 자재관리, 생산공정 관리, 제품출하, 그리고 매출 관리 까지 24시간 언제 어디서나 쉽게 이용할 수 있도록 기능을 제공 합니다. 특히, IT인력이 부족한 기업을 대신하여 서버관리, 데이터관리 등 클라우드 서비스를 통하여 운영 업무를 지원하고 있습니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.mes.modal.src" data-i18n-alt="business.solutions.mes.modal.alt" src="/assets/images/modal/solution/mes.png" alt="">
+                <img data-i18n-src="business.solutions.mes.modal.src" data-i18n-alt="business.solutions.mes.modal.alt" src="/assets/images/modal/solution/mes.webp" alt="">
             </div>
         </div>
     </div>
@@ -354,7 +354,7 @@
                 <p data-i18n="business.solutions.wcs.modal.screen.dscpt">창고 내 장비 제어, 작업 지시, 재고 흐름 관리를 실시간으로 모니터링하고 제어할 수 있도록 구성, 물류 자동화 설비와 연동해 작업 효율성과 정확성을 높이는 역할을 합니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.wcs.modal.src" data-i18n-alt="business.solutions.wcs.modal.alt" src="/assets/images/modal/solution/wcs.png" alt="">
+                <img data-i18n-src="business.solutions.wcs.modal.src" data-i18n-alt="business.solutions.wcs.modal.alt" src="/assets/images/modal/solution/wcs.webp" alt="">
             </div>
         </div>
     </div>
@@ -376,7 +376,7 @@
                 <p data-i18n="business.solutions.tms.modal.abstract">조앤소프트 TMS는 ERP/WMS시스템과 연계하여 납품요청을 기반으로 적재해야 할 제품의 부피와 차량의 적재Capa 에 맞춰 매칭하여 자동 배차합니다. 상차 후 키오스크를 활용하여 셀프 거래명세표 인쇄 등으로 불필요한 전표관리 업무를 없애고 운송비용을 줄여줍니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.tms.modal.src" data-i18n-alt="business.solutions.tms.modal.alt" src="/assets/images/modal/solution/tms.png" alt="">
+                <img data-i18n-src="business.solutions.tms.modal.src" data-i18n-alt="business.solutions.tms.modal.alt" src="/assets/images/modal/solution/tms.webp" alt="">
             </div>
         </div>
     </div>
@@ -398,7 +398,7 @@
                 <p data-i18n="business.solutions.ai.modal.abstract">조앤소프트의 AI 솔루션은 현장의 다양한 데이터를 기반으로 예측과 자동화를 실현하고, 핵심 시스템과 유연하게 연동되어 운영 효율을 높이는 안정적이고 확장 가능한 환경을 제공합니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.ai.modal.src" data-i18n-alt="business.solutions.ai.modal.alt" src="/assets/images/modal/solution/ai.png" alt="">
+                <img data-i18n-src="business.solutions.ai.modal.src" data-i18n-alt="business.solutions.ai.modal.alt" src="/assets/images/modal/solution/ai.webp" alt="">
             </div>
         </div>
     </div>
@@ -420,7 +420,7 @@
                 <p data-i18n="business.solutions.wms.modal.abstract">조앤소프트 WMS는 RCS/ERP시스템과 연계하여 원자재 및 완제품의 전 과정을 RFID, QR, 바코드 기반으로 디지털 관리하는 시스템입니다. RFID/QR/바코드를 이용하여 선입선출(FIFO)을 포함한 자재 입출고 자동화, 로케이션 기반 창고 운영을 통해 물류 효율을 극대화할 수 있습니다.</p>
             </div>
             <div class="content">
-                <img data-i18n-src="business.solutions.wms.modal.src" data-i18n-alt="business.solutions.wms.modal.alt" src="/assets/images/modal/solution/wms.png" alt="">
+                <img data-i18n-src="business.solutions.wms.modal.src" data-i18n-alt="business.solutions.wms.modal.alt" src="/assets/images/modal/solution/wms.webp" alt="">
             </div>
         </div>
     </div>
@@ -439,7 +439,7 @@
         </div>
         <div class="modal-body">
             <div class="content">
-                <img data-i18n-src="business.success.case1.modal.src" data-i18n-alt="business.success.case1.modal.alt" src="/assets/images/modal/success/tailim.png" alt="">
+                <img data-i18n-src="business.success.case1.modal.src" data-i18n-alt="business.success.case1.modal.alt" src="/assets/images/modal/success/tailim.webp" alt="">
             </div>
         </div>
     </div>
@@ -459,7 +459,7 @@
         </div>
         <div class="modal-body">
             <div class="content">
-                <img data-i18n-src="business.success.case2.modal.src" data-i18n-alt="business.success.case2.modal.alt" src="/assets/images/modal/success/kleannara.png" alt="">
+                <img data-i18n-src="business.success.case2.modal.src" data-i18n-alt="business.success.case2.modal.alt" src="/assets/images/modal/success/kleannara.webp" alt="">
             </div>
         </div>
     </div>

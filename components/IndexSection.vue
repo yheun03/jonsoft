@@ -6,7 +6,7 @@
             <h2 data-aos="fade-up" data-aos-delay="200" data-i18n="index.banner.main.title">YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER</h2>
             <h3 data-aos="fade-up" data-aos-delay="400" data-i18n="index.banner.main.dscpt">우리가 만든 소프트웨어와 서비스가<br/>고객 비즈니스 성장에 기여합니다.</h3>
         </div>
-        <img src="/assets/images/banner/page-index.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
+        <img src="/assets/images/banner/page-index.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
     </div>
     <div class="banner type-title">
         <div class="wrap">
@@ -21,7 +21,7 @@
                 <span data-aos="fade-up" data-aos-delay="600" data-i18n="index.banner.goto.button">사업영역 자세히 보기</span>
             </a>
         </div>
-        <img src="/assets/images/banner/goto.png" alt="">
+        <img src="/assets/images/banner/goto.webp" alt="">
     </div>
     <div class="partners">
         <div class="wrap">

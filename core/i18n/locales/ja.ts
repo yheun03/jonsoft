@@ -368,7 +368,7 @@ export default {
         "subtitle": "高度計画・スケジューリング",
         "badge": "生産計画システム",
         "dscpt": "多品種少量生産製造企業の厳しい生産計画立案業務を取引先納品日、設備の生産能力、生産工程の流れに従って自動生産計画を立て、現場POPシステムを通じてペーパーレス環境の生産指示を実行します。",
-        "thumbnail": "./assets/images/solution/aps.png",
+        "thumbnail": "./assets/images/solution/aps.webp",
         "alt": "APSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT APSは、AIと最適化技術を適用した経験を基に実現した最適化された生産計画およびスケジューリングソリューションで、プロセス間のバランスを考慮して適切な量の適時生産を達成することで、製造コストを大幅に削減するソリューションです。",
@@ -376,7 +376,7 @@ export default {
             "title": "メイン画面",
             "dscpt": "生産計画立案に必要な数需要予測、資源配分、作業スケジュール管理機能を直感的に提供し、実時間データベースに基づいて生産可能性を分析し、最適化された計画を提示することが特徴です。"
           },
-          "src": "./assets/images/modal/solution/en/aps.png",
+          "src": "./assets/images/modal/solution/en/aps.webp",
           "alt": "JO&SOFT APSソリューションのモーダル画像です。"
         }
       },
@@ -385,11 +385,11 @@ export default {
         "subtitle": "注文管理システム",
         "badge": "注文管理システム",
         "dscpt": "OMSはファックス、メールなどの既存アナログ注文書を受信し、毎日繰り返し入力する業務をOCRとAI技術を活用して迅速に処理し、人的リソースの業務を革新的に削減します。",
-        "thumbnail": "./assets/images/solution/oms.png",
+        "thumbnail": "./assets/images/solution/oms.webp",
         "alt": "OMSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT OMSは、ファックスやメールなどのアナログ方式で伝達される注文書を自動的に受信し、OCR（光学文字認識）とAI技術を活用して構造化/非構造化データを迅速にデジタル化します。毎日繰り返される手作業入力業務を自動化して業務効率を最大化し、人的リソースがより高付加価値業務に集中できるよう支援します。",
-          "src": "./assets/images/modal/solution/en/oms.png",
+          "src": "./assets/images/modal/solution/en/oms.webp",
           "alt": "JO&SOFT OMSソリューションのモーダル画像です。"
         }
       },
@@ -398,11 +398,11 @@ export default {
         "subtitle": "工場エネルギー管理システム",
         "badge": "工場エネルギー管理システム",
         "dscpt": "工場のエネルギー測定、モニタリング、分析、制御などを通じてエネルギー消費を最適化し、AI需要予測モデルを通じて効率的にエネルギーを管理するシステムです。特に、定格容量対比エネルギー消費量が多い設備を追跡して設備の予知保全業務を迅速に処理するよう支援します。",
-        "thumbnail": "./assets/images/solution/fems.png",
+        "thumbnail": "./assets/images/solution/fems.webp",
         "alt": "FEMSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "<strong><mark>AI Factory Energy Management System</mark></strong>JO&SOFTの工場エネルギー管理（FEMS）システムは、工場内のエネルギー使用をリアルタイムでモニタリングし、分析自動制御することでエネルギーコストを削減し設備効率を向上させ、ESGおよびカーボンニュートラル対応能力まで備えたスマートなエネルギー経営を実現します。",
-          "src": "./assets/images/modal/solution/en/fems.png",
+          "src": "./assets/images/modal/solution/en/fems.webp",
           "alt": "JO&SOFT FEMSソリューションのモーダル画像です。"
         }
       },
@@ -411,11 +411,11 @@ export default {
         "subtitle": "サプライチェーン管理",
         "badge": "サプライチェーン管理",
         "dscpt": "製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
-        "thumbnail": "./assets/images/solution/scm.png",
+        "thumbnail": "./assets/images/solution/scm.webp",
         "alt": "SCMソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT SCMは製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
-          "src": "./assets/images/modal/solution/en/scm.png",
+          "src": "./assets/images/modal/solution/en/scm.webp",
           "alt": "JO&SOFT SCMソリューションのモーダル画像です。"
         }
       },
@@ -424,7 +424,7 @@ export default {
         "subtitle": "顧客関係管理",
         "badge": "顧客関係管理",
         "dscpt": "営業組織の目標と実績管理、新規営業機会管理、営業活動管理、見積/提案管理、契約管理、売上管理を簡単に処理し、モバイルAPPと連携して営業活動を簡単に支援します。特に営業報告書をシステムで自動生成します。",
-        "thumbnail": "./assets/images/solution/crm.png",
+        "thumbnail": "./assets/images/solution/crm.webp",
         "alt": "CRMソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT CRMは顧客データに基づいて顧客の行動を予測し、パーソナライズされたマーケティングおよび顧客サービス戦略を実行できるよう支援する強力な顧客関係管理プラットフォームです。中小企業から大企業まで様々な規模の企業向けCRMソリューションを提供し、効率的で直感的なユーザーエクスペリエンスを提供します。",
@@ -432,7 +432,7 @@ export default {
             "title": "メイン画面",
             "dscpt": "ユーザー利便性と効率的なUX機能を適用してメイン画面、在庫照会、注文現況、生産現況などに移動します。"
           },
-          "src": "./assets/images/modal/solution/en/crm.png",
+          "src": "./assets/images/modal/solution/en/crm.webp",
           "alt": "JO&SOFT CRMソリューションのモーダル画像です。"
         }
       },
@@ -441,11 +441,11 @@ export default {
         "subtitle": "製造実行システム",
         "badge": "製造実行システム",
         "dscpt": "受注から資材発注、入庫、出庫、生産指示、生産工程管理、品質管理業務を実行し、手作業ベースの生産現場業務をキオスク、バーコード/QRコード、タブレット機器を活用してペーパーレス環境でスマートな現場管理が可能です。",
-        "thumbnail": "./assets/images/solution/mes.png",
+        "thumbnail": "./assets/images/solution/mes.webp",
         "alt": "MESソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "<strong>スマート工場の第一歩：<mark>All-in-One</mark>システム、クラウドベースです！</strong>JO&SOFT MESは製造企業のビジネスのために受発注管理、生産計画立案、資材管理、生産工程管理、製品出荷、そして売上管理まで24時間いつでもどこでも簡単に利用できるよう機能を提供します。特に、IT人材が不足している企業に代わってサーバー管理、データ管理などクラウドサービスを通じて運営業務を支援しています。",
-          "src": "./assets/images/modal/solution/en/mes.png",
+          "src": "./assets/images/modal/solution/en/mes.webp",
           "alt": "JO&SOFT MESソリューションのモーダル画像です。"
         }
       },
@@ -454,7 +454,7 @@ export default {
         "subtitle": "倉庫制御システム",
         "badge": "倉庫制御システム",
         "dscpt": "無人運搬ロボットを活用して生産工程と物流倉庫間の製品移動、生産工程間の半製品移動業務をMES/WMSシステムと連携してロボットの作業計画を立て、RCSを通じてBotを制御します。",
-        "thumbnail": "./assets/images/solution/wcs.png",
+        "thumbnail": "./assets/images/solution/wcs.webp",
         "alt": "WCSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT WCSはリアルタイムで設備を制御し、ルーティングおよび物流倉庫運営を最適化して商品が円滑かつ効率的に移動するようにするもので、自動コンベヤー、分類システム、自動倉庫（AS/RS）、ロボットシステムなどの装置と直接的に相互作用するソリューションです。",
@@ -462,7 +462,7 @@ export default {
             "title": "メイン画面",
             "dscpt": "倉庫内設備制御、作業指示、在庫フロー管理をリアルタイムでモニタリングし制御できるよう構成され、物流自動化設備と連携して作業効率性と正確性を向上させる役割を果たします。"
           },
-          "src": "./assets/images/modal/solution/en/wcs.png",
+          "src": "./assets/images/modal/solution/en/wcs.webp",
           "alt": "JO&SOFT WCSソリューションのモーダル画像です。"
         }
       },
@@ -471,11 +471,11 @@ export default {
         "subtitle": "輸送管理システム",
         "badge": "輸送管理システム",
         "dscpt": "ERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
-        "thumbnail": "./assets/images/solution/tms.png",
+        "thumbnail": "./assets/images/solution/tms.webp",
         "alt": "TMSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT TMSはERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
-          "src": "./assets/images/modal/solution/en/tms.png",
+          "src": "./assets/images/modal/solution/en/tms.webp",
           "alt": "JO&SOFT TMSソリューションのモーダル画像です。"
         }
       },
@@ -484,11 +484,11 @@ export default {
         "subtitle": "先進技術AIプラットフォーム",
         "badge": "work@AI",
         "dscpt": "現場の様々なデータに基づいて予測と自動化を実現して運営効率を高め、コアシステムと柔軟に連携し、継続的な改善を通じて拡張可能なAI環境を提供します。",
-        "thumbnail": "./assets/images/solution/ai.png",
+        "thumbnail": "./assets/images/solution/ai.webp",
         "alt": "AIソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFTのAIソリューションは現場の様々なデータに基づいて予測と自動化を実現し、コアシステムと柔軟に連携して運営効率を向上させる安定した拡張可能な環境を提供します。",
-          "src": "./assets/images/modal/solution/en/ai.png",
+          "src": "./assets/images/modal/solution/en/ai.webp",
           "alt": "JO&SOFT AIソリューションのモーダル画像です。"
         }
       },
@@ -497,11 +497,11 @@ export default {
         "subtitle": "倉庫管理システム",
         "badge": "倉庫管理システム",
         "dscpt": "RFID、QR、バーコードを活用して原材料および製品のライフサイクルをスマートに管理します。先入れ先出し（FIFO）方式で資材入庫と生産払出処理を支援し、ロケーションベースの商品入庫、出庫を通じて倉庫管理業務効率を向上させます。",
-        "thumbnail": "./assets/images/solution/wms.png",
+        "thumbnail": "./assets/images/solution/wms.webp",
         "alt": "WMSソリューションのサムネイル画像です。",
         "modal": {
           "abstract": "JO&SOFT WMSはRCS/ERPシステムと連携して原材料および完成品の全過程をRFID、QR、バーコードベースでデジタル管理するシステムです。RFID/QR/バーコードを利用して先入れ先出し（FIFO）を含む資材入出庫自動化、ロケーションベース倉庫運営を通じて物流効率を最大化できます。",
-          "src": "./assets/images/modal/solution/en/wms.png",
+          "src": "./assets/images/modal/solution/en/wms.webp",
           "alt": "JO&SOFT WMSソリューションのモーダル画像です。"
         }
       },
@@ -517,7 +517,7 @@ export default {
         ],
         "modal": {
           "title": "今、業務も<br/>スマートに",
-          "src": "./assets/images/modal/success/en/tailim.png",
+          "src": "./assets/images/modal/success/en/tailim.webp",
           "alt": "Tailim PackagingのTailimモーダル画像はJO&SOFTの成功事例の1つです。"
         }
       },
@@ -530,7 +530,7 @@ export default {
         ],
         "modal": {
           "title": "在庫照会も<br/>注文もより速く",
-          "src": "./assets/images/modal/success/en/kleannara.png",
+          "src": "./assets/images/modal/success/en/kleannara.webp",
           "alt": "JO&SOFTの成功事例の1つであるクリーン・コリアのKN-OMSモーダル画像です。"
         }
       }

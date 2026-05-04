@@ -2,7 +2,7 @@
 <div ref="root" class="legacy-section-root">
 <section>
     <div class="banner">
-        <img src="/assets/images/banner/page-customer.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
+        <img src="/assets/images/banner/page-customer.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
     </div>
     <div class="partners">
         <div class="wrap">

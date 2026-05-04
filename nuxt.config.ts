@@ -9,7 +9,7 @@ const canonicalUrl = `${siteUrl.replace(/\/+$/, '')}${basePath === '/' ? '' : ba
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NODE_ENV !== 'production' },
 
   dir: {
     plugins: 'core/plugins',
@@ -26,7 +26,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/library/slick/slick.min.css',
     '~/assets/library/aos/aos.min.css',
     '~/assets/styles/main.scss',
   ],
@@ -76,7 +75,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: `${siteUrl.replace(/\/+$/, '')}/assets/images/banner/page-index.png`,
+          content: `${siteUrl.replace(/\/+$/, '')}/assets/images/banner/page-index.webp`,
         },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'color-scheme', content: 'light only' },

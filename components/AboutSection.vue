@@ -16,7 +16,7 @@
                 </ul>
             </div>
         </div>
-        <img src="/assets/images/banner/page-about.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
+        <img src="/assets/images/banner/page-about.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
     </div>
     <div class="module-text">
         <div class="wrap">
@@ -69,8 +69,8 @@
         <div class="list-awards">
             <div data-aos="fade-up" data-aos-delay="600" class="item item-01">
                 <div class="thumbnail">
-                    <img data-aos="fade-up" src="/assets/images/awards/img01-1.jpg" alt="">
-                    <img data-aos="fade-up" src="/assets/images/awards/img01-2.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img01-1.webp" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img01-2.webp" alt="">
                 </div>
                 <div class="content">
                     <p data-aos="fade-up" data-i18n="about.awards.item-01.title">기술역량 강화를 위해 끊임없이<br>노력하고 있으며 기술혁신형<br>중소기업 이노비즈 인증을<br>획득하였습니다.</p>
@@ -78,8 +78,8 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="800" class="item item-02">
                 <div class="thumbnail">
-                    <img data-aos="fade-up" src="/assets/images/awards/img02-1.jpg" alt="">
-                    <img data-aos="fade-up" src="/assets/images/awards/img02-2.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img02-1.webp" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img02-2.webp" alt="">
                 </div>
                 <div class="content">
                     <p data-aos="fade-up" data-i18n="about.awards.item-02.title">중견 기업 및 중소기업형<br>MES 시스템 소프트웨어를<br>개발하여 전개하고 있습니다.</p>
@@ -87,8 +87,8 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="1200" class="item item-03">
                 <div class="thumbnail">
-                    <img data-aos="fade-up" src="/assets/images/awards/img03-1.jpg" alt="">
-                    <img data-aos="fade-up" src="/assets/images/awards/img03-2.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img03-1.webp" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img03-2.webp" alt="">
                 </div>
                 <div class="content">
                     <p data-aos="fade-up" data-i18n="about.awards.item-03.title">2년연속 (2017/2018) 웹 어워드<br>코리아 최우수상 연속수상</p>
@@ -96,8 +96,8 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="1000" class="item item-04">
                 <div class="thumbnail">
-                    <img data-aos="fade-up" src="/assets/images/awards/img04-1.jpg" alt="">
-                    <img data-aos="fade-up" src="/assets/images/awards/img04-2.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img04-1.webp" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img04-2.webp" alt="">
                 </div>
                 <div class="content">
                     <p data-aos="fade-up" data-i18n="about.awards.item-04.title">학교 안전 사고 관리 시스템 특허 및<br>확신성장유형 벤처기업</p>
@@ -181,7 +181,7 @@
             <h3 data-aos="fade-up" data-aos-delay="200" data-i18n="common.philosophy.title">Business<br/>Philosophy</h3>
             <div class="list-philosophy">
                 <div class="item" data-aos="fade-up" data-aos-delay="400">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-1.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="600" data-i18n="common.philosophy.talent.title">Talent Management</p>
                         <dl>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="1000">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-2.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-2.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.value.title">Our Value Proposition</p>
                         <dl>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="1600">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-3.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-3.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.culture.title">Company Culture</p>
                         <dl>

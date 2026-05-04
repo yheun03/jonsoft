@@ -86,7 +86,7 @@
             <h3 data-aos="fade-up" data-aos-delay="200" data-i18n="common.philosophy.title">Business<br/>Philosophy</h3>
             <div class="list-philosophy">
                 <div class="item" data-aos="fade-up" data-aos-delay="400">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-1.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="600" data-i18n="common.philosophy.talent.title">Talent Management</p>
                         <dl>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="1000">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-2.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-2.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.value.title">Our Value Proposition</p>
                         <dl>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="1600">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-3.png" alt="">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-3.webp" alt="">
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.culture.title">Company Culture</p>
                         <dl>
