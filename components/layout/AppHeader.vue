@@ -36,13 +36,20 @@
         </ul>
       </div>
       <div class="menu mobile">
-        <button type="button" class="btn open-menu" @click="menuOpen = !menuOpen">
+        <button
+          type="button"
+          class="btn open-menu"
+          aria-label="메뉴 열기"
+          :aria-expanded="menuOpen ? 'true' : 'false'"
+          aria-controls="mobile-nav"
+          @click="menuOpen = !menuOpen"
+        >
           <span>MENU</span>
         </button>
       </div>
     </div>
 
-    <div class="full-screen-menu">
+    <div id="mobile-nav" class="full-screen-menu" :aria-hidden="menuOpen ? 'false' : 'true'">
       <div class="wrap">
         <ul>
           <li><NuxtLink to="/about" @click="menuOpen = false">ABOUT US</NuxtLink></li>

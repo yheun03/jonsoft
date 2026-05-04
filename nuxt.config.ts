@@ -2,35 +2,55 @@ import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://jonsoft.co.kr'
+const basePath = process.env.NUXT_APP_BASE_URL || '/ver.2026/'
+const canonicalUrl = `${siteUrl.replace(/\/+$/, '')}${basePath === '/' ? '' : basePath}`
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
+
   devtools: { enabled: true },
+
   dir: {
     plugins: 'core/plugins',
-    server: 'core/server',
   },
+
   modules: ['@pinia/nuxt'],
+
   alias: {
     core: resolve(__dirname, 'core'),
   },
+
   pinia: {
     storesDirs: ['./core/stores/**'],
   },
+
   css: [
     '~/assets/library/slick/slick.min.css',
     '~/assets/library/aos/aos.min.css',
     '~/assets/styles/main.scss',
   ],
+
   imports: {
     dirs: ['core/composables'],
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
+  },
+
   runtimeConfig: {
     public: {
-      siteUrl: '',
+      siteUrl,
     },
   },
   app: {
+    baseURL: basePath,
     head: {
       htmlAttrs: { lang: 'ko' },
       title: '조앤소프트(주)',
@@ -42,9 +62,27 @@ export default defineNuxtConfig({
           content:
             '우리가 만든 소프트웨어와 서비스가 고객 비즈니스 성장에 기여합니다. - 조앤소프트 -',
         },
+        {
+          name: 'robots',
+          content: 'index,follow,max-image-preview:large,max-snippet:-1',
+        },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: '조앤소프트(주)' },
+        { property: 'og:title', content: '조앤소프트(주)' },
+        {
+          property: 'og:description',
+          content:
+            '우리가 만든 소프트웨어와 서비스가 고객 비즈니스 성장에 기여합니다. - 조앤소프트 -',
+        },
+        {
+          property: 'og:image',
+          content: `${siteUrl.replace(/\/+$/, '')}/assets/images/banner/page-index.png`,
+        },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'color-scheme', content: 'light only' },
       ],
       link: [
+        { rel: 'canonical', href: canonicalUrl },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
@@ -65,7 +103,19 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   nitro: {
+    compressPublicAssets: true,
+
+    routeRules: {
+      '/assets/**': {
+        headers: {
+          'cache-control': 'public, max-age=2592000, immutable',
+        },
+      },
+      '/sitemap': { redirect: '/sitemap.xml' },
+    },
+
     publicAssets: [
       {
         baseURL: 'assets',

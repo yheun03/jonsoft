@@ -42,6 +42,7 @@ export const useLocaleStore = defineStore('locale', {
         this.bundles[name] = slice
       }
       this.bundleEpoch++
+      return true
     },
     touchBundles() {
       this.bundleEpoch++

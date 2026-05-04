@@ -1,7 +1,8 @@
 <template>
   <div class="app-shell">
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
     <LayoutAppHeader />
-    <main class="app-main">
+    <main id="main-content" class="app-main" tabindex="-1">
       <slot />
     </main>
     <LayoutAppFloating />

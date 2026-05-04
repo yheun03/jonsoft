@@ -2,6 +2,7 @@ import AOS from 'aos'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const run = () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     nextTick(() => {
       AOS.init({
         duration: 800,

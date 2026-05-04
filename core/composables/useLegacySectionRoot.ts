@@ -10,6 +10,21 @@ export function useLegacySectionRoot(root: Ref<HTMLElement | null>, namespaces: 
   const locale = useLocaleStore()
   let releaseHistoryControls: (() => void) | undefined
 
+  function optimizeImageLoading(scope: HTMLElement) {
+    const images = [...scope.querySelectorAll<HTMLImageElement>('img')]
+    images.forEach((img) => {
+      const inTopBanner = img.closest('.banner') && !img.closest('.banner.type-ask')
+      img.decoding = 'async'
+      if (inTopBanner) {
+        img.loading = 'eager'
+        img.fetchPriority = 'high'
+        return
+      }
+      img.loading = 'lazy'
+      img.fetchPriority = 'low'
+    })
+  }
+
   async function syncDom() {
     await locale.loadBundles(namespaces)
     await nextTick()
@@ -24,6 +39,7 @@ export function useLegacySectionRoot(root: Ref<HTMLElement | null>, namespaces: 
       }
     }
     if (root.value) {
+      optimizeImageLoading(root.value)
       applyLegacyDomI18n(root.value, locale.bundles, locale.lang)
     }
   }

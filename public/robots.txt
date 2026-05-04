@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jonsoft.co.kr/ver.2026/sitemap.xml
