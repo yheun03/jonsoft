@@ -14,12 +14,46 @@
         }
     },
     "history": {
+        "year_2026": {
+            "month_02": {
+                "ko": "2026년 인천대학교 홈페이지 유지보수 사업 수주",
+                "en": "Awarded 2026 Incheon National University Website Maintenance Project",
+                "ja": "2026年仁川大学校ホームページ維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2026"
+            },
+            "month_01": {
+                "day_01": {
+                    "ko": "스마트공장 공급기업 역량진단 Level3 획득",
+                    "en": "Obtained Level 3 Smart Factory Supply Company Capability Assessment",
+                    "ja": "スマートファクトリー供給企業能力評価レベル3取得",
+                    "vi": "Đạt được Đánh giá Khả năng Công ty Cung ứng Nhà máy thông minh Mức 3"
+                },
+                "day_02": {
+                    "ko": "ISO 27001 인증 정보 획득",
+                    "en": "Obtained ISO 27001 Certification",
+                    "ja": "ISO 27001認証取得",
+                    "vi": "Đạt được Chứng nhận ISO 27001"
+                },
+                "day_03": {
+                    "ko": "종루이코리아 스마트공장 MES 운영 유지보수 사업 수주",
+                    "en": "Awarded Jongrui Korea Smart Factory MES Operation Maintenance Project",
+                    "ja": "鐘類コリアスマートファクトリーMES運用保守事業受注",
+                    "vi": "Được trao Dự án Bảo trì Vận hành Hệ thống MES Nhà máy thông minh Jongrui Korea"
+                }
+            }
+        },
         "year_2025": {
+            "month_11": {
+                "ko": "오알켐 AI 특화형 스마트공장 구축 사업 수주",
+                "en": "Awarded Oalken AI-Specialized Smart Factory Construction Project",
+                "ja": "オールケンAI特化型スマートファクトリー構築事業受注",
+                "vi": "Được trao Dự án Xây dựng Nhà máy thông minh AI Đặc biệt Oalken"
+            },
             "month_07": {
-                "ko": "동경판지 제조 설비정보 자동수집을 통한 스마트공장 MES시스템 중간1단계 구축",
-                "en": "Smart Factory MES System Phase 1 Construction through Automatic Collection of Manufacturing Equipment Information at Dongkyung Paper",
-                "ja": "東京製紙製造設備情報自動収集によるスマートファクトリーMESシステム中間1段階構築",
-                "vi": "Xây dựng Hệ thống MES Nhà máy thông minh Giai đoạn 1 thông qua Thu thập thông tin thiết bị sản xuất tự động tại Dongkyung Paper"
+                "ko": "동경판지 제조 설비정보 자동수집을 통한 스마트공장 MES시스템 중간1단계 구축사업 수주",
+                "en": "Order for the Intermediate Phase 1 Construction Project of MES System for Smart Factory by Automatically Collecting Equipment Information for Tokyo Cardboard Manufacturing",
+                "ja": "東京段ボール製造設備情報の自動収集によるスマートファクトリーMESシステム中間第1段階構築事業を受注",
+                "vi": "Nhận được đơn đặt hàng dự án xây dựng giai đoạn 1 giữa hệ thống MES của nhà máy thông minh thông qua thu thập tự động thông tin thiết bị sản xuất bìa cứng Tokyo."
             },
             "month_06": {
                 "ko": "대중소상생형(삼성) 스마트공장 구축(고도화) 사업 수주",
@@ -32,6 +66,12 @@
                 "en": "Construction of Secondary Battery Manufacturing MES System for Jongrui Korea",
                 "ja": "鐘類コリア二次電池製造MESシステム構築",
                 "vi": "Xây dựng Hệ thống MES Sản xuất Pin thứ cấp cho Jongrui Korea"
+            },
+            "month_02": {
+                "ko": "2025년 인천대학교 홈페이지 유지보수 사업 수주",
+                "en": "Awarded Incheon National University Website Maintenance Project",
+                "ja": "仁川大学校ホームページ維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2025"
             },
             "month_01": {
                 "ko": "경동나비엔 Partner Portal 시스템 구축사업 수주",
@@ -576,10 +616,10 @@
                 "vi": "Được trao Tư vấn ISP Xây dựng Hệ thống Quản lý Hiệu suất Quỹ Văn hóa Gyeonggi"
             },
             "month_06": {
-                "ko": "인천대학교 홈페이지 유지보수 사업 수주",
-                "en": "Awarded Incheon National University Website Maintenance Project",
-                "ja": "仁川大学校ホームページ維持保守事業受注",
-                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon"
+                "ko": "2018년 인천대학교 홈페이지 유지보수 사업 수주",
+                "en": "Awarded 2018 Incheon National University Website Maintenance Project",
+                "ja": "2018年仁川大学校ホームページ維持保守事業受注",
+                "vi": "Được trao Dự án Bảo trì Website Đại học Quốc gia Incheon năm 2018"
             },
             "month_05": {
                 "ko": "KT B2B 캠페인시스템 그룹사 확대사업 수주",

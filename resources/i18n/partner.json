@@ -211,6 +211,104 @@
                 "vi": "Logo Altair"
             }
         },
+        "siemens": {
+            "src": {
+                "ko": "./resources/logos/partners/siemens.png",
+                "en": "./resources/logos/partners/en/siemens.png",
+                "ja": "./resources/logos/partners/en/siemens.png",
+                "vi": "./resources/logos/partners/en/siemens.png"
+            },
+            "alt": {
+                "ko": "siemens 로고",
+                "en": "siemens logo",
+                "ja": "シーメンスロゴ",
+                "vi": "Logo siemens"
+            }
+        },
+        "altis": {
+            "src": {
+                "ko": "./resources/logos/partners/altis.png",
+                "en": "./resources/logos/partners/en/altis.png",
+                "ja": "./resources/logos/partners/en/altis.png",
+                "vi": "./resources/logos/partners/en/altis.png"
+            },
+            "alt": {
+                "ko": "altis 로고",
+                "en": "altis logo",
+                "ja": "アルティスロゴ",
+                "vi": "Logo altis"
+            }
+        },
+        "kpa": {
+            "src": {
+                "ko": "./resources/logos/partners/kpa.png",
+                "en": "./resources/logos/partners/en/kpa.png",
+                "ja": "./resources/logos/partners/en/kpa.png",
+                "vi": "./resources/logos/partners/en/kpa.png"
+            },
+            "alt": {
+                "ko": "한국생산성본부 로고",
+                "en": "Korean Production Capability Agency logo",
+                "ja": "韓国生産力本部ロゴ",
+                "vi": "Logo Korean Production Capability Agency"
+            }
+        },
+        "kampa": {
+            "src": {
+                "ko": "./resources/logos/partners/kampa.png",
+                "en": "./resources/logos/partners/en/kampa.png",
+                "ja": "./resources/logos/partners/en/kampa.png",
+                "vi": "./resources/logos/partners/en/kampa.png"
+            },
+            "alt": {
+                "ko": "kampa 로고",
+                "en": "kampa logo",
+                "ja": "カンパロゴ",
+                "vi": "Logo kampa"
+            }
+        },
+        "orchem": {
+            "src": {
+                "ko": "./resources/logos/partners/orchem.png",
+                "en": "./resources/logos/partners/en/orchem.png",
+                "ja": "./resources/logos/partners/en/orchem.png",
+                "vi": "./resources/logos/partners/en/orchem.png"
+            },
+            "alt": {
+                "ko": "오알켐 로고",
+                "en": "orchem logo",
+                "ja": "オーシャムロゴ",
+                "vi": "Logo orchem"
+            }
+        },
+        "korcham": {
+            "src": {
+                "ko": "./resources/logos/partners/korcham.png",
+                "en": "./resources/logos/partners/en/korcham.png",
+                "ja": "./resources/logos/partners/en/korcham.png",
+                "vi": "./resources/logos/partners/en/korcham.png"
+            },
+            "alt": {
+                "ko": "대한상공회의소 로고",
+                "en": "Korcham logo",
+                "ja": "コルチャムロゴ",
+                "vi": "Logo Korcham"
+            }
+        },
+        "chaint": {
+            "src": {
+                "ko": "./resources/logos/partners/chaint.png",
+                "en": "./resources/logos/partners/en/chaint.png",
+                "ja": "./resources/logos/partners/en/chaint.png",
+                "vi": "./resources/logos/partners/en/chaint.png"
+            },
+            "alt": {
+                "ko": "chaint 로고",
+                "en": "chaint logo",
+                "ja": "チェイントロゴ",
+                "vi": "Logo chaint"
+            }
+        },
         "lg-cns": {
             "src": {
                 "ko": "./resources/logos/partners/lg-cns.png",
