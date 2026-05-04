@@ -25,7 +25,7 @@ time, mark, audio, video {
     box-sizing: border-box;
 	word-break: keep-all;
 	html[lang="ja"] &{
-		word-break: break-all;
+		word-break: break-all !important;
 	}
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,4 +53,9 @@ table {
 }
 a{
     text-decoration: unset;
+}
+
+// 안드로이드 배경색 다크모드 대응
+:root {
+	color-scheme: light only;
 }

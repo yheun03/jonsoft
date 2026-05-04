@@ -20,6 +20,8 @@
     <meta name="twitter:image" content="http://www.jonsoft.co.kr/">
     <meta name="twitter:domain" content="조앤소프트">
     <meta name="Robots" content="INDEX, FOLLOW">
+    <meta name="color-scheme" content="light only"/>
+    <meta name="supported-color-schemes" content="light"/>
     <link rel="stylesheet" href="./resources/library/slick/slick.min.css">
     <link rel="stylesheet" href="./resources/library/aos/aos.min.css">
     <link rel="stylesheet" href="./resources/styles/main.min.css">
@@ -31,17 +33,6 @@
     <script src="./resources/library/aos/aos.js"></script>
     <script src="./resources/scripts/i18n.js"></script>
     <script src="./resources/scripts/script.js"></script>
-    <script>
-        // 로컬(포트 5500~5510)에서는 http 유지, 그 외엔 https로 리다이렉트
-        (function() {
-            var port = location.port ? parseInt(location.port, 10) : 80;
-            var isLocal = port >= 5500 && port <= 5510;
-
-            if (!isLocal && location.protocol === 'http:') {
-                location.href = 'https://' + location.host + location.pathname + location.search + location.hash;
-            }
-        })();
-    </script>
 </head>
 <body>
     <header>
