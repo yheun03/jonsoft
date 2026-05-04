@@ -13,7 +13,8 @@
     "pregenerate": "node core/scripts/ensure-node.mjs",
     "generate": "nuxt generate",
     "prepreview": "node core/scripts/ensure-node.mjs",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "i18n:generate": "node core/scripts/generate-locale-ts.mjs"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.5",

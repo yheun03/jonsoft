@@ -1,13 +1,19 @@
 /**
- * about 페이지 연혁 블록(기존 jQuery `script.js` 일부)을 바닐라로 초기화합니다.
+ * about 페이지 연혁 블록: 연도 버튼·스크롤 연동을 바닐라로 초기화합니다.
+ * DOM은 `mountHistoryTimeline` 이후에 존재하므로, 레이아웃 마운트 직후 호출해야 합니다.
  */
-export function useHistoryLegacy(rootRef: Ref<HTMLElement | null>) {
-  let onScroll: (() => void) | undefined
-  let onKey: ((e: KeyboardEvent) => void) | undefined
+export function bindHistoryLegacyControls(root: HTMLElement | null | undefined): () => void {
+  if (!root) return () => {}
 
-  function checkHistoryActive(root: HTMLElement) {
-    const items = root.querySelectorAll<HTMLElement>('.history .history-content > li')
-    const yearLis = root.querySelectorAll<HTMLElement>('.history .history-year ul li')
+  const historyRoot = root.querySelector<HTMLElement>('.history')
+  if (!historyRoot) return () => {}
+
+  const ac = new AbortController()
+  const { signal } = ac
+
+  function checkHistoryActive(r: HTMLElement) {
+    const items = r.querySelectorAll<HTMLElement>('.history .history-content > li')
+    const yearLis = r.querySelectorAll<HTMLElement>('.history .history-year ul li')
     if (!items.length || !yearLis.length) return
 
     const scrollTop = window.scrollY
@@ -31,26 +37,25 @@ export function useHistoryLegacy(rootRef: Ref<HTMLElement | null>) {
     })
   }
 
-  onMounted(() => {
-    const root = rootRef.value
-    if (!root) return
+  const yearBtns = historyRoot.querySelectorAll<HTMLButtonElement>('.history-year ul li .btn')
+  const contents = historyRoot.querySelectorAll<HTMLElement>('.history-content > li')
 
-    const historyRoot = root.querySelector<HTMLElement>('.history')
-    if (!historyRoot) return
-
-    const yearBtns = historyRoot.querySelectorAll<HTMLButtonElement>('.history-year ul li .btn')
-    const contents = historyRoot.querySelectorAll<HTMLElement>('.history-content > li')
-
-    yearBtns.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
+  yearBtns.forEach((btn, index) => {
+    btn.addEventListener(
+      'click',
+      () => {
         const target = contents[index]
         if (target) {
           const top = window.scrollY + target.getBoundingClientRect().top - 100
           window.scrollTo({ top, behavior: 'smooth' })
         }
         requestAnimationFrame(() => checkHistoryActive(root))
-      })
-      btn.addEventListener('keydown', (e) => {
+      },
+      { signal },
+    )
+    btn.addEventListener(
+      'keydown',
+      (e) => {
         const keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Enter', ' ']
         if (!keys.includes(e.key)) return
         e.preventDefault()
@@ -64,27 +69,27 @@ export function useHistoryLegacy(rootRef: Ref<HTMLElement | null>) {
           return
         }
         all[next]?.focus()
-      })
-    })
-
-    let scrollTimer: ReturnType<typeof setTimeout>
-    onScroll = () => {
-      checkHistoryActive(root)
-      clearTimeout(scrollTimer)
-      scrollTimer = setTimeout(() => checkHistoryActive(root), 200)
-    }
-    window.addEventListener('scroll', onScroll, { passive: true })
-
-    onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') document.querySelector('header')?.classList.remove('open')
-    }
-    document.addEventListener('keydown', onKey)
-
-    setTimeout(() => checkHistoryActive(root), 100)
+      },
+      { signal },
+    )
   })
 
-  onUnmounted(() => {
-    if (onScroll) window.removeEventListener('scroll', onScroll)
-    if (onKey) document.removeEventListener('keydown', onKey)
-  })
+  let scrollTimer: ReturnType<typeof setTimeout>
+  const onScroll = () => {
+    checkHistoryActive(root)
+    clearTimeout(scrollTimer)
+    scrollTimer = setTimeout(() => checkHistoryActive(root), 200)
+  }
+  window.addEventListener('scroll', onScroll, { passive: true, signal })
+
+  const onKey = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') document.querySelector('header')?.classList.remove('open')
+  }
+  document.addEventListener('keydown', onKey, { signal })
+
+  queueMicrotask(() => checkHistoryActive(root))
+
+  return () => {
+    ac.abort()
+  }
 }

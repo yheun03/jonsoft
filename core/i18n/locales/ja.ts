@@ -1,0 +1,760 @@
+/* eslint-disable prettier/prettier */
+/** 자동 생성 — core/scripts/generate-locale-ts.mjs */
+export default {
+  "common": {
+    "floating": "会社紹介書をダウンロード",
+    "banner": {
+      "welcome": {
+        "title": "スマートファクトリーの始め方を考えている場合、最適な構築ソリューションを提案します。",
+        "src": "https://forms.gle/6AdwWWukcjr73ziV9",
+        "button": "調査直ぐに"
+      },
+      "ask": {
+        "title": "プロジェクトお問い合わせ",
+        "dscpt": "JO&SOFTはより良いソフトウェア環境構築を提案します。<br/>革新的なビジネス成長を体験してください。",
+        "button": "プロジェクトお問い合わせ"
+      }
+    },
+    "copyright": "© 2025 JO&SOFT. All Rights Reserved.",
+    "company": {
+      "logo": {
+        "src": "./assets/logos/logo.svg",
+        "alt": "JO&SOFTのロゴです。"
+      },
+      "addressName": "本社",
+      "address": "13554、1204、パークビュータワー、248、貞子一路、盆唐区、城南市、京畿道、大韓民国",
+      "info": "会社名：JO&Soft株式会社 | 代表者：チョ・ヒョンチョル | 事業者番号：265-87-00272"
+    },
+    "inobiz": {
+      "src": "./assets/logos/inobiz-en.png",
+      "alt": "革新型中小企業のイノビズ等級を取得して明記したイノビズロゴです"
+    },
+    "philosophy": {
+      "title": "Business Philosophy",
+      "talent": {
+        "title": "タレントマネジメント",
+        "subtitle": "人材像",
+        "content": [
+          "顧客ビジネス理解",
+          "挑戦と情熱",
+          "チームワークと良好なコミュニケーション"
+        ]
+      },
+      "value": {
+        "title": "私たちの価値提案",
+        "subtitle": "価値提案",
+        "content": [
+          "適正価格",
+          "迅速な納品",
+          "正しい方法"
+        ]
+      },
+      "culture": {
+        "title": "企業文化",
+        "subtitle": "企業文化",
+        "content": [
+          "お互いを尊重する（多様性尊重）",
+          "仲間愛",
+          "ブレインストーミング（自由なコミュニケーションとアイデア創出）"
+        ]
+      }
+    }
+  },
+  "about": {
+    "banner": {
+      "title-sub": "私たちについて",
+      "title": "私たちはテクノロジーコンサルティングと共に<br/>ソフトウェア開発を提供します。",
+      "dscpt": [
+        "テクノロジーコンサルティング",
+        "生産現場製造AIソリューション構築及び運営",
+        "ソフトウェア開発及び流通",
+        "オンラインマーケティングコンサルティング及びプラットフォーム運営",
+        "スマートファクトリー",
+        "プロセス自動化"
+      ]
+    },
+    "summary": {
+      "item-01": {
+        "title": "営業年数",
+        "standard": ""
+      },
+      "item-02": {
+        "title": "累積課題数",
+        "standard": "26.1基準"
+      },
+      "item-03": {
+        "title": "主要顧客",
+        "standard": "26.1基準"
+      },
+      "item-04": {
+        "title": "主要パートナー",
+        "standard": "26.1基準"
+      }
+    },
+    "awards": {
+      "title": "持続的な成長と堅実な財務健全性",
+      "dscpt": "優秀技術企業イノビズ認証及び<br/>各種特許及び受賞",
+      "item-01": {
+        "title": "技術力強化のため絶え間なく<br>努力しており、技術革新型<br>中小企業イノビズ認証を<br>獲得しました。"
+      },
+      "item-02": {
+        "title": "中堅企業及び中小企業向け<br>MESシステムソフトウェアを<br>開発して展開しています。"
+      },
+      "item-03": {
+        "title": "2年連続（2017/2018）ウェブアワード<br>コリア最優秀賞連続受賞"
+      },
+      "item-04": {
+        "title": "学校安全事故管理システム特許及び<br>確信成長型ベンチャー企業"
+      }
+    },
+    "module-text": {
+      "overview": {
+        "title-sub": "会社概要",
+        "title": "JO&SOFTはIBMとアクセンチュアで蓄積した<br/>グローバルコンサルティング能力を基に設立された製造AIソリューション専門企業です。",
+        "dscpt": "国内および海外パートナー企業と共にスマートファクトリー、AIベース製造最適化、<br/>デジタル変革コンサルティングまで、製造現場の革新をリードしています。"
+      },
+      "feature": {
+        "title": "強み及び特徴",
+        "dscpt": "中小企業では実施困難な<br/>ISP及び先進企業ベンチマーキング実施経験を保有しており、コンサルティングから<br/>システム構築/運営まで実施します。"
+      }
+    },
+    "feature": {
+      "item-01": {
+        "title": "様々なISP及び先進事例<br>ベンチマーキングコンサルティング経験保有",
+        "content": [
+          "LG U+ UCRM 2.0 PIコンサルティング",
+          "LG U+次世代統合DW分析/設計",
+          "パリバゲットDT高度化コンサルティング",
+          "ソウル特別市学校安全共済会ISPコンサルティング",
+          "京畿文化財団成果管理システム構築ISPコンサルティング",
+          "LG CNSコマースプラットフォーム構築PIコンサルティング",
+          "CJ大韓通運先進事例ベンチマーキング",
+          "ハンファフードサービス/統合物流先進事例ベンチマーキング",
+          "GSリテール統合商品先進事例ベンチマーキング"
+        ]
+      },
+      "item-02": {
+        "title": "検証された方法論/ツールの活用",
+        "content": [
+          "IBM及びアクセンチュアで取得したノウハウと経験活用",
+          "システム構築規模に適したカスタマイズされた開発方法論活用",
+          "インタビュー実施、As-Is分析、Pain Point導出、To-Beプロセス及びシステム機能定義など主要コンサルティング会社に匹敵するテンプレート及び事例保有"
+        ]
+      },
+      "item-03": {
+        "title": "コンサルティングからITシステム<br/>構築/運営まで<br/>エンドツーエンドカバレッジ",
+        "content": [
+          "As-Is改善ポイント導出、To-Beプロセス定義、システム構築及び運営まで可能な強小企業",
+          "ハナツアー、KTテレコップオンラインシステム構築",
+          "仁川大学校、三星電機オンラインマーケティングコンサルティング及びホームページ構築及び運営",
+          "KEBハナ銀行、BCカードCRM及びキャンペーンソリューション構築",
+          "テラエコスマートファクトリーソリューション構築",
+          "その他多数の企業アプリケーション構築及び運営実績保有"
+        ]
+      },
+      "button": "成功事例を詳しく見る"
+    }
+  },
+  "history": {
+    "banner": {
+      "title": "事業履歴",
+      "description": "JO&SOFTの成長過程と主要プロジェクトの沿革をご確認ください。"
+    },
+    "history": {
+      "year_2026": {
+        "month_02": "2026年仁川大学校ホームページ維持保守事業受注",
+        "month_01": {
+          "day_01": "スマートファクトリー供給企業能力評価レベル3取得",
+          "day_02": "ISO 27001認証取得",
+          "day_03": "鐘類コリアスマートファクトリーMES運用保守事業受注"
+        }
+      },
+      "year_2025": {
+        "month_11": "オールケンAI特化型スマートファクトリー構築事業受注",
+        "month_07": "東京段ボール製造設備情報の自動収集によるスマートファクトリーMESシステム中間第1段階構築事業を受注",
+        "month_06": "大中小共生型（サムスン）スマートファクトリー構築（高度化）事業受注",
+        "month_04": "鐘類コリア二次電池製造MESシステム構築",
+        "month_02": "仁川大学校ホームページ維持保守事業受注",
+        "month_01": "京東ナビアントパートナーポータルシステム構築事業受注"
+      },
+      "year_2024": {
+        "month_10": {
+          "day_02": "テイリム包装亀尾工場原紙スマート物流管理構築事業受注",
+          "day_01": "南ソウル大学校日学習並行先端産業アカデミー協約締結"
+        },
+        "month_09": "三和ペイントカーボンニュートラル工場FEMS構築事業受注",
+        "month_08": "三和ペイントエコシステム工場ICT構築事業受注",
+        "month_07": "京東ナビアントグローバルCRMシステム構築事業者選定",
+        "month_05": "テイリム包装テイリミポイント管理システム構築事業受注",
+        "month_04": "2024年度SKハイニックス全社統合権限管理変化管理コンサルティング事業受注",
+        "month_03": "クリーンナラスマートファクトリーSCM構築事業者選定",
+        "month_02": {
+          "day_02": "2024年仁川大学校ホームページ維持保守事業受注",
+          "day_01": "ISO 27001（情報保護経営システム）認証取得"
+        },
+        "month_01": {
+          "day_02": "大林大学校日学習並行P-TECH協約",
+          "day_01": "LG U+次世代UCube関連データプラットフォーム現行化2次開発"
+        }
+      },
+      "year_2023": {
+        "month_12": "ALTAIRビッグデータ分析およびAIグローバルソリューションパートナー締結",
+        "month_10": "テイリム包装自動生産計画APSシステムAI高度化事業受注",
+        "month_09": "テイリム包装大中小共生型スマートファクトリー事業供給企業選定",
+        "month_07": "大陽グループサプライチェーン連携型スマートファクトリー事業受注",
+        "month_04": "SKハイニックスMyAccess変化管理プロジェクト実行（2023年）",
+        "month_03": "KTビズメートアプリ維持保守事業実行",
+        "month_02": "2023年仁川大学校ホームページ維持保守事業受注",
+        "month_01": {
+          "day_02": "テイリム包装自動生産計画APSシステム構築事業受注",
+          "day_01": "LG U+次世代UCube関連データプラットフォーム現行化2次開発受注"
+        }
+      },
+      "year_2022": {
+        "month_12": {
+          "day_02": "韓国工科大日学習並行企業協約",
+          "day_01": "2022スマートウェブアワード大賞受賞"
+        },
+        "month_11": {
+          "day_02": "仁川大学校電子工学科ホームページリニューアル構築",
+          "day_01": "SKハイニックスMyAccess変化管理プロジェクト実行（2次）"
+        },
+        "month_10": "SKハイニックス次世代APC（工程管理システム）UXコンサルティング受注",
+        "month_08": "テイリム包装共生デジタルクラスター事業受注（スマートファクトリー供給企業）",
+        "month_07": "テイリム包装共生協力デジタルクラスター事業受注（供給企業）",
+        "month_05": "SKハイニックスMyAccess変化管理プロジェクト実行",
+        "month_04": {
+          "day_02": "SKハイニックスMyAccess変化管理受注",
+          "day_01": "LG U+情報系現行化3次プロジェクト実行"
+        },
+        "month_03": {
+          "day_02": "LGユープラスData Lake統合ポータル分析/設計受注",
+          "day_01": "KTビズメートAPP（Android/iOS）維持保守受注"
+        },
+        "month_02": {
+          "day_03": "大陽グループ物流管理システム運営契約受注",
+          "day_02": "大陽グループTMS（輸送管理/自動配車）システム維持保守事業受注",
+          "day_01": "2022年仁川大学校ホームページ維持保守事業実行"
+        },
+        "month_01": {
+          "day_03": "LGユープラス情報系現行化2次プロジェクト受注",
+          "day_02": "KT B2Bビズメートシステム維持保守事業受注",
+          "day_01": "テイリム包装生産計画自動化構築のためのPI受注"
+        }
+      },
+      "year_2021": {
+        "month_10": "KT Next CRM戦略コンサルティング参加",
+        "month_09": "大陽グループ受注自動化システム構築受注",
+        "month_08": {
+          "day_02": "LG U+全社Data Portalリニューアル構築コンサルティング",
+          "day_01": "テイリム包装モバイル注文システム構築受注"
+        },
+        "month_07": "KTグループキャンペーンシステム機能高度化事業受注",
+        "month_06": "ダウ企業接着剤製造業者MES導入およびスマートファクトリー構築",
+        "month_05": "サンゲルシリカゲル製造業者MES導入およびスマートファクトリー構築",
+        "month_04": "テラエコ製造業者MES導入およびスマートファクトリー構築",
+        "month_02": "中小企業技術革新企業イノビズ認証取得",
+        "month_01": {
+          "day_02": "2021年仁川大学校ホームページ維持保守事業実行（〜2022年2月）",
+          "day_01": "パリバゲットDT高度化およびCRMコンサルティング"
+        }
+      },
+      "year_2020": {
+        "month_12": "京仁兵務庁兵役指定企業（産業体）選定",
+        "month_11": "中小企業製造業向けMESソリューション開発着手",
+        "month_10": "テイリム包装OCR活用注文自動化システム構築",
+        "month_08": "小型建築プラットフォームハウスマスター構築事業受注",
+        "month_07": {
+          "day_02": "LGハウシストータルインテリアコンサルティング参加",
+          "day_01": "三星電機グローバル統合出張管理システム構築受注"
+        },
+        "month_06": "LG U+統合DW構築のための分析/設計コンサルティング参加",
+        "month_05": "Naver Cloud Platform MSPパートナー契約締結",
+        "month_04": "LG CNS購買企業契約締結およびU+ UCRM 2.0 PIコンサルティング参加",
+        "month_03": "2020大中小同伴進出グローバル進出事業者選定（中小企業ベンチャー部）",
+        "month_01": {
+          "day_02": "仁川大学校ホームページ維持保守事業実行（〜2020年5月）",
+          "day_01": "三星電機DTSデザイン改善課題受注"
+        }
+      },
+      "year_2019": {
+        "month_11": "韓国人材管理公団日学習並行学習企業指定",
+        "month_10": {
+          "day_04": "仁川大学校融合科学技術院ホームページ構築（ゲノム）",
+          "day_03": "韓国ソフトウェア協会2020 Japan IT Spring参加社選定",
+          "day_02": "三星電機DTSダッシュボード高度化課題受注",
+          "day_01": "仁川大学校融合科学技術院ホームページ構築（ナノペプチド）"
+        },
+        "month_09": "韓国能率協会スポーツ先導企業海外マーケティング事業受注",
+        "month_06": "CJ ENM RPA構築",
+        "month_05": "ハナ生命RPA scale upプロジェクト実行",
+        "month_04": "KEBハナ銀行キャンペーンソリューション構築",
+        "month_03": "BCカード次世代キャンペーンシステム構築",
+        "month_02": {
+          "day_02": "LG CNS次世代コマースプラットフォーム構築コンサルティング共同受注",
+          "day_01": "仁川大学校機械工学科ホームページリニューアル構築"
+        },
+        "month_01": {
+          "day_03": "仁川大学校ホームページ維持保守事業実行（長期）",
+          "day_02": "仁川大学校発展基金サイト維持保守事業実行",
+          "day_01": "ソウル特別市学校安全共済会電算システム構築PMO受注"
+        }
+      },
+      "year_2018": {
+        "month_12": "2018 iAwardデザイン最優秀賞受賞（顧客企業：三星電機）",
+        "month_10": {
+          "day_02": "韓国生産性本部CRM戦略コンサルティング参加",
+          "day_01": "仁川大学校入学管理ホームページリニューアル構築"
+        },
+        "month_09": "京畿文化財団成果管理システム構築ISPコンサルティング受注",
+        "month_06": "2018年仁川大学校ホームページ維持保守事業受注",
+        "month_05": "KT B2Bキャンペーンシステムグループ社拡大事業受注",
+        "month_04": "KTテレコップオンライン申込システム構築事業受注",
+        "month_03": "仁川大学校発展基金サイト維持保守事業受注",
+        "month_02": "仁川大学校発展基金サイトリニューアル構築プロジェクト受注",
+        "month_01": {
+          "day_02": "三星電機2018年度オンラインマーケティングコンサルティングおよびホームページ運営維持保守事業受注",
+          "day_01": "ソウル特別市学校安全共済会損傷監視システム/ビッグデータ情報化マスタープランコンサルティング受注"
+        }
+      },
+      "year_2017": {
+        "month_12": {
+          "day_02": "仁川大学校ホームページUI/UXデザイン改善プロジェクト受注",
+          "day_01": "2017 iAwardデザイン最優秀賞受賞"
+        },
+        "month_10": "CJ韓国通運/日本先進医薬品物流センター benchmarking実行",
+        "month_08": "ハンファホテル&リゾート/日本先進食品物流センター benchmarking",
+        "month_05": "KT韓国ガイダンスシステムクラウド移行プロジェクト受注",
+        "month_04": "三星電機マジック3（GTC設備MRO業務）システム構築受注",
+        "month_03": "三星電機受動素子検索強化機能開発プロジェクト受注",
+        "month_02": "三星電機2017年度オンラインマーケティングコンサルティングおよびホームページ運営維持保守事業受注",
+        "month_01": "グローバルコスメティックカンパニーデジタルプラットフォーム韓国ロールアウト受注"
+      },
+      "year_2016": {
+        "month_05": "KT企業顧客営業情報提供システム維持保守事業受注",
+        "month_04": "KT企業顧客マーケティングプロセス定義およびシステム構築事業",
+        "month_02": "三星電機オンラインマーケティングコンサルティングおよびウェブサイト運営受注",
+        "month_01": "JO&SOFT株式会社法人設立"
+      }
+    }
+  },
+  "index": {
+    "banner": {
+      "main": {
+        "title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
+        "dscpt": "私たちが作ったソフトウェアとサービスが<br/>お客様のビジネス成長に貢献します。"
+      },
+      "text": {
+        "title": "システムコンサルティングから<br/>ソフトウェア構築まで",
+        "dscpt": "テクノロジーコンサルティング、ソフトウェア開発、オンラインマーケティングコンサルティングおよびプラットフォーム運営、スマートファクトリーおよび製造AIシステム構築、プロセス自動化など様々な分野で企業のビジネスシステムを診断し、持続可能な成長のための最適なデジタル変革ソリューションを提供します。"
+      },
+      "goto": {
+        "title": "お客様のビジネス成長のための<br/>最適なパートナー",
+        "button": "事業分野を詳しく見る"
+      }
+    }
+  },
+  "business": {
+    "module-text": {
+      "overview": {
+        "title-sub": "ソリューション",
+        "title": "JO&SOFTは注文管理システム（OMS）、製造実行システム（MES）、工場エネルギー管理システム（FEMS）、顧客関係管理（CRM）、サプライチェーン管理（SCM）、高度計画・スケジューリング（APS）、倉庫制御システム（WCS）、輸送管理システム（TMS）およびAIソリューション（work@AI）を提供します。",
+        "dscpt": "その他、PLM、WMS、ESGエコシステム工場、DPP、ビッグデータ分析/モニタリングシステムなど様々な顧客特化型ソリューションを保有しています。"
+      }
+    },
+    "solutions": {
+      "aps": {
+        "title": "APSソリューション",
+        "subtitle": "高度計画・スケジューリング",
+        "badge": "生産計画システム",
+        "dscpt": "多品種少量生産製造企業の厳しい生産計画立案業務を取引先納品日、設備の生産能力、生産工程の流れに従って自動生産計画を立て、現場POPシステムを通じてペーパーレス環境の生産指示を実行します。",
+        "thumbnail": "./assets/images/solution/aps.png",
+        "alt": "APSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT APSは、AIと最適化技術を適用した経験を基に実現した最適化された生産計画およびスケジューリングソリューションで、プロセス間のバランスを考慮して適切な量の適時生産を達成することで、製造コストを大幅に削減するソリューションです。",
+          "screen": {
+            "title": "メイン画面",
+            "dscpt": "生産計画立案に必要な数需要予測、資源配分、作業スケジュール管理機能を直感的に提供し、実時間データベースに基づいて生産可能性を分析し、最適化された計画を提示することが特徴です。"
+          },
+          "src": "./assets/images/modal/solution/en/aps.png",
+          "alt": "JO&SOFT APSソリューションのモーダル画像です。"
+        }
+      },
+      "oms": {
+        "title": "OMSソリューション",
+        "subtitle": "注文管理システム",
+        "badge": "注文管理システム",
+        "dscpt": "OMSはファックス、メールなどの既存アナログ注文書を受信し、毎日繰り返し入力する業務をOCRとAI技術を活用して迅速に処理し、人的リソースの業務を革新的に削減します。",
+        "thumbnail": "./assets/images/solution/oms.png",
+        "alt": "OMSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT OMSは、ファックスやメールなどのアナログ方式で伝達される注文書を自動的に受信し、OCR（光学文字認識）とAI技術を活用して構造化/非構造化データを迅速にデジタル化します。毎日繰り返される手作業入力業務を自動化して業務効率を最大化し、人的リソースがより高付加価値業務に集中できるよう支援します。",
+          "src": "./assets/images/modal/solution/en/oms.png",
+          "alt": "JO&SOFT OMSソリューションのモーダル画像です。"
+        }
+      },
+      "fems": {
+        "title": "FEMSソリューション",
+        "subtitle": "工場エネルギー管理システム",
+        "badge": "工場エネルギー管理システム",
+        "dscpt": "工場のエネルギー測定、モニタリング、分析、制御などを通じてエネルギー消費を最適化し、AI需要予測モデルを通じて効率的にエネルギーを管理するシステムです。特に、定格容量対比エネルギー消費量が多い設備を追跡して設備の予知保全業務を迅速に処理するよう支援します。",
+        "thumbnail": "./assets/images/solution/fems.png",
+        "alt": "FEMSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "<strong><mark>AI Factory Energy Management System</mark></strong>JO&SOFTの工場エネルギー管理（FEMS）システムは、工場内のエネルギー使用をリアルタイムでモニタリングし、分析自動制御することでエネルギーコストを削減し設備効率を向上させ、ESGおよびカーボンニュートラル対応能力まで備えたスマートなエネルギー経営を実現します。",
+          "src": "./assets/images/modal/solution/en/fems.png",
+          "alt": "JO&SOFT FEMSソリューションのモーダル画像です。"
+        }
+      },
+      "scm": {
+        "title": "SCMソリューション",
+        "subtitle": "サプライチェーン管理",
+        "badge": "サプライチェーン管理",
+        "dscpt": "製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
+        "thumbnail": "./assets/images/solution/scm.png",
+        "alt": "SCMソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT SCMは製造協力企業間の共生型サプライチェーンを構築して受注、発注、生産進行現況、出荷、納品情報をリアルタイムで提供します。企業間データの標準化と情報の適時伝達を通じて不要なコミュニケーションを減らし、Total Lead Timeを短縮します。",
+          "src": "./assets/images/modal/solution/en/scm.png",
+          "alt": "JO&SOFT SCMソリューションのモーダル画像です。"
+        }
+      },
+      "crm": {
+        "title": "CRMソリューション",
+        "subtitle": "顧客関係管理",
+        "badge": "顧客関係管理",
+        "dscpt": "営業組織の目標と実績管理、新規営業機会管理、営業活動管理、見積/提案管理、契約管理、売上管理を簡単に処理し、モバイルAPPと連携して営業活動を簡単に支援します。特に営業報告書をシステムで自動生成します。",
+        "thumbnail": "./assets/images/solution/crm.png",
+        "alt": "CRMソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT CRMは顧客データに基づいて顧客の行動を予測し、パーソナライズされたマーケティングおよび顧客サービス戦略を実行できるよう支援する強力な顧客関係管理プラットフォームです。中小企業から大企業まで様々な規模の企業向けCRMソリューションを提供し、効率的で直感的なユーザーエクスペリエンスを提供します。",
+          "screen": {
+            "title": "メイン画面",
+            "dscpt": "ユーザー利便性と効率的なUX機能を適用してメイン画面、在庫照会、注文現況、生産現況などに移動します。"
+          },
+          "src": "./assets/images/modal/solution/en/crm.png",
+          "alt": "JO&SOFT CRMソリューションのモーダル画像です。"
+        }
+      },
+      "mes": {
+        "title": "MESソリューション",
+        "subtitle": "製造実行システム",
+        "badge": "製造実行システム",
+        "dscpt": "受注から資材発注、入庫、出庫、生産指示、生産工程管理、品質管理業務を実行し、手作業ベースの生産現場業務をキオスク、バーコード/QRコード、タブレット機器を活用してペーパーレス環境でスマートな現場管理が可能です。",
+        "thumbnail": "./assets/images/solution/mes.png",
+        "alt": "MESソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "<strong>スマート工場の第一歩：<mark>All-in-One</mark>システム、クラウドベースです！</strong>JO&SOFT MESは製造企業のビジネスのために受発注管理、生産計画立案、資材管理、生産工程管理、製品出荷、そして売上管理まで24時間いつでもどこでも簡単に利用できるよう機能を提供します。特に、IT人材が不足している企業に代わってサーバー管理、データ管理などクラウドサービスを通じて運営業務を支援しています。",
+          "src": "./assets/images/modal/solution/en/mes.png",
+          "alt": "JO&SOFT MESソリューションのモーダル画像です。"
+        }
+      },
+      "wcs": {
+        "title": "WCSソリューション",
+        "subtitle": "倉庫制御システム",
+        "badge": "倉庫制御システム",
+        "dscpt": "無人運搬ロボットを活用して生産工程と物流倉庫間の製品移動、生産工程間の半製品移動業務をMES/WMSシステムと連携してロボットの作業計画を立て、RCSを通じてBotを制御します。",
+        "thumbnail": "./assets/images/solution/wcs.png",
+        "alt": "WCSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT WCSはリアルタイムで設備を制御し、ルーティングおよび物流倉庫運営を最適化して商品が円滑かつ効率的に移動するようにするもので、自動コンベヤー、分類システム、自動倉庫（AS/RS）、ロボットシステムなどの装置と直接的に相互作用するソリューションです。",
+          "screen": {
+            "title": "メイン画面",
+            "dscpt": "倉庫内設備制御、作業指示、在庫フロー管理をリアルタイムでモニタリングし制御できるよう構成され、物流自動化設備と連携して作業効率性と正確性を向上させる役割を果たします。"
+          },
+          "src": "./assets/images/modal/solution/en/wcs.png",
+          "alt": "JO&SOFT WCSソリューションのモーダル画像です。"
+        }
+      },
+      "tms": {
+        "title": "TMSソリューション",
+        "subtitle": "輸送管理システム",
+        "badge": "輸送管理システム",
+        "dscpt": "ERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
+        "thumbnail": "./assets/images/solution/tms.png",
+        "alt": "TMSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT TMSはERP/WMSシステムと連携して納品要求を基に積載すべき製品の体積と車両の積載容量に合わせてマッチングして自動配車します。積載後キオスクを活用してセルフ取引明細書印刷などで不要な伝票管理業務をなくし、輸送コストを削減します。",
+          "src": "./assets/images/modal/solution/en/tms.png",
+          "alt": "JO&SOFT TMSソリューションのモーダル画像です。"
+        }
+      },
+      "ai": {
+        "title": "AIソリューション",
+        "subtitle": "先進技術AIプラットフォーム",
+        "badge": "work@AI",
+        "dscpt": "現場の様々なデータに基づいて予測と自動化を実現して運営効率を高め、コアシステムと柔軟に連携し、継続的な改善を通じて拡張可能なAI環境を提供します。",
+        "thumbnail": "./assets/images/solution/ai.png",
+        "alt": "AIソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFTのAIソリューションは現場の様々なデータに基づいて予測と自動化を実現し、コアシステムと柔軟に連携して運営効率を向上させる安定した拡張可能な環境を提供します。",
+          "src": "./assets/images/modal/solution/en/ai.png",
+          "alt": "JO&SOFT AIソリューションのモーダル画像です。"
+        }
+      },
+      "wms": {
+        "title": "WMSソリューション",
+        "subtitle": "倉庫管理システム",
+        "badge": "倉庫管理システム",
+        "dscpt": "RFID、QR、バーコードを活用して原材料および製品のライフサイクルをスマートに管理します。先入れ先出し（FIFO）方式で資材入庫と生産払出処理を支援し、ロケーションベースの商品入庫、出庫を通じて倉庫管理業務効率を向上させます。",
+        "thumbnail": "./assets/images/solution/wms.png",
+        "alt": "WMSソリューションのサムネイル画像です。",
+        "modal": {
+          "abstract": "JO&SOFT WMSはRCS/ERPシステムと連携して原材料および完成品の全過程をRFID、QR、バーコードベースでデジタル管理するシステムです。RFID/QR/バーコードを利用して先入れ先出し（FIFO）を含む資材入出庫自動化、ロケーションベース倉庫運営を通じて物流効率を最大化できます。",
+          "src": "./assets/images/modal/solution/en/wms.png",
+          "alt": "JO&SOFT WMSソリューションのモーダル画像です。"
+        }
+      },
+      "button": "詳しく見る"
+    },
+    "success": {
+      "title": "成功事例",
+      "case1": {
+        "title": "スマートアプリを通じて<br/>業務を簡便に",
+        "dscpt": [
+          "モバイル発注システム",
+          "Android/iOSアプリ"
+        ],
+        "modal": {
+          "title": "今、業務も<br/>スマートに",
+          "src": "./assets/images/modal/success/en/tailim.png",
+          "alt": "Tailim PackagingのTailimモーダル画像はJO&SOFTの成功事例の1つです。"
+        }
+      },
+      "case2": {
+        "title": "在庫照会も<br/>注文もより速く",
+        "dscpt": [
+          "KN-OMS",
+          "ウェブモバイル注文管理システム",
+          "Android/iOSアプリ"
+        ],
+        "modal": {
+          "title": "在庫照会も<br/>注文もより速く",
+          "src": "./assets/images/modal/success/en/kleannara.png",
+          "alt": "JO&SOFTの成功事例の1つであるクリーン・コリアのKN-OMSモーダル画像です。"
+        }
+      }
+    }
+  },
+  "customer": {
+    "title": "OUR CUSTOMER",
+    "companies": {
+      "samsung-electro-mechanics": {
+        "src": "./assets/logos/partners/en/samsung-electro-mechanics.png",
+        "alt": "三星電機ロゴ"
+      },
+      "kt": {
+        "src": "./assets/logos/partners/en/kt.png",
+        "alt": "KTロゴ"
+      },
+      "kt-telecop": {
+        "src": "./assets/logos/partners/en/kt-telecop.png",
+        "alt": "KTテレコップロゴ"
+      },
+      "gs-retail": {
+        "src": "./assets/logos/partners/en/gs-retail.png",
+        "alt": "GSリテールロゴ"
+      },
+      "hanwha-hotel-resort": {
+        "src": "./assets/logos/partners/en/hanwha-hotel-resort.png",
+        "alt": "ハンファホテル&リゾートロゴ"
+      },
+      "cj-logistics": {
+        "src": "./assets/logos/partners/en/cj-logistics.png",
+        "alt": "CJ大韓通運ロゴ"
+      },
+      "osstem-implant": {
+        "src": "./assets/logos/partners/en/osstem-implant.png",
+        "alt": "オステムインプラントロゴ"
+      },
+      "incheon-national-university": {
+        "src": "./assets/logos/partners/en/incheon-national-university.png",
+        "alt": "仁川大学校ロゴ"
+      },
+      "lg-u-plus": {
+        "src": "./assets/logos/partners/en/lg-u-plus.png",
+        "alt": "LG U+ロゴ"
+      },
+      "paris-croissant": {
+        "src": "./assets/logos/partners/en/paris-croissant.png",
+        "alt": "パリバゲットロゴ"
+      },
+      "tairim-packaging": {
+        "src": "./assets/logos/partners/en/tairim-packaging.png",
+        "alt": "テイリム包装ロゴ"
+      },
+      "samhwa-paint": {
+        "src": "./assets/logos/partners/en/samhwa-paint.png",
+        "alt": "三和ペイントロゴ"
+      },
+      "sk-hynix": {
+        "src": "./assets/logos/partners/en/sk-hynix.png",
+        "alt": "SKハイニックスロゴ"
+      },
+      "daeyang-group": {
+        "src": "./assets/logos/partners/en/daeyang-group.png",
+        "alt": "大洋グループロゴ"
+      },
+      "kyungdong-naviant": {
+        "src": "./assets/logos/partners/en/kyungdong-naviant.png",
+        "alt": "京東ナビアントロゴ"
+      },
+      "kklenanara": {
+        "src": "./assets/logos/partners/en/kklenanara.png",
+        "alt": "クレナラロゴ"
+      },
+      "3skbox": {
+        "src": "./assets/logos/partners/en/3skbox.png",
+        "alt": "3SKBOXロゴ"
+      },
+      "dubo-industry": {
+        "src": "./assets/logos/partners/en/dubo-industry.png",
+        "alt": "ドゥボ産業ロゴ"
+      },
+      "jongrui-korea": {
+        "src": "./assets/logos/partners/en/jongrui-korea.png",
+        "alt": "鐘楼イコリアロゴ"
+      },
+      "k-package": {
+        "src": "./assets/logos/partners/en/k-package.png",
+        "alt": "K-PACKAGEロゴ"
+      }
+    }
+  },
+  "contact": {
+    "tab": {
+      "location": "アクセス",
+      "recruitment": "採用"
+    },
+    "contact": {
+      "title": "Contact",
+      "headquarters": "本社連絡先",
+      "email": "メール",
+      "sales": {
+        "grade": "販売担当",
+        "name": "Jisung Jung"
+      },
+      "manager": {
+        "grade": "アシスタントマネージャー",
+        "name": "Kim Hakyoung",
+        "team": "経営支援"
+      }
+    },
+    "recruit": {
+      "title": "Recruit",
+      "developer": {
+        "title": "開発者",
+        "desc": "Java/Web開発",
+        "recruitment": "随時採用"
+      },
+      "designer": {
+        "title": "UXUIデザイナー",
+        "desc": "Web企画・Webデザイン",
+        "recruitment": "随時採用"
+      },
+      "pm": {
+        "title": "プロジェクトPM",
+        "desc": "プロジェクト管理",
+        "recruitment": "随時採用"
+      },
+      "inquiry": "採用に関するお問い合わせ"
+    }
+  },
+  "partner": {
+    "title": "OUR PARTNER",
+    "companies": {
+      "ey-hanyoung": {
+        "src": "./assets/logos/partners/en/ey-hanyoung.png",
+        "alt": "EY韓英ロゴ"
+      },
+      "obzen": {
+        "src": "./assets/logos/partners/en/obzen.png",
+        "alt": "オブゼンロゴ"
+      },
+      "edentans": {
+        "src": "./assets/logos/partners/en/edentans.png",
+        "alt": "エデンタンスロゴ"
+      },
+      "i-on-communications": {
+        "src": "./assets/logos/partners/en/i-on-communications.png",
+        "alt": "アイオンコミュニケーションズロゴ"
+      },
+      "gs-itm": {
+        "src": "./assets/logos/partners/en/gs-itm.png",
+        "alt": "GS ITMロゴ"
+      },
+      "kohken": {
+        "src": "./assets/logos/partners/en/kohken.png",
+        "alt": "コウケンロゴ"
+      },
+      "accenture": {
+        "src": "./assets/logos/partners/en/accenture.png",
+        "alt": "アクセンチュアロゴ"
+      },
+      "concentrix": {
+        "src": "./assets/logos/partners/en/concentrix.png",
+        "alt": "コンセントリクスロゴ"
+      },
+      "naver-cloud": {
+        "src": "./assets/logos/partners/en/naver-cloud.png",
+        "alt": "ネイバークラウドロゴ"
+      },
+      "batim": {
+        "src": "./assets/logos/partners/en/batim.png",
+        "alt": "バティムロゴ"
+      },
+      "humusOn": {
+        "src": "./assets/logos/partners/en/humusOn.png",
+        "alt": "ヒューマスオンロゴ"
+      },
+      "ssangyong-infocom": {
+        "src": "./assets/logos/partners/en/ssangyong-infocom.png",
+        "alt": "双竜情報通信ロゴ"
+      },
+      "sk-cnc": {
+        "src": "./assets/logos/partners/en/sk-cnc.png",
+        "alt": "SK CNCロゴ"
+      },
+      "lts-group": {
+        "src": "./assets/logos/partners/en/lts-group.png",
+        "alt": "LTSグループロゴ"
+      },
+      "altair": {
+        "src": "./assets/logos/partners/en/altair.png",
+        "alt": "アルテアロゴ"
+      },
+      "siemens": {
+        "src": "./assets/logos/partners/en/siemens.png",
+        "alt": "シーメンスロゴ"
+      },
+      "altis": {
+        "src": "./assets/logos/partners/en/altis.png",
+        "alt": "アルティスロゴ"
+      },
+      "kpa": {
+        "src": "./assets/logos/partners/en/kpa.png",
+        "alt": "韓国生産力本部ロゴ"
+      },
+      "kampa": {
+        "src": "./assets/logos/partners/en/kampa.png",
+        "alt": "カンパロゴ"
+      },
+      "orchem": {
+        "src": "./assets/logos/partners/en/orchem.png",
+        "alt": "オーシャムロゴ"
+      },
+      "korcham": {
+        "src": "./assets/logos/partners/en/korcham.png",
+        "alt": "コルチャムロゴ"
+      },
+      "chaint": {
+        "src": "./assets/logos/partners/en/chaint.png",
+        "alt": "チェイントロゴ"
+      },
+      "lg-cns": {
+        "src": "./assets/logos/partners/en/lg-cns.png",
+        "alt": "LG CNSロゴ"
+      }
+    }
+  }
+} as Record<string, Record<string, unknown>>

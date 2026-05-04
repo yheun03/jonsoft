@@ -12,9 +12,5 @@
 <script setup lang="ts">
 const locale = useLocaleStore()
 
-if (import.meta.client) {
-  locale.hydrateLangFromStorage()
-}
-
 await useAsyncData('layout-i18n-common', () => locale.loadBundles(['common']))
 </script>

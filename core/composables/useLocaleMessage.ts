@@ -10,6 +10,7 @@ function getVal(obj: unknown, path: string): unknown {
 function pickLocalized(node: unknown, lang: LocaleCode): string {
   if (node == null) return ''
   if (typeof node === 'string') return node
+  if (Array.isArray(node)) return ''
   if (typeof node === 'object' && node !== null && lang in node) {
     return String((node as Record<string, unknown>)[lang] ?? '')
   }
