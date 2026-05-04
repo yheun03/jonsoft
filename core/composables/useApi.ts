@@ -2,7 +2,11 @@ import type { AxiosInstance, AxiosRequestConfig } from 'axios'
 
 export type Api = {
   get: <T = unknown>(url: string, config?: AxiosRequestConfig) => Promise<T>
-  post: <T = unknown>(url: string, data?: unknown, config?: AxiosRequestConfig) => Promise<T>
+  post: <T = unknown>(
+    url: string,
+    data?: BodyInit | Record<string, any> | null,
+    config?: AxiosRequestConfig,
+  ) => Promise<T>
 }
 
 /**
@@ -18,7 +22,7 @@ export function useApi(): Api {
     return {
       get: <T>(url: string, config?: AxiosRequestConfig) =>
         ax.get<T>(url, config).then((r) => r.data),
-      post: <T>(url: string, data?: unknown, config?: AxiosRequestConfig) =>
+      post: <T>(url: string, data?: BodyInit | Record<string, any> | null, config?: AxiosRequestConfig) =>
         ax.post<T>(url, data, config).then((r) => r.data),
     }
   }
@@ -27,7 +31,7 @@ export function useApi(): Api {
 
   return {
     get: <T>(url: string) => $fetch<T>(toPath(url)),
-    post: <T>(url: string, data?: unknown) =>
+    post: <T>(url: string, data?: BodyInit | Record<string, any> | null) =>
       $fetch<T>(toPath(url), { method: 'POST', body: data }),
   }
 }
