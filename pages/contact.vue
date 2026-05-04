@@ -1,9 +1,8 @@
 <template>
-  <LegacySectionPage :html="html" :namespaces="namespaces" />
+  <ContactSection />
 </template>
 
 <script setup lang="ts">
-import html from '~/assets/fragments/contact-section.html?raw'
 import { getI18nNamespaces } from 'core/utils/route-i18n'
 
 definePageMeta({

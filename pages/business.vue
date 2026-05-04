@@ -1,9 +1,8 @@
 <template>
-  <LegacySectionPage :html="html" :namespaces="namespaces" />
+  <BusinessSection />
 </template>
 
 <script setup lang="ts">
-import html from '~/assets/fragments/business-section.html?raw'
 import { getI18nNamespaces } from 'core/utils/route-i18n'
 
 definePageMeta({

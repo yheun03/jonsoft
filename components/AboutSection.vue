@@ -1,0 +1,241 @@
+<template>
+<div ref="root" class="legacy-section-root">
+<section>
+    <div class="banner set-bg-bottom">
+        <div class="module-text">
+            <div class="wrap">
+                <p class="title-sub"><span class="gradient-text" data-aos="fade-up" data-aos-delay="200" data-i18n="about.banner.title-sub">Who we are</span></p>
+                <p class="title" data-aos="fade-up" data-aos-delay="400" data-i18n="about.banner.title">우리는 Technology 컨설팅과 함께<br/>소프트웨어 개발을 제공합니다. </p>
+                <ul class="dscpt" data-aos="fade-up" data-aos-delay="600" data-i18n="about.banner.dscpt">
+                    <li data-aos="fade-up" data-aos-delay="350">Technology 컨설팅</li>
+                    <li data-aos="fade-up" data-aos-delay="400">생산현장 제조AI 솔루션 구축 및 운영</li>
+                    <li data-aos="fade-up" data-aos-delay="450">소프트웨어 개발 및 유통</li>
+                    <li data-aos="fade-up" data-aos-delay="500">온라인 마케팅 컨설팅 및 플랫폼 운영</li>
+                    <li data-aos="fade-up" data-aos-delay="550">스마트팩토리</li>
+                    <li data-aos="fade-up" data-aos-delay="600">프로세스 자동화</li>
+                </ul>
+            </div>
+        </div>
+        <img src="/assets/images/banner/page-about.png" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다.">
+    </div>
+    <div class="module-text">
+        <div class="wrap">
+            <p class="title-sub" data-aos="fade-up" data-aos-delay="800" ><span class="gradient-text" data-i18n="about.module-text.overview.title-sub">회사개요</span></p>
+            <p class="title" data-aos="fade-up" data-aos-delay="1000" data-i18n="about.module-text.overview.title">조앤소프트는 IBM과 Accenture에서 축적한<br/>글로벌 컨설팅 역량을 기반으로 설립된 제조 AI 솔루션 전문 기업입니다. </p>
+            <p class="dscpt" data-aos="fade-up" data-aos-delay="1200" data-i18n="about.module-text.overview.dscpt">국내 및 해외 파트너사들과 함께 스마트 팩토리,AI 기반 제조 최적화,<br/>디지털 전환 컨설팅까지, 제조 현장의 혁신을 선도하고 있습니다.</p>
+        </div>
+    </div>
+    <div class="summary">
+        <div class="wrap">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <img src="/assets/icons/120/ic-building.svg" alt="">
+                    <div class="content">
+                        <p class="dscpt"><span>10+</span></p>
+                        <p class="title" data-i18n="about.summary.item-01.title">업력</p>
+                        <span class="eyebrow" data-i18n="about.summary.item-01.standard"></span>
+                    </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <img src="/assets/icons/120/ic-factory.svg" alt="">
+                    <div class="content">
+                        <p class="dscpt"><span>71+</span></p>
+                        <p class="title" data-i18n="about.summary.item-02.title">누적 과제수</p>
+                        <span class="eyebrow" data-i18n="about.summary.item-02.standard">26.1 기준</span>
+                    </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                    <img src="/assets/icons/120/ic-partner.svg" alt="">
+                    <div class="content">
+                        <p class="dscpt"><span>20</span></p>
+                        <p class="title" data-i18n="about.summary.item-03.title">주요 고객사</p>
+                        <span class="eyebrow" data-i18n="about.summary.item-03.standard">26.1 기준</span>
+                    </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                    <img src="/assets/icons/120/ic-hand.svg" alt="">
+                    <div class="content">
+                        <p class="dscpt"><span>12</span></p>
+                        <p class="title" data-i18n="about.summary.item-04.title">주요 파트너</p>
+                        <span class="eyebrow" data-i18n="about.summary.item-04.standard">26.1 기준</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="awards">
+        <p data-aos="fade-up" data-aos-delay="200" data-i18n="about.awards.title" class="title">지속적인 성장과 탄탄한 재무건전성</p>
+        <p data-aos="fade-up" data-aos-delay="400" data-i18n="about.awards.dscpt" class="title-sub">우수기술기업 이노비즈 인증 및<br/>각종 특허 및 수상</p>
+        <div class="list-awards">
+            <div data-aos="fade-up" data-aos-delay="600" class="item item-01">
+                <div class="thumbnail">
+                    <img data-aos="fade-up" src="/assets/images/awards/img01-1.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img01-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p data-aos="fade-up" data-i18n="about.awards.item-01.title">기술역량 강화를 위해 끊임없이<br>노력하고 있으며 기술혁신형<br>중소기업 이노비즈 인증을<br>획득하였습니다.</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="800" class="item item-02">
+                <div class="thumbnail">
+                    <img data-aos="fade-up" src="/assets/images/awards/img02-1.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img02-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p data-aos="fade-up" data-i18n="about.awards.item-02.title">중견 기업 및 중소기업형<br>MES 시스템 소프트웨어를<br>개발하여 전개하고 있습니다.</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1200" class="item item-03">
+                <div class="thumbnail">
+                    <img data-aos="fade-up" src="/assets/images/awards/img03-1.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img03-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p data-aos="fade-up" data-i18n="about.awards.item-03.title">2년연속 (2017/2018) 웹 어워드<br>코리아 최우수상 연속수상</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1000" class="item item-04">
+                <div class="thumbnail">
+                    <img data-aos="fade-up" src="/assets/images/awards/img04-1.jpg" alt="">
+                    <img data-aos="fade-up" src="/assets/images/awards/img04-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p data-aos="fade-up" data-i18n="about.awards.item-04.title">학교 안전 사고 관리 시스템 특허 및<br>확신성장유형 벤처기업</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module-text">
+        <div class="wrap">
+            <p class="title-sub"><span class="gradient-text" data-aos="fade-up" data-aos-delay="200" data-i18n="about.module-text.feature.title">강점 및 특징</span></p>
+            <p class="title" data-aos="fade-up" data-aos-delay="400" data-i18n="about.module-text.feature.dscpt">중소기업에서는 수행하기 어려운<br/>ISP 및 선진사 벤치마킹 수행 경험을보유하고 있으며 컨설팅부터<br/>시스템 구축/운영까지 수행합니다.</p>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="wrap">
+            <div class="list-feature">
+                <div data-aos="fade-up" data-aos-delay="600" class="item item-01">
+                    <div class="front">
+                        <p class="title" data-aos="fade-up" data-aos-delay="700" data-i18n="about.feature.item-01.title">다양한 ISP 및 선진사례<br>벤치마킹 컨설팅 경험 보유</p>
+                    </div>
+                    <div class="back">
+                        <ul data-i18n="about.feature.item-01.content">
+                            <li data-aos="fade-up" >LG U+ UCRM 2.0 PI 컨설팅</li>
+                            <li data-aos="fade-up" >LG U+ 차세대 통합 DW 분석/설계</li>
+                            <li data-aos="fade-up" >파리바게트 DT 고도화를 위한 컨설팅</li>
+                            <li data-aos="fade-up" >서울특별시 학교안전공제회 ISP 컨설팅</li>
+                            <li data-aos="fade-up" >경기문화재단 성과관리 시스템 구축을 위한 ISP 컨설팅</li>
+                            <li data-aos="fade-up" >LG CNS 커머스 플랫폼 구축을 위한 PI 컨설팅</li>
+                            <li data-aos="fade-up" >CJ대한통운 선진사례 벤치마킹</li>
+                            <li data-aos="fade-up" >한화 Food Service / 통합물류 선진사례 벤치마킹</li>
+                            <li data-aos="fade-up" >GS 리테일 통합상품 선진사례벤치마킹</li>
+                        </ul>
+                        <a href="/business#success" data-i18n="about.feature.button">성공사례 자세히 보기</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="800" class="item item-02">
+                    <div class="front">
+                        <p class="title" data-aos="fade-up" data-aos-delay="900" data-i18n="about.feature.item-02.title">검증된 방법론/Tool의 활용</p>
+                    </div>
+                    <div class="back">
+                        <ul data-i18n="about.feature.item-02.content">
+                            <li data-aos="fade-up" >IBM 및 액센추어에서 취득한 노하우와 경험활용</li>
+                            <li data-aos="fade-up" >시스템 구축 규모에 맞는 커스터마이즈 된 개발방법론 활용</li>
+                            <li data-aos="fade-up" >인터뷰 수행, As-Is분석, Pain Point도출, To-Be 프로세스 및 시스템 기능정의 등 주요컨설팅사에 버금가는 템플릿 및 사례 보유</li>
+                        </ul>
+                        <a href="/business#success" data-i18n="about.feature.button">성공사례 자세히 보기</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1000" class="item item-03">
+                    <div class="front">
+                        <p class="title" data-aos="fade-up" data-aos-delay="1100" data-i18n="about.feature.item-03.title">컨설팅 부터 IT 시스템<br/>구축/운영까지<br/>End-to-End Coverage</p>
+                    </div>
+                    <div class="back">
+                        <ul data-i18n="about.feature.item-03.content">
+                            <li data-aos="fade-up" >As-Is개선포인트 도출, To-Be 프로세스정의, 시스템 구축 및 운영까지 가능한 강소기업</li>
+                            <li data-aos="fade-up" >하나투어, KT텔레캅 온라인시스템구축</li>
+                            <li data-aos="fade-up" >인천대학교, 삼성전기 온라인 마케팅 컨설팅 및 홈페이지 구축 및 운영</li>
+                            <li data-aos="fade-up" >KEB 하나은행, BC카드 CRM 및 캠페인 솔루션 구축</li>
+                            <li data-aos="fade-up" >테라에코 스마트팩토리 솔루션 구축</li>
+                            <li data-aos="fade-up" >그외 다수의 기업 어플리케이션구축 및 운영 실적보유</li>
+                        </ul>
+                        <a href="/business#success" data-i18n="about.feature.button">성공사례 자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="history">
+        <div class="wrap">
+            <p class="title" data-aos="fade-up" data-aos-delay="200" data-i18n="history.banner.title">비즈니스 연혁</p>
+            <div class="history-timeline">
+                <div class="history-year">
+                    <ul></ul>
+                </div>
+                <ul class="history-content" data-aos="fade-up" data-aos-delay="900"></ul>
+            </div>
+        </div>
+    </div>
+<div class="philosophy">
+        <div class="wrap full">
+            <h3 data-aos="fade-up" data-aos-delay="200" data-i18n="common.philosophy.title">Business<br/>Philosophy</h3>
+            <div class="list-philosophy">
+                <div class="item" data-aos="fade-up" data-aos-delay="400">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-1.png" alt="">
+                    <div class="content">
+                        <p data-aos="fade-up" data-aos-delay="600" data-i18n="common.philosophy.talent.title">Talent Management</p>
+                        <dl>
+                            <dt data-aos="fade-up" data-aos-delay="800" data-i18n="common.philosophy.talent.subtitle">인재상</dt>
+                            <dd data-aos="fade-up" data-aos-delay="1000" data-i18n="common.philosophy.talent.content.0">Customer Business Understanding</dd>
+                            <dd data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.talent.content.1">Challenging & Passion</dd>
+                            <dd data-aos="fade-up" data-aos-delay="1400" data-i18n="common.philosophy.talent.content.2">Team working & well communication</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="1000">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-2.png" alt="">
+                    <div class="content">
+                        <p data-aos="fade-up" data-aos-delay="1200" data-i18n="common.philosophy.value.title">Our Value Proposition</p>
+                        <dl>
+                            <dt data-aos="fade-up" data-aos-delay="1400" data-i18n="common.philosophy.value.subtitle">가치제안</dt>
+                            <dd data-aos="fade-up" data-aos-delay="1600" data-i18n="common.philosophy.value.content.0">Reasonable Price</dd>
+                            <dd data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.value.content.1">Rapid Delivery</dd>
+                            <dd data-aos="fade-up" data-aos-delay="2000" data-i18n="common.philosophy.value.content.2">Right Way</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="1600">
+                    <img data-aos="fade-up" src="/assets/images/philosophy-3.png" alt="">
+                    <div class="content">
+                        <p data-aos="fade-up" data-aos-delay="1800" data-i18n="common.philosophy.culture.title">Company Culture</p>
+                        <dl>
+                            <dt data-aos="fade-up" data-aos-delay="2000" data-i18n="common.philosophy.culture.subtitle">기업문화</dt>
+                            <dd data-aos="fade-up" data-aos-delay="2200" data-i18n="common.philosophy.culture.content.0">Respect each other (다양성 존중)</dd>
+                            <dd data-aos="fade-up" data-aos-delay="2400" data-i18n="common.philosophy.culture.content.1">Fellowship (동료애)</dd>
+                            <dd data-aos="fade-up" data-aos-delay="2600" data-i18n="common.philosophy.culture.content.2">Brainstorming (자유로운 소통과 아이디어 창출)</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner type-ask">
+        <div class="wrap">
+            <p class="title" data-aos="fade-up" data-aos-delay="200" data-i18n="common.banner.ask.title">프로젝트 문의하기</p>
+            <p data-aos="fade-up" data-aos-delay="400" data-i18n="common.banner.ask.dscpt">조앤소프트는 더 나은 소프트웨어 환경 구축을 제안합니다.<br/>혁신적인 비즈니스 성장을 경험해보세요.</p>
+            <a href="/contact" data-aos="fade-up" data-aos-delay="600" class="btn type-ask">
+                <span data-i18n="common.banner.ask.button">프로젝트 문의하기</span>
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+</template>
+
+<script setup lang="ts">
+import { getI18nNamespaces } from 'core/utils/route-i18n'
+import { useLegacySectionRoot } from 'core/composables/useLegacySectionRoot'
+
+const root = ref<HTMLElement | null>(null)
+useLegacySectionRoot(root, getI18nNamespaces('/about'))
+</script>
