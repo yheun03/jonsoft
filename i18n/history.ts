@@ -1,4 +1,4 @@
-import type { LocaleCode } from 'core/stores/locale'
+import type { LocaleCode } from '~/stores/locale'
 import { historyTimelineYears } from './history-layout.generated'
 
 function getVal(obj: unknown, path: string): unknown {

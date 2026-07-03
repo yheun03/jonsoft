@@ -1,5 +1,5 @@
 import { createI18n } from 'vue-i18n'
-import { localeMessages } from 'core/i18n'
+import { localeMessages } from '~/i18n'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const locale = useLocaleStore()

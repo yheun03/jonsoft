@@ -1,4 +1,4 @@
-import { createBrowserApiClient } from 'core/utils/createBrowserApiClient'
+import { createBrowserApiClient } from '~/utils/createBrowserApiClient'
 
 export default defineNuxtPlugin(() => {
   const config = useRuntimeConfig()

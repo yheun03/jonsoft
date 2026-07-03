@@ -69,7 +69,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import type { LocaleCode } from 'core/stores/locale'
+import type { LocaleCode } from '~/stores/locale'
 
 const route = useRoute()
 const locale = useLocaleStore()

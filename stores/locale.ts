@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { localeMessages } from 'core/i18n'
+import { localeMessages } from '~/i18n'
 
 export type LocaleCode = 'ko' | 'en' | 'ja' | 'vi'
 

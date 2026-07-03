@@ -1,16 +1,16 @@
 /**
- * assets/i18n/*.json → core/i18n/locales/{ko,en,ja,vi}.ts
- * 및 연혁 타임라인 메타데이터 core/i18n/history-layout.generated.ts 생성
+ * assets/i18n/*.json → ~/i18n/locales/{ko,en,ja,vi}.ts
+ * 및 연혁 타임라인 메타데이터 ~/i18n/history-layout.generated.ts 생성
  */
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const root = path.resolve(__dirname, '..', '..')
-const srcDir = path.join(root, 'core', 'i18n', 'source')
-const outLocales = path.join(root, 'core', 'i18n', 'locales')
-const outLayout = path.join(root, 'core', 'i18n', 'history-layout.generated.ts')
+const root = path.resolve(__dirname, '..')
+const srcDir = path.join(root, 'i18n', 'source')
+const outLocales = path.join(root, 'i18n', 'locales')
+const outLayout = path.join(root, 'i18n', 'history-layout.generated.ts')
 
 const FILES = ['common', 'about', 'history', 'index', 'business', 'customer', 'contact', 'partner']
 
@@ -102,14 +102,14 @@ for (const name of FILES) {
 }
 
 for (const lang of ['ko', 'en', 'ja', 'vi']) {
-  const body = `/* eslint-disable prettier/prettier */\n/** 자동 생성 — core/scripts/generate-locale-ts.mjs */\nexport default ${JSON.stringify(mergedByLang[lang], null, 2)} as Record<string, Record<string, unknown>>\n`
+  const body = `/* eslint-disable prettier/prettier */\n/** 자동 생성 — scripts/generate-locale-ts.mjs */\nexport default ${JSON.stringify(mergedByLang[lang], null, 2)} as Record<string, Record<string, unknown>>\n`
   fs.writeFileSync(path.join(outLocales, `${lang}.ts`), body, 'utf8')
 }
 
 const historyRaw = JSON.parse(fs.readFileSync(path.join(srcDir, 'history.json'), 'utf8'))
 const layout = buildHistoryLayout(historyRaw)
 
-const layoutTs = `/* eslint-disable prettier/prettier */\n/** 자동 생성 — core/scripts/generate-locale-ts.mjs */\nexport type HistoryTimelineBlock = { monthLabel: string; paths: readonly string[] }\nexport type HistoryTimelineYear = { year: number; blocks: readonly HistoryTimelineBlock[] }\nexport const historyTimelineYears: readonly HistoryTimelineYear[] = ${JSON.stringify(layout, null, 2)}\n`
+const layoutTs = `/* eslint-disable prettier/prettier */\n/** 자동 생성 — scripts/generate-locale-ts.mjs */\nexport type HistoryTimelineBlock = { monthLabel: string; paths: readonly string[] }\nexport type HistoryTimelineYear = { year: number; blocks: readonly HistoryTimelineBlock[] }\nexport const historyTimelineYears: readonly HistoryTimelineYear[] = ${JSON.stringify(layout, null, 2)}\n`
 
 fs.writeFileSync(outLayout, layoutTs, 'utf8')
 

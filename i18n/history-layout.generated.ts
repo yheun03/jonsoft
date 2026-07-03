@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-/** 자동 생성 — core/scripts/generate-locale-ts.mjs */
+/** 자동 생성 — scripts/generate-locale-ts.mjs */
 export type HistoryTimelineBlock = { monthLabel: string; paths: readonly string[] }
 export type HistoryTimelineYear = { year: number; blocks: readonly HistoryTimelineBlock[] }
 export const historyTimelineYears: readonly HistoryTimelineYear[] = [

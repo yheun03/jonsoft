@@ -32,10 +32,10 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { getI18nNamespaces } from 'core/utils/route-i18n'
-import { useLegacySectionRoot } from 'core/composables/useLegacySectionRoot'
-import CommonAskBanner from '~/components/section/CommonAskBanner.vue'
-import PartnerLogoSection from '~/components/section/PartnerLogoSection.vue'
+import { getI18nNamespaces } from '~/utils/route-i18n'
+import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
+import CommonAskBanner from '~/components/Section/CommonAskBanner.vue'
+import PartnerLogoSection from '~/components/Section/PartnerLogoSection.vue'
 
 const { t } = useI18n()
 const root = ref<HTMLElement | null>(null)

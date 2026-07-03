@@ -455,9 +455,9 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { getI18nNamespaces } from 'core/utils/route-i18n'
-import { useLegacySectionRoot } from 'core/composables/useLegacySectionRoot'
-import CommonAskBanner from '~/components/section/CommonAskBanner.vue'
+import { getI18nNamespaces } from '~/utils/route-i18n'
+import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
+import CommonAskBanner from '~/components/Section/CommonAskBanner.vue'
 
 const { t, tm, rt } = useI18n()
 const list = (key: string) => {

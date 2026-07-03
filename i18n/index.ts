@@ -1,4 +1,4 @@
-import type { LocaleCode } from 'core/stores/locale'
+import type { LocaleCode } from '~/stores/locale'
 import en from './locales/en'
 import ja from './locales/ja'
 import ko from './locales/ko'

@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
-import { bindHistoryLegacyControls } from 'core/composables/useHistoryLegacy'
-import { mountHistoryTimeline } from 'core/i18n/history'
+import { bindHistoryLegacyControls } from '~/composables/useHistoryLegacy'
+import { mountHistoryTimeline } from '~/i18n/history'
 
 /**
  * Vue 템플릿으로 옮긴 섹션 루트에 레거시 인터랙션을 연결합니다.

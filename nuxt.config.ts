@@ -11,28 +11,28 @@ export default defineNuxtConfig({
 
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
 
-  dir: {
-    plugins: 'core/plugins',
-  },
-
   modules: ['@pinia/nuxt'],
 
-  alias: {
-    core: resolve(__dirname, 'core'),
-  },
-
-  pinia: {
-    storesDirs: ['./core/stores/**'],
-  },
+  plugins: [
+    '~/plugins/i18n',
+    '~/plugins/locale-hydrate.client',
+    '~/plugins/axios.client',
+    '~/plugins/aos.client',
+    '~/plugins/business-legacy.client',
+    '~/plugins/contact-map.client',
+  ],
 
   css: [
     '~/assets/library/aos/aos.min.css',
     '~/assets/styles/main.scss',
   ],
 
-  imports: {
-    dirs: ['core/composables'],
-  },
+  components: [
+    { path: '~/components/Layout', pathPrefix: false },
+    { path: '~/components/Section', pathPrefix: false },
+    { path: '~/components', pathPrefix: true, pattern: '*.vue' },
+  ],
+
   vite: {
     css: {
       preprocessorOptions: {

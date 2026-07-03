@@ -6,17 +6,17 @@
     "node": "22"
   },
   "scripts": {
-    "predev": "node core/scripts/ensure-node.mjs",
+    "predev": "node scripts/ensure-node.mjs",
     "dev": "nuxt dev",
     "dev:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& nuxt dev",
-    "prebuild": "node core/scripts/ensure-node.mjs",
+    "prebuild": "node scripts/ensure-node.mjs",
     "build": "nuxt build",
-    "pregenerate": "node core/scripts/ensure-node.mjs",
+    "pregenerate": "node scripts/ensure-node.mjs",
     "generate": "nuxt generate",
     "generate:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& set NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr&& nuxt generate",
-    "prepreview": "node core/scripts/ensure-node.mjs",
+    "prepreview": "node scripts/ensure-node.mjs",
     "preview": "nuxt preview",
-    "i18n:generate": "node core/scripts/generate-locale-ts.mjs"
+    "i18n:generate": "node scripts/generate-locale-ts.mjs"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.5",

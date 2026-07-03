@@ -88,9 +88,9 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { getI18nNamespaces } from 'core/utils/route-i18n'
-import { useLegacySectionRoot } from 'core/composables/useLegacySectionRoot'
-import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue'
+import { getI18nNamespaces } from '~/utils/route-i18n'
+import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
+import CommonPhilosophy from '~/components/Section/CommonPhilosophy.vue'
 
 const { t } = useI18n()
 const root = ref<HTMLElement | null>(null)

@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-/** 자동 생성 — core/scripts/generate-locale-ts.mjs */
+/** 자동 생성 — scripts/generate-locale-ts.mjs */
 export default {
   "common": {
     "floating": "회사 소개서 다운받기",

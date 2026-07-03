@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { getI18nNamespaces } from 'core/utils/route-i18n'
+import { getI18nNamespaces } from '~/utils/route-i18n'
 
 definePageMeta({
   layout: 'default',

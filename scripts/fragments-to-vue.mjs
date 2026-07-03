@@ -1,5 +1,5 @@
 /**
- * (선택) HTML 조각 → Vue SFC. 소스는 core/i18n 외 별도 폴더에 둘 때 사용.
+ * (선택) HTML 조각 → Vue SFC. 소스는 ~/i18n 외 별도 폴더에 둘 때 사용.
  * 출력: components/*.vue
  */
 import fs from 'node:fs'
@@ -7,7 +7,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const root = path.resolve(__dirname, '..', '..')
+const root = path.resolve(__dirname, '..')
 const fragDir = path.join(root, 'assets', 'fragments')
 const outDir = path.join(root, 'components')
 
@@ -48,8 +48,8 @@ ${templateInner}
 </template>
 
 <script setup lang="ts">
-import { getI18nNamespaces } from 'core/utils/route-i18n'
-import { useLegacySectionRoot } from 'core/composables/useLegacySectionRoot'
+import { getI18nNamespaces } from '~/utils/route-i18n'
+import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
 
 const root = ref<HTMLElement | null>(null)
 useLegacySectionRoot(root, getI18nNamespaces('${route}'))
