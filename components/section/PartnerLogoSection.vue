@@ -1,7 +1,7 @@
 <template>
     <div class="partners">
         <div class="wrap">
-            <div class="title" data-aos="fade-up" data-aos-delay="200">{{ title }}</div>
+            <div class="title" data-aos="fade-up" data-aos-delay="200">{{ t(`${props.type}.title`) }}</div>
             <ul>
                 <li v-for="item in items" :key="item.name" data-aos="zoom-in-up" :data-aos-delay="item.delay">
                     <img :src="item.src" :alt="item.alt">
@@ -12,13 +12,15 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 type LogoType = 'customer' | 'partner'
 
 const props = defineProps<{
     type: LogoType
 }>()
 
-const { t } = useLocaleMessage()
+const { t, te } = useI18n()
 
 const customerItems = [
     'samsung-electro-mechanics', 'kt', 'kt-telecop', 'gs-retail', 'hanwha-hotel-resort',
@@ -35,19 +37,19 @@ const partnerItems = [
 
 const partnerCustomerKeys = new Set(['siemens', 'altis', 'kpa', 'kampa', 'korcham', 'chaint'])
 
-const title = computed(() => t(props.type, 'title'))
-
 const items = computed(() => {
     const names = props.type === 'customer' ? customerItems : partnerItems
 
     return names.map((name, index) => {
         const keyGroup = props.type === 'partner' && partnerCustomerKeys.has(name) ? 'customer' : props.type
+        const srcKey = `${keyGroup}.companies.${name}.src`
+        const altKey = `${keyGroup}.companies.${name}.alt`
 
         return {
             name,
             delay: props.type === 'customer' ? Math.min(350 + index * 50, 1300) : getPartnerDelay(name, index),
-            src: t(keyGroup, `companies.${name}.src`) || `/assets/logos/partners/${name}.png`,
-            alt: t(keyGroup, `companies.${name}.alt`),
+            src: te(srcKey) ? t(srcKey) : `/assets/logos/partners/${name}.png`,
+            alt: te(altKey) ? t(altKey) : '',
         }
     })
 })

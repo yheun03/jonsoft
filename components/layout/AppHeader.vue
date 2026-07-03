@@ -2,9 +2,9 @@
   <header :class="{ open: menuOpen }">
     <div v-if="showWelcome" class="banner type-welcome">
       <div class="wrap">
-        <p class="pc">{{ welcomeTitlePc }}</p>
-        <p class="mobile">{{ welcomeTitleMb }}</p>
-        <a :href="welcomeHref" target="_blank" rel="noopener">{{ welcomeButton }}</a>
+        <p class="pc">{{ t('common.banner.welcome.title') }}</p>
+        <p class="mobile">{{ t('common.banner.welcome.title') }}</p>
+        <a :href="t('common.banner.welcome.src')" target="_blank" rel="noopener">{{ t('common.banner.welcome.button') }}</a>
       </div>
       <button type="button" class="btn close-welcome" aria-label="닫기" @click="closeWelcome" />
     </div>
@@ -68,11 +68,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import type { LocaleCode } from 'core/stores/locale'
 
 const route = useRoute()
 const locale = useLocaleStore()
-const { t } = useLocaleMessage()
+const { t } = useI18n()
 
 const menuOpen = ref(false)
 const langs: LocaleCode[] = ['ko', 'en', 'ja', 'vi']
@@ -104,11 +105,6 @@ function setLang(code: LocaleCode) {
   locale.setLang(code)
   menuOpen.value = false
 }
-
-const welcomeTitlePc = computed(() => t('common', 'banner.welcome.title'))
-const welcomeTitleMb = computed(() => t('common', 'banner.welcome.title.mb'))
-const welcomeHref = computed(() => t('common', 'banner.welcome.src'))
-const welcomeButton = computed(() => t('common', 'banner.welcome.button'))
 
 function onKey(e: KeyboardEvent) {
   if (e.key === 'Escape') menuOpen.value = false
