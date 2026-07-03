@@ -1,24 +1,35 @@
 import type { LocaleCode } from 'core/stores/locale'
-import { applyLegacyDomI18n } from 'core/utils/applyLegacyDomI18n'
 import { historyTimelineYears } from './history-layout.generated'
 
-/**
- * 연혁 트리에 `data-i18n` 노드를 추가한 뒤 호출하면 현재 언어로 채워집니다.
- * (예: 마케팅에서 TS로 신규 항목만 붙일 때 `mountHistoryTimeline`과 동일한 규칙을 쓸 수 있습니다.)
- */
-export function refreshHistoryDomI18n(
-  scope: HTMLElement,
-  bundles: Record<string, Record<string, unknown>>,
-  lang: LocaleCode,
-) {
-  applyLegacyDomI18n(scope, bundles, lang)
+function getVal(obj: unknown, path: string): unknown {
+  return path.split('.').reduce<unknown>((o, k) => {
+    if (o && typeof o === 'object' && k in (o as object)) return (o as Record<string, unknown>)[k]
+    return undefined
+  }, obj)
+}
+
+function pickLocalized(node: unknown, lang: LocaleCode) {
+  if (node == null) return ''
+  if (typeof node === 'string') return node
+  if (typeof node === 'object' && node !== null && lang in node) {
+    return String((node as Record<string, unknown>)[lang] ?? '')
+  }
+  return ''
+}
+
+function getHistoryMessage(path: string, bundles: Record<string, Record<string, unknown>>, lang: LocaleCode) {
+  const [bundle, ...keys] = path.split('.')
+  return pickLocalized(getVal(bundles[bundle], keys.join('.')), lang)
 }
 
 /**
  * about 정적 HTML의 연혁 래퍼에 연·월 구조 DOM을 채웁니다.
- * `data-i18n`만 부여하고 텍스트는 `applyLegacyDomI18n`이 언어별로 반영합니다.
  */
-export function mountHistoryTimeline(historyRoot: HTMLElement | null | undefined) {
+export function mountHistoryTimeline(
+  historyRoot: HTMLElement | null | undefined,
+  bundles: Record<string, Record<string, unknown>>,
+  lang: LocaleCode,
+) {
   if (!historyRoot) return
 
   const yearUl = historyRoot.querySelector<HTMLUListElement>('.history-year ul')
@@ -58,7 +69,7 @@ export function mountHistoryTimeline(historyRoot: HTMLElement | null | undefined
       for (const path of paths) {
         const itemLi = document.createElement('li')
         itemLi.className = 'item'
-        itemLi.setAttribute('data-i18n', path)
+        itemLi.innerHTML = getHistoryMessage(path, bundles, lang)
         itemsUl.appendChild(itemLi)
       }
       monthLi.appendChild(itemsUl)

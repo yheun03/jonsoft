@@ -10,7 +10,7 @@ function getVal(obj: unknown, path: string): unknown {
 function pickLocalized(node: unknown, lang: LocaleCode): string {
   if (node == null) return ''
   if (typeof node === 'string') return node
-  if (Array.isArray(node)) return ''
+  if (Array.isArray(node)) return node.map((item) => `<li>${String(item)}</li>`).join('')
   if (typeof node === 'object' && node !== null && lang in node) {
     return String((node as Record<string, unknown>)[lang] ?? '')
   }
@@ -27,5 +27,10 @@ export function useLocaleMessage() {
     return pickLocalized(getVal(b, path), locale.lang)
   }
 
-  return { t }
+  function i18n(key: string): string {
+    const [bundle, ...path] = key.split('.')
+    return t(bundle, path.join('.'))
+  }
+
+  return { t, i18n }
 }
