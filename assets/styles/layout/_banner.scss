@@ -1,31 +1,36 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     min-height: 620px;
     @include flex($direction: column);
-    .wrap{
+
+    .wrap {
         flex: 1;
         padding-block: 130px 80px;
         width: 100%;
         @include flex(column, space-between, stretch);
     }
-    h2{
+
+    h2 {
         @include font-style($weight: 600, $size: 50px);
         color: #ffffff;
     }
-    h3{
+
+    h3 {
         @include font-style($weight: 600, $size: 36px, $line-height: 49px);
         color: #ffffff;
         align-self: flex-end;
         text-align: right;
     }
-    strong{
+
+    strong {
         text-align: center;
     }
-    img{
+
+    img {
         position: absolute;
         top: 0;
         z-index: -10;
@@ -33,68 +38,83 @@
         height: 100%;
         object-fit: cover;
     }
-    &:has(img:only-child){ 
+
+    &:has(img:only-child) {
         min-height: unset;
         height: 200px;
     }
-    &.type{
-        &-ask{
+
+    &.type {
+        &-ask {
             min-height: unset;
             background: url($url + 'images/banner/ask.png') right/cover no-repeat;
-            .wrap{
+
+            .wrap {
                 padding-block: 160px;
             }
-            .title{
+
+            .title {
                 @include font-style($weight: 600, $size: 32px, $line-height: 40px, $color: #000000);
                 margin-bottom: 10px;
                 letter-spacing: unset;
             }
-            p{
+
+            p {
                 @include font-style($size: 18px, $line-height: 25px, $color: #848484);
                 letter-spacing: -0.05em;
             }
-            .btn{
+
+            .btn {
                 margin-top: 40px;
             }
 
             @include mobile {
-                .wrap{
+                .wrap {
                     padding-block: 120px 170px;
                 }
-                p{
+
+                p {
                     @include font-style($fw-4, 18px, 150%);
                     letter-spacing: -0.05em;
                 }
-                .title{
+
+                .title {
                     @include font-style($fw-6, 24px);
                     letter-spacing: 0;
                 }
-                .btn{
+
+                .btn {
                     margin-top: 20px;
                 }
             }
         }
-        &-title{
+
+        &-title {
             min-height: unset;
             margin-block: 60px 80px;
-            .wrap{
+
+            .wrap {
                 padding: unset;
                 gap: 50px;
                 max-width: 864px;
             }
-            .title{
+
+            .title {
                 @include font-style($weight: 600, $size: 46px, $line-height: 60px, $color: #343434);
             }
-            p{
+
+            p {
                 @include font-style($weight: 400, $size: 24px, $line-height: 36px, $color: #292e32);
                 text-align: center;
                 word-break: keep-all;
             }
         }
-        &-goto{
+
+        &-goto {
             height: 420px;
             min-height: unset;
-            &::before{
+
+            &::before {
                 @include pseudo-element("");
                 position: absolute;
                 width: 100%;
@@ -102,71 +122,85 @@
                 background-color: rgba(0, 0, 0, 0.2);
                 z-index: -1;
             }
-            .wrap{
+
+            .wrap {
                 padding-block: 90px;
                 align-items: center;
             }
-            .title{
+
+            .title {
                 @include font-style($weight: 600, $size: 46px, $color: #ffffff);
                 margin-bottom: 70px;
             }
         }
-        &-welcome{
+
+        &-welcome {
             position: sticky;
             top: 0;
             background: linear-gradient(90deg, #FF852A 0%, #FF391B 100%);
             min-height: unset;
             z-index: 10;
-            .mobile{
+
+            .mobile {
                 display: none;
             }
-            .wrap{
+
+            .wrap {
                 @include flex(column, center, center);
                 padding: 3px 44px;
                 @include font-style($fw-6, $fs-16, 140%, $color: #ffffff);
                 letter-spacing: 0.01em;
                 text-align: center;
-                a{
+
+                a {
                     font: {
                         size: 14px;
                         weight: 400;
                     }
+
                     color: inherit;
                     text-decoration: underline;
                 }
             }
-            .btn{
+
+            .btn {
                 width: 24px;
                 aspect-ratio: 1;
                 background: url($url+'icons/24/ic-xmark.svg') center / 24px no-repeat;
                 @include absolute-position(top, 50%, right, 20px);
                 transform: translateY(-50%);
             }
-            @include tablet{
-                .wrap{
+
+            @include tablet {
+                .wrap {
                     font-size: 12px;
                     line-height: 22px;
                     padding: 10px 36px;
-                    a{
+
+                    a {
                         font-size: 12px;
                     }
                 }
-                .btn{
+
+                .btn {
                     width: 18px;
                     background-size: 18px;
                 }
-                .mobile{
+
+                .mobile {
                     display: block;
                 }
-                .pc{
+
+                .pc {
                     display: none;
                 }
             }
         }
     }
-    &.set{
-        &-bg-bottom{
-            img{
+
+    &.set {
+        &-bg-bottom {
+            img {
                 object-position: bottom;
             }
         }
@@ -175,46 +209,56 @@
     @include tablet {
         min-height: min(580px, 40dvh);
         display: flex;
-        .wrap{
+
+        .wrap {
             padding-block: 60px 50px;
             height: 100%;
             flex: 1;
         }
-        img{
+
+        img {
             // object-position: calc(100% + 270px);
         }
-        h2{
+
+        h2 {
             font-size: 32px;
         }
-        h3{
+
+        h3 {
             @include font-style($size: 20px, $line-height: normal);
         }
 
-        &.type{
-            &-title{
+        &.type {
+            &-title {
                 margin-block: 60px;
-                .wrap{
+
+                .wrap {
                     padding-inline: 20px;
                     gap: 40px;
-                    .title{
+
+                    .title {
                         @include font-style($weight: 600, $size: 24px, $line-height: 150%);
                         text-align: left;
                     }
-                    p{
+
+                    p {
                         @include font-style($weight: 400, $size: 16px, $line-height: 150%);
                         text-align: left;
                     }
                 }
             }
-            &-goto{
-                .wrap{
+
+            &-goto {
+                .wrap {
                     justify-content: center;
                 }
-                .title{
+
+                .title {
                     font-size: 24px;
                     margin-bottom: 50px;
                 }
-                img{
+
+                img {
                     object-position: center;
                 }
             }

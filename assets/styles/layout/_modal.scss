@@ -1,26 +1,26 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-.modal-open{
+.modal-open {
     overflow: hidden;
 }
 
-.modal{
+.modal {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 1000;
     top: 0;
-    left: 0; 
+    left: 0;
     background-color: rgba(0, 0, 0, .4);
 
     display: none;
 
-    &.active{
+    &.active {
         display: block;
     }
 
-    &-content{
+    &-content {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,83 +33,97 @@
         grid-template-columns: 320px 1fr;
     }
 
-    &-header{
+    &-header {
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
         border-right: 1px solid #efefef;
-        .heading{
+
+        .heading {
             min-height: 208px;
             padding-bottom: 20px;
         }
-        .title{
+
+        .title {
             @include font-style($weight: 600, $size: 36px);
             color: #000000;
-            &-sub{
+
+            &-sub {
                 @include font-style($weight: 500, $size: 20px);
                 color: #555555;
                 margin-top: 10px;
             }
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 @include font-style($size: 16px, $color: #a0a0a0);
                 color: #a0a0a0;
                 margin-bottom: 10px;
-                &::before{
+
+                &::before {
                     content: "#";
                 }
             }
         }
-        a{
+
+        a {
             margin-top: auto;
             align-self: flex-start;
         }
     }
-    &-body{
+
+    &-body {
         padding: 40px 20px;
         overflow-y: auto;
 
-        .abstract{
+        .abstract {
             padding: 20px;
             background-color: #FAFAFA;
             border-radius: 6px;
             margin-bottom: 30px;
-            strong{
+
+            strong {
                 display: block;
                 @include font-style($weight: 600, $size: 20px, $line-height: 150%, $color: #000000);
                 letter-spacing: -0.02em;
                 margin-bottom: 10px;
-                mark{
+
+                mark {
                     color: #FF7931;
                     background: unset;
                 }
             }
-            p{
+
+            p {
                 @include font-style($size: 16px, $line-height: 150%, $color: #000000);
             }
         }
 
-        .title{
+        .title {
             padding-top: 20px;
             border-top: 1px solid #07203E;
             display: flex;
             gap: 20px;
-            span{
+
+            span {
                 @include font-style($weight: 600, $size: 20px, $color: #000000);
             }
-            p{
+
+            p {
                 @include font-style($size: 18px, $line-height: 150%, $color: #7f7f7f);
                 flex: 1;
             }
-            strong{
+
+            strong {
                 font-weight: 600;
             }
         }
 
-        .content{
+        .content {
             margin-top: 30px;
-            img{
+
+            img {
                 width: 100%;
                 height: auto;
             }
@@ -117,59 +131,73 @@
     }
 
     @include tablet {
-        &-content{
+        &-content {
             width: 100%;
             height: 100dvh;
             max-height: unset;
             display: flex;
             flex-direction: column;
-            overflow: hidden; /* 모달 컨테이너 자체는 오버플로우 숨김 */
+            overflow: hidden;
+            /* 모달 컨테이너 자체는 오버플로우 숨김 */
         }
-        &-header{
+
+        &-header {
             flex: none;
             padding: 20px 20px 10px;
             border-bottom: 1px solid #D6DCE5;
             box-shadow: 0 0 0 8px #f1f2f5;
-            .heading{
+
+            .heading {
                 min-height: unset;
                 margin-top: 20px;
             }
-            .title{
+
+            .title {
                 font-size: 24px;
-                &-sub{
+
+                &-sub {
                     font-size: 18px;
                 }
             }
-            ul{
+
+            ul {
                 margin-top: 20px;
-                li{
+
+                li {
                     font-size: 14px;
                 }
             }
         }
-        &-body{
+
+        &-body {
             flex: 1 1 auto;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
             padding: 20px;
             margin-top: 8px;
-            .abstract{
+
+            .abstract {
                 margin-bottom: 20px;
             }
-            .title{
+
+            .title {
                 flex-direction: column;
-                span{
+
+                span {
                     font-size: 18px;
                     letter-spacing: -0.02em;
                 }
-                p{
+
+                p {
                     font-size: 16px;
                     letter-spacing: -0.02em;
                 }
             }
-            .content{
+
+            .content {
                 margin-top: 40px;
-                img{
+
+                img {
                     width: calc(100% + 40px);
                     margin-inline: -20px;
                 }

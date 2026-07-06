@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-header{
+header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -11,56 +11,64 @@ header{
     z-index: 100;
 
     @include transition(all, .2s);
-    &.open{
+
+    &.open {
         height: 100dvh;
         background-color: #000000;
         border-color: #444444;
-        .menu{
-            .btn{
+
+        .menu {
+            .btn {
                 color: #ffffff;
                 background-image: url($url + 'icons/26/ic-xmark.svg');
             }
         }
-        h1 img{
+
+        h1 img {
             filter: invert(100%);
         }
     }
 
 
-    img{
+    img {
         display: block;
     }
 
-    .wrap{
+    .wrap {
         padding-block: 26px;
         width: 100%;
         @include flex($justify: space-between, $align: center);
     }
-    
-    .menu{
+
+    .menu {
         position: relative;
         z-index: 1;
         @include flex($align: center, $gap: 100px);
         margin-left: auto;
-        &.mobile{
+
+        &.mobile {
             display: none;
         }
     }
 
-    .i18n{
+    .i18n {
         display: flex;
         height: fit-content;
-        li{
+
+        li {
             display: inline;
             @include font-style($weight: 600, $size: 14px);
             color: #cccccc;
-            &.active{
+
+            &.active {
                 color: #333333;
             }
-            & + li{
+
+            &+li {
                 position: relative;
                 margin-left: 24px;
-                &:before{
+
+                &:before {
                     @include pseudo-element("");
                     @include absolute-position(left, -14px, top, 50%);
                     width: 4px;
@@ -71,49 +79,56 @@ header{
                 }
             }
         }
-        button{
+
+        button {
             @include font-style($weight: 600, $size: 14px);
             color: inherit;
         }
     }
 
     @include tablet {
-        .menu{
-            &.pc{
+        .menu {
+            &.pc {
                 display: none;
             }
-            &.mobile{
+
+            &.mobile {
                 display: flex;
             }
         }
     }
 }
 
-.full-screen-menu{
+.full-screen-menu {
     overflow: hidden;
     height: 0;
     width: 100%;
 
-    .wrap{
+    .wrap {
         background-color: #000;
         padding-inline: 30px;
         padding-block: 60px;
         height: 100%;
         @include flex($direction: column, $justify: space-between);
     }
-    ul:not(.i18n){
+
+    ul:not(.i18n) {
         width: 100%;
-        li{
+
+        li {
             @include font-style($fw-4, 25px, $color: #ffffff);
             position: relative;
             text-align: right;
             opacity: 0.5;
-            & + li{
+
+            &+li {
                 margin-top: 30px;
             }
-            &.active{
+
+            &.active {
                 opacity: 1;
-                &::after{
+
+                &::after {
                     @include pseudo-element("");
                     @include absolute-position(right, -30px, top, 50%);
                     width: 3px;
@@ -123,20 +138,24 @@ header{
                     @include transition(all, .2s);
                 }
             }
-            a{
+
+            a {
                 color: inherit;
             }
         }
     }
-    .i18n{
-        li{
+
+    .i18n {
+        li {
             color: #444444;
-            &.active{
+
+            &.active {
                 color: #cccccc;
             }
         }
     }
-    .open &{
+
+    .open & {
         height: 100%;
         // height: calc(100dvh - $header-height);
     }

@@ -1,18 +1,22 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-.module-text{
+.module-text {
     height: unset;
     margin-block: 80px 60px;
-    .wrap{
+
+    .wrap {
         padding-block: unset;
     }
-    .title{
+
+    .title {
         @include font-style($fw-6, 30px, 150%);
         color: #000000;
         margin-top: 20px;
-        &-sub{
+
+        &-sub {
             @include font-style($fw-6, 18px);
+
             span {
                 background: linear-gradient(198deg, #FF9056, #FF5C42);
                 background-clip: text;
@@ -22,28 +26,33 @@
             }
         }
     }
-    .dscpt{
+
+    .dscpt {
         @include font-style($fw-4, 24px, 150%);
         color: #000000;
         margin-top: 30px;
     }
 
-    .banner &{
+    .banner & {
         width: 100%;
         margin: unset;
         padding-block: 100px 160px;
-        .title{
+
+        .title {
             margin-top: 8px;
             font-size: 32px;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
         }
-        .dscpt{
+
+        .dscpt {
             margin-top: 50px;
             @include font-style($fw-6, 18px);
-            li{
+
+            li {
                 position: relative;
                 padding-left: 16px;
-                &::before{
+
+                &::before {
                     @include pseudo-element("");
                     @include absolute-position(top, 50%, left, 0);
                     transform: translateY(-50%);
@@ -51,34 +60,41 @@
                     height: 5px;
                     background-color: #ffffff;
                 }
-                & + li{
+
+                &+li {
                     margin-top: 16px;
                 }
             }
         }
+
         .title,
-        .dscpt{
+        .dscpt {
             color: #ffffff;
         }
     }
 
     @include tablet {
-        &{
+        & {
             margin-block: 60px 40px;
-            .banner &{
+
+            .banner & {
                 padding-block: 20px 40px;
-                .title{
+
+                .title {
                     font-size: 24px;
                 }
-                .dscpt{
+
+                .dscpt {
                     font-size: 16px;
                 }
             }
         }
-        .title{
+
+        .title {
             font-size: 24px;
         }
-        .dscpt{
+
+        .dscpt {
             font-size: 16px;
         }
     }

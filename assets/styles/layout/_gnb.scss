@@ -1,28 +1,33 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-.gnb{
+.gnb {
     display: flex;
     height: fit-content;
     gap: 30px;
-    li{
+
+    li {
         position: relative;
         display: inline;
         @include font-style($weight: 600, $size: 14px, $color: #666666);
         color: #666666;
         white-space: nowrap;
-        &:hover{
+
+        &:hover {
             color: #000000;
             opacity: unset;
         }
-        &.active{
+
+        &.active {
             color: #000000;
         }
     }
-    a{
+
+    a {
         color: inherit;
         position: relative;
-        &::after{
+
+        &::after {
             // 사용성 개선을 위한 가상요소
             @include pseudo-element("");
             @include absolute-position(top, -27px, left, -15px);
@@ -31,11 +36,12 @@
         }
     }
 
-    footer &{
-        li{
+    footer & {
+        li {
             @include font-style($size: 14px, $color: #909090);
-            & + li{
-                &::before{
+
+            &+li {
+                &::before {
                     @include pseudo-element("");
                     @include absolute-position(left, -17px, top, 50%);
                     transform: translateY(-50%);
@@ -50,13 +56,16 @@
             flex-direction: column;
             gap: 16px;
             margin-bottom: 40px;
-            li{
-                & + li::before{
+
+            li {
+                &+li::before {
                     content: unset;
                 }
-                a{
+
+                a {
                     display: block;
-                    &::after{
+
+                    &::after {
                         top: -8px;
                         left: 0;
                         width: 100%;

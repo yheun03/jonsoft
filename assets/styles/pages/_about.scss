@@ -40,7 +40,7 @@
             @include font-style($fw-4, $fs-14, normal, $color: $c-text-gray);
         }
 
-        li{
+        li {
             text-align: center;
         }
     }
@@ -54,11 +54,12 @@
     @include tablet {
         margin-top: 40px;
         background: unset;
-        ul{
+
+        ul {
             justify-content: center;
             @include grid(2, 60px 40px, 120px);
         }
-    
+
     }
 }
 
@@ -90,7 +91,7 @@
         $item-height: 460px;
         $item-radius: $radius-20;
         $item-padding: $gap-40 $gap-60;
-        
+
         $thumb-bg: (
             'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
             'item-02': (#B0E0FB, '../icons/380/copyright.png', #B0E0FB),
@@ -98,13 +99,13 @@
             'item-04': (#8EAFF6, '../icons/380/venture.png', #8EAFF6),
         );
 
-        margin-top: $gap-40;
-        display: flex;
-        gap: $gap-20;
-        overflow-x: auto;
-        padding-bottom: $gap-20;
+    margin-top: $gap-40;
+    display: flex;
+    gap: $gap-20;
+    overflow-x: auto;
+    padding-bottom: $gap-20;
 
-        /**
+    /**
          * 썸네일 배경 믹스인
          * @param {color} $color - 배경 색상
          * @param {string} $img - 이미지 경로
@@ -112,91 +113,98 @@
          * 
          * 사용법: @include thumb-bg(#FFED71, '../icons/380/tcb.png', #FFED71);
          */
-        @mixin thumb-bg($color, $img, $grad) {
-            background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
-            
-            &::after {
-                @include pseudo-element();
-                @include absolute-position(bottom, 0, left, 0);
-                width: 100%;
-                height: 100%;
-                @include gradient-overlay($grad, 0, 0.5);
-                z-index: 1;
-            }
+    @mixin thumb-bg($color, $img, $grad) {
+        background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
+
+        &::after {
+            @include pseudo-element();
+            @include absolute-position(bottom, 0, left, 0);
+            width: 100%;
+            height: 100%;
+            @include gradient-overlay($grad, 0, 0.5);
+            z-index: 1;
+        }
+    }
+
+    .item {
+        position: relative;
+        border-radius: $item-radius;
+        width: $item-width;
+        height: $item-height;
+        padding: $item-padding;
+        overflow: hidden;
+
+        img {
+            width: 220px;
         }
 
-        .item {
-            position: relative;
-            border-radius: $item-radius;
-            width: $item-width;
-            height: $item-height;
-            padding: $item-padding;
-            overflow: hidden;
+        p {
+            @include font-style($fw-6, $fs-24, 140%);
+            text-align: left;
+        }
 
-            img {
-                width: 220px;
+        .thumbnail {
+            @include absolute-position(right, 56px, bottom, -30px);
+            @include flex(row, flex-start, center, $gap-8);
+        }
+
+        // 각 item별 배경/그라디언트 반복
+        @each $name, $val in $thumb-bg {
+            &.#{$name} {
+                @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
+            }
+        }
+    }
+}
+
+@include tablet {
+    padding-block: 40px;
+
+    .title,
+    .title-sub {
+        font-size: 24px;
+        text-align: left;
+        padding-inline: 20px;
+    }
+
+    .list-awards {
+        padding-inline: 20px;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100dvw - 40px);
+            height: 390px;
+            padding: 20px;
+            flex: 0 0 auto;
+
+            background: {
+                position: right -10px top 45px;
+                size: 180px;
             }
 
             p {
-                @include font-style($fw-6, $fs-24, 140%);
-                text-align: left;
+                font-size: 18px;
+                line-height: normal;
             }
 
             .thumbnail {
-                @include absolute-position(right, 56px, bottom, -30px);
-                @include flex(row, flex-start, center, $gap-8);
-            }
+                @include absolute-position(bottom, unset, right, unset);
+                position: relative;
+                width: calc(100% + 10px);
+                gap: 10px;
+                order: 1;
+                margin: 0 -10px -30px;
 
-            // 각 item별 배경/그라디언트 반복
-            @each $name, $val in $thumb-bg {
-                &.#{$name} {
-                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
-                }
-            }
-        }
-    }
-
-    @include tablet {
-        padding-block: 40px;
-        .title, .title-sub{
-            font-size: 24px;
-            text-align: left;
-            padding-inline: 20px;
-        }
-        .list-awards {
-            padding-inline: 20px;
-
-            .item{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                width: calc(100dvw - 40px);
-                height: 390px;
-                padding: 20px;
-                flex: 0 0 auto;
-                background: {
-                    position: right -10px top 45px;
-                    size: 180px;
-                }
-                p{
-                    font-size: 18px;
-                    line-height: normal;
-                }
-                .thumbnail{
-                    @include absolute-position(bottom, unset, right, unset);
-                    position: relative;
-                    width: calc(100% + 10px);
-                    gap: 10px;
-                    order: 1;
-                    margin: 0 -10px -30px;
-                    img{
-                        width: 50%;
-                        max-width: 180px;
-                    }
+                img {
+                    width: 50%;
+                    max-width: 180px;
                 }
             }
         }
     }
+}
 }
 
 // =============================================================================
@@ -337,12 +345,12 @@
     }
 
     @include tablet {
-        .list-feature{
+        .list-feature {
             @include grid(1, 20px, 1fr);
 
 
-            .front{
-                .title{
+            .front {
+                .title {
                     font-size: 28px;
                 }
             }
@@ -360,9 +368,67 @@
  */
 
 .history {
+    position: relative;
     background-color: $c-bg-dark;
     color: $c-text-light;
     padding-top: $gap-80;
+
+    .wrap {
+        position: relative;
+        z-index: 1;
+    }
+
+    &-graph {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 58%;
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        &-fill {
+            fill: rgba(255, 130, 77, 0.32);
+        }
+
+        &-line {
+            fill: none;
+            stroke: $c-orange;
+            stroke-width: 4;
+        }
+
+        &-mask {
+            transform: scaleX(0);
+            transform-box: fill-box;
+            transform-origin: left center;
+        }
+    }
+
+    &.is-graph-visible {
+        .history-graph {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .history-graph-mask {
+            animation: historyGraphReveal 2s ease-out 0.5s forwards;
+        }
+    }
+
+    &.is-graph-animated {
+        .history-graph-mask {
+            animation: none;
+            transform: scaleX(1);
+        }
+    }
 
     .title {
         @include font-style($fw-7, $fs-32, 46px);
@@ -371,7 +437,7 @@
     }
 
     &-timeline {
-        margin-top: $gap-60;
+        margin-top: $gap-40;
         @include flex(row, center, center, 60px);
         width: 754px;
         margin-inline: auto;
@@ -385,9 +451,12 @@
         left: 0;
         height: calc(100dvh - 115px);
         z-index: 1;
+        padding-top: 20px;
+
         ul {
             @include flex(column, $align: flex-end, $gap: 6px);
-            &::after{
+
+            &::after {
                 @include pseudo-element();
                 @include absolute-position(top, 24px, right, 6px);
                 width: 2px;
@@ -396,14 +465,17 @@
                 z-index: -1;
             }
         }
+
         li {
             position: relative;
-            @include flex( $gap: 30px);
-            button{
+            @include flex($gap: 30px);
+
+            button {
                 @include font-style($fw-6, 28px, $color: #797979);
                 padding: 6px 0 6px 22px;
                 @include transition();
             }
+
             &::after {
                 @include pseudo-element($display: block);
                 width: 14px;
@@ -413,12 +485,14 @@
                 z-index: 1;
                 @include transition();
             }
+
             &.active {
-                button{
+                button {
                     color: $c-orange;
                     -webkit-text-stroke-width: 0.1px;
                     -webkit-text-stroke-color: #000;
                 }
+
                 &::after {
                     background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;
                     width: 22px;
@@ -431,7 +505,9 @@
     }
 
     &-content {
-        & > li{
+        padding-top: 20px;
+
+        &>li {
             margin-bottom: 120px;
         }
     }
@@ -441,7 +517,7 @@
         @include font-style($fw-5, $fs-16);
         margin-bottom: $gap-20;
 
-        & > span{
+        &>span {
             display: block;
         }
 
@@ -453,46 +529,67 @@
             margin-top: 5px;
         }
     }
-} 
+}
+
+@keyframes historyGraphReveal {
+    to {
+        transform: scaleX(1);
+    }
+}
 
 @include tablet {
 
-    .history{
+    .history {
         padding-block: 120px 60px;
-        .month{
+
+        &-graph {
+            height: 42%;
+            opacity: 0.65;
+        }
+
+        .month {
             width: unset;
         }
-        &-timeline{
+
+        &-timeline {
             display: unset;
         }
-        &-year{
+
+        &-year {
             width: unset;
             top: $header-height;
             padding-top: 20px;
             background-color: $c-bg-dark;
             height: unset;
             margin: 0 -20px 20px;
-            ul{
+
+            ul {
                 flex-direction: row;
                 justify-content: flex-start;
                 padding-inline: 10px;
                 overflow-x: auto;
-                &::after{
+
+                &::after {
                     content: unset;
                 }
-                li{
+
+                li {
                     font-size: 20px;
-                    button{
+
+                    button {
                         padding: 6px 10px;
                     }
-                    &::before, &::after{
+
+                    &::before,
+                    &::after {
                         content: unset;
                     }
                 }
             }
         }
-        &-content{
-            & > li{
+
+        &-content {
+            &>li {
                 padding-top: 60px;
                 margin-bottom: 60px;
             }

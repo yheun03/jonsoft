@@ -1,7 +1,8 @@
 <template>
     <div class="partners">
         <div class="wrap">
-            <div class="title" data-aos="fade-up" data-aos-delay="200">{{ localized(partnerData[props.type].title) }}</div>
+            <div class="title" data-aos="fade-up" data-aos-delay="200">{{ localized(partnerData[props.type].title) }}
+            </div>
             <ul>
                 <li v-for="item in items" :key="item.name" data-aos="zoom-in-up" :data-aos-delay="item.delay">
                     <img :src="assetPath(item.src)" :alt="localized(item.alt)">

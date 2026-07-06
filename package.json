@@ -1,31 +1,31 @@
 {
-  "name": "jonsoft",
-  "private": true,
-  "type": "module",
-  "engines": {
-    "node": "22"
-  },
-  "scripts": {
-    "dev": "nuxt dev",
-    "dev:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "generate:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& set NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr&& nuxt generate",
-    "preview": "nuxt preview"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.5.5",
-    "aos": "^2.3.4",
-    "nuxt": "3.12.4",
-    "pinia": "^2.2.6",
-    "vue": "^3.4.38",
-    "vue-i18n": "^11.4.6",
-    "vue-router": "^4.4.3"
-  },
-  "devDependencies": {
-    "@types/node": "^25.6.0",
-    "sass": "^1.83.0",
-    "sharp": "^0.34.5",
-    "typescript": "^5.7.2"
-  }
+    "name": "jonsoft",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": "22"
+    },
+    "scripts": {
+        "dev": "nuxt dev",
+        "dev:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& nuxt dev",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "generate:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& set NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr&& nuxt generate",
+        "preview": "nuxt preview"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.5",
+        "aos": "^2.3.4",
+        "nuxt": "3.12.4",
+        "pinia": "^2.2.6",
+        "vue": "^3.4.38",
+        "vue-i18n": "^11.4.6",
+        "vue-router": "^4.4.3"
+    },
+    "devDependencies": {
+        "@types/node": "^25.6.0",
+        "sass": "^1.83.0",
+        "sharp": "^0.34.5",
+        "typescript": "^5.7.2"
+    }
 }

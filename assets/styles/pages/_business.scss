@@ -92,33 +92,41 @@
             padding-inline: $gap-20;
         }
 
-        .item{
+        .item {
             width: 300px;
             margin-inline: 10px;
             flex: 0 0 auto;
         }
-        .thumbnail{
+
+        .thumbnail {
             height: 260px;
-            .dim{
+
+            .dim {
                 padding: 20px;
-                p{
+
+                p {
                     font-size: 16px;
-                    &.title{
+
+                    &.title {
                         font-size: 28px;
                         margin-bottom: 6px;
                     }
                 }
             }
         }
-        .content{
+
+        .content {
             padding-block: 16px;
-            p{
+
+            p {
                 margin-top: 8px;
                 font-size: 16px;
             }
-            a{
+
+            a {
                 font-size: 14px;
-                &::after{
+
+                &::after {
                     width: 18px;
                     height: 18px;
                 }
@@ -195,25 +203,30 @@
 
     @include tablet {
         padding-block: 40px;
-        h3{
+
+        h3 {
             font-size: 24px;
         }
-        .list-case{
+
+        .list-case {
             @include grid(1, 20px, 1fr);
         }
-        .content{
-            &::after{
+
+        .content {
+            &::after {
                 content: unset;
             }
         }
-        .item{
-            .title{
+
+        .item {
+            .title {
                 font-size: 20px;
             }
-            .dscpt{
+
+            .dscpt {
                 font-size: 16px;
                 line-height: 150%;
             }
         }
     }
-} 
+}

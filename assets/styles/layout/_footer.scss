@@ -1,33 +1,39 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-footer{
+footer {
     position: relative;
     background-color: #F7F6F8;
     padding-block: 80px;
     z-index: 10;
-    a[class*=logo]{
+
+    a[class*=logo] {
         display: block;
         font-size: 0;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-    .logo-jon{
+
+    .logo-jon {
         width: 140px;
     }
-    .logo-inobiz{
+
+    .logo-inobiz {
         height: 50px;
     }
-    .gnb{
+
+    .gnb {
         margin: 0 0 10px;
     }
 
-    .wrap{
+    .wrap {
         display: flex;
-        &-text{
+
+        &-text {
             @include flex(column, flex-start, stretch, 4.5px);
             margin-inline: 40px auto;
             @include font-style($size: 14px, $color: #909090);
@@ -36,19 +42,21 @@ footer{
     }
 
     @include tablet {
-        .wrap{
+        .wrap {
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 40px;
-            &-text{
+
+            &-text {
                 order: 1;
                 width: 100%;
                 margin: unset;
                 font-size: 13px;
             }
         }
-        a[class*=logo]{
-            img{
+
+        a[class*=logo] {
+            img {
                 max-width: 30dvw;
             }
         }

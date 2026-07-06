@@ -72,14 +72,19 @@
                     font-weight: $fw-7;
                 }
 
-                span, a, strong{display: inline-block;}
+                span,
+                a,
+                strong {
+                    display: inline-block;
+                }
+
                 a {
                     margin-left: 36px;
                 }
             }
 
-            dl{
-                &:nth-child(2){
+            dl {
+                &:nth-child(2) {
                     grid-column: span 2
                 }
             }
@@ -102,7 +107,7 @@
                     font-weight: $fw-7;
                 }
 
-                li + li {
+                li+li {
                     margin-top: $gap-8;
                 }
             }
@@ -116,12 +121,13 @@
                     height: 330px;
                 }
 
-                &:hover{
-                    &::after{
+                &:hover {
+                    &::after {
                         background-color: unset;
                         z-index: -1;
                     }
                 }
+
                 &::after {
                     @include pseudo-element();
                     @include absolute-position(top, 0, left, 0);
@@ -183,7 +189,8 @@
                 strong {
                     font-weight: $fw-6;
                 }
-                & > span{
+
+                &>span {
                     margin-inline: $gap-8;
                 }
             }
@@ -192,44 +199,50 @@
 
     @include tablet {
         margin-top: 60px;
-        .tab{
+
+        .tab {
             margin-bottom: 40px;
-            ul{
+
+            ul {
                 padding-inline: 20px;
                 @include flex($justify: flex-start, $gap: 30px);
             }
         }
-        h2{
+
+        h2 {
             font-size: 34px;
             margin-bottom: 40px;
         }
 
-        .contact{
-            .info{
+        .contact {
+            .info {
                 @include grid(1, 40px, 1fr);
             }
-            .list-map{
+
+            .list-map {
                 margin-top: 80px;
-                ul{
+
+                ul {
                     margin: 20px 0 0 0;
                 }
             }
         }
 
-        .recruit{
-            .info{
-                dl{
+        .recruit {
+            .info {
+                dl {
                     grid-template-columns: repeat(2, 1fr) auto;
                 }
-                dl{
+
+                dl {
                     @include font-style($fw-4, 16px, 150%);
                 }
             }
         }
     }
 
-    @include mobile{
-        .contact .info dd a{
+    @include mobile {
+        .contact .info dd a {
             margin-left: 8px;
         }
     }
@@ -286,15 +299,19 @@
 
     @include tablet {
         margin-block: 120px 40px;
-        .list-philosophy{
+
+        .list-philosophy {
             @include grid(1, 20px, 1fr);
-            .content{
+
+            .content {
                 margin-top: 20px;
                 padding-inline: unset;
-                dt{
+
+                dt {
                     margin-top: 8px;
                 }
-                dd{
+
+                dd {
                     font-size: 14px;
                     line-height: 21px;
                     margin-top: unset;
@@ -303,4 +320,4 @@
         }
     }
 
-} 
+}

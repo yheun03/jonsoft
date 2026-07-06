@@ -21,7 +21,8 @@
  */
 @mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: null) {
     font: $weight #{$size}/#{$line-height} $family;
-    @if $color != null and $color != '' {
+
+    @if $color !=null and $color !='' {
         color: $color;
     }
 }
@@ -56,7 +57,8 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-    @if $gap > 0 {
+
+    @if $gap >0 {
         gap: $gap;
     }
 }
@@ -71,7 +73,8 @@
 @mixin grid($columns, $gap: 0, $col-size: 1fr) {
     display: grid;
     grid-template-columns: repeat($columns, $col-size);
-    @if $gap != 0 and $gap != '' {
+
+    @if $gap !=0 and $gap !='' {
         gap: $gap;
     }
 }
@@ -130,9 +133,11 @@
  * 사용법: @include shadow(md, #000);
  */
 @mixin shadow($type: sm, $color: rgba(0, 0, 0, 0.15)) {
-    @if $type == sm {
+    @if $type ==sm {
         box-shadow: $shadow-sm;
-    } @else if $type == md {
+    }
+
+    @else if $type ==md {
         box-shadow: $shadow-md $color;
     }
 }
@@ -173,11 +178,13 @@
  * 사용법: @include text-ellipsis(2);
  */
 @mixin text-ellipsis($lines: 1) {
-    @if $lines == 1 {
+    @if $lines ==1 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    } @else {
+    }
+
+    @else {
         display: -webkit-box;
         -webkit-line-clamp: $lines;
         -webkit-box-orient: vertical;
@@ -208,7 +215,8 @@
  */
 @mixin pseudo-element($content: '', $display: '') {
     content: $content;
-    @if $display != '' {
+
+    @if $display !='' {
         display: $display;
     }
 }
@@ -223,12 +231,17 @@
 
 // 모바일 우선 접근법
 $breakpoints: (
-    'xs': 320px,    // 작은 모바일
-    'sm': 576px,    // 모바일
-    'md': 768px,    // 태블릿
-    'lg': 992px,    // 작은 데스크톱
-    'xl': 1200px,   // 데스크톱
-    'xxl': 1400px   // 큰 데스크톱
+    'xs': 320px,
+    // 작은 모바일
+    'sm': 576px,
+    // 모바일
+    'md': 768px,
+    // 태블릿
+    'lg': 992px,
+    // 작은 데스크톱
+    'xl': 1200px,
+    // 데스크톱
+    'xxl': 1400px // 큰 데스크톱
 );
 
 // =============================================================================
@@ -246,7 +259,9 @@ $breakpoints: (
         @media (min-width: map.get($breakpoints, $breakpoint)) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
     }
 }
@@ -262,7 +277,9 @@ $breakpoints: (
         @media (max-width: (map.get($breakpoints, $breakpoint) - 1px)) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
     }
 }
@@ -279,7 +296,9 @@ $breakpoints: (
         @media (min-width: map.get($breakpoints, $min)) and (max-width: (map.get($breakpoints, $max) - 1px)) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @warn "브레이크포인트를 찾을 수 없습니다.";
     }
 }
