@@ -1,6 +1,5 @@
 import type { Ref } from 'vue'
 import { bindHistoryLegacyControls } from '~/composables/useHistoryLegacy'
-import { mountHistoryTimeline } from '~/i18n/history'
 
 /**
  * Vue 템플릿으로 옮긴 섹션 루트에 레거시 인터랙션을 연결합니다.
@@ -28,7 +27,6 @@ export function useLegacySectionRoot(root: Ref<HTMLElement | null>, namespaces: 
     await locale.loadBundles(namespaces)
     await nextTick()
     if (root.value && namespaces.includes('history')) {
-      mountHistoryTimeline(root.value.querySelector('.history'), locale.bundles, locale.lang)
       releaseHistoryControls?.()
       releaseHistoryControls = bindHistoryLegacyControls(root.value)
       if (import.meta.client) {
@@ -46,7 +44,6 @@ export function useLegacySectionRoot(root: Ref<HTMLElement | null>, namespaces: 
     () => [locale.lang, locale.bundleEpoch] as const,
     () => {
       if (root.value && namespaces.includes('history')) {
-        mountHistoryTimeline(root.value.querySelector('.history'), locale.bundles, locale.lang)
         releaseHistoryControls?.()
         releaseHistoryControls = bindHistoryLegacyControls(root.value)
       }

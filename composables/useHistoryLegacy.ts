@@ -1,6 +1,6 @@
 /**
  * about 페이지 연혁 블록: 연도 버튼·스크롤 연동을 바닐라로 초기화합니다.
- * DOM은 `mountHistoryTimeline` 이후에 존재하므로, 레이아웃 마운트 직후 호출해야 합니다.
+ * DOM은 `about.vue`의 연혁 JSON 렌더링 이후에 존재하므로, 레이아웃 마운트 직후 호출해야 합니다.
  */
 export function bindHistoryLegacyControls(root: HTMLElement | null | undefined): () => void {
   if (!root) return () => {}

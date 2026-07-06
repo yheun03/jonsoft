@@ -12,7 +12,7 @@
     </div>
     <div class="solution">
         <div class="list-solution">
-            <div class="item" data-aos="fade-up" data-aos-delay="800" data-modal-target="aps" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="800" @click="openModal('solution', 'aps')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.aps.title')"></p>
@@ -23,10 +23,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.aps.badge')"></span>
                     <p v-html="t('business.solutions.aps.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1000" data-modal-target="oms" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="1000" @click="openModal('solution', 'oms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.oms.title')"></p>
@@ -37,10 +37,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.oms.badge')"></span>
                     <p v-html="t('business.solutions.oms.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1400" data-modal-target="fems" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="1400" @click="openModal('solution', 'fems')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.fems.title')"></p>
@@ -51,10 +51,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.fems.badge')"></span>
                     <p v-html="t('business.solutions.fems.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1800" data-modal-target="scm" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="1800" @click="openModal('solution', 'scm')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.scm.title')"></p>
@@ -65,10 +65,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.scm.badge')"></span>
                     <p v-html="t('business.solutions.scm.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2200" data-modal-target="crm" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="2200" @click="openModal('solution', 'crm')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.crm.title')"></p>
@@ -79,10 +79,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.crm.badge')"></span>
                     <p v-html="t('business.solutions.crm.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2400" data-modal-target="mes" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="2400" @click="openModal('solution', 'mes')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.mes.title')"></p>
@@ -93,10 +93,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.mes.badge')"></span>
                     <p v-html="t('business.solutions.mes.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2000" data-modal-target="wcs" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="2000" @click="openModal('solution', 'wcs')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.wcs.title')"></p>
@@ -107,10 +107,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.wcs.badge')"></span>
                     <p v-html="t('business.solutions.wcs.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2000" data-modal-target="tms" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="2000" @click="openModal('solution', 'tms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.tms.title')"></p>
@@ -121,10 +121,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.tms.badge')"></span>
                     <p v-html="t('business.solutions.tms.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1600" data-modal-target="ai" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="1600" @click="openModal('solution', 'ai')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.ai.title')"></p>
@@ -135,10 +135,10 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.ai.badge')"></span>
                     <p v-html="t('business.solutions.ai.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1200" data-modal-target="wms" data-modal-type="solution">
+            <div class="item" data-aos="fade-up" data-aos-delay="1200" @click="openModal('solution', 'wms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.wms.title')"></p>
@@ -149,7 +149,7 @@
                 <div class="content">
                     <span class="badge" v-html="t('business.solutions.wms.badge')"></span>
                     <p v-html="t('business.solutions.wms.dscpt')"></p>
-                    <a href="#"><span v-html="t('business.solutions.button')"></span></a>
+                    <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
         <div class="wrap">
             <h3 v-html="t('business.success.title')" data-aos="fade-up" data-aos-delay="200"></h3>
             <ul class="list-case">
-                <li class="item" data-aos="fade-up" data-aos-delay="400" data-modal-target="tailim" data-modal-type="success">
+                <li class="item" data-aos="fade-up" data-aos-delay="400" @click="openModal('success', 'tailim')">
                     <div class="content">
                         <p class="title" v-html="t('business.success.case1.title')"></p>
                         <ul class="dscpt">
@@ -167,7 +167,7 @@
                     </div>
                     <img src="/assets/images/success/tailm.webp" alt="">
                 </li>
-                <li class="item" data-aos="fade-up" data-aos-delay="600" data-modal-target="kkleannara" data-modal-type="success">
+                <li class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('success', 'kkleannara')">
                     <div class="content">
                         <p class="title" v-html="t('business.success.case2.title')"></p>
                         <ul class="dscpt">
@@ -181,8 +181,8 @@
     </div>
     <CommonAskBanner />
 </section>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="aps" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'aps') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.aps.title')"></p>
@@ -191,7 +191,7 @@
             <ul>
                 <li v-html="t('business.solutions.aps.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -207,8 +207,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="oms" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'oms') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.oms.title')"></p>
@@ -217,7 +217,7 @@
             <ul>
                 <li v-html="t('business.solutions.oms.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -229,8 +229,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="fems" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'fems') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.fems.title')"></p>
@@ -239,7 +239,7 @@
             <ul>
                 <li v-html="t('business.solutions.fems.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -251,8 +251,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="scm" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'scm') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.scm.title')"></p>
@@ -261,7 +261,7 @@
             <ul>
                 <li v-html="t('business.solutions.scm.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -273,8 +273,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="crm" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'crm') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.crm.title')"></p>
@@ -283,7 +283,7 @@
             <ul>
                 <li v-html="t('business.solutions.crm.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -299,8 +299,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="mes" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'mes') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.mes.title')"></p>
@@ -309,7 +309,7 @@
             <ul>
                 <li v-html="t('business.solutions.mes.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -321,8 +321,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="wcs" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'wcs') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.wcs.title')"></p>
@@ -331,7 +331,7 @@
             <ul>
                 <li v-html="t('business.solutions.wcs.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -347,8 +347,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="tms" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'tms') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.tms.title')"></p>
@@ -357,7 +357,7 @@
             <ul>
                 <li v-html="t('business.solutions.tms.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -369,8 +369,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="ai" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'ai') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.ai.title')"></p>
@@ -379,7 +379,7 @@
             <ul>
                 <li v-html="t('business.solutions.ai.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -391,8 +391,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-solution" data-modal-id="wms" data-modal-type="solution">
+<div class="modal" :class="{ active: isModal('solution', 'wms') }" @click.self="closeModal">
+    <div class="modal-content content-solution">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.solutions.wms.title')"></p>
@@ -401,7 +401,7 @@
             <ul>
                 <li v-html="t('business.solutions.wms.badge')"></li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="abstract">
@@ -413,8 +413,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-success" data-modal-id="tailim" data-modal-type="success">
+<div class="modal" :class="{ active: isModal('success', 'tailim') }" @click.self="closeModal">
+    <div class="modal-content content-success">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.success.case1.title')"></p>
@@ -422,7 +422,7 @@
             <ul>
                 <li v-for="item in list('business.success.case1.dscpt')" :key="item">{{ item }}</li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="content">
@@ -431,8 +431,8 @@
         </div>
     </div>
 </div>
-<div class="modal">
-    <div class="modal-content content-success" data-modal-id="kkleannara" data-modal-type="success">
+<div class="modal" :class="{ active: isModal('success', 'kkleannara') }" @click.self="closeModal">
+    <div class="modal-content content-success">
         <div class="modal-header">
             <div class="heading">
                 <p class="title" v-html="t('business.success.case2.title')"></p>
@@ -440,7 +440,7 @@
             <ul>
                 <li v-for="item in list('business.success.case2.dscpt')" :key="item">{{ item }}</li>
             </ul>
-            <a href="" class="btn type-round">닫기</a>
+            <a href="" class="btn type-round" @click.prevent="closeModal">닫기</a>
         </div>
         <div class="modal-body">
             <div class="content">
@@ -470,6 +470,26 @@ const list = (key: string) => {
   const message = tm(key)
   return Array.isArray(message) ? message.map((item) => rt(item)) : []
 }
+const activeModal = ref({ type: '', id: '' })
+const openModal = (type: string, id: string) => {
+  activeModal.value = { type, id }
+}
+const closeModal = () => {
+  activeModal.value = { type: '', id: '' }
+}
+const isModal = (type: string, id: string) =>
+  activeModal.value.type === type && activeModal.value.id === id
+
+watch(activeModal, (modal) => {
+  if (import.meta.client) {
+    document.body.classList.toggle('modal-open', Boolean(modal.id))
+  }
+})
+
+onUnmounted(() => {
+  document.body.classList.remove('modal-open')
+})
+
 const root = ref<HTMLElement | null>(null)
 useLegacySectionRoot(root, namespaces)
 </script>

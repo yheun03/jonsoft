@@ -1,20 +1,15 @@
-import { createI18n } from 'vue-i18n'
-import { localeMessages } from '~/i18n'
+import { loadLocaleMessages, setupI18n } from '~/i18n/i18n'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   const locale = useLocaleStore()
-  const i18n = createI18n({
-    legacy: false,
-    globalInjection: true,
-    warnHtmlMessage: false,
-    locale: locale.lang,
-    fallbackLocale: 'ko',
-    messages: localeMessages,
-  })
+  const i18n = setupI18n(locale.lang)
+
+  await loadLocaleMessages(i18n, locale.lang)
 
   nuxtApp.vueApp.use(i18n)
 
-  locale.$subscribe((_mutation, state) => {
+  locale.$subscribe(async (_mutation, state) => {
+    await loadLocaleMessages(i18n, state.lang)
     i18n.global.locale.value = state.lang
   })
 })

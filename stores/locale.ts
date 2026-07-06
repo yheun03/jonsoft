@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { localeMessages } from '~/i18n'
+import { getLocaleMessage } from '~/i18n/i18n'
 
 export type LocaleCode = 'ko' | 'en' | 'ja' | 'vi'
 
@@ -13,9 +13,9 @@ export const useLocaleStore = defineStore('locale', {
     bundleEpoch: 0,
   }),
   actions: {
-    setLang(next: LocaleCode) {
+    async setLang(next: LocaleCode) {
       this.lang = next
-      const messages = localeMessages[next]
+      const messages = await getLocaleMessage(next)
       for (const name of this.loadedNamespaces) {
         const slice = messages[name]
         if (slice) this.bundles[name] = slice
@@ -34,7 +34,7 @@ export const useLocaleStore = defineStore('locale', {
       }
     },
     async loadBundles(names: string[]) {
-      const messages = localeMessages[this.lang]
+      const messages = await getLocaleMessage(this.lang)
       for (const name of names) {
         const slice = messages[name]
         if (!slice) continue

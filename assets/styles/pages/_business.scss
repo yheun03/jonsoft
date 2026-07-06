@@ -10,13 +10,16 @@
 
 /**
  * 솔루션 섹션
- * 회사의 주요 솔루션을 슬라이더로 표시
+ * 회사의 주요 솔루션을 가로 리스트로 표시
  */
 .solution {
     margin-block: 6px $gap-80;
 
-    .slick-list {
-        padding-block: 10px 30px !important;
+    .list-solution {
+        display: flex;
+        gap: $gap-20;
+        overflow-x: auto;
+        padding-block: 10px 30px;
         margin-top: -10px;
     }
 
@@ -84,9 +87,15 @@
     }
 
     @include tablet {
+        .list-solution {
+            gap: 0;
+            padding-inline: $gap-20;
+        }
+
         .item{
             width: 300px;
             margin-inline: 10px;
+            flex: 0 0 auto;
         }
         .thumbnail{
             height: 260px;

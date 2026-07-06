@@ -1,0 +1,58 @@
+{
+  "ko": {
+    "currency": {
+      "style": "currency",
+      "currency": "KRW",
+      "currencyDisplay": "symbol",
+      "maximumFractionDigits": 2
+    },
+    "decimal": {
+      "style": "decimal"
+    },
+    "percent": {
+      "style": "percent"
+    }
+  },
+  "en": {
+    "currency": {
+      "style": "currency",
+      "currency": "USD",
+      "currencyDisplay": "symbol",
+      "maximumFractionDigits": 2
+    },
+    "decimal": {
+      "style": "decimal"
+    },
+    "percent": {
+      "style": "percent"
+    }
+  },
+  "ja": {
+    "currency": {
+      "style": "currency",
+      "currency": "JPY",
+      "currencyDisplay": "symbol",
+      "maximumFractionDigits": 0
+    },
+    "decimal": {
+      "style": "decimal"
+    },
+    "percent": {
+      "style": "percent"
+    }
+  },
+  "vi": {
+    "currency": {
+      "style": "currency",
+      "currency": "VND",
+      "currencyDisplay": "symbol",
+      "maximumFractionDigits": 0
+    },
+    "decimal": {
+      "style": "decimal"
+    },
+    "percent": {
+      "style": "percent"
+    }
+  }
+}

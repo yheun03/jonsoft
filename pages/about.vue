@@ -149,9 +149,24 @@
             <p class="title" data-aos="fade-up" data-aos-delay="200" v-html="t('history.banner.title')"></p>
             <div class="history-timeline">
                 <div class="history-year">
-                    <ul></ul>
+                    <ul>
+                        <li v-for="(year, index) in historyItems" :key="year.year" :class="{ active: index === 0 }" data-aos="fade-up" :data-aos-delay="350 + index * 50">
+                            <button type="button" class="btn">{{ year.year }}</button>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="history-content" data-aos="fade-up" data-aos-delay="900"></ul>
+                <ul class="history-content" data-aos="fade-up" data-aos-delay="900">
+                    <li v-for="year in historyItems" :key="`content-${year.year}`">
+                        <ul>
+                            <li v-for="month in year.months" :key="`${year.year}-${month.label}`" class="month">
+                                <span class="month-label">{{ month.label }}</span>
+                                <ul>
+                                    <li v-for="(item, index) in month.items" :key="`${month.label}-${index}`" class="item" v-html="localized(item)"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -166,6 +181,7 @@ import { getI18nNamespaces } from '~/utils/route-i18n'
 import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
 import CommonAskBanner from '~/components/Section/CommonAskBanner.vue'
 import CommonPhilosophy from '~/components/Section/CommonPhilosophy.vue'
+import historyItems from '~/data/history.json'
 
 definePageMeta({
   layout: 'default',
@@ -180,6 +196,7 @@ const list = (key: string) => {
   const message = tm(key)
   return Array.isArray(message) ? message.map((item) => rt(item)) : []
 }
+const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || ''
 const root = ref<HTMLElement | null>(null)
 useLegacySectionRoot(root, namespaces)
 </script>

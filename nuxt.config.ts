@@ -16,10 +16,7 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/i18n',
     '~/plugins/locale-hydrate.client',
-    '~/plugins/axios.client',
     '~/plugins/aos.client',
-    '~/plugins/business-legacy.client',
-    '~/plugins/contact-map.client',
   ],
 
   css: [
