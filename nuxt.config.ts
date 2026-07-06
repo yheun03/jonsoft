@@ -4,7 +4,13 @@ import {dirname, resolve} from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://jonsoft.co.kr';
 const basePath = process.env.NUXT_APP_BASE_URL || '/ver.2026/';
-const canonicalUrl = `${siteUrl.replace(/\/+$/, '')}${basePath === '/' ? '' : basePath}`;
+const sitePath = (path = '', absolute = false) => {
+    const normalizedBase = basePath.replace(/\/?$/, '/');
+    const normalizedPath = path.replace(/^\/+/, '');
+    const url = `${normalizedBase}${normalizedPath}`;
+
+    return absolute ? `${siteUrl.replace(/\/+$/, '')}${url}` : url;
+};
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
@@ -63,29 +69,31 @@ export default defineNuxtConfig({
                 },
                 {
                     property: 'og:image',
-                    content: `${siteUrl.replace(/\/+$/, '')}/assets/images/banner/page-index.webp`,
+                    content: sitePath('/assets/images/banner/page-index.webp', true),
                 },
                 {name: 'twitter:card', content: 'summary_large_image'},
                 {name: 'color-scheme', content: 'light only'},
             ],
             link: [
-                {rel: 'canonical', href: canonicalUrl},
+                {rel: 'canonical', href: sitePath('', true)},
+                {rel: 'sitemap', type: 'application/xml', href: sitePath('/sitemap.xml', true)},
+                {rel: 'robots', href: sitePath('/robots.txt', true)},
                 {
                     rel: 'apple-touch-icon',
                     sizes: '180x180',
-                    href: '/assets/icons/favicon/apple-touch-icon.png',
+                    href: sitePath('/assets/icons/favicon/apple-touch-icon.png'),
                 },
                 {
                     rel: 'icon',
                     type: 'image/png',
                     sizes: '32x32',
-                    href: '/assets/icons/favicon/favicon-32x32.png',
+                    href: sitePath('/assets/icons/favicon/favicon-32x32.png'),
                 },
                 {
                     rel: 'icon',
                     type: 'image/png',
                     sizes: '16x16',
-                    href: '/assets/icons/favicon/favicon-16x16.png',
+                    href: sitePath('/assets/icons/favicon/favicon-16x16.png'),
                 },
             ],
         },
