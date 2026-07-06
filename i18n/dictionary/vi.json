@@ -167,7 +167,7 @@
         "module-text": {
             "overview": {
                 "title-sub": "Giải pháp",
-                "title": "JO&SOFT cung cấp Hệ thống Quản lý Đơn hàng (OMS), Hệ thống Thực thi Sản xuất (MES), Hệ thống Quản lý Năng lượng Nhà máy (FEMS), Quản lý Quan hệ Khách hàng (CRM), Quản lý Chuỗi cung ứng (SCM), Lập kế hoạch và Lập lịch trình Nâng cao (APS), Hệ thống Điều khiển Kho (WCS), Hệ thống Quản lý Vận tải (TMS) và Giải pháp AI (work@AI)",
+                "title": "JO&SOFT cung cấp Hệ thống Quản lý Đơn hàng (OMS), Hệ thống Thực thi Sản xuất (MES), Hệ thống Quản lý Năng lượng Nhà máy (FEMS), Quản lý Quan hệ Khách hàng (CRM), Quản lý Chuỗi cung ứng (SCM), Lập kế hoạch và Lập lịch trình Nâng cao (APS), Hệ thống Điều khiển Kho (WCS), Hệ thống Quản lý Vận tải (TMS) và Giải pháp AI (work&#64;AI)",
                 "dscpt": "Ngoài ra, chúng tôi có các giải pháp tùy chỉnh cho khách hàng bao gồm PLM, WMS, nhà máy hệ sinh thái ESG, DPP, hệ thống phân tích/giám sát dữ liệu lớn và nhiều hơn nữa."
             }
         },
@@ -291,7 +291,7 @@
             "ai": {
                 "title": "Giải pháp AI",
                 "subtitle": "Nền tảng AI Công nghệ Tiên tiến",
-                "badge": "work@AI",
+                "badge": "work&#64;AI",
                 "dscpt": "Dựa trên dữ liệu hiện trường đa dạng, chúng tôi thực hiện dự đoán và tự động hóa để cải thiện hiệu quả vận hành, liên kết linh hoạt với các hệ thống cốt lõi, và cung cấp môi trường AI có thể mở rộng thông qua cải tiến liên tục.",
                 "thumbnail": "./assets/images/solution/ai.webp",
                 "alt": "Hình ảnh thu nhỏ của Giải pháp AI.",

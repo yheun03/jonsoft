@@ -69,11 +69,15 @@
 
 /**
  * 수상 실적 섹션
- * 회사의 수상 내역을 가로 리스트로 표시
+ * 회사의 수상 내역을 슬라이더로 표시
  */
 .awards {
     padding-block: $gap-80;
     background-color: $c-bg-light;
+
+    .slick-list {
+        margin-bottom: $gap-20;
+    }
 
     p {
         @include font-style($fw-4, $fs-30, normal);
@@ -100,10 +104,6 @@
         );
 
     margin-top: $gap-40;
-    display: flex;
-    gap: $gap-20;
-    overflow-x: auto;
-    padding-bottom: $gap-20;
 
     /**
          * 썸네일 배경 믹스인
@@ -168,16 +168,13 @@
     }
 
     .list-awards {
-        padding-inline: 20px;
-
-        .item {
+        .slick-list .item {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: calc(100dvw - 40px);
             height: 390px;
             padding: 20px;
-            flex: 0 0 auto;
 
             background: {
                 position: right -10px top 45px;

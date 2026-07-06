@@ -171,7 +171,7 @@
         "module-text": {
             "overview": {
                 "title-sub": "Solutions",
-                "title": "JO&SOFT provides Order Management System (OMS), Manufacturing Execution System (MES), Factory Energy Management System (FEMS), Customer Relationship Management (CRM), Supply Chain Management (SCM), Advanced Planning and Scheduling (APS), Warehouse Control System (WCS), Transportation Management System (TMS) and AI Solutions (work@AI)",
+                "title": "JO&SOFT provides Order Management System (OMS), Manufacturing Execution System (MES), Factory Energy Management System (FEMS), Customer Relationship Management (CRM), Supply Chain Management (SCM), Advanced Planning and Scheduling (APS), Warehouse Control System (WCS), Transportation Management System (TMS) and AI Solutions (work&#64;AI)",
                 "dscpt": "In addition, we have various customer-tailored solutions including PLM, WMS, ESG ecosystem factory, DPP, big data analysis/monitoring systems, and more."
             }
         },
@@ -295,7 +295,7 @@
             "ai": {
                 "title": "AI Solution",
                 "subtitle": "Advanced Technology AI Platform",
-                "badge": "work@AI",
+                "badge": "work&#64;AI",
                 "dscpt": "Based on various field data, we realize prediction and automation to improve operational efficiency, flexibly link with core systems, and provide a scalable AI environment through continuous improvement.",
                 "thumbnail": "./assets/images/solution/ai.webp",
                 "alt": "AI Solution thumbnail image.",

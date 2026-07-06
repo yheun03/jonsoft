@@ -101,4 +101,51 @@ await useAsyncData('i18n-page-contact', () => locale.loadBundles(namespaces))
 const { t } = useI18n()
 const root = ref<HTMLElement | null>(null)
 useLegacySectionRoot(root, namespaces)
+
+declare global {
+  interface Window {
+    daum?: {
+      roughmap?: {
+        Lander: new (options: { timestamp: string; key: string }) => { render: () => void }
+      }
+    }
+  }
+}
+
+const loadRoughmap = () =>
+  new Promise<void>((resolve, reject) => {
+    if (window.daum?.roughmap?.Lander) {
+      resolve()
+      return
+    }
+
+    const src = 'https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js'
+    const loaded = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`)
+    if (loaded) {
+      loaded.addEventListener('load', () => resolve(), { once: true })
+      loaded.addEventListener('error', () => reject(new Error('Failed to load roughmap')), { once: true })
+      return
+    }
+
+    const script = document.createElement('script')
+    script.charset = 'UTF-8'
+    script.className = 'daum_roughmap_loader_script'
+    script.src = src
+    script.onload = () => resolve()
+    script.onerror = () => reject(new Error('Failed to load roughmap'))
+    document.head.appendChild(script)
+  })
+
+onMounted(async () => {
+  await nextTick()
+  const container = document.getElementById('daumRoughmapContainer1693978036661')
+  if (!container || container.children.length) return
+
+  await loadRoughmap()
+  window.daum?.roughmap?.Lander &&
+    new window.daum.roughmap.Lander({
+      timestamp: '1693978036661',
+      key: '2g4fj',
+    }).render()
+})
 </script>

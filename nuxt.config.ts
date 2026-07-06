@@ -13,9 +13,9 @@ export default defineNuxtConfig({
 
     modules: ['@pinia/nuxt'],
 
-    plugins: ['~/plugins/i18n', '~/plugins/locale-hydrate.client', '~/plugins/aos.client'],
+    plugins: ['~/plugins/i18n', '~/plugins/locale-hydrate.client', '~/plugins/aos.client', '~/plugins/slick.client'],
 
-    css: ['~/assets/library/aos/aos.min.css', '~/assets/styles/main.scss'],
+    css: ['~/assets/library/aos/aos.min.css', '~/resources/library/slick/slick.min.css', '~/assets/styles/main.scss'],
 
     components: [
         {path: '~/components/Layout', pathPrefix: false},
@@ -100,6 +100,11 @@ export default defineNuxtConfig({
                     'cache-control': 'public, max-age=2592000, immutable',
                 },
             },
+            '/resources/**': {
+                headers: {
+                    'cache-control': 'public, max-age=2592000, immutable',
+                },
+            },
             '/sitemap': {redirect: '/sitemap.xml'},
         },
 
@@ -107,6 +112,11 @@ export default defineNuxtConfig({
             {
                 baseURL: 'assets',
                 dir: resolve(__dirname, 'assets'),
+                maxAge: 60 * 60 * 24 * 7,
+            },
+            {
+                baseURL: 'resources',
+                dir: resolve(__dirname, 'resources'),
                 maxAge: 60 * 60 * 24 * 7,
             },
         ],
