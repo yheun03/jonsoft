@@ -122,17 +122,67 @@ const loadRoughmap = () =>
     const src = 'https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js'
     const loaded = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`)
     if (loaded) {
-      loaded.addEventListener('load', () => resolve(), { once: true })
-      loaded.addEventListener('error', () => reject(new Error('Failed to load roughmap')), { once: true })
-      return
+      if (window.daum?.roughmap?.Lander) {
+        resolve()
+        return
+      }
+
+      if (loaded.dataset.loaded === 'true') {
+        loaded.remove()
+      } else {
+        loaded.addEventListener('load', () => resolve(), { once: true })
+        loaded.addEventListener('error', () => reject(new Error('Failed to load roughmap')), { once: true })
+        return
+      }
     }
 
     const script = document.createElement('script')
+    const write = document.write.bind(document)
+    let isNestedScriptLoaded = false
+    const restoreWrite = () => {
+      document.write = write
+    }
+
+    document.write = (html: string) => {
+      const template = document.createElement('template')
+      template.innerHTML = html
+      const nestedScript = template.content.querySelector<HTMLScriptElement>('script[src]')
+
+      if (!nestedScript) {
+        write(html)
+        return
+      }
+
+      isNestedScriptLoaded = true
+      const nextScript = document.createElement('script')
+      nextScript.charset = nestedScript.charset || 'UTF-8'
+      nextScript.src = nestedScript.src
+      nextScript.onload = () => {
+        restoreWrite()
+        resolve()
+      }
+      nextScript.onerror = () => {
+        restoreWrite()
+        reject(new Error('Failed to load roughmap lander'))
+      }
+      document.head.appendChild(nextScript)
+    }
+
+    script.async = false
     script.charset = 'UTF-8'
     script.className = 'daum_roughmap_loader_script'
     script.src = src
-    script.onload = () => resolve()
-    script.onerror = () => reject(new Error('Failed to load roughmap'))
+    script.onload = () => {
+      script.dataset.loaded = 'true'
+      if (!isNestedScriptLoaded) {
+        restoreWrite()
+        resolve()
+      }
+    }
+    script.onerror = () => {
+      restoreWrite()
+      reject(new Error('Failed to load roughmap'))
+    }
     document.head.appendChild(script)
   })
 
