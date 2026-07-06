@@ -3,9 +3,9 @@
         <div class="wrap">
             <p class="title" data-aos="fade-up" data-aos-delay="200">{{ t('common.banner.ask.title') }}</p>
             <p data-aos="fade-up" data-aos-delay="400" v-html="t('common.banner.ask.dscpt')"></p>
-            <a href="/contact" data-aos="fade-up" data-aos-delay="600" class="btn type-ask">
+            <NuxtLink to="/contact" data-aos="fade-up" data-aos-delay="600" class="btn type-ask">
                 <span>{{ t('common.banner.ask.button') }}</span>
-            </a>
+            </NuxtLink>
         </div>
     </div>
 </template>

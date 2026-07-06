@@ -3,12 +3,12 @@
     <div class="navigator">
         <div class="tab">
             <ul>
-                <li class="active" data-aos="fade-up" data-aos-delay="200"><a href="javascript:void(0)" v-html="t('contact.tab.location')"></a></li>
-                <li data-aos="fade-up" data-aos-delay="400"><a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a></li>
+                <li class="active" data-aos="fade-up" data-aos-delay="200" @click="scrollToSection('location')"><a href="javascript:void(0)" v-html="t('contact.tab.location')"></a></li>
+                <li data-aos="fade-up" data-aos-delay="400" @click="scrollToSection('recruit')"><a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a></li>
             </ul>
         </div>
         <div class="tab-content">
-            <div class="contact">
+            <div id="contact-location" ref="locationSection" class="contact">
                 <div class="wrap not-padding">
                     <h2 v-html="t('contact.contact.title')" data-aos="fade-up" data-aos-delay="600"></h2>
                     <div class="info">
@@ -46,12 +46,12 @@
         </div>
         <div class="tab">
             <ul>
-                <li data-aos="fade-up" data-aos-delay="200"><a href="javascript:void(0)" v-html="t('contact.tab.location')"></a></li>
-                <li class="active" data-aos="fade-up" data-aos-delay="400"><a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a></li>
+                <li data-aos="fade-up" data-aos-delay="200" @click="scrollToSection('location')"><a href="javascript:void(0)" v-html="t('contact.tab.location')"></a></li>
+                <li class="active" data-aos="fade-up" data-aos-delay="400" @click="scrollToSection('recruit')"><a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a></li>
             </ul>
         </div>
         <div class="tab-content">
-            <div class="recruit">
+            <div id="contact-recruit" ref="recruitSection" class="recruit">
                 <div class="wrap not-padding">
                     <h2 v-html="t('contact.recruit.title')" data-aos="fade-up" data-aos-delay="600"></h2>
                     <div class="info">
@@ -100,7 +100,18 @@ await useAsyncData('i18n-page-contact', () => locale.loadBundles(namespaces))
 
 const { t } = useI18n()
 const root = ref<HTMLElement | null>(null)
+const locationSection = ref<HTMLElement | null>(null)
+const recruitSection = ref<HTMLElement | null>(null)
 useLegacySectionRoot(root, namespaces)
+
+const scrollToSection = (target: 'location' | 'recruit') => {
+  const section = target === 'location' ? locationSection.value : recruitSection.value
+  if (!section) return
+
+  const headerHeight = document.querySelector('header')?.getBoundingClientRect().height ?? 0
+  const top = window.scrollY + section.getBoundingClientRect().top - headerHeight - 20
+  window.scrollTo({ top, behavior: 'smooth' })
+}
 
 declare global {
   interface Window {

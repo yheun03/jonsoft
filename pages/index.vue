@@ -18,9 +18,9 @@
             <div class="wrap">
                 <strong class="title" data-aos="fade-up" data-aos-delay="200"
                     v-html="t('index.banner.goto.title')"></strong>
-                <a href="/business" data-aos="fade-up" data-aos-delay="400" class="btn type-opacity">
+                <NuxtLink to="/business" data-aos="fade-up" data-aos-delay="400" class="btn type-opacity">
                     <span data-aos="fade-up" data-aos-delay="600" v-html="t('index.banner.goto.button')"></span>
-                </a>
+                </NuxtLink>
             </div>
             <img src="/assets/images/banner/goto.webp" alt="">
         </div>

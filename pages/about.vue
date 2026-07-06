@@ -124,7 +124,7 @@
                                 <li v-for="item in list('about.feature.item-01.content')" :key="item"
                                     data-aos="fade-up">{{ item }}</li>
                             </ul>
-                            <a href="/business#success" v-html="t('about.feature.button')"></a>
+                            <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="800" class="item item-02">
@@ -137,7 +137,7 @@
                                 <li v-for="item in list('about.feature.item-02.content')" :key="item"
                                     data-aos="fade-up">{{ item }}</li>
                             </ul>
-                            <a href="/business#success" v-html="t('about.feature.button')"></a>
+                            <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="1000" class="item item-03">
@@ -150,7 +150,7 @@
                                 <li v-for="item in list('about.feature.item-03.content')" :key="item"
                                     data-aos="fade-up">{{ item }}</li>
                             </ul>
-                            <a href="/business#success" v-html="t('about.feature.button')"></a>
+                            <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
                     </div>
                 </div>
