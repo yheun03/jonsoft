@@ -28,12 +28,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { assetPath } from '~/utils/assetPath'
 
 const { t } = useI18n()
-
-function assetPath(p: string) {
-  if (p.startsWith('./')) return `/${p.slice(2)}`
-  if (p.startsWith('/')) return p
-  return `/${p}`
-}
 </script>

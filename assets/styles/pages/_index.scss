@@ -25,7 +25,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     z-index: 1;
-    
+
     .label {
         @include font-style($fw-6, $fs-16, normal, $color: $c-text);
         padding: 7px 20px;
@@ -37,7 +37,8 @@
         height: 50px;
         background-color: #ffffff;
         cursor: pointer;
-        &::after{
+
+        &::after {
             @include pseudo-element($display: block);
             background: #eeeeee url($url+'icons/12/ic-xmark.svg') no-repeat center center / 12px;
             width: 22px;
@@ -58,6 +59,7 @@
     @include desktop {
         // right: calc(10px);
     }
+
     @include tablet {
         right: 20px;
         bottom: 16px;

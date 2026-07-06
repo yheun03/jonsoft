@@ -13,6 +13,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { assetPath } from '~/utils/assetPath'
 
 type LogoType = 'customer' | 'partner'
 
@@ -41,14 +42,14 @@ const items = computed(() => {
     const names = props.type === 'customer' ? customerItems : partnerItems
 
     return names.map((name, index) => {
-        const keyGroup = props.type === 'partner' && partnerCustomerKeys.has(name) ? 'customer' : props.type
-        const srcKey = `${keyGroup}.companies.${name}.src`
-        const altKey = `${keyGroup}.companies.${name}.alt`
+        const srcKey = `${props.type}.companies.${name}.src`
+        const altKey = `${props.type}.companies.${name}.alt`
+        const fallbackSrc = assetPath(`/assets/logos/partners/${name}.png`)
 
         return {
             name,
             delay: props.type === 'customer' ? Math.min(350 + index * 50, 1300) : getPartnerDelay(name, index),
-            src: te(srcKey) ? t(srcKey) : `/assets/logos/partners/${name}.png`,
+            src: te(srcKey) ? assetPath(t(srcKey)) : fallbackSrc,
             alt: te(altKey) ? t(altKey) : '',
         }
     })

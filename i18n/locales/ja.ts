@@ -618,6 +618,10 @@ export default {
       "k-package": {
         "src": "./assets/logos/partners/en/k-package.png",
         "alt": "K-PACKAGEロゴ"
+      },
+      "orchem": {
+        "src": "./assets/logos/partners/en/orchem.png",
+        "alt": "オーシャムロゴ"
       }
     }
   },

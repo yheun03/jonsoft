@@ -280,6 +280,20 @@
                 "ja": "K-PACKAGEロゴ",
                 "vi": "Logo K-PACKAGE"
             }
+        },
+        "orchem": {
+            "src": {
+                "ko": "./assets/logos/partners/orchem.png",
+                "en": "./assets/logos/partners/en/orchem.png",
+                "ja": "./assets/logos/partners/en/orchem.png",
+                "vi": "./assets/logos/partners/en/orchem.png"
+            },
+            "alt": {
+                "ko": "오알켐 로고",
+                "en": "orchem logo",
+                "ja": "オーシャムロゴ",
+                "vi": "Logo orchem"
+            }
         }
     }
 }
