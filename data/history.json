@@ -3,6 +3,17 @@
     "year": 2026,
     "months": [
       {
+        "label": "2026.05",
+        "items": [
+          {
+            "ko": "경기도 AI 멤버십 기업 선정",
+            "en": "Selected as Gyeonggi Province AI Membership Company",
+            "ja": "京畿道AIメンバーシップ企業選定",
+            "vi": "Được chọn là Doanh nghiệp Thành viên AI tỉnh Gyeonggi"
+          }
+        ]
+      },
+      {
         "label": "2026.02",
         "items": [
           {
