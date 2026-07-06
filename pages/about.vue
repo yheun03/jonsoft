@@ -181,7 +181,7 @@ import { getI18nNamespaces } from '~/utils/route-i18n'
 import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot'
 import CommonAskBanner from '~/components/Section/CommonAskBanner.vue'
 import CommonPhilosophy from '~/components/Section/CommonPhilosophy.vue'
-import historyItems from '~/data/history.json'
+import historyItems from '~/i18n/data/history.json'
 
 definePageMeta({
   layout: 'default',

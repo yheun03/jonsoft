@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import { assetPath } from '~/utils/assetPath'
-import partnerData from '~/data/partner.json'
+import partnerData from '~/i18n/data/partner.json'
 
 type LogoType = 'customer' | 'partner'
 
