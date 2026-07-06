@@ -5,10 +5,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     nextTick(() => {
       AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
+        duration: 700,
+        easing: 'ease-out-cubic',
         once: true,
-        offset: 0,
+        offset: 80,
       })
       AOS.refresh()
     })

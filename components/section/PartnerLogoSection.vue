@@ -1,7 +1,7 @@
 <template>
     <div class="partners">
         <div class="wrap">
-            <div class="title" data-aos="fade-up" data-aos-delay="200">{{ localized(partnerData[props.type].title) }}
+            <div class="title" data-aos="fade-up" data-aos-delay="100">{{ localized(partnerData[props.type].title) }}
             </div>
             <ul>
                 <li v-for="item in items" :key="item.name" data-aos="zoom-in-up" :data-aos-delay="item.delay">
@@ -29,18 +29,18 @@ const partnerCustomerKeys = new Set(['siemens', 'altis', 'kpa', 'kampa', 'korcha
 const items = computed(() => {
     return partnerData[props.type].companies.map((item, index) => ({
         ...item,
-        delay: props.type === 'customer' ? Math.min(350 + index * 50, 1300) : getPartnerDelay(item.name, index),
+        delay: props.type === 'customer' ? Math.min(150 + index * 40, 600) : getPartnerDelay(item.name, index),
     }))
 })
 
 const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || ''
 
 function getPartnerDelay(name: string, index: number) {
-    if (partnerCustomerKeys.has(name)) return 1300
-    if (name === 'skCnc') return 950
-    if (name === 'ltsGroup') return 1000
-    if (name === 'lgCns') return 1100
+    if (partnerCustomerKeys.has(name)) return 600
+    if (name === 'skCnc') return 420
+    if (name === 'ltsGroup') return 460
+    if (name === 'lgCns') return 500
 
-    return 350 + index * 50
+    return Math.min(150 + index * 40, 600)
 }
 </script>

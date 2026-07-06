@@ -5,14 +5,14 @@
     </div>
     <div class="module-text">
         <div class="wrap">
-            <p class="title-sub" data-aos="fade-up" data-aos-delay="200"><span class="gradient-text" v-html="t('business.module-text.overview.title-sub')"></span></p>
-            <p class="title" data-aos="fade-up" data-aos-delay="400" v-html="t('business.module-text.overview.title')"></p>
-            <p class="dscpt" data-aos="fade-up" data-aos-delay="600" v-html="t('business.module-text.overview.dscpt')"></p>
+            <p class="title-sub" data-aos="fade-up" data-aos-delay="100"><span class="gradient-text" v-html="t('business.module-text.overview.title-sub')"></span></p>
+            <p class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('business.module-text.overview.title')"></p>
+            <p class="dscpt" data-aos="fade-up" data-aos-delay="260" v-html="t('business.module-text.overview.dscpt')"></p>
         </div>
     </div>
     <div class="solution">
         <div class="list-solution">
-            <div class="item" data-aos="fade-up" data-aos-delay="800" @click="openModal('solution', 'aps')">
+            <div class="item" data-aos="fade-up" data-aos-delay="340" @click="openModal('solution', 'aps')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.aps.title')"></p>
@@ -26,7 +26,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1000" @click="openModal('solution', 'oms')">
+            <div class="item" data-aos="fade-up" data-aos-delay="420" @click="openModal('solution', 'oms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.oms.title')"></p>
@@ -40,7 +40,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1400" @click="openModal('solution', 'fems')">
+            <div class="item" data-aos="fade-up" data-aos-delay="560" @click="openModal('solution', 'fems')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.fems.title')"></p>
@@ -54,7 +54,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1800" @click="openModal('solution', 'scm')">
+            <div class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('solution', 'scm')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.scm.title')"></p>
@@ -68,7 +68,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2200" @click="openModal('solution', 'crm')">
+            <div class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('solution', 'crm')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.crm.title')"></p>
@@ -82,7 +82,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2400" @click="openModal('solution', 'mes')">
+            <div class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('solution', 'mes')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.mes.title')"></p>
@@ -96,7 +96,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2000" @click="openModal('solution', 'wcs')">
+            <div class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('solution', 'wcs')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.wcs.title')"></p>
@@ -110,7 +110,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="2000" @click="openModal('solution', 'tms')">
+            <div class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('solution', 'tms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.tms.title')"></p>
@@ -124,7 +124,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1600" @click="openModal('solution', 'ai')">
+            <div class="item" data-aos="fade-up" data-aos-delay="580" @click="openModal('solution', 'ai')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.ai.title')"></p>
@@ -138,7 +138,7 @@
                     <a href="#" @click.prevent><span v-html="t('business.solutions.button')"></span></a>
                 </div>
             </div>
-            <div class="item" data-aos="fade-up" data-aos-delay="1200" @click="openModal('solution', 'wms')">
+            <div class="item" data-aos="fade-up" data-aos-delay="500" @click="openModal('solution', 'wms')">
                 <div class="thumbnail">
                     <div class="dim">
                         <p class="title" v-html="t('business.solutions.wms.title')"></p>
@@ -156,9 +156,9 @@
     </div>
     <div class="success" id="success">
         <div class="wrap">
-            <h3 v-html="t('business.success.title')" data-aos="fade-up" data-aos-delay="200"></h3>
+            <h3 v-html="t('business.success.title')" data-aos="fade-up" data-aos-delay="100"></h3>
             <ul class="list-case">
-                <li class="item" data-aos="fade-up" data-aos-delay="400" @click="openModal('success', 'tailim')">
+                <li class="item" data-aos="fade-up" data-aos-delay="180" @click="openModal('success', 'tailim')">
                     <div class="content">
                         <p class="title" v-html="t('business.success.case1.title')"></p>
                         <ul class="dscpt">
@@ -167,7 +167,7 @@
                     </div>
                     <img src="/assets/images/success/tailm.webp" alt="">
                 </li>
-                <li class="item" data-aos="fade-up" data-aos-delay="600" @click="openModal('success', 'kkleannara')">
+                <li class="item" data-aos="fade-up" data-aos-delay="260" @click="openModal('success', 'kkleannara')">
                     <div class="content">
                         <p class="title" v-html="t('business.success.case2.title')"></p>
                         <ul class="dscpt">
