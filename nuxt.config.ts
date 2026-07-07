@@ -79,6 +79,16 @@ export default defineNuxtConfig({
                 {rel: 'sitemap', type: 'application/xml', href: sitePath('/sitemap.xml', true)},
                 {rel: 'robots', href: sitePath('/robots.txt', true)},
                 {
+                    rel: 'icon',
+                    type: 'image/x-icon',
+                    href: sitePath('/favicon.ico'),
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/x-icon',
+                    href: sitePath('/assets/icons/favicon/favicon.ico'),
+                },
+                {
                     rel: 'apple-touch-icon',
                     sizes: '180x180',
                     href: sitePath('/assets/icons/favicon/apple-touch-icon.png'),
