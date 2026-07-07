@@ -5,6 +5,10 @@
 // About 페이지 스타일
 // =============================================================================
 
+.legacy-section-root {
+    overflow-x: clip;
+}
+
 // =============================================================================
 // Summary 섹션
 // =============================================================================
@@ -368,7 +372,22 @@
     position: relative;
     background-color: $c-bg-dark;
     color: $c-text-light;
+    overflow: hidden;
     padding-top: $gap-80;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 520' preserveAspectRatio='none'%3E%3Cpath fill='%23FF824D' fill-opacity='.32' d='M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0 L1200 520 L0 520 Z'/%3E%3Cpath fill='none' stroke='%23FF824D' stroke-width='4' d='M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 58vh;
+        pointer-events: none;
+        z-index: 0;
+    }
 
     .wrap {
         position: relative;
@@ -376,54 +395,19 @@
     }
 
     &-graph {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 58%;
-        pointer-events: none;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 0;
-
-        svg {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        &-fill {
-            fill: rgba(255, 130, 77, 0.32);
-        }
-
-        &-line {
-            fill: none;
-            stroke: $c-orange;
-            stroke-width: 4;
-        }
-
-        &-mask {
-            transform: scaleX(0);
-            transform-box: fill-box;
-            transform-origin: left center;
-        }
+        display: none;
     }
 
     &.is-graph-visible {
-        .history-graph {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .history-graph-mask {
-            animation: historyGraphReveal 2s ease-out 0.5s forwards;
+        &::before {
+            animation: historyGraphReveal 2s ease-out forwards;
         }
     }
 
     &.is-graph-animated {
-        .history-graph-mask {
+        &::before {
             animation: none;
-            transform: scaleX(1);
+            width: 100%;
         }
     }
 
@@ -530,7 +514,7 @@
 
 @keyframes historyGraphReveal {
     to {
-        transform: scaleX(1);
+        width: 100%;
     }
 }
 
@@ -539,9 +523,9 @@
     .history {
         padding-block: 120px 60px;
 
-        &-graph {
-            height: 42%;
+        &::before {
             opacity: 0.65;
+            background-size: 100% 42vh;
         }
 
         .month {

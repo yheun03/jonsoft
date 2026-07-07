@@ -37,16 +37,24 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
         });
     }
 
+    let graphTimer: ReturnType<typeof setTimeout> | undefined;
     function checkGraphVisible() {
+        if (historyRoot.classList.contains('is-graph-visible') || graphTimer) return;
+
         const rect = historyRoot.getBoundingClientRect();
         const visible = rect.top <= 0 && rect.bottom >= window.innerHeight;
-        historyRoot.classList.toggle('is-graph-visible', visible);
+        if (!visible) return;
+
+        graphTimer = setTimeout(() => {
+            historyRoot.classList.add('is-graph-visible');
+            graphTimer = undefined;
+        }, 2000);
     }
 
-    const graphMask = historyRoot.querySelector<SVGRectElement>('.history-graph-mask');
-    graphMask?.addEventListener(
+    historyRoot.addEventListener(
         'animationend',
-        () => {
+        (e) => {
+            if (e.animationName !== 'historyGraphReveal') return;
             historyRoot.classList.add('is-graph-animated');
         },
         {signal, once: true},
@@ -112,6 +120,7 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
     });
 
     return () => {
+        if (graphTimer) clearTimeout(graphTimer);
         ac.abort();
     };
 }
