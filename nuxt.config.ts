@@ -24,8 +24,8 @@ export default defineNuxtConfig({
     css: ['~/assets/library/aos/aos.min.css', '~/resources/library/slick/slick.min.css', '~/assets/styles/main.scss'],
 
     components: [
-        {path: '~/components/Layout', pathPrefix: false},
-        {path: '~/components/Section', pathPrefix: false},
+        {path: '~/components/layout', pathPrefix: false},
+        {path: '~/components/section', pathPrefix: false},
         {path: '~/components', pathPrefix: true, pattern: '*.vue'},
     ],
 

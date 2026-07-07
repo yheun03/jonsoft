@@ -7,10 +7,10 @@
     },
     "scripts": {
         "dev": "nuxt dev",
-        "dev:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& nuxt dev",
+        "dev:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ nuxt dev",
         "build": "nuxt build",
         "generate": "nuxt generate",
-        "generate:ver2026": "set NUXT_APP_BASE_URL=/ver.2026/&& set NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr&& nuxt generate",
+        "generate:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr nuxt generate",
         "preview": "nuxt preview"
     },
     "dependencies": {

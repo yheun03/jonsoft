@@ -12,7 +12,7 @@
         <div class="wrap">
             <h1>
                 <NuxtLink to="/">
-                    <img src="/assets/logos/word.svg" alt="조앤소프트(주)의 로고입니다." />
+                    <img :src="assetPath('/assets/logos/word.svg')" alt="조앤소프트(주)의 로고입니다." />
                 </NuxtLink>
             </h1>
             <div class="menu pc">
@@ -74,6 +74,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import type { LocaleCode } from '~/stores/locale'
+import { assetPath } from '~/utils/assetPath'
 
 const route = useRoute()
 const locale = useLocaleStore()
