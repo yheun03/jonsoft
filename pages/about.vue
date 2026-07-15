@@ -157,19 +157,6 @@
             </div>
         </div>
         <div class="history">
-            <div class="history-graph" aria-hidden="true">
-                <svg viewBox="0 0 1200 520" preserveAspectRatio="none">
-                    <clipPath id="historyGraphClip">
-                        <rect class="history-graph-mask" x="0" y="0" width="1200" height="520" />
-                    </clipPath>
-                    <g clip-path="url(#historyGraphClip)">
-                        <path class="history-graph-fill"
-                            d="M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0 L1200 520 L0 520 Z" />
-                        <path class="history-graph-line"
-                            d="M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0" />
-                    </g>
-                </svg>
-            </div>
             <div class="wrap">
                 <p class="title" data-aos="fade-up" data-aos-delay="100" v-html="t('history.banner.title')"></p>
                 <div class="history-timeline">

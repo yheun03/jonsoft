@@ -379,7 +379,7 @@
         content: '';
         position: absolute;
         inset: 0 auto 0 0;
-        width: 0;
+        width: 100%;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 520' preserveAspectRatio='none'%3E%3Cpath fill='%23FF824D' fill-opacity='.32' d='M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0 L1200 520 L0 520 Z'/%3E%3Cpath fill='none' stroke='%23FF824D' stroke-width='4' d='M0 470 C180 450 300 390 430 330 C560 268 660 268 760 240 C890 204 965 142 1040 80 C1095 35 1145 10 1200 0'/%3E%3C/svg%3E");
         background-attachment: fixed;
         background-position: left bottom;
@@ -392,23 +392,6 @@
     .wrap {
         position: relative;
         z-index: 1;
-    }
-
-    &-graph {
-        display: none;
-    }
-
-    &.is-graph-visible {
-        &::before {
-            animation: historyGraphReveal 2s ease-out forwards;
-        }
-    }
-
-    &.is-graph-animated {
-        &::before {
-            animation: none;
-            width: 100%;
-        }
     }
 
     .title {
@@ -509,12 +492,6 @@
         ul {
             margin-top: 5px;
         }
-    }
-}
-
-@keyframes historyGraphReveal {
-    to {
-        width: 100%;
     }
 }
 

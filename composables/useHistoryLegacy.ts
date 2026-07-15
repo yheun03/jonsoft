@@ -37,29 +37,6 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
         });
     }
 
-    let graphTimer: ReturnType<typeof setTimeout> | undefined;
-    function checkGraphVisible() {
-        if (historyRoot.classList.contains('is-graph-visible') || graphTimer) return;
-
-        const rect = historyRoot.getBoundingClientRect();
-        const visible = rect.top <= 0 && rect.bottom >= window.innerHeight;
-        if (!visible) return;
-
-        graphTimer = setTimeout(() => {
-            historyRoot.classList.add('is-graph-visible');
-            graphTimer = undefined;
-        }, 2000);
-    }
-
-    historyRoot.addEventListener(
-        'animationend',
-        (e) => {
-            if (e.animationName !== 'historyGraphReveal') return;
-            historyRoot.classList.add('is-graph-animated');
-        },
-        {signal, once: true},
-    );
-
     const yearBtns = historyRoot.querySelectorAll<HTMLButtonElement>('.history-year ul li .btn');
     const contents = historyRoot.querySelectorAll<HTMLElement>('.history-content > li');
 
@@ -100,11 +77,9 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
     let scrollTimer: ReturnType<typeof setTimeout>;
     const onScroll = () => {
         checkHistoryActive(root);
-        checkGraphVisible();
         clearTimeout(scrollTimer);
         scrollTimer = setTimeout(() => {
             checkHistoryActive(root);
-            checkGraphVisible();
         }, 200);
     };
     window.addEventListener('scroll', onScroll, {passive: true, signal});
@@ -116,11 +91,9 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
 
     queueMicrotask(() => {
         checkHistoryActive(root);
-        checkGraphVisible();
     });
 
     return () => {
-        if (graphTimer) clearTimeout(graphTimer);
         ac.abort();
     };
 }
