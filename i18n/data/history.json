@@ -3,13 +3,53 @@
         "year": 2026,
         "months": [
             {
+                "label": "2026.07",
+                "items": [
+                    {
+                        "ko": "보백씨엔에스 AI응용제품 신속 상용화 지원 사업 수주",
+                        "en": "BOBAEK C&S Secures Rapid Commercialization Support Project for AI-Applied Products",
+                        "ja": "BOBAEK C&S、AI応用製品の迅速な商用化支援事業を受注",
+                        "vi": "BOBAEK C&S trúng thầu dự án hỗ trợ thương mại hóa nhanh các sản phẩm ứng dụng AI"
+                    },
+                    {
+                        "ko": "오알켐 구미공장 LSE 대중소상생형 스마트공장 사업 수주",
+                        "en": "ORCHEM Gumi Plant Secures LSE Large-Small Enterprise Partnership-Type Smart Factory Project",
+                        "ja": "ORCHEM亀尾工場、LSE大・中小企業共生型スマートファクトリー事業を受注",
+                        "vi": "Nhà máy Gumi của ORCHEM trúng thầu dự án nhà máy thông minh LSE theo mô hình hợp tác cùng phát triển giữa doanh nghiệp lớn và doanh nghiệp vừa và nhỏ"
+                    }
+                ]
+            },
+            {
+                "label": "2026.06",
+                "items": [
+                    {
+                        "ko": "에스피삼화 제조AI특화 스마트공장 구축 사업 수주",
+                        "en": "SP Samhwa Secures Manufacturing AI-Specialized Smart Factory Implementation Project",
+                        "ja": "エスピー三和、製造AI特化型スマートファクトリー構築事業を受注",
+                        "vi": "SP Samhwa trúng thầu dự án xây dựng nhà máy thông minh chuyên biệt về AI sản xuất"
+                    },
+                    {
+                        "ko": "에너토크 제조AI특화 스마트공장 구축 사업 수주",
+                        "en": "Enertork Secures Manufacturing AI-Specialized Smart Factory Implementation Project",
+                        "ja": "エナートーク、製造AI特化型スマートファクトリー構築事業を受注",
+                        "vi": "Enertork trúng thầu dự án xây dựng nhà máy thông minh chuyên biệt về AI sản xuất"
+                    },
+                    {
+                        "ko": "엠티아이 대중소상생형(삼성) 스마트공장 구축(고도화) 사업 수주",
+                        "en": "MTI Secures Large-Small Enterprise Partnership-Type (Samsung) Smart Factory Implementation and Advancement Project",
+                        "ja": "MTI、大・中小企業共生型（サムスン）スマートファクトリー構築（高度化）事業を受注",
+                        "vi": "MTI trúng thầu dự án xây dựng và nâng cấp nhà máy thông minh theo mô hình hợp tác cùng phát triển giữa doanh nghiệp lớn và doanh nghiệp vừa và nhỏ (Samsung)"
+                    }
+                ]
+            },
+            {
                 "label": "2026.05",
                 "items": [
                     {
                         "ko": "경기도 AI 멤버십 기업 선정",
-                        "en": "Selected as Gyeonggi Province AI Membership Company",
-                        "ja": "京畿道AIメンバーシップ企業選定",
-                        "vi": "Được chọn là Doanh nghiệp Thành viên AI tỉnh Gyeonggi"
+                        "en": "Selected as AI Membership Company of Gyeonggi Province",
+                        "ja": "경기도AIメンバーシップ企業選定",
+                        "vi": "Được chọn làm Công ty Thành viên AI Của Tỉnh Gyeonggi"
                     }
                 ]
             },
@@ -28,10 +68,10 @@
                 "label": "2026.01",
                 "items": [
                     {
-                        "ko": "종루이코리아 스마트공장 MES 운영 유지보수 사업 수주",
-                        "en": "Awarded Jongrui Korea Smart Factory MES Operation Maintenance Project",
-                        "ja": "鐘類コリアスマートファクトリーMES運用保守事業受注",
-                        "vi": "Được trao Dự án Bảo trì Vận hành Hệ thống MES Nhà máy thông minh Jongrui Korea"
+                        "ko": "스마트공장 공급기업 역량진단 Level3 획득",
+                        "en": "Obtained Level 3 Smart Factory Supply Company Capability Assessment",
+                        "ja": "スマートファクトリー供給企業能力評価レベル3取得",
+                        "vi": "Đạt được Đánh giá Khả năng Công ty Cung ứng Nhà máy thông minh Mức 3"
                     },
                     {
                         "ko": "ISO 27001 인증 정보 획득",
@@ -40,10 +80,10 @@
                         "vi": "Đạt được Chứng nhận ISO 27001"
                     },
                     {
-                        "ko": "스마트공장 공급기업 역량진단 Level3 획득",
-                        "en": "Obtained Level 3 Smart Factory Supply Company Capability Assessment",
-                        "ja": "スマートファクトリー供給企業能力評価レベル3取得",
-                        "vi": "Đạt được Đánh giá Khả năng Công ty Cung ứng Nhà máy thông minh Mức 3"
+                        "ko": "종루이코리아 스마트공장 MES 운영 유지보수 사업 수주",
+                        "en": "Awarded Jongrui Korea Smart Factory MES Operation Maintenance Project",
+                        "ja": "鐘類コリアスマートファクトリーMES運用保守事業受注",
+                        "vi": "Được trao Dự án Bảo trì Vận hành Hệ thống MES Nhà máy thông minh Jongrui Korea"
                     }
                 ]
             }

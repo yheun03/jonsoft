@@ -1,5 +1,5 @@
-import {fileURLToPath} from 'node:url';
-import {dirname, resolve} from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://jonsoft.co.kr';
@@ -15,7 +15,7 @@ const sitePath = (path = '', absolute = false) => {
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
 
-    devtools: {enabled: process.env.NODE_ENV !== 'production'},
+    devtools: { enabled: process.env.NODE_ENV !== 'production' },
 
     modules: ['@pinia/nuxt'],
 
@@ -24,9 +24,9 @@ export default defineNuxtConfig({
     css: ['~/assets/library/aos/aos.min.css', '~/resources/library/slick/slick.min.css', '~/assets/styles/main.scss'],
 
     components: [
-        {path: '~/components/layout', pathPrefix: false},
-        {path: '~/components/section', pathPrefix: false},
-        {path: '~/components', pathPrefix: true, pattern: '*.vue'},
+        { path: '~/components/layout', pathPrefix: false },
+        { path: '~/components/section', pathPrefix: false },
+        { path: '~/components', pathPrefix: true, pattern: '*.vue' },
     ],
 
     vite: {
@@ -47,11 +47,11 @@ export default defineNuxtConfig({
     app: {
         baseURL: basePath,
         head: {
-            htmlAttrs: {lang: 'ko'},
+            htmlAttrs: { lang: 'ko' },
             title: '조앤소프트(주)',
             meta: [
-                {charset: 'utf-8'},
-                {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
                     name: 'description',
                     content: '우리가 만든 소프트웨어와 서비스가 고객 비즈니스 성장에 기여합니다. - 조앤소프트 -',
@@ -60,9 +60,9 @@ export default defineNuxtConfig({
                     name: 'robots',
                     content: 'index,follow,max-image-preview:large,max-snippet:-1',
                 },
-                {property: 'og:type', content: 'website'},
-                {property: 'og:site_name', content: '조앤소프트(주)'},
-                {property: 'og:title', content: '조앤소프트(주)'},
+                { property: 'og:type', content: 'website' },
+                { property: 'og:site_name', content: '조앤소프트(주)' },
+                { property: 'og:title', content: '조앤소프트(주)' },
                 {
                     property: 'og:description',
                     content: '우리가 만든 소프트웨어와 서비스가 고객 비즈니스 성장에 기여합니다. - 조앤소프트 -',
@@ -71,13 +71,13 @@ export default defineNuxtConfig({
                     property: 'og:image',
                     content: sitePath('/assets/images/banner/page-index.webp', true),
                 },
-                {name: 'twitter:card', content: 'summary_large_image'},
-                {name: 'color-scheme', content: 'light only'},
+                { name: 'twitter:card', content: 'summary_large_image' },
+                { name: 'color-scheme', content: 'light only' },
             ],
             link: [
-                {rel: 'canonical', href: sitePath('', true)},
-                {rel: 'sitemap', type: 'application/xml', href: sitePath('/sitemap.xml', true)},
-                {rel: 'robots', href: sitePath('/robots.txt', true)},
+                { rel: 'canonical', href: sitePath('', true) },
+                { rel: 'sitemap', type: 'application/xml', href: sitePath('/sitemap.xml', true) },
+                { rel: 'robots', href: sitePath('/robots.txt', true) },
                 {
                     rel: 'icon',
                     type: 'image/x-icon',
@@ -123,7 +123,7 @@ export default defineNuxtConfig({
                     'cache-control': 'public, max-age=2592000, immutable',
                 },
             },
-            '/sitemap': {redirect: '/sitemap.xml'},
+            '/sitemap': { redirect: '/sitemap.xml' },
         },
 
         publicAssets: [
