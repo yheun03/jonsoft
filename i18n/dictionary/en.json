@@ -1,6 +1,10 @@
 {
     "common": {
         "floating": "Download company introduction",
+        "catalog": {
+            "src": "./assets/files/JO&SOFT catalog_ENG.pdf",
+            "alt": "Open the JO&SOFT English company introduction"
+        },
         "banner": {
             "welcome": {
                 "title": "Smart factory, if you're thinking about how to start - I suggest the best deployment solution.",

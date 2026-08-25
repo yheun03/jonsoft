@@ -28,11 +28,17 @@ const partnerCustomerKeys = new Set(['siemens', 'altis', 'kpa', 'kampa', 'korcha
 const items = computed(() => {
     return partnerData[props.type].companies.map((item, index) => ({
         ...item,
+        src: localizedLogoPath(item.src),
         delay: props.type === 'customer' ? Math.min(150 + index * 40, 600) : getPartnerDelay(item.name, index),
     }));
 });
 
 const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || '';
+
+function localizedLogoPath(src: string) {
+    if (locale.lang === 'ko') return src;
+    return src.replace('/partners/', '/partners/en/');
+}
 
 function getPartnerDelay(name: string, index: number) {
     if (partnerCustomerKeys.has(name)) return 600;

@@ -1,6 +1,10 @@
 {
     "common": {
         "floating": "会社紹介書をダウンロード",
+        "catalog": {
+            "src": "./assets/files/JO&SOFT catalog_ENG.pdf",
+            "alt": "JO&SOFT英語版会社紹介書を開く"
+        },
         "banner": {
             "welcome": {
                 "title": "スマートファクトリーの始め方を考えている場合、最適な構築ソリューションを提案します。",

@@ -104,7 +104,8 @@ const initSlick = async (path: string) => {
 };
 
 export default defineNuxtPlugin((nuxtApp) => {
-    const initCurrentSlick = () => initSlick(nuxtApp.$router.currentRoute.value.path);
+    const router = useRouter();
+    const initCurrentSlick = () => initSlick(router.currentRoute.value.path);
 
     nuxtApp.hook('app:mounted', initCurrentSlick);
     nuxtApp.hook('page:finish', initCurrentSlick);

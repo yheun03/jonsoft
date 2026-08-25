@@ -1,3 +1,4 @@
+import type { Composer } from 'vue-i18n';
 import { loadLocaleMessages, setupI18n } from '~/i18n/i18n';
 
 export default defineNuxtPlugin(async (nuxtApp) => {
@@ -10,6 +11,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
     locale.$subscribe(async (_mutation, state) => {
         await loadLocaleMessages(i18n, state.lang);
-        i18n.global.locale.value = state.lang;
+        (i18n.global as Composer).locale.value = state.lang;
     });
 });

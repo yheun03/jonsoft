@@ -1,4 +1,4 @@
-import { createI18n, type I18n } from 'vue-i18n';
+import { createI18n, type I18n, type IntlNumberFormats } from 'vue-i18n';
 import numberFormats from './numberFormats.json';
 import type { LocaleCode } from '~/stores/locale';
 
@@ -20,7 +20,7 @@ export function setupI18n(locale: LocaleCode = 'ko') {
         fallbackWarn: false,
         locale,
         fallbackLocale: 'ko',
-        numberFormats,
+        numberFormats: numberFormats as IntlNumberFormats,
     });
 }
 

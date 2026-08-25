@@ -1,6 +1,10 @@
 {
     "common": {
         "floating": "회사 소개서 다운받기",
+        "catalog": {
+            "src": "./assets/files/JO&SOFT catalog.pdf",
+            "alt": "조앤소프트 한국어 회사 소개서 열기"
+        },
         "banner": {
             "welcome": {
                 "title": "스마트공장, 어떻게 시작할지 고민이라면 - 최적의 구축 솔루션을 제안드립니다.",

@@ -1,6 +1,10 @@
 {
     "common": {
         "floating": "Tải xuống tài liệu giới thiệu công ty",
+        "catalog": {
+            "src": "./assets/files/JO&SOFT catalog_VIE.pdf",
+            "alt": "Mở tài liệu giới thiệu công ty JO&SOFT bằng tiếng Việt"
+        },
         "banner": {
             "welcome": {
                 "title": "Nhà máy thông minh, nếu bạn băn khoăn không biết nên bắt đầu như thế nào - tôi đề xuất giải pháp xây dựng tối ưu.",
