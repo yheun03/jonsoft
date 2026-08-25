@@ -6,9 +6,9 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n()
-const config = useRuntimeConfig()
-const catalogPath = `${config.app.baseURL}assets/files/JO&SOFT catalog.pdf`
+const { t } = useI18n();
+const config = useRuntimeConfig();
+const catalogPath = `${config.app.baseURL}assets/files/JO&SOFT catalog.pdf`;
 </script>

@@ -1,6 +1,6 @@
-import {createI18n, type I18n} from 'vue-i18n';
+import { createI18n, type I18n } from 'vue-i18n';
 import numberFormats from './numberFormats.json';
-import type {LocaleCode} from '~/stores/locale';
+import type { LocaleCode } from '~/stores/locale';
 
 const dictionaries = {
     ko: () => import('./dictionary/ko.json'),

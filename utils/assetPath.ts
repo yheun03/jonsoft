@@ -1,4 +1,4 @@
-import {withBase} from 'ufo';
+import { withBase } from 'ufo';
 
 export function assetPath(path: string) {
     const baseURL = useRuntimeConfig().app.baseURL || '/';

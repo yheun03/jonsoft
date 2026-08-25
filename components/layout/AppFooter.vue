@@ -3,8 +3,7 @@
         <div class="wrap not-padding">
             <div>
                 <NuxtLink to="/" class="logo-jon">
-                    <img :src="assetPath(t('common.company.logo.src') || '/assets/logos/logo.svg')"
-                        :alt="t('common.company.logo.alt')" />
+                    <img :src="assetPath(t('common.company.logo.src') || '/assets/logos/logo.svg')" :alt="t('common.company.logo.alt')" />
                 </NuxtLink>
             </div>
             <div class="wrap-text">
@@ -36,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-import { assetPath } from '~/utils/assetPath'
+import { useI18n } from 'vue-i18n';
+import { assetPath } from '~/utils/assetPath';
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>

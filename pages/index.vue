@@ -1,12 +1,11 @@
 <template>
     <section ref="root" class="legacy-section-root">
-        <div class="banner">
+        <PageBanner src="/assets/images/banner/page-index.webp" alt="AI와 CPU를 형상화한 메인 페이지 배너 이미지입니다.">
             <div class="wrap">
                 <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.main.title')"></h2>
                 <h3 data-aos="fade-up" data-aos-delay="180" v-html="t('index.banner.main.dscpt')"></h3>
             </div>
-            <img src="/assets/images/banner/page-index.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다." />
-        </div>
+        </PageBanner>
         <div class="banner type-title">
             <div class="wrap">
                 <strong class="title" data-aos-delay="340" data-aos="fade-up" v-html="t('index.banner.text.title')"></strong>
@@ -34,6 +33,7 @@ import { getI18nNamespaces } from '~/utils/route-i18n';
 import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import PartnerLogoSection from '~/components/section/PartnerLogoSection.vue';
+import PageBanner from '~/components/common/PageBanner.vue';
 
 definePageMeta({
     layout: 'default',

@@ -9,7 +9,7 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
     if (!historyRoot) return () => {};
 
     const ac = new AbortController();
-    const {signal} = ac;
+    const { signal } = ac;
 
     function checkHistoryActive(r: HTMLElement) {
         const items = r.querySelectorAll<HTMLElement>('.history .history-content > li');
@@ -47,11 +47,11 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
                 const target = contents[index];
                 if (target) {
                     const top = window.scrollY + target.getBoundingClientRect().top - 100;
-                    window.scrollTo({top, behavior: 'smooth'});
+                    window.scrollTo({ top, behavior: 'smooth' });
                 }
                 requestAnimationFrame(() => checkHistoryActive(root));
             },
-            {signal},
+            { signal },
         );
         btn.addEventListener(
             'keydown',
@@ -70,7 +70,7 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
                 }
                 all[next]?.focus();
             },
-            {signal},
+            { signal },
         );
     });
 
@@ -82,12 +82,12 @@ export function bindHistoryLegacyControls(root: HTMLElement | null | undefined):
             checkHistoryActive(root);
         }, 200);
     };
-    window.addEventListener('scroll', onScroll, {passive: true, signal});
+    window.addEventListener('scroll', onScroll, { passive: true, signal });
 
     const onKey = (e: KeyboardEvent) => {
         if (e.key === 'Escape') document.querySelector('header')?.classList.remove('open');
     };
-    document.addEventListener('keydown', onKey, {signal});
+    document.addEventListener('keydown', onKey, { signal });
 
     queueMicrotask(() => {
         checkHistoryActive(root);

@@ -1,5 +1,5 @@
-import {defineStore} from 'pinia';
-import {getLocaleMessage} from '~/i18n/i18n';
+import { defineStore } from 'pinia';
+import { getLocaleMessage } from '~/i18n/i18n';
 
 export type LocaleCode = 'ko' | 'en' | 'ja' | 'vi';
 

@@ -11,11 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import AppFloating from '~/components/layout/AppFloating.vue'
-import AppFooter from '~/components/layout/AppFooter.vue'
-import AppHeader from '~/components/layout/AppHeader.vue'
+import AppFloating from '~/components/layout/AppFloating.vue';
+import AppFooter from '~/components/layout/AppFooter.vue';
+import AppHeader from '~/components/layout/AppHeader.vue';
 
-const locale = useLocaleStore()
+const locale = useLocaleStore();
 
-await useAsyncData('layout-i18n-common', () => locale.loadBundles(['common']))
+await useAsyncData('layout-i18n-common', () => locale.loadBundles(['common']));
 </script>

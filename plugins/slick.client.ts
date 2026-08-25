@@ -1,11 +1,11 @@
-import { nextTick } from 'vue'
+import { nextTick } from 'vue';
 
-type SlickOptions = Record<string, boolean | number>
+type SlickOptions = Record<string, boolean | number>;
 
 declare global {
     interface Window {
-        jQuery?: any
-        $?: any
+        jQuery?: any;
+        $?: any;
     }
 }
 
@@ -51,60 +51,61 @@ const sliders: Record<string, { selector: string; options: SlickOptions }> = {
             edgeFriction: 0.1,
         },
     },
-}
+};
 
-let slickReady: Promise<void> | null = null
+let slickReady: Promise<void> | null = null;
 
 const loadScript = (src: string) =>
     new Promise<void>((resolve, reject) => {
-        const loaded = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`)
+        const loaded = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
         if (loaded) {
-            resolve()
-            return
+            resolve();
+            return;
         }
 
-        const script = document.createElement('script')
-        script.src = src
-        script.onload = () => resolve()
-        script.onerror = () => reject(new Error(`Failed to load ${src}`))
-        document.head.appendChild(script)
-    })
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error(`Failed to load ${src}`));
+        document.head.appendChild(script);
+    });
 
 const loadSlick = () => {
     if (!slickReady) {
-        const baseURL = useRuntimeConfig().app.baseURL
-        slickReady = loadScript(`${baseURL}resources/scripts/jquery-3.7.1.min.js`)
-            .then(() => loadScript(`${baseURL}resources/library/slick/slick.min.js`))
+        const baseURL = useRuntimeConfig().app.baseURL;
+        slickReady = loadScript(`${baseURL}resources/scripts/jquery-3.7.1.min.js`).then(() =>
+            loadScript(`${baseURL}resources/library/slick/slick.min.js`),
+        );
     }
 
-    return slickReady
-}
+    return slickReady;
+};
 
 const initSlick = async (path: string) => {
-    await nextTick()
-    await loadSlick()
-    await nextTick()
-    await new Promise((resolve) => requestAnimationFrame(resolve))
+    await nextTick();
+    await loadSlick();
+    await nextTick();
+    await new Promise((resolve) => requestAnimationFrame(resolve));
 
-    const $ = window.jQuery || window.$
-    if (!$?.fn?.slick) return
+    const $ = window.jQuery || window.$;
+    if (!$?.fn?.slick) return;
 
-    const slider = sliders[path]
-    if (!slider) return
+    const slider = sliders[path];
+    if (!slider) return;
 
     $(slider.selector).each((_: number, element: HTMLElement) => {
-        const $slider = $(element)
+        const $slider = $(element);
         if ($slider.hasClass('slick-initialized')) {
-            $slider.slick('setPosition')
-            return
+            $slider.slick('setPosition');
+            return;
         }
-        $slider.slick(slider.options)
-    })
-}
+        $slider.slick(slider.options);
+    });
+};
 
 export default defineNuxtPlugin((nuxtApp) => {
-    const initCurrentSlick = () => initSlick(nuxtApp.$router.currentRoute.value.path)
+    const initCurrentSlick = () => initSlick(nuxtApp.$router.currentRoute.value.path);
 
-    nuxtApp.hook('app:mounted', initCurrentSlick)
-    nuxtApp.hook('page:finish', initCurrentSlick)
-})
+    nuxtApp.hook('app:mounted', initCurrentSlick);
+    nuxtApp.hook('page:finish', initCurrentSlick);
+});

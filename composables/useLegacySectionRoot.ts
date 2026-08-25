@@ -1,5 +1,5 @@
-import type {Ref} from 'vue';
-import {bindHistoryLegacyControls} from '~/composables/useHistoryLegacy';
+import type { Ref } from 'vue';
+import { bindHistoryLegacyControls } from '~/composables/useHistoryLegacy';
 
 /**
  * Vue 템플릿으로 옮긴 섹션 루트에 레거시 인터랙션을 연결합니다.

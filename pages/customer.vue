@@ -1,8 +1,6 @@
 <template>
     <section ref="root" class="legacy-section-root">
-        <div class="banner">
-            <img src="/assets/images/banner/page-customer.webp" alt="메인 페이지의 배너 이미지 입니다. AI와 CPU로 형상화된 이미지입니다." />
-        </div>
+        <PageBanner src="/assets/images/banner/page-customer.webp" alt="고객사 및 파트너 페이지의 배너 이미지입니다." />
         <PartnerLogoSection type="customer" />
         <PartnerLogoSection type="partner" />
         <CommonAskBanner />
@@ -14,6 +12,7 @@ import { getI18nNamespaces } from '~/utils/route-i18n';
 import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import PartnerLogoSection from '~/components/section/PartnerLogoSection.vue';
+import PageBanner from '~/components/common/PageBanner.vue';
 
 definePageMeta({
     layout: 'default',
