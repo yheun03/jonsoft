@@ -15,6 +15,40 @@
     },
     "history": {
         "year_2026": {
+            "month_07": {
+                "day_01": {
+                    "ko": "보백씨엔에스 AI응용제품 신속 상용화 지원 사업 수주",
+                    "en": "BOBAEK C&S Secures Rapid Commercialization Support Project for AI-Applied Products",
+                    "ja": "BOBAEK C&S、AI応用製品の迅速な商用化支援事業を受注",
+                    "vi": "BOBAEK C&S trúng thầu dự án hỗ trợ thương mại hóa nhanh các sản phẩm ứng dụng AI"
+                },
+                "day_02": {
+                    "ko": "오알켐 구미공장 LSE 대중소상생형 스마트공장 사업 수주",
+                    "en": "ORCHEM Gumi Plant Secures LSE Large-Small Enterprise Partnership-Type Smart Factory Project",
+                    "ja": "ORCHEM亀尾工場、LSE大・中小企業共生型スマートファクトリー事業を受注",
+                    "vi": "Nhà máy Gumi của ORCHEM trúng thầu dự án nhà máy thông minh LSE theo mô hình hợp tác cùng phát triển giữa doanh nghiệp lớn và doanh nghiệp vừa và nhỏ"
+                }
+            },
+            "month_06": {
+                "day_01": {
+                    "ko": "에스피삼화 제조AI특화 스마트공장 구축 사업 수주",
+                    "en": "SP Samhwa Secures Manufacturing AI-Specialized Smart Factory Implementation Project",
+                    "ja": "エスピー三和、製造AI特化型スマートファクトリー構築事業を受注",
+                    "vi": "SP Samhwa trúng thầu dự án xây dựng nhà máy thông minh chuyên biệt về AI sản xuất"
+                },
+                "day_02": {
+                    "ko": "에너토크 제조AI특화 스마트공장 구축 사업 수주",
+                    "en": "Enertork Secures Manufacturing AI-Specialized Smart Factory Implementation Project",
+                    "ja": "エナートーク、製造AI特化型スマートファクトリー構築事業を受注",
+                    "vi": "Enertork trúng thầu dự án xây dựng nhà máy thông minh chuyên biệt về AI sản xuất"
+                },
+                "day_03": {
+                    "ko": "엠티아이 대중소상생형(삼성) 스마트공장 구축(고도화) 사업 수주",
+                    "en": "MTI Secures Large-Small Enterprise Partnership-Type (Samsung) Smart Factory Implementation and Advancement Project",
+                    "ja": "MTI、大・中小企業共生型（サムスン）スマートファクトリー構築（高度化）事業を受注",
+                    "vi": "MTI trúng thầu dự án xây dựng và nâng cấp nhà máy thông minh theo mô hình hợp tác cùng phát triển giữa doanh nghiệp lớn và doanh nghiệp vừa và nhỏ (Samsung)"
+                }
+            },
             "month_05": {
                 "ko": "경기도 AI 멤버십 기업 선정",
                 "en": "Selected as AI Membership Company of Gyeonggi Province",
