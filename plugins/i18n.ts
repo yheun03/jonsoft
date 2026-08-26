@@ -1,4 +1,4 @@
-import { createI18n, type Composer } from 'vue-i18n';
+import { createI18n, type LocaleMessageValue } from 'vue-i18n';
 import type { LocaleCode } from '~/stores/locale';
 
 const dictionaries = {
@@ -8,7 +8,9 @@ const dictionaries = {
     vi: () => import('~/i18n/dictionary/vi.json'),
 };
 
-const loadedMessages = new Map<LocaleCode, Record<string, unknown>>();
+type LocaleDictionary = Record<string, LocaleMessageValue>;
+
+const loadedMessages = new Map<LocaleCode, LocaleDictionary>();
 
 async function loadDictionary(lang: LocaleCode) {
     const cached = loadedMessages.get(lang);
@@ -40,6 +42,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
     locale.$subscribe(async (_mutation, state) => {
         i18n.global.setLocaleMessage(state.lang, await loadDictionary(state.lang));
-        (i18n.global as Composer).locale.value = state.lang;
+        i18n.global.locale.value = state.lang;
     });
 });
