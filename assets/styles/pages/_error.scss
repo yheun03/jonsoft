@@ -84,14 +84,10 @@
         transform: translateX(-0.04em);
     }
 
-    &__eyebrow {
-        @include font-style($fw-7, $fs-16);
-        letter-spacing: 0.12em;
-        background: linear-gradient(198deg, #ff9056, #ff5c42);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
+    &__logo {
+        display: block;
+        width: 104px;
+        height: auto;
     }
 
     h2 {
@@ -165,6 +161,10 @@
 
         &__content {
             text-align: center;
+        }
+
+        &__logo {
+            margin-inline: auto;
         }
 
         h2 {

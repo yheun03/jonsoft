@@ -8,7 +8,7 @@
                     <strong class="error-page__code">{{ statusCode }}</strong>
                 </div>
                 <div class="error-page__content">
-                    <p class="error-page__eyebrow">JO&amp;SOFT</p>
+                    <img class="error-page__logo" :src="assetPath('/assets/logos/word.svg')" alt="JO&SOFT" />
                     <h2>{{ t(`${messageKey}.title`) }}</h2>
                     <p class="error-page__description">{{ t(`${messageKey}.description`) }}</p>
                     <div class="error-page__actions">
@@ -30,6 +30,7 @@ import type { NuxtError } from '#app';
 import { useI18n } from 'vue-i18n';
 import AppFooter from '~/components/layout/AppFooter.vue';
 import AppHeader from '~/components/layout/AppHeader.vue';
+import { assetPath } from '~/utils/assetPath';
 
 const props = defineProps<{
     error: NuxtError;
