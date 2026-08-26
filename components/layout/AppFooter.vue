@@ -7,20 +7,22 @@
                 </NuxtLink>
             </div>
             <div class="wrap-text">
-                <ul class="gnb">
-                    <li>
-                        <NuxtLink to="/about">ABOUT US</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/business">BUSINESS & SOLUTION</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/customer">CUSTOMER & PATNERS</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/contact">CONTACT US</NuxtLink>
-                    </li>
-                </ul>
+                <nav :aria-label="footerNavLabel">
+                    <ul class="gnb">
+                        <li>
+                            <NuxtLink to="/about">ABOUT US</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/business">BUSINESS & SOLUTION</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/customer">CUSTOMER & PARTNERS</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/contact">CONTACT US</NuxtLink>
+                        </li>
+                    </ul>
+                </nav>
                 <address>{{ t('common.company.address') }}</address>
                 <p>{{ t('common.company.info') }}</p>
                 <p class="copyright">{{ t('common.copyright') }}</p>
@@ -39,4 +41,7 @@ import { useI18n } from 'vue-i18n';
 import { assetPath } from '~/utils/assetPath';
 
 const { t } = useI18n();
+const locale = useLocaleStore();
+const footerNavLabels = { ko: '하단 메뉴', en: 'Footer navigation', ja: 'フッターメニュー', vi: 'Điều hướng chân trang' };
+const footerNavLabel = computed(() => footerNavLabels[locale.lang]);
 </script>

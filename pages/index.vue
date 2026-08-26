@@ -1,20 +1,20 @@
 <template>
     <section>
-        <PageBanner src="/assets/images/banner/page-index.webp" alt="AI와 CPU를 형상화한 메인 페이지 배너 이미지입니다.">
+        <PageBanner src="/assets/images/banner/page-index.webp">
             <div class="wrap">
-                <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.main.title')"></h2>
-                <h3 data-aos="fade-up" data-aos-delay="180" v-html="t('index.banner.main.dscpt')"></h3>
+                <h1 data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.main.title')"></h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="180" v-html="t('index.banner.main.dscpt')"></p>
             </div>
         </PageBanner>
         <div class="banner type-title">
             <div class="wrap">
-                <strong class="title" data-aos-delay="340" data-aos="fade-up" v-html="t('index.banner.text.title')"></strong>
+                <h2 class="title" data-aos-delay="340" data-aos="fade-up" v-html="t('index.banner.text.title')"></h2>
                 <p data-aos="fade-up" data-aos-delay="420" v-html="t('index.banner.text.dscpt')"></p>
             </div>
         </div>
         <div class="banner type-goto">
             <div class="wrap">
-                <strong class="title" data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.goto.title')"></strong>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.goto.title')"></h2>
                 <NuxtLink to="/business" data-aos="fade-up" data-aos-delay="180" class="btn type-opacity">
                     <span data-aos="fade-up" data-aos-delay="260" v-html="t('index.banner.goto.button')"></span>
                 </NuxtLink>
@@ -38,4 +38,5 @@ definePageMeta({
 });
 
 const { t } = useI18n();
+usePageSeo('home');
 </script>

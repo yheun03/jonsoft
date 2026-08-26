@@ -9,7 +9,7 @@
                 </div>
                 <div class="error-page__content">
                     <img class="error-page__logo" :src="assetPath('/assets/logos/word.svg')" alt="JO&SOFT" />
-                    <h2>{{ t(`${messageKey}.title`) }}</h2>
+                    <h1>{{ t(`${messageKey}.title`) }}</h1>
                     <p class="error-page__description">{{ t(`${messageKey}.description`) }}</p>
                     <div class="error-page__actions">
                         <button type="button" class="btn error-page__button error-page__button--primary" @click="goHome">

@@ -13,12 +13,13 @@
         @include flex(column, space-between, stretch);
     }
 
+    h1,
     h2 {
         @include font-style($weight: 600, $size: 50px);
         color: #ffffff;
     }
 
-    h3 {
+    .hero-description {
         @include font-style($weight: 600, $size: 36px, $line-height: 49px);
         color: #ffffff;
         align-self: flex-end;
@@ -215,11 +216,12 @@
             flex: 1;
         }
 
+        h1,
         h2 {
             font-size: 32px;
         }
 
-        h3 {
+        .hero-description {
             @include font-style($size: 20px, $line-height: normal);
         }
 

@@ -1,24 +1,27 @@
 <template>
     <section>
         <div class="navigator">
-            <div class="tab">
+            <nav class="tab" :aria-label="contactNavLabel">
                 <ul>
-                    <li class="active" data-aos="fade-up" data-aos-delay="100" @click="scrollToSection('location')">
-                        <a href="javascript:void(0)" v-html="t('contact.tab.location')"></a>
+                    <li class="active" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#contact-location" @click.prevent="scrollToSection('location')" v-html="t('contact.tab.location')"></a>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="180" @click="scrollToSection('recruit')">
-                        <a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a>
+                    <li data-aos="fade-up" data-aos-delay="180">
+                        <a href="#contact-recruit" @click.prevent="scrollToSection('recruit')" v-html="t('contact.tab.recruitment')"></a>
                     </li>
                 </ul>
-            </div>
+            </nav>
             <div class="tab-content">
-                <div id="contact-location" ref="locationSection" class="contact">
+                <div id="contact-location" ref="locationSection" class="contact" tabindex="-1">
                     <div class="wrap not-padding">
-                        <h2 v-html="t('contact.contact.title')" data-aos="fade-up" data-aos-delay="260"></h2>
+                        <h1 v-html="t('contact.contact.title')" data-aos="fade-up" data-aos-delay="260"></h1>
                         <div class="info">
                             <dl>
                                 <dt v-html="t('contact.contact.headquarters')" data-aos="fade-up" data-aos-delay="340"></dt>
-                                <dd data-aos="fade-up" data-aos-delay="420"><strong>T</strong> 031-717-8816 / <strong>F</strong> 031-718-8817</dd>
+                                <dd data-aos="fade-up" data-aos-delay="420">
+                                    <strong>T</strong> <a class="contact-phone" href="tel:+82317178816">031-717-8816</a> /
+                                    <strong>F</strong> 031-718-8817
+                                </dd>
                             </dl>
                             <dl>
                                 <dt v-html="t('contact.contact.email')" data-aos="fade-up" data-aos-delay="500"></dt>
@@ -54,6 +57,8 @@
                             <div
                                 id="daumRoughmapContainer1693978036661"
                                 class="root_daum_roughmap root_daum_roughmap_landing"
+                                role="region"
+                                :aria-label="mapLabel"
                                 data-aos="fade-up"
                                 data-aos-delay="600"
                             ></div>
@@ -67,18 +72,18 @@
                     </div>
                 </div>
             </div>
-            <div class="tab">
+            <nav class="tab" :aria-label="contactNavLabel">
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="100" @click="scrollToSection('location')">
-                        <a href="javascript:void(0)" v-html="t('contact.tab.location')"></a>
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <a href="#contact-location" @click.prevent="scrollToSection('location')" v-html="t('contact.tab.location')"></a>
                     </li>
-                    <li class="active" data-aos="fade-up" data-aos-delay="180" @click="scrollToSection('recruit')">
-                        <a href="javascript:void(0)" v-html="t('contact.tab.recruitment')"></a>
+                    <li class="active" data-aos="fade-up" data-aos-delay="180">
+                        <a href="#contact-recruit" @click.prevent="scrollToSection('recruit')" v-html="t('contact.tab.recruitment')"></a>
                     </li>
                 </ul>
-            </div>
+            </nav>
             <div class="tab-content">
-                <div id="contact-recruit" ref="recruitSection" class="recruit">
+                <div id="contact-recruit" ref="recruitSection" class="recruit" tabindex="-1">
                     <div class="wrap not-padding">
                         <h2 v-html="t('contact.recruit.title')" data-aos="fade-up" data-aos-delay="260"></h2>
                         <div class="info">
@@ -127,6 +132,12 @@ definePageMeta({
 });
 
 const { t } = useI18n();
+const locale = useLocaleStore();
+const contactNavLabels = { ko: '문의 페이지 바로가기', en: 'Contact page sections', ja: 'お問い合わせページ内メニュー', vi: 'Các mục trang liên hệ' };
+const mapLabels = { ko: '조앤소프트 본사 위치 지도', en: 'Map of JO&SOFT headquarters', ja: 'JO&SOFT本社の地図', vi: 'Bản đồ trụ sở JO&SOFT' };
+const contactNavLabel = computed(() => contactNavLabels[locale.lang]);
+const mapLabel = computed(() => mapLabels[locale.lang]);
+usePageSeo('contact');
 const locationSection = ref<HTMLElement | null>(null);
 const recruitSection = ref<HTMLElement | null>(null);
 
@@ -137,6 +148,7 @@ const scrollToSection = (target: 'location' | 'recruit') => {
     const headerHeight = document.querySelector('header')?.getBoundingClientRect().height ?? 0;
     const top = window.scrollY + section.getBoundingClientRect().top - headerHeight - 20;
     window.scrollTo({ top, behavior: 'smooth' });
+    section.focus({ preventScroll: true });
 };
 
 declare global {

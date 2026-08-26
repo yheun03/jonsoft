@@ -1,17 +1,10 @@
 <template>
     <div class="solution">
-        <div class="list-solution">
-            <div
-                v-for="solution in solutions"
-                :key="solution.id"
-                class="item"
-                data-aos="fade-up"
-                :data-aos-delay="solution.delay"
-                @click="emit('open', solution.id)"
-            >
+        <div class="list-solution" role="region" :aria-label="carouselLabel">
+            <div v-for="solution in solutions" :key="solution.id" class="item" data-aos="fade-up" :data-aos-delay="solution.delay">
                 <div class="thumbnail">
                     <div class="dim">
-                        <p class="title" v-html="t(`business.solutions.${solution.id}.title`)"></p>
+                        <h2 class="title" v-html="t(`business.solutions.${solution.id}.title`)"></h2>
                         <p v-html="t(`business.solutions.${solution.id}.subtitle`)"></p>
                     </div>
                     <img
@@ -24,10 +17,16 @@
                 <div class="content">
                     <span class="badge" v-html="t(`business.solutions.${solution.id}.badge`)"></span>
                     <p v-html="t(`business.solutions.${solution.id}.dscpt`)"></p>
-                    <a href="#" @click.prevent>
+                    <span class="solution-link" aria-hidden="true">
                         <span v-html="t('business.solutions.button')"></span>
-                    </a>
+                    </span>
                 </div>
+                <button
+                    type="button"
+                    class="solution-trigger"
+                    :aria-label="`${t(`business.solutions.${solution.id}.title`)} - ${t('business.solutions.button')}`"
+                    @click="emit('open', solution.id)"
+                ></button>
             </div>
         </div>
     </div>
@@ -44,6 +43,9 @@ const emit = defineEmits<{
 }>();
 
 const { t } = useI18n();
+const locale = useLocaleStore();
+const carouselLabels = { ko: '조앤소프트 솔루션 목록', en: 'JO&SOFT solutions', ja: 'JO&SOFTソリューション一覧', vi: 'Danh sách giải pháp JO&SOFT' };
+const carouselLabel = computed(() => carouselLabels[locale.lang]);
 
 const solutions: Array<{ id: SolutionId; delay: number }> = [
     { id: 'aps', delay: 340 },

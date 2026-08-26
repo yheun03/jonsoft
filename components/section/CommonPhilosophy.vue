@@ -1,7 +1,7 @@
 <template>
     <div class="philosophy">
         <div class="wrap full">
-            <h3 data-aos="fade-up" data-aos-delay="100" v-html="t('common.philosophy.title')"></h3>
+            <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('common.philosophy.title')"></h2>
             <div class="list-philosophy">
                 <div class="item" data-aos="fade-up" data-aos-delay="180">
                     <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="" loading="lazy" decoding="async" />

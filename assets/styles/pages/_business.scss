@@ -21,6 +21,7 @@
     }
 
     .item {
+        position: relative;
         border-radius: $radius-20;
         background-color: $c-text-light;
         @include shadow(sm);
@@ -46,7 +47,8 @@
             background: linear-gradient(90deg, rgba(38, 38, 38, 0.4) 0%, rgba(0, 0, 0, 0) 100%), rgba(102, 102, 102, 0.2);
             padding: $gap-30;
 
-            p {
+            p,
+            .title {
                 @include font-style($fw-6, $fs-20, normal);
                 color: #eeeeee;
 
@@ -68,7 +70,7 @@
             @include text-ellipsis(2);
         }
 
-        a {
+        .solution-link {
             @include font-style($fw-6, $fs-16, normal);
             color: #555555;
             margin-top: $gap-20;
@@ -95,7 +97,8 @@
             .dim {
                 padding: 20px;
 
-                p {
+                p,
+                .title {
                     font-size: 16px;
 
                     &.title {
@@ -114,7 +117,7 @@
                 font-size: 16px;
             }
 
-            a {
+            .solution-link {
                 font-size: 14px;
 
                 &::after {
@@ -123,6 +126,22 @@
                 }
             }
         }
+    }
+
+    .solution-trigger {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .item:has(.solution-trigger:focus-visible) {
+        outline: 3px solid #ff6b2c;
+        outline-offset: 4px;
     }
 }
 
@@ -138,7 +157,7 @@
     background-color: #333333;
     padding-block: $gap-120;
 
-    h3 {
+    > .wrap > h2 {
         @include font-style($fw-6, $fs-32, 40px);
         color: $c-text-light;
     }
@@ -170,6 +189,22 @@
         }
     }
 
+    .success-trigger {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .item:has(.success-trigger:focus-visible) {
+        outline: 3px solid #ff8a50;
+        outline-offset: 4px;
+    }
+
     .content {
         @include absolute-position(top, 0, left, 0);
         padding: $gap-30 $gap-20 $gap-20;
@@ -195,7 +230,7 @@
     @include tablet {
         padding-block: 40px;
 
-        h3 {
+        > .wrap > h2 {
             font-size: 24px;
         }
 

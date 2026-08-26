@@ -13,6 +13,7 @@
  * 연락처 및 채용 정보를 탭 형태로 표시
  */
 .navigator {
+    h1,
     h2 {
         @include font-style($fw-6, $fs-42, 52px);
         color: $c-text;
@@ -54,6 +55,10 @@
     }
 
     .contact {
+        &:focus {
+            outline: none;
+        }
+
         .info {
             @include grid(3, $grid-90, 1fr);
 
@@ -80,6 +85,10 @@
 
                 a {
                     margin-left: 36px;
+
+                    &.contact-phone {
+                        margin-left: 0;
+                    }
                 }
             }
 
@@ -173,6 +182,10 @@
     }
 
     .recruit {
+        &:focus {
+            outline: none;
+        }
+
         .info {
             dl {
                 @include grid(3, 0, 1fr);
@@ -208,6 +221,7 @@
             }
         }
 
+        h1,
         h2 {
             font-size: 34px;
             margin-bottom: 40px;
@@ -258,7 +272,7 @@
 .philosophy {
     margin-block: 210px 48px;
 
-    h3 {
+    h2 {
         @include font-style($fw-6, 25px, normal);
         color: $c-text;
     }

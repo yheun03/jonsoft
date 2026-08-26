@@ -1,77 +1,109 @@
 <template>
     <header class="app-header" :class="{ open: menuOpen }">
-        <div v-if="showWelcome" class="banner type-welcome">
+        <div v-if="showWelcome" class="banner type-welcome" role="region" :aria-label="a11yLabels.promotion">
             <div class="wrap">
                 <p class="pc">{{ t('common.banner.welcome.title') }}</p>
                 <p class="mobile">{{ t('common.banner.welcome.title') }}</p>
-                <a :href="t('common.banner.welcome.src')" target="_blank" rel="noopener">{{ t('common.banner.welcome.button') }}</a>
+                <a :href="t('common.banner.welcome.src')" target="_blank" rel="noopener">
+                    {{ t('common.banner.welcome.button') }}<span class="visually-hidden"> ({{ a11yLabels.newWindow }})</span>
+                </a>
             </div>
-            <button type="button" class="btn close-welcome" aria-label="닫기" @click="closeWelcome" />
+            <button type="button" class="btn close-welcome" :aria-label="a11yLabels.closePromotion" @click="closeWelcome" />
         </div>
         <div class="wrap">
-            <h1>
-                <NuxtLink to="/">
-                    <img :src="assetPath('/assets/logos/word.svg')" alt="조앤소프트(주)의 로고입니다." />
+            <div class="app-header__logo">
+                <NuxtLink to="/" :aria-label="a11yLabels.home">
+                    <img :src="assetPath('/assets/logos/word.svg')" alt="JO&amp;SOFT" />
                 </NuxtLink>
-            </h1>
-            <div class="menu pc">
+            </div>
+            <nav class="menu pc" :aria-label="a11yLabels.mainNavigation">
                 <ul class="gnb">
                     <li :class="{ active: isActive('/about') }">
-                        <NuxtLink to="/about">ABOUT US</NuxtLink>
+                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined">ABOUT US</NuxtLink>
                     </li>
                     <li :class="{ active: isActive('/business') }">
-                        <NuxtLink to="/business">BUSINESS & SOLUTION</NuxtLink>
+                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined">BUSINESS & SOLUTION</NuxtLink>
                     </li>
                     <li :class="{ active: isActive('/customer') }">
-                        <NuxtLink to="/customer">CUSTOMER & PATNERS</NuxtLink>
+                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined">CUSTOMER & PARTNERS</NuxtLink>
                     </li>
                     <li :class="{ active: isActive('/contact') }">
-                        <NuxtLink to="/contact">CONTACT US</NuxtLink>
+                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined">CONTACT US</NuxtLink>
                     </li>
                 </ul>
-                <ul class="i18n">
+                <ul class="i18n" :aria-label="a11yLabels.language">
                     <li v-for="code in langs" :key="code" :class="{ active: locale.lang === code }">
-                        <button type="button" class="btn" @click="setLang(code)">{{ labels[code] }}</button>
+                        <button
+                            type="button"
+                            class="btn"
+                            :aria-label="languageNames[code]"
+                            :aria-pressed="locale.lang === code"
+                            @click="setLang(code)"
+                        >
+                            {{ labels[code] }}
+                        </button>
                     </li>
                 </ul>
-            </div>
+            </nav>
             <div class="menu mobile">
                 <button
+                    ref="menuButton"
                     type="button"
                     class="btn open-menu"
-                    aria-label="메뉴 열기"
+                    :aria-label="menuOpen ? a11yLabels.closeMenu : a11yLabels.openMenu"
                     :aria-expanded="menuOpen ? 'true' : 'false'"
                     aria-controls="mobile-nav"
-                    @click="menuOpen = !menuOpen"
+                    @click="toggleMenu"
                 >
                     <span>MENU</span>
                 </button>
             </div>
         </div>
 
-        <div id="mobile-nav" class="full-screen-menu" :aria-hidden="menuOpen ? 'false' : 'true'">
+        <nav
+            id="mobile-nav"
+            ref="mobileNav"
+            class="full-screen-menu"
+            :aria-label="a11yLabels.mainNavigation"
+            :aria-hidden="menuOpen ? 'false' : 'true'"
+            :inert="menuOpen ? undefined : true"
+        >
             <div class="wrap">
                 <ul>
                     <li>
-                        <NuxtLink to="/about" @click="menuOpen = false">ABOUT US</NuxtLink>
+                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined" @click="closeMenu(false)">ABOUT US</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/business" @click="menuOpen = false">BUSINESS & SOLUTION</NuxtLink>
+                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined" @click="closeMenu(false)"
+                            >BUSINESS & SOLUTION</NuxtLink
+                        >
                     </li>
                     <li>
-                        <NuxtLink to="/customer" @click="menuOpen = false">CUSTOMER & PATNERS</NuxtLink>
+                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined" @click="closeMenu(false)"
+                            >CUSTOMER & PARTNERS</NuxtLink
+                        >
                     </li>
                     <li>
-                        <NuxtLink to="/contact" @click="menuOpen = false">CONTACT US</NuxtLink>
+                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined" @click="closeMenu(false)"
+                            >CONTACT US</NuxtLink
+                        >
                     </li>
                 </ul>
-                <ul class="i18n">
+                <ul class="i18n" :aria-label="a11yLabels.language">
                     <li v-for="code in langs" :key="`m-${code}`" :class="{ active: locale.lang === code }">
-                        <button type="button" class="btn" @click="setLang(code)">{{ labels[code] }}</button>
+                        <button
+                            type="button"
+                            class="btn"
+                            :aria-label="languageNames[code]"
+                            :aria-pressed="locale.lang === code"
+                            @click="setLang(code)"
+                        >
+                            {{ labels[code] }}
+                        </button>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
 </template>
 
@@ -85,6 +117,8 @@ const locale = useLocaleStore();
 const { t } = useI18n();
 
 const menuOpen = ref(false);
+const menuButton = ref<HTMLButtonElement | null>(null);
+const mobileNav = ref<HTMLElement | null>(null);
 const langs: LocaleCode[] = ['ko', 'en', 'ja', 'vi'];
 const labels: Record<LocaleCode, string> = {
     ko: 'KOR',
@@ -92,6 +126,55 @@ const labels: Record<LocaleCode, string> = {
     ja: 'JPN',
     vi: 'VIE',
 };
+const languageNames: Record<LocaleCode, string> = {
+    ko: '한국어',
+    en: 'English',
+    ja: '日本語',
+    vi: 'Tiếng Việt',
+};
+const localizedA11yLabels = {
+    ko: {
+        promotion: '안내',
+        closePromotion: '안내 배너 닫기',
+        home: '조앤소프트 홈',
+        mainNavigation: '주요 메뉴',
+        language: '언어 선택',
+        openMenu: '메뉴 열기',
+        closeMenu: '메뉴 닫기',
+        newWindow: '새 창',
+    },
+    en: {
+        promotion: 'Announcement',
+        closePromotion: 'Close announcement',
+        home: 'JO&SOFT home',
+        mainNavigation: 'Main navigation',
+        language: 'Select language',
+        openMenu: 'Open menu',
+        closeMenu: 'Close menu',
+        newWindow: 'opens in a new window',
+    },
+    ja: {
+        promotion: 'お知らせ',
+        closePromotion: 'お知らせを閉じる',
+        home: 'JO&SOFTホーム',
+        mainNavigation: 'メインメニュー',
+        language: '言語を選択',
+        openMenu: 'メニューを開く',
+        closeMenu: 'メニューを閉じる',
+        newWindow: '新しいウィンドウ',
+    },
+    vi: {
+        promotion: 'Thông báo',
+        closePromotion: 'Đóng thông báo',
+        home: 'Trang chủ JO&SOFT',
+        mainNavigation: 'Điều hướng chính',
+        language: 'Chọn ngôn ngữ',
+        openMenu: 'Mở menu',
+        closeMenu: 'Đóng menu',
+        newWindow: 'mở trong cửa sổ mới',
+    },
+};
+const a11yLabels = computed(() => localizedA11yLabels[locale.lang]);
 
 const showWelcome = ref(true);
 
@@ -112,11 +195,42 @@ function isActive(prefix: string) {
 
 function setLang(code: LocaleCode) {
     locale.setLang(code);
+    closeMenu(false);
+}
+
+async function toggleMenu() {
+    if (menuOpen.value) {
+        closeMenu();
+        return;
+    }
+    menuOpen.value = true;
+    await nextTick();
+    mobileNav.value?.querySelector<HTMLElement>('a, button')?.focus();
+}
+
+function closeMenu(restoreFocus = true) {
     menuOpen.value = false;
+    if (restoreFocus) nextTick(() => menuButton.value?.focus());
 }
 
 function onKey(e: KeyboardEvent) {
-    if (e.key === 'Escape') menuOpen.value = false;
+    if (!menuOpen.value) return;
+    if (e.key === 'Escape') {
+        closeMenu();
+        return;
+    }
+    if (e.key !== 'Tab' || !mobileNav.value || !menuButton.value) return;
+
+    const focusable = [menuButton.value, ...mobileNav.value.querySelectorAll<HTMLElement>('a, button:not([disabled])')];
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+    }
 }
 
 onMounted(() => {

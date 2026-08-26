@@ -90,7 +90,7 @@
         height: auto;
     }
 
-    h2 {
+    h1 {
         margin-top: 20px;
         @include font-style($fw-7, $fs-42, 1.35, $color: $c-text);
     }
@@ -167,7 +167,7 @@
             margin-inline: auto;
         }
 
-        h2 {
+        h1 {
             margin-top: 16px;
             font-size: $fs-32;
         }
@@ -208,7 +208,7 @@
             font-size: 116px;
         }
 
-        h2 {
+        h1 {
             font-size: $fs-24;
         }
 

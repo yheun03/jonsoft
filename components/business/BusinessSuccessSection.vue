@@ -1,18 +1,11 @@
 <template>
     <div id="success" class="success">
         <div class="wrap">
-            <h3 data-aos="fade-up" data-aos-delay="100" v-html="t('business.success.title')"></h3>
+            <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('business.success.title')"></h2>
             <ul class="list-case">
-                <li
-                    v-for="successCase in successCases"
-                    :key="successCase.id"
-                    class="item"
-                    data-aos="fade-up"
-                    :data-aos-delay="successCase.delay"
-                    @click="emit('open', successCase.id)"
-                >
+                <li v-for="successCase in successCases" :key="successCase.id" class="item" data-aos="fade-up" :data-aos-delay="successCase.delay">
                     <div class="content">
-                        <p class="title" v-html="t(`business.success.${successCase.messageKey}.title`)"></p>
+                        <h3 class="title" v-html="t(`business.success.${successCase.messageKey}.title`)"></h3>
                         <ul class="dscpt">
                             <li v-for="item in list(`business.success.${successCase.messageKey}.dscpt`)" :key="item">
                                 {{ item }}
@@ -20,6 +13,12 @@
                         </ul>
                     </div>
                     <img :src="assetPath(successCase.image)" alt="" loading="lazy" decoding="async" />
+                    <button
+                        type="button"
+                        class="success-trigger"
+                        :aria-label="`${plainText(t(`business.success.${successCase.messageKey}.title`))} - ${detailLabel}`"
+                        @click="emit('open', successCase.id)"
+                    ></button>
                 </li>
             </ul>
         </div>
@@ -37,6 +36,14 @@ const emit = defineEmits<{
 }>();
 
 const { t, tm, rt } = useI18n();
+const locale = useLocaleStore();
+const detailLabels = { ko: '자세히 보기', en: 'View details', ja: '詳細を見る', vi: 'Xem chi tiết' };
+const detailLabel = computed(() => detailLabels[locale.lang]);
+const plainText = (value: string) =>
+    value
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
 const list = (key: string) => {
     const message = tm(key);
     return Array.isArray(message) ? message.map((item) => rt(item)) : [];

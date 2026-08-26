@@ -1,12 +1,12 @@
 <template>
     <section>
-        <PageBanner src="/assets/images/banner/page-business.webp" alt="비즈니스 및 솔루션 페이지의 배너 이미지입니다." />
+        <PageBanner src="/assets/images/banner/page-business.webp" />
         <div class="module-text">
             <div class="wrap">
                 <p class="title-sub" data-aos="fade-up" data-aos-delay="100">
                     <span class="gradient-text" v-html="t('business.module-text.overview.title-sub')"></span>
                 </p>
-                <p class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('business.module-text.overview.title')"></p>
+                <h1 class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('business.module-text.overview.title')"></h1>
                 <p class="dscpt" data-aos="fade-up" data-aos-delay="260" v-html="t('business.module-text.overview.dscpt')"></p>
             </div>
         </div>
@@ -34,6 +34,7 @@ type SolutionId = 'aps' | 'oms' | 'fems' | 'scm' | 'crm' | 'mes' | 'wcs' | 'tms'
 type SuccessId = 'tailim' | 'kkleannara';
 
 const { t } = useI18n();
+usePageSeo('business');
 const activeModal = ref<ActiveModal | null>(null);
 const openSolutionModal = (id: SolutionId) => {
     activeModal.value = { type: 'solution', id };

@@ -78,7 +78,8 @@
         margin-bottom: $gap-20;
     }
 
-    p {
+    p,
+    h2 {
         @include font-style($fw-4, $fs-30, normal);
         color: $c-text;
         text-align: center;
@@ -274,7 +275,8 @@
                 }
             }
 
-            &:hover {
+            &:hover,
+            &:focus-within {
                 .back {
                     opacity: 1;
                 }
