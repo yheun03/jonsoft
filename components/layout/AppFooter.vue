@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="app-footer">
         <div class="wrap not-padding">
             <div>
                 <NuxtLink to="/" class="logo-jon">

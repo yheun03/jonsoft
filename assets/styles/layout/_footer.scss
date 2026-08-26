@@ -1,13 +1,12 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
-footer {
+.app-footer {
     position: relative;
-    background-color: #F7F6F8;
+    background-color: #f7f6f8;
     padding-block: 80px;
     z-index: 10;
 
-    a[class*=logo] {
+    a[class*='logo'] {
         display: block;
         font-size: 0;
 
@@ -37,7 +36,6 @@ footer {
             @include flex(column, flex-start, stretch, 4.5px);
             margin-inline: 40px auto;
             @include font-style($size: 14px, $color: #909090);
-            color: #909090;
         }
     }
 
@@ -55,11 +53,10 @@ footer {
             }
         }
 
-        a[class*=logo] {
+        a[class*='logo'] {
             img {
                 max-width: 30dvw;
             }
         }
-
     }
 }

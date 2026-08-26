@@ -85,7 +85,7 @@
 
             dl {
                 &:nth-child(2) {
-                    grid-column: span 2
+                    grid-column: span 2;
                 }
             }
         }
@@ -107,7 +107,7 @@
                     font-weight: $fw-7;
                 }
 
-                li+li {
+                li + li {
                     margin-top: $gap-8;
                 }
             }
@@ -136,10 +136,9 @@
                     background-color: rgba(0, 0, 0, 0.1);
                     z-index: 1;
                     @include transition();
-
                 }
 
-                div:has(> div > img[src*=marker]) {
+                div:has(> div > img[src*='marker']) {
                     position: relative;
 
                     .roughmap_maker_label:after {
@@ -190,7 +189,7 @@
                     font-weight: $fw-6;
                 }
 
-                &>span {
+                & > span {
                     margin-inline: $gap-8;
                 }
             }
@@ -319,5 +318,4 @@
             }
         }
     }
-
 }

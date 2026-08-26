@@ -93,7 +93,7 @@ video {
     box-sizing: border-box;
     word-break: keep-all;
 
-    html[lang="ja"] & {
+    html[lang='ja'] & {
         word-break: break-all !important;
     }
 }

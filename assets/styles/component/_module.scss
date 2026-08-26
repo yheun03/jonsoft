@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
 .module-text {
     height: unset;
@@ -18,7 +17,7 @@
             @include font-style($fw-6, 18px);
 
             span {
-                background: linear-gradient(198deg, #FF9056, #FF5C42);
+                background: linear-gradient(198deg, #ff9056, #ff5c42);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -41,7 +40,7 @@
         .title {
             margin-top: 8px;
             font-size: 32px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
         }
 
         .dscpt {
@@ -53,7 +52,7 @@
                 padding-left: 16px;
 
                 &::before {
-                    @include pseudo-element("");
+                    @include pseudo-element('');
                     @include absolute-position(top, 50%, left, 0);
                     transform: translateY(-50%);
                     width: 5px;
@@ -61,7 +60,7 @@
                     background-color: #ffffff;
                 }
 
-                &+li {
+                & + li {
                     margin-top: 16px;
                 }
             }
@@ -74,19 +73,17 @@
     }
 
     @include tablet {
-        & {
-            margin-block: 60px 40px;
+        margin-block: 60px 40px;
 
-            .banner & {
-                padding-block: 20px 40px;
+        .banner & {
+            padding-block: 20px 40px;
 
-                .title {
-                    font-size: 24px;
-                }
+            .title {
+                font-size: 24px;
+            }
 
-                .dscpt {
-                    font-size: 16px;
-                }
+            .dscpt {
+                font-size: 16px;
             }
         }
 

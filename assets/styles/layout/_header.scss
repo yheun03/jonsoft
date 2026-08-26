@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
-header {
+.app-header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -10,7 +9,7 @@ header {
     @include flex(column, center, stretch);
     z-index: 100;
 
-    @include transition(all, .2s);
+    @include transition(all, 0.2s);
 
     &.open {
         height: 100dvh;
@@ -28,7 +27,6 @@ header {
             filter: invert(100%);
         }
     }
-
 
     img {
         display: block;
@@ -64,12 +62,12 @@ header {
                 color: #333333;
             }
 
-            &+li {
+            & + li {
                 position: relative;
                 margin-left: 24px;
 
                 &:before {
-                    @include pseudo-element("");
+                    @include pseudo-element('');
                     @include absolute-position(left, -14px, top, 50%);
                     width: 4px;
                     height: 4px;
@@ -121,7 +119,7 @@ header {
             text-align: right;
             opacity: 0.5;
 
-            &+li {
+            & + li {
                 margin-top: 30px;
             }
 
@@ -129,13 +127,13 @@ header {
                 opacity: 1;
 
                 &::after {
-                    @include pseudo-element("");
+                    @include pseudo-element('');
                     @include absolute-position(right, -30px, top, 50%);
                     width: 3px;
                     height: 20px;
                     background-color: #ffffff;
                     transform: translateY(-50%);
-                    @include transition(all, .2s);
+                    @include transition(all, 0.2s);
                 }
             }
 
@@ -157,6 +155,5 @@ header {
 
     .open & {
         height: 100%;
-        // height: calc(100dvh - $header-height);
     }
 }

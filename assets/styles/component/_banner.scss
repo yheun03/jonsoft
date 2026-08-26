@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
 .banner {
     position: relative;
@@ -115,7 +114,7 @@
             min-height: unset;
 
             &::before {
-                @include pseudo-element("");
+                @include pseudo-element('');
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -137,7 +136,7 @@
         &-welcome {
             position: sticky;
             top: 0;
-            background: linear-gradient(90deg, #FF852A 0%, #FF391B 100%);
+            background: linear-gradient(90deg, #ff852a 0%, #ff391b 100%);
             min-height: unset;
             z-index: 10;
 
@@ -166,7 +165,7 @@
             .btn {
                 width: 24px;
                 aspect-ratio: 1;
-                background: url($url+'icons/24/ic-xmark.svg') center / 24px no-repeat;
+                background: url($url + 'icons/24/ic-xmark.svg') center / 24px no-repeat;
                 @include absolute-position(top, 50%, right, 20px);
                 transform: translateY(-50%);
             }
@@ -214,10 +213,6 @@
             padding-block: 60px 50px;
             height: 100%;
             flex: 1;
-        }
-
-        img {
-            // object-position: calc(100% + 270px);
         }
 
         h2 {

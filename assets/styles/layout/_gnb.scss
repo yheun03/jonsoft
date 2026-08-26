@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
 .gnb {
     display: flex;
@@ -10,7 +9,6 @@
         position: relative;
         display: inline;
         @include font-style($weight: 600, $size: 14px, $color: #666666);
-        color: #666666;
         white-space: nowrap;
 
         &:hover {
@@ -29,20 +27,20 @@
 
         &::after {
             // 사용성 개선을 위한 가상요소
-            @include pseudo-element("");
+            @include pseudo-element('');
             @include absolute-position(top, -27px, left, -15px);
             width: calc(100% + 30px);
             height: calc(100% + 54px);
         }
     }
 
-    footer & {
+    .app-footer & {
         li {
             @include font-style($size: 14px, $color: #909090);
 
-            &+li {
+            & + li {
                 &::before {
-                    @include pseudo-element("");
+                    @include pseudo-element('');
                     @include absolute-position(left, -17px, top, 50%);
                     transform: translateY(-50%);
                     width: 1px;
@@ -58,7 +56,7 @@
             margin-bottom: 40px;
 
             li {
-                &+li::before {
+                & + li::before {
                     content: unset;
                 }
 

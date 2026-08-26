@@ -1,5 +1,5 @@
 @use '../abstracts' as *;
-@use "sass:list";
+@use 'sass:list';
 
 // =============================================================================
 // About 페이지 스타일
@@ -59,7 +59,6 @@
             justify-content: center;
             @include grid(2, 60px 40px, 120px);
         }
-
     }
 }
 
@@ -97,15 +96,31 @@
         $item-padding: $gap-40 $gap-60;
 
         $thumb-bg: (
-            'item-01': (#FFED71, '../icons/380/tcb.png', #FFED71),
-            'item-02': (#B0E0FB, '../icons/380/copyright.png', #B0E0FB),
-            'item-03': (#FF8372, '../icons/380/webawards.png', #FF8372),
-            'item-04': (#8EAFF6, '../icons/380/venture.png', #8EAFF6),
+            'item-01': (
+                #ffed71,
+                '../icons/380/tcb.png',
+                #ffed71,
+            ),
+            'item-02': (
+                #b0e0fb,
+                '../icons/380/copyright.png',
+                #b0e0fb,
+            ),
+            'item-03': (
+                #ff8372,
+                '../icons/380/webawards.png',
+                #ff8372,
+            ),
+            'item-04': (
+                #8eaff6,
+                '../icons/380/venture.png',
+                #8eaff6,
+            ),
         );
 
-    margin-top: $gap-40;
+        margin-top: $gap-40;
 
-    /**
+        /**
          * 썸네일 배경 믹스인
          * @param {color} $color - 배경 색상
          * @param {string} $img - 이미지 경로
@@ -113,95 +128,95 @@
          * 
          * 사용법: @include thumb-bg(#FFED71, '../icons/380/tcb.png', #FFED71);
          */
-    @mixin thumb-bg($color, $img, $grad) {
-        background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
+        @mixin thumb-bg($color, $img, $grad) {
+            background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
 
-        &::after {
-            @include pseudo-element();
-            @include absolute-position(bottom, 0, left, 0);
-            width: 100%;
-            height: 100%;
-            @include gradient-overlay($grad, 0, 0.5);
-            z-index: 1;
-        }
-    }
-
-    .item {
-        position: relative;
-        border-radius: $item-radius;
-        width: $item-width;
-        height: $item-height;
-        padding: $item-padding;
-        overflow: hidden;
-
-        img {
-            width: 220px;
-        }
-
-        p {
-            @include font-style($fw-6, $fs-24, 140%);
-            text-align: left;
-        }
-
-        .thumbnail {
-            @include absolute-position(right, 56px, bottom, -30px);
-            @include flex(row, flex-start, center, $gap-8);
-        }
-
-        // 각 item별 배경/그라디언트 반복
-        @each $name, $val in $thumb-bg {
-            &.#{$name} {
-                @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
+            &::after {
+                @include pseudo-element();
+                @include absolute-position(bottom, 0, left, 0);
+                width: 100%;
+                height: 100%;
+                @include gradient-overlay($grad, 0, 0.5);
+                z-index: 1;
             }
         }
-    }
-}
 
-@include tablet {
-    padding-block: 40px;
+        .item {
+            position: relative;
+            border-radius: $item-radius;
+            width: $item-width;
+            height: $item-height;
+            padding: $item-padding;
+            overflow: hidden;
 
-    .title,
-    .title-sub {
-        font-size: 24px;
-        text-align: left;
-        padding-inline: 20px;
-    }
-
-    .list-awards {
-        .slick-list .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: calc(100dvw - 40px);
-            height: 390px;
-            padding: 20px;
-
-            background: {
-                position: right -10px top 45px;
-                size: 180px;
+            img {
+                width: 220px;
             }
 
             p {
-                font-size: 18px;
-                line-height: normal;
+                @include font-style($fw-6, $fs-24, 140%);
+                text-align: left;
             }
 
             .thumbnail {
-                @include absolute-position(bottom, unset, right, unset);
-                position: relative;
-                width: calc(100% + 10px);
-                gap: 10px;
-                order: 1;
-                margin: 0 -10px -30px;
+                @include absolute-position(right, 56px, bottom, -30px);
+                @include flex(row, flex-start, center, $gap-8);
+            }
 
-                img {
-                    width: 50%;
-                    max-width: 180px;
+            // 각 item별 배경/그라디언트 반복
+            @each $name, $val in $thumb-bg {
+                &.#{$name} {
+                    @include thumb-bg(list.nth($val, 1), list.nth($val, 2), list.nth($val, 3));
                 }
             }
         }
     }
-}
+
+    @include tablet {
+        padding-block: 40px;
+
+        .title,
+        .title-sub {
+            font-size: 24px;
+            text-align: left;
+            padding-inline: 20px;
+        }
+
+        .list-awards {
+            .slick-list .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: calc(100dvw - 40px);
+                height: 390px;
+                padding: 20px;
+
+                background: {
+                    position: right -10px top 45px;
+                    size: 180px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: normal;
+                }
+
+                .thumbnail {
+                    @include absolute-position(bottom, unset, right, unset);
+                    position: relative;
+                    width: calc(100% + 10px);
+                    gap: 10px;
+                    order: 1;
+                    margin: 0 -10px -30px;
+
+                    img {
+                        width: 50%;
+                        max-width: 180px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // =============================================================================
@@ -223,35 +238,35 @@
             border-radius: $radius-20;
             overflow: hidden;
             min-height: 470px;
-            @include bg-image($url + "images/feature/feature-01.png", center, cover);
+            @include bg-image($url + 'images/feature/feature-01.png', center, cover);
 
             &-02 {
-                @include bg-image($url + "images/feature/feature-02.png", center, cover);
+                @include bg-image($url + 'images/feature/feature-02.png', center, cover);
 
                 .front {
-                    background-color: #C8C5B9;
-                    @include shadow(md, #C8C5B9);
+                    background-color: #c8c5b9;
+                    @include shadow(md, #c8c5b9);
                 }
 
                 .back a {
-                    color: #FFE6CD;
+                    color: #ffe6cd;
 
                     &::after {
-                        border-color: #FFE6CD;
+                        border-color: #ffe6cd;
                     }
                 }
             }
 
             &-03 {
-                @include bg-image($url + "images/feature/feature-03.png", center, cover);
+                @include bg-image($url + 'images/feature/feature-03.png', center, cover);
 
                 .front {
-                    background-color: #46628A;
-                    @include shadow(md, #46628A);
+                    background-color: #46628a;
+                    @include shadow(md, #46628a);
                 }
 
                 .back a {
-                    color: #60FFF5;
+                    color: #60fff5;
 
                     &::after {
                         border-color: #60fff5;
@@ -271,8 +286,8 @@
         @include absolute-position(top, 0, left, 0);
         padding: $gap-40 32px 0;
         width: 100%;
-        background-color: #A2CCFF;
-        @include shadow(md, #A2CCFF);
+        background-color: #a2ccff;
+        @include shadow(md, #a2ccff);
         transition: all 0.3s ease;
 
         .title {
@@ -322,7 +337,7 @@
             position: relative;
             align-self: flex-start;
             @include font-style($fw-8, $fs-14, normal);
-            color: #5FA9FF;
+            color: #5fa9ff;
             margin-left: $gap-8;
             text-decoration: underline;
             @include transition();
@@ -344,7 +359,6 @@
     @include tablet {
         .list-feature {
             @include grid(1, 20px, 1fr);
-
 
             .front {
                 .title {
@@ -454,7 +468,7 @@
                 }
 
                 &::after {
-                    background: linear-gradient(198deg, #FF8A50 0%, #FF5C42 100%), #FE8103;
+                    background: linear-gradient(198deg, #ff8a50 0%, #ff5c42 100%), #fe8103;
                     width: 22px;
                     border: 4px solid #797979;
                     box-sizing: border-box;
@@ -467,7 +481,7 @@
     &-content {
         padding-top: 20px;
 
-        &>li {
+        & > li {
             margin-bottom: 120px;
         }
     }
@@ -477,7 +491,7 @@
         @include font-style($fw-5, $fs-16);
         margin-bottom: $gap-20;
 
-        &>span {
+        & > span {
             display: block;
         }
 
@@ -492,7 +506,6 @@
 }
 
 @include tablet {
-
     .history {
         padding-block: 120px 60px;
 
@@ -543,7 +556,7 @@
         }
 
         &-content {
-            &>li {
+            & > li {
                 padding-top: 60px;
                 margin-bottom: 60px;
             }

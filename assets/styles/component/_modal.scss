@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
 .modal-open {
     overflow: hidden;
@@ -18,7 +17,7 @@
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
 
     display: none;
 
@@ -64,11 +63,10 @@
         ul {
             li {
                 @include font-style($size: 16px, $color: #a0a0a0);
-                color: #a0a0a0;
                 margin-bottom: 10px;
 
                 &::before {
-                    content: "#";
+                    content: '#';
                 }
             }
         }
@@ -85,7 +83,7 @@
 
         .abstract {
             padding: 20px;
-            background-color: #FAFAFA;
+            background-color: #fafafa;
             border-radius: 6px;
             margin-bottom: 30px;
 
@@ -96,7 +94,7 @@
                 margin-bottom: 10px;
 
                 mark {
-                    color: #FF7931;
+                    color: #ff7931;
                     background: unset;
                 }
             }
@@ -108,7 +106,7 @@
 
         .title {
             padding-top: 20px;
-            border-top: 1px solid #07203E;
+            border-top: 1px solid #07203e;
             display: flex;
             gap: 20px;
 
@@ -150,7 +148,7 @@
         &-header {
             flex: none;
             padding: 20px 20px 10px;
-            border-bottom: 1px solid #D6DCE5;
+            border-bottom: 1px solid #d6dce5;
             box-shadow: 0 0 0 8px #f1f2f5;
 
             .heading {

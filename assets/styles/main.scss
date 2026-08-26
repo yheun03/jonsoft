@@ -1,33 +1,9 @@
-// =============================================================================
-// 메인 SCSS 파일
-// =============================================================================
-
-// 유틸 폴더에서 필요한 것들 import
-@use './abstracts' as *;
-@use "sass:list";
-
-// 레이아웃 import
+@use './abstracts/reset';
+@use './abstracts/fontvar';
 @use './layout';
 @use './component';
-
-// 페이지별 스타일 import
 @use './pages/index';
 @use './pages/about';
 @use './pages/business';
 @use './pages/contact';
 @use './pages/error';
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 8px;
-    z-index: 9999;
-    padding: 8px 12px;
-    background: #111;
-    color: #fff;
-    border-radius: 4px;
-}
-
-.skip-link:focus {
-    top: 8px;
-}

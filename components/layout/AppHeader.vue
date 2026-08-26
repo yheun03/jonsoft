@@ -1,5 +1,5 @@
 <template>
-    <header :class="{ open: menuOpen }">
+    <header class="app-header" :class="{ open: menuOpen }">
         <div v-if="showWelcome" class="banner type-welcome">
             <div class="wrap">
                 <p class="pc">{{ t('common.banner.welcome.title') }}</p>

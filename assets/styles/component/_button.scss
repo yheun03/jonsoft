@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'sass:map';
 
 .btn {
     background-color: unset;
@@ -9,82 +8,75 @@
     @include font-style($weight: 600, $size: 16px);
     word-break: keep-all;
 
-    &.type {
-        &-ask {
-            color: #555555;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: unset;
+    &.type-ask {
+        color: #555555;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: unset;
 
-            &::after {
-                @include pseudo-element("");
-                display: block;
-                width: 40px;
-                height: 40px;
-                background: #CBCBCB url($url + 'icons/20/ic-arrow-ask.svg') center/20px no-repeat;
-                border-radius: 50%;
-            }
-        }
-
-        &-opacity {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid #ffffff;
-            padding: 18px 36px;
-            @include font-style($weight: 600, $size: 18px, $line-height: 22px, $color: #ffffff);
-            backdrop-filter: blur(5px);
-        }
-
-        &-round {
-            // 모달 닫기버튼
-            background-color: #000000;
-            border-radius: 60px;
-            padding: 10px 26px;
-            color: #ffffff;
+        &::after {
+            @include pseudo-element('');
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #cbcbcb url($url + 'icons/20/ic-arrow-ask.svg') center/20px no-repeat;
+            border-radius: 50%;
         }
     }
 
-    &.open {
-        &-menu {
-            @include bg-image($url + 'icons/26/ic-hamburger.svg', right 8px center, 26px);
-            @include font-style($fw-6, $fs-14, $color: #000000);
-            padding: 4px 45px 4px 0;
-        }
+    &.type-opacity {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid #ffffff;
+        padding: 18px 36px;
+        @include font-style($weight: 600, $size: 18px, $line-height: 22px, $color: #ffffff);
+        backdrop-filter: blur(5px);
+    }
+
+    &.type-round {
+        background-color: #000000;
+        border-radius: 60px;
+        padding: 10px 26px;
+        color: #ffffff;
+    }
+
+    &.open-menu {
+        @include bg-image($url + 'icons/26/ic-hamburger.svg', right 8px center, 26px);
+        @include font-style($fw-6, $fs-14, $color: #000000);
+        padding: 4px 45px 4px 0;
     }
 
     @include tablet {
-        &.type {
-            &-opacity {
-                @include font-style($size: 16px, $line-height: 150%);
-                padding: 16px 28px;
-            }
+        &.type-opacity {
+            @include font-style($size: 16px, $line-height: 150%);
+            padding: 16px 28px;
+        }
 
-            &-round {
-                padding: unset;
-                width: 40px;
-                height: 40px;
+        &.type-round {
+            padding: unset;
+            width: 40px;
+            height: 40px;
 
-                .modal & {
-                    order: -1;
-                    text-indent: -9999px;
-                    background-color: unset;
-                    @include flex(row, center, center);
-                    margin-left: -10px;
+            .modal & {
+                order: -1;
+                text-indent: -9999px;
+                background-color: unset;
+                @include flex(row, center, center);
+                margin-left: -10px;
 
-                    &::after {
-                        @include pseudo-element("");
-                        display: block;
-                        width: 16px;
-                        height: 16px;
+                &::after {
+                    @include pseudo-element('');
+                    display: block;
+                    width: 16px;
+                    height: 16px;
 
-                        border: {
-                            width: 0 0 4px 4px;
-                            style: solid;
-                            color: #555555;
-                        }
-
-                        transform: rotate(45deg);
+                    border: {
+                        width: 0 0 4px 4px;
+                        style: solid;
+                        color: #555555;
                     }
+
+                    transform: rotate(45deg);
                 }
             }
         }
