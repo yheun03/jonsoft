@@ -14,7 +14,12 @@
                         <p class="title" v-html="t(`business.solutions.${solution.id}.title`)"></p>
                         <p v-html="t(`business.solutions.${solution.id}.subtitle`)"></p>
                     </div>
-                    <img :src="assetPath(t(`business.solutions.${solution.id}.thumbnail`))" :alt="t(`business.solutions.${solution.id}.alt`)" />
+                    <img
+                        :src="assetPath(t(`business.solutions.${solution.id}.thumbnail`))"
+                        :alt="t(`business.solutions.${solution.id}.alt`)"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
                 <div class="content">
                     <span class="badge" v-html="t(`business.solutions.${solution.id}.badge`)"></span>

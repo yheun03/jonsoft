@@ -1,5 +1,5 @@
 <template>
-    <section ref="root" class="legacy-section-root">
+    <section>
         <PageBanner src="/assets/images/banner/page-index.webp" alt="AI와 CPU를 형상화한 메인 페이지 배너 이미지입니다.">
             <div class="wrap">
                 <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('index.banner.main.title')"></h2>
@@ -19,7 +19,7 @@
                     <span data-aos="fade-up" data-aos-delay="260" v-html="t('index.banner.goto.button')"></span>
                 </NuxtLink>
             </div>
-            <img src="/assets/images/banner/goto.webp" alt="" />
+            <img src="/assets/images/banner/goto.webp" alt="" loading="lazy" decoding="async" />
         </div>
         <PartnerLogoSection type="customer" />
         <PartnerLogoSection type="partner" />
@@ -29,8 +29,6 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { getI18nNamespaces } from '~/utils/route-i18n';
-import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import PartnerLogoSection from '~/components/section/PartnerLogoSection.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
@@ -39,11 +37,5 @@ definePageMeta({
     layout: 'default',
 });
 
-const locale = useLocaleStore();
-const namespaces = getI18nNamespaces('/');
-await useAsyncData('i18n-page-index', () => locale.loadBundles(namespaces));
-
 const { t } = useI18n();
-const root = ref<HTMLElement | null>(null);
-useLegacySectionRoot(root, namespaces);
 </script>

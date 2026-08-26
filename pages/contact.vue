@@ -1,5 +1,5 @@
 <template>
-    <section ref="root" class="legacy-section-root">
+    <section>
         <div class="navigator">
             <div class="tab">
                 <ul>
@@ -120,23 +120,15 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { getI18nNamespaces } from '~/utils/route-i18n';
-import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
 import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue';
 
 definePageMeta({
     layout: 'default',
 });
 
-const locale = useLocaleStore();
-const namespaces = getI18nNamespaces('/contact');
-await useAsyncData('i18n-page-contact', () => locale.loadBundles(namespaces));
-
 const { t } = useI18n();
-const root = ref<HTMLElement | null>(null);
 const locationSection = ref<HTMLElement | null>(null);
 const recruitSection = ref<HTMLElement | null>(null);
-useLegacySectionRoot(root, namespaces);
 
 const scrollToSection = (target: 'location' | 'recruit') => {
     const section = target === 'location' ? locationSection.value : recruitSection.value;

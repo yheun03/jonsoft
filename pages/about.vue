@@ -1,5 +1,5 @@
 <template>
-    <section ref="root" class="legacy-section-root">
+    <section>
         <PageBanner src="/assets/images/banner/page-about.webp" alt="회사 소개 페이지의 배너 이미지입니다." bottom-aligned>
             <div class="module-text">
                 <div class="wrap">
@@ -26,7 +26,7 @@
             <div class="wrap">
                 <ul>
                     <li data-aos="fade-up" data-aos-delay="100">
-                        <img src="/assets/icons/120/ic-building.svg" alt="" />
+                        <img src="/assets/icons/120/ic-building.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>10+</span></p>
                             <p class="title" v-html="t('about.summary.item-01.title')"></p>
@@ -34,7 +34,7 @@
                         </div>
                     </li>
                     <li data-aos="fade-up" data-aos-delay="180">
-                        <img src="/assets/icons/120/ic-factory.svg" alt="" />
+                        <img src="/assets/icons/120/ic-factory.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>71+</span></p>
                             <p class="title" v-html="t('about.summary.item-02.title')"></p>
@@ -42,7 +42,7 @@
                         </div>
                     </li>
                     <li data-aos="fade-up" data-aos-delay="260">
-                        <img src="/assets/icons/120/ic-partner.svg" alt="" />
+                        <img src="/assets/icons/120/ic-partner.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>20</span></p>
                             <p class="title" v-html="t('about.summary.item-03.title')"></p>
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li data-aos="fade-up" data-aos-delay="340">
-                        <img src="/assets/icons/120/ic-hand.svg" alt="" />
+                        <img src="/assets/icons/120/ic-hand.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>12</span></p>
                             <p class="title" v-html="t('about.summary.item-04.title')"></p>
@@ -66,8 +66,8 @@
             <div class="list-awards">
                 <div data-aos="fade-up" data-aos-delay="260" class="item item-01">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img01-1.webp" alt="" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img01-2.webp" alt="" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img01-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img01-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
                         <p data-aos="fade-up" v-html="t('about.awards.item-01.title')"></p>
@@ -75,8 +75,8 @@
                 </div>
                 <div data-aos="fade-up" data-aos-delay="340" class="item item-02">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img02-1.webp" alt="" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img02-2.webp" alt="" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img02-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img02-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
                         <p data-aos="fade-up" v-html="t('about.awards.item-02.title')"></p>
@@ -84,8 +84,8 @@
                 </div>
                 <div data-aos="fade-up" data-aos-delay="500" class="item item-03">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img03-1.webp" alt="" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img03-2.webp" alt="" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img03-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img03-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
                         <p data-aos="fade-up" v-html="t('about.awards.item-03.title')"></p>
@@ -93,8 +93,8 @@
                 </div>
                 <div data-aos="fade-up" data-aos-delay="420" class="item item-04">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img04-1.webp" alt="" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img04-2.webp" alt="" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img04-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img data-aos="fade-up" src="/assets/images/awards/img04-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
                         <p data-aos="fade-up" v-html="t('about.awards.item-04.title')"></p>
@@ -158,16 +158,16 @@
                             <li
                                 v-for="(year, index) in historyItems"
                                 :key="year.year"
-                                :class="{ active: index === 0 }"
+                                :class="{ active: index === activeHistoryIndex }"
                                 data-aos="fade-up"
                                 :data-aos-delay="Math.min(150 + index * 40, 430)"
                             >
-                                <button type="button" class="btn">{{ year.year }}</button>
+                                <button type="button" class="btn" @click="scrollToHistory(index)">{{ year.year }}</button>
                             </li>
                         </ul>
                     </div>
                     <ul class="history-content" data-aos="fade-up" data-aos-delay="380">
-                        <li v-for="year in historyItems" :key="`content-${year.year}`">
+                        <li v-for="year in historyItems" ref="historySections" :key="`content-${year.year}`">
                             <ul>
                                 <li v-for="month in year.months" :key="`${year.year}-${month.label}`" class="month">
                                     <span class="month-label">{{ month.label }}</span>
@@ -193,8 +193,6 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { getI18nNamespaces } from '~/utils/route-i18n';
-import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
@@ -205,15 +203,56 @@ definePageMeta({
 });
 
 const locale = useLocaleStore();
-const namespaces = getI18nNamespaces('/about');
-await useAsyncData('i18n-page-about', () => locale.loadBundles(namespaces));
-
 const { t, tm, rt } = useI18n();
 const list = (key: string) => {
     const message = tm(key);
     return Array.isArray(message) ? message.map((item) => rt(item)) : [];
 };
 const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || '';
-const root = ref<HTMLElement | null>(null);
-useLegacySectionRoot(root, namespaces);
+
+const activeHistoryIndex = ref(0);
+const historySections = ref<HTMLElement[]>([]);
+let historyFrame = 0;
+
+const updateActiveHistory = () => {
+    const viewportCenter = window.innerHeight / 2;
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    historySections.value.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+        if (distance < closestDistance) {
+            closestIndex = index;
+            closestDistance = distance;
+        }
+    });
+
+    activeHistoryIndex.value = closestIndex;
+};
+
+const handleHistoryScroll = () => {
+    cancelAnimationFrame(historyFrame);
+    historyFrame = requestAnimationFrame(updateActiveHistory);
+};
+
+const scrollToHistory = (index: number) => {
+    const section = historySections.value[index];
+    if (!section) return;
+
+    window.scrollTo({
+        top: window.scrollY + section.getBoundingClientRect().top - 100,
+        behavior: 'smooth',
+    });
+};
+
+onMounted(() => {
+    updateActiveHistory();
+    window.addEventListener('scroll', handleHistoryScroll, { passive: true });
+});
+
+onUnmounted(() => {
+    cancelAnimationFrame(historyFrame);
+    window.removeEventListener('scroll', handleHistoryScroll);
+});
 </script>

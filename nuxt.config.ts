@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
     modules: ['@pinia/nuxt'],
 
-    plugins: ['~/plugins/i18n', '~/plugins/locale-hydrate.client', '~/plugins/aos.client', '~/plugins/slick.client'],
+    plugins: ['~/plugins/i18n', '~/plugins/aos.client', '~/plugins/slick.client'],
 
     css: ['~/assets/library/aos/aos.min.css', '~/resources/library/slick/slick.min.css', '~/assets/styles/main.scss'],
 

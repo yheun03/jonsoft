@@ -20,7 +20,7 @@
                     <p v-html="t(`${messageRoot}.modal.screen.dscpt`)"></p>
                 </div>
                 <div class="content">
-                    <img :src="assetPath(t(`${messageRoot}.modal.src`))" :alt="t(`${messageRoot}.modal.alt`)" />
+                    <img :src="assetPath(t(`${messageRoot}.modal.src`))" :alt="t(`${messageRoot}.modal.alt`)" loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>

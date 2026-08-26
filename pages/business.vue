@@ -1,5 +1,5 @@
 <template>
-    <section ref="root" class="legacy-section-root">
+    <section>
         <PageBanner src="/assets/images/banner/page-business.webp" alt="비즈니스 및 솔루션 페이지의 배너 이미지입니다." />
         <div class="module-text">
             <div class="wrap">
@@ -24,8 +24,6 @@ import BusinessSolutionSection from '~/components/business/BusinessSolutionSecti
 import BusinessSuccessSection from '~/components/business/BusinessSuccessSection.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
-import { useLegacySectionRoot } from '~/composables/useLegacySectionRoot';
-import { getI18nNamespaces } from '~/utils/route-i18n';
 
 definePageMeta({
     layout: 'default',
@@ -34,10 +32,6 @@ definePageMeta({
 type ActiveModal = { type: 'solution'; id: SolutionId } | { type: 'success'; id: SuccessId };
 type SolutionId = 'aps' | 'oms' | 'fems' | 'scm' | 'crm' | 'mes' | 'wcs' | 'tms' | 'ai' | 'wms';
 type SuccessId = 'tailim' | 'kkleannara';
-
-const locale = useLocaleStore();
-const namespaces = getI18nNamespaces('/business');
-await useAsyncData('i18n-page-business', () => locale.loadBundles(namespaces));
 
 const { t } = useI18n();
 const activeModal = ref<ActiveModal | null>(null);
@@ -58,7 +52,4 @@ watch(activeModal, (modal) => {
 onUnmounted(() => {
     document.body.classList.remove('modal-open');
 });
-
-const root = ref<HTMLElement | null>(null);
-useLegacySectionRoot(root, namespaces);
 </script>

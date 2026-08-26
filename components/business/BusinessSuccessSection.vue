@@ -19,7 +19,7 @@
                             </li>
                         </ul>
                     </div>
-                    <img :src="assetPath(successCase.image)" alt="" />
+                    <img :src="assetPath(successCase.image)" alt="" loading="lazy" decoding="async" />
                 </li>
             </ul>
         </div>

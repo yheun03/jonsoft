@@ -1,7 +1,7 @@
 <template>
     <div class="banner" :class="{ 'set-bg-bottom': bottomAligned }">
         <slot />
-        <img :src="assetPath(src)" :alt="alt" />
+        <img :src="assetPath(src)" :alt="alt" loading="eager" decoding="async" fetchpriority="high" />
     </div>
 </template>
 

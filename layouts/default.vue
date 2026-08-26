@@ -14,8 +14,4 @@
 import AppFloating from '~/components/layout/AppFloating.vue';
 import AppFooter from '~/components/layout/AppFooter.vue';
 import AppHeader from '~/components/layout/AppHeader.vue';
-
-const locale = useLocaleStore();
-
-await useAsyncData('layout-i18n-common', () => locale.loadBundles(['common']));
 </script>

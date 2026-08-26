@@ -4,7 +4,7 @@
             <h3 data-aos="fade-up" data-aos-delay="100" v-html="t('common.philosophy.title')"></h3>
             <div class="list-philosophy">
                 <div class="item" data-aos="fade-up" data-aos-delay="180">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="" />
+                    <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="260">{{ t('common.philosophy.talent.title') }}</p>
                         <dl>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="420">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-2.webp" alt="" />
+                    <img data-aos="fade-up" src="/assets/images/philosophy-2.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="500">{{ t('common.philosophy.value.title') }}</p>
                         <dl>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="item" data-aos="fade-up" data-aos-delay="580">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-3.webp" alt="" />
+                    <img data-aos="fade-up" src="/assets/images/philosophy-3.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
                         <p data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.title') }}</p>
                         <dl>
