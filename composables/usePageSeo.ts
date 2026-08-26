@@ -11,38 +11,34 @@ const pagePaths: Record<SeoPage, string> = {
 };
 
 const pageNames: Record<SeoPage, Record<string, string>> = {
-    home: { ko: '조앤소프트', en: 'JO&SOFT', ja: 'JO&SOFT', vi: 'JO&SOFT' },
-    about: { ko: '회사소개', en: 'About Us', ja: '会社概要', vi: 'Giới thiệu công ty' },
-    business: { ko: '사업영역 및 솔루션', en: 'Business & Solutions', ja: '事業領域・ソリューション', vi: 'Lĩnh vực kinh doanh & Giải pháp' },
-    customer: { ko: '고객사 및 파트너', en: 'Customers & Partners', ja: '顧客・パートナー', vi: 'Khách hàng & Đối tác' },
-    contact: { ko: '문의 및 채용', en: 'Contact & Careers', ja: 'お問い合わせ・採用', vi: 'Liên hệ & Tuyển dụng' },
+    home: { ko: '조앤소프트', en: 'JO&SOFT', vi: 'JO&SOFT' },
+    about: { ko: '회사소개', en: 'About Us', vi: 'Giới thiệu công ty' },
+    business: { ko: '사업영역 및 솔루션', en: 'Business & Solutions', vi: 'Lĩnh vực kinh doanh & Giải pháp' },
+    customer: { ko: '고객사 및 파트너', en: 'Customers & Partners', vi: 'Khách hàng & Đối tác' },
+    contact: { ko: '문의 및 채용', en: 'Contact & Careers', vi: 'Liên hệ & Tuyển dụng' },
 };
 
 const homeTitles: Record<string, string> = {
     ko: '제조 AI·스마트팩토리 전문기업 | 조앤소프트',
     en: 'Manufacturing AI & Smart Factory Solutions | JO&SOFT',
-    ja: '製造AI・スマートファクトリー専門企業 | JO&SOFT',
     vi: 'Giải pháp AI sản xuất & Nhà máy thông minh | JO&SOFT',
 };
 
 const customerDescriptions: Record<string, string> = {
     ko: '삼성전기, KT, GS리테일, CJ대한통운 등 조앤소프트와 함께 디지털 전환과 스마트 제조 혁신을 추진한 주요 고객사와 파트너를 소개합니다.',
     en: 'Meet the customers and partners working with JO&SOFT on digital transformation and smart manufacturing innovation.',
-    ja: 'JO&SOFTとともにデジタル変革とスマート製造革新を推進する主要顧客およびパートナーをご紹介します。',
     vi: 'Khám phá các khách hàng và đối tác đồng hành cùng JO&SOFT trong chuyển đổi số và đổi mới sản xuất thông minh.',
 };
 
 const contactDescriptions: Record<string, string> = {
     ko: '조앤소프트 본사 위치와 대표 연락처, 프로젝트 문의 이메일, 개발자·UX/UI 디자이너·프로젝트 PM 채용 정보를 확인하세요.',
     en: 'Find JO&SOFT headquarters, project inquiry contacts, and career information for developers, UX/UI designers, and project managers.',
-    ja: 'JO&SOFT本社の所在地、プロジェクトお問い合わせ先、開発者・UX/UIデザイナー・プロジェクトPMの採用情報をご案内します。',
     vi: 'Xem địa chỉ trụ sở JO&SOFT, thông tin liên hệ dự án và tuyển dụng lập trình viên, nhà thiết kế UX/UI và quản lý dự án.',
 };
 
 const localeCodes: Record<string, string> = {
     ko: 'ko_KR',
     en: 'en_US',
-    ja: 'ja_JP',
     vi: 'vi_VN',
 };
 
@@ -124,7 +120,7 @@ export function usePageSeo(page: SeoPage) {
             contactType: 'sales',
             telephone: '+82-31-717-8816',
             email: 'js.jung@jonsoft.co.kr',
-            availableLanguage: ['Korean', 'English', 'Japanese', 'Vietnamese'],
+            availableLanguage: ['Korean', 'English', 'Vietnamese'],
         },
         knowsAbout: ['Manufacturing AI', 'Smart Factory', 'MES', 'APS', 'OMS', 'FEMS', 'SCM', 'CRM', 'WCS', 'TMS', 'WMS'],
     }));
@@ -170,7 +166,7 @@ export function usePageSeo(page: SeoPage) {
                 url: absoluteUrl(),
                 name: 'JO&SOFT',
                 publisher: { '@id': organizationId },
-                inLanguage: ['ko', 'en', 'ja', 'vi'],
+                inLanguage: ['ko', 'en', 'vi'],
             },
             webPage.value,
         ];

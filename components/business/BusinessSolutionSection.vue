@@ -44,7 +44,7 @@ const emit = defineEmits<{
 
 const { t } = useI18n();
 const locale = useLocaleStore();
-const carouselLabels = { ko: '조앤소프트 솔루션 목록', en: 'JO&SOFT solutions', ja: 'JO&SOFTソリューション一覧', vi: 'Danh sách giải pháp JO&SOFT' };
+const carouselLabels = { ko: '조앤소프트 솔루션 목록', en: 'JO&SOFT solutions', vi: 'Danh sách giải pháp JO&SOFT' };
 const carouselLabel = computed(() => carouselLabels[locale.lang]);
 
 const solutions: Array<{ id: SolutionId; delay: number }> = [

@@ -37,7 +37,7 @@ const emit = defineEmits<{
 
 const { t, tm, rt } = useI18n();
 const locale = useLocaleStore();
-const detailLabels = { ko: '자세히 보기', en: 'View details', ja: '詳細を見る', vi: 'Xem chi tiết' };
+const detailLabels = { ko: '자세히 보기', en: 'View details', vi: 'Xem chi tiết' };
 const detailLabel = computed(() => detailLabels[locale.lang]);
 const plainText = (value: string) =>
     value

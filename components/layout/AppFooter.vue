@@ -42,6 +42,6 @@ import { assetPath } from '~/utils/assetPath';
 
 const { t } = useI18n();
 const locale = useLocaleStore();
-const footerNavLabels = { ko: '하단 메뉴', en: 'Footer navigation', ja: 'フッターメニュー', vi: 'Điều hướng chân trang' };
+const footerNavLabels = { ko: '하단 메뉴', en: 'Footer navigation', vi: 'Điều hướng chân trang' };
 const footerNavLabel = computed(() => footerNavLabels[locale.lang]);
 </script>

@@ -226,7 +226,6 @@ const localized = (item: Record<string, string>) => item[locale.lang] || item.ko
 const awardsCarouselLabels = {
     ko: '인증 및 수상 목록',
     en: 'Certifications and awards',
-    ja: '認証・受賞一覧',
     vi: 'Danh sách chứng nhận và giải thưởng',
 };
 const awardsCarouselLabel = computed(() => awardsCarouselLabels[locale.lang]);

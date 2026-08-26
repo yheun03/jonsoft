@@ -11,7 +11,7 @@ import { assetPath } from '~/utils/assetPath';
 
 const { t } = useI18n();
 const locale = useLocaleStore();
-const newWindowLabels = { ko: '새 창', en: 'opens in a new window', ja: '新しいウィンドウ', vi: 'mở trong cửa sổ mới' };
+const newWindowLabels = { ko: '새 창', en: 'opens in a new window', vi: 'mở trong cửa sổ mới' };
 const newWindowLabel = computed(() => newWindowLabels[locale.lang]);
 const catalogPath = computed(() => assetPath(t('common.catalog.src')));
 </script>

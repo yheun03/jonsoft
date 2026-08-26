@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 
-export type LocaleCode = 'ko' | 'en' | 'ja' | 'vi';
-const localeCodes: LocaleCode[] = ['ko', 'en', 'ja', 'vi'];
+export type LocaleCode = 'ko' | 'en' | 'vi';
+const localeCodes: LocaleCode[] = ['ko', 'en', 'vi'];
 
 export const useLocaleStore = defineStore('locale', {
     state: () => ({

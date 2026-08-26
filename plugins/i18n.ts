@@ -4,7 +4,6 @@ import type { LocaleCode } from '~/stores/locale';
 const dictionaries = {
     ko: () => import('~/i18n/dictionary/ko.json'),
     en: () => import('~/i18n/dictionary/en.json'),
-    ja: () => import('~/i18n/dictionary/ja.json'),
     vi: () => import('~/i18n/dictionary/vi.json'),
 };
 

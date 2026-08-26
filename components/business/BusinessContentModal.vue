@@ -49,7 +49,7 @@ const locale = useLocaleStore();
 const dialog = ref<HTMLElement | null>(null);
 const closeButton = ref<HTMLButtonElement | null>(null);
 const titleId = computed(() => `business-modal-title-${props.type}-${props.id}`);
-const closeLabels = { ko: '닫기', en: 'Close', ja: '閉じる', vi: 'Đóng' };
+const closeLabels = { ko: '닫기', en: 'Close', vi: 'Đóng' };
 const closeLabel = computed(() => closeLabels[locale.lang]);
 let previouslyFocused: HTMLElement | null = null;
 const backgroundElements: HTMLElement[] = [];

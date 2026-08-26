@@ -133,8 +133,8 @@ definePageMeta({
 
 const { t } = useI18n();
 const locale = useLocaleStore();
-const contactNavLabels = { ko: '문의 페이지 바로가기', en: 'Contact page sections', ja: 'お問い合わせページ内メニュー', vi: 'Các mục trang liên hệ' };
-const mapLabels = { ko: '조앤소프트 본사 위치 지도', en: 'Map of JO&SOFT headquarters', ja: 'JO&SOFT本社の地図', vi: 'Bản đồ trụ sở JO&SOFT' };
+const contactNavLabels = { ko: '문의 페이지 바로가기', en: 'Contact page sections', vi: 'Các mục trang liên hệ' };
+const mapLabels = { ko: '조앤소프트 본사 위치 지도', en: 'Map of JO&SOFT headquarters', vi: 'Bản đồ trụ sở JO&SOFT' };
 const contactNavLabel = computed(() => contactNavLabels[locale.lang]);
 const mapLabel = computed(() => mapLabels[locale.lang]);
 usePageSeo('contact');

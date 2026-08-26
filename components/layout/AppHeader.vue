@@ -119,17 +119,15 @@ const { t } = useI18n();
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);
 const mobileNav = ref<HTMLElement | null>(null);
-const langs: LocaleCode[] = ['ko', 'en', 'ja', 'vi'];
+const langs: LocaleCode[] = ['ko', 'en', 'vi'];
 const labels: Record<LocaleCode, string> = {
     ko: 'KOR',
     en: 'ENG',
-    ja: 'JPN',
     vi: 'VIE',
 };
 const languageNames: Record<LocaleCode, string> = {
     ko: '한국어',
     en: 'English',
-    ja: '日本語',
     vi: 'Tiếng Việt',
 };
 const localizedA11yLabels = {
@@ -152,16 +150,6 @@ const localizedA11yLabels = {
         openMenu: 'Open menu',
         closeMenu: 'Close menu',
         newWindow: 'opens in a new window',
-    },
-    ja: {
-        promotion: 'お知らせ',
-        closePromotion: 'お知らせを閉じる',
-        home: 'JO&SOFTホーム',
-        mainNavigation: 'メインメニュー',
-        language: '言語を選択',
-        openMenu: 'メニューを開く',
-        closeMenu: 'メニューを閉じる',
-        newWindow: '新しいウィンドウ',
     },
     vi: {
         promotion: 'Thông báo',
