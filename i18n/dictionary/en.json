@@ -346,6 +346,18 @@
             }
         }
     },
+    "error": {
+        "notFound": {
+            "title": "We couldn't find that page.",
+            "description": "The page may have moved or the address may have changed. Please check the URL and try again."
+        },
+        "default": {
+            "title": "Something went wrong.",
+            "description": "We apologize for the inconvenience. Please try again in a moment."
+        },
+        "home": "Back to home",
+        "contact": "Contact us"
+    },
     "contact": {
         "tab": {
             "location": "Location",

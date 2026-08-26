@@ -342,6 +342,18 @@
             }
         }
     },
+    "error": {
+        "notFound": {
+            "title": "Không tìm thấy trang bạn yêu cầu.",
+            "description": "Trang có thể đã được di chuyển hoặc địa chỉ đã thay đổi. Vui lòng kiểm tra lại URL."
+        },
+        "default": {
+            "title": "Đã xảy ra lỗi tạm thời.",
+            "description": "Chúng tôi xin lỗi vì sự bất tiện này. Vui lòng thử lại sau ít phút."
+        },
+        "home": "Về trang chủ",
+        "contact": "Liên hệ"
+    },
     "contact": {
         "tab": {
             "location": "Đường đi",
