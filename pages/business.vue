@@ -14,7 +14,7 @@
         <BusinessSuccessSection @open="openSuccessModal" />
         <CommonAskBanner />
     </section>
-    <BusinessContentModal v-if="activeModal" :type="activeModal.type" :id="activeModal.id" @close="closeModal" />
+    <BusinessContentModal v-if="activeModal" v-bind="activeModal" @close="closeModal" />
 </template>
 
 <script setup lang="ts">

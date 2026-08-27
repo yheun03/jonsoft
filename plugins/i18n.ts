@@ -1,5 +1,5 @@
 import { createI18n, type LocaleMessageValue } from 'vue-i18n';
-import { isLocaleCode, type LocaleCode } from '~/stores/locale';
+import type { LocaleCode } from '~/stores/locale';
 
 const dictionaries = {
     ko: () => import('~/i18n/dictionary/ko.json'),
@@ -22,7 +22,6 @@ async function loadDictionary(lang: LocaleCode) {
 
 export default defineNuxtPlugin(async (nuxtApp) => {
     const localeStore = useLocaleStore();
-    localeStore.hydrateLangFromStorage();
     const initialLang = localeStore.lang;
 
     const i18n = createI18n({
@@ -57,10 +56,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     });
 
     nuxtApp.hook('app:mounted', () => {
-        const documentLang = document.documentElement.lang;
-        const activeLang = isLocaleCode(documentLang) ? documentLang : (i18n.global.locale.value as LocaleCode);
-
-        if (localeStore.lang !== activeLang) localeStore.setLang(activeLang);
-        updateDocumentLang(activeLang);
+        localeStore.hydrateLangFromStorage();
     });
 });
