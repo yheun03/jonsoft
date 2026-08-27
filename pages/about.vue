@@ -213,8 +213,8 @@ definePageMeta({
     layout: 'default',
 });
 
-const locale = useLocaleStore();
-const { t, tm, rt } = useI18n();
+const { t, tm, rt, locale } = useI18n();
+const activeLang = computed(() => locale.value as LocaleCode);
 const list = (key: string) => {
     const message = tm(key);
     return Array.isArray(message) ? message.map((item) => rt(item)) : [];
@@ -224,7 +224,7 @@ const awardsCarouselLabels = {
     en: 'Certifications and awards',
     vi: 'Danh sách chứng nhận và giải thưởng',
 };
-const awardsCarouselLabel = computed(() => awardsCarouselLabels[locale.lang]);
+const awardsCarouselLabel = computed(() => awardsCarouselLabels[activeLang.value]);
 usePageSeo('about');
 
 const historyItems = computed(() => {
@@ -232,7 +232,7 @@ const historyItems = computed(() => {
         year: history.year,
         months: history.months.map((month) => ({
             label: month.label,
-            items: month.items.map((item) => getLocalizedHistoryText(item, locale.lang)),
+            items: month.items.map((item) => getLocalizedHistoryText(item, activeLang.value)),
         })),
     }));
 });
@@ -292,7 +292,7 @@ const handleHistoryKeydown = (event: KeyboardEvent, index: number) => {
 };
 
 watch(
-    () => locale.lang,
+    activeLang,
     async () => {
         await nextTick();
         handleHistoryScroll();

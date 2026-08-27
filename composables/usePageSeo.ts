@@ -52,8 +52,7 @@ const stripHtml = (value: string) =>
         .trim();
 
 export function usePageSeo(page: SeoPage) {
-    const { t } = useI18n();
-    const locale = useLocaleStore();
+    const { t, locale } = useI18n();
     const runtimeConfig = useRuntimeConfig();
     const siteUrl = runtimeConfig.public.siteUrl.replace(/\/+$/, '');
     const baseUrl = runtimeConfig.app.baseURL.replace(/^\/+|\/+$/g, '');
@@ -64,7 +63,7 @@ export function usePageSeo(page: SeoPage) {
             .replace(/([^:]\/)\/+/, '$1');
     const canonical = computed(() => absoluteUrl(pagePaths[page]));
     const image = absoluteUrl('assets/images/banner/page-index.webp');
-    const language = computed(() => locale.lang);
+    const language = computed(() => locale.value);
     const pageName = computed(() => pageNames[page][language.value] || pageNames[page].ko);
     const title = computed(() => (page === 'home' ? homeTitles[language.value] || homeTitles.ko : `${pageName.value} | JO&SOFT`));
     const description = computed(() => {

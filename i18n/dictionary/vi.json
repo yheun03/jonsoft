@@ -6,11 +6,6 @@
             "alt": "Mở tài liệu giới thiệu công ty JO&SOFT bằng tiếng Việt"
         },
         "banner": {
-            "welcome": {
-                "title": "Nhà máy thông minh, nếu bạn băn khoăn không biết nên bắt đầu như thế nào - tôi đề xuất giải pháp xây dựng tối ưu.",
-                "src": "https://forms.gle/6WMVBWghZUAvtHxz9",
-                "button": "Trả lời ngay câu hỏi"
-            },
             "ask": {
                 "title": "Thắc mắc về dự án",
                 "dscpt": "JO&SOFT đề xuất xây dựng môi trường phần mềm tốt hơn.<br/>Trải nghiệm sự phát triển kinh doanh đổi mới.",

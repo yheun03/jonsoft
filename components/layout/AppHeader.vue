@@ -1,15 +1,5 @@
 <template>
     <header class="app-header" :class="{ open: menuOpen }">
-        <!-- <div v-if="showWelcome" class="banner type-welcome" role="region" :aria-label="a11yLabels.promotion">
-            <div class="wrap">
-                <p class="pc">{{ t('common.banner.welcome.title') }}</p>
-                <p class="mobile">{{ t('common.banner.welcome.title') }}</p>
-                <a :href="t('common.banner.welcome.src')" target="_blank" rel="noopener">
-                    {{ t('common.banner.welcome.button') }}<span class="visually-hidden"> ({{ a11yLabels.newWindow }})</span>
-                </a>
-            </div>
-            <button type="button" class="btn close-welcome" :aria-label="a11yLabels.closePromotion" @click="closeWelcome" />
-        </div> -->
         <div class="wrap">
             <div class="app-header__logo">
                 <NuxtLink to="/" :aria-label="a11yLabels.home">
@@ -18,26 +8,17 @@
             </div>
             <nav class="menu pc" :aria-label="a11yLabels.mainNavigation">
                 <ul class="gnb">
-                    <li :class="{ active: isActive('/about') }">
-                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined">ABOUT US</NuxtLink>
-                    </li>
-                    <li :class="{ active: isActive('/business') }">
-                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined">BUSINESS & SOLUTION</NuxtLink>
-                    </li>
-                    <li :class="{ active: isActive('/customer') }">
-                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined">CUSTOMER & PARTNERS</NuxtLink>
-                    </li>
-                    <li :class="{ active: isActive('/contact') }">
-                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined">CONTACT US</NuxtLink>
+                    <li v-for="item in navigationItems" :key="item.to" :class="{ active: isActive(item.to) }">
+                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined">{{ item.label }}</NuxtLink>
                     </li>
                 </ul>
                 <ul class="i18n" :aria-label="a11yLabels.language">
-                    <li v-for="code in langs" :key="code" :class="{ active: locale.lang === code }">
+                    <li v-for="code in langs" :key="code" :class="{ active: activeLang === code }">
                         <button
                             type="button"
                             class="btn"
                             :aria-label="languageNames[code]"
-                            :aria-pressed="locale.lang === code"
+                            :aria-pressed="activeLang === code"
                             @click="setLang(code)"
                         >
                             {{ labels[code] }}
@@ -70,32 +51,19 @@
         >
             <div class="wrap">
                 <ul>
-                    <li>
-                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined" @click="closeMenu(false)">ABOUT US</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined" @click="closeMenu(false)"
-                            >BUSINESS & SOLUTION</NuxtLink
-                        >
-                    </li>
-                    <li>
-                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined" @click="closeMenu(false)"
-                            >CUSTOMER & PARTNERS</NuxtLink
-                        >
-                    </li>
-                    <li>
-                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined" @click="closeMenu(false)"
-                            >CONTACT US</NuxtLink
-                        >
+                    <li v-for="item in navigationItems" :key="`mobile-${item.to}`">
+                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined" @click="closeMenu(false)">
+                            {{ item.label }}
+                        </NuxtLink>
                     </li>
                 </ul>
                 <ul class="i18n" :aria-label="a11yLabels.language">
-                    <li v-for="code in langs" :key="`m-${code}`" :class="{ active: locale.lang === code }">
+                    <li v-for="code in langs" :key="`m-${code}`" :class="{ active: activeLang === code }">
                         <button
                             type="button"
                             class="btn"
                             :aria-label="languageNames[code]"
-                            :aria-pressed="locale.lang === code"
+                            :aria-pressed="activeLang === code"
                             @click="setLang(code)"
                         >
                             {{ labels[code] }}
@@ -109,13 +77,14 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { navigationItems } from '~/constants/navigation';
 import type { LocaleCode } from '~/stores/locale';
 import { assetPath } from '~/utils/assetPath';
 
 const route = useRoute();
-const locale = useLocaleStore();
-const { t } = useI18n();
-
+const localeStore = useLocaleStore();
+const { locale: i18nLocale } = useI18n();
+const activeLang = computed(() => i18nLocale.value as LocaleCode);
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);
 const mobileNav = ref<HTMLElement | null>(null);
@@ -132,57 +101,35 @@ const languageNames: Record<LocaleCode, string> = {
 };
 const localizedA11yLabels = {
     ko: {
-        promotion: '안내',
-        closePromotion: '안내 배너 닫기',
         home: '조앤소프트 홈',
         mainNavigation: '주요 메뉴',
         language: '언어 선택',
         openMenu: '메뉴 열기',
         closeMenu: '메뉴 닫기',
-        newWindow: '새 창',
     },
     en: {
-        promotion: 'Announcement',
-        closePromotion: 'Close announcement',
         home: 'JO&SOFT home',
         mainNavigation: 'Main navigation',
         language: 'Select language',
         openMenu: 'Open menu',
         closeMenu: 'Close menu',
-        newWindow: 'opens in a new window',
     },
     vi: {
-        promotion: 'Thông báo',
-        closePromotion: 'Đóng thông báo',
         home: 'Trang chủ JO&SOFT',
         mainNavigation: 'Điều hướng chính',
         language: 'Chọn ngôn ngữ',
         openMenu: 'Mở menu',
         closeMenu: 'Đóng menu',
-        newWindow: 'mở trong cửa sổ mới',
     },
 };
-const a11yLabels = computed(() => localizedA11yLabels[locale.lang]);
-
-const showWelcome = ref(true);
-
-onMounted(() => {
-    if (import.meta.client && localStorage.getItem('welcomeBannerClosed') === '1') {
-        showWelcome.value = false;
-    }
-});
-
-function closeWelcome() {
-    showWelcome.value = false;
-    if (import.meta.client) localStorage.setItem('welcomeBannerClosed', '1');
-}
+const a11yLabels = computed(() => localizedA11yLabels[activeLang.value]);
 
 function isActive(prefix: string) {
     return route.path === prefix || route.path.startsWith(`${prefix}/`);
 }
 
 function setLang(code: LocaleCode) {
-    locale.setLang(code);
+    localeStore.setLang(code);
     closeMenu(false);
 }
 

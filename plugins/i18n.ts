@@ -1,5 +1,5 @@
 import { createI18n, type LocaleMessageValue } from 'vue-i18n';
-import type { LocaleCode } from '~/stores/locale';
+import { isLocaleCode, type LocaleCode } from '~/stores/locale';
 
 const dictionaries = {
     ko: () => import('~/i18n/dictionary/ko.json'),
@@ -21,8 +21,9 @@ async function loadDictionary(lang: LocaleCode) {
 }
 
 export default defineNuxtPlugin(async (nuxtApp) => {
-    const locale = useLocaleStore();
-    locale.hydrateLangFromStorage();
+    const localeStore = useLocaleStore();
+    localeStore.hydrateLangFromStorage();
+    const initialLang = localeStore.lang;
 
     const i18n = createI18n({
         legacy: false,
@@ -30,21 +31,36 @@ export default defineNuxtPlugin(async (nuxtApp) => {
         warnHtmlMessage: false,
         missingWarn: false,
         fallbackWarn: false,
-        locale: locale.lang,
+        locale: initialLang,
         fallbackLocale: 'ko',
         messages: {
-            [locale.lang]: await loadDictionary(locale.lang),
+            [initialLang]: await loadDictionary(initialLang),
         },
     });
 
     nuxtApp.vueApp.use(i18n);
 
-    locale.$subscribe(async (_mutation, state) => {
+    const updateDocumentLang = (lang: LocaleCode) => {
+        if (import.meta.client) document.documentElement.lang = lang;
+    };
+
+    updateDocumentLang(initialLang);
+
+    localeStore.$subscribe(async (_mutation, state) => {
         const selectedLang = state.lang;
         i18n.global.setLocaleMessage(selectedLang, await loadDictionary(selectedLang));
 
-        if (locale.lang === selectedLang) {
+        if (localeStore.lang === selectedLang) {
             i18n.global.locale.value = selectedLang;
+            updateDocumentLang(selectedLang);
         }
+    });
+
+    nuxtApp.hook('app:mounted', () => {
+        const documentLang = document.documentElement.lang;
+        const activeLang = isLocaleCode(documentLang) ? documentLang : (i18n.global.locale.value as LocaleCode);
+
+        if (localeStore.lang !== activeLang) localeStore.setLang(activeLang);
+        updateDocumentLang(activeLang);
     });
 });

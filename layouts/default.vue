@@ -11,11 +11,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import AppFloating from '~/components/layout/AppFloating.vue';
 import AppFooter from '~/components/layout/AppFooter.vue';
 import AppHeader from '~/components/layout/AppHeader.vue';
 
-const locale = useLocaleStore();
+const { locale } = useI18n();
 const skipLabels = { ko: '본문 바로가기', en: 'Skip to main content', vi: 'Chuyển đến nội dung chính' };
-const skipLabel = computed(() => skipLabels[locale.lang]);
+const skipLabel = computed(() => skipLabels[locale.value as keyof typeof skipLabels]);
 </script>

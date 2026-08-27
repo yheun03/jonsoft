@@ -126,12 +126,11 @@ definePageMeta({
     layout: 'default',
 });
 
-const { t } = useI18n();
-const locale = useLocaleStore();
+const { t, locale } = useI18n();
 const contactNavLabels = { ko: '문의 페이지 바로가기', en: 'Contact page sections', vi: 'Các mục trang liên hệ' };
 const mapLabels = { ko: '조앤소프트 본사 위치 지도', en: 'Map of JO&SOFT headquarters', vi: 'Bản đồ trụ sở JO&SOFT' };
-const contactNavLabel = computed(() => contactNavLabels[locale.lang]);
-const mapLabel = computed(() => mapLabels[locale.lang]);
+const contactNavLabel = computed(() => contactNavLabels[locale.value as keyof typeof contactNavLabels]);
+const mapLabel = computed(() => mapLabels[locale.value as keyof typeof mapLabels]);
 usePageSeo('contact');
 const locationSection = ref<HTMLElement | null>(null);
 const recruitSection = ref<HTMLElement | null>(null);

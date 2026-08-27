@@ -27,18 +27,16 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import type { SuccessId } from '~/types/business';
 import { assetPath } from '~/utils/assetPath';
-
-type SuccessId = 'tailim' | 'kkleannara';
 
 const emit = defineEmits<{
     open: [id: SuccessId];
 }>();
 
-const { t, tm, rt } = useI18n();
-const locale = useLocaleStore();
+const { t, tm, rt, locale } = useI18n();
 const detailLabels = { ko: '자세히 보기', en: 'View details', vi: 'Xem chi tiết' };
-const detailLabel = computed(() => detailLabels[locale.lang]);
+const detailLabel = computed(() => detailLabels[locale.value as keyof typeof detailLabels]);
 const plainText = (value: string) =>
     value
         .replace(/<[^>]+>/g, ' ')

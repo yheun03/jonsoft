@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import { assetPath } from '~/utils/assetPath';
 import partnerData from '~/i18n/data/partner.json';
 
@@ -21,7 +22,7 @@ const props = defineProps<{
     type: LogoType;
 }>();
 
-const locale = useLocaleStore();
+const { locale } = useI18n();
 
 const items = computed(() => {
     return partnerData[props.type].companies.map((item, index) => ({
@@ -31,5 +32,5 @@ const items = computed(() => {
     }));
 });
 
-const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || '';
+const localized = (item: Record<string, string>) => item[locale.value] || item.ko || '';
 </script>

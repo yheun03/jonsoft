@@ -24,18 +24,15 @@ import BusinessSolutionSection from '~/components/business/BusinessSolutionSecti
 import BusinessSuccessSection from '~/components/business/BusinessSuccessSection.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
+import type { ActiveBusinessModal, SolutionId, SuccessId } from '~/types/business';
 
 definePageMeta({
     layout: 'default',
 });
 
-type ActiveModal = { type: 'solution'; id: SolutionId } | { type: 'success'; id: SuccessId };
-type SolutionId = 'aps' | 'oms' | 'fems' | 'scm' | 'crm' | 'mes' | 'wcs' | 'tms' | 'ai' | 'wms';
-type SuccessId = 'tailim' | 'kkleannara';
-
 const { t } = useI18n();
 usePageSeo('business');
-const activeModal = ref<ActiveModal | null>(null);
+const activeModal = ref<ActiveBusinessModal | null>(null);
 const openSolutionModal = (id: SolutionId) => {
     activeModal.value = { type: 'solution', id };
 };

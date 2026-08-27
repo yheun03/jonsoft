@@ -29,28 +29,21 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import type { SolutionId, SuccessId } from '~/types/business';
 import { assetPath } from '~/utils/assetPath';
 
-type ModalType = 'solution' | 'success';
-type ModalId = 'aps' | 'oms' | 'fems' | 'scm' | 'crm' | 'mes' | 'wcs' | 'tms' | 'ai' | 'wms' | 'tailim' | 'kkleannara';
-type SuccessId = 'tailim' | 'kkleannara';
-
-const props = defineProps<{
-    type: ModalType;
-    id: ModalId;
-}>();
+const props = defineProps<{ type: 'solution'; id: SolutionId } | { type: 'success'; id: SuccessId }>();
 
 const emit = defineEmits<{
     close: [];
 }>();
 
-const { t, tm, rt } = useI18n();
-const locale = useLocaleStore();
+const { t, tm, rt, locale } = useI18n();
 const dialog = ref<HTMLElement | null>(null);
 const closeButton = ref<HTMLButtonElement | null>(null);
 const titleId = computed(() => `business-modal-title-${props.type}-${props.id}`);
 const closeLabels = { ko: '닫기', en: 'Close', vi: 'Đóng' };
-const closeLabel = computed(() => closeLabels[locale.lang]);
+const closeLabel = computed(() => closeLabels[locale.value as keyof typeof closeLabels]);
 let previouslyFocused: HTMLElement | null = null;
 const backgroundElements: HTMLElement[] = [];
 const successMessageKeys: Record<SuccessId, 'case1' | 'case2'> = {
@@ -60,7 +53,7 @@ const successMessageKeys: Record<SuccessId, 'case1' | 'case2'> = {
 
 const messageRoot = computed(() => {
     if (props.type === 'solution') return `business.solutions.${props.id}`;
-    return `business.success.${successMessageKeys[props.id as SuccessId]}`;
+    return `business.success.${successMessageKeys[props.id]}`;
 });
 
 const tags = computed(() => {

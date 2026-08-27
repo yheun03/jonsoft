@@ -9,17 +9,8 @@
             <div class="wrap-text">
                 <nav :aria-label="footerNavLabel">
                     <ul class="gnb">
-                        <li>
-                            <NuxtLink to="/about">ABOUT US</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/business">BUSINESS & SOLUTION</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/customer">CUSTOMER & PARTNERS</NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/contact">CONTACT US</NuxtLink>
+                        <li v-for="item in navigationItems" :key="item.to">
+                            <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
                         </li>
                     </ul>
                 </nav>
@@ -38,10 +29,10 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { navigationItems } from '~/constants/navigation';
 import { assetPath } from '~/utils/assetPath';
 
-const { t } = useI18n();
-const locale = useLocaleStore();
+const { t, locale } = useI18n();
 const footerNavLabels = { ko: '하단 메뉴', en: 'Footer navigation', vi: 'Điều hướng chân trang' };
-const footerNavLabel = computed(() => footerNavLabels[locale.lang]);
+const footerNavLabel = computed(() => footerNavLabels[locale.value as keyof typeof footerNavLabels]);
 </script>

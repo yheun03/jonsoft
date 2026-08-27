@@ -1,8 +1,12 @@
 import { defineStore } from 'pinia';
 
 export type LocaleCode = 'ko' | 'en' | 'vi';
-const localeCodes: LocaleCode[] = ['ko', 'en', 'vi'];
+export const localeCodes: readonly LocaleCode[] = ['ko', 'en', 'vi'];
 const localeStorageKey = 'selectedLang';
+
+export function isLocaleCode(value: string): value is LocaleCode {
+    return localeCodes.includes(value as LocaleCode);
+}
 
 export const useLocaleStore = defineStore('locale', {
     state: () => ({
@@ -14,14 +18,13 @@ export const useLocaleStore = defineStore('locale', {
 
             if (import.meta.client) {
                 sessionStorage.setItem(localeStorageKey, next);
-                document.documentElement.lang = next;
             }
         },
         hydrateLangFromStorage() {
             if (!import.meta.client) return;
 
-            const raw = sessionStorage.getItem(localeStorageKey) as LocaleCode | null;
-            if (raw && localeCodes.includes(raw)) {
+            const raw = sessionStorage.getItem(localeStorageKey);
+            if (raw && isLocaleCode(raw)) {
                 this.setLang(raw);
             }
         },

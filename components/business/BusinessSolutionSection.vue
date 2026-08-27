@@ -34,29 +34,16 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { solutionIds, type SolutionId } from '~/types/business';
 import { assetPath } from '~/utils/assetPath';
-
-type SolutionId = 'aps' | 'oms' | 'fems' | 'scm' | 'crm' | 'mes' | 'wcs' | 'tms' | 'ai' | 'wms';
 
 const emit = defineEmits<{
     open: [id: SolutionId];
 }>();
 
-const { t } = useI18n();
-const locale = useLocaleStore();
+const { t, locale } = useI18n();
 const carouselLabels = { ko: '조앤소프트 솔루션 목록', en: 'JO&SOFT solutions', vi: 'Danh sách giải pháp JO&SOFT' };
-const carouselLabel = computed(() => carouselLabels[locale.lang]);
+const carouselLabel = computed(() => carouselLabels[locale.value as keyof typeof carouselLabels]);
 
-const solutions: Array<{ id: SolutionId; delay: number }> = [
-    { id: 'aps', delay: 100 },
-    { id: 'oms', delay: 150 },
-    { id: 'fems', delay: 200 },
-    { id: 'scm', delay: 250 },
-    { id: 'crm', delay: 300 },
-    { id: 'mes', delay: 350 },
-    { id: 'wcs', delay: 400 },
-    { id: 'tms', delay: 450 },
-    { id: 'ai', delay: 500 },
-    { id: 'wms', delay: 550 },
-];
+const solutions = solutionIds.map((id, index) => ({ id, delay: 100 + index * 50 }));
 </script>
