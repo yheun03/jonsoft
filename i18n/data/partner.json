@@ -8,7 +8,11 @@
         "companies": [
             {
                 "name": "samsungElectroMechanics",
-                "src": "./assets/logos/partners/samsung-electro-mechanics.png",
+                "src": {
+                    "ko": "./assets/logos/partners/samsung-electro-mechanics.png",
+                    "en": "./assets/logos/partners/en/samsung-electro-mechanics.png",
+                    "vi": "./assets/logos/partners/en/samsung-electro-mechanics.png"
+                },
                 "alt": {
                     "ko": "삼성전기 로고",
                     "en": "Samsung Electro-Mechanics logo",
@@ -17,7 +21,11 @@
             },
             {
                 "name": "kt",
-                "src": "./assets/logos/partners/kt.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kt.png",
+                    "en": "./assets/logos/partners/en/kt.png",
+                    "vi": "./assets/logos/partners/en/kt.png"
+                },
                 "alt": {
                     "ko": "KT 로고",
                     "en": "KT logo",
@@ -26,7 +34,11 @@
             },
             {
                 "name": "ktTelecop",
-                "src": "./assets/logos/partners/kt-telecop.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kt-telecop.png",
+                    "en": "./assets/logos/partners/en/kt-telecop.png",
+                    "vi": "./assets/logos/partners/en/kt-telecop.png"
+                },
                 "alt": {
                     "ko": "KT텔레캅 로고",
                     "en": "KT Telecop logo",
@@ -35,7 +47,11 @@
             },
             {
                 "name": "gsRetail",
-                "src": "./assets/logos/partners/gs-retail.png",
+                "src": {
+                    "ko": "./assets/logos/partners/gs-retail.png",
+                    "en": "./assets/logos/partners/en/gs-retail.png",
+                    "vi": "./assets/logos/partners/en/gs-retail.png"
+                },
                 "alt": {
                     "ko": "GS리테일 로고",
                     "en": "GS Retail logo",
@@ -44,7 +60,11 @@
             },
             {
                 "name": "hanwhaHotelResort",
-                "src": "./assets/logos/partners/hanwha-hotel-resort.png",
+                "src": {
+                    "ko": "./assets/logos/partners/hanwha-hotel-resort.png",
+                    "en": "./assets/logos/partners/en/hanwha-hotel-resort.png",
+                    "vi": "./assets/logos/partners/en/hanwha-hotel-resort.png"
+                },
                 "alt": {
                     "ko": "한화호텔앤리조트 로고",
                     "en": "Hanwha Hotel & Resort logo",
@@ -53,7 +73,11 @@
             },
             {
                 "name": "cjLogistics",
-                "src": "./assets/logos/partners/cj-logistics.png",
+                "src": {
+                    "ko": "./assets/logos/partners/cj-logistics.png",
+                    "en": "./assets/logos/partners/en/cj-logistics.png",
+                    "vi": "./assets/logos/partners/en/cj-logistics.png"
+                },
                 "alt": {
                     "ko": "CJ대한통운 로고",
                     "en": "CJ Logistics logo",
@@ -62,7 +86,11 @@
             },
             {
                 "name": "osstemImplant",
-                "src": "./assets/logos/partners/osstem-implant.png",
+                "src": {
+                    "ko": "./assets/logos/partners/osstem-implant.png",
+                    "en": "./assets/logos/partners/en/osstem-implant.png",
+                    "vi": "./assets/logos/partners/en/osstem-implant.png"
+                },
                 "alt": {
                     "ko": "오스템임플란트 로고",
                     "en": "Osstem Implant logo",
@@ -71,7 +99,11 @@
             },
             {
                 "name": "incheonNationalUniversity",
-                "src": "./assets/logos/partners/incheon-national-university.png",
+                "src": {
+                    "ko": "./assets/logos/partners/incheon-national-university.png",
+                    "en": "./assets/logos/partners/en/incheon-national-university.png",
+                    "vi": "./assets/logos/partners/en/incheon-national-university.png"
+                },
                 "alt": {
                     "ko": "인천대학교 로고",
                     "en": "Incheon National University logo",
@@ -80,7 +112,11 @@
             },
             {
                 "name": "lgUPlus",
-                "src": "./assets/logos/partners/lg-u-plus.png",
+                "src": {
+                    "ko": "./assets/logos/partners/lg-u-plus.png",
+                    "en": "./assets/logos/partners/en/lg-u-plus.png",
+                    "vi": "./assets/logos/partners/en/lg-u-plus.png"
+                },
                 "alt": {
                     "ko": "LG유플러스 로고",
                     "en": "LG U+ logo",
@@ -89,7 +125,11 @@
             },
             {
                 "name": "parisCroissant",
-                "src": "./assets/logos/partners/paris-croissant.png",
+                "src": {
+                    "ko": "./assets/logos/partners/paris-croissant.png",
+                    "en": "./assets/logos/partners/en/paris-croissant.png",
+                    "vi": "./assets/logos/partners/en/paris-croissant.png"
+                },
                 "alt": {
                     "ko": "파리바게뜨 로고",
                     "en": "Paris Croissant logo",
@@ -98,7 +138,11 @@
             },
             {
                 "name": "tairimPackaging",
-                "src": "./assets/logos/partners/tairim-packaging.png",
+                "src": {
+                    "ko": "./assets/logos/partners/tairim-packaging.png",
+                    "en": "./assets/logos/partners/en/tairim-packaging.png",
+                    "vi": "./assets/logos/partners/en/tairim-packaging.png"
+                },
                 "alt": {
                     "ko": "태림포장 로고",
                     "en": "Tairim Packaging logo",
@@ -107,7 +151,11 @@
             },
             {
                 "name": "samhwaPaint",
-                "src": "./assets/logos/partners/samhwa-paint.png",
+                "src": {
+                    "ko": "./assets/logos/partners/samhwa-paint.png",
+                    "en": "./assets/logos/partners/en/samhwa-paint.png",
+                    "vi": "./assets/logos/partners/en/samhwa-paint.png"
+                },
                 "alt": {
                     "ko": "삼화페인트 로고",
                     "en": "Samhwa Paint logo",
@@ -116,7 +164,11 @@
             },
             {
                 "name": "skHynix",
-                "src": "./assets/logos/partners/sk-hynix.png",
+                "src": {
+                    "ko": "./assets/logos/partners/sk-hynix.png",
+                    "en": "./assets/logos/partners/en/sk-hynix.png",
+                    "vi": "./assets/logos/partners/en/sk-hynix.png"
+                },
                 "alt": {
                     "ko": "SK하이닉스 로고",
                     "en": "SK Hynix logo",
@@ -125,7 +177,11 @@
             },
             {
                 "name": "daeyangGroup",
-                "src": "./assets/logos/partners/daeyang-group.png",
+                "src": {
+                    "ko": "./assets/logos/partners/daeyang-group.png",
+                    "en": "./assets/logos/partners/en/daeyang-group.png",
+                    "vi": "./assets/logos/partners/en/daeyang-group.png"
+                },
                 "alt": {
                     "ko": "대양그룹 로고",
                     "en": "Daeyang Group logo",
@@ -134,7 +190,11 @@
             },
             {
                 "name": "kyungdongNaviant",
-                "src": "./assets/logos/partners/kyungdong-naviant.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kyungdong-naviant.png",
+                    "en": "./assets/logos/partners/en/kyungdong-naviant.png",
+                    "vi": "./assets/logos/partners/en/kyungdong-naviant.png"
+                },
                 "alt": {
                     "ko": "경동나비엔 로고",
                     "en": "Kyungdong Naviant logo",
@@ -143,7 +203,11 @@
             },
             {
                 "name": "kklenanara",
-                "src": "./assets/logos/partners/kklenanara.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kklenanara.png",
+                    "en": "./assets/logos/partners/en/kklenanara.png",
+                    "vi": "./assets/logos/partners/en/kklenanara.png"
+                },
                 "alt": {
                     "ko": "깨끗한나라 로고",
                     "en": "Kleenara logo",
@@ -152,7 +216,11 @@
             },
             {
                 "name": "3skbox",
-                "src": "./assets/logos/partners/3skbox.png",
+                "src": {
+                    "ko": "./assets/logos/partners/3skbox.png",
+                    "en": "./assets/logos/partners/en/3skbox.png",
+                    "vi": "./assets/logos/partners/en/3skbox.png"
+                },
                 "alt": {
                     "ko": "3SKBOX 로고",
                     "en": "3SKBOX logo",
@@ -161,7 +229,11 @@
             },
             {
                 "name": "duboIndustry",
-                "src": "./assets/logos/partners/dubo-industry.png",
+                "src": {
+                    "ko": "./assets/logos/partners/dubo-industry.png",
+                    "en": "./assets/logos/partners/en/dubo-industry.png",
+                    "vi": "./assets/logos/partners/en/dubo-industry.png"
+                },
                 "alt": {
                     "ko": "두보산업 로고",
                     "en": "Dubo Industry logo",
@@ -170,7 +242,11 @@
             },
             {
                 "name": "jongruiKorea",
-                "src": "./assets/logos/partners/jongrui-korea.png",
+                "src": {
+                    "ko": "./assets/logos/partners/jongrui-korea.png",
+                    "en": "./assets/logos/partners/en/jongrui-korea.png",
+                    "vi": "./assets/logos/partners/en/jongrui-korea.png"
+                },
                 "alt": {
                     "ko": "종루이코리아 로고",
                     "en": "Jongrui Korea logo",
@@ -179,7 +255,11 @@
             },
             {
                 "name": "kPackage",
-                "src": "./assets/logos/partners/k-package.png",
+                "src": {
+                    "ko": "./assets/logos/partners/k-package.png",
+                    "en": "./assets/logos/partners/en/k-package.png",
+                    "vi": "./assets/logos/partners/en/k-package.png"
+                },
                 "alt": {
                     "ko": "K-PACKAGE 로고",
                     "en": "K-PACKAGE logo",
@@ -188,7 +268,11 @@
             },
             {
                 "name": "orchem",
-                "src": "./assets/logos/partners/orchem.png",
+                "src": {
+                    "ko": "./assets/logos/partners/orchem.png",
+                    "en": "./assets/logos/partners/en/orchem.png",
+                    "vi": "./assets/logos/partners/en/orchem.png"
+                },
                 "alt": {
                     "ko": "오알켐 로고",
                     "en": "orchem logo",
@@ -206,7 +290,11 @@
         "companies": [
             {
                 "name": "eyHanyoung",
-                "src": "./assets/logos/partners/ey-hanyoung.png",
+                "src": {
+                    "ko": "./assets/logos/partners/ey-hanyoung.png",
+                    "en": "./assets/logos/partners/en/ey-hanyoung.png",
+                    "vi": "./assets/logos/partners/en/ey-hanyoung.png"
+                },
                 "alt": {
                     "ko": "EY한영 로고",
                     "en": "EY Hanyoung logo",
@@ -215,7 +303,11 @@
             },
             {
                 "name": "obzen",
-                "src": "./assets/logos/partners/obzen.png",
+                "src": {
+                    "ko": "./assets/logos/partners/obzen.png",
+                    "en": "./assets/logos/partners/en/obzen.png",
+                    "vi": "./assets/logos/partners/en/obzen.png"
+                },
                 "alt": {
                     "ko": "오브젠 로고",
                     "en": "Obzen logo",
@@ -224,7 +316,11 @@
             },
             {
                 "name": "edentans",
-                "src": "./assets/logos/partners/edentans.png",
+                "src": {
+                    "ko": "./assets/logos/partners/edentans.png",
+                    "en": "./assets/logos/partners/en/edentans.png",
+                    "vi": "./assets/logos/partners/en/edentans.png"
+                },
                 "alt": {
                     "ko": "에덴탄스 로고",
                     "en": "Edentans logo",
@@ -233,7 +329,11 @@
             },
             {
                 "name": "iOnCommunications",
-                "src": "./assets/logos/partners/i-on-communications.png",
+                "src": {
+                    "ko": "./assets/logos/partners/i-on-communications.png",
+                    "en": "./assets/logos/partners/en/i-on-communications.png",
+                    "vi": "./assets/logos/partners/en/i-on-communications.png"
+                },
                 "alt": {
                     "ko": "아이온커뮤니케이션즈 로고",
                     "en": "I-on Communications logo",
@@ -242,7 +342,11 @@
             },
             {
                 "name": "gsItm",
-                "src": "./assets/logos/partners/gs-itm.png",
+                "src": {
+                    "ko": "./assets/logos/partners/gs-itm.png",
+                    "en": "./assets/logos/partners/en/gs-itm.png",
+                    "vi": "./assets/logos/partners/en/gs-itm.png"
+                },
                 "alt": {
                     "ko": "GS ITM 로고",
                     "en": "GS ITM logo",
@@ -251,7 +355,11 @@
             },
             {
                 "name": "kohken",
-                "src": "./assets/logos/partners/kohken.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kohken.png",
+                    "en": "./assets/logos/partners/en/kohken.png",
+                    "vi": "./assets/logos/partners/en/kohken.png"
+                },
                 "alt": {
                     "ko": "코켄 로고",
                     "en": "Kohken logo",
@@ -260,7 +368,11 @@
             },
             {
                 "name": "accenture",
-                "src": "./assets/logos/partners/accenture.png",
+                "src": {
+                    "ko": "./assets/logos/partners/accenture.png",
+                    "en": "./assets/logos/partners/en/accenture.png",
+                    "vi": "./assets/logos/partners/en/accenture.png"
+                },
                 "alt": {
                     "ko": "액센추어 로고",
                     "en": "Accenture logo",
@@ -269,7 +381,11 @@
             },
             {
                 "name": "concentrix",
-                "src": "./assets/logos/partners/concentrix.png",
+                "src": {
+                    "ko": "./assets/logos/partners/concentrix.png",
+                    "en": "./assets/logos/partners/en/concentrix.png",
+                    "vi": "./assets/logos/partners/en/concentrix.png"
+                },
                 "alt": {
                     "ko": "콘센트릭스 로고",
                     "en": "Concentrix logo",
@@ -278,7 +394,11 @@
             },
             {
                 "name": "naverCloud",
-                "src": "./assets/logos/partners/naver-cloud.png",
+                "src": {
+                    "ko": "./assets/logos/partners/naver-cloud.png",
+                    "en": "./assets/logos/partners/en/naver-cloud.png",
+                    "vi": "./assets/logos/partners/en/naver-cloud.png"
+                },
                 "alt": {
                     "ko": "네이버클라우드 로고",
                     "en": "Naver Cloud logo",
@@ -287,7 +407,11 @@
             },
             {
                 "name": "batim",
-                "src": "./assets/logos/partners/batim.png",
+                "src": {
+                    "ko": "./assets/logos/partners/batim.png",
+                    "en": "./assets/logos/partners/en/batim.png",
+                    "vi": "./assets/logos/partners/en/batim.png"
+                },
                 "alt": {
                     "ko": "바팀 로고",
                     "en": "Batim logo",
@@ -296,7 +420,11 @@
             },
             {
                 "name": "humusOn",
-                "src": "./assets/logos/partners/humusOn.png",
+                "src": {
+                    "ko": "./assets/logos/partners/humusOn.png",
+                    "en": "./assets/logos/partners/en/humusOn.png",
+                    "vi": "./assets/logos/partners/en/humusOn.png"
+                },
                 "alt": {
                     "ko": "휴머스온 로고",
                     "en": "HumusOn logo",
@@ -305,7 +433,11 @@
             },
             {
                 "name": "ssangyongInfocom",
-                "src": "./assets/logos/partners/ssangyong-infocom.png",
+                "src": {
+                    "ko": "./assets/logos/partners/ssangyong-infocom.png",
+                    "en": "./assets/logos/partners/en/ssangyong-infocom.png",
+                    "vi": "./assets/logos/partners/en/ssangyong-infocom.png"
+                },
                 "alt": {
                     "ko": "쌍용정보통신 로고",
                     "en": "Ssangyong Infocom logo",
@@ -314,7 +446,11 @@
             },
             {
                 "name": "skCnc",
-                "src": "./assets/logos/partners/sk-cnc.png",
+                "src": {
+                    "ko": "./assets/logos/partners/sk-cnc.png",
+                    "en": "./assets/logos/partners/en/sk-cnc.png",
+                    "vi": "./assets/logos/partners/en/sk-cnc.png"
+                },
                 "alt": {
                     "ko": "SK CNC 로고",
                     "en": "SK CNC logo",
@@ -323,7 +459,11 @@
             },
             {
                 "name": "ltsGroup",
-                "src": "./assets/logos/partners/lts-group.png",
+                "src": {
+                    "ko": "./assets/logos/partners/lts-group.png",
+                    "en": "./assets/logos/partners/en/lts-group.png",
+                    "vi": "./assets/logos/partners/en/lts-group.png"
+                },
                 "alt": {
                     "ko": "LTS그룹 로고",
                     "en": "LTS Group logo",
@@ -332,7 +472,11 @@
             },
             {
                 "name": "altair",
-                "src": "./assets/logos/partners/altair.png",
+                "src": {
+                    "ko": "./assets/logos/partners/altair.png",
+                    "en": "./assets/logos/partners/en/altair.png",
+                    "vi": "./assets/logos/partners/en/altair.png"
+                },
                 "alt": {
                     "ko": "알테어 로고",
                     "en": "Altair logo",
@@ -341,7 +485,11 @@
             },
             {
                 "name": "siemens",
-                "src": "./assets/logos/partners/siemens.png",
+                "src": {
+                    "ko": "./assets/logos/partners/siemens.png",
+                    "en": "./assets/logos/partners/en/siemens.png",
+                    "vi": "./assets/logos/partners/en/siemens.png"
+                },
                 "alt": {
                     "ko": "siemens 로고",
                     "en": "siemens logo",
@@ -350,7 +498,11 @@
             },
             {
                 "name": "altis",
-                "src": "./assets/logos/partners/altis.png",
+                "src": {
+                    "ko": "./assets/logos/partners/altis.png",
+                    "en": "./assets/logos/partners/en/altis.png",
+                    "vi": "./assets/logos/partners/en/altis.png"
+                },
                 "alt": {
                     "ko": "altis 로고",
                     "en": "altis logo",
@@ -359,7 +511,11 @@
             },
             {
                 "name": "kpa",
-                "src": "./assets/logos/partners/kpa.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kpa.png",
+                    "en": "./assets/logos/partners/en/kpa.png",
+                    "vi": "./assets/logos/partners/en/kpa.png"
+                },
                 "alt": {
                     "ko": "한국생산성본부 로고",
                     "en": "Korean Production Capability Agency logo",
@@ -368,7 +524,11 @@
             },
             {
                 "name": "kampa",
-                "src": "./assets/logos/partners/kampa.png",
+                "src": {
+                    "ko": "./assets/logos/partners/kampa.png",
+                    "en": "./assets/logos/partners/en/kampa.png",
+                    "vi": "./assets/logos/partners/en/kampa.png"
+                },
                 "alt": {
                     "ko": "kampa 로고",
                     "en": "kampa logo",
@@ -377,7 +537,11 @@
             },
             {
                 "name": "orchem",
-                "src": "./assets/logos/partners/orchem.png",
+                "src": {
+                    "ko": "./assets/logos/partners/orchem.png",
+                    "en": "./assets/logos/partners/en/orchem.png",
+                    "vi": "./assets/logos/partners/en/orchem.png"
+                },
                 "alt": {
                     "ko": "오알켐 로고",
                     "en": "orchem logo",
@@ -386,7 +550,11 @@
             },
             {
                 "name": "korcham",
-                "src": "./assets/logos/partners/korcham.png",
+                "src": {
+                    "ko": "./assets/logos/partners/korcham.png",
+                    "en": "./assets/logos/partners/en/korcham.png",
+                    "vi": "./assets/logos/partners/en/korcham.png"
+                },
                 "alt": {
                     "ko": "대한상공회의소 로고",
                     "en": "Korcham logo",
@@ -395,7 +563,11 @@
             },
             {
                 "name": "chaint",
-                "src": "./assets/logos/partners/chaint.png",
+                "src": {
+                    "ko": "./assets/logos/partners/chaint.png",
+                    "en": "./assets/logos/partners/en/chaint.png",
+                    "vi": "./assets/logos/partners/en/chaint.png"
+                },
                 "alt": {
                     "ko": "chaint 로고",
                     "en": "chaint logo",
@@ -404,7 +576,11 @@
             },
             {
                 "name": "lgCns",
-                "src": "./assets/logos/partners/lg-cns.png",
+                "src": {
+                    "ko": "./assets/logos/partners/lg-cns.png",
+                    "en": "./assets/logos/partners/en/lg-cns.png",
+                    "vi": "./assets/logos/partners/en/lg-cns.png"
+                },
                 "alt": {
                     "ko": "LG CNS 로고",
                     "en": "LG CNS logo",

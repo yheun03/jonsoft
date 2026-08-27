@@ -26,15 +26,10 @@ const locale = useLocaleStore();
 const items = computed(() => {
     return partnerData[props.type].companies.map((item, index) => ({
         ...item,
-        src: localizedLogoPath(item.src),
+        src: localized(item.src),
         delay: Math.min(100 + index * 50, 500),
     }));
 });
 
 const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || '';
-
-function localizedLogoPath(src: string) {
-    if (locale.lang === 'ko') return src;
-    return src.replace('/partners/', '/partners/en/');
-}
 </script>
