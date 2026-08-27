@@ -1,6 +1,6 @@
 <template>
     <header class="app-header" :class="{ open: menuOpen }">
-        <div v-if="showWelcome" class="banner type-welcome" role="region" :aria-label="a11yLabels.promotion">
+        <!-- <div v-if="showWelcome" class="banner type-welcome" role="region" :aria-label="a11yLabels.promotion">
             <div class="wrap">
                 <p class="pc">{{ t('common.banner.welcome.title') }}</p>
                 <p class="mobile">{{ t('common.banner.welcome.title') }}</p>
@@ -9,7 +9,7 @@
                 </a>
             </div>
             <button type="button" class="btn close-welcome" :aria-label="a11yLabels.closePromotion" @click="closeWelcome" />
-        </div>
+        </div> -->
         <div class="wrap">
             <div class="app-header__logo">
                 <NuxtLink to="/" :aria-label="a11yLabels.home">
@@ -119,16 +119,16 @@ const { t } = useI18n();
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);
 const mobileNav = ref<HTMLElement | null>(null);
-const langs: LocaleCode[] = ['ko', 'en', 'vi'];
+const langs: LocaleCode[] = ['ko', 'vi', 'en'];
 const labels: Record<LocaleCode, string> = {
     ko: 'KOR',
-    en: 'ENG',
     vi: 'VIE',
+    en: 'ENG',
 };
 const languageNames: Record<LocaleCode, string> = {
     ko: '한국어',
-    en: 'English',
     vi: 'Tiếng Việt',
+    en: 'English',
 };
 const localizedA11yLabels = {
     ko: {

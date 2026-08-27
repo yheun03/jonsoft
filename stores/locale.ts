@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 
 export type LocaleCode = 'ko' | 'en' | 'vi';
 const localeCodes: LocaleCode[] = ['ko', 'en', 'vi'];
+const localeStorageKey = 'selectedLang';
 
 export const useLocaleStore = defineStore('locale', {
     state: () => ({
@@ -12,14 +13,14 @@ export const useLocaleStore = defineStore('locale', {
             this.lang = next;
 
             if (import.meta.client) {
-                localStorage.setItem('selectedLang', next);
+                sessionStorage.setItem(localeStorageKey, next);
                 document.documentElement.lang = next;
             }
         },
         hydrateLangFromStorage() {
             if (!import.meta.client) return;
 
-            const raw = localStorage.getItem('selectedLang') as LocaleCode | null;
+            const raw = sessionStorage.getItem(localeStorageKey) as LocaleCode | null;
             if (raw && localeCodes.includes(raw)) {
                 this.setLang(raw);
             }

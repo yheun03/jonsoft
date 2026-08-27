@@ -40,7 +40,11 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     nuxtApp.vueApp.use(i18n);
 
     locale.$subscribe(async (_mutation, state) => {
-        i18n.global.setLocaleMessage(state.lang, await loadDictionary(state.lang));
-        i18n.global.locale.value = state.lang;
+        const selectedLang = state.lang;
+        i18n.global.setLocaleMessage(selectedLang, await loadDictionary(selectedLang));
+
+        if (locale.lang === selectedLang) {
+            i18n.global.locale.value = selectedLang;
+        }
     });
 });
