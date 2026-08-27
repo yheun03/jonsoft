@@ -3,39 +3,39 @@
         <div class="wrap full">
             <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('common.philosophy.title')"></h2>
             <div class="list-philosophy">
-                <div class="item" data-aos="fade-up" data-aos-delay="180">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-1.webp" alt="" loading="lazy" decoding="async" />
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="/assets/images/philosophy-1.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
-                        <p data-aos="fade-up" data-aos-delay="260">{{ t('common.philosophy.talent.title') }}</p>
+                        <p>{{ t('common.philosophy.talent.title') }}</p>
                         <dl>
-                            <dt data-aos="fade-up" data-aos-delay="340">{{ t('common.philosophy.talent.subtitle') }}</dt>
-                            <dd data-aos="fade-up" data-aos-delay="420">{{ t('common.philosophy.talent.content.0') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="500">{{ t('common.philosophy.talent.content.1') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="560">{{ t('common.philosophy.talent.content.2') }}</dd>
+                            <dt>{{ t('common.philosophy.talent.subtitle') }}</dt>
+                            <dd>{{ t('common.philosophy.talent.content.0') }}</dd>
+                            <dd>{{ t('common.philosophy.talent.content.1') }}</dd>
+                            <dd>{{ t('common.philosophy.talent.content.2') }}</dd>
                         </dl>
                     </div>
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-delay="420">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-2.webp" alt="" loading="lazy" decoding="async" />
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/assets/images/philosophy-2.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
-                        <p data-aos="fade-up" data-aos-delay="500">{{ t('common.philosophy.value.title') }}</p>
+                        <p>{{ t('common.philosophy.value.title') }}</p>
                         <dl>
-                            <dt data-aos="fade-up" data-aos-delay="560">{{ t('common.philosophy.value.subtitle') }}</dt>
-                            <dd data-aos="fade-up" data-aos-delay="580">{{ t('common.philosophy.value.content.0') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.value.content.1') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.value.content.2') }}</dd>
+                            <dt>{{ t('common.philosophy.value.subtitle') }}</dt>
+                            <dd>{{ t('common.philosophy.value.content.0') }}</dd>
+                            <dd>{{ t('common.philosophy.value.content.1') }}</dd>
+                            <dd>{{ t('common.philosophy.value.content.2') }}</dd>
                         </dl>
                     </div>
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-delay="580">
-                    <img data-aos="fade-up" src="/assets/images/philosophy-3.webp" alt="" loading="lazy" decoding="async" />
+                <div class="item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/assets/images/philosophy-3.webp" alt="" loading="lazy" decoding="async" />
                     <div class="content">
-                        <p data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.title') }}</p>
+                        <p>{{ t('common.philosophy.culture.title') }}</p>
                         <dl>
-                            <dt data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.subtitle') }}</dt>
-                            <dd data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.content.0') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.content.1') }}</dd>
-                            <dd data-aos="fade-up" data-aos-delay="600">{{ t('common.philosophy.culture.content.2') }}</dd>
+                            <dt>{{ t('common.philosophy.culture.subtitle') }}</dt>
+                            <dd>{{ t('common.philosophy.culture.content.0') }}</dd>
+                            <dd>{{ t('common.philosophy.culture.content.1') }}</dd>
+                            <dd>{{ t('common.philosophy.culture.content.2') }}</dd>
                         </dl>
                     </div>
                 </div>

@@ -6,8 +6,8 @@
                 <p class="title-sub" data-aos="fade-up" data-aos-delay="100">
                     <span class="gradient-text" v-html="t('business.module-text.overview.title-sub')"></span>
                 </p>
-                <h1 class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('business.module-text.overview.title')"></h1>
-                <p class="dscpt" data-aos="fade-up" data-aos-delay="260" v-html="t('business.module-text.overview.dscpt')"></p>
+                <h1 class="title" data-aos="fade-up" data-aos-delay="200" v-html="t('business.module-text.overview.title')"></h1>
+                <p class="dscpt" data-aos="fade-up" data-aos-delay="300" v-html="t('business.module-text.overview.dscpt')"></p>
             </div>
         </div>
         <BusinessSolutionSection @open="openSolutionModal" />

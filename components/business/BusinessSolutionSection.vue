@@ -48,15 +48,15 @@ const carouselLabels = { ko: '조앤소프트 솔루션 목록', en: 'JO&SOFT so
 const carouselLabel = computed(() => carouselLabels[locale.lang]);
 
 const solutions: Array<{ id: SolutionId; delay: number }> = [
-    { id: 'aps', delay: 340 },
-    { id: 'oms', delay: 420 },
-    { id: 'fems', delay: 560 },
-    { id: 'scm', delay: 600 },
-    { id: 'crm', delay: 600 },
-    { id: 'mes', delay: 600 },
-    { id: 'wcs', delay: 600 },
-    { id: 'tms', delay: 600 },
-    { id: 'ai', delay: 580 },
-    { id: 'wms', delay: 500 },
+    { id: 'aps', delay: 100 },
+    { id: 'oms', delay: 150 },
+    { id: 'fems', delay: 200 },
+    { id: 'scm', delay: 250 },
+    { id: 'crm', delay: 300 },
+    { id: 'mes', delay: 350 },
+    { id: 'wcs', delay: 400 },
+    { id: 'tms', delay: 450 },
+    { id: 'ai', delay: 500 },
+    { id: 'wms', delay: 550 },
 ];
 </script>

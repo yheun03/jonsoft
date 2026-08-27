@@ -23,13 +23,11 @@ const props = defineProps<{
 
 const locale = useLocaleStore();
 
-const partnerCustomerKeys = new Set(['siemens', 'altis', 'kpa', 'kampa', 'korcham', 'chaint']);
-
 const items = computed(() => {
     return partnerData[props.type].companies.map((item, index) => ({
         ...item,
         src: localizedLogoPath(item.src),
-        delay: props.type === 'customer' ? Math.min(150 + index * 40, 600) : getPartnerDelay(item.name, index),
+        delay: Math.min(100 + index * 50, 500),
     }));
 });
 
@@ -38,14 +36,5 @@ const localized = (item: Record<string, string>) => item[locale.lang] || item.ko
 function localizedLogoPath(src: string) {
     if (locale.lang === 'ko') return src;
     return src.replace('/partners/', '/partners/en/');
-}
-
-function getPartnerDelay(name: string, index: number) {
-    if (partnerCustomerKeys.has(name)) return 600;
-    if (name === 'skCnc') return 420;
-    if (name === 'ltsGroup') return 460;
-    if (name === 'lgCns') return 500;
-
-    return Math.min(150 + index * 40, 600);
 }
 </script>

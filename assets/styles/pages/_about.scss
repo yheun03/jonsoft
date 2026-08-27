@@ -384,7 +384,7 @@
     position: relative;
     background-color: $c-bg-dark;
     color: $c-text-light;
-    overflow: hidden;
+    overflow: clip;
     padding-top: $gap-80;
 
     &::before {
@@ -485,6 +485,7 @@
 
         & > li {
             margin-bottom: 120px;
+            scroll-margin-top: 115px;
         }
     }
 
@@ -561,6 +562,7 @@
             & > li {
                 padding-top: 60px;
                 margin-bottom: 60px;
+                scroll-margin-top: $header-height;
             }
         }
     }

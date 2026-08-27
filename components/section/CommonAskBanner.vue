@@ -2,8 +2,8 @@
     <div class="banner type-ask">
         <div class="wrap">
             <h2 class="title" data-aos="fade-up" data-aos-delay="100">{{ t('common.banner.ask.title') }}</h2>
-            <p data-aos="fade-up" data-aos-delay="180" v-html="t('common.banner.ask.dscpt')"></p>
-            <NuxtLink to="/contact" data-aos="fade-up" data-aos-delay="260" class="btn type-ask">
+            <p data-aos="fade-up" data-aos-delay="200" v-html="t('common.banner.ask.dscpt')"></p>
+            <NuxtLink to="/contact" data-aos="fade-up" data-aos-delay="300" class="btn type-ask">
                 <span>{{ t('common.banner.ask.button') }}</span>
             </NuxtLink>
         </div>

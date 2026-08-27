@@ -6,8 +6,8 @@
                     <p class="title-sub">
                         <span class="gradient-text" data-aos="fade-up" data-aos-delay="100" v-html="t('about.banner.title-sub')"></span>
                     </p>
-                    <h1 class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('about.banner.title')"></h1>
-                    <ul class="dscpt" data-aos="fade-up" data-aos-delay="260">
+                    <h1 class="title" data-aos="fade-up" data-aos-delay="200" v-html="t('about.banner.title')"></h1>
+                    <ul class="dscpt" data-aos="fade-up" data-aos-delay="300">
                         <li v-for="item in list('about.banner.dscpt')" :key="item">{{ item }}</li>
                     </ul>
                 </div>
@@ -15,11 +15,11 @@
         </PageBanner>
         <div class="module-text">
             <div class="wrap">
-                <p class="title-sub" data-aos="fade-up" data-aos-delay="340">
+                <p class="title-sub" data-aos="fade-up" data-aos-delay="100">
                     <span class="gradient-text" v-html="t('about.module-text.overview.title-sub')"></span>
                 </p>
-                <h2 class="title" data-aos="fade-up" data-aos-delay="420" v-html="t('about.module-text.overview.title')"></h2>
-                <p class="dscpt" data-aos="fade-up" data-aos-delay="500" v-html="t('about.module-text.overview.dscpt')"></p>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="200" v-html="t('about.module-text.overview.title')"></h2>
+                <p class="dscpt" data-aos="fade-up" data-aos-delay="300" v-html="t('about.module-text.overview.dscpt')"></p>
             </div>
         </div>
         <div class="summary">
@@ -33,7 +33,7 @@
                             <span class="eyebrow" v-html="t('about.summary.item-01.standard')"></span>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="180">
+                    <li data-aos="fade-up" data-aos-delay="200">
                         <img src="/assets/icons/120/ic-factory.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>71+</span></p>
@@ -41,7 +41,7 @@
                             <span class="eyebrow" v-html="t('about.summary.item-02.standard')"></span>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="260">
+                    <li data-aos="fade-up" data-aos-delay="300">
                         <img src="/assets/icons/120/ic-partner.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>20</span></p>
@@ -49,7 +49,7 @@
                             <span class="eyebrow" v-html="t('about.summary.item-03.standard')"></span>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="340">
+                    <li data-aos="fade-up" data-aos-delay="400">
                         <img src="/assets/icons/120/ic-hand.svg" alt="" loading="lazy" decoding="async" />
                         <div class="content">
                             <p class="dscpt"><span>12</span></p>
@@ -62,42 +62,42 @@
         </div>
         <div class="awards">
             <h2 data-aos="fade-up" data-aos-delay="100" v-html="t('about.awards.title')" class="title"></h2>
-            <p data-aos="fade-up" data-aos-delay="180" v-html="t('about.awards.dscpt')" class="title-sub"></p>
+            <p data-aos="fade-up" data-aos-delay="200" v-html="t('about.awards.dscpt')" class="title-sub"></p>
             <div class="list-awards" role="region" :aria-label="awardsCarouselLabel">
-                <div data-aos="fade-up" data-aos-delay="260" class="item item-01">
+                <div data-aos="fade-up" data-aos-delay="100" class="item item-01">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img01-1.webp" alt="" loading="lazy" decoding="async" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img01-2.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img01-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img01-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
-                        <p data-aos="fade-up" v-html="t('about.awards.item-01.title')"></p>
+                        <p v-html="t('about.awards.item-01.title')"></p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="340" class="item item-02">
+                <div data-aos="fade-up" data-aos-delay="200" class="item item-02">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img02-1.webp" alt="" loading="lazy" decoding="async" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img02-2.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img02-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img02-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
-                        <p data-aos="fade-up" v-html="t('about.awards.item-02.title')"></p>
+                        <p v-html="t('about.awards.item-02.title')"></p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="500" class="item item-03">
+                <div data-aos="fade-up" data-aos-delay="300" class="item item-03">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img03-1.webp" alt="" loading="lazy" decoding="async" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img03-2.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img03-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img03-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
-                        <p data-aos="fade-up" v-html="t('about.awards.item-03.title')"></p>
+                        <p v-html="t('about.awards.item-03.title')"></p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="420" class="item item-04">
+                <div data-aos="fade-up" data-aos-delay="400" class="item item-04">
                     <div class="thumbnail">
-                        <img data-aos="fade-up" src="/assets/images/awards/img04-1.webp" alt="" loading="lazy" decoding="async" />
-                        <img data-aos="fade-up" src="/assets/images/awards/img04-2.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img04-1.webp" alt="" loading="lazy" decoding="async" />
+                        <img src="/assets/images/awards/img04-2.webp" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="content">
-                        <p data-aos="fade-up" v-html="t('about.awards.item-04.title')"></p>
+                        <p v-html="t('about.awards.item-04.title')"></p>
                     </div>
                 </div>
             </div>
@@ -107,41 +107,41 @@
                 <h2 class="title-sub">
                     <span class="gradient-text" data-aos="fade-up" data-aos-delay="100" v-html="t('about.module-text.feature.title')"></span>
                 </h2>
-                <p class="title" data-aos="fade-up" data-aos-delay="180" v-html="t('about.module-text.feature.dscpt')"></p>
+                <p class="title" data-aos="fade-up" data-aos-delay="200" v-html="t('about.module-text.feature.dscpt')"></p>
             </div>
         </div>
         <div class="feature">
             <div class="wrap">
                 <div class="list-feature">
-                    <div data-aos="fade-up" data-aos-delay="260" class="item item-01">
+                    <div data-aos="fade-up" data-aos-delay="100" class="item item-01">
                         <div class="front">
-                            <h3 class="title" data-aos="fade-up" data-aos-delay="320" v-html="t('about.feature.item-01.title')"></h3>
+                            <h3 class="title" v-html="t('about.feature.item-01.title')"></h3>
                         </div>
                         <div class="back">
                             <ul>
-                                <li v-for="item in list('about.feature.item-01.content')" :key="item" data-aos="fade-up">{{ item }}</li>
+                                <li v-for="item in list('about.feature.item-01.content')" :key="item">{{ item }}</li>
                             </ul>
                             <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="340" class="item item-02">
+                    <div data-aos="fade-up" data-aos-delay="200" class="item item-02">
                         <div class="front">
-                            <h3 class="title" data-aos="fade-up" data-aos-delay="380" v-html="t('about.feature.item-02.title')"></h3>
+                            <h3 class="title" v-html="t('about.feature.item-02.title')"></h3>
                         </div>
                         <div class="back">
                             <ul>
-                                <li v-for="item in list('about.feature.item-02.content')" :key="item" data-aos="fade-up">{{ item }}</li>
+                                <li v-for="item in list('about.feature.item-02.content')" :key="item">{{ item }}</li>
                             </ul>
                             <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="420" class="item item-03">
+                    <div data-aos="fade-up" data-aos-delay="300" class="item item-03">
                         <div class="front">
-                            <h3 class="title" data-aos="fade-up" data-aos-delay="460" v-html="t('about.feature.item-03.title')"></h3>
+                            <h3 class="title" v-html="t('about.feature.item-03.title')"></h3>
                         </div>
                         <div class="back">
                             <ul>
-                                <li v-for="item in list('about.feature.item-03.content')" :key="item" data-aos="fade-up">{{ item }}</li>
+                                <li v-for="item in list('about.feature.item-03.content')" :key="item">{{ item }}</li>
                             </ul>
                             <NuxtLink to="/business#success" v-html="t('about.feature.button')"></NuxtLink>
                         </div>
@@ -149,49 +149,35 @@
                 </div>
             </div>
         </div>
-        <div class="history">
+        <div ref="historyRoot" class="history">
             <div class="wrap">
                 <h2 class="title" data-aos="fade-up" data-aos-delay="100" v-html="t('history.banner.title')"></h2>
                 <div class="history-timeline">
                     <div class="history-year">
                         <ul>
-                            <li
-                                v-for="(year, index) in historyItems"
-                                :key="year.year"
-                                :class="{ active: index === activeHistoryIndex }"
-                                data-aos="fade-up"
-                                :data-aos-delay="Math.min(150 + index * 40, 430)"
-                            >
+                            <li v-for="(year, index) in historyItems" :key="year.year" :class="{ active: index === activeHistoryIndex }">
                                 <button
                                     type="button"
                                     class="btn"
                                     :aria-current="index === activeHistoryIndex ? 'true' : undefined"
                                     :aria-controls="`history-${year.year}`"
                                     @click="scrollToHistory(index)"
+                                    @keydown="handleHistoryKeydown($event, index)"
                                 >
                                     {{ year.year }}
                                 </button>
                             </li>
                         </ul>
                     </div>
-                    <ul class="history-content" data-aos="fade-up" data-aos-delay="380">
-                        <li
-                            v-for="year in historyItems"
-                            :id="`history-${year.year}`"
-                            ref="historySections"
-                            :key="`content-${year.year}`"
-                            tabindex="-1"
-                        >
+                    <ul class="history-content" data-aos="fade-up" data-aos-delay="200">
+                        <li v-for="year in historyItems" :id="`history-${year.year}`" :key="`content-${year.year}`" tabindex="-1">
                             <ul>
                                 <li v-for="month in year.months" :key="`${year.year}-${month.label}`" class="month">
                                     <span class="month-label">{{ month.label }}</span>
                                     <ul>
-                                        <li
-                                            v-for="(item, index) in month.items"
-                                            :key="`${month.label}-${index}`"
-                                            class="item"
-                                            v-html="localized(item)"
-                                        ></li>
+                                        <li v-for="(item, index) in month.items" :key="`${month.label}-${index}`" class="item">
+                                            {{ item }}
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -210,7 +196,18 @@ import { useI18n } from 'vue-i18n';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
-import historyItems from '~/i18n/data/history.json';
+import historyData from '~/i18n/data/history.json';
+import type { LocaleCode } from '~/stores/locale';
+
+type LocalizedHistoryText = Partial<Record<LocaleCode, string>>;
+
+interface HistorySource {
+    year: number;
+    months: Array<{
+        label: string;
+        items: LocalizedHistoryText[];
+    }>;
+}
 
 definePageMeta({
     layout: 'default',
@@ -222,7 +219,6 @@ const list = (key: string) => {
     const message = tm(key);
     return Array.isArray(message) ? message.map((item) => rt(item)) : [];
 };
-const localized = (item: Record<string, string>) => item[locale.lang] || item.ko || '';
 const awardsCarouselLabels = {
     ko: '인증 및 수상 목록',
     en: 'Certifications and awards',
@@ -231,16 +227,34 @@ const awardsCarouselLabels = {
 const awardsCarouselLabel = computed(() => awardsCarouselLabels[locale.lang]);
 usePageSeo('about');
 
+const historyItems = computed(() => {
+    return (historyData as HistorySource[]).map((history) => ({
+        year: history.year,
+        months: history.months.map((month) => ({
+            label: month.label,
+            items: month.items.map((item) => getLocalizedHistoryText(item, locale.lang)),
+        })),
+    }));
+});
+
+function getLocalizedHistoryText(item: LocalizedHistoryText, lang: LocaleCode) {
+    return item[lang] || item.ko || item.en || item.vi || '';
+}
+
 const activeHistoryIndex = ref(0);
-const historySections = ref<HTMLElement[]>([]);
+const historyRoot = ref<HTMLElement | null>(null);
 let historyFrame = 0;
+
+const getHistorySections = () => {
+    return historyRoot.value?.querySelectorAll<HTMLElement>('.history-content > li') ?? [];
+};
 
 const updateActiveHistory = () => {
     const viewportCenter = window.innerHeight / 2;
     let closestIndex = 0;
     let closestDistance = Infinity;
 
-    historySections.value.forEach((section, index) => {
+    getHistorySections().forEach((section, index) => {
         const rect = section.getBoundingClientRect();
         const distance = Math.abs(rect.top + rect.height / 2 - viewportCenter);
         if (distance < closestDistance) {
@@ -257,24 +271,43 @@ const handleHistoryScroll = () => {
     historyFrame = requestAnimationFrame(updateActiveHistory);
 };
 
-const scrollToHistory = (index: number) => {
-    const section = historySections.value[index];
+const scrollToHistory = (index: number, focusContent = true) => {
+    const section = getHistorySections()[index];
     if (!section) return;
 
-    window.scrollTo({
-        top: window.scrollY + section.getBoundingClientRect().top - 100,
-        behavior: 'smooth',
-    });
-    section.focus({ preventScroll: true });
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (focusContent) section.focus({ preventScroll: true });
 };
+
+const handleHistoryKeydown = (event: KeyboardEvent, index: number) => {
+    if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+
+    event.preventDefault();
+    const direction = event.key === 'ArrowUp' || event.key === 'ArrowLeft' ? -1 : 1;
+    const nextIndex = Math.min(Math.max(index + direction, 0), historyItems.value.length - 1);
+    const buttons = historyRoot.value?.querySelectorAll<HTMLButtonElement>('.history-year .btn');
+
+    buttons?.[nextIndex]?.focus();
+    scrollToHistory(nextIndex, false);
+};
+
+watch(
+    () => locale.lang,
+    async () => {
+        await nextTick();
+        handleHistoryScroll();
+    },
+);
 
 onMounted(() => {
     updateActiveHistory();
     window.addEventListener('scroll', handleHistoryScroll, { passive: true });
+    window.addEventListener('resize', handleHistoryScroll, { passive: true });
 });
 
 onUnmounted(() => {
     cancelAnimationFrame(historyFrame);
     window.removeEventListener('scroll', handleHistoryScroll);
+    window.removeEventListener('resize', handleHistoryScroll);
 });
 </script>

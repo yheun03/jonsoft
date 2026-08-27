@@ -55,7 +55,7 @@ const successCases: Array<{
     image: string;
     delay: number;
 }> = [
-    { id: 'tailim', messageKey: 'case1', image: '/assets/images/success/tailm.webp', delay: 180 },
-    { id: 'kkleannara', messageKey: 'case2', image: '/assets/images/success/kkleannara.webp', delay: 260 },
+    { id: 'tailim', messageKey: 'case1', image: '/assets/images/success/tailm.webp', delay: 200 },
+    { id: 'kkleannara', messageKey: 'case2', image: '/assets/images/success/kkleannara.webp', delay: 300 },
 ];
 </script>
