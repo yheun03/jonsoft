@@ -47,7 +47,7 @@
     &.type {
         &-ask {
             min-height: unset;
-            background: url($url + 'images/banner/ask.png') right/cover no-repeat;
+            background: url($url + 'images/banner/ask.webp') right/cover no-repeat;
 
             .wrap {
                 padding-block: 160px;
@@ -97,6 +97,7 @@
                 padding: unset;
                 gap: 50px;
                 max-width: 864px;
+                text-align: center;
             }
 
             .title {
@@ -113,6 +114,7 @@
         &-goto {
             height: 420px;
             min-height: unset;
+            text-align: center;
 
             &::before {
                 @include pseudo-element('');
@@ -133,7 +135,6 @@
                 margin-bottom: 70px;
             }
         }
-
     }
 
     &.set {
