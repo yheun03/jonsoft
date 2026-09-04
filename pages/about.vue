@@ -13,7 +13,9 @@
 
         <div id="about-panel-ceo" v-show="activeTab === 'ceo'" role="tabpanel" aria-labelledby="about-tab-ceo" class="about-panel">
             <PageBanner class="ceo-banner" src="/assets/images/ceo/page-ceo.png">
-                <p class="ceo-banner__title" aria-hidden="true">Your<br />Best<br />Business<br />Partner</p>
+                <div class="wrap">
+                    <h1 data-aos="fade-up" data-aos-delay="100" class="ceo-banner__title">Your<br />Best<br />Business<br />Partner</h1>
+                </div>
             </PageBanner>
 
             <div class="ceo-message">
