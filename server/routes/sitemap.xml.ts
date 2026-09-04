@@ -5,6 +5,7 @@ const pages = [
     { path: 'customer', priority: '0.8' },
     { path: 'contact', priority: '0.8' },
 ];
+const lastModified = '2026-09-04';
 
 export default defineEventHandler((event) => {
     const absoluteUrl = getSiteBaseUrl(event);
@@ -12,6 +13,7 @@ export default defineEventHandler((event) => {
         .map(
             ({ path, priority }) => `  <url>
     <loc>${absoluteUrl}/${path}</loc>
+    <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
   </url>`,

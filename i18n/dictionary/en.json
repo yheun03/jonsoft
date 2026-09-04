@@ -188,15 +188,40 @@
         "banner": {
             "main": {
                 "title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
-                "dscpt": "The software and services we created contribute<br/>to the growth of customer business."
+                "dscpt": "The software and services we created contribute<br/>to the growth of customer business.",
+                "alt": "JO&SOFT manufacturing AI and smart factory solutions"
             },
             "text": {
-                "title": "From system consulting to building <br/> software",
+                "title": "From manufacturing AI and smart factory consulting<br/>to software implementation",
                 "dscpt": "It diagnoses a company's business systems in a variety of areas, including technology consulting, software development, online marketing consulting and platform operations, building smart factory and manufacturing AI systems, and process automation, and providing optimal digital transformation solutions for sustainable growth."
             },
             "goto": {
                 "title": "Optimal partner for<br/>customer business growth",
-                "button": "View business areas in detail"
+                "button": "View business areas in detail",
+                "alt": "Digital transformation collaboration with JO&SOFT"
+            }
+        },
+        "faq": {
+            "title": "Manufacturing AI & Smart Factory FAQ",
+            "description": "Answers to common questions about JO&SOFT manufacturing AI, smart factory, and digital transformation projects.",
+            "updated": "Content last updated: September 2026",
+            "items": {
+                "item-01": {
+                    "question": "Which manufacturing AI solutions does JO&SOFT provide?",
+                    "answer": "We provide manufacturing-focused AI solutions including APS for production planning optimization, OMS for AI-assisted order processing, FEMS for factory energy analysis, and work{'@'}AI."
+                },
+                "item-02": {
+                    "question": "Which stages of a smart factory project do you support?",
+                    "answer": "We support the full project lifecycle, from current-state analysis and ISP or PI consulting to the implementation and operation of MES, SCM, WMS, WCS, and TMS systems."
+                },
+                "item-03": {
+                    "question": "Can your solutions integrate with existing business systems?",
+                    "answer": "We first assess the company's current processes and system environment, then design the required data and functional integrations. The detailed approach is agreed according to project requirements and existing systems."
+                },
+                "item-04": {
+                    "question": "How can I request a project consultation?",
+                    "answer": "Check the representative and headquarters details on the Contact page, then call +82-31-717-8816 or email js.jung{'@'}jonsoft.co.kr with your project inquiry."
+                }
             }
         }
     },

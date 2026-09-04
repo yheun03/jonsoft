@@ -20,7 +20,7 @@ const pageNames: Record<SeoPage, Record<string, string>> = {
 };
 
 const homeTitles: Record<string, string> = {
-    ko: '제조 AI·스마트팩토리 전문기업 | 조앤소프트',
+    ko: '제조 AI·스마트팩토리 구축 및 MES·디지털 전환 컨설팅 전문기업 | 조앤소프트 주식회사',
     en: 'Manufacturing AI & Smart Factory Solutions | JO&SOFT',
     vi: 'Giải pháp AI sản xuất & Nhà máy thông minh | JO&SOFT',
 };
@@ -91,7 +91,7 @@ export function usePageSeo(page: SeoPage) {
     const websiteId = `${absoluteUrl()}#website`;
     const pageId = computed(() => `${canonical.value}#webpage`);
     const organization = computed(() => ({
-        '@type': 'Organization',
+        '@type': ['Organization', 'LocalBusiness'],
         '@id': organizationId,
         name: language.value === 'ko' ? '조앤소프트 주식회사' : 'JO&SOFT Co., Ltd.',
         alternateName: ['JO&SOFT', '조앤소프트'],
@@ -117,6 +117,10 @@ export function usePageSeo(page: SeoPage) {
             availableLanguage: ['Korean', 'English', 'Vietnamese'],
         },
         knowsAbout: ['Manufacturing AI', 'Smart Factory', 'MES', 'APS', 'OMS', 'FEMS', 'SCM', 'CRM', 'WCS', 'TMS', 'WMS'],
+        areaServed: {
+            '@type': 'Country',
+            name: 'South Korea',
+        },
     }));
     const webPage = computed(() => ({
         '@type': page === 'about' ? 'AboutPage' : page === 'contact' ? 'ContactPage' : page === 'customer' ? 'CollectionPage' : 'WebPage',
@@ -127,6 +131,7 @@ export function usePageSeo(page: SeoPage) {
         inLanguage: language.value,
         isPartOf: { '@id': websiteId },
         about: { '@id': organizationId },
+        dateModified: '2026-09-04',
         breadcrumb:
             page === 'home'
                 ? undefined
@@ -151,6 +156,19 @@ export function usePageSeo(page: SeoPage) {
             },
         })),
     );
+    const faqIds = ['item-01', 'item-02', 'item-03', 'item-04'];
+    const faq = computed(() => ({
+        '@type': 'FAQPage',
+        '@id': `${canonical.value}#faq`,
+        mainEntity: faqIds.map((id) => ({
+            '@type': 'Question',
+            name: stripHtml(t(`index.faq.items.${id}.question`)),
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: stripHtml(t(`index.faq.items.${id}.answer`)),
+            },
+        })),
+    }));
     const graph = computed(() => {
         const items: Record<string, unknown>[] = [
             organization.value,
@@ -174,6 +192,8 @@ export function usePageSeo(page: SeoPage) {
                 itemListElement: services.value,
             });
         }
+
+        if (page === 'home') items.push(faq.value);
 
         return items;
     });

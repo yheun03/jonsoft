@@ -184,15 +184,40 @@
         "banner": {
             "main": {
                 "title": "YOUR<br/>BEST<br/>BUSINESS<br/>PARTNER",
-                "dscpt": "Phần mềm và dịch vụ chúng tôi tạo ra đóng góp<br/>cho sự phát triển kinh doanh của khách hàng."
+                "dscpt": "Phần mềm và dịch vụ chúng tôi tạo ra đóng góp<br/>cho sự phát triển kinh doanh của khách hàng.",
+                "alt": "Giải pháp AI sản xuất và nhà máy thông minh của JO&SOFT"
             },
             "text": {
-                "title": "Từ tư vấn hệ thống đến<br/>xây dựng phần mềm",
+                "title": "Từ tư vấn AI sản xuất và nhà máy thông minh<br/>đến xây dựng phần mềm",
                 "dscpt": "Chúng tôi chẩn đoán hệ thống kinh doanh của doanh nghiệp trong nhiều lĩnh vực khác nhau, bao gồm tư vấn công nghệ, phát triển phần mềm, tư vấn tiếp thị trực tuyến và vận hành nền tảng, xây dựng nhà máy thông minh và hệ thống AI sản xuất, tự động hóa quy trình, và cung cấp các giải pháp chuyển đổi số tối ưu cho sự phát triển bền vững."
             },
             "goto": {
                 "title": "Đối tác tối ưu cho<br/>sự phát triển kinh doanh của khách hàng",
-                "button": "Xem chi tiết các lĩnh vực kinh doanh"
+                "button": "Xem chi tiết các lĩnh vực kinh doanh",
+                "alt": "Hợp tác chuyển đổi số cùng JO&SOFT"
+            }
+        },
+        "faq": {
+            "title": "Câu hỏi thường gặp về AI sản xuất và nhà máy thông minh",
+            "description": "Giải đáp các câu hỏi thường gặp về dự án AI sản xuất, nhà máy thông minh và chuyển đổi số của JO&SOFT.",
+            "updated": "Nội dung được cập nhật lần cuối: tháng 9 năm 2026",
+            "items": {
+                "item-01": {
+                    "question": "JO&SOFT cung cấp những giải pháp AI sản xuất nào?",
+                    "answer": "Chúng tôi cung cấp APS để tối ưu hóa kế hoạch sản xuất, OMS hỗ trợ xử lý đơn hàng bằng AI, FEMS phân tích năng lượng nhà máy và work{'@'}AI cùng các giải pháp AI phù hợp với hiện trường sản xuất."
+                },
+                "item-02": {
+                    "question": "JO&SOFT hỗ trợ những phạm vi nào khi xây dựng nhà máy thông minh?",
+                    "answer": "Chúng tôi hỗ trợ toàn bộ quá trình dự án, từ phân tích hiện trạng và tư vấn ISP hoặc PI đến xây dựng và vận hành các hệ thống MES, SCM, WMS, WCS và TMS."
+                },
+                "item-03": {
+                    "question": "Giải pháp có thể tích hợp với hệ thống hiện có không?",
+                    "answer": "Chúng tôi đánh giá quy trình và môi trường hệ thống hiện tại trước, sau đó thiết kế phạm vi tích hợp dữ liệu và chức năng cần thiết. Phương thức chi tiết được thống nhất theo yêu cầu dự án và hệ thống đang sử dụng."
+                },
+                "item-04": {
+                    "question": "Làm thế nào để yêu cầu tư vấn dự án?",
+                    "answer": "Xem thông tin người phụ trách và trụ sở trên trang Liên hệ, sau đó gọi +82-31-717-8816 hoặc gửi yêu cầu dự án đến js.jung{'@'}jonsoft.co.kr."
+                }
             }
         }
     },
