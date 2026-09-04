@@ -7,10 +7,7 @@ const pages = [
 ];
 
 export default defineEventHandler((event) => {
-    const runtimeConfig = useRuntimeConfig(event);
-    const siteUrl = runtimeConfig.public.siteUrl.replace(/\/+$/, '');
-    const baseURL = runtimeConfig.app.baseURL.replace(/^\/+|\/+$/g, '');
-    const absoluteUrl = [siteUrl, baseURL].filter(Boolean).join('/');
+    const absoluteUrl = getSiteBaseUrl(event);
     const urls = pages
         .map(
             ({ path, priority }) => `  <url>

@@ -294,7 +294,7 @@
     position: relative;
     margin-top: 60px;
     padding-bottom: $gap-80;
-    @include bg-image($url + 'images/summary/background.png', right bottom, 800px);
+    @include bg-image($url + 'images/summary/background.webp', right bottom, 800px);
 
     ul {
         @include flex(row, flex-end, stretch, 6px);
@@ -516,10 +516,10 @@
             border-radius: $radius-20;
             overflow: hidden;
             min-height: 470px;
-            @include bg-image($url + 'images/feature/feature-01.png', center, cover);
+            @include bg-image($url + 'images/feature/feature-01.webp', center, cover);
 
             &-02 {
-                @include bg-image($url + 'images/feature/feature-02.png', center, cover);
+                @include bg-image($url + 'images/feature/feature-02.webp', center, cover);
 
                 .front {
                     background-color: #c8c5b9;
@@ -536,7 +536,7 @@
             }
 
             &-03 {
-                @include bg-image($url + 'images/feature/feature-03.png', center, cover);
+                @include bg-image($url + 'images/feature/feature-03.webp', center, cover);
 
                 .front {
                     background-color: #46628a;

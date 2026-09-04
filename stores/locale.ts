@@ -2,7 +2,6 @@ import { defineStore } from 'pinia';
 import { defaultLocale, isLocaleCode, localeCodes, type LocaleCode } from '~/constants/locale';
 
 export type { LocaleCode } from '~/constants/locale';
-export { isLocaleCode, localeCodes } from '~/constants/locale';
 export const localeStorageKey = 'selectedLang';
 export const localeCookieKey = 'jonsoftLocale';
 
