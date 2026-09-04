@@ -21,17 +21,17 @@
             <div class="ceo-message">
                 <div class="wrap">
                     <div class="ceo-message__headline">
-                        <p class="ceo-eyebrow">{{ t('about.ceo.eyebrow') }}</p>
-                        <h1 v-html="t('about.ceo.headline')"></h1>
+                        <p class="ceo-eyebrow" data-aos="fade-up" data-aos-delay="100">{{ t('about.ceo.eyebrow') }}</p>
+                        <h1 data-aos="fade-up" data-aos-delay="200" v-html="t('about.ceo.headline')"></h1>
                     </div>
                 </div>
 
                 <div class="ceo-message__profile">
                     <div class="wrap ceo-message__profile-inner">
-                        <div class="ceo-message__portrait">
+                        <div class="ceo-message__portrait" data-aos="fade-up" data-aos-delay="100">
                             <img :src="assetPath('/assets/images/ceo/ceo.png')" :alt="t('about.ceo.portrait-alt')" />
                         </div>
-                        <div class="ceo-message__content">
+                        <div class="ceo-message__content" data-aos="fade-up" data-aos-delay="200">
                             <h2 v-html="t('about.ceo.greeting')"></h2>
                             <p v-for="paragraph in list('about.ceo.message')" :key="paragraph" v-html="paragraph"></p>
                             <strong>{{ t('about.ceo.signature') }}</strong>
@@ -42,11 +42,17 @@
 
             <div class="ceo-values">
                 <div class="wrap">
-                    <p class="ceo-eyebrow">{{ t('about.ceo.values.eyebrow') }}</p>
-                    <h2>{{ t('about.ceo.values.title') }}</h2>
-                    <p class="ceo-values__description" v-html="t('about.ceo.values.description')"></p>
+                    <p class="ceo-eyebrow" data-aos="fade-up" data-aos-delay="100">{{ t('about.ceo.values.eyebrow') }}</p>
+                    <h2 data-aos="fade-up" data-aos-delay="200">{{ t('about.ceo.values.title') }}</h2>
+                    <p class="ceo-values__description" data-aos="fade-up" data-aos-delay="300" v-html="t('about.ceo.values.description')"></p>
                     <ul class="ceo-values__list">
-                        <li v-for="value in ceoValues" :key="value.title" class="ceo-values__item">
+                        <li
+                            v-for="(value, index) in ceoValues"
+                            :key="value.title"
+                            class="ceo-values__item"
+                            data-aos="fade-up"
+                            :data-aos-delay="(index + 1) * 100"
+                        >
                             <img :src="assetPath(value.image)" alt="" loading="lazy" decoding="async" />
                             <div class="ceo-values__content">
                                 <h3>{{ value.title }}</h3>
@@ -54,7 +60,7 @@
                             </div>
                         </li>
                     </ul>
-                    <p class="ceo-values__closing">{{ t('about.ceo.closing') }}</p>
+                    <p class="ceo-values__closing" data-aos="fade-up" data-aos-delay="100">{{ t('about.ceo.closing') }}</p>
                 </div>
             </div>
         </div>
