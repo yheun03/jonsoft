@@ -10,7 +10,9 @@
         "dev:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ nuxt dev",
         "build": "nuxt build",
         "generate": "nuxt generate",
+        "generate:github": "NUXT_APP_BASE_URL=/jonsoft/ NUXT_PUBLIC_SITE_URL=https://yheun03.github.io nuxt generate",
         "generate:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr nuxt generate",
+        "deploy": "npm run generate:github && gh-pages -d .output/public --dotfiles --nojekyll",
         "preview": "nuxt preview"
     },
     "dependencies": {
@@ -24,6 +26,7 @@
     },
     "devDependencies": {
         "@types/node": "^25.6.0",
+        "gh-pages": "^6.3.0",
         "sass": "^1.83.0",
         "sharp": "0.35.3",
         "typescript": "^5.7.2"

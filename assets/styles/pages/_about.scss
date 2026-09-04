@@ -6,6 +6,302 @@
 // =============================================================================
 
 // =============================================================================
+// About 탭 / CEO 인사말
+// =============================================================================
+
+.about-panel:focus {
+    outline: none;
+}
+
+.ceo-banner {
+    height: 560px;
+    min-height: unset;
+
+    &__title {
+        display: none;
+    }
+}
+
+.ceo-eyebrow {
+    @include font-style($fw-6, $fs-16);
+    color: $c-orange;
+}
+
+.ceo-message {
+    &__headline {
+        padding-block: 130px 120px;
+        text-align: center;
+
+        h1 {
+            @include font-style($fw-6, $fs-30, 150%);
+            margin-top: 22px;
+            word-break: keep-all;
+        }
+    }
+
+    &__profile {
+        background:
+            radial-gradient(100% 75% at 4% 120%, transparent 49.5%, rgba(219, 223, 229, 0.7) 50%, transparent 50.5%),
+            radial-gradient(95% 75% at 98% 115%, transparent 49.5%, rgba(219, 223, 229, 0.7) 50%, transparent 50.5%),
+            #eef1f5;
+    }
+
+    &__profile-inner {
+        @include flex(row, space-between, flex-end, 70px);
+        min-height: 680px;
+    }
+
+    &__portrait {
+        flex: 0 0 440px;
+        align-self: stretch;
+        @include flex($align: flex-end);
+
+        img {
+            display: block;
+            width: 440px;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        padding-block: 95px 65px;
+
+        h2 {
+            @include font-style($fw-6, $fs-30, 130%);
+            margin-bottom: 32px;
+        }
+
+        p {
+            @include font-style($fw-4, $fs-18, 170%);
+            color: #4f5358;
+            word-break: keep-all;
+
+            & + p {
+                margin-top: 6px;
+            }
+        }
+
+        strong {
+            display: block;
+            @include font-style($fw-6, $fs-16);
+            margin-top: 58px;
+            text-align: right;
+        }
+    }
+}
+
+.ceo-values {
+    padding-block: 80px 110px;
+
+    h2 {
+        @include font-style($fw-6, $fs-30);
+        margin-top: 20px;
+    }
+
+    &__description {
+        @include font-style($fw-4, $fs-18, 160%);
+        color: #4f5358;
+        margin-top: 35px;
+    }
+
+    &__list {
+        @include flex(column, $gap: 20px);
+        margin-top: 80px;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        border-radius: $radius-20;
+        overflow: hidden;
+
+        &::after {
+            @include pseudo-element();
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(14, 18, 21, 0.7), rgba(14, 18, 21, 0.02) 75%);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+        max-width: 650px;
+        color: $c-text-light;
+
+        h3 {
+            @include font-style($fw-6, $fs-24);
+        }
+
+        p {
+            @include font-style($fw-4, $fs-14, 160%);
+            margin-top: 22px;
+        }
+    }
+
+    &__closing {
+        @include font-style($fw-4, $fs-20);
+        color: #63676b;
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+@include tablet {
+    .ceo-banner {
+        height: 335px;
+        overflow: hidden;
+
+        > img {
+            top: 30px;
+            height: 140%;
+            object-position: right center;
+        }
+
+        &__title {
+            display: block;
+            position: absolute;
+            top: 28px;
+            left: 20px;
+            z-index: 1;
+            @include font-style($fw-7, 20px, 130%);
+            color: $c-text-light;
+        }
+    }
+
+    .ceo-message {
+        &__headline {
+            padding: 110px 0 90px;
+
+            h1 {
+                font-size: 24px;
+                margin-top: 22px;
+            }
+        }
+
+        &__profile-inner {
+            display: block;
+            min-height: unset;
+            padding-inline: 0;
+        }
+
+        &__portrait {
+            position: relative;
+            height: 470px;
+            align-items: flex-start;
+            overflow: hidden;
+
+            &::after {
+                @include pseudo-element();
+                position: absolute;
+                inset: 55% 0 0;
+                background: linear-gradient(transparent, #eef1f5 80%);
+            }
+
+            img {
+                width: 340px;
+                margin: 60px auto 0;
+            }
+        }
+
+        &__content {
+            padding: 0 20px 55px;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 160%;
+
+                br {
+                    display: none;
+                }
+
+                & + p {
+                    margin-top: 6px;
+                }
+            }
+
+            strong {
+                font-size: 14px;
+                margin-top: 42px;
+            }
+        }
+    }
+
+    .ceo-values {
+        padding-block: 80px 90px;
+
+        h2 {
+            font-size: 26px;
+            margin-top: 16px;
+        }
+
+        &__description {
+            font-size: 15px;
+            line-height: 160%;
+            margin-top: 28px;
+        }
+
+        &__list {
+            gap: 14px;
+            margin-top: 50px;
+        }
+
+        &__item {
+            height: 220px;
+            border-radius: $radius-10;
+        }
+
+        &__content {
+            top: auto;
+            right: 20px;
+            bottom: 24px;
+            left: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 150%;
+                margin-top: 14px;
+            }
+        }
+
+        &__closing {
+            font-size: 13px;
+            margin-top: 70px;
+        }
+    }
+}
+
+@include mobile {
+    .ceo-message__headline {
+        h1 {
+            font-size: 21px;
+        }
+    }
+
+    .ceo-values__item {
+        height: 210px;
+    }
+}
+
+// =============================================================================
 // Summary 섹션
 // =============================================================================
 

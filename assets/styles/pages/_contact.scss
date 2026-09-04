@@ -21,36 +21,10 @@
         text-transform: uppercase;
     }
 
-    .tab {
-        margin-bottom: 50px;
-
-        ul {
-            @include flex(row, center, center, $gap-80);
-            margin: $gap-80 auto 0;
-
-            li {
-                @include font-style($fw-6, $fs-20, normal);
-                color: #b2b2b2;
-                padding-inline: $gap-4;
-                padding-bottom: 14px;
-                display: block;
-
-                &.active {
-                    color: $c-text;
-                    box-shadow: inset 0px -2px 0 0px $c-text;
-                }
-
-                a {
-                    color: inherit;
-                }
-            }
-        }
-
-        &-content {
-            a {
-                color: inherit;
-                text-decoration: underline;
-            }
+    .tab-content {
+        a {
+            color: inherit;
+            text-decoration: underline;
         }
     }
 
@@ -211,15 +185,6 @@
 
     @include tablet {
         margin-top: 60px;
-
-        .tab {
-            margin-bottom: 40px;
-
-            ul {
-                padding-inline: 20px;
-                @include flex($justify: flex-start, $gap: 30px);
-            }
-        }
 
         h1,
         h2 {

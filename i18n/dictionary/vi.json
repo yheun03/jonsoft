@@ -46,6 +46,40 @@
         }
     },
     "about": {
+        "tab": {
+            "label": "Giới thiệu JO&SOFT",
+            "ceo": "Thông điệp CEO",
+            "company": "Giới thiệu công ty"
+        },
+        "ceo": {
+            "eyebrow": "Thông điệp CEO",
+            "headline": "“Cùng JO&SOFT, thành công của quý công ty sẽ đến gần hơn.”",
+            "portrait-alt": "Tổng giám đốc JO&SOFT Hyuncheol Cho",
+            "greeting": "Xin chào,<br>Chào mừng quý vị đến với JO&SOFT.",
+            "message": [
+                "Chúng tôi là doanh nghiệp chuyên cung cấp các giải pháp phần mềm sáng tạo và hiệu quả. Với thành công của khách hàng là ưu tiên hàng đầu, chúng tôi cung cấp các dịch vụ tùy chỉnh cho nhiều ngành nghề dựa trên công nghệ mới nhất và những ý tưởng sáng tạo.",
+                "JO&SOFT luôn nỗ lực thấu hiểu chính xác nhu cầu của khách hàng và cung cấp giải pháp tối ưu. Đội ngũ của chúng tôi làm việc bằng chuyên môn và nhiệt huyết để hỗ trợ doanh nghiệp của quý vị phát triển. Xin cảm ơn sự quan tâm và ủng hộ của quý vị."
+            ],
+            "signature": "Hyuncheol Cho, Tổng giám đốc JO&SOFT",
+            "values": {
+                "eyebrow": "Triết lý của chúng tôi",
+                "title": "Đề xuất giá trị của chúng tôi",
+                "description": "JO&SOFT cung cấp phần mềm và dịch vụ thúc đẩy sự tăng trưởng của khách hàng.<br>Chúng tôi hỗ trợ thành công của khách hàng thông qua những giá trị sau.",
+                "item-01": {
+                    "title": "Giải pháp lấy khách hàng làm trung tâm",
+                    "description": "Chúng tôi tối đa hóa hiệu quả kinh doanh bằng phần mềm được thiết kế phù hợp với nhu cầu của từng khách hàng."
+                },
+                "item-02": {
+                    "title": "Công nghệ sáng tạo",
+                    "description": "Chúng tôi không ngừng đổi mới bằng công nghệ mới nhất để giúp khách hàng duy trì lợi thế cạnh tranh trong thị trường thay đổi nhanh chóng."
+                },
+                "item-03": {
+                    "title": "Đối tác đáng tin cậy",
+                    "description": "Chúng tôi cùng phát triển thông qua hợp tác chặt chẽ và hỗ trợ vững chắc cho các mục tiêu kinh doanh của khách hàng."
+                }
+            },
+            "closing": "Cùng JO&SOFT, thành công của quý công ty sẽ đến gần hơn."
+        },
         "banner": {
             "title-sub": "Chúng tôi là ai",
             "title": "Chúng tôi cung cấp phát triển phần mềm<br/>cùng với tư vấn công nghệ.",

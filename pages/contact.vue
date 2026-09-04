@@ -1,16 +1,7 @@
 <template>
     <section>
         <div class="navigator">
-            <nav class="tab" :aria-label="contactNavLabel">
-                <ul>
-                    <li class="active" data-aos="fade-up" data-aos-delay="100">
-                        <a href="#contact-location" @click.prevent="scrollToSection('location')" v-html="t('contact.tab.location')"></a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="#contact-recruit" @click.prevent="scrollToSection('recruit')" v-html="t('contact.tab.recruitment')"></a>
-                    </li>
-                </ul>
-            </nav>
+            <PageNavigator type="scroll" :items="contactNavigatorItems" :label="contactNavLabel" active-id="location" animated />
             <div class="tab-content">
                 <div id="contact-location" ref="locationSection" class="contact" tabindex="-1">
                     <div class="wrap not-padding">
@@ -68,16 +59,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="tab" :aria-label="contactNavLabel">
-                <ul>
-                    <li data-aos="fade-up" data-aos-delay="100">
-                        <a href="#contact-location" @click.prevent="scrollToSection('location')" v-html="t('contact.tab.location')"></a>
-                    </li>
-                    <li class="active" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#contact-recruit" @click.prevent="scrollToSection('recruit')" v-html="t('contact.tab.recruitment')"></a>
-                    </li>
-                </ul>
-            </nav>
+            <PageNavigator type="scroll" :items="contactNavigatorItems" :label="contactNavLabel" active-id="recruit" animated />
             <div class="tab-content">
                 <div id="contact-recruit" ref="recruitSection" class="recruit" tabindex="-1">
                     <div class="wrap not-padding">
@@ -120,6 +102,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import PageNavigator from '~/components/common/PageNavigator.vue';
 import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue';
 
 definePageMeta({
@@ -131,19 +114,11 @@ const contactNavLabels = { ko: '문의 페이지 바로가기', en: 'Contact pag
 const mapLabels = { ko: '조앤소프트 본사 위치 지도', en: 'Map of JO&SOFT headquarters', vi: 'Bản đồ trụ sở JO&SOFT' };
 const contactNavLabel = computed(() => contactNavLabels[locale.value as keyof typeof contactNavLabels]);
 const mapLabel = computed(() => mapLabels[locale.value as keyof typeof mapLabels]);
+const contactNavigatorItems = computed(() => [
+    { id: 'location', label: t('contact.tab.location'), href: '#contact-location' },
+    { id: 'recruit', label: t('contact.tab.recruitment'), href: '#contact-recruit' },
+]);
 usePageSeo('contact');
-const locationSection = ref<HTMLElement | null>(null);
-const recruitSection = ref<HTMLElement | null>(null);
-
-const scrollToSection = (target: 'location' | 'recruit') => {
-    const section = target === 'location' ? locationSection.value : recruitSection.value;
-    if (!section) return;
-
-    const headerHeight = document.querySelector('header')?.getBoundingClientRect().height ?? 0;
-    const top = window.scrollY + section.getBoundingClientRect().top - headerHeight - 20;
-    window.scrollTo({ top, behavior: 'smooth' });
-    section.focus({ preventScroll: true });
-};
 
 declare global {
     interface Window {

@@ -50,6 +50,40 @@
         }
     },
     "about": {
+        "tab": {
+            "label": "About JO&SOFT",
+            "ceo": "CEO Message",
+            "company": "Company Overview"
+        },
+        "ceo": {
+            "eyebrow": "CEO Message",
+            "headline": "“With JO&SOFT, your success is closer than ever.”",
+            "portrait-alt": "JO&SOFT CEO Hyuncheol Cho",
+            "greeting": "Hello,<br>Welcome to JO&SOFT.",
+            "message": [
+                "We are a professional company that provides innovative and efficient software solutions. With our customers' success as our top priority, we deliver customized services across a wide range of industries using the latest technology and creative ideas.",
+                "JO&SOFT strives to understand each customer's needs accurately and provide the optimal solution. Our team brings expertise and passion to helping your business grow. We look forward to your continued interest and support. Thank you."
+            ],
+            "signature": "Hyuncheol Cho, CEO of JO&SOFT",
+            "values": {
+                "eyebrow": "Our Philosophy",
+                "title": "Our Value Proposition",
+                "description": "JO&SOFT provides software and services that drive customer growth.<br>We support your success through the following values.",
+                "item-01": {
+                    "title": "Customer-centered solutions",
+                    "description": "We maximize business efficiency through software tailored to each customer's needs."
+                },
+                "item-02": {
+                    "title": "Innovative technology",
+                    "description": "We continuously innovate with the latest technology to help customers stay competitive in a rapidly changing market."
+                },
+                "item-03": {
+                    "title": "A trusted partner",
+                    "description": "We grow together through close collaboration, providing dependable support for our customers' business goals."
+                }
+            },
+            "closing": "With JO&SOFT, your success is closer than ever."
+        },
         "banner": {
             "title-sub": "Who we are",
             "title": "We provide software development<br/>along with Technology consulting.",
