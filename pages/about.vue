@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="ceo-message__profile">
-                    <div class="wrap ceo-message__profile-inner">
+                    <div class="wrap">
                         <div class="ceo-message__portrait" data-aos="fade-up" data-aos-delay="100">
                             <img :src="assetPath('/assets/images/ceo/ceo.png')" :alt="t('about.ceo.portrait-alt')" />
                         </div>
