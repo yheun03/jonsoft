@@ -48,8 +48,9 @@
         background: url($url + 'images/ceo/ceo-background.png') no-repeat center center / cover;
     }
 
-    &__profile-inner {
+    .wrap {
         @include flex(row, space-between, flex-end, 32px);
+        overflow: hidden;
     }
 
     &__portrait {
@@ -178,7 +179,7 @@
 
         &__profile {
             background: #e7eaef;
-            &-inner {
+            .wrap {
                 flex-direction: column;
                 align-items: center;
                 gap: 24px;
