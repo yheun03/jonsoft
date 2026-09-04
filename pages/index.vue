@@ -19,7 +19,7 @@
                     <span v-html="t('index.banner.goto.button')"></span>
                 </NuxtLink>
             </div>
-            <img src="/assets/images/banner/goto.webp" alt="" loading="lazy" decoding="async" />
+            <img :src="assetPath('/assets/images/banner/goto.webp')" alt="" loading="lazy" decoding="async" />
         </div>
         <PartnerLogoSection type="customer" />
         <PartnerLogoSection type="partner" />
@@ -32,6 +32,7 @@ import { useI18n } from 'vue-i18n';
 import CommonAskBanner from '~/components/section/CommonAskBanner.vue';
 import PartnerLogoSection from '~/components/section/PartnerLogoSection.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
+import { assetPath } from '~/utils/assetPath';
 
 definePageMeta({
     layout: 'default',

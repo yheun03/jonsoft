@@ -27,7 +27,7 @@
                 <div class="ceo-message__profile">
                     <div class="wrap ceo-message__profile-inner">
                         <div class="ceo-message__portrait">
-                            <img src="/assets/images/ceo/ceo.png" :alt="t('about.ceo.portrait-alt')" />
+                            <img :src="assetPath('/assets/images/ceo/ceo.png')" :alt="t('about.ceo.portrait-alt')" />
                         </div>
                         <div class="ceo-message__content">
                             <h2 v-html="t('about.ceo.greeting')"></h2>
@@ -45,7 +45,7 @@
                     <p class="ceo-values__description" v-html="t('about.ceo.values.description')"></p>
                     <ul class="ceo-values__list">
                         <li v-for="value in ceoValues" :key="value.title" class="ceo-values__item">
-                            <img :src="value.image" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath(value.image)" alt="" loading="lazy" decoding="async" />
                             <div class="ceo-values__content">
                                 <h3>{{ value.title }}</h3>
                                 <p>{{ value.description }}</p>
@@ -84,7 +84,7 @@
                 <div class="wrap">
                     <ul>
                         <li data-aos="fade-up" data-aos-delay="100">
-                            <img src="/assets/icons/120/ic-building.svg" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/icons/120/ic-building.svg')" alt="" loading="lazy" decoding="async" />
                             <div class="content">
                                 <p class="dscpt"><span>10+</span></p>
                                 <p class="title" v-html="t('about.summary.item-01.title')"></p>
@@ -92,7 +92,7 @@
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="200">
-                            <img src="/assets/icons/120/ic-factory.svg" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/icons/120/ic-factory.svg')" alt="" loading="lazy" decoding="async" />
                             <div class="content">
                                 <p class="dscpt"><span>71+</span></p>
                                 <p class="title" v-html="t('about.summary.item-02.title')"></p>
@@ -100,7 +100,7 @@
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="300">
-                            <img src="/assets/icons/120/ic-partner.svg" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/icons/120/ic-partner.svg')" alt="" loading="lazy" decoding="async" />
                             <div class="content">
                                 <p class="dscpt"><span>20</span></p>
                                 <p class="title" v-html="t('about.summary.item-03.title')"></p>
@@ -108,7 +108,7 @@
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="400">
-                            <img src="/assets/icons/120/ic-hand.svg" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/icons/120/ic-hand.svg')" alt="" loading="lazy" decoding="async" />
                             <div class="content">
                                 <p class="dscpt"><span>12</span></p>
                                 <p class="title" v-html="t('about.summary.item-04.title')"></p>
@@ -124,8 +124,8 @@
                 <div class="list-awards" role="region" :aria-label="awardsCarouselLabel">
                     <div data-aos="fade-up" data-aos-delay="100" class="item item-01">
                         <div class="thumbnail">
-                            <img src="/assets/images/awards/img01-1.webp" alt="" loading="lazy" decoding="async" />
-                            <img src="/assets/images/awards/img01-2.webp" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img01-1.webp')" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img01-2.webp')" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="content">
                             <p v-html="t('about.awards.item-01.title')"></p>
@@ -133,8 +133,8 @@
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="item item-02">
                         <div class="thumbnail">
-                            <img src="/assets/images/awards/img02-1.webp" alt="" loading="lazy" decoding="async" />
-                            <img src="/assets/images/awards/img02-2.webp" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img02-1.webp')" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img02-2.webp')" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="content">
                             <p v-html="t('about.awards.item-02.title')"></p>
@@ -142,8 +142,8 @@
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300" class="item item-03">
                         <div class="thumbnail">
-                            <img src="/assets/images/awards/img03-1.webp" alt="" loading="lazy" decoding="async" />
-                            <img src="/assets/images/awards/img03-2.webp" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img03-1.webp')" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img03-2.webp')" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="content">
                             <p v-html="t('about.awards.item-03.title')"></p>
@@ -151,8 +151,8 @@
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400" class="item item-04">
                         <div class="thumbnail">
-                            <img src="/assets/images/awards/img04-1.webp" alt="" loading="lazy" decoding="async" />
-                            <img src="/assets/images/awards/img04-2.webp" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img04-1.webp')" alt="" loading="lazy" decoding="async" />
+                            <img :src="assetPath('/assets/images/awards/img04-2.webp')" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="content">
                             <p v-html="t('about.awards.item-04.title')"></p>
@@ -258,6 +258,7 @@ import PageBanner from '~/components/common/PageBanner.vue';
 import PageNavigator from '~/components/common/PageNavigator.vue';
 import historyData from '~/i18n/data/history.json';
 import type { LocaleCode } from '~/stores/locale';
+import { assetPath } from '~/utils/assetPath';
 
 type LocalizedHistoryText = Partial<Record<LocaleCode, string>>;
 

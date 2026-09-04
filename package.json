@@ -7,12 +7,10 @@
     },
     "scripts": {
         "dev": "nuxt dev",
-        "dev:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ nuxt dev",
-        "build": "nuxt build",
-        "generate": "nuxt generate",
+        "build": "NUXT_APP_BASE_URL=/ NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr nuxt generate",
+        "generate": "npm run build",
         "generate:github": "NUXT_APP_BASE_URL=/jonsoft/ NUXT_PUBLIC_SITE_URL=https://yheun03.github.io nuxt generate",
-        "generate:ver2026": "NUXT_APP_BASE_URL=/ver.2026/ NUXT_PUBLIC_SITE_URL=https://jonsoft.co.kr nuxt generate",
-        "deploy": "npm run generate:github && gh-pages -d .output/public --dotfiles --nojekyll",
+        "deploy": "gh-pages-clean && npm run generate:github && gh-pages -d .output/public --dotfiles --nojekyll",
         "preview": "nuxt preview"
     },
     "dependencies": {

@@ -1,4 +1,12 @@
-# JO&SOFT (조앤소프트)
+export default defineEventHandler((event) => {
+    const runtimeConfig = useRuntimeConfig(event);
+    const siteUrl = runtimeConfig.public.siteUrl.replace(/\/+$/, '');
+    const baseURL = runtimeConfig.app.baseURL.replace(/^\/+|\/+$/g, '');
+    const absoluteUrl = [siteUrl, baseURL].filter(Boolean).join('/');
+
+    setHeader(event, 'content-type', 'text/plain; charset=utf-8');
+
+    return `# JO&SOFT (조앤소프트)
 
 > JO&SOFT is a Korean manufacturing AI and digital-transformation company providing consulting, software development, smart-factory systems, and process automation.
 
@@ -13,11 +21,13 @@
 
 ## Official pages
 
-- [Home](https://jonsoft.co.kr/ver.2026/)
-- [Company overview](https://jonsoft.co.kr/ver.2026/about)
-- [Business and solutions](https://jonsoft.co.kr/ver.2026/business)
-- [Customers and partners](https://jonsoft.co.kr/ver.2026/customer)
-- [Contact and careers](https://jonsoft.co.kr/ver.2026/contact)
-- [XML sitemap](https://jonsoft.co.kr/ver.2026/sitemap.xml)
+- [Home](${absoluteUrl}/)
+- [Company overview](${absoluteUrl}/about)
+- [Business and solutions](${absoluteUrl}/business)
+- [Customers and partners](${absoluteUrl}/customer)
+- [Contact and careers](${absoluteUrl}/contact)
+- [XML sitemap](${absoluteUrl}/sitemap.xml)
 
 Use the official pages above as the primary source for current details about JO&SOFT.
+`;
+});

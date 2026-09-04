@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://jonsoft.co.kr';
-const basePath = process.env.NUXT_APP_BASE_URL || '/ver.2026/';
+const basePath = process.env.NUXT_APP_BASE_URL || '/';
 const sitePath = (path = '', absolute = false) => {
     const normalizedBase = basePath.replace(/\/?$/, '/');
     const normalizedPath = path.replace(/^\/+/, '');
@@ -11,6 +11,7 @@ const sitePath = (path = '', absolute = false) => {
 
     return absolute ? `${siteUrl.replace(/\/+$/, '')}${url}` : url;
 };
+const assetBasePath = process.env.NODE_ENV === 'development' ? sitePath('/assets/') : sitePath('/assets/', true);
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
@@ -33,6 +34,7 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 scss: {
+                    additionalData: `$asset-base-url: '${assetBasePath}';`,
                     silenceDeprecations: ['legacy-js-api'],
                 },
             },
@@ -111,6 +113,10 @@ export default defineNuxtConfig({
 
     nitro: {
         compressPublicAssets: true,
+
+        prerender: {
+            routes: ['/robots.txt', '/sitemap.xml', '/llms.txt'],
+        },
 
         routeRules: {
             '/assets/**': {
