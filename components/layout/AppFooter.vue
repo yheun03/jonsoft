@@ -9,8 +9,17 @@
             <div class="wrap-text">
                 <nav :aria-label="footerNavLabel">
                     <ul class="gnb">
-                        <li v-for="item in navigationItems" :key="item.to">
-                            <NuxtLink :to="item.to">{{ t(item.labelKey) }}</NuxtLink>
+                        <li>
+                            <NuxtLink to="/about">ABOUT US</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/business">BUSINESS &amp; SOLUTION</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/customer">CUSTOMER &amp; PARTNERS</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/contact">CONTACT US</NuxtLink>
                         </li>
                     </ul>
                 </nav>
@@ -29,7 +38,6 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { navigationItems } from '~/constants/navigation';
 import { assetPath } from '~/utils/assetPath';
 
 const { t, locale } = useI18n();

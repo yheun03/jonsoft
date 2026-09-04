@@ -104,9 +104,7 @@ const loadScript = (src: string) =>
 const loadSlick = () => {
     if (!slickReady) {
         const baseURL = useRuntimeConfig().app.baseURL;
-        slickReady = loadScript(`${baseURL}resources/scripts/jquery-3.7.1.min.js`).then(() =>
-            loadScript(`${baseURL}resources/library/slick/slick.min.js`),
-        );
+        slickReady = loadScript(`${baseURL}assets/scripts/jquery-3.7.1.min.js`).then(() => loadScript(`${baseURL}assets/library/slick/slick.min.js`));
         slickReady.catch(() => {
             slickReady = null;
         });

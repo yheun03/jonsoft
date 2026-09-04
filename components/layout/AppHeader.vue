@@ -8,8 +8,17 @@
             </div>
             <nav class="menu pc" :aria-label="a11yLabels.mainNavigation">
                 <ul class="gnb">
-                    <li v-for="item in navigationItems" :key="item.to" :class="{ active: isActive(item.to) }">
-                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined">{{ t(item.labelKey) }}</NuxtLink>
+                    <li :class="{ active: isActive('/about') }">
+                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined">ABOUT US</NuxtLink>
+                    </li>
+                    <li :class="{ active: isActive('/business') }">
+                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined">BUSINESS &amp; SOLUTION</NuxtLink>
+                    </li>
+                    <li :class="{ active: isActive('/customer') }">
+                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined">CUSTOMER &amp; PARTNERS</NuxtLink>
+                    </li>
+                    <li :class="{ active: isActive('/contact') }">
+                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined">CONTACT US</NuxtLink>
                     </li>
                 </ul>
                 <ul class="i18n" :aria-label="a11yLabels.language">
@@ -51,10 +60,21 @@
         >
             <div class="wrap">
                 <ul>
-                    <li v-for="item in navigationItems" :key="`mobile-${item.to}`">
-                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined" @click="closeMenu(false)">
-                            {{ t(item.labelKey) }}
+                    <li>
+                        <NuxtLink to="/about" :aria-current="isActive('/about') ? 'page' : undefined" @click="closeMenu(false)">ABOUT US</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/business" :aria-current="isActive('/business') ? 'page' : undefined" @click="closeMenu(false)">
+                            BUSINESS &amp; SOLUTION
                         </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/customer" :aria-current="isActive('/customer') ? 'page' : undefined" @click="closeMenu(false)">
+                            CUSTOMER &amp; PARTNERS
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/contact" :aria-current="isActive('/contact') ? 'page' : undefined" @click="closeMenu(false)">CONTACT US</NuxtLink>
                     </li>
                 </ul>
                 <ul class="i18n" :aria-label="a11yLabels.language">
@@ -77,14 +97,13 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { navigationItems } from '~/constants/navigation';
 import { localeCodes, localeDefinitions } from '~/constants/locale';
 import type { LocaleCode } from '~/stores/locale';
 import { assetPath } from '~/utils/assetPath';
 
 const route = useRoute();
 const localeStore = useLocaleStore();
-const { t, locale: i18nLocale } = useI18n();
+const { locale: i18nLocale } = useI18n();
 const activeLang = computed(() => i18nLocale.value as LocaleCode);
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);

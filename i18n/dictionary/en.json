@@ -1,12 +1,6 @@
 {
     "common": {
         "floating": "Download company introduction",
-        "navigation": {
-            "about": "ABOUT US",
-            "business": "BUSINESS & SOLUTION",
-            "customer": "CUSTOMER & PATNERS",
-            "contact": "CONTACT US"
-        },
         "catalog": {
             "src": "./assets/files/JO&SOFT catalog_ENG.pdf",
             "alt": "Open the JO&SOFT English company introduction"

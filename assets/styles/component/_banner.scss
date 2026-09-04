@@ -97,6 +97,7 @@
                 padding: unset;
                 gap: 50px;
                 max-width: 864px;
+                text-align: center;
             }
 
             .title {
@@ -113,6 +114,7 @@
         &-goto {
             height: 420px;
             min-height: unset;
+            text-align: center;
 
             &::before {
                 @include pseudo-element('');
@@ -133,7 +135,6 @@
                 margin-bottom: 70px;
             }
         }
-
     }
 
     &.set {
