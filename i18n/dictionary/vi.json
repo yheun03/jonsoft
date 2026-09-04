@@ -1,6 +1,12 @@
 {
     "common": {
         "floating": "Tải xuống tài liệu giới thiệu công ty",
+        "navigation": {
+            "about": "ABOUT US",
+            "business": "BUSINESS & SOLUTION",
+            "customer": "CUSTOMER & PATNERS",
+            "contact": "CONTACT US"
+        },
         "catalog": {
             "src": "./assets/files/JO&SOFT catalog_VIE.pdf",
             "alt": "Mở tài liệu giới thiệu công ty JO&SOFT bằng tiếng Việt"

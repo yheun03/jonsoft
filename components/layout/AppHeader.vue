@@ -2,14 +2,14 @@
     <header class="app-header" :class="{ open: menuOpen }">
         <div class="wrap">
             <div class="app-header__logo">
-                <NuxtLink to="/" :aria-label="a11yLabels.home">
+                <NuxtLink :key="activeLang" to="/" :aria-label="a11yLabels.home">
                     <img :src="assetPath('/assets/logos/word.svg')" alt="JO&amp;SOFT" />
                 </NuxtLink>
             </div>
             <nav class="menu pc" :aria-label="a11yLabels.mainNavigation">
                 <ul class="gnb">
                     <li v-for="item in navigationItems" :key="item.to" :class="{ active: isActive(item.to) }">
-                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined">{{ item.label }}</NuxtLink>
+                        <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined">{{ t(item.labelKey) }}</NuxtLink>
                     </li>
                 </ul>
                 <ul class="i18n" :aria-label="a11yLabels.language">
@@ -17,11 +17,11 @@
                         <button
                             type="button"
                             class="btn"
-                            :aria-label="languageNames[code]"
+                            :aria-label="localeDefinitions[code].nativeName"
                             :aria-pressed="activeLang === code"
                             @click="setLang(code)"
                         >
-                            {{ labels[code] }}
+                            {{ localeDefinitions[code].shortLabel }}
                         </button>
                     </li>
                 </ul>
@@ -53,7 +53,7 @@
                 <ul>
                     <li v-for="item in navigationItems" :key="`mobile-${item.to}`">
                         <NuxtLink :to="item.to" :aria-current="isActive(item.to) ? 'page' : undefined" @click="closeMenu(false)">
-                            {{ item.label }}
+                            {{ t(item.labelKey) }}
                         </NuxtLink>
                     </li>
                 </ul>
@@ -62,11 +62,11 @@
                         <button
                             type="button"
                             class="btn"
-                            :aria-label="languageNames[code]"
+                            :aria-label="localeDefinitions[code].nativeName"
                             :aria-pressed="activeLang === code"
                             @click="setLang(code)"
                         >
-                            {{ labels[code] }}
+                            {{ localeDefinitions[code].shortLabel }}
                         </button>
                     </li>
                 </ul>
@@ -78,27 +78,18 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 import { navigationItems } from '~/constants/navigation';
+import { localeCodes, localeDefinitions } from '~/constants/locale';
 import type { LocaleCode } from '~/stores/locale';
 import { assetPath } from '~/utils/assetPath';
 
 const route = useRoute();
 const localeStore = useLocaleStore();
-const { locale: i18nLocale } = useI18n();
+const { t, locale: i18nLocale } = useI18n();
 const activeLang = computed(() => i18nLocale.value as LocaleCode);
 const menuOpen = ref(false);
 const menuButton = ref<HTMLButtonElement | null>(null);
 const mobileNav = ref<HTMLElement | null>(null);
-const langs: LocaleCode[] = ['ko', 'vi', 'en'];
-const labels: Record<LocaleCode, string> = {
-    ko: 'KOR',
-    vi: 'VIE',
-    en: 'ENG',
-};
-const languageNames: Record<LocaleCode, string> = {
-    ko: '한국어',
-    vi: 'Tiếng Việt',
-    en: 'English',
-};
+const langs = localeCodes;
 const localizedA11yLabels = {
     ko: {
         home: '조앤소프트 홈',

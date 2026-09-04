@@ -1,28 +1,20 @@
-import { createI18n, type LocaleMessageValue } from 'vue-i18n';
-import type { LocaleCode } from '~/stores/locale';
+import { createI18n } from 'vue-i18n';
+import en from '~/i18n/dictionary/en.json';
+import ko from '~/i18n/dictionary/ko.json';
+import vi from '~/i18n/dictionary/vi.json';
+import { defaultLocale, isLocaleCode, localeDefinitions, type LocaleCode } from '~/constants/locale';
+import { localeCookieKey } from '~/stores/locale';
 
-const dictionaries = {
-    ko: () => import('~/i18n/dictionary/ko.json'),
-    en: () => import('~/i18n/dictionary/en.json'),
-    vi: () => import('~/i18n/dictionary/vi.json'),
-};
-
-type LocaleDictionary = Record<string, LocaleMessageValue>;
-
-const loadedMessages = new Map<LocaleCode, LocaleDictionary>();
-
-async function loadDictionary(lang: LocaleCode) {
-    const cached = loadedMessages.get(lang);
-    if (cached) return cached;
-
-    const messages = (await dictionaries[lang]()).default;
-    loadedMessages.set(lang, messages);
-    return messages;
-}
-
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin((nuxtApp) => {
     const localeStore = useLocaleStore();
-    const initialLang = localeStore.lang;
+    const localeCookie = useCookie<string>(localeCookieKey, {
+        default: () => defaultLocale,
+        maxAge: 60 * 60 * 24 * 365,
+        sameSite: 'lax',
+    });
+    const initialLocale = isLocaleCode(localeCookie.value) ? localeCookie.value : defaultLocale;
+
+    if (import.meta.server) localeStore.lang = initialLocale;
 
     const i18n = createI18n({
         legacy: false,
@@ -30,32 +22,27 @@ export default defineNuxtPlugin(async (nuxtApp) => {
         warnHtmlMessage: false,
         missingWarn: false,
         fallbackWarn: false,
-        locale: initialLang,
+        locale: localeStore.lang,
         fallbackLocale: 'ko',
-        messages: {
-            [initialLang]: await loadDictionary(initialLang),
-        },
+        messages: { ko, en, vi },
     });
 
     nuxtApp.vueApp.use(i18n);
 
-    const updateDocumentLang = (lang: LocaleCode) => {
-        if (import.meta.client) document.documentElement.lang = lang;
-    };
+    watch(
+        () => localeStore.lang,
+        (lang: LocaleCode) => {
+            i18n.global.locale.value = lang;
+            localeCookie.value = lang;
 
-    updateDocumentLang(initialLang);
-
-    localeStore.$subscribe(async (_mutation, state) => {
-        const selectedLang = state.lang;
-        i18n.global.setLocaleMessage(selectedLang, await loadDictionary(selectedLang));
-
-        if (localeStore.lang === selectedLang) {
-            i18n.global.locale.value = selectedLang;
-            updateDocumentLang(selectedLang);
-        }
-    });
+            if (import.meta.client) {
+                document.documentElement.lang = localeDefinitions[lang].htmlLang;
+            }
+        },
+        { immediate: true },
+    );
 
     nuxtApp.hook('app:mounted', () => {
-        localeStore.hydrateLangFromStorage();
+        localeStore.hydrateLangFromStorage(localeCookie.value);
     });
 });

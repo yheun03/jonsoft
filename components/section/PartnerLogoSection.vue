@@ -13,6 +13,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { getLocalizedValue, type LocaleCode, type LocalizedValue } from '~/constants/locale';
 import { assetPath } from '~/utils/assetPath';
 import partnerData from '~/i18n/data/partner.json';
 
@@ -32,5 +33,5 @@ const items = computed(() => {
     }));
 });
 
-const localized = (item: Record<string, string>) => item[locale.value] || item.ko || '';
+const localized = (item: LocalizedValue<string>) => getLocalizedValue(item, locale.value as LocaleCode) ?? '';
 </script>

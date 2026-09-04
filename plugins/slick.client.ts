@@ -143,6 +143,5 @@ export default defineNuxtPlugin((nuxtApp) => {
     const router = useRouter();
     const initCurrentSlick = () => initSlick(router.currentRoute.value.path).catch(() => undefined);
 
-    nuxtApp.hook('app:mounted', initCurrentSlick);
     nuxtApp.hook('page:finish', initCurrentSlick);
 });

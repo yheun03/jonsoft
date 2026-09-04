@@ -1,4 +1,5 @@
 import { useI18n } from 'vue-i18n';
+import { defaultLocale, isLocaleCode, localeDefinitions } from '~/constants/locale';
 
 type SeoPage = 'home' | 'about' | 'business' | 'customer' | 'contact';
 
@@ -36,12 +37,6 @@ const contactDescriptions: Record<string, string> = {
     vi: 'Xem địa chỉ trụ sở JO&SOFT, thông tin liên hệ dự án và tuyển dụng lập trình viên, nhà thiết kế UX/UI và quản lý dự án.',
 };
 
-const localeCodes: Record<string, string> = {
-    ko: 'ko_KR',
-    en: 'en_US',
-    vi: 'vi_VN',
-};
-
 const stripHtml = (value: string) =>
     value
         .replace(/<br\s*\/?>/gi, ' ')
@@ -63,7 +58,7 @@ export function usePageSeo(page: SeoPage) {
             .replace(/([^:]\/)\/+/, '$1');
     const canonical = computed(() => absoluteUrl(pagePaths[page]));
     const image = absoluteUrl('assets/images/banner/page-index.webp');
-    const language = computed(() => locale.value);
+    const language = computed(() => (isLocaleCode(locale.value) ? locale.value : defaultLocale));
     const pageName = computed(() => pageNames[page][language.value] || pageNames[page].ko);
     const title = computed(() => (page === 'home' ? homeTitles[language.value] || homeTitles.ko : `${pageName.value} | JO&SOFT`));
     const description = computed(() => {
@@ -85,7 +80,7 @@ export function usePageSeo(page: SeoPage) {
         ogUrl: canonical,
         ogImage: image,
         ogImageAlt: 'JO&SOFT',
-        ogLocale: computed(() => localeCodes[language.value] || localeCodes.ko),
+        ogLocale: computed(() => localeDefinitions[language.value].ogLocale),
         twitterCard: 'summary_large_image',
         twitterTitle: title,
         twitterDescription: description,
@@ -184,7 +179,7 @@ export function usePageSeo(page: SeoPage) {
     });
 
     useHead(() => ({
-        htmlAttrs: { lang: language.value },
+        htmlAttrs: { lang: localeDefinitions[language.value].htmlLang },
         link: [{ rel: 'canonical', href: canonical.value }],
         script: [
             {

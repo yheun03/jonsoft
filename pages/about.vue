@@ -265,6 +265,7 @@ import CommonPhilosophy from '~/components/section/CommonPhilosophy.vue';
 import PageBanner from '~/components/common/PageBanner.vue';
 import PageNavigator from '~/components/common/PageNavigator.vue';
 import historyData from '~/i18n/data/history.json';
+import { getLocalizedValue } from '~/constants/locale';
 import type { LocaleCode } from '~/stores/locale';
 import { assetPath } from '~/utils/assetPath';
 
@@ -331,7 +332,7 @@ const historyItems = computed(() => {
 });
 
 function getLocalizedHistoryText(item: LocalizedHistoryText, lang: LocaleCode) {
-    return item[lang] || item.ko || item.en || item.vi || '';
+    return getLocalizedValue(item, lang) ?? '';
 }
 
 const activeHistoryIndex = ref(0);

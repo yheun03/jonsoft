@@ -1,31 +1,31 @@
 import { defineStore } from 'pinia';
+import { defaultLocale, isLocaleCode, localeCodes, type LocaleCode } from '~/constants/locale';
 
-export type LocaleCode = 'ko' | 'en' | 'vi';
-export const localeCodes: readonly LocaleCode[] = ['ko', 'en', 'vi'];
-const localeStorageKey = 'selectedLang';
-
-export function isLocaleCode(value: string): value is LocaleCode {
-    return localeCodes.includes(value as LocaleCode);
-}
+export type { LocaleCode } from '~/constants/locale';
+export { isLocaleCode, localeCodes } from '~/constants/locale';
+export const localeStorageKey = 'selectedLang';
+export const localeCookieKey = 'jonsoftLocale';
 
 export const useLocaleStore = defineStore('locale', {
     state: () => ({
-        lang: 'ko' as LocaleCode,
+        lang: defaultLocale as LocaleCode,
     }),
     actions: {
         setLang(next: LocaleCode) {
             this.lang = next;
 
             if (import.meta.client) {
-                sessionStorage.setItem(localeStorageKey, next);
+                localStorage.setItem(localeStorageKey, next);
             }
         },
-        hydrateLangFromStorage() {
+        hydrateLangFromStorage(fallback?: unknown) {
             if (!import.meta.client) return;
 
-            const raw = sessionStorage.getItem(localeStorageKey);
-            if (raw && isLocaleCode(raw)) {
+            const raw = localStorage.getItem(localeStorageKey) || sessionStorage.getItem(localeStorageKey);
+            if (isLocaleCode(raw)) {
                 this.setLang(raw);
+            } else if (isLocaleCode(fallback)) {
+                this.setLang(fallback);
             }
         },
     },

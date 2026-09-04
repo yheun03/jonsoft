@@ -10,7 +10,7 @@
                 <nav :aria-label="footerNavLabel">
                     <ul class="gnb">
                         <li v-for="item in navigationItems" :key="item.to">
-                            <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
+                            <NuxtLink :to="item.to">{{ t(item.labelKey) }}</NuxtLink>
                         </li>
                     </ul>
                 </nav>

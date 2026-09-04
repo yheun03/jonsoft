@@ -1,6 +1,12 @@
 {
     "common": {
         "floating": "회사 소개서 다운받기",
+        "navigation": {
+            "about": "ABOUT US",
+            "business": "BUSINESS & SOLUTION",
+            "customer": "CUSTOMER & PATNERS",
+            "contact": "CONTACT US"
+        },
         "catalog": {
             "src": "./assets/files/JO&SOFT catalog.pdf",
             "alt": "조앤소프트 한국어 회사 소개서 열기"
