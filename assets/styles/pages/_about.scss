@@ -14,84 +14,83 @@
 }
 
 .ceo-banner {
-    height: 560px;
-    min-height: unset;
+    background: linear-gradient(to left, rgba(#3d9efc, 0) 40%, rgba(#3d9efc, 100) 70%);
 
-    &__title {
-        display: none;
+    .wrap {
+        padding-block: 40px 280px;
+    }
+
+    & &__title {
+        @include font-style($fw-7, $fs-42, 150%);
+        color: $c-text-light;
+        text-align: left;
     }
 }
 
 .ceo-eyebrow {
-    @include font-style($fw-6, $fs-16);
+    @include font-style($fw-6, $fs-18);
     color: $c-orange;
 }
 
 .ceo-message {
     &__headline {
-        padding-block: 130px 120px;
+        padding-block: 140px;
         text-align: center;
 
         h1 {
-            @include font-style($fw-6, $fs-30, 150%);
-            margin-top: 22px;
+            @include font-style($fw-6, $fs-28, 150%);
+            margin-top: 20px;
             word-break: keep-all;
         }
     }
 
     &__profile {
-        background:
-            radial-gradient(100% 75% at 4% 120%, transparent 49.5%, rgba(219, 223, 229, 0.7) 50%, transparent 50.5%),
-            radial-gradient(95% 75% at 98% 115%, transparent 49.5%, rgba(219, 223, 229, 0.7) 50%, transparent 50.5%),
-            #eef1f5;
+        background: url($url + 'images/ceo/ceo-background.png') no-repeat center center / cover;
     }
 
     &__profile-inner {
-        @include flex(row, space-between, flex-end, 70px);
-        min-height: 680px;
+        @include flex(row, space-between, flex-end, 32px);
     }
 
     &__portrait {
-        flex: 0 0 440px;
-        align-self: stretch;
         @include flex($align: flex-end);
 
         img {
             display: block;
-            width: 440px;
+            width: 486px;
         }
     }
 
     &__content {
         flex: 1;
-        padding-block: 95px 65px;
+        padding-block: 140px 40px;
 
         h2 {
-            @include font-style($fw-6, $fs-30, 130%);
-            margin-bottom: 32px;
+            @include font-style($fw-6, $fs-32, 36px);
+            margin-bottom: 30px;
         }
 
         p {
-            @include font-style($fw-4, $fs-18, 170%);
-            color: #4f5358;
+            @include font-style($fw-4, $fs-20, 150%);
+            color: #292e32;
             word-break: keep-all;
 
             & + p {
-                margin-top: 6px;
+                margin-top: 1em;
             }
         }
 
         strong {
             display: block;
-            @include font-style($fw-6, $fs-16);
-            margin-top: 58px;
+            @include font-style($fw-7, $fs-20);
+            margin-top: 32px;
             text-align: right;
         }
     }
 }
 
 .ceo-values {
-    padding-block: 80px 110px;
+    padding-block: 80px 96px;
 
     h2 {
         @include font-style($fw-6, $fs-30);
@@ -99,9 +98,9 @@
     }
 
     &__description {
-        @include font-style($fw-4, $fs-18, 160%);
-        color: #4f5358;
-        margin-top: 35px;
+        @include font-style($fw-4, $fs-24, 150%);
+        color: #292e32;
+        margin-top: 30px;
     }
 
     &__list {
@@ -113,14 +112,14 @@
         position: relative;
         width: 100%;
         height: 320px;
-        border-radius: $radius-20;
+        border-radius: $radius-24;
         overflow: hidden;
 
         &::after {
             @include pseudo-element();
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(14, 18, 21, 0.7), rgba(14, 18, 21, 0.02) 75%);
+            background: linear-gradient(to left, rgba(#4c4c4c, 0), rgba(#4c4c4c, 0.7) 75%);
         }
 
         img {
@@ -132,55 +131,44 @@
 
     &__content {
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: 45px;
+        left: 48px;
         z-index: 1;
         max-width: 650px;
         color: $c-text-light;
 
         h3 {
-            @include font-style($fw-6, $fs-24);
+            @include font-style($fw-6, $fs-28);
         }
 
         p {
-            @include font-style($fw-4, $fs-14, 160%);
-            margin-top: 22px;
+            @include font-style($fw-4, $fs-16, 150%);
+            margin-top: 16px;
         }
     }
 
     &__closing {
-        @include font-style($fw-4, $fs-20);
-        color: #63676b;
-        margin-top: 100px;
+        @include font-style($fw-4, $fs-24);
+        color: #3f3f3f;
+        margin-top: 96px;
         text-align: center;
     }
 }
 
 @include tablet {
     .ceo-banner {
-        height: 335px;
-        overflow: hidden;
-
         > img {
-            top: 30px;
-            height: 140%;
             object-position: right center;
         }
 
-        &__title {
-            display: block;
-            position: absolute;
-            top: 28px;
-            left: 20px;
-            z-index: 1;
-            @include font-style($fw-7, 20px, 130%);
-            color: $c-text-light;
+        .wrap {
+            padding: 44px 0 0 24px;
         }
     }
 
     .ceo-message {
         &__headline {
-            padding: 110px 0 90px;
+            padding: 90px 0;
 
             h1 {
                 font-size: 24px;
@@ -188,23 +176,24 @@
             }
         }
 
-        &__profile-inner {
-            display: block;
-            min-height: unset;
-            padding-inline: 0;
+        &__profile {
+            background: #e7eaef;
+            &-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
         }
 
         &__portrait {
             position: relative;
-            height: 470px;
-            align-items: flex-start;
-            overflow: hidden;
+            width: 100%;
 
             &::after {
                 @include pseudo-element();
                 position: absolute;
                 inset: 55% 0 0;
-                background: linear-gradient(transparent, #eef1f5 80%);
+                background: linear-gradient(transparent, #e7eaef 80%);
             }
 
             img {
@@ -214,92 +203,84 @@
         }
 
         &__content {
-            padding: 0 20px 55px;
+            padding-block: 0 40px;
 
             h2 {
                 font-size: 24px;
-                margin-bottom: 32px;
+                margin-bottom: 28px;
             }
 
             p {
-                font-size: 15px;
-                line-height: 160%;
+                font-size: 16px;
 
                 br {
                     display: none;
                 }
-
-                & + p {
-                    margin-top: 6px;
-                }
             }
 
             strong {
-                font-size: 14px;
+                font-size: 16px;
                 margin-top: 42px;
             }
         }
     }
 
     .ceo-values {
-        padding-block: 80px 90px;
+        padding-block: 100px 120px;
 
         h2 {
-            font-size: 26px;
-            margin-top: 16px;
+            font-size: 24px;
+            margin-top: 8px;
         }
 
         &__description {
-            font-size: 15px;
-            line-height: 160%;
-            margin-top: 28px;
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         &__list {
-            gap: 14px;
-            margin-top: 50px;
+            gap: 16px;
+            margin-top: 40px;
         }
 
         &__item {
             height: 220px;
-            border-radius: $radius-10;
+            border-radius: $radius-16;
         }
 
         &__content {
             top: auto;
-            right: 20px;
-            bottom: 24px;
             left: 20px;
+            bottom: 24px;
 
             h3 {
-                font-size: 20px;
+                font-size: 28px;
             }
 
             p {
                 font-size: 12px;
-                line-height: 150%;
-                margin-top: 14px;
+                margin-top: 8px;
             }
         }
 
         &__closing {
-            font-size: 13px;
-            margin-top: 70px;
+            font-size: 12px;
+            margin-top: 60px;
         }
     }
 }
 
-@include mobile {
-    .ceo-message__headline {
-        h1 {
-            font-size: 21px;
-        }
-    }
+// @include mobile {
+//     .ceo-message__headline {
+//         h1 {
+//             font-size: 21px;
+//         }
+//     }
 
-    .ceo-values__item {
-        height: 210px;
-    }
-}
+//     .ceo-values__item {
+//         height: 210px;
+//     }
+// }
 
 // =============================================================================
 // Summary 섹션
