@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jonsoft.co.kr/ver.2026/sitemap.xml
+Sitemap: https://yheun03.github.io/jonsoft/sitemap.xml
