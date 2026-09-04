@@ -1,0 +1,142 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+// Typography
+@mixin font-style($weight: $fw-4, $size, $line-height: normal, $family: $font, $color: null) {
+    font: $weight #{$size}/#{$line-height} $family;
+
+    @if $color != null and $color != '' {
+        color: $color;
+    }
+}
+
+// Layout
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}
+
+@mixin grid($columns, $gap: 0, $col-size: 1fr) {
+    display: grid;
+    grid-template-columns: repeat($columns, $col-size);
+
+    @if $gap != 0 and $gap != '' {
+        gap: $gap;
+    }
+}
+
+@mixin container($max-width: $container-max, $padding: $gap-20) {
+    max-width: $max-width;
+    padding-inline: $padding;
+    margin: auto;
+}
+
+@mixin absolute-position($position1: top, $value1: 0, $position2: left, $value2: 0) {
+    position: absolute;
+    #{$position1}: $value1;
+    #{$position2}: $value2;
+}
+
+// Visual
+@mixin bg-image($image, $position: center, $size: cover, $repeat: no-repeat) {
+    background: url($image) $position/$size $repeat;
+}
+
+@mixin gradient-overlay($color, $opacity-start: 0, $opacity-end: 0.5) {
+    background: linear-gradient(180deg, rgba($color, $opacity-start) 86.85%, rgba($color, $opacity-end) 100%);
+}
+
+@mixin shadow($type: sm, $color: rgba(0, 0, 0, 0.15)) {
+    @if $type == sm {
+        box-shadow: $shadow-sm;
+    } @else if $type == md {
+        box-shadow: $shadow-md $color;
+    }
+}
+
+@mixin transition($property: all, $duration: $trans-fast, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+@mixin hover($property, $value) {
+    &:hover {
+        #{$property}: $value;
+    }
+}
+
+// Content
+@mixin text-ellipsis($lines: 1) {
+    @if $lines == 1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@mixin pseudo-element($content: '', $display: '') {
+    content: $content;
+
+    @if $display != '' {
+        display: $display;
+    }
+}
+
+// Responsive
+$breakpoints: (
+    'xs': 320px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1400px,
+);
+
+@mixin min-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (min-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
+    }
+}
+
+@mixin max-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: (map.get($breakpoints, $breakpoint) - 1px)) {
+            @content;
+        }
+    } @else {
+        @warn "브레이크포인트 '#{$breakpoint}'를 찾을 수 없습니다.";
+    }
+}
+
+@mixin mobile {
+    @include max-width(sm) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include max-width(lg) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @include min-width(lg) {
+        @content;
+    }
+}

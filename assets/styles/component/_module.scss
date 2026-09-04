@@ -1,0 +1,98 @@
+@use '../abstracts' as *;
+
+.module-text {
+    height: unset;
+    margin-block: 80px 60px;
+
+    .wrap {
+        padding-block: unset;
+    }
+
+    .title {
+        @include font-style($fw-6, 30px, 150%);
+        color: #000000;
+        margin-top: 20px;
+
+        &-sub {
+            @include font-style($fw-6, 18px);
+
+            span {
+                background: linear-gradient(198deg, #ff9056, #ff5c42);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+            }
+        }
+    }
+
+    .dscpt {
+        @include font-style($fw-4, 24px, 150%);
+        color: #000000;
+        margin-top: 30px;
+    }
+
+    .banner & {
+        width: 100%;
+        margin: unset;
+        padding-block: 100px 160px;
+
+        .title {
+            margin-top: 8px;
+            font-size: 32px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .dscpt {
+            margin-top: 50px;
+            @include font-style($fw-6, 18px);
+
+            li {
+                position: relative;
+                padding-left: 16px;
+
+                &::before {
+                    @include pseudo-element('');
+                    @include absolute-position(top, 50%, left, 0);
+                    transform: translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    background-color: #ffffff;
+                }
+
+                & + li {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        .title,
+        .dscpt {
+            color: #ffffff;
+        }
+    }
+
+    @include tablet {
+        margin-block: 60px 40px;
+
+        .banner & {
+            padding-block: 20px 40px;
+
+            .title {
+                font-size: 24px;
+            }
+
+            .dscpt {
+                font-size: 16px;
+            }
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .dscpt {
+            font-size: 16px;
+        }
+    }
+}

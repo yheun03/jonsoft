@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+
+.app-footer {
+    position: relative;
+    background-color: #f7f6f8;
+    padding-block: 80px;
+    z-index: 10;
+
+    a[class*='logo'] {
+        display: block;
+        font-size: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .logo-jon {
+        width: 140px;
+    }
+
+    .logo-inobiz {
+        height: 50px;
+    }
+
+    .gnb {
+        margin: 0 0 10px;
+    }
+
+    .wrap {
+        display: flex;
+
+        &-text {
+            @include flex(column, flex-start, stretch, 4.5px);
+            margin-inline: 40px auto;
+            @include font-style($size: 14px, $color: #909090);
+        }
+    }
+
+    @include tablet {
+        .wrap {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+
+            &-text {
+                order: 1;
+                width: 100%;
+                margin: unset;
+                font-size: 13px;
+            }
+        }
+
+        a[class*='logo'] {
+            img {
+                max-width: 30dvw;
+            }
+        }
+    }
+}

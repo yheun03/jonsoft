@@ -1,0 +1,56 @@
+@use '../abstracts' as *;
+
+// 페이지 공통 네비게이터
+// type은 동작만 구분하며 scroll/anchor 모두 동일한 디자인을 사용합니다.
+.navigator {
+    .tab {
+        margin-bottom: 50px;
+
+        ul {
+            @include flex(row, center, center, $gap-80);
+            margin: $gap-80 auto 0;
+
+            li {
+                @include font-style($fw-6, $fs-20, normal);
+                display: block;
+                padding-inline: $gap-4;
+                padding-bottom: 14px;
+                color: #b2b2b2;
+
+                &.active {
+                    color: $c-text;
+                    box-shadow: inset 0 -2px 0 0 $c-text;
+                }
+            }
+        }
+
+        a,
+        button {
+            @include font-style($fw-6, $fs-20, normal);
+            appearance: none;
+            border: 0;
+            background: transparent;
+            padding: 0;
+            color: inherit;
+            cursor: pointer;
+        }
+    }
+
+    @include tablet {
+        margin-top: 60px;
+
+        .tab {
+            margin-bottom: 40px;
+
+            ul {
+                @include flex($justify: flex-start, $gap: 30px);
+                padding-inline: 20px;
+            }
+
+            a,
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+}
