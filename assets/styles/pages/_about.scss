@@ -46,11 +46,10 @@
 
     &__profile {
         background: url($url + 'images/ceo/ceo-background.png') no-repeat center center / cover;
-    }
-
-    .wrap {
-        @include flex(row, space-between, flex-end, 32px);
-        overflow: hidden;
+        .wrap {
+            @include flex(row, space-between, flex-end, 32px);
+            overflow: hidden;
+        }
     }
 
     &__portrait {
