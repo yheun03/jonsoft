@@ -1,3 +1,6 @@
+@use './abstracts' with (
+    $url: $asset-base-url
+);
 @use './abstracts/reset';
 @use './abstracts/fontvar';
 @use './layout';
