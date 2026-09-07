@@ -25,7 +25,7 @@ npm run deploy
 npm run build
 ```
 
-`https://jonsoft.co.kr/jonsoft/` 하위 경로 기준의 정적 사이트가 `.output/public`에 생성됩니다.
-SFTP 업로드 시 `.output/public` 폴더 자체가 아닌 폴더 안의 파일과 디렉터리를 웹 서버의 `/jonsoft/` 디렉터리에 업로드합니다.
+`https://jonsoft.co.kr/` 루트 경로 기준의 정적 사이트가 `.output/public`에 생성됩니다.
+SFTP 업로드 시 `.output/public` 폴더 자체가 아닌 폴더 안의 파일과 디렉터리를 웹 루트에 업로드합니다.
 
 두 명령 모두 해당 배포 주소에 맞는 `robots.txt`, `sitemap.xml`, `llms.txt`를 자동으로 생성합니다.
