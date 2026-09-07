@@ -10,3 +10,24 @@ RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 # http://jonsoft.co.kr → https://jonsoft.co.kr
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://jonsoft.co.kr%{REQUEST_URI} [L,R=301]
+
+# -------------------------------------------------------
+# HTTP 상태 코드별 오류 페이지
+# 각 HTML 파일은 웹 루트에 위치해야 합니다.
+# ErrorDocument는 URL을 바꾸는 리다이렉션이 아니라,
+# 기존 상태 코드를 유지한 채 지정한 HTML을 표시합니다.
+# -------------------------------------------------------
+ErrorDocument 400 /400.html
+ErrorDocument 401 /401.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 405 /405.html
+ErrorDocument 408 /408.html
+ErrorDocument 410 /410.html
+ErrorDocument 413 /413.html
+ErrorDocument 414 /414.html
+ErrorDocument 429 /429.html
+ErrorDocument 500 /500.html
+ErrorDocument 502 /502.html
+ErrorDocument 503 /503.html
+ErrorDocument 504 /504.html
