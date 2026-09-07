@@ -107,7 +107,7 @@ export default defineNuxtConfig({
     },
 
     nitro: {
-        compressPublicAssets: true,
+        compressPublicAssets: false,
 
         prerender: {
             routes: ['/robots.txt', '/sitemap.xml', '/llms.txt'],

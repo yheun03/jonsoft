@@ -65,6 +65,8 @@ const sliders: Record<string, { selector: string; options: SlickOptions }> = {
     },
 };
 
+const normalizeRoutePath = (path: string) => path.replace(/\/+$/, '') || '/';
+
 let slickReady: Promise<void> | null = null;
 
 const loadScript = (src: string) =>
@@ -114,7 +116,7 @@ const loadSlick = () => {
 };
 
 const initSlick = async (path: string) => {
-    const slider = sliders[path];
+    const slider = sliders[normalizeRoutePath(path)];
     if (!slider) return;
 
     await nextTick();
