@@ -1,6 +1,6 @@
 <template>
     <footer class="app-footer">
-        <div class="wrap not-padding">
+        <div class="wrap">
             <div>
                 <NuxtLink to="/" class="logo-jon">
                     <img :src="assetPath(t('common.company.logo.src') || '/assets/logos/logo.svg')" :alt="t('common.company.logo.alt')" />
