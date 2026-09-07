@@ -12,7 +12,7 @@
         </div>
 
         <div id="about-panel-ceo" v-show="activeTab === 'ceo'" role="tabpanel" aria-labelledby="about-tab-ceo" class="about-panel">
-            <PageBanner class="ceo-banner" src="/assets/images/ceo/page-ceo.png">
+            <PageBanner class="ceo-banner" src="/assets/images/ceo/page-ceo.webp">
                 <div class="wrap">
                     <h1 data-aos="fade-up" data-aos-delay="100" class="ceo-banner__title">Your<br />Best<br />Business<br />Partner</h1>
                 </div>
@@ -29,7 +29,7 @@
                 <div class="ceo-message__profile">
                     <div class="wrap">
                         <div class="ceo-message__portrait" data-aos="fade-up" data-aos-delay="100">
-                            <img :src="assetPath('/assets/images/ceo/ceo.png')" :alt="t('about.ceo.portrait-alt')" />
+                            <img :src="assetPath('/assets/images/ceo/ceo.webp')" :alt="t('about.ceo.portrait-alt')" />
                         </div>
                         <div class="ceo-message__content" data-aos="fade-up" data-aos-delay="200">
                             <h2 v-html="t('about.ceo.greeting')"></h2>
@@ -302,7 +302,7 @@ const awardsCarouselLabels = {
     vi: 'Danh sách chứng nhận và giải thưởng',
 };
 const awardsCarouselLabel = computed(() => awardsCarouselLabels[activeLang.value]);
-const ceoValueImages = ['/assets/images/ceo/ceo-1.png', '/assets/images/ceo/ceo-3.png', '/assets/images/ceo/ceo-2.png'];
+const ceoValueImages = ['/assets/images/ceo/ceo-1.webp', '/assets/images/ceo/ceo-3.webp', '/assets/images/ceo/ceo-2.webp'];
 const ceoValues = computed(() =>
     ceoValueImages.map((image, index) => ({
         title: t(`about.ceo.values.item-0${index + 1}.title`),

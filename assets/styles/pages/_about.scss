@@ -45,7 +45,7 @@
     }
 
     &__profile {
-        background: url($url + 'images/ceo/ceo-background.png') no-repeat center center / cover;
+        background: url($url + 'images/ceo/ceo-background.webp') no-repeat center center / cover;
         .wrap {
             @include flex(row, space-between, flex-end, 32px);
             overflow: hidden;
@@ -376,22 +376,22 @@
         $thumb-bg: (
             'item-01': (
                 #ffed71,
-                $url + 'icons/380/tcb.png',
+                $url + 'icons/380/tcb.webp',
                 #ffed71,
             ),
             'item-02': (
                 #b0e0fb,
-                $url + 'icons/380/copyright.png',
+                $url + 'icons/380/copyright.webp',
                 #b0e0fb,
             ),
             'item-03': (
                 #ff8372,
-                $url + 'icons/380/webawards.png',
+                $url + 'icons/380/webawards.webp',
                 #ff8372,
             ),
             'item-04': (
                 #8eaff6,
-                $url + 'icons/380/venture.png',
+                $url + 'icons/380/venture.webp',
                 #8eaff6,
             ),
         );
@@ -404,7 +404,7 @@
          * @param {string} $img - 이미지 경로
          * @param {color} $grad - 그라디언트 색상
          * 
-         * 사용법: @include thumb-bg(#FFED71, $url + 'icons/380/tcb.png', #FFED71);
+         * 사용법: @include thumb-bg(#FFED71, $url + 'icons/380/tcb.webp', #FFED71);
          */
         @mixin thumb-bg($color, $img, $grad) {
             background: #{$color} url(#{$img}) 90px 150px / 370px no-repeat;
