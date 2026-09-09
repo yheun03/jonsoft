@@ -179,6 +179,10 @@
 
                 & > span {
                     margin-inline: $gap-8;
+
+                    span + span {
+                        margin-left: 0.25em;
+                    }
                 }
             }
         }
