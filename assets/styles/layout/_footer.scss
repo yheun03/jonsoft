@@ -22,7 +22,7 @@
     }
 
     .logo-inobiz {
-        height: 50px;
+        height: 40px;
     }
 
     .gnb {
@@ -56,6 +56,9 @@
         a[class*='logo'] {
             img {
                 max-width: 30dvw;
+            }
+            &.logo-inobiz {
+                height: 32px;
             }
         }
     }
