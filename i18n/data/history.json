@@ -3,6 +3,16 @@
         "year": 2026,
         "months": [
             {
+                "label": "2026.11",
+                "items": [
+                    {
+                        "ko": "경동나비엔 서비스app 재구축 사업 수주",
+                        "en": "Awarded KyungDong Navien Service App Rebuild Project",
+                        "vi": "Được trao dự án tái xây dựng ứng dụng dịch vụ của KyungDong Navien"
+                    }
+                ]
+            },
+            {
                 "label": "2026.07",
                 "items": [
                     {
